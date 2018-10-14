@@ -1,12 +1,15 @@
 <template>
     <Page>
         <ActionBar class="action-bar" title="Welcome to NativeScript-Vue!"/>
-        <!--<GridLayout colums="*" rows="*">-->
-        <GridLayout>
-            <Label class="message" :text="msg" col="0" row="0"/>
-            <Button class="btn btn-primary" text="Button" @tap="onButtonTap" />
-            <Button class="btn btn-primary" text="Base Function" @tap="onButtonBase" />
-        </GridLayout>
+        <ScrollView>
+            <!--<GridLayout colums="*" rows="*">-->
+            <StackLayout>
+                <Label class="message" :text="msg" col="0" row="0"/>
+                <Button class="btn btn-primary" text="Button" @tap="onButtonTap" />
+                <Button class="btn btn-primary" text="Base Function" @tap="onButtonBase" />
+            </StackLayout>
+            <!--</GridLayout>-->
+        </ScrollView>
     </Page>
 </template>
 
