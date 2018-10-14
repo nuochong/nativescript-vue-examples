@@ -70,7 +70,7 @@ export default {
         transition: {
           name: "slide",
           duration: 380,
-          curve: "spring"
+          curve: "easeIn"
         }
       });
     },
@@ -80,7 +80,7 @@ export default {
         transition: {
           name: "slide",
           duration: 380,
-          curve: "spring"
+          curve: "easeIn"
         }
       });
     },
@@ -90,7 +90,7 @@ export default {
         transition: {
           name: "slide",
           duration: 380,
-          curve: "spring"
+          curve: "easeIn"
         }
       });
     },

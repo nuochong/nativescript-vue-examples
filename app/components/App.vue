@@ -32,9 +32,9 @@ import Fab from './Fab';
             this.$navigateTo(HelloWorld, {
             animated: true,
             transition: {
-              name: "explode",
+              name: "fade",
               duration: 380,
-              curve: "spring" 
+              curve: "easeIn"//spring
             },
           });
         },
@@ -44,7 +44,7 @@ import Fab from './Fab';
                 transition: {
                     name: "fade",
                     duration: 380,
-                    curve: "spring"
+                    curve: "easeIn"
                 },
             });
         },
@@ -54,7 +54,7 @@ import Fab from './Fab';
                 transition: {
                     name: "fade",
                     duration: 380,
-                    curve: "spring"
+                    curve: "easeIn"
                 },
             });
         },
@@ -64,7 +64,7 @@ import Fab from './Fab';
                 transition: {
                     name: "fade",
                     duration: 380,
-                    curve: "spring"
+                    curve: "easeIn"
                 },
             });
         }
