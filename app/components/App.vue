@@ -32,7 +32,7 @@ import Fab from './Fab';
             this.$navigateTo(HelloWorld, {
             animated: true,
             transition: {
-              name: "fade",
+              name: "slide",
               duration: 380,
               curve: "easeIn"//spring
             },
