@@ -7,6 +7,7 @@
                 <Label class="message" :text="msg" col="0" row="0"/>
                 <Button class="btn btn-primary" text="Button" @tap="onButtonTap" />
                 <Button class="btn btn-primary" text="Base Function" @tap="onButtonBase" />
+                <Button class="btn btn-primary" text="input" @tap="onInput" />
             </StackLayout>
             <!--</GridLayout>-->
         </ScrollView>
@@ -16,6 +17,7 @@
 <script>
 import HelloWorld from './hello';
 import Home from './base/Home';
+import Input from './Input';
   export default {
     data() {
       return {
@@ -28,7 +30,7 @@ import Home from './base/Home';
             this.$navigateTo(HelloWorld, {
             animated: true,
             transition: {
-              name: "slide",
+              name: "explode",
               duration: 380,
               curve: "spring" 
             },
@@ -38,7 +40,17 @@ import Home from './base/Home';
             this.$navigateTo(Home, {
                 animated: true,
                 transition: {
-                    name: "slide",
+                    name: "fade",
+                    duration: 380,
+                    curve: "spring"
+                },
+            });
+        },
+        onInput:function () {
+            this.$navigateTo(Input, {
+                animated: true,
+                transition: {
+                    name: "fade",
                     duration: 380,
                     curve: "spring"
                 },
