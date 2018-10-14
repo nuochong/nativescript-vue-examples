@@ -10,7 +10,7 @@
       android:shortcutDisabledMessage="@string/shortcut_disabled_message1">
     <intent
         android:action="shortcut.type.compose"
-        android:targetPackage="org.nativescript.help"
+        android:targetPackage="org.nativescript.application"
         android:targetClass="com.tns.NativeScriptActivity"/>
     <categories android:name="android.shortcut.conversation"/>
   </shortcut>
@@ -24,7 +24,7 @@
       android:shortcutDisabledMessage="@string/shortcut_disabled_message1">
     <intent
         android:action="shortcut.type.test"
-        android:targetPackage="org.nativescript.help"
+        android:targetPackage="org.nativescript.application"
         android:targetClass="com.tns.NativeScriptActivity"/>
     <categories android:name="android.shortcut.conversation"/>
   </shortcut>
@@ -38,7 +38,7 @@
       android:shortcutDisabledMessage="@string/shortcut_disabled_message1">
     <intent
         android:action="shortcut.type.you"
-        android:targetPackage="org.nativescript.help"
+        android:targetPackage="org.nativescript.application"
         android:targetClass="com.tns.NativeScriptActivity"/>
     <categories android:name="android.shortcut.conversation"/>
   </shortcut>

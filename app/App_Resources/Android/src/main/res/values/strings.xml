@@ -4,5 +4,5 @@
     <string name="title_activity_kimera">NSVue Examples</string>
 	<string name="shortcut_disabled_message1">111</string> 
     <string name="shortcut_long_label1">222</string> 
-    <string name="shortcut_short_label1">333</string> 
+    <string name="shortcut_short_label1">666</string>
 </resources>
