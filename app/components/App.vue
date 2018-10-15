@@ -9,6 +9,7 @@
                 <Button class="btn btn-primary" text="Base Function" @tap="onButtonBase" />
                 <Button class="btn btn-primary" text="input" @tap="onInput" />
                 <Button class="btn btn-primary" text="Fab" @tap="onFab" />
+                <Button class="btn btn-primary" text="ToDo" @tap="onTodo" />
             </StackLayout>
             <!--</GridLayout>-->
         </ScrollView>
@@ -20,6 +21,7 @@ import HelloWorld from './hello';
 import Home from './base/Home';
 import Input from './Input';
 import Fab from './Fab';
+import Todo from './todo/todo';
   export default {
     data() {
       return {
@@ -60,6 +62,16 @@ import Fab from './Fab';
         },
         onFab:function () {
             this.$navigateTo(Fab, {
+                animated: true,
+                transition: {
+                    name: "fade",
+                    duration: 380,
+                    curve: "easeIn"
+                },
+            });
+        },
+        onTodo:function () {
+            this.$navigateTo(Todo, {
                 animated: true,
                 transition: {
                     name: "fade",
