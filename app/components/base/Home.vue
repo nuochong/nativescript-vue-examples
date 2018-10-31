@@ -50,8 +50,8 @@ const geolocation = require("nativescript-geolocation");
 const { Accuracy } = require("tns-core-modules/ui/enums");
 
 const permissions = require("nativescript-permissions");
-const CALL_PHONE = android.Manifest.permission.CALL_PHONE;
-const Intent = android.content.Intent;
+//const CALL_PHONE = android.Manifest.permission.CALL_PHONE;
+//const Intent = android.content.Intent;
 const app = require("application");
 
 export default {
@@ -224,17 +224,17 @@ export default {
         });
     },
     btnPermissions: function() {
-      permissions
-        .requestPermission(
-          android.Manifest.permission.READ_CONTACTS,
-          "I need these permissions because I'm cool"
-        )
-        .then(function() {
-          console.log("Woo Hoo, I have the power!");
-        })
-        .catch(function() {
-          console.log("Uh oh, no permissions - plan B time!");
-        });
+      // permissions
+      //   .requestPermission(
+      //     android.Manifest.permission.READ_CONTACTS,
+      //     "I need these permissions because I'm cool"
+      //   )
+      //   .then(function() {
+      //     console.log("Woo Hoo, I have the power!");
+      //   })
+      //   .catch(function() {
+      //     console.log("Uh oh, no permissions - plan B time!");
+      //   });
     },
     btnPlatformModule: function() {
       console.log("######");
