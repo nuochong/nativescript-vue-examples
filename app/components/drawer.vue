@@ -49,9 +49,7 @@
                         <Label col="0" text="&#xf005;" class="fa"></Label>
                         <Label col="1" text="Featured" class="p-r-10"></Label>
                     </GridLayout>
-
                     <StackLayout class="hr-light"></StackLayout>
-
                     <GridLayout columns="auto, *" class="sidedrawer-list-item">
                         <Label col="0" text="&#xf013;" class="fa"></Label>
                         <Label col="1" text="Settings" class="p-r-10"></Label>
@@ -69,7 +67,7 @@ import world from "./world";
 export default {
   data() {
     return {
-      msg: "Hello World! "
+      msg: "Hello Worlds! "
     };
   },
   methods: {
