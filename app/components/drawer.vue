@@ -67,7 +67,7 @@ import world from "./world";
 export default {
   data() {
     return {
-      msg: "Hello World T! "
+      msg: "Hello World Test! "
     };
   },
   methods: {
