@@ -5,6 +5,4 @@
 	<string name="shortcut_disabled_message1">111</string> 
     <string name="shortcut_long_label1">222</string> 
     <string name="shortcut_short_label1">666</string>
-    
-    <string name="icons">&#xeb69;&#xeb68;&#xeb67;</string>
 </resources>
