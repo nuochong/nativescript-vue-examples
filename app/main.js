@@ -23,8 +23,6 @@ appShortcuts.available().then(function(available) {
   }
 });
 
-console.log('xxxx');
-
 // const LinearLayout = android.widget.LinearLayout;
 // const LayoutParams = android.widget.LinearLayout.LayoutParams;
 // const TextView = android.widget.TextView;
