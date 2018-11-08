@@ -85,6 +85,24 @@ appShortcuts.available().then(function(available) {
 // );
 
 
+//在代码中创建一个页面
+const Page = require("tns-core-modules/ui/page").Page;
+const Label = require("tns-core-modules/ui/label").Label;
+const StackLayout = require("tns-core-modules/ui/layouts/stack-layout").StackLayout;
+
+function createPage() {
+    const stack = new StackLayout();
+    const label = new Label();
+    label.text = "Hello, worlddddd!";
+    stack.addChild(label);
+
+    const page = new Page();
+    // Each page can have a single root view set via the content property
+    page.content = stack;
+    return page;
+}
+exports.createPage = createPage;
+
 //import { DrawerTransitionBase, RadSideDrawer, SlideInOnTopTransition } from "nativescript-ui-sidedrawer";
 Vue.registerElement(
   "RadSideDrawer",

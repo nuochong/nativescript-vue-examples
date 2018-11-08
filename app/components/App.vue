@@ -1,5 +1,5 @@
 <template>
-  <Page>
+  <Page loaded="pageLoaded" ref="page">
     <ActionBar class="action-bar" title="Welcome to NativeScript-Vue!">
       <ActionItem @tap="onTapEdit" v-show="!isEditing" ios.systemIcon="2" ios.position="right" android.systemIcon="ic_menu_edit" />
       <ActionItem @tap="onTapSave" v-show="isEditing" ios.systemIcon="3" ios.position="right" android.systemIcon="ic_menu_save" />
@@ -15,8 +15,17 @@
         <Button class="btn btn-primary" text="Fab" @tap="onFab" />
         <Button class="btn btn-primary" text="ToDo" @tap="onTodo" />
         <Button class="btn btn-primary" text="Drawer" @tap="onDrawer" />
+        <Label text="111" class="icon" />
       </StackLayout>
       <!--</GridLayout>-->
+
+      <ListView for="item in glyphs">
+        <v-template>
+          <!-- Shows the list item label in the default color and style. -->
+          <Label :text="item.icon" class="icon"/>
+        </v-template>
+      </ListView>
+
     </ScrollView>
   </Page>
 </template>
@@ -28,13 +37,36 @@ import Input from "./Input";
 import Fab from "./Fab";
 import Todo from "./todo/todo";
 import Drawer from "./drawer";
+var observable = require("tns-core-modules/data/observable");
 export default {
   data() {
     return {
-      msg: "Hello World!"
+      msg: "Hello World!",
+      glyphs: [],
     };
   },
+  mounted() {
+    this.pageLoaded();
+  },
   methods: {
+    pageLoaded: function(args) {
+      //ar page = args.object;
+      var page = this.$refs.page.nativeView;
+      var viewModel = new observable.Observable();
+      var glyphs = new Array();
+      var charCode = 0xe900;
+      for (; charCode <= 0xe902; charCode++) {
+        var glyph = new observable.Observable();
+        glyph.set("icon", String.fromCharCode(charCode));
+        glyph.set("code", charCode.toString(16));
+        glyphs.push(glyph);
+        console.log("666666666666");
+      }
+      this.glyphs = glyphs;
+      //viewModel.set("glyphs", glyphs);
+
+      page.bindingContext = viewModel;
+    },
     onDrawer: function() {
       this.$navigateTo(Drawer);
     },
@@ -94,6 +126,23 @@ export default {
     }
   }
 };
+console.log("xxxxxxxxx");
+function pageLoaded(args) {
+  console.log("666666666666");
+  var page = args.object;
+  var viewModel = new observable.Observable();
+  var glyphs = new Array();
+  var charCode = 0xe900;
+  for (; charCode <= 0xe902; charCode++) {
+    var glyph = new observable.Observable();
+    glyph.set("icon", String.fromCharCode(charCode));
+    glyph.set("code", charCode.toString(16));
+    glyphs.push(glyph);
+  }
+  viewModel.set("glyphs", glyphs);
+  page.bindingContext = viewModel;
+}
+exports.pageLoaded = pageLoaded;
 </script>
 
 <style scoped>
@@ -106,5 +155,9 @@ ActionBar {
   text-align: center;
   font-size: 20;
   color: #333333;
+}
+.icon {
+  font-family: "icomoon";
+  font-size: 48;
 }
 </style>
