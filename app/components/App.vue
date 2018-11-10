@@ -57,10 +57,11 @@ export default {
       var charCode = 0xe900;
       for (; charCode <= 0xe902; charCode++) {
         var glyph = new observable.Observable();
+        //console.log("666666666666",glyph);
         glyph.set("icon", String.fromCharCode(charCode));
         glyph.set("code", charCode.toString(16));
         glyphs.push(glyph);
-        console.log("666666666666");
+        
       }
       this.glyphs = glyphs;
       //viewModel.set("glyphs", glyphs);
