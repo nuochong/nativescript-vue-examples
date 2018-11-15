@@ -34,12 +34,13 @@ export default {
       var page = this.$refs.page.nativeView;
       var viewModel = new observable.Observable();
       var glyphs = new Array();
-      var charCode = 0xe900;
-      for (; charCode <= 0xe902; charCode++) {
+      var charCode = 0xeb61;
+      for (; charCode <= 0xeb69; charCode++) {
         var glyph = new observable.Observable();
-        console.log("666666666666",glyph);
+        
         glyph.set("icon", String.fromCharCode(charCode));
         glyph.set("code", charCode.toString(16));
+        console.log("666666666666",glyph);
         glyphs.push(glyph);
       }
       this.glyphs = glyphs;
@@ -64,8 +65,12 @@ ActionBar {
   font-size: 20;
   color: #333333;
 }
-.icon {
+/* .icon {
   font-family: "icomoon";
+  font-size: 48;
+} */
+.icon {
+  font-family: "iconfont";
   font-size: 48;
 }
 </style>
