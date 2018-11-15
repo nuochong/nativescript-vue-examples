@@ -1,0 +1,71 @@
+<template>
+    <Page loaded="pageLoaded" ref="page">
+        <ActionBar class="action-bar" title="Hello">
+            <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" @tap="$navigateBack" />
+        </ActionBar>
+        <GridLayout colums="*" rows="*">
+            <Label class="message" :text="msg" col="0" row="0" />
+            <Button text="Button" @tap="onButton" />
+        </GridLayout>
+        <ListView for="item in glyphs">
+            <v-template>
+                <!-- Shows the list item label in the default color and style. -->
+                <Label :text="item.icon" class="icon" />
+            </v-template>
+        </ListView>
+    </Page>
+</template>
+
+<script>
+var observable = require("tns-core-modules/data/observable");
+export default {
+  data() {
+    return {
+      msg: "Hello World! ",
+      glyphs: []
+    };
+  },
+  mounted() {
+    this.pageLoaded();
+  },
+  methods: {
+    pageLoaded: function(args) {
+      //ar page = args.object;
+      var page = this.$refs.page.nativeView;
+      var viewModel = new observable.Observable();
+      var glyphs = new Array();
+      var charCode = 0xe900;
+      for (; charCode <= 0xe902; charCode++) {
+        var glyph = new observable.Observable();
+        console.log("666666666666",glyph);
+        glyph.set("icon", String.fromCharCode(charCode));
+        glyph.set("code", charCode.toString(16));
+        glyphs.push(glyph);
+      }
+      this.glyphs = glyphs;
+      //viewModel.set("glyphs", glyphs);
+
+      page.bindingContext = viewModel;
+    },
+    onButton: function() {}
+  }
+};
+</script>
+
+<style scoped>
+ActionBar {
+  background-color: #53ba82;
+  color: #ffffff;
+}
+
+.message {
+  vertical-align: center;
+  text-align: center;
+  font-size: 20;
+  color: #333333;
+}
+.icon {
+  font-family: "icomoon";
+  font-size: 48;
+}
+</style>
