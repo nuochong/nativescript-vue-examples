@@ -30,23 +30,27 @@ export default {
   },
   methods: {
     pageLoaded: function(args) {
-      //ar page = args.object;
-      var page = this.$refs.page.nativeView;
-      var viewModel = new observable.Observable();
-      var glyphs = new Array();
-      var charCode = 0xeb61;
-      for (; charCode <= 0xeb69; charCode++) {
-        var glyph = new observable.Observable();
+      //var page = args.object;
+        var page = this.$refs.page.nativeView;
+    //   var viewModel = new observable.Observable();
+    //   var glyphs = new Array();
+    //   var charCode = 0xeb61;
+    //   for (; charCode <= 0xeb69; charCode++) {
+    //     var glyph = new observable.Observable();
         
-        glyph.set("icon", String.fromCharCode(charCode));
-        glyph.set("code", charCode.toString(16));
-        console.log("666666666666",glyph);
-        glyphs.push(glyph);
-      }
-      this.glyphs = glyphs;
-      //viewModel.set("glyphs", glyphs);
+    //     glyph.set("icon", String.fromCharCode(charCode));
+    //     glyph.set("code", charCode.toString(16));
+    //     console.log("666666666666",glyph);
+    //     glyphs.push(glyph);
+    //   }
+    //   this.glyphs = glyphs;
+    //   viewModel.set("glyphs", glyphs);
+    //   console.log('xxxxxx',typeof(viewModel));
 
-      page.bindingContext = viewModel;
+    //   page.bindingContext = viewModel;
+    console.log('xxxxx',this.$icon);
+    this.glyphs = this.$icon.glyphs;
+   page.bindingContext = this.$icon;
     },
     onButton: function() {}
   }

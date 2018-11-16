@@ -2,6 +2,7 @@ import Vue from "nativescript-vue";
 import App from "./components/App";
 //import router from './router';
 import store from "./store";
+import { prototype } from "stream";
 //import VueDevtools from 'nativescript-vue-devtools'
 
 const application = require("tns-core-modules/application");
@@ -108,6 +109,24 @@ Vue.registerElement(
   "RadSideDrawer",
   () => require("nativescript-ui-sidedrawer").RadSideDrawer
 );
+
+var observable = require("tns-core-modules/data/observable");
+      //var page = this.$refs.page.nativeView;
+      var viewModel = new observable.Observable();
+      var glyphs = new Array();
+      var charCode = 0xeb61;
+      for (; charCode <= 0xeb69; charCode++) {
+        var glyph = new observable.Observable();
+        
+        glyph.set("icon", String.fromCharCode(charCode));
+        glyph.set("code", charCode.toString(16));
+        console.log("666666666666",glyph);
+        glyphs.push(glyph);
+      }
+      glyphs = glyphs;
+      viewModel.set("glyphs", glyphs);
+
+      Vue.prototype.$icon = viewModel;
 new Vue({
   //router,
   render: h => h("frame", [h(App)]),
