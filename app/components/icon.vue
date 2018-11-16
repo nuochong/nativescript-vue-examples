@@ -7,7 +7,7 @@
             <Label class="message" :text="msg" col="0" row="0" />
             <Button text="Button" @tap="onButton" />
         </GridLayout>
-        <ListView for="item in glyphs">
+        <ListView for="item in this.$icon.glyphs">
             <v-template>
                 <!-- Shows the list item label in the default color and style. -->
                 <Label :text="item.icon" class="icon" />
@@ -50,7 +50,7 @@ export default {
     //   page.bindingContext = viewModel;
     console.log('xxxxx',this.$icon);
     this.glyphs = this.$icon.glyphs;
-   page.bindingContext = this.$icon;
+   //page.bindingContext = this.$icon;
     },
     onButton: function() {}
   }
