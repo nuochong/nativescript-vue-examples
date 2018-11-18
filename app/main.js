@@ -113,29 +113,38 @@ Vue.registerElement(
 var observable = require("tns-core-modules/data/observable");
       //var page = this.$refs.page.nativeView;
       var viewModel = new observable.Observable();
-      var glyphs = new Array();
+      //var glyphs = new Array();
+      var glyphs = new observable.Observable();
       var charCode = 0xeb61;
       for (; charCode <= 0xeb69; charCode++) {
-        var glyph = new observable.Observable();
+        // var glyph = new observable.Observable();
         
-        glyph.set("icon", String.fromCharCode(charCode));
-        glyph.set("code", charCode.toString(16));
-        console.log("666666666666",glyph);
-        glyphs.push(glyph);
+        // // glyph.set("icon", String.fromCharCode(charCode));
+        // // glyph.set("code", charCode.toString(16));
+
+
+        // glyph.set(charCode.toString(16), String.fromCharCode(charCode));
+        // console.log("666666666666",glyph);
+        // glyphs.push(glyph);
+        viewModel.set(charCode.toString(16), String.fromCharCode(charCode));
       }
       var charCodes = 0xe900;
       for (; charCodes <= 0xe902; charCodes++) {
-        var glyph = new observable.Observable();
+        // var glyph = new observable.Observable();
         
-        glyph.set("icon", String.fromCharCode(charCodes));
-        glyph.set("code", charCodes.toString(16));
-        console.log("666666666666",glyph);
-        glyphs.push(glyph);
+        // // glyph.set("icon", String.fromCharCode(charCodes));
+        // // glyph.set("code", charCodes.toString(16));
+        // glyph.set(charCode.toString(16), String.fromCharCode(charCodes));
+        // console.log("666666666666",glyph);
+        // glyphs.push(glyph);
+
+        viewModel.set(charCodes.toString(16), String.fromCharCode(charCodes));
       }
-      glyphs = glyphs;
-      viewModel.set("glyphs", glyphs);
+      //glyphs = glyphs;
+      //viewModel.set("glyphs", glyphs);
 
       Vue.prototype.$icon = viewModel;
+      console.log('7777777',viewModel);
 new Vue({
   //router,
   render: h => h("frame", [h(App)]),

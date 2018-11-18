@@ -5,14 +5,22 @@
         </ActionBar>
         <GridLayout colums="*" rows="*">
             <Label class="message" :text="msg" col="0" row="0" />
-            <Button text="Button" @tap="onButton" />
+            <!-- <Button text="Button" @tap="onButton" /> -->
+                    11111
+            <!-- <Label :text="this.$icon.glyphs[0].icon" class="icon" />
+            <Label :text="this.$icon.glyphs[11].icon" class="icons" /> -->
+            <!-- <Label :text="this.$icon.glyphs[0].eb61" class="icon" />
+            <Label :text="this.$icon.glyphs[11].eb6a" class="icons" /> -->
+            <Label :text="this.$icon.eb61" class="icon" />
+            <Label :text="this.$icon.e902" class="icons" />
         </GridLayout>
-        <ListView for="item in this.$icon.glyphs">
+        <!-- <ListView for="item in this.$icon.glyphs">
             <v-template>
-                <!-- Shows the list item label in the default color and style. -->
+                
                 <Label :text="item.icon" class="icon" />
             </v-template>
-        </ListView>
+        </ListView> -->
+
     </Page>
 </template>
 
@@ -74,7 +82,7 @@ ActionBar {
   font-size: 48;
 }
 .icon {
-  font-family: icomoon,iconfont;
+  font-family: iconfont;
   font-size: 48;
 }
 </style>
