@@ -69,12 +69,12 @@ ActionBar {
   font-size: 20;
   color: #333333;
 }
-/* .icon {
+.icons {
   font-family: "icomoon";
   font-size: 48;
-} */
+}
 .icon {
-  font-family: "iconfont";
+  font-family: icomoon,iconfont;
   font-size: 48;
 }
 </style>

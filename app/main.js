@@ -123,6 +123,15 @@ var observable = require("tns-core-modules/data/observable");
         console.log("666666666666",glyph);
         glyphs.push(glyph);
       }
+      var charCodes = 0xe900;
+      for (; charCodes <= 0xe902; charCodes++) {
+        var glyph = new observable.Observable();
+        
+        glyph.set("icon", String.fromCharCode(charCodes));
+        glyph.set("code", charCodes.toString(16));
+        console.log("666666666666",glyph);
+        glyphs.push(glyph);
+      }
       glyphs = glyphs;
       viewModel.set("glyphs", glyphs);
 

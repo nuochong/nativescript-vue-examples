@@ -1,5 +1,5 @@
 <template>
-  <Page loaded="pageLoaded">
+  <Page>
     <ActionBar class="action-bar" title="Welcome to NativeScript-Vue!">
       <ActionItem @tap="onTapEdit" v-show="!isEditing" ios.systemIcon="2" ios.position="right" android.systemIcon="ic_menu_edit" />
       <ActionItem @tap="onTapSave" v-show="isEditing" ios.systemIcon="3" ios.position="right" android.systemIcon="ic_menu_save" />
@@ -36,7 +36,6 @@ export default {
   data() {
     return {
       msg: "Hello World!",
-      glyphs: []
     };
   },
   mounted() {
@@ -116,9 +115,5 @@ ActionBar {
   text-align: center;
   font-size: 20;
   color: #333333;
-}
-.icon {
-  font-family: "icomoon";
-  font-size: 48;
 }
 </style>
