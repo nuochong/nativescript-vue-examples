@@ -16,6 +16,7 @@
         <Button class="btn btn-primary" text="ToDo" @tap="onTodo" />
         <Button class="btn btn-primary" text="Drawer" @tap="onDrawer" />
         <Button class="btn btn-primary" text="Icon" @tap="onIcon" />
+        <Button class="btn btn-primary" text="mask" @tap="onMask" />
       </StackLayout>
       <!--</GridLayout>-->
 
@@ -31,6 +32,7 @@ import Fab from "./Fab";
 import Todo from "./todo/todo";
 import Drawer from "./drawer";
 import Icon from "./icon";
+import Mask from "./mask";
 
 export default {
   data() {
@@ -100,6 +102,10 @@ export default {
     },
     onIcon: function() {
       this.$navigateTo(Icon);
+    },
+    onMask:function(){
+      console.log('遮罩层');
+      this.$navigateTo(Mask);
     }
   }
 };
