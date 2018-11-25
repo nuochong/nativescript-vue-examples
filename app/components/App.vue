@@ -17,9 +17,11 @@
         <Button class="btn btn-primary" text="Drawer" @tap="onDrawer" />
         <Button class="btn btn-primary" text="Icon" @tap="onIcon" />
         <Button class="btn btn-primary" text="mask" @tap="onMask" />
-        <Button text="Open Modal" @tap="showModal" class="btn btn-primary m-t-20" />
+        <Button class="btn btn-primary m-t-20" text="Open Modal" @tap="showModal" />
+        <Button class="btn btn-primary m-t-20" text="drawer" @tap="onDrawers" />
       </StackLayout>
-      <!--</GridLayout>-->
+
+      <!-- </GridLayout> -->
 
     </ScrollView>
   </Page>
@@ -35,6 +37,7 @@ import Drawer from "./drawer";
 import Icon from "./icon";
 import Mask from "./mask";
 import ModalComponent from "./customModel/ModalComponent";
+import Drawers from "./MultiDrawer/drawer";
 
 export default {
   data() {
@@ -109,8 +112,11 @@ export default {
       this.$navigateTo(Mask);
     },
     showModal() {
-      console.dir('xxxxxx',this);
+      console.dir("xxxxxx", this);
       this.$showModal(ModalComponent);
+    },
+    onDrawers() {
+      this.$navigateTo(Drawers);
     }
   }
 };

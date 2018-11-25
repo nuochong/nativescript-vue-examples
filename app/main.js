@@ -85,22 +85,22 @@ appShortcuts.available().then(function(available) {
 //   }
 // );
 
-
 //在代码中创建一个页面
 const Page = require("tns-core-modules/ui/page").Page;
 const Label = require("tns-core-modules/ui/label").Label;
-const StackLayout = require("tns-core-modules/ui/layouts/stack-layout").StackLayout;
+const StackLayout = require("tns-core-modules/ui/layouts/stack-layout")
+  .StackLayout;
 
 function createPage() {
-    const stack = new StackLayout();
-    const label = new Label();
-    label.text = "Hello, worlddddd!";
-    stack.addChild(label);
+  const stack = new StackLayout();
+  const label = new Label();
+  label.text = "Hello, worlddddd!";
+  stack.addChild(label);
 
-    const page = new Page();
-    // Each page can have a single root view set via the content property
-    page.content = stack;
-    return page;
+  const page = new Page();
+  // Each page can have a single root view set via the content property
+  page.content = stack;
+  return page;
 }
 exports.createPage = createPage;
 
@@ -111,40 +111,48 @@ Vue.registerElement(
 );
 
 var observable = require("tns-core-modules/data/observable");
-      //var page = this.$refs.page.nativeView;
-      var viewModel = new observable.Observable();
-      //var glyphs = new Array();
-      var glyphs = new observable.Observable();
-      var charCode = 0xeb61;
-      for (; charCode <= 0xeb69; charCode++) {
-        // var glyph = new observable.Observable();
-        
-        // // glyph.set("icon", String.fromCharCode(charCode));
-        // // glyph.set("code", charCode.toString(16));
+//var page = this.$refs.page.nativeView;
+var viewModel = new observable.Observable();
+//var glyphs = new Array();
+var glyphs = new observable.Observable();
+var charCode = 0xeb61;
+for (; charCode <= 0xeb69; charCode++) {
+  // var glyph = new observable.Observable();
+
+  // // glyph.set("icon", String.fromCharCode(charCode));
+  // // glyph.set("code", charCode.toString(16));
+
+  // glyph.set(charCode.toString(16), String.fromCharCode(charCode));
+  // console.log("666666666666",glyph);
+  // glyphs.push(glyph);
+  viewModel.set(charCode.toString(16), String.fromCharCode(charCode));
+}
+var charCodes = 0xe900;
+for (; charCodes <= 0xe902; charCodes++) {
+  // var glyph = new observable.Observable();
+
+  // // glyph.set("icon", String.fromCharCode(charCodes));
+  // // glyph.set("code", charCodes.toString(16));
+  // glyph.set(charCode.toString(16), String.fromCharCode(charCodes));
+  // console.log("666666666666",glyph);
+  // glyphs.push(glyph);
+
+  viewModel.set(charCodes.toString(16), String.fromCharCode(charCodes));
+}
+//glyphs = glyphs;
+//viewModel.set("glyphs", glyphs);
+
+Vue.prototype.$icon = viewModel;
+console.log("7777777", viewModel);
 
 
-        // glyph.set(charCode.toString(16), String.fromCharCode(charCode));
-        // console.log("666666666666",glyph);
-        // glyphs.push(glyph);
-        viewModel.set(charCode.toString(16), String.fromCharCode(charCode));
-      }
-      var charCodes = 0xe900;
-      for (; charCodes <= 0xe902; charCodes++) {
-        // var glyph = new observable.Observable();
-        
-        // // glyph.set("icon", String.fromCharCode(charCodes));
-        // // glyph.set("code", charCodes.toString(16));
-        // glyph.set(charCode.toString(16), String.fromCharCode(charCodes));
-        // console.log("666666666666",glyph);
-        // glyphs.push(glyph);
+import MultiDrawer from "nativescript-vue-multi-drawer";
+Vue.use(MultiDrawer, { 
+  // override any option here
+  // for example enable debug mode
+  debug: true
+})
 
-        viewModel.set(charCodes.toString(16), String.fromCharCode(charCodes));
-      }
-      //glyphs = glyphs;
-      //viewModel.set("glyphs", glyphs);
-
-      Vue.prototype.$icon = viewModel;
-      console.log('7777777',viewModel);
 new Vue({
   //router,
   render: h => h("frame", [h(App)]),

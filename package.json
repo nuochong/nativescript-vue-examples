@@ -28,6 +28,7 @@
     "nativescript-ui-sidedrawer": "^5.0.0",
     "nativescript-vue": "^2.0.0",
     "nativescript-vue-devtools": "^1.1.0",
+    "nativescript-vue-multi-drawer": "0.0.2",
     "tns-core-modules": "^5.0.2",
     "vuex": "^3.0.1"
   },
