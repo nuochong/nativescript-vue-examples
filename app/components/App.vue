@@ -17,6 +17,7 @@
         <Button class="btn btn-primary" text="Drawer" @tap="onDrawer" />
         <Button class="btn btn-primary" text="Icon" @tap="onIcon" />
         <Button class="btn btn-primary" text="mask" @tap="onMask" />
+        <Button text="Open Modal" @tap="showModal" class="btn btn-primary m-t-20" />
       </StackLayout>
       <!--</GridLayout>-->
 
@@ -33,15 +34,15 @@ import Todo from "./todo/todo";
 import Drawer from "./drawer";
 import Icon from "./icon";
 import Mask from "./mask";
+import ModalComponent from "./customModel/ModalComponent";
 
 export default {
   data() {
     return {
-      msg: "Hello World!",
+      msg: "Hello World!"
     };
   },
-  mounted() {
-  },
+  mounted() {},
   methods: {
     onDrawer: function() {
       this.$navigateTo(Drawer);
@@ -103,9 +104,13 @@ export default {
     onIcon: function() {
       this.$navigateTo(Icon);
     },
-    onMask:function(){
-      console.log('遮罩层');
+    onMask: function() {
+      console.log("遮罩层");
       this.$navigateTo(Mask);
+    },
+    showModal() {
+      console.dir('xxxxxx',this);
+      this.$showModal(ModalComponent);
     }
   }
 };
