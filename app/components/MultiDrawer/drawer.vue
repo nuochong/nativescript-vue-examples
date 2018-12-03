@@ -5,7 +5,7 @@
         </ActionBar>
         <GridLayout colums="*" rows="*">
             <MultiDrawer>
-                <StackLayout slot="left">
+                <!-- <StackLayout slot="left">
                     <Label text="Im in the left drawer" />
                 </StackLayout>
                 <StackLayout slot="right">
@@ -16,7 +16,7 @@
                 </StackLayout>
                 <StackLayout slot="bottom">
                     <Label text="Im in the bottom drawer" />
-                </StackLayout>
+                </StackLayout> -->
 
                 <Frame />
             </MultiDrawer>
