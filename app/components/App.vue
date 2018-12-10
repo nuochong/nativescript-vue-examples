@@ -19,6 +19,7 @@
         <Button class="btn btn-primary" text="mask" @tap="onMask" />
         <Button class="btn btn-primary m-t-20" text="Open Modal" @tap="showModal" />
         <Button class="btn btn-primary m-t-20" text="drawer" @tap="onDrawers" />
+        <Button class="btn btn-primary m-t-20" text="iOS NavigationBar with Large Title" @tap="onlargeTitle" />
       </StackLayout>
 
       <!-- </GridLayout> -->
@@ -38,6 +39,7 @@ import Icon from "./icon";
 import Mask from "./mask";
 import ModalComponent from "./customModel/ModalComponent";
 import Drawers from "./MultiDrawer/drawer";
+import LargeTitle from "./largeTitle/largeTitle";
 
 export default {
   data() {
@@ -117,6 +119,9 @@ export default {
     },
     onDrawers() {
       this.$navigateTo(Drawers);
+    },
+    onlargeTitle(){
+      this.$navigateTo(LargeTitle);
     }
   }
 };
