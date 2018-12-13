@@ -9,8 +9,8 @@
       <!--<GridLayout colums="*" rows="*">-->
       <StackLayout>
         <Label class="message" :text="msg" col="0" row="0" />
-        <Button class="btn btn-primary" text="Button" @tap="onButtonTap" />
-        <Button class="btn btn-primary" text="Base Function" @tap="onButtonBase" />
+        <Button class="btn btn-primary" text="路由跳转" @tap="onButtonTap" />
+        <Button class="btn btn-primary" text=" 基础示例" @tap="onButtonBase" />
         <Button class="btn btn-primary" text="input" @tap="onInput" />
         <Button class="btn btn-primary" text="Fab" @tap="onFab" />
         <Button class="btn btn-primary" text="ToDo" @tap="onTodo" />
