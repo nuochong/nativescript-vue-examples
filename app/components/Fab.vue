@@ -9,14 +9,14 @@
             </ListView>
             <StackLayout left="0" top="0" height="100%" width="100%" class="backdrop" :class="classBackdrop" />
 
-            <!-- <AbsoluteLayout ref="fabItemPosition" marginTop="87%" marginLeft="80%">
+            <AbsoluteLayout ref="fabItemPosition" marginTop="87%" marginLeft="80%">
                 <GridLayout ref="fabItemContainer" left="8" top="8">
                     <FabItem row="1" :class="classItem1" color="#E94E77" title="E" />
                     <FabItem row="1" :class="classItem2" color="#3FB8AF" title="U" />
                     <FabItem row="1" :class="classItem3" color="#FCB653" title="V" />
                 </GridLayout>
                 <FabButton @onButtonTap="onButtonTap" :isActive="isActive" />
-            </AbsoluteLayout> -->
+            </AbsoluteLayout>
         </AbsoluteLayout>
     </Page>
 </template>

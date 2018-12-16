@@ -2,12 +2,13 @@
   <Page class="page" navigatingTo="onNavigatingTo">
     <FlexboxLayout class="page page-login" backgroundImage="res://mesh">
         <StackLayout class="flexbox-item company-name-container">
-            <Label class="t-30 company-name" text="Your Company Name"></Label>
+            <Label class="t-30 company-name" text="你的公司名称【Your Company Name】"></Label>
         </StackLayout>
         <Image src="res://company_logo" stretch="none" class="company-logo" />
         <StackLayout class="flexbox-item">
+            <Label class="t-18 login-text" text="登录您的组织帐户"></Label>
             <Label class="t-18 login-text" text="Log in with your organizational account"></Label>
-            <Button class="btn btn-login btn-rounded-sm font-weight-bold t-18" @tap="login" text="Log in"></Button>        
+            <Button class="btn btn-login btn-rounded-sm font-weight-bold t-18" @tap="login" text="登录【Log in】"></Button>        
         </StackLayout>
     </FlexboxLayout>
   </Page>

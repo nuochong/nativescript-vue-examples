@@ -3,26 +3,26 @@
     <ActionBar class="action-bar" title="Home"/>
     <ScrollView>
       <StackLayout>
-        <Button class="btn btn-primary" @tap="counter">Counter</Button>
-        <Button class="btn btn-primary" @tap="hello">Hello World</Button>
-        <Button class="btn btn-primary" @tap="login">LOgin</Button>
+        <Button class="btn btn-primary" @tap="counter">计数器【Counter】</Button>
+        <Button class="btn btn-primary" @tap="hello">Vuex及相机</Button>
+        <Button class="btn btn-primary" @tap="login">模拟登录【login】</Button>
 
-        <Button class="btn btn-primary" @tap="btnToast">Toast</Button>
-        <Button class="btn btn-primary" @tap="btnAlert">Alert</Button>
-        <Button class="btn btn-primary" @tap="info">Info</Button>
+        <Button class="btn btn-primary" @tap="btnToast">提示【Toast】</Button>
+        <Button class="btn btn-primary" @tap="btnAlert">精美提示框【Alert】</Button>
+        <Button class="btn btn-primary" @tap="info">消息通知【Info】</Button>
 
-        <Button class="btn btn-primary" @tap="btnDialog">Dialog </Button>
+        <Button class="btn btn-primary" @tap="btnDialog">对话框【Dialog】 </Button>
 
-        <Button class="btn btn-primary" @tap="btnPlatformModule">PlatformModule</Button>
+        <Button class="btn btn-primary" @tap="btnPlatformModule">平台型号【PlatformModule】</Button>
 
-        <Button class="btn btn-primary" @tap="btnPhone">Phone</Button>
-        <Button class="btn btn-primary" @tap="btnSms">Sms</Button>
+        <Button class="btn btn-primary" @tap="btnPhone">电话【Phone】</Button>
+        <Button class="btn btn-primary" @tap="btnSms">短信【Sms】</Button>
 
         <Button class="btn btn-primary" @tap="btnGeolocation">定位</Button>
         <Button class="btn btn-primary" @tap="btnPermissions">获取权限1</Button>
 
         <Button class="btn btn-primary" @tap="btnPlatformModule">获取设备信息</Button>
-        <Button class="btn btn-primary btn-green" @tap="btnChange" ref="btn">Change Btn</Button>
+        <Button class="btn btn-primary btn-green" @tap="btnChange" ref="btn">改变按钮【Change Btn】</Button>
 
       </StackLayout>
     </ScrollView>
@@ -96,16 +96,16 @@ export default {
     },
     btnToast: function() {
       console.log("111");
-      let toast = Toast.makeText("Hello World", "long");
+      let toast = Toast.makeText("你好世界【Hello World】", "long");
       toast.show();
     },
     btnAlert: function() {
       console.log("xxx");
       //TNSFancyAlert.showSuccess('Success!', 'Fancy alerts are nice.', 'Yes they are!');
       TNSFancyAlert.showSuccess(
-        "Success!",
-        "Fancy alerts are nice.",
-        "Yes they are!"
+        "成功！Success!",
+        "花哨的提醒很不错。【Fancy alerts are nice.】",
+        "是的【Yes they are!】"
       ).then(() => {
         /* user pressed the button */
       });
@@ -193,7 +193,7 @@ export default {
     },
     btnSms: function() {
       phone
-        .sms("212-555-1234", "My Message") //New Method for single number is phone.sms(["212-555-1234"],"My Message")
+        .sms("212-555-1234", "我的消息【My Message】") //New Method for single number is phone.sms(["212-555-1234"],"My Message")
         .then(
           function(args) {
             /// args.reponse: "success", "cancelled", "failed"

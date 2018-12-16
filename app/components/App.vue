@@ -11,8 +11,8 @@
         <Label class="message" :text="msg" col="0" row="0" />
         <Button class="btn btn-primary" text="路由跳转" @tap="onButtonTap" />
         <Button class="btn btn-primary" text=" 基础示例" @tap="onButtonBase" />
-        <Button class="btn btn-primary" text="input" @tap="onInput" />
-        <Button class="btn btn-primary" text="Fab" @tap="onFab" />
+        <Button class="btn btn-primary" text="本地存储示例" @tap="onInput" />
+        <Button class="btn btn-primary" text="记事薄【Fab】" @tap="onFab" />
         <Button class="btn btn-primary" text="ToDo" @tap="onTodo" />
         <Button class="btn btn-primary" text="Drawer" @tap="onDrawer" />
         <Button class="btn btn-primary" text="Icon" @tap="onIcon" />
