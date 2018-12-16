@@ -1,6 +1,6 @@
 <template>
     <Page>
-        <ActionBar class="action-bar" title="world">
+        <ActionBar class="action-bar" title="Hello">
         <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" @tap="$navigateBack"/>
         </ActionBar>
         <GridLayout colums="*" rows="*">
@@ -11,18 +11,19 @@
 </template>
 
 <script>
-import app from './App';
+import app from '../App';
+import world from '../example/world';
   export default {
     data() {
       return {
-        msg: 'Hello World!'
+        msg: 'Hello World! '
       }
     },
     methods:{
-        onButtonTap:function(){
-            console.log('xxxxx');
-            this.$navigateTo(app);
-        },
+        onButton:function(){
+            console.log('000');
+            this.$navigateTo(world);
+        }
     }
   }
 </script>

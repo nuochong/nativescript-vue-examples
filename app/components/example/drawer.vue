@@ -62,8 +62,8 @@
 </template>
 
 <script>
-import app from "./App";
-import world from "./world";
+import app from "../App";
+import world from "../example/world";
 export default {
   data() {
     return {

@@ -13,13 +13,13 @@
         <Button class="btn btn-primary" text=" 基础示例" @tap="onButtonBase" />
         <Button class="btn btn-primary" text="本地存储示例" @tap="onInput" />
         <Button class="btn btn-primary" text="记事薄【Fab】" @tap="onFab" />
-        <Button class="btn btn-primary" text="ToDo" @tap="onTodo" />
-        <Button class="btn btn-primary" text="Drawer" @tap="onDrawer" />
-        <Button class="btn btn-primary" text="Icon" @tap="onIcon" />
-        <Button class="btn btn-primary" text="mask" @tap="onMask" />
-        <Button class="btn btn-primary m-t-20" text="Open Modal" @tap="showModal" />
-        <Button class="btn btn-primary m-t-20" text="drawer" @tap="onDrawers" />
-        <Button class="btn btn-primary m-t-20" text="iOS NavigationBar with Large Title" @tap="onlargeTitle" />
+        <Button class="btn btn-primary" text="备忘录【ToDo】" @tap="onTodo" />
+        <Button class="btn btn-primary" text="侧滑菜单【Drawer】" @tap="onDrawer" />
+        <Button class="btn btn-primary" text="图标【Icon】" @tap="onIcon" />
+        <Button class="btn btn-primary" text="遮罩层【mask】" @tap="onMask" />
+        <Button class="btn btn-primary m-t-20" text="模态对话框【Open Modal】" @tap="showModal" />
+        <Button class="btn btn-primary m-t-20" text="侧滑组件新【drawer】" @tap="onDrawers" />
+        <Button class="btn btn-primary m-t-20" text="带有大标题的iOS导航栏【iOS NavigationBar with Large Title】" @tap="onlargeTitle" />
       </StackLayout>
 
       <!-- </GridLayout> -->
@@ -29,17 +29,17 @@
 </template>
 
 <script>
-import HelloWorld from "./hello";
-import Home from "./base/Home";
-import Input from "./Input";
-import Fab from "./Fab";
-import Todo from "./todo/todo";
-import Drawer from "./drawer";
-import Icon from "./icon";
-import Mask from "./mask";
-import ModalComponent from "./customModel/ModalComponent";
-import Drawers from "./MultiDrawer/drawer";
-import LargeTitle from "./largeTitle/largeTitle";
+import HelloWorld from "./example/hello";
+import Home from "./example/base/Home";
+import Input from "./example/Input";
+import Fab from "./example/Fab";
+import Todo from "./example/todo/todo";
+import Drawer from "./example/drawer";
+import Icon from "./example/icon";
+import Mask from "./example/mask";
+import ModalComponent from "./example/customModel/ModalComponent";
+import Drawers from "./example/MultiDrawer/drawer";
+import LargeTitle from "./example/largeTitle/largeTitle";
 
 export default {
   data() {

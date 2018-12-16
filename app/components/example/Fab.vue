@@ -22,8 +22,8 @@
 </template>
 
 <script>
-    import FabButton from './FabButton'
-    import FabItem from './FabItem'
+    import FabButton from '../example/FabButton'
+    import FabItem from '../example/FabItem'
 
     const app = require('tns-core-modules/application')
     const platform = require('tns-core-modules/platform')
