@@ -9,19 +9,9 @@
       <!--<GridLayout colums="*" rows="*">-->
       <StackLayout>
         <Label class="message" :text="msg" col="0" row="0" />
-        <Button class="btn btn-primary" text="路由跳转" @tap="onButtonTap" />
-        <Button class="btn btn-primary" text=" 基础示例" @tap="onButtonBase" />
-        <Button class="btn btn-primary" text="本地存储示例" @tap="onInput" />
-        <Button class="btn btn-primary" text="记事薄【Fab】" @tap="onFab" />
-        <Button class="btn btn-primary" text="备忘录【ToDo】" @tap="onTodo" />
-        <Button class="btn btn-primary" text="侧滑菜单【Drawer】" @tap="onDrawer" />
-        <Button class="btn btn-primary" text="图标【Icon】" @tap="onIcon" />
-        <Button class="btn btn-primary" text="遮罩层【mask】" @tap="onMask" />
-        <Button class="btn btn-primary m-t-20" text="模态对话框【Open Modal】" @tap="showModal" />
-        <Button class="btn btn-primary m-t-20" text="侧滑组件新【drawer】" @tap="onDrawers" />
-        <Button class="btn btn-primary m-t-20" text="带有大标题的iOS导航栏【iOS NavigationBar with Large Title】" @tap="onlargeTitle" />
+        <Button class="btn btn-primary" text="示例" @tap="example" />
+        <Button class="btn btn-primary" text="应用" @tap="project" />
       </StackLayout>
-
       <!-- </GridLayout> -->
 
     </ScrollView>
@@ -29,17 +19,8 @@
 </template>
 
 <script>
-import HelloWorld from "./example/hello";
-import Home from "./example/base/Home";
-import Input from "./example/Input";
-import Fab from "./example/Fab";
-import Todo from "./example/todo/todo";
-import Drawer from "./example/drawer";
-import Icon from "./example/icon";
-import Mask from "./example/mask";
-import ModalComponent from "./example/customModel/ModalComponent";
-import Drawers from "./example/MultiDrawer/drawer";
-import LargeTitle from "./example/largeTitle/largeTitle";
+import example from "./example/Main";
+import project from "./project/Main";
 
 export default {
   data() {
@@ -49,11 +30,12 @@ export default {
   },
   mounted() {},
   methods: {
-    onDrawer: function() {
-      this.$navigateTo(Drawer);
+    example: function() {
+      this.$navigateTo(example);
     },
-    onTapEdit: function() {
-      console.log("xxxx");
+    project: function() {
+      this.$navigateTo(project);
+      console.log("project");
     },
     onButtonTap: function() {
       console.log("xxxxx");
@@ -66,63 +48,6 @@ export default {
         }
       });
     },
-    onButtonBase: function() {
-      this.$navigateTo(Home, {
-        animated: true,
-        transition: {
-          name: "fade",
-          duration: 380,
-          curve: "easeIn"
-        }
-      });
-    },
-    onInput: function() {
-      this.$navigateTo(Input, {
-        animated: true,
-        transition: {
-          name: "fade",
-          duration: 380,
-          curve: "easeIn"
-        }
-      });
-    },
-    onFab: function() {
-      this.$navigateTo(Fab, {
-        animated: true,
-        transition: {
-          name: "fade",
-          duration: 380,
-          curve: "easeIn"
-        }
-      });
-    },
-    onTodo: function() {
-      this.$navigateTo(Todo, {
-        animated: true,
-        transition: {
-          name: "fade",
-          duration: 380,
-          curve: "easeIn"
-        }
-      });
-    },
-    onIcon: function() {
-      this.$navigateTo(Icon);
-    },
-    onMask: function() {
-      console.log("遮罩层");
-      this.$navigateTo(Mask);
-    },
-    showModal() {
-      console.dir("xxxxxx", this);
-      this.$showModal(ModalComponent);
-    },
-    onDrawers() {
-      this.$navigateTo(Drawers);
-    },
-    onlargeTitle(){
-      this.$navigateTo(LargeTitle);
-    }
   }
 };
 </script>
