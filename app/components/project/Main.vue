@@ -1,78 +1,88 @@
 <template>
-    <Page class="page" actionBarHidden="true">
-        <ScrollView>
-            <AbsoluteLayout width="100%" height="100%">
-                <FlexboxLayout width="100%" height="100%" justifyContent="center"
-                    alignItems="center">
-                    <StackLayout id="background" :class="{secondary: isSearching}">
-                    </StackLayout>
-                </FlexboxLayout>
-                <Image src="~/assets/icons/earth.png" opacity="0.25" width="350"
-                    height="350" :marginLeft="(width - 250)" :marginTop="(height - 400)"
-                    id="earth" />
-                <FlexboxLayout flexDirection="column" height="100%" width="100%"
+  <Page class="page">
+      <ScrollView>
+          <AbsoluteLayout width="100%" height="100%">
+            <!-- <ActionBar class="action-bar" title="VUEX及相机">
+            <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" @tap="$navigateBack"/>
+            </ActionBar> -->
+
+            <FlexboxLayout flexDirection="column" height="100%" width="100%"
                     id="app">
-                    <!-- <Header class="header" :secondary="isSearching" /> -->
+
+                <!-- <StackLayout class="hello-world">
+                <Label class="body" textWrap=true text="这是一个hello world组件，如果你挑战，请点击这个按钮"/>
+                <Label class="body" textWrap=true text="This is a hello world component, tap the button if you dare"/>
+
+                <Button class="btn btn-primary" @tap="surprise = !surprise" :text="title"/>
+                <Image v-if="surprise" src="~/assets/images/NativeScript-Vue.png"/>
+                <Button class="btn btn-primary" @tap="test" text="相机!"/>
+                <Image :src="imgsrc" stretch="none" ref="img"/> 
+                </StackLayout>-->
+                <Header class="header"/>
                     <StackLayout class="home-panel" flexGrow="7" id="view">
+                        <!-- <Home/> -->
+                        <Label textWrap="true">
+  <FormattedString>666
+    <Span text="This text has a " />
+    <Span text="red " style="color: red" />
+    <Span text="piece of text. " />
+    <Span text="Also, this bit is italic, " fontStyle="italic" />
+    <Span text="and this bit is bold." fontWeight="bold" />
 
-                        <!-- <Home v-on:togglesearch="toggleSearch" v-if="!isSearching" />
-                        <Searching v-on:togglesearch="toggleSearch" v-else
-                            class="searching" /> -->
-
+  </FormattedString>
+</Label>
+<Label text="www" textWrap="true"> 
+eee
+</Label>
                     </StackLayout>
-                    <Footer class="footer" v-if="!isSearching" />
-                </FlexboxLayout>
-            </AbsoluteLayout>
-        </ScrollView>
-    </Page>
+                <Footer class="footer"/>
+            </FlexboxLayout>
+          </AbsoluteLayout>
+      </ScrollView>
+  </Page>
 </template>
 
 <script>
-    //import Header from "./Header";
+    import Header from "./Header";
     import Footer from "./Footer";
-    //import Home from "./Home";
-    //import Searching from "./Searching";
-    const platform = require("tns-core-modules/platform");
-    const application = require("tns-core-modules/application");
-
-    export default {
-        methods: {
-            toggleSearch() {
-                this.isSearching = !this.isSearching;
-            }
-        },
-
-        data() {
-            return {
-                platform: "",
-                isSearching: false,
-                width: 0,
-                height: 0
-            };
-        },
-
-        mounted() {
-            this.width = platform.screen.mainScreen.widthDIPs;
-            this.height = platform.screen.mainScreen.heightDIPs;
-            if (application.ios) {
-                this.platform = "ios";
-            } else if (application.android) {
-                this.platform = "android";
-            }
-            
-        },
-
-        components: {
-            //Header,
+    import Home from "./Home";
+  export default {
+    data () {
+      return {
+        surprise: false,
+        title: "点击我！【Tap me!】",
+        imgsrc:"res://icon",
+      };
+    },
+            components: {
+            Header,
             Footer,
-            //Home,
+            Home,
             //Searching
-        }
-    };
+        },
+          mounted(){
+
+      },
+      methods: {
+
+      }
+  };
 </script>
 
 <style scoped>
-    .searching {
+.page{
+    margin: 0;
+    padding: 0;
+}
+  .hello-world {
+    margin: 20;
+  }
+
+  Label {
+    color: red;
+  }
+
+      .searching {
         z-index: 100000;
     }
 
