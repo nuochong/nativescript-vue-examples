@@ -9,36 +9,45 @@
 </template>
 
 <script>
-    import App from "../App";
-
+import tabbar1 from './tabbar/tabbar1';
+import tabbar2 from './tabbar/tabbar2';
+import tabbar3 from './tabbar/tabbar3';
+import app from '../App';
+import main from './Main';
     export default {
-        methods: {
-            goTo(link, index) {
-                if (link !== "") {
-                    this.$navigateTo(App);
-                }
-            }
-        },
-
         data() {
             return {
                 btns: [{
                         icon: "user.png",
-                        link: ""
+                        link: 'tabbar1'
                     },
                     {
                         icon: "Home.png",
-                        link: ""
+                        link: 'tabbar2'
                     },
                     {
                         icon: "Search-Red.png",
-                        link: App
+                        link: 'tabbar3'
                     }
                 ],
                 active: 2,
-                app: App
             };
-        }
+        },
+        methods: {
+            goTo(link, index) {
+                let pageArr = {
+                    'tabbar1':tabbar1,
+                    'tabbar2':tabbar2,
+                    'tabbar3':tabbar3,
+                }
+                 if (link !== "") {
+                     console.log('keyile',link);
+                    this.$navigateTo(pageArr[link]);
+                }
+            }
+        },
+
+
     };
 </script>
 
