@@ -1,10 +1,10 @@
 <template>
     <FlexboxLayout flexDirection="row" justifyContent="space-between" id="footer">
-        <FlexboxLayout class="btn" :class="{ active: (index === active) }"
+        <!-- <FlexboxLayout class="btn" :class="{ active: (index === active) }"
             v-for="(btn,index) in btns" :key="index" @tap="goTo(btn.link,index)">
             <Image :src=" '~/assets/icons/' + btn.icon" class="icon " />
             <Label class="circle" v-if="index === active" />
-        </FlexboxLayout>
+        </FlexboxLayout> -->
     </FlexboxLayout>
 </template>
 
