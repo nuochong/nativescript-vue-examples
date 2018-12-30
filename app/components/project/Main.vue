@@ -6,35 +6,16 @@
             <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" @tap="$navigateBack"/>
             </ActionBar> -->
 
-            <FlexboxLayout flexDirection="column" height="100%" width="100%"
-                    id="app">
-
-                <!-- <StackLayout class="hello-world">
-                <Label class="body" textWrap=true text="这是一个hello world组件，如果你挑战，请点击这个按钮"/>
-                <Label class="body" textWrap=true text="This is a hello world component, tap the button if you dare"/>
-
-                <Button class="btn btn-primary" @tap="surprise = !surprise" :text="title"/>
-                <Image v-if="surprise" src="~/assets/images/NativeScript-Vue.png"/>
-                <Button class="btn btn-primary" @tap="test" text="相机!"/>
-                <Image :src="imgsrc" stretch="none" ref="img"/> 
-                </StackLayout>-->
+            <FlexboxLayout flexDirection="column" height="100%" width="100%" id="app">
                 <Header class="header"/>
-                    <StackLayout class="home-panel" flexGrow="7" id="view">
-                        <!-- <Home/> -->
-                        <Label textWrap="true">
-  <FormattedString>666
-    <Span text="This text has a " />
-    <Span text="red " style="color: red" />
-    <Span text="piece of text. " />
-    <Span text="Also, this bit is italic, " fontStyle="italic" />
-    <Span text="and this bit is bold." fontWeight="bold" />
-
-  </FormattedString>
-</Label>
-<Label text="www" textWrap="true"> 
-eee
-</Label>
-                    </StackLayout>
+                <StackLayout class="home-panel" flexGrow="7" id="view">
+                    <!-- <Home/> -->
+                    <!-- <Tabbar1></Tabbar1> -->
+                    <Tabbar2 v-for="(place,index) in places"
+                                        :key="index" :place="place" :index="index"
+                                        :active="active" width="244" height="315" />
+                    <!-- <Tabbar3></Tabbar3> -->
+                </StackLayout>
                 <Footer class="footer"/>
             </FlexboxLayout>
           </AbsoluteLayout>
@@ -46,19 +27,44 @@ eee
     import Header from "./Header";
     import Footer from "./Footer";
     import Home from "./Home";
+    import Tabbar1 from "./tabbar/tabbar1";
+    import Tabbar2 from "./tabbar/tabbar2";
+    import Tabbar3 from "./tabbar/tabbar3";
   export default {
     data () {
       return {
         surprise: false,
         title: "点击我！【Tap me!】",
         imgsrc:"res://icon",
+                        places: [{
+                        name: "The Custom House",
+                        type: "Architecture",
+                        stars: 4,
+                        media: "Dublin.jpg"
+                    },
+                    {
+                        name: "Christ Church's",
+                        type: "Architecture",
+                        stars: 4,
+                        media: "Cathedral.jpg"
+                    },
+                    {
+                        name: "Bord Gáis Energ",
+                        type: "Architecture",
+                        stars: 5,
+                        media: "Theater.jpg"
+                    }
+                ]
       };
     },
             components: {
             Header,
             Footer,
             Home,
-            //Searching
+            //Searching,
+            Tabbar1,
+            Tabbar2,
+            Tabbar3,
         },
           mounted(){
 

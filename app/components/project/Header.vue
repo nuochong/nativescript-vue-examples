@@ -1,13 +1,13 @@
 <template>
     <FlexboxLayout flexDirection="row" justifyContent="space-between" id="header">
         <FlexboxLayout class="btn menu">
-            <!-- <Image src="~/assets/icons/arrow.png" class="icon" v-if="canBack == true"
+            <Image src="~/assets/icons/arrow.png" class="icon" v-if="canBack == true"
                 @tap="$navigateBack" />
             <Image src="~/assets/icons/Menu-Red.png" class="icon" v-else-if="secondary == false" />
-            <Image src="~/assets/icons/Menu-White.png" class="icon" v-else /> -->
+            <Image src="~/assets/icons/Menu-White.png" class="icon" v-else />
         </FlexboxLayout>
         <FlexboxLayout class="btn pp">
-            <!-- <Image src="~/assets/icons/johndoe.jpg" class="icon" /> -->
+            <Image src="~/assets/icons/johndoe.jpg" class="icon" />
         </FlexboxLayout>
     </FlexboxLayout>
 </template>
