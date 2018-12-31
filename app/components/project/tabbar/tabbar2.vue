@@ -1,14 +1,15 @@
 <template>
-    <FlexboxLayout class="card" justifyContent="space-between" :class="{'active':(index == active), 'inactive':(index != active)}"
+
+    <FlexboxLayout class="card" flexDirection="column" flexWrap="warp" justifyContent="center" alignItems="center" alignContent="center" :class="{'active':(index == active), 'inactive':(index != active)}"
         @tap="goToPlace(place)">
-        <AbsoluteLayout width="100%" height="100%">
-            <Image src="~/assets/icons/box-shadow.png" height="100%" width="100%"
+        <AbsoluteLayout width="56%" height="70%" class="ll" alignSelf="center">
+            <Image src="~/assets/icons/box-shadow.png" width="100%" height="97%"
                 class="background" />
-            <FlexboxLayout flexDirection="column" width="96%" height="97%"
-                padding="12 20 30 12">
+            <FlexboxLayout flexDirection="column" width="100%" height="97%"
+                padding="12">
                 <StackLayout orientation="vertical" class="head">
                     <Label :text="place.name" class="title bold" />
-                    <Label :text="place.type" class="subTitle semi-bold" />
+                    <Label :text="place.type" class="subTitle semi-bold" horizontalAlignment="center"/>
                     <FlexboxLayout flexDirection="row" height="12" marginTop="4">
                         <Image src="~/assets/icons/Star-Red.png" v-for="star in place.stars"
                             :key="star" marginRight="4" />
@@ -58,8 +59,13 @@
 </script>
 
 <style scoped>
+.jj{
+}
+.ll{
+    background-color: black;
+}
     .card .background {
-        background-color: aqua;
+        background-color: green;
         transform: scale(1.05);
         opacity: 0.75;
     }
@@ -89,6 +95,8 @@
         background-size: cover;
         background-repeat: no-repeat;
         transform: scale(0.85);
+        background-color: yellowgreen;
+        vertical-align: center;
     }
 
     .card.active {

@@ -33,6 +33,8 @@
 <style scoped>
     #header {
         padding: 0;
+        width: 100%;
+        background-color: yellow;
     }
 
     #header .btn {

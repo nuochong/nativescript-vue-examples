@@ -1,25 +1,28 @@
 <template>
-  <Page class="page">
-      <ScrollView>
-          <AbsoluteLayout width="100%" height="100%">
-            <!-- <ActionBar class="action-bar" title="VUEX及相机">
-            <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" @tap="$navigateBack"/>
-            </ActionBar> -->
-
-            <FlexboxLayout flexDirection="column" height="100%" width="100%" id="app">
-                <Header class="header"/>
-                <StackLayout class="home-panel" flexGrow="7" id="view">
-                    <!-- <Home/> -->
-                    <!-- <Tabbar1></Tabbar1> -->
-                    <Tabbar2 v-for="(place,index) in places"
-                                        :key="index" :place="place" :index="index"
-                                        :active="active" width="244" height="315" />
-                    <!-- <Tabbar3></Tabbar3> -->
+  <Page class="page" actionBarHidden="true">
+      <!-- <ScrollView> -->
+          <!-- <AbsoluteLayout width="100%" height="100%"> -->
+            <ActionBar id="header head">
+                <StackLayout orientation="horizontal" class="btn menu hh">
+                    <Image src="~/assets/icons/arrow.png" class="icon"
+                @tap="$navigateBack" width="40" height="40" verticalAlignment="left"/>
+                    <Label class="tess" text="NativeScript" fontSize="24" horizontalAlignment="right" /> 
                 </StackLayout>
-                <Footer class="footer"/>
-            </FlexboxLayout>
-          </AbsoluteLayout>
-      </ScrollView>
+                <!-- <Header class="header" width="100%"/> -->
+            <!-- <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" @tap="$navigateBack"/> -->
+            </ActionBar>
+      
+      <GridLayout rows="60, *, auto" backgroundColor="#26252A">
+          <Header class="header" row="0"/>
+              <ScrollView orientation="vertical" row="1" backgroundColor="red"> 
+                  <StackLayout >
+                        <Tabbar2 v-for="(place,index) in places"
+                                        :key="index" :place="place" :index="index"
+                                        :active="active" width="100%" height="415" class="dd"/>
+                  </StackLayout>
+              </ScrollView>
+          <Footer class="footer" row="2"/>
+      </GridLayout>
   </Page>
 </template>
 
@@ -37,7 +40,7 @@
         title: "点击我！【Tap me!】",
         imgsrc:"res://icon",
                         places: [{
-                        name: "The Custom House",
+                        name: "The Custom House1",
                         type: "Architecture",
                         stars: 4,
                         media: "Dublin.jpg"
@@ -76,6 +79,15 @@
 </script>
 
 <style scoped>
+.home-panel{
+    background-color: red;
+    padding: 0;
+}
+.box{
+    background-color: blue;
+    margin-top: 0;
+}
+
 .page{
     margin: 0;
     padding: 0;
@@ -93,8 +105,8 @@
     }
 
     .header {
-        margin: 25 10 10;
-        height: 30;
+        padding: 10;
+        height: 40;
     }
 
     .footer {
@@ -140,5 +152,52 @@
         to {
             transform: scale(10)
         }
+    }
+
+
+
+
+
+
+    /*导航头部*/
+    .hh{
+        background-color: #ff0154;
+        width: 100%;
+    }
+    .head{
+        padding:0;
+        margin: 0;
+    }
+    .tess{
+        color: black;
+    }
+        #header {
+        padding: 0;
+    }
+
+    #header .btn {
+
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #header .btn .icon {
+        padding: 0;
+        margin: 0;
+    }
+
+    #header .btn.pp {
+        height: 100%;
+    }
+
+    #header .btn.menu .icon {
+        height: 60%;
+    }
+
+    #header .btn.pp .icon {
+        border: 2px solid #ffffff;
+        border-radius: 100%;
     }
 </style>
