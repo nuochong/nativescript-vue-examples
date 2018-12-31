@@ -1,16 +1,13 @@
 <template>
   <Page class="page" actionBarHidden="true">
-      <!-- <ScrollView> -->
-          <!-- <AbsoluteLayout width="100%" height="100%"> -->
-            <ActionBar id="header head">
-                <StackLayout orientation="horizontal" class="btn menu hh">
-                    <Image src="~/assets/icons/arrow.png" class="icon"
-                @tap="$navigateBack" width="40" height="40" verticalAlignment="left"/>
-                    <Label class="tess" text="NativeScript" fontSize="24" horizontalAlignment="right" /> 
-                </StackLayout>
-                <!-- <Header class="header" width="100%"/> -->
-            <!-- <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" @tap="$navigateBack"/> -->
-            </ActionBar>
+    <ActionBar id="header head">
+        <StackLayout orientation="horizontal" class="btn menu hh">
+            <Image src="~/assets/icons/arrow.png" class="icon"
+        @tap="$navigateBack" width="40" height="40" verticalAlignment="left"/>
+            <Label class="tess" text="NativeScript" fontSize="24" horizontalAlignment="right" /> 
+        </StackLayout>
+    <!-- <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" @tap="$navigateBack"/> -->
+    </ActionBar>
       
       <GridLayout rows="60, *, auto" backgroundColor="#26252A">
           <Header class="header" row="0"/>
