@@ -41,7 +41,7 @@
                     </ListView>
                 </StackLayout>
             </ScrollView>
-            <!-- <ScrollView orientation="vertical" row="1" backgroundColor="yellow" v-show="selectedTabview == 1">
+            <ScrollView orientation="vertical" row="1" backgroundColor="yellow" v-show="selectedTabview == 1">
                 <StackLayout>
                     <Tabbar2 v-for="(place,index) in places" :key="index" :place="place" :index="index" :active="active" width="100%"/>
                 </StackLayout>
@@ -50,7 +50,7 @@
                 <StackLayout>
                     <Tabbar2 v-for="(place,index) in places" :key="index" :place="place" :index="index" :active="active" width="100%"/>
                 </StackLayout>
-            </ScrollView> -->
+            </ScrollView>
             <Footer class="footer" row="2" @change="change" />
         </GridLayout>
     </Page>
