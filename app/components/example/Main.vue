@@ -20,6 +20,7 @@
         <Button class="btn btn-primary m-t-20" text="模态对话框【Open Modal】" @tap="showModal" />
         <Button class="btn btn-primary m-t-20" text="侧滑组件新【drawer】" @tap="onDrawers" />
         <Button class="btn btn-primary m-t-20" text="带有大标题的iOS导航栏【iOS NavigationBar with Large Title】" @tap="onlargeTitle" />
+        <Button class="btn btn-primary m-t-20" text="自定义对话框" @tap="dialog" />
       </StackLayout>
 
       <!-- </GridLayout> -->
@@ -40,6 +41,7 @@ import Mask from "./mask";
 import ModalComponent from "./customModel/ModalComponent";
 import Drawers from "./MultiDrawer/drawer";
 import LargeTitle from "./largeTitle/largeTitle";
+import Dialog from "./Dialog/dialog";
 
 export default {
   data() {
@@ -122,6 +124,9 @@ export default {
     },
     onlargeTitle(){
       this.$navigateTo(LargeTitle);
+    },
+    dialog(){
+      this.$navigateTo(Dialog);
     }
   }
 };
