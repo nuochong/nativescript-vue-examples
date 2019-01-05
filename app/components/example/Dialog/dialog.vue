@@ -8,7 +8,7 @@
                 </StackLayout>
         </ActionBar>
         <GridLayout colums="*" rows="*">
-            <MultiDrawer ref="drawer" v-model="drawerState">
+            <Dialog ref="drawer">
                 <StackLayout slot="left">
                     <ListView for="item in listOfItems">
                         <v-template>
@@ -29,7 +29,7 @@
                 </StackLayout>
 
                 <Frame />
-            </MultiDrawer>
+            </Dialog>
         </GridLayout>
     </Page>
 </template>

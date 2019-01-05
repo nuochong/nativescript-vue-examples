@@ -153,6 +153,13 @@ Vue.use(MultiDrawer, {
   debug: true
 })
 
+import Dialog from "./components/example/Dialog/tools";
+Vue.use(Dialog, { 
+  // override any option here
+  // for example enable debug mode
+  debug: true
+})
+
 new Vue({
   //router,
   render: h => h("frame", [h(App)]),
