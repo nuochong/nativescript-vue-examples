@@ -157,7 +157,8 @@ import Dialog from "./components/example/Dialog/tools";
 Vue.use(Dialog, { 
   // override any option here
   // for example enable debug mode
-  debug: true
+  debug: true,
+  backdropColor: 'rgba(255, 0, 0, 0.3)',
 })
 
 new Vue({
