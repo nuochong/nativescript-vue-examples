@@ -73,18 +73,6 @@
         // handled by the watcher
         optionsInternal: {},
         sides: {
-          left: {
-            open: false,
-            translationOffset: 0,
-          },
-          right: {
-            open: false,
-            translationOffset: 0,
-          },
-          top: {
-            open: false,
-            translationOffset: 0,
-          },
           bottom: {
             open: false,
             translationOffset: 0,
@@ -271,16 +259,16 @@
         } else if (args.state === 2) {
           // panning
 
-          if (this.optionsInternal[side].axis === 'X') {
-            this.constrainX(
-              view,
-              side,
-              view.translateX + (args.deltaX - this.prevDeltaX)
-            )
-            panProgress =
-              Math.abs(view.translateX) /
-              Math.abs(this.sides[side].translationOffset)
-          } else {
+          // if (this.optionsInternal[side].axis === 'X') {
+          //   this.constrainX(
+          //     view,
+          //     side,
+          //     view.translateX + (args.deltaX - this.prevDeltaX)
+          //   )
+          //   panProgress =
+          //     Math.abs(view.translateX) /
+          //     Math.abs(this.sides[side].translationOffset)
+          // } else {
             this.constrainY(
               view,
               side,
@@ -289,9 +277,9 @@
             panProgress =
               Math.abs(view.translateY) /
               Math.abs(this.sides[side].translationOffset)
-          }
+          //}
 
-          this.prevDeltaX = args.deltaX
+          //this.prevDeltaX = args.deltaX
           this.prevDeltaY = args.deltaY
 
           this.$refs.backDrop.nativeView.opacity = 1 - panProgress
@@ -302,11 +290,11 @@
           if (this.computedOpenSide === side) {
             // already open
             let distanceFromFullyOpen = 0
-            if (this.optionsInternal[side].axis === 'X') {
-              distanceFromFullyOpen = Math.abs(view.translateX)
-            } else {
+            // if (this.optionsInternal[side].axis === 'X') {
+            //   distanceFromFullyOpen = Math.abs(view.translateX)
+            // } else {
               distanceFromFullyOpen = Math.abs(view.translateY)
-            }
+            //}
             if (
               distanceFromFullyOpen >
               this.optionsInternal[side].swipeCloseTriggerMinDrag
@@ -320,11 +308,11 @@
             const multiplier = this.optionsInternal[side]
               .translationOffsetMultiplier
             let distanceFromEdge = 0
-            if (this.optionsInternal[side].axis === 'X') {
-              distanceFromEdge = offsetAbs - multiplier * view.translateX
-            } else {
+            // if (this.optionsInternal[side].axis === 'X') {
+            //   distanceFromEdge = offsetAbs - multiplier * view.translateX
+            // } else {
               distanceFromEdge = offsetAbs - multiplier * view.translateY
-            }
+            //}
 
             if (
               distanceFromEdge <
@@ -336,31 +324,33 @@
             }
           }
 
-          this.prevDeltaX = 0
+          //this.prevDeltaX = 0
           this.prevDeltaY = 0
         }
       },
-      constrainX(view, side, x) {
-        const offset = this.sides[side].translationOffset
-        if (offset < 0) {
-          if (x > 0) {
-            view.translateX = 0
-          } else if (this.sides[side].open && x < offset) {
-            view.translateX = offset
-          } else {
-            view.translateX = x
-          }
-        } else {
-          if (x < 0) {
-            view.translateX = 0
-          } else if (this.sides[side].open && x > offset) {
-            view.translateX = offset
-          } else {
-            view.translateX = x
-          }
-        }
-      },
+      // constrainX(view, side, x) {
+      //   console.log('呵呵呵呵xxx')
+      //   const offset = this.sides[side].translationOffset
+      //   if (offset < 0) {
+      //     if (x > 0) {
+      //       view.translateX = 0
+      //     } else if (this.sides[side].open && x < offset) {
+      //       view.translateX = offset
+      //     } else {
+      //       view.translateX = x
+      //     }
+      //   } else {
+      //     if (x < 0) {
+      //       view.translateX = 0
+      //     } else if (this.sides[side].open && x > offset) {
+      //       view.translateX = offset
+      //     } else {
+      //       view.translateX = x
+      //     }
+      //   }
+      // },
       constrainY(view, side, y) {
+        console.log('呵呵呵呵yyy')
         const offset = this.sides[side].translationOffset
         if (offset < 0) {
           if (y > 0) {

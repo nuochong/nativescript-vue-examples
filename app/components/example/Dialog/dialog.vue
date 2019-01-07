@@ -9,25 +9,15 @@
         </ActionBar>
         <GridLayout colums="*" rows="*">
             <Dialog ref="drawer">
-                <StackLayout slot="left">
+                <StackLayout class="wrap" slot="bottom">
                     <ListView for="item in listOfItems">
                         <v-template>
                             <!-- Shows the list item label in the default color and style. -->
                             <Label :text="item.text" />
                         </v-template>
                     </ListView>
-                    <Label text="Im in the left drawer" />
-                </StackLayout>
-                <StackLayout slot="right">
-                    <Label text="Im in the right drawer" />
-                </StackLayout>
-                <StackLayout slot="top">
-                    <Label text="Im in the top drawer" />
-                </StackLayout>
-                <StackLayout slot="bottom">
                     <Label text="Im in the bottom drawer" />
                 </StackLayout>
-
                 <Frame />
             </Dialog>
         </GridLayout>
@@ -59,6 +49,11 @@ export default {
 </script>
 
 <style scoped>
+.wrap{
+    border-width:1;
+    border-color: red;
+    background-color: green;
+}
 ActionBar {
   background-color: #53ba82;
   color: #ffffff;
