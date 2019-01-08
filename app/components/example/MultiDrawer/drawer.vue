@@ -46,10 +46,10 @@ export default {
   methods: {
       open:function(){
           console.log('打开了');
-          if(this.drawerState == 'left'){
+          if(this.drawerState == 'bottom'){
                 this.drawerState = false;
           }else{
-              this.drawerState = 'left'
+              this.drawerState = 'bottom'
           }
           
           //this.$refs.drawer.open('left')

@@ -8,7 +8,7 @@
                 </StackLayout>
         </ActionBar>
         <GridLayout colums="*" rows="*">
-            <Dialog ref="drawer">
+            <Dialog ref="drawer" v-model="drawerState">
                 <StackLayout class="wrap" slot="bottom">
                     <ListView for="item in listOfItems">
                         <v-template>
@@ -36,13 +36,13 @@ export default {
   methods: {
       open:function(){
           console.log('打开了');
-          if(this.drawerState == 'left'){
+          if(this.drawerState == 'bottom'){
                 this.drawerState = false;
           }else{
-              this.drawerState = 'left'
+              this.drawerState = 'bootom'
+              console.log('xxxx',this.drawerState);
           }
-          
-          //this.$refs.drawer.open('left')
+        //this.$refs.drawer.open('bottom')
       }
   }
 };
