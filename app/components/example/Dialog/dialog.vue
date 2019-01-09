@@ -9,13 +9,7 @@
         </ActionBar>
         <GridLayout colums="*" rows="*">
             <Dialog ref="drawer" v-model="drawerState">
-                <StackLayout class="wrap" slot="bottom">
-                    <ListView for="item in listOfItems">
-                        <v-template>
-                            <!-- Shows the list item label in the default color and style. -->
-                            <Label :text="item.text" />
-                        </v-template>
-                    </ListView>
+                <StackLayout slot="bottom">
                     <Label text="Im in the bottom drawer" />
                 </StackLayout>
                 <Frame />
@@ -39,7 +33,7 @@ export default {
           if(this.drawerState == 'bottom'){
                 this.drawerState = false;
           }else{
-              this.drawerState = 'bootom'
+              this.drawerState = 'bottom'
               console.log('xxxx',this.drawerState);
           }
         //this.$refs.drawer.open('bottom')
