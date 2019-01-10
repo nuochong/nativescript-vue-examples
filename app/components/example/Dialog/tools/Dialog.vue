@@ -14,13 +14,15 @@
             <GridLayout @layoutChanged="onDrawerLayoutChange(side)"
                         @tap="noop"
                         :ref="`${side}Drawer`"
-                        :style="computedDrawerStyle(side)">
+                        :style="computedDrawerStyle(side)"
+                        opacity="0"
+                        >
                 <slot :name="side"/>
             </GridLayout>
             <!-- Open Trigger -->
-            <Label v-show="computedShowSwipeOpenTrigger(side)"
+            <!-- <Label v-show="computedShowSwipeOpenTrigger(side)"
                    v-bind="computedSwipeOpenTriggerProperties(side)"
-                   />
+                   /> -->
         </template>
     </GridLayout>
 </template>
@@ -95,12 +97,14 @@
     },
     computed: {
       computedSidesEnabled() {
+        console.log('computedSidesEnabled');
         const validSides = Object.keys(this.sides)
         return Object.keys(this.$slots).filter(slotName =>
           validSides.includes(slotName)
         )
       },
       computedDrawerStyle() {
+        console.log('computedDrawerStyle');
         return side => ({
           transform: `translate${this.optionsInternal[side].axis}(${
             this.sides[side].open ? 0 : this.sides[side].translationOffset
@@ -117,32 +121,35 @@
             : 'verticalAlignment']: side,
         })
       },
-      computedSwipeOpenTriggerProperties() {
-        return side => ({
-          ...(this.optionsInternal[side].swipeOpenTriggerWidth
-            ? {width: this.optionsInternal[side].swipeOpenTriggerWidth}
-            : {}),
-          ...(this.optionsInternal[side].swipeOpenTriggerHeight
-            ? {height: this.optionsInternal[side].swipeOpenTriggerHeight}
-            : {}),
-          [this.optionsInternal[side].axis === 'X'
-            ? 'horizontalAlignment'
-            : 'verticalAlignment']: side,
-          ...(this.optionsInternal.debug
-            ? {backgroundColor: 'rgba(0, 255, 0, 0.3)'}
-            : {}),
-          ...this.optionsInternal[side].swipeOpenTriggerProperties,
-        })
-      },
-      computedShowSwipeOpenTrigger() {
-        return side => {
-          if (!this.optionsInternal[side].canSwipeOpen) {
-            return false
-          }
-          return !(this.computedOpenSide || this.isPanning || this.isAnimating)
-        }
-      },
+      // computedSwipeOpenTriggerProperties() {
+      //   console.log('computedSwipeOpenTriggerProperties');
+      //   return side => ({
+      //     ...(this.optionsInternal[side].swipeOpenTriggerWidth
+      //       ? {width: this.optionsInternal[side].swipeOpenTriggerWidth}
+      //       : {}),
+      //     ...(this.optionsInternal[side].swipeOpenTriggerHeight
+      //       ? {height: this.optionsInternal[side].swipeOpenTriggerHeight}
+      //       : {}),
+      //     [this.optionsInternal[side].axis === 'X'
+      //       ? 'horizontalAlignment'
+      //       : 'verticalAlignment']: side,
+      //     ...(this.optionsInternal.debug
+      //       ? {backgroundColor: 'rgba(0, 255, 0, 0.3)'}
+      //       : {}),
+      //     ...this.optionsInternal[side].swipeOpenTriggerProperties,
+      //   })
+      // },
+      // computedShowSwipeOpenTrigger() {
+      //   console.log('computedShowSwipeOpenTrigger');
+      //   return side => {
+      //     if (!this.optionsInternal[side].canSwipeOpen) {
+      //       return false
+      //     }
+      //     return !(this.computedOpenSide || this.isPanning || this.isAnimating)
+      //   }
+      // },
       computedOpenSide() {
+        console.log('computedOpenSide');
         return (
           this.computedSidesEnabled.find(side => this.sides[side].open) || false
         )
@@ -179,6 +186,10 @@
         const duration = this.optionsInternal[side].animation.openDuration
 
         this.$refs.backDrop.nativeView.animate({
+          opacity: 1,
+          duration,
+        })
+        this.$refs[`${side}Drawer`][0].nativeView.animate({
           opacity: 1,
           duration,
         })
@@ -227,7 +238,10 @@
           opacity: 0,
           duration,
         })
-
+       this.$refs[`${side}Drawer`][0].nativeView.animate({
+          opacity: 0,
+          duration,
+        })
         this.sides[side].open = false
         this.backdropVisible = false
         this.isAnimating = false

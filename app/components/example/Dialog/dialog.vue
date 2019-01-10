@@ -11,6 +11,9 @@
             <Dialog ref="drawer" v-model="drawerState">
                 <StackLayout slot="bottom">
                     <Label text="Im in the bottom drawer" />
+                    <Label text="Im in the bottom drawer" />
+                    <Label text="Im in the bottom drawer" />
+                    <Label text="Im in the bottom drawer" />
                 </StackLayout>
                 <Frame />
             </Dialog>

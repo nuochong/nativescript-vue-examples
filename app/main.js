@@ -157,8 +157,25 @@ import Dialog from "./components/example/Dialog/tools";
 Vue.use(Dialog, { 
   // override any option here
   // for example enable debug mode
-  debug: true,
-  backdropColor: 'rgba(255, 0, 0, 0.3)',
+  debug: false,
+  backdropColor: 'rgba(255, 0, 0, 0.7)',
+  bottom: {
+    width: null,
+    height: '40%',
+    backgroundColor: 'rgba(255, 255, 0, 0.7)',
+    canSwipeOpen: true,
+    swipeOpenTriggerWidth: null,
+    swipeOpenTriggerHeight: 30,
+    swipeOpenTriggerMinDrag: 50,
+    swipeCloseTriggerMinDrag: 50,
+    swipeOpenTriggerProperties: {},
+    animation: {
+      openDuration: 200,
+      closeDuration: 200,
+    },
+    translationOffsetMultiplier: 1,
+    axis: 'Y',
+  },
 })
 
 new Vue({
