@@ -161,7 +161,7 @@ Vue.use(Dialog, {
   backdropColor: 'rgba(255, 0, 0, 0.7)',
   bottom: {
     width: null,
-    height: '40%',
+    height: '50%',
     backgroundColor: 'rgba(255, 255, 0, 0.7)',
     canSwipeOpen: true,
     swipeOpenTriggerWidth: null,

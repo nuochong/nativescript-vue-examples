@@ -9,7 +9,6 @@
         </ActionBar>
         <GridLayout colums="*" rows="*">
             <Dialog ref="drawer" v-model="drawerState">
-                <Label text="main mian mian" />
                 <StackLayout slot="bottom">
                     <Label text="Im in the bottom drawer" />
                     <Label text="Im in the bottom drawer" />
