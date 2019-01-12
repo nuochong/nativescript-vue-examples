@@ -1,32 +1,33 @@
 <template>
-  <Page>
-    <ActionBar class="action-bar" title="Welcome to NativeScript-Vue!">
-      <ActionItem @tap="onTapEdit" v-show="!isEditing" ios.systemIcon="2" ios.position="right" android.systemIcon="ic_menu_edit" />
-      <ActionItem @tap="onTapSave" v-show="isEditing" ios.systemIcon="3" ios.position="right" android.systemIcon="ic_menu_save" />
-      <ActionItem @tap="onTapCancel" v-show="isEditing" ios.systemIcon="1" android.systemIcon="ic_menu_close_clear_cancel" />
-    </ActionBar>
-    <ScrollView>
-      <!--<GridLayout colums="*" rows="*">-->
-      <StackLayout>
-        <Label class="message" :text="msg" col="0" row="0" />
-        <Button class="btn btn-primary" text="路由跳转" @tap="onButtonTap" />
-        <Button class="btn btn-primary" text=" 基础示例" @tap="onButtonBase" />
-        <Button class="btn btn-primary" text="本地存储示例" @tap="onInput" />
-        <Button class="btn btn-primary" text="记事薄【Fab】" @tap="onFab" />
-        <Button class="btn btn-primary" text="备忘录【ToDo】" @tap="onTodo" />
-        <Button class="btn btn-primary" text="侧滑菜单【Drawer】" @tap="onDrawer" />
-        <Button class="btn btn-primary" text="图标【Icon】" @tap="onIcon" />
-        <Button class="btn btn-primary" text="遮罩层【mask】" @tap="onMask" />
-        <Button class="btn btn-primary m-t-20" text="模态对话框【Open Modal】" @tap="showModal" />
-        <Button class="btn btn-primary m-t-20" text="侧滑组件新【drawer】" @tap="onDrawers" />
-        <Button class="btn btn-primary m-t-20" text="带有大标题的iOS导航栏【iOS NavigationBar with Large Title】" @tap="onlargeTitle" />
-        <Button class="btn btn-primary m-t-20" text="自定义对话框" @tap="dialog" />
-      </StackLayout>
+    <Page>
+        <ActionBar class="action-bar" title="Welcome to NativeScript-Vue!">
+            <ActionItem @tap="onTapEdit" v-show="!isEditing" ios.systemIcon="2" ios.position="right" android.systemIcon="ic_menu_edit" />
+            <ActionItem @tap="onTapSave" v-show="isEditing" ios.systemIcon="3" ios.position="right" android.systemIcon="ic_menu_save" />
+            <ActionItem @tap="onTapCancel" v-show="isEditing" ios.systemIcon="1" android.systemIcon="ic_menu_close_clear_cancel" />
+        </ActionBar>
+        <ScrollView>
+            <!--<GridLayout colums="*" rows="*">-->
+            <StackLayout>
+                <Label class="message" :text="msg" col="0" row="0" />
+                <Button class="btn btn-primary" text="路由跳转" @tap="onButtonTap" />
+                <Button class="btn btn-primary" text=" 基础示例" @tap="onButtonBase" />
+                <Button class="btn btn-primary" text="本地存储示例" @tap="onInput" />
+                <Button class="btn btn-primary" text="记事薄【Fab】" @tap="onFab" />
+                <Button class="btn btn-primary" text="备忘录【ToDo】" @tap="onTodo" />
+                <Button class="btn btn-primary" text="侧滑菜单【Drawer】" @tap="onDrawer" />
+                <Button class="btn btn-primary" text="图标【Icon】" @tap="onIcon" />
+                <Button class="btn btn-primary" text="遮罩层【mask】" @tap="onMask" />
+                <Button class="btn btn-primary m-t-20" text="模态对话框【Open Modal】" @tap="showModal" />
+                <Button class="btn btn-primary m-t-20" text="侧滑组件新【drawer】" @tap="onDrawers" />
+                <Button class="btn btn-primary m-t-20" text="带有大标题的iOS导航栏【iOS NavigationBar with Large Title】" @tap="onlargeTitle" />
+                <Button class="btn btn-primary m-t-20" text="自定义对话框" @tap="dialog" />
+                <Button class="btn btn-primary m-t-20" text="自定义弹出框" @tap="pop" />
+            </StackLayout>
 
-      <!-- </GridLayout> -->
+            <!-- </GridLayout> -->
 
-    </ScrollView>
-  </Page>
+        </ScrollView>
+    </Page>
 </template>
 
 <script>
@@ -42,22 +43,23 @@ import ModalComponent from "./customModel/ModalComponent";
 import Drawers from "./MultiDrawer/drawer";
 import LargeTitle from "./largeTitle/largeTitle";
 import Dialog from "./Dialog/dialog";
+import Pop from "./pop";
 
 export default {
-  data() {
+  data () {
     return {
       msg: "Hello World!"
     };
   },
-  mounted() {},
+  mounted () { },
   methods: {
-    onDrawer: function() {
+    onDrawer: function () {
       this.$navigateTo(Drawer);
     },
-    onTapEdit: function() {
+    onTapEdit: function () {
       console.log("xxxx");
     },
-    onButtonTap: function() {
+    onButtonTap: function () {
       console.log("xxxxx");
       this.$navigateTo(HelloWorld, {
         animated: true,
@@ -68,7 +70,7 @@ export default {
         }
       });
     },
-    onButtonBase: function() {
+    onButtonBase: function () {
       this.$navigateTo(Home, {
         animated: true,
         transition: {
@@ -78,7 +80,7 @@ export default {
         }
       });
     },
-    onInput: function() {
+    onInput: function () {
       this.$navigateTo(Input, {
         animated: true,
         transition: {
@@ -88,7 +90,7 @@ export default {
         }
       });
     },
-    onFab: function() {
+    onFab: function () {
       this.$navigateTo(Fab, {
         animated: true,
         transition: {
@@ -98,7 +100,7 @@ export default {
         }
       });
     },
-    onTodo: function() {
+    onTodo: function () {
       this.$navigateTo(Todo, {
         animated: true,
         transition: {
@@ -108,25 +110,28 @@ export default {
         }
       });
     },
-    onIcon: function() {
+    onIcon: function () {
       this.$navigateTo(Icon);
     },
-    onMask: function() {
+    onMask: function () {
       console.log("遮罩层");
       this.$navigateTo(Mask);
     },
-    showModal() {
+    showModal () {
       console.dir("xxxxxx", this);
       this.$showModal(ModalComponent);
     },
-    onDrawers() {
+    onDrawers () {
       this.$navigateTo(Drawers);
     },
-    onlargeTitle(){
+    onlargeTitle () {
       this.$navigateTo(LargeTitle);
     },
-    dialog(){
+    dialog () {
       this.$navigateTo(Dialog);
+    },
+    pop () {
+      this.$navigateTo(Pop);
     }
   }
 };
