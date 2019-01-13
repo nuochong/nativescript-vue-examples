@@ -33,6 +33,23 @@
             <Label text="stretch" horizontalAlignment="stretch" height="70" backgroundColor="#43b883" />
         </StackLayout> -->
         <AbsoluteLayout backgroundColor="#3c495e" ref='page' width="100%">
+            <FlexboxLayout width="100%" height="290" flexDirection="column-reverse" justifyContent="space-around" backgroundColor="#3c495e">
+                
+                <!-- <Label text="first" height="70" backgroundColor="#43b883" />
+                <Label text="second" alignSelf="center" width="70" height="70" backgroundColor="#1c6b48" /> -->
+                <!-- <Label text="third\nflex-end" alignSelf="flex-end" width="90" height="270" backgroundColor="#289062" /> -->
+                <!-- <Label text="fourth" height="70" backgroundColor="#289062" /> -->
+                <ScrollView orientation="vertical" alignSelf="flex-end" width="90" height="270" backgroundColor="yellow">
+                    <StackLayout>
+                        <Label text="first" height="70" class="sanjiao" backgroundColor="red" />
+                        <Label text="first" height="70" backgroundColor="#43b883" />
+                        <Label text="first" height="70" backgroundColor="#43b883" />
+                        <Label text="first" height="70" backgroundColor="#43b883" />
+                        <Label text="first" height="70" backgroundColor="#43b883" />
+                        <Label text="first" height="70" backgroundColor="#43b883" />
+                    </StackLayout>
+                </ScrollView>
+            </FlexboxLayout>
             <Label text="10,10" left="100%-40" top="-10" width="100" height="100" backgroundColor="#289062" />
             <Label text="30,40" left="30" top="40" width="100" height="100" backgroundColor="#43b883" />
         </AbsoluteLayout>
@@ -47,9 +64,9 @@ export default {
       msg: 'Hello World! '
     }
   },
-  mounted(){
-      let widht = this.$refs.page.nativeView.width;
-      console.log('888888',widht);
+  mounted () {
+    let widht = this.$refs.page.nativeView.width;
+    console.log('888888', widht);
   },
   methods: {
     onButton: function () {
@@ -61,6 +78,22 @@ export default {
 </script>
 
 <style scoped>
+.sanjiao{
+    width:0;
+    height:0;
+    border-left-width: 30;
+    border-right-width: 30;
+    border-top-width: 0;
+    border-bottom-width: 30;
+    border-style:solid;
+        border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    border-bottom-color: #333;;
+    /* border-color:transparent transparent #333;透明 透明  灰 */
+    /* margin:40px auto; */
+    position:relative;
+}
 ActionBar {
   background-color: #53ba82;
   color: #ffffff;
