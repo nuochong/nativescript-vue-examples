@@ -39,14 +39,14 @@
                 <Label text="second" alignSelf="center" width="70" height="70" backgroundColor="#1c6b48" /> -->
                 <!-- <Label text="third\nflex-end" alignSelf="flex-end" width="90" height="270" backgroundColor="#289062" /> -->
                 <!-- <Label text="fourth" height="70" backgroundColor="#289062" /> -->
-                <ScrollView orientation="vertical" alignSelf="flex-end" width="90" height="270" backgroundColor="yellow">
+                <ScrollView style="border-radius: 10;" orientation="vertical" alignSelf="flex-end" width="90" height="270" backgroundColor="transparent">
                     <StackLayout>
-                        <Label text="first" height="70" class="sanjiao" backgroundColor="red" />
+                        <Label text="" class="sanjiao"/>
+                        <!-- <Label text="first" height="70" backgroundColor="#43b883" />
                         <Label text="first" height="70" backgroundColor="#43b883" />
                         <Label text="first" height="70" backgroundColor="#43b883" />
                         <Label text="first" height="70" backgroundColor="#43b883" />
-                        <Label text="first" height="70" backgroundColor="#43b883" />
-                        <Label text="first" height="70" backgroundColor="#43b883" />
+                        <Label text="first" height="70" backgroundColor="#43b883" /> -->
                     </StackLayout>
                 </ScrollView>
             </FlexboxLayout>
@@ -79,20 +79,23 @@ export default {
 
 <style scoped>
 .sanjiao{
-    width:0;
-    height:0;
+    width:30;
+    height:15;
+    
     border-left-width: 30;
     border-right-width: 30;
     border-top-width: 0;
     border-bottom-width: 30;
-    border-style:solid;
+    /* border-style:solid; */
         border-left-color: transparent;
     border-right-color: transparent;
     border-top-color: transparent;
     border-bottom-color: #333;;
     /* border-color:transparent transparent #333;透明 透明  灰 */
     /* margin:40px auto; */
-    position:relative;
+    /* position:relative; */
+    /* background-color: red; */
+    /* border-radius: 15; */
 }
 ActionBar {
   background-color: #53ba82;
