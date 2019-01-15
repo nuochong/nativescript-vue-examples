@@ -50,14 +50,13 @@
                     </StackLayout>
                 </ScrollView>
             </FlexboxLayout>
-            <Label text="10,10" left="100%-40" top="-10" width="100" height="100" backgroundColor="#289062" />
-            <Label text="30,40" left="30" top="40" width="100" height="100" backgroundColor="#43b883" />
+            <!-- <Label text="10,10" left="100%-40" top="-10" width="100" height="100" backgroundColor="#289062" />
+            <Label text="30,40" left="30" top="40" width="100" height="100" backgroundColor="#43b883" /> -->
         </AbsoluteLayout>
     </Page>
 </template>
 
 <script>
-
 export default {
   data () {
     return {
