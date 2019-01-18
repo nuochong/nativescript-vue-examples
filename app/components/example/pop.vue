@@ -27,10 +27,10 @@
             <Label text="fourth" height="70" backgroundColor="#289062" />
         </FlexboxLayout> -->
         <StackLayout backgroundColor="#3c495e">
-            <Label text="left" horizontalAlignment="left" width="33%" height="70" backgroundColor="#43b883" />
+            <!-- <Label text="left" horizontalAlignment="left" width="33%" height="70" backgroundColor="#43b883" />
             <Label text="center" horizontalAlignment="center" width="33%" height="70" backgroundColor="#289062" />
             <Label text="right" horizontalAlignment="right" top="0" width="33%" height="70" backgroundColor="#1c6b48" />
-            <Label text="stretch" horizontalAlignment="stretch" height="70" backgroundColor="#43b883" />
+            <Label text="stretch" horizontalAlignment="stretch" height="70" backgroundColor="#43b883" /> -->
         </StackLayout>
         <AbsoluteLayout backgroundColor="#3c495e" ref='page' width="100%">
             <FlexboxLayout width="100%" height="290" flexDirection="column-reverse" justifyContent="space-around" backgroundColor="#3c495e">
