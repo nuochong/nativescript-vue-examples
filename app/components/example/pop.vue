@@ -42,11 +42,11 @@
                 <ScrollView style="border-radius: 10;" orientation="vertical" alignSelf="flex-end" width="90" height="270" backgroundColor="transparent">
                     <StackLayout>
                         <Label text="" class="sanjiao"/>
+                        <!-- <Label text="first" height="70" backgroundColor="#43b883" />
                         <Label text="first" height="70" backgroundColor="#43b883" />
                         <Label text="first" height="70" backgroundColor="#43b883" />
                         <Label text="first" height="70" backgroundColor="#43b883" />
-                        <Label text="first" height="70" backgroundColor="#43b883" />
-                        <Label text="first" height="70" backgroundColor="#43b883" />
+                        <Label text="first" height="70" backgroundColor="#43b883" /> -->
                     </StackLayout>
                 </ScrollView>
             </FlexboxLayout>
