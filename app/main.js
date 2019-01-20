@@ -143,8 +143,6 @@ for (; charCodes <= 0xe902; charCodes++) {
 //viewModel.set("glyphs", glyphs);
 
 Vue.prototype.$icon = viewModel;
-console.log("7777777", viewModel);
-
 
 import MultiDrawer from "nativescript-vue-multi-drawer";
 Vue.use(MultiDrawer, { 

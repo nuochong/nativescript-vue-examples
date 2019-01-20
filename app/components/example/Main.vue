@@ -22,6 +22,7 @@
                 <Button class="btn btn-primary m-t-20" text="带有大标题的iOS导航栏【iOS NavigationBar with Large Title】" @tap="onlargeTitle" />
                 <Button class="btn btn-primary m-t-20" text="自定义对话框" @tap="dialog" />
                 <Button class="btn btn-primary m-t-20" text="自定义弹出框" @tap="pop" />
+                <Button class="btn btn-primary m-t-20" text="animateCSS" @tap="animate" />
             </StackLayout>
 
             <!-- </GridLayout> -->
@@ -44,6 +45,7 @@ import Drawers from "./MultiDrawer/drawer";
 import LargeTitle from "./largeTitle/largeTitle";
 import Dialog from "./Dialog/dialog";
 import Pop from "./pop";
+import AnimateCss from "./animateCss";
 
 export default {
   data () {
@@ -132,6 +134,10 @@ export default {
     },
     pop () {
       this.$navigateTo(Pop);
+    },
+    animate(){
+      this.$navigateTo(AnimateCss);
+      console.log('xxxx');
     }
   }
 };
