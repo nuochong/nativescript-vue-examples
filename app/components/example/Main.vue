@@ -45,7 +45,7 @@ import Drawers from "./MultiDrawer/drawer";
 import LargeTitle from "./largeTitle/largeTitle";
 import Dialog from "./Dialog/dialog";
 import Pop from "./pop";
-import AnimateCss from "./animateCss";
+import Animate from "./animate";
 
 export default {
   data () {
@@ -136,8 +136,7 @@ export default {
       this.$navigateTo(Pop);
     },
     animate(){
-      this.$navigateTo(AnimateCss);
-      console.log('xxxx');
+      this.$navigateTo(Animate);
     }
   }
 };

@@ -63,7 +63,4 @@ ActionBar {
   font-size: 20;
   color: #333333;
 }
-.dd{
-    color:red;
-}
 </style>
