@@ -1,26 +1,26 @@
-import Vue from "nativescript-vue";
-import App from "./components/App";
+import Vue from 'nativescript-vue';
+import App from './components/App';
 //import router from './router';
-import store from "./store";
-import { prototype } from "stream";
+import store from './store';
+import { prototype } from 'stream';
 //import VueDevtools from 'nativescript-vue-devtools'
 
-const application = require("tns-core-modules/application");
+const application = require('tns-core-modules/application');
 
 // Vue.use(VueDevtools)
 // if (TNS_ENV !== 'production') {
 //     Vue.use(VueDevtools)
 // }
 // Prints Vue logs when --env.production is *NOT* set while building
-Vue.config.silent = TNS_ENV === "production";
+Vue.config.silent = TNS_ENV === 'production';
 
-const AppShortcuts = require("nativescript-app-shortcuts").AppShortcuts;
+const AppShortcuts = require('nativescript-app-shortcuts').AppShortcuts;
 let appShortcuts = new AppShortcuts();
 appShortcuts.available().then(function(available) {
   if (available) {
-    console.log("****This device supports app shortcuts");
+    console.log('****This device supports app shortcuts');
   } else {
-    console.log("****No app shortcuts capability, ask the user to upgrade :)");
+    console.log('****No app shortcuts capability, ask the user to upgrade :)');
   }
 });
 
@@ -86,31 +86,28 @@ appShortcuts.available().then(function(available) {
 // );
 
 //在代码中创建一个页面
-const Page = require("tns-core-modules/ui/page").Page;
-const Label = require("tns-core-modules/ui/label").Label;
-const StackLayout = require("tns-core-modules/ui/layouts/stack-layout")
-  .StackLayout;
+// const Page = require("tns-core-modules/ui/page").Page;
+// const Label = require("tns-core-modules/ui/label").Label;
+// const StackLayout = require("tns-core-modules/ui/layouts/stack-layout")
+//   .StackLayout;
 
-function createPage() {
-  const stack = new StackLayout();
-  const label = new Label();
-  label.text = "Hello, worlddddd!";
-  stack.addChild(label);
+// function createPage() {
+//   const stack = new StackLayout();
+//   const label = new Label();
+//   label.text = "Hello, worlddddd!";
+//   stack.addChild(label);
 
-  const page = new Page();
-  // Each page can have a single root view set via the content property
-  page.content = stack;
-  return page;
-}
-exports.createPage = createPage;
+//   const page = new Page();
+//   // Each page can have a single root view set via the content property
+//   page.content = stack;
+//   return page;
+// }
+// exports.createPage = createPage;
 
 //import { DrawerTransitionBase, RadSideDrawer, SlideInOnTopTransition } from "nativescript-ui-sidedrawer";
-Vue.registerElement(
-  "RadSideDrawer",
-  () => require("nativescript-ui-sidedrawer").RadSideDrawer
-);
+Vue.registerElement('RadSideDrawer', () => require('nativescript-ui-sidedrawer').RadSideDrawer);
 
-var observable = require("tns-core-modules/data/observable");
+var observable = require('tns-core-modules/data/observable');
 //var page = this.$refs.page.nativeView;
 var viewModel = new observable.Observable();
 //var glyphs = new Array();
@@ -144,15 +141,15 @@ for (; charCodes <= 0xe902; charCodes++) {
 
 Vue.prototype.$icon = viewModel;
 
-import MultiDrawer from "nativescript-vue-multi-drawer";
-Vue.use(MultiDrawer, { 
+import MultiDrawer from 'nativescript-vue-multi-drawer';
+Vue.use(MultiDrawer, {
   // override any option here
   // for example enable debug mode
   debug: true
-})
+});
 
-import Dialog from "./components/example/Dialog/tools";
-Vue.use(Dialog, { 
+import Dialog from './components/example/Dialog/tools';
+Vue.use(Dialog, {
   // override any option here
   // for example enable debug mode
   debug: false,
@@ -169,15 +166,15 @@ Vue.use(Dialog, {
     swipeOpenTriggerProperties: {},
     animation: {
       openDuration: 200,
-      closeDuration: 200,
+      closeDuration: 200
     },
     translationOffsetMultiplier: 1,
-    axis: 'Y',
-  },
-})
+    axis: 'Y'
+  }
+});
 
 new Vue({
   //router,
-  render: h => h("frame", [h(App)]),
-  store
+  store,
+  render: h => h('frame', [h(App)])
 }).$start();

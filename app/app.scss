@@ -10,36 +10,33 @@
 // @see https://docs.nativescript.org/ui/styling
 @import './css/animate.css';
 
-.dd{
-    color:red;
+.animateicon {
+  color: red;
+  animation-name: bounceInOpacity;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
 }
 
-#dd .card {
-    animation-name: bounceInOpacity;
-    animation-duration: 1s;
-    animation-delay: 0.5s;
-  }
-
-  .extra-bold{
-    font-family: "Assistant-ExtraBold","Assistant ExtraBold";
-    /* font-family: 'Assistant', sans-serif; */
-    font-weight: 800;
+.extra-bold {
+  font-family: 'Assistant-ExtraBold', 'Assistant ExtraBold';
+  /* font-family: 'Assistant', sans-serif; */
+  font-weight: 800;
 }
 
-.bold{
-    font-family: "Assistant-Bold","Assistant";
-    /* font-family: 'Assistant', sans-serif; */
-    font-weight: 700;
+.bold {
+  font-family: 'Assistant-Bold', 'Assistant';
+  /* font-family: 'Assistant', sans-serif; */
+  font-weight: 700;
 }
 
-.semi-bold{
-    font-family: "Assistant-SemiBold","Assistant SemiBold";
-    /* font-family: 'Assistant', sans-serif; */
-    font-weight: 600;
+.semi-bold {
+  font-family: 'Assistant-SemiBold', 'Assistant SemiBold';
+  /* font-family: 'Assistant', sans-serif; */
+  font-weight: 600;
 }
 
-.align-center { 
-        text-align: center; 
+.align-center {
+  text-align: center;
 }
 
 @keyframes bounceInOpacity {
