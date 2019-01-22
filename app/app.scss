@@ -19,24 +19,17 @@
 
 .extra-bold {
   font-family: 'Assistant-ExtraBold', 'Assistant ExtraBold';
-  /* font-family: 'Assistant', sans-serif; */
   font-weight: 800;
 }
 
 .bold {
   font-family: 'Assistant-Bold', 'Assistant';
-  /* font-family: 'Assistant', sans-serif; */
   font-weight: 700;
 }
 
 .semi-bold {
   font-family: 'Assistant-SemiBold', 'Assistant SemiBold';
-  /* font-family: 'Assistant', sans-serif; */
   font-weight: 600;
-}
-
-.align-center {
-  text-align: center;
 }
 
 @keyframes bounceInOpacity {

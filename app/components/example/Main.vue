@@ -23,6 +23,7 @@
                 <Button class="btn btn-primary m-t-20" text="自定义对话框" @tap="dialog" />
                 <Button class="btn btn-primary m-t-20" text="自定义弹出框" @tap="pop" />
                 <Button class="btn btn-primary m-t-20" text="animateCSS" @tap="animate" />
+                <Button class="btn btn-primary m-t-20" text="下拉刷新" @tap="refresh" />
             </StackLayout>
 
             <!-- </GridLayout> -->
@@ -46,6 +47,7 @@ import LargeTitle from "./largeTitle/largeTitle";
 import Dialog from "./Dialog/dialog";
 import Pop from "./pop";
 import Animate from "./animate";
+import Refresh from "./refresh";
 
 export default {
   data () {
@@ -137,6 +139,9 @@ export default {
     },
     animate(){
       this.$navigateTo(Animate);
+    },
+    refresh(){
+      this.$navigateTo(Refresh);
     }
   }
 };
