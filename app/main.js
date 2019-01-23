@@ -173,6 +173,12 @@ Vue.use(Dialog, {
   }
 });
 
+//下拉刷新
+Vue.registerElement(
+  'PullToRefresh',
+  () => require('nativescript-pulltorefresh').PullToRefresh
+);
+
 new Vue({
   //router,
   store,
