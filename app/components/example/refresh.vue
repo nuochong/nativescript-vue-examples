@@ -1,17 +1,18 @@
 <template>
+    import { setTimeout } from 'timers';
     <Page loaded="pageLoaded" ref="page">
         <ActionBar class="action-bar" title="Hello">
             <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" @tap="$navigateBack" />
         </ActionBar>
         <FlexboxLayout flexDirection="column" backgroundColor="#3c495e" @pan="onDrawerPan(side, $event)">
-            <Label class="first" text="first" height="70" backgroundColor="#43b883" ref="ht" flexShrink="0"/>
-            <Label text="second" height="70" backgroundColor="#1c6b48" flexShrink="0"/>
+            <Label class="first" text="first" height="70" backgroundColor="#43b883" ref="ht" flexShrink="0" />
+            <Label text="second" height="70" backgroundColor="#1c6b48" flexShrink="0" />
             <!-- <Label text="third" height="100%" backgroundColor="#289062" /> -->
-            <!-- <ListView for="item in listArr" ref="list" @pan="onListPane(side,$event)">
-                    <v-template>
-                        <Label :text="item" class="icon" />
-                    </v-template>
-                </ListView> -->
+            <ListView for="item in listArr" ref="list" @pan="onListPane(side,$event)">
+                <v-template>
+                    <Label :text="item" class="icon" />
+                </v-template>
+            </ListView>
         </FlexboxLayout>
         <!-- <GridLayout colums="*" rows="*">
             <Label class="message" :text="msg" col="0" row="0" />
@@ -32,7 +33,8 @@ export default {
     return {
       msg: "Hello World! ",
       listArr: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
-      num:0,
+      num: 0,
+      isStart: false,
     };
   },
   mounted () {
@@ -42,6 +44,9 @@ export default {
     pageLoaded: function (args) {
 
     },
+    await: function () {
+      setTimeout("console.log('对不起, 要你久候')", 3000)
+    },
     refreshList (args) {
       var pullRefresh = args.object;
       setTimeout(function () {
@@ -49,35 +54,44 @@ export default {
       }, 1000);
     },
     onButton: function () { },
-    onDrawerPan(side, args) {
-      console.log('xxxx',this.num++);
+    onDrawerPan (side, args) {
+      console.log('xxxx', this.num++);
       let ht = this.$refs.ht.nativeView;
-      if(ht.marginTop < 0){
-        ht.marginTop = ht.marginTop +5;
+      if (ht.marginTop < 0 && this.isStart) {
+        ht.marginTop = ht.marginTop + 5;
+      }
+      if (ht.marginTop >= 70) {
+        this.await();
       }
     },
-    onListPane(side,args){
+    onListPane (side, args) {
       let list = this.$refs.list.nativeView;
-      console.log('kkk',this.getScrollY());
+      let scrollTop = this.getScrollY();
+      console.log('kkk', scrollTop);
+      if (scrollTop == 0) {
+        this.isStart = true;
+      } else {
+        this.isStart = false;
+      }
       //console.log('kkkk',list.android.smoothScrollToPosition(500));
       //list.scrollToIndex(500)
     },
-    getScrollY() {
+    getScrollY () {
       let mListView = this.$refs.list.nativeView.android;
-    let c = mListView.getChildAt(0);
-    if (c == null) {
+      let c = mListView.getChildAt(0);
+      if (c == null) {
         return 0;
+      }
+      let firstVisiblePosition = mListView.getFirstVisiblePosition();
+      let top = c.getTop();
+      return -top + firstVisiblePosition * c.getHeight();
     }
-    let firstVisiblePosition = mListView.getFirstVisiblePosition();
-    let top = c.getTop();
-    return -top + firstVisiblePosition * c.getHeight() ;
-}
   }
 };
 </script>
 
 <style scoped>
-.first{
+.first {
   margin-top: -60;
 }
 ActionBar {
