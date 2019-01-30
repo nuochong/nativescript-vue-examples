@@ -1,5 +1,4 @@
 <template>
-    import { setTimeout } from 'timers';
     <Page loaded="pageLoaded" ref="page">
         <ActionBar class="action-bar" title="Hello">
             <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" @tap="$navigateBack" />
@@ -35,6 +34,7 @@ export default {
       listArr: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
       num: 0,
       isStart: false,
+      isTime: true,
     };
   },
   mounted () {
@@ -45,24 +45,33 @@ export default {
 
     },
     await: function () {
-      setTimeout("console.log('对不起, 要你久候')", 3000)
+      console.log('丁丁事')
+      setTimeout(function () {
+        console.log('对不起, 要你久候')
+      }, 3000)
     },
     refreshList (args) {
       var pullRefresh = args.object;
+      let that = this;
       setTimeout(function () {
         pullRefresh.refreshing = false;
+        that.isTime = true;
+        console.log('定时了');
       }, 1000);
     },
     onButton: function () { },
     onDrawerPan (side, args) {
-      console.log('xxxx', this.num++);
       let ht = this.$refs.ht.nativeView;
       if (ht.marginTop < 0 && this.isStart) {
         ht.marginTop = ht.marginTop + 5;
+      } else {
+        if (this.isTime) {
+          this.isTime = false;
+          this.await();
+        }
+        console.log('666666')
       }
-      if (ht.marginTop >= 70) {
-        this.await();
-      }
+      console.log('xxxxx', ht.marginTop)
     },
     onListPane (side, args) {
       let list = this.$refs.list.nativeView;
@@ -70,8 +79,6 @@ export default {
       console.log('kkk', scrollTop);
       if (scrollTop == 0) {
         this.isStart = true;
-      } else {
-        this.isStart = false;
       }
       //console.log('kkkk',list.android.smoothScrollToPosition(500));
       //list.scrollToIndex(500)
