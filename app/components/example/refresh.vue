@@ -46,19 +46,22 @@ export default {
     },
     await: function () {
       console.log('丁丁事')
-      setTimeout(function () {
-        console.log('对不起, 要你久候')
-      }, 3000)
-    },
-    refreshList (args) {
-      var pullRefresh = args.object;
       let that = this;
       setTimeout(function () {
-        pullRefresh.refreshing = false;
+        console.log('对不起, 要你久候')
         that.isTime = true;
         console.log('定时了');
-      }, 1000);
+      }, 3000)
     },
+    // refreshList (args) {
+    //   var pullRefresh = args.object;
+    //   let that = this;
+    //   setTimeout(function () {
+    //     pullRefresh.refreshing = false;
+    //     that.isTime = true;
+    //     console.log('定时了');
+    //   }, 1000);
+    // },
     onButton: function () { },
     onDrawerPan (side, args) {
       let ht = this.$refs.ht.nativeView;
@@ -68,8 +71,9 @@ export default {
         if (this.isTime) {
           this.isTime = false;
           this.await();
+          console.log('666666')
         }
-        console.log('666666')
+
       }
       console.log('xxxxx', ht.marginTop)
     },
