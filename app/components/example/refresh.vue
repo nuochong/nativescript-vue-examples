@@ -1,8 +1,8 @@
 <template>
     <Page loaded="pageLoaded" ref="page">
-        <ActionBar class="action-bar" title="Hello">
+        <!-- <ActionBar class="action-bar" title="Hello">
             <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" @tap="$navigateBack" />
-        </ActionBar>
+        </ActionBar> -->
         <FlexboxLayout flexDirection="column" backgroundColor="#3c495e" @pan="onDrawerPan(side, $event)">
             <Label class="first" text="first" height="70" backgroundColor="#43b883" ref="ht" flexShrink="0" />
             <Label text="second" height="70" backgroundColor="#1c6b48" flexShrink="0" />
