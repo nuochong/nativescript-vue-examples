@@ -13,7 +13,7 @@
                 </v-template>
             </ListView>
         </FlexboxLayout>
-        <!-- <GridLayout colums="*" rows="*">
+        <GridLayout colums="*" rows="*">
             <Label class="message" :text="msg" col="0" row="0" />
             <PullToRefresh @refresh="refreshList">
                 <ListView for="item in listArr">
@@ -22,7 +22,7 @@
                     </v-template>
                 </ListView>
             </PullToRefresh>
-        </GridLayout> -->
+        </GridLayout>
     </Page>
 </template>
 
