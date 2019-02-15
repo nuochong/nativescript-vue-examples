@@ -15,13 +15,13 @@
         </FlexboxLayout>
         <GridLayout colums="*" rows="*">
             <Label class="message" :text="msg" col="0" row="0" />
-            <PullToRefresh @refresh="refreshList">
+            <!-- <PullToRefresh @refresh="refreshList">
                 <ListView for="item in listArr">
                     <v-template>
                         <Label :text="item" class="icon" />
                     </v-template>
                 </ListView>
-            </PullToRefresh>
+            </PullToRefresh> -->
         </GridLayout>
     </Page>
 </template>
