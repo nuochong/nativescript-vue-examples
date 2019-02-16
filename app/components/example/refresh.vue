@@ -8,20 +8,20 @@
             <Label text="second" height="70" backgroundColor="#1c6b48" flexShrink="0" /> -->
             <!-- <Label text="third" height="100%" backgroundColor="#289062" /> -->
             <ListView for="item in listArr" ref="list" @pan="onListPane(side,$event)">
-                <v-template>
+                <!-- <v-template>
                     <Label :text="item" class="icon" />
-                </v-template>
+                </v-template> -->
             </ListView>
         </FlexboxLayout>
         <GridLayout colums="*" rows="*">
             <Label class="message" :text="msg" col="0" row="0" />
-            <!-- <PullToRefresh @refresh="refreshList">
+            <PullToRefresh @refresh="refreshList">
                 <ListView for="item in listArr">
                     <v-template>
                         <Label :text="item" class="icon" />
                     </v-template>
                 </ListView>
-            </PullToRefresh> -->
+            </PullToRefresh>
         </GridLayout>
     </Page>
 </template>
