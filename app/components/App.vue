@@ -11,10 +11,6 @@
         <Label class="message" :text="msg" col="0" row="0" />
         <Button class="btn btn-primary" text="示例" @tap="example" />
         <Button class="btn btn-primary dd" text="应用" @tap="project" />
-
-        <Label class="message" :text="msg" col="0" row="0" />
-        <Button class="btn btn-primary" text="示例" @tap="example" />
-        <Button class="btn btn-primary dd" text="应用" @tap="project" />
       </StackLayout>
       <!-- </GridLayout> -->
 
