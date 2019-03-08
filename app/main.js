@@ -174,10 +174,10 @@ import store from './store';
 // });
 
 // //下拉刷新
-// Vue.registerElement(
-//   'PullToRefresh',
-//   () => require('nativescript-pulltorefresh').PullToRefresh
-// );
+Vue.registerElement(
+  'PullToRefresh',
+  () => require('nativescript-pulltorefresh').PullToRefresh
+);
 
 new Vue({
   //router,
