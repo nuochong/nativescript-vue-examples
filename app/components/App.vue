@@ -35,10 +35,10 @@ export default {
     },
     project: function() {
       this.$navigateTo(project);
-      console.log("project");
+      c//onsole.log("project");
     },
     onButtonTap: function() {
-      console.log("xxxxx");
+      //console.log("xxxxx");
       this.$navigateTo(HelloWorld, {
         animated: true,
         transition: {
