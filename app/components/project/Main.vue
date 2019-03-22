@@ -107,7 +107,7 @@ export default {
   },
   methods: {
     change: function (value) {
-      console.log('我是伏组件');
+      //console.log('我是伏组件');
       this.selectedTabview = value;
     }
   }
