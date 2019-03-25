@@ -42,7 +42,7 @@ import Drawer from "./drawer";
 import Icon from "./icon";
 import Mask from "./mask";
 import ModalComponent from "./customModel/ModalComponent";
-import Drawers from "./MultiDrawer/drawer";
+import Drawers from "./MultiDrawer/drawers";
 import LargeTitle from "./largeTitle/largeTitle";
 import Dialog from "./Dialog/dialog";
 import Pop from "./pop";

@@ -20,6 +20,7 @@
                 </StackLayout>
                 <StackLayout slot="right">
                     <Label text="Im in the right drawer" />
+                    <Drawer></Drawer>
                 </StackLayout>
                 <StackLayout slot="top">
                     <Label text="Im in the top drawer" />
@@ -35,7 +36,11 @@
 </template>
 
 <script>
+import Drawer from "../drawer";
 export default {
+    components: {
+		Drawer,
+	},
   data() {
     return {
       msg: "Hello World! ",

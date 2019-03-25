@@ -1,5 +1,5 @@
 <template>
-    <Page>
+    <!-- <Page> -->
         <!-- <RadSideDrawer [drawerTransition]="sideDrawerTransition"> -->
         <GridLayout tkDrawerContent rows="auto, *" class="sidedrawer sidedrawer-left">
             <StackLayout row="0" class="sidedrawer-header">
@@ -58,13 +58,14 @@
             </ScrollView>
         </GridLayout>
         <!-- </RadSideDrawer> -->
-    </Page>
+    <!-- </Page> -->
 </template>
 
 <script>
-import app from "../App";
-import world from "../example/world";
+//import app from "../App";
+//import world from "../example/world";
 export default {
+  props: ["drawer"],
   data() {
     return {
       msg: "Hello World Test! "
@@ -73,7 +74,7 @@ export default {
   methods: {
     onButton: function() {
       console.log("000");
-      this.$navigateTo(world);
+      //this.$navigateTo(world);
     }
   }
 };
