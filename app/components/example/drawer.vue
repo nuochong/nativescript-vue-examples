@@ -1,6 +1,6 @@
 <template>
     <!-- <Page> -->
-        <!-- <RadSideDrawer [drawerTransition]="sideDrawerTransition"> -->
+        <RadSideDrawer [drawerTransition]="sideDrawerTransition">
         <GridLayout tkDrawerContent rows="auto, *" class="sidedrawer sidedrawer-left">
             <StackLayout row="0" class="sidedrawer-header">
                 <Label class="sidedrawer-header-image fa" text="&#xf2bd;"></Label>
@@ -57,7 +57,7 @@
                 </StackLayout>
             </ScrollView>
         </GridLayout>
-        <!-- </RadSideDrawer> -->
+        </RadSideDrawer>
     <!-- </Page> -->
 </template>
 
