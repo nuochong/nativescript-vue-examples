@@ -1,6 +1,6 @@
 <template>
     <!-- <Page> -->
-        <RadSideDrawer [drawerTransition]="sideDrawerTransition">
+        <!-- <RadSideDrawer [drawerTransition]="sideDrawerTransition"> -->
         <GridLayout tkDrawerContent rows="auto, *" class="sidedrawer sidedrawer-left">
             <StackLayout row="0" class="sidedrawer-header">
                 <Label class="sidedrawer-header-image fa" text="&#xf2bd;"></Label>
@@ -10,6 +10,30 @@
 
             <ScrollView row="1">
                 <StackLayout class="sidedrawer-content">
+                    <GridLayout columns="auto, *" class="sidedrawer-list-item">
+                        <Label col="0" text="&#xf015;" class="fa iconfont">&#xeb69;</Label>
+                        <Label col="1" text="Home" class="p-r-10"></Label>
+                    </GridLayout>
+                    <GridLayout columns="auto, *" class="sidedrawer-list-item">
+                        <Label col="0" text="&#xf015;" class="fa iconfont">&#xeb69;</Label>
+                        <Label col="1" text="Home" class="p-r-10"></Label>
+                    </GridLayout>
+                    <GridLayout columns="auto, *" class="sidedrawer-list-item">
+                        <Label col="0" text="&#xf015;" class="fa iconfont">&#xeb69;</Label>
+                        <Label col="1" text="Home" class="p-r-10"></Label>
+                    </GridLayout>
+                    <GridLayout columns="auto, *" class="sidedrawer-list-item">
+                        <Label col="0" text="&#xf015;" class="fa iconfont">&#xeb69;</Label>
+                        <Label col="1" text="Home" class="p-r-10"></Label>
+                    </GridLayout>
+                    <GridLayout columns="auto, *" class="sidedrawer-list-item">
+                        <Label col="0" text="&#xf015;" class="fa iconfont">&#xeb69;</Label>
+                        <Label col="1" text="Home" class="p-r-10"></Label>
+                    </GridLayout>
+                    <GridLayout columns="auto, *" class="sidedrawer-list-item">
+                        <Label col="0" text="&#xf015;" class="fa iconfont">&#xeb69;</Label>
+                        <Label col="1" text="Home" class="p-r-10"></Label>
+                    </GridLayout>
                     <GridLayout columns="auto, *" class="sidedrawer-list-item">
                         <Label col="0" text="&#xf015;" class="fa iconfont">&#xeb69;</Label>
                         <Label col="1" text="Home" class="p-r-10"></Label>
@@ -57,7 +81,7 @@
                 </StackLayout>
             </ScrollView>
         </GridLayout>
-        </RadSideDrawer>
+        <!-- </RadSideDrawer> -->
     <!-- </Page> -->
 </template>
 
