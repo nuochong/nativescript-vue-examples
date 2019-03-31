@@ -24,6 +24,7 @@
                 <Button class="btn btn-primary m-t-20" text="自定义弹出框" @tap="pop" />
                 <Button class="btn btn-primary m-t-20" text="animateCSS" @tap="animate" />
                 <Button class="btn btn-primary m-t-20" text="下拉刷新" @tap="refresh" />
+                <Button class="btn btn-primary m-t-20" text="下拉刷新❤新" @tap="refreshNew" />
             </StackLayout>
 
             <!-- </GridLayout> -->
@@ -48,6 +49,7 @@ import Dialog from "./Dialog/dialog";
 import Pop from "./pop";
 import Animate from "./animate";
 import Refresh from "./refresh";
+import RefreshNew from "./refreshNew";
 
 export default {
   data () {
@@ -57,6 +59,9 @@ export default {
   },
   mounted () { },
   methods: {
+    refreshNew: function () {
+      this.$navigateTo(RefreshNew);
+    },
     onDrawer: function () {
       this.$navigateTo(Drawer);
     },
@@ -137,10 +142,10 @@ export default {
     pop () {
       this.$navigateTo(Pop);
     },
-    animate(){
+    animate () {
       this.$navigateTo(Animate);
     },
-    refresh(){
+    refresh () {
       this.$navigateTo(Refresh);
     }
   }
