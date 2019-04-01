@@ -4,8 +4,8 @@
             <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" @tap="$navigateBack" />
         </ActionBar>
         <FlexboxLayout flexDirection="column" backgroundColor="#3c495e" @pan="onDrawerPan(side, $event)">
-            <!-- <Label class="first" text="first" height="70" backgroundColor="#43b883" ref="ht" flexShrink="0" />
-            <Label text="second" height="70" backgroundColor="#1c6b48" flexShrink="0" /> -->
+            <Label class="first" text="first" height="70" backgroundColor="#43b883" ref="ht" flexShrink="0" />
+            <Label text="second" height="70" backgroundColor="#1c6b48" flexShrink="0" />
             <!-- <Label text="third" height="100%" backgroundColor="#289062" /> -->
             <ListView for="item in listArr" ref="list" @pan="onListPane(side,$event)">
                 <v-template>
@@ -13,7 +13,7 @@
                 </v-template>
             </ListView>
         </FlexboxLayout>
-        <GridLayout colums="*" rows="*">
+        <!-- <GridLayout colums="*" rows="*">
             <Label class="message" :text="msg" col="0" row="0" />
             <PullToRefresh @refresh="refreshList">
                 <ListView for="item in listArr">
@@ -22,7 +22,7 @@
                     </v-template>
                 </ListView>
             </PullToRefresh>
-        </GridLayout>
+        </GridLayout> -->
     </Page>
 </template>
 
@@ -59,7 +59,7 @@ export default {
     //   setTimeout(function () {
     //     pullRefresh.refreshing = false;
     //     that.isTime = true;
-    //     console.log('定时了');
+    //     console.log('定时了');·
     //   }, 1000);
     // },
     onButton: function () { },
