@@ -35,12 +35,23 @@ export default {
       num: 0,
       isStart: false,
       isTime: true,
+      //下拉信息
+      pull_to_refresh:'下拉可以刷新',
+      release_to_refresh:'释放立即刷新',
+      refreshing:'正在刷新…',
+      not_updated_yet:'暂未更新过',
+      updated_at:'上次更新于%1$s前',
+      updated_just_now:'刚刚更新',
+      time_error:'时间有问题'
     };
   },
   mounted () {
     this.pageLoaded();
   },
   methods: {
+    setIsAbleToPull:function(){
+      
+    },
     pageLoaded: function (args) {
 
     },
@@ -73,7 +84,7 @@ export default {
     onDrawerPan (side, args) {
       let ht = this.$refs.ht.nativeView;
       if (ht.marginTop < 0 && this.isStart) {
-        ht.marginTop = ht.marginTop + 5;
+        ht.marginTop = ht.marginTop + 1;
       } else {
         if (this.isTime) {
           this.isTime = false;

@@ -5,6 +5,7 @@ import store from './store';
 import { prototype } from 'stream';
 //import VueDevtools from 'nativescript-vue-devtools'
 
+
 const application = require('tns-core-modules/application');
 
 // Vue.use(VueDevtools)
