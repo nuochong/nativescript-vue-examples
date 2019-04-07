@@ -24,54 +24,58 @@ export default {
     touch: function () {
 
       let btn = this.$refs.btn.nativeView;
-      console.log('');
-      btn.android.setOnTouchListener(new android.view.View.OnTouchListener({
-        onTouch: function (view, motionEvent) {
-          // var action = motionEvent.getAction();
-          // if (action === android.view.MotionEvent.ACTION_DOWN) { 
-          //   console.log('######')
-          // }
-          // if (action === android.view.MotionEvent.ACTION_UP) { 
-          //   console.log('@@@@@@')
-          // }
-          // return false;
-          let scale = '0.7f'
-          let duration = 150;
-          let interpolator= new android.view.animation.DecelerateInterpolator();
-          //按钮点击效果
-          let v = view;
-          let event = motionEvent;
-          let MotionEvent = android.view.MotionEvent;
-          switch (event.getAction()) {
-            case MotionEvent.ACTION_DOWN:
-              console.log('按下了');
-              v.animate().scaleX(scale).scaleY(scale).setDuration(duration).setInterpolator(interpolator);
-              v.setPressed(true);
-              break;
+      console.log('xxxx',btn.ios);
+      //设置button按钮文字
+      btn.ios.setTitleForState('Button title', UIControlStateNormal);
+      btn.ios.
+      //btn.ios.addTargetWithActionForControlEvent(this, cccontrol_selector(HelloWorld:: touchDownAction), CCControlEventTouchDown);
+      // btn.android.setOnTouchListener(new android.view.View.OnTouchListener({
+      //   onTouch: function (view, motionEvent) {
+      //     // var action = motionEvent.getAction();
+      //     // if (action === android.view.MotionEvent.ACTION_DOWN) { 
+      //     //   console.log('######')
+      //     // }
+      //     // if (action === android.view.MotionEvent.ACTION_UP) { 
+      //     //   console.log('@@@@@@')
+      //     // }
+      //     // return false;
+      //     let scale = '0.7f'
+      //     let duration = 150;
+      //     let interpolator= new android.view.animation.DecelerateInterpolator();
+      //     //按钮点击效果
+      //     let v = view;
+      //     let event = motionEvent;
+      //     let MotionEvent = android.view.MotionEvent;
+      //     switch (event.getAction()) {
+      //       case MotionEvent.ACTION_DOWN:
+      //         console.log('按下了');
+      //         v.animate().scaleX(scale).scaleY(scale).setDuration(duration).setInterpolator(interpolator);
+      //         v.setPressed(true);
+      //         break;
 
-            case MotionEvent.ACTION_MOVE:
-              let x = event.getX();
-              let y = event.getY();
-              let isInside = (x > 0 && x < v.getWidth() && y > 0 && y < v.getHeight());
-              if (v.isPressed() != isInside) {
-                v.setPressed(isInside);
-              }
-              break;
-            case MotionEvent.ACTION_CANCEL:
-              v.setPressed(false);
-              v.animate().scaleX(1).scaleY(1).setInterpolator(interpolator);
-              break;
-            case MotionEvent.ACTION_UP:
-              v.animate().scaleX(1).scaleY(1).setInterpolator(interpolator);
-              if (v.isPressed()) {
-                v.performClick();
-                v.setPressed(false);
-              }
-              break;
-          }
-          return true;
-        }
-      }));
+      //       case MotionEvent.ACTION_MOVE:
+      //         let x = event.getX();
+      //         let y = event.getY();
+      //         let isInside = (x > 0 && x < v.getWidth() && y > 0 && y < v.getHeight());
+      //         if (v.isPressed() != isInside) {
+      //           v.setPressed(isInside);
+      //         }
+      //         break;
+      //       case MotionEvent.ACTION_CANCEL:
+      //         v.setPressed(false);
+      //         v.animate().scaleX(1).scaleY(1).setInterpolator(interpolator);
+      //         break;
+      //       case MotionEvent.ACTION_UP:
+      //         v.animate().scaleX(1).scaleY(1).setInterpolator(interpolator);
+      //         if (v.isPressed()) {
+      //           v.performClick();
+      //           v.setPressed(false);
+      //         }
+      //         break;
+      //     }
+      //     return true;
+      //   }
+      // }));
       console.log('点击了触摸');
     }
   }
