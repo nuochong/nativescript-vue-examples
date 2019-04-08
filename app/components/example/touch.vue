@@ -27,7 +27,8 @@ export default {
       console.log('xxxx',btn.ios);
       //设置button按钮文字
       btn.ios.setTitleForState('Button title', UIControlStateNormal);
-      btn.ios.
+    //var UIButton = UIButton.alloc.init;
+      btn.ios.basicRandom();
       //btn.ios.addTargetWithActionForControlEvent(this, cccontrol_selector(HelloWorld:: touchDownAction), CCControlEventTouchDown);
       // btn.android.setOnTouchListener(new android.view.View.OnTouchListener({
       //   onTouch: function (view, motionEvent) {
