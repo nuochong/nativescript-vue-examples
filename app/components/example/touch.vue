@@ -11,7 +11,7 @@
 
 <script>
 import { log } from 'util';
-import {Color} from 'color';
+import { Color } from 'color';
 export default {
   data () {
     return {
@@ -24,7 +24,7 @@ export default {
   methods: {
     touch: function () {
       var colorModule = require("color");
-var red = new colorModule.Color("#ff0000");
+      var red = new colorModule.Color("#ff0000");
       let btn = this.$refs.btn.nativeView;
       console.log('xxxx', btn.ios);
       //设置button按钮文字
@@ -36,8 +36,8 @@ var red = new colorModule.Color("#ff0000");
       btn.ios.setTitleColor = new Color('red');
       let title = btn.ios.currentTitle;
       console.log('标题', title);
-            let titleColor = btn.ios.currentTitleColor
-;
+      let titleColor = btn.ios.currentTitleColor
+        ;
       console.log('标题颜色', titleColor);
       ;
       // [button addTarget: self action:@selector(touchDownAction) forControlEvents: UIControlEventTouchDown];
