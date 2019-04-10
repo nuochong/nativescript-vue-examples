@@ -41,7 +41,6 @@ export default {
       console.log('标题颜色', titleColor);
       ;
       // [button addTarget: self action:@selector(touchDownAction) forControlEvents: UIControlEventTouchDown];
-      // [button addTarget: self action:@selector(touchUpInsideAction) forControlEvents: UIControlEventTouchUpInside];
 
       // [self.view addSubview: button];
       //btn.ios.addTargetWithActionForControlEvent(this, cccontrol_selector(HelloWorld:: touchDownAction), CCControlEventTouchDown);
