@@ -11,7 +11,8 @@
 
 <script>
 import { log } from 'util';
-import { Color } from 'color';
+//import { Color } from 'color';
+import { Color, layout } from 'tns-core-modules/ui/core/view';
 export default {
   data () {
     return {
@@ -33,7 +34,8 @@ export default {
       //btn.ios.frame = CGRectMake(5, 5, 5, 5)
       //btn.ios.showsTouchWhenHighlighted = 'YES';
       //btn.ios.ButtonType = 'custom';
-      btn.ios.setTitleColor = new Color('red');
+      //btn.ios.setTitleColor = new Color('red');
+      btn.ios.setTitleColorForState(new Color('red').ios,UIControlStateNormal);
       let title = btn.ios.currentTitle;
       console.log('标题', title);
       let titleColor = btn.ios.currentTitleColor
