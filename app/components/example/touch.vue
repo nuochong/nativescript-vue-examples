@@ -5,6 +5,7 @@
         </ActionBar>
         <GridLayout colums="*" rows="*">
             <Button class="btn btn-primary m-t-20" ref="btn" text="触摸" @tap="touch" />
+            <!-- <Button class="btn btn-primary m-t-20" ref="btn" text="触摸" /> -->
         </GridLayout>
     </Page>
 </template>
@@ -21,27 +22,34 @@ export default {
     };
   },
   mounted () {
+    //this.touch();
+    // let btn = this.$refs.btn.nativeView;
+    // btn.ios.setTitleColorForState(new Color('red').ios,UIControlStateSelected);
   },
   methods: {
     touch: function () {
-      var colorModule = require("color");
-      var red = new colorModule.Color("#ff0000");
+      // var colorModule = require("color");
+      // var red = new colorModule.Color("#ff0000");
       let btn = this.$refs.btn.nativeView;
       console.log('xxxx', btn.ios);
       //设置button按钮文字
       btn.ios.setTitleForState('Button title', UIControlStateNormal);
       //var UIButton = UIButton.alloc.init;
       //btn.ios.frame = CGRectMake(5, 5, 5, 5)
-      //btn.ios.showsTouchWhenHighlighted = 'YES';
+      btn.ios.showsTouchWhenHighlighted = 'YES';
       //btn.ios.ButtonType = 'custom';
       //btn.ios.setTitleColor = new Color('red');
       btn.ios.setTitleColorForState(new Color('red').ios,UIControlStateNormal);
+      btn.ios.setTitleShadowColorForState(new Color('red').ios,UIControlStateNormal);
+      btn.ios.reversesTitleShadowWhenHighlighted = true;
+      btn.ios.setShadowOpacity = 0.5;
+      //btn.ios.setBorderWidth(3);
+      btn.ios.layer.setBorderColor(new Color('red').ios);
+
       let title = btn.ios.currentTitle;
       console.log('标题', title);
-      let titleColor = btn.ios.currentTitleColor
-        ;
+      let titleColor = btn.ios.currentTitleColor;
       console.log('标题颜色', titleColor);
-      ;
       // [button addTarget: self action:@selector(touchDownAction) forControlEvents: UIControlEventTouchDown];
 
       // [self.view addSubview: button];
