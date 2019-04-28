@@ -17,7 +17,7 @@ import { Color, layout } from 'tns-core-modules/ui/core/view';
 export default {
   data () {
     return {
-      msg: "Hello World! ",
+      // msg: "Hello World! ",
       glyphs: []
     };
   },
