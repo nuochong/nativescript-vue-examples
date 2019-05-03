@@ -1,11 +1,11 @@
 <template>
     <Page loaded="pageLoaded" ref="page">
-        <!-- <ActionBar class="action-bar" title="Hello">
+        <ActionBar class="action-bar" title="Hello">
             <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" @tap="$navigateBack" />
-        </ActionBar> -->
+        </ActionBar>
         <GridLayout colums="*" rows="*">
-            <!-- <Button class="btn btn-primary m-t-20" ref="btn" text="触摸" @tap="touch" /> -->
-            <!-- <Button class="btn btn-primary m-t-20" ref="btn" text="触摸" /> -->
+            <Button class="btn btn-primary m-t-20" ref="btn" text="触摸" @tap="touch" />
+            <Button class="btn btn-primary m-t-20" ref="btn" text="触摸" />
         </GridLayout>
     </Page>
 </template>
