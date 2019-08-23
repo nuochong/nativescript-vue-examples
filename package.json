@@ -14,7 +14,7 @@
     }
   },
   "dependencies": {
-    "@vue/devtools": "^5.0.0-beta.3",
+    "@vue/devtools": "^5.1.1",
     "nativescript-app-shortcuts": "^2.1.0",
     "nativescript-camera": "^4.5.0",
     "nativescript-fancyalert": "^2.0.0",
@@ -27,8 +27,8 @@
     "nativescript-theme-core": "^1.0.4",
     "nativescript-toast": "^1.4.6",
     "nativescript-ui-sidedrawer": "^7.0.0",
-    "nativescript-vue": "^2.0.0",
-    "nativescript-vue-devtools": "^1.1.0",
+    "nativescript-vue": "^2.4.0",
+    "nativescript-vue-devtools": "^1.2.0",
     "nativescript-vue-multi-drawer": "0.0.2",
     "tns-core-modules": "^6.0.7",
     "vuex": "^3.1.1"
@@ -47,13 +47,13 @@
     "lazy": "1.0.11",
     "mini-css-extract-plugin": "^0.4.1",
     "nativescript-dev-webpack": "next",
-    "nativescript-vue-template-compiler": "^2.0.0",
+    "nativescript-vue-template-compiler": "^2.4.0",
     "nativescript-worker-loader": "~0.9.0",
     "node-sass": "^4.9.2",
     "sass-loader": "^7.1.0",
     "uglifyjs-webpack-plugin": "~1.2.7",
     "terser-webpack-plugin": "^1.1.0",
-    "vue-loader": "^15.2.6",
+    "vue-loader": "^15.7.1",
     "webpack": "^4.16.4",
     "webpack-bundle-analyzer": "~2.13.1",
     "webpack-cli": "^3.1.0"

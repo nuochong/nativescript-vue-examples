@@ -669,7 +669,7 @@
     source-map "~0.6.1"
     vue-template-es2015-compiler "^1.9.0"
 
-"@vue/devtools@^5.0.0-beta.3":
+"@vue/devtools@^5.1.1":
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/@vue/devtools/-/devtools-5.1.1.tgz#7d541dfd469fb5a240d9eab4c69c90d9a7b1258d"
   integrity sha512-opTHbARuRcG/XRXa24xTCvKoymYT3lLORSlmjdE1fdgFvlmkR9auSvhezpxlpAUa11E86J9bp0gMMmqffh1y9A==
@@ -4343,14 +4343,14 @@ nativescript-ui-core@~3.0.0:
   resolved "https://registry.yarnpkg.com/nativescript-ui-core/-/nativescript-ui-core-3.0.0.tgz#94692416e3f79950c3b1e7d87f8f82f4d620e740"
   integrity sha512-gEaooNnuLiAHSPlh2zfEkdc4sq7Z/0UtubiQbLjW3KvG8iyF6/jFQNmNEIr/RvcoZ9jVtEVmbdnaeA2MfpJQ+w==
 
-nativescript-ui-sidedrawer@7.0.0:
+nativescript-ui-sidedrawer@^7.0.0:
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/nativescript-ui-sidedrawer/-/nativescript-ui-sidedrawer-7.0.0.tgz#99b2c331d8068d05102364ae5ff92304987003a9"
   integrity sha512-FPFJfN7g8tW8h7fciCoh89Zj66F8it7UpzZALmkkA7qHq+QlhuIoxHwx4l+tgIoVy6BoM4xPII5+Kh9n+OYSBA==
   dependencies:
     nativescript-ui-core "~3.0.0"
 
-nativescript-vue-devtools@^1.1.0:
+nativescript-vue-devtools@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/nativescript-vue-devtools/-/nativescript-vue-devtools-1.2.0.tgz#188111327b6a20339eea3d63af3ab2856bfd6503"
   integrity sha512-PhE+zNbSypKut7h7ydoqGWIDBUY33y0CokU/+rA3kgJfjPZ8OnCrWcq092dUbWUtpzIiENMY/viDK0o+xgKroQ==
@@ -4362,7 +4362,7 @@ nativescript-vue-multi-drawer@0.0.2:
   dependencies:
     merge-options "^1.0.1"
 
-nativescript-vue-template-compiler@^2.0.0:
+nativescript-vue-template-compiler@^2.4.0:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/nativescript-vue-template-compiler/-/nativescript-vue-template-compiler-2.4.0.tgz#af77f127c611aa9e32c98a15a2403633995d6f57"
   integrity sha512-EPkYmPkfh/UvkcJ4aXvNaj5c7NK1LqvdSW3rs6qaUyLJJuIvMZm3vPPQen6Mn8TGDIZQzwykA+HLniObVV4CJA==
@@ -4370,7 +4370,7 @@ nativescript-vue-template-compiler@^2.0.0:
     de-indent "^1.0.2"
     he "^1.1.0"
 
-nativescript-vue@^2.0.0:
+nativescript-vue@^2.4.0:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/nativescript-vue/-/nativescript-vue-2.4.0.tgz#328868ea1463c5ba0430bc2444821fce9a81581a"
   integrity sha512-GRRab7oT8A+vurUNuN/FrAcG649IceZ1LGHjEF2U9hzZp7taEvPTml4kMAF0SmWgVZVz7ftIEeAIF2lmNb6Hcg==
@@ -6638,7 +6638,7 @@ vue-hot-reload-api@^2.3.0:
   resolved "https://registry.yarnpkg.com/vue-hot-reload-api/-/vue-hot-reload-api-2.3.3.tgz#2756f46cb3258054c5f4723de8ae7e87302a1ccf"
   integrity sha512-KmvZVtmM26BQOMK1rwUZsrqxEGeKiYSZGA7SNWE6uExx8UX/cj9hq2MRV/wWC3Cq6AoeDGk57rL9YMFRel/q+g==
 
-vue-loader@^15.2.6:
+vue-loader@^15.7.1:
   version "15.7.1"
   resolved "https://registry.yarnpkg.com/vue-loader/-/vue-loader-15.7.1.tgz#6ccacd4122aa80f69baaac08ff295a62e3aefcfd"
   integrity sha512-fwIKtA23Pl/rqfYP5TSGK7gkEuLhoTvRYW+TU7ER3q9GpNLt/PjG5NLv3XHRDiTg7OPM1JcckBgds+VnAc+HbA==
