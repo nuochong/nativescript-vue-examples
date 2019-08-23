@@ -2,7 +2,6 @@ import Vue from 'nativescript-vue';
 import App from './components/App';
 //import router from './router';
 import store from './store';
-import { prototype } from 'stream';
 //import VueDevtools from 'nativescript-vue-devtools'
 
 
@@ -175,10 +174,10 @@ Vue.use(Dialog, {
 });
 
 // //下拉刷新
-Vue.registerElement(
-  'PullToRefresh',
-  () => require('nativescript-pulltorefresh').PullToRefresh
-);
+// Vue.registerElement(
+//   'PullToRefresh',
+//   () => require('nativescript-pulltorefresh').PullToRefresh
+// );
 
 new Vue({
   //router,
