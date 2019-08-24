@@ -649,6 +649,11 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
+"@billow/nsv-http@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@billow/nsv-http/-/nsv-http-1.0.5.tgz#06dd7f819002122949c8f7b15eacc90e9d4108fb"
+  integrity sha512-N7Vn8dtnQtL+OI2Qh6YkK6MVRQXd4qjb89O4bLst4zxS219FZhwS3OvMRwCqAoAwmQM4m2kNgNgditqLO8sUsg==
+
 "@types/node@^7.0.18":
   version "7.10.7"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-7.10.7.tgz#8604623912010235185f1166c7a5a9aa7de9fcd8"

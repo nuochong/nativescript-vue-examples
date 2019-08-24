@@ -26,6 +26,7 @@
                 <Button class="btn btn-primary m-t-20" text="下拉刷新" @tap="refresh" />
                 <Button class="btn btn-primary m-t-20" text="下拉刷新❤新" @tap="refreshNew" />
                 <Button class="btn btn-primary m-t-20" text="触摸事件" @tap="touch" />
+                <Button class="btn btn-primary m-t-20" text="请求" @tap="request" />
             </StackLayout>
             <!-- </GridLayout> -->
         </ScrollView>
@@ -50,6 +51,7 @@ import Animate from "./animate";
 import Refresh from "./refresh";
 import RefreshNew from "./refreshNew";
 import Touch from "./touch";
+import Request from "./request";
 
 export default {
   data () {
@@ -59,6 +61,9 @@ export default {
   },
   mounted () { },
   methods: {
+    request: function () {
+      this.$navigateTo(Request);
+    },
     touch: function () {
       this.$navigateTo(Touch);
     },
