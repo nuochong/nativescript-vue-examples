@@ -35,16 +35,15 @@ export default {
     },
     project: function() {
       this.$navigateTo(project);
-      c//onsole.log("project");
+      console.log("project");
     },
     onButtonTap: function() {
-      //console.log("xxxxx");
       this.$navigateTo(HelloWorld, {
         animated: true,
         transition: {
           name: "slide",
           duration: 380,
-          curve: "easeIn" //spring
+          curve: "easeIn"
         }
       });
     },

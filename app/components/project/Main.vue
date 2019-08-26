@@ -13,7 +13,7 @@
             <ScrollView orientation="vertical" row="1" backgroundColor="red" v-show="selectedTabview == 0">
                 <StackLayout flexDirection="column" height="100%">
                     <!-- <Tabbar2 v-for="(place,index) in places" :key="index" :place="place" :index="index" :active="active" width="100%" /> -->
-                    <ListView ref='ca' v-for="(place,index) in places" :key="index" :place="place" :index="index" :active="active" height="100%" class="dt" backgroundColor="white">
+                    <ListView ref='ca' for="(place,index) in places" :key="index" :place="place" :index="index" :active="active" height="100%" class="dt" backgroundColor="white">
                       <v-template>
                     <WrapLayout  height="415" class="card" flexDirection="column" justifyContent="center" >
                         <AbsoluteLayout width="56%" height="80%" class="ll" alignSelf="center">
