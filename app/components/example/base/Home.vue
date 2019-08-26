@@ -1,6 +1,6 @@
 <template>
   <Page class="page">
-    <ActionBar class="action-bar" title="Home"/>
+    <ActionBar class="action-bar" title="Home" />
     <ScrollView>
       <StackLayout>
         <Button class="btn btn-primary" @tap="counter">计数器【Counter】</Button>
@@ -11,7 +11,7 @@
         <Button class="btn btn-primary" @tap="btnAlert">精美提示框【Alert】</Button>
         <Button class="btn btn-primary" @tap="info">消息通知【Info】</Button>
 
-        <Button class="btn btn-primary" @tap="btnDialog">对话框【Dialog】 </Button>
+        <Button class="btn btn-primary" @tap="btnDialog">对话框【Dialog】</Button>
 
         <Button class="btn btn-primary" @tap="btnPlatformModule">平台型号【PlatformModule】</Button>
 
@@ -23,54 +23,53 @@
 
         <Button class="btn btn-primary" @tap="btnPlatformModule">获取设备信息</Button>
         <Button class="btn btn-primary btn-green" @tap="btnChange" ref="btn">改变按钮【Change Btn】</Button>
-
       </StackLayout>
     </ScrollView>
   </Page>
 </template>
 
 <script>
-import Counter from "./Counter";
-import HelloWorld from "./HelloWorld.vue";
-import Login from "./Login.vue";
+import Counter from './Counter';
+import HelloWorld from './HelloWorld.vue';
+import Login from './Login.vue';
 
-import * as Toast from "nativescript-toast";
-import { TNSFancyAlert, TNSFancyAlertButton } from "nativescript-fancyalert";
+import * as Toast from 'nativescript-toast';
+import { TNSFancyAlert, TNSFancyAlertButton } from 'nativescript-fancyalert';
 //import * as LocalNotifications from "nativescript-local-notifications";
-import { LocalNotifications } from "nativescript-local-notifications";
+import { LocalNotifications } from 'nativescript-local-notifications';
 //var LocalNotifications = require("nativescript-local-notifications");
 
-const dialogs = require("tns-core-modules/ui/dialogs");
+const dialogs = require('tns-core-modules/ui/dialogs');
 
-const platformModule = require("tns-core-modules/platform");
+const platformModule = require('tns-core-modules/platform');
 
-const phone = require("nativescript-phone");
+const phone = require('nativescript-phone');
 
-const geolocation = require("nativescript-geolocation");
-const { Accuracy } = require("tns-core-modules/ui/enums");
+const geolocation = require('nativescript-geolocation');
+const { Accuracy } = require('tns-core-modules/ui/enums');
 
-const permissions = require("nativescript-permissions");
+const permissions = require('nativescript-permissions');
 //const CALL_PHONE = android.Manifest.permission.CALL_PHONE;
 //const Intent = android.content.Intent;
-const app = require("application");
+const app = require('application');
 
 export default {
   data() {
     return {
-      msg: "Hello World!"
+      msg: 'Hello World!'
     };
   },
   mounted() {
-    console.log("***********");
+    console.log('***********');
   },
   methods: {
     counter: function() {
       this.$navigateTo(Counter, {
         animated: true,
         transition: {
-          name: "slide",
+          name: 'slide',
           duration: 380,
-          curve: "easeIn"
+          curve: 'easeIn'
         }
       });
     },
@@ -78,9 +77,9 @@ export default {
       this.$navigateTo(HelloWorld, {
         animated: true,
         transition: {
-          name: "slide",
+          name: 'slide',
           duration: 380,
-          curve: "easeIn"
+          curve: 'easeIn'
         }
       });
     },
@@ -88,25 +87,21 @@ export default {
       this.$navigateTo(Login, {
         animated: true,
         transition: {
-          name: "slide",
+          name: 'slide',
           duration: 380,
-          curve: "easeIn"
+          curve: 'easeIn'
         }
       });
     },
     btnToast: function() {
-      console.log("111");
-      let toast = Toast.makeText("你好世界【Hello World】", "long");
+      console.log('111');
+      let toast = Toast.makeText('你好世界【Hello World】', 'long');
       toast.show();
     },
     btnAlert: function() {
-      console.log("xxx");
+      console.log('xxx');
       //TNSFancyAlert.showSuccess('Success!', 'Fancy alerts are nice.', 'Yes they are!');
-      TNSFancyAlert.showSuccess(
-        "成功！Success!",
-        "花哨的提醒很不错。【Fancy alerts are nice.】",
-        "是的【Yes they are!】"
-      ).then(() => {
+      TNSFancyAlert.showSuccess('成功！Success!', '花哨的提醒很不错。【Fancy alerts are nice.】', '是的【Yes they are!】').then(() => {
         /* user pressed the button */
       });
     },
@@ -123,35 +118,28 @@ export default {
       LocalNotifications.schedule([
         {
           id: 1,
-          title: "The title",
-          body: "Recurs every minute until cancelled",
-          ticker: "The ticker",
-          color: "red",
+          title: 'The title',
+          body: 'Recurs every minute until cancelled',
+          ticker: 'The ticker',
+          color: 'red',
           badge: 1,
-          groupedMessages: [
-            "The first",
-            "Second",
-            "Keep going",
-            "one more..",
-            "OK Stop"
-          ], //android only
-          groupSummary: "Summary of the grouped messages above", //android only
+          groupedMessages: ['The first', 'Second', 'Keep going', 'one more..', 'OK Stop'], //android only
+          groupSummary: 'Summary of the grouped messages above', //android only
           ongoing: true, // makes the notification ongoing (Android only)
-          icon: "res://heart",
-          image:
-            "https://cdn-images-1.medium.com/max/1200/1*c3cQvYJrVezv_Az0CoDcbA.jpeg",
+          icon: 'res://heart',
+          image: 'https://cdn-images-1.medium.com/max/1200/1*c3cQvYJrVezv_Az0CoDcbA.jpeg',
           thumbnail: true,
-          interval: "minute",
-          channel: "My Channel", // default: 'Channel'
-          sound: "customsound-ios.wav", // falls back to the default sound on Android
+          interval: 'minute',
+          channel: 'My Channel', // default: 'Channel'
+          sound: 'customsound-ios.wav', // falls back to the default sound on Android
           at: new Date(new Date().getTime() + 10 * 1000) // 10 seconds from now
         }
       ]).then(
         function() {
-          console.log("Notification scheduled");
+          console.log('Notification scheduled');
         },
         function(error) {
-          console.log("scheduling error: " + error);
+          console.log('scheduling error: ' + error);
         }
       );
 
@@ -177,36 +165,36 @@ export default {
     },
     btnDialog: function() {
       dialogs.alert({
-        title: "Notification received",
-        message: "message",
-        okButtonText: "Excellent!"
+        title: 'Notification received',
+        message: 'message',
+        okButtonText: 'Excellent!'
       });
     },
     btnPlatformModule: function() {
-      console.log("######");
+      console.log('######');
       console.log(platformModule.device.model);
-      console.log("######");
+      console.log('######');
     },
     btnPhone: function() {
       phone.requestCallPermission();
-      phone.dial("212-555-1234", true);
+      phone.dial('212-555-1234', true);
     },
     btnSms: function() {
       phone
-        .sms("212-555-1234", "我的消息【My Message】") //New Method for single number is phone.sms(["212-555-1234"],"My Message")
+        .sms('212-555-1234', '我的消息【My Message】') //New Method for single number is phone.sms(["212-555-1234"],"My Message")
         .then(
           function(args) {
             /// args.reponse: "success", "cancelled", "failed"
             console.log(JSON.stringify(args));
           },
           function(err) {
-            console.log("Error: " + err);
+            console.log('Error: ' + err);
           }
         );
     },
     btnGeolocation: function() {
       geolocation.enableLocationRequest();
-      console.log("xxxx");
+      console.log('xxxx');
       geolocation
         .getCurrentLocation({
           desiredAccuracy: Accuracy.high,
@@ -214,13 +202,13 @@ export default {
           timeout: 20000
         })
         .then(res => {
-          console.log("***");
+          console.log('***');
           this.lat = res.latitude;
           this.lon = res.longitude;
           this.speed = res.speed;
-          console.log("定位", this.lat);
-          console.log("定位", this.lon);
-          console.log("定位", this.lat);
+          console.log('定位', this.lat);
+          console.log('定位', this.lon);
+          console.log('定位', this.lat);
         });
     },
     btnPermissions: function() {
@@ -237,9 +225,9 @@ export default {
       //   });
     },
     btnPlatformModule: function() {
-      console.log("######");
+      console.log('######');
       console.log(platformModule.device.model);
-      console.log("######");
+      console.log('######');
       // vm.set("deviceInformationmodel", platformModule.device.model);
       // vm.set("deviceInformationdeviceType", platformModule.device.deviceType);
       // vm.set("deviceInformationos", platformModule.device.os);
@@ -259,11 +247,11 @@ export default {
       btn.color = 'blue';
       //btn.background = "red";
       btn.fontSize = 50;
-      btn.text = "xxx";
+      btn.text = 'xxx';
       btn.rotate = '10';
       btn.opacity = 0.5;
       btn.padding = 10;
-      
+
       //console.log(btn._getNativeViewsCount());
       // btn.on("tap", function(params) {
       //   console.log("呵呵");
@@ -274,9 +262,9 @@ export default {
 </script>
 
 <style  scoped>
-  .btn-green{
-    background-color: blue;
-    color: green;
-    font-size: 20px;
-  }
+.btn-green {
+  background-color: blue;
+  color: green;
+  font-size: 20px;
+}
 </style>

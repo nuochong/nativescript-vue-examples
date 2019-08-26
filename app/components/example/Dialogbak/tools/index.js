@@ -1,6 +1,6 @@
-import mergeOptions from 'merge-options'
+import mergeOptions from 'merge-options';
 
-import Dialog from './Dialog'
+import Dialog from './Dialog';
 
 export let defaultOptions = {
   debug: false,
@@ -17,17 +17,17 @@ export let defaultOptions = {
     swipeOpenTriggerProperties: {},
     animation: {
       openDuration: 300,
-      closeDuration: 300,
+      closeDuration: 300
     },
     translationOffsetMultiplier: 1,
-    axis: 'Y',
-  },
-}
+    axis: 'Y'
+  }
+};
 
 export default function install(Vue, options) {
-  if(options) {
-    defaultOptions = mergeOptions(defaultOptions, options)
+  if (options) {
+    defaultOptions = mergeOptions(defaultOptions, options);
   }
 
-  Vue.component('Dialog', Dialog)
+  Vue.component('Dialog', Dialog);
 }

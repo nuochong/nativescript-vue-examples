@@ -1,34 +1,36 @@
 <template>
-    <Page :class="{ dialogOpen: dialogOpen }">
-        <ActionBar class="action-bar" title="Hello">
-            <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" @tap="$navigateBack" />
-        </ActionBar>
-        <GridLayout colums="*" rows="*">
+  <Page :class="{ dialogOpen: dialogOpen }">
+    <ActionBar class="action-bar" title="Hello">
+      <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" @tap="$navigateBack" />
+    </ActionBar>
+    <GridLayout colums="*" rows="*">
+      <StackLayout>
+        <Label class="message" :text="msg" col="0" row="0" />
+        <Button class="btn-mask" text="Button" @tap="showDialog" />
+      </StackLayout>
 
-            <StackLayout>
-                <Label class="message" :text="msg" col="0" row="0" />
-                <Button class="btn-mask" text="Button" @tap="showDialog" />
-            </StackLayout>
-
-            <AbsoluteLayout class="dialog-wrapper">
-                <StackLayout class="dialog">
-                    <Label class="h3" textWrap="true" text="Are you sure you want to share your data with 42 people?"></Label>
-                    <Button class="btn btn-primary" text="Share"></Button>
-                    <Button class="btn btn-outline" text="Cancel" @tap="closeDialog"></Button>
-                </StackLayout>
-            </AbsoluteLayout>
-        </GridLayout>
-
-    </Page>
+      <AbsoluteLayout class="dialog-wrapper">
+        <StackLayout class="dialog">
+          <Label
+            class="h3"
+            textWrap="true"
+            text="Are you sure you want to share your data with 42 people?"
+          ></Label>
+          <Button class="btn btn-primary" text="Share"></Button>
+          <Button class="btn btn-outline" text="Cancel" @tap="closeDialog"></Button>
+        </StackLayout>
+      </AbsoluteLayout>
+    </GridLayout>
+  </Page>
 </template>
 
 <script>
-import app from "../App";
-import world from "../example/world";
+import app from '../App';
+import world from '../example/world';
 export default {
   data() {
     return {
-      msg: "Hello World! ",
+      msg: 'Hello World! ',
       dialogOpen: false
     };
   },

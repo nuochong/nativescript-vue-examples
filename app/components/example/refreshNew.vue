@@ -1,19 +1,30 @@
 <template>
-    <Page loaded="pageLoaded" ref="page">
-        <ActionBar class="action-bar" title="Hello">
-            <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" @tap="$navigateBack" />
-        </ActionBar>
-        <FlexboxLayout flexDirection="column" backgroundColor="#3c495e" @pan="onDrawerPan(side, $event)">
-            <Label class="first" text="first" height="70" backgroundColor="#43b883" ref="ht" flexShrink="0" />
-            <Label text="second" height="70" backgroundColor="#1c6b48" flexShrink="0" />
-            <!-- <Label text="third" height="100%" backgroundColor="#289062" /> -->
-            <ListView for="item in listArr" ref="list" @pan="onListPane(side,$event)">
-                <v-template>
-                    <Label :text="item" class="icon" />
-                </v-template>
-            </ListView>
-        </FlexboxLayout>
-        <!-- <GridLayout colums="*" rows="*">
+  <Page loaded="pageLoaded" ref="page">
+    <ActionBar class="action-bar" title="Hello">
+      <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" @tap="$navigateBack" />
+    </ActionBar>
+    <FlexboxLayout
+      flexDirection="column"
+      backgroundColor="#3c495e"
+      @pan="onDrawerPan(side, $event)"
+    >
+      <Label
+        class="first"
+        text="first"
+        height="70"
+        backgroundColor="#43b883"
+        ref="ht"
+        flexShrink="0"
+      />
+      <Label text="second" height="70" backgroundColor="#1c6b48" flexShrink="0" />
+      <!-- <Label text="third" height="100%" backgroundColor="#289062" /> -->
+      <ListView for="item in listArr" ref="list" @pan="onListPane(side,$event)">
+        <v-template>
+          <Label :text="item" class="icon" />
+        </v-template>
+      </ListView>
+    </FlexboxLayout>
+    <!-- <GridLayout colums="*" rows="*">
             <Label class="message" :text="msg" col="0" row="0" />
             <PullToRefresh @refresh="refreshList">
                 <ListView for="item in listArr">
@@ -22,53 +33,49 @@
                     </v-template>
                 </ListView>
             </PullToRefresh>
-        </GridLayout> -->
-    </Page>
+    </GridLayout>-->
+  </Page>
 </template>
 
 <script>
 export default {
-  data () {
+  data() {
     return {
-      msg: "Hello World! ",
+      msg: 'Hello World! ',
       listArr: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
       num: 0,
       isStart: false,
       isTime: true,
       //下拉信息
-      pull_to_refresh:'下拉可以刷新',
-      release_to_refresh:'释放立即刷新',
-      refreshing:'正在刷新…',
-      not_updated_yet:'暂未更新过',
-      updated_at:'上次更新于%1$s前',
-      updated_just_now:'刚刚更新',
-      time_error:'时间有问题'
+      pull_to_refresh: '下拉可以刷新',
+      release_to_refresh: '释放立即刷新',
+      refreshing: '正在刷新…',
+      not_updated_yet: '暂未更新过',
+      updated_at: '上次更新于%1$s前',
+      updated_just_now: '刚刚更新',
+      time_error: '时间有问题'
     };
   },
-  mounted () {
+  mounted() {
     this.pageLoaded();
   },
   methods: {
-    setIsAbleToPull:function(){
-      
-    },
-    pageLoaded: function (args) {
-
-    },
-    await: function () {
-      console.log('丁丁事')
+    setIsAbleToPull: function() {},
+    pageLoaded: function(args) {},
+    await: function() {
+      console.log('丁丁事');
       let that = this;
-      setTimeout(function () {
-        console.log('对不起, 要你久候')
+      setTimeout(function() {
+        console.log('对不起, 要你久候');
         that.isTime = true;
         console.log('定时了');
         that.restore();
-      }, 3000)
+      }, 3000);
     },
-    restore:function(){
+    restore: function() {
       console.log('返回了');
       let ht = this.$refs.ht.nativeView;
-      console.log('hhhh',ht.marginTop);
+      console.log('hhhh', ht.marginTop);
       ht.marginTop = -60;
     },
     // refreshList (args) {
@@ -80,8 +87,8 @@ export default {
     //     console.log('定时了');·
     //   }, 1000);
     // },
-    onButton: function () { },
-    onDrawerPan (side, args) {
+    onButton: function() {},
+    onDrawerPan(side, args) {
       let ht = this.$refs.ht.nativeView;
       if (ht.marginTop < 0 && this.isStart) {
         ht.marginTop = ht.marginTop + 1;
@@ -89,13 +96,12 @@ export default {
         if (this.isTime) {
           this.isTime = false;
           this.await();
-          console.log('666666')
+          console.log('666666');
         }
-
       }
-      console.log('xxxxx', ht.marginTop)
+      console.log('xxxxx', ht.marginTop);
     },
-    onListPane (side, args) {
+    onListPane(side, args) {
       let list = this.$refs.list.nativeView;
       let scrollTop = this.getScrollY();
       console.log('kkk', scrollTop);
@@ -105,7 +111,7 @@ export default {
       //console.log('kkkk',list.android.smoothScrollToPosition(500));
       //list.scrollToIndex(500)
     },
-    getScrollY () {
+    getScrollY() {
       let mListView = this.$refs.list.nativeView.android;
       let c = mListView.getChildAt(0);
       if (c == null) {
@@ -134,7 +140,7 @@ ActionBar {
   color: #333333;
 }
 .icons {
-  font-family: "icomoon";
+  font-family: 'icomoon';
   font-size: 48;
 }
 .icon {

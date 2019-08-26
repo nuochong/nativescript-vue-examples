@@ -1,13 +1,13 @@
 <template>
-    <Page loaded="pageLoaded" ref="page">
-        <ActionBar class="action-bar" title="Hello">
-            <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" @tap="$navigateBack" />
-        </ActionBar>
-        <GridLayout colums="*" rows="*">
-            <Button class="btn btn-primary m-t-20" ref="btn" text="触摸" @tap="touch" />
-            <Button class="btn btn-primary m-t-20" ref="btn" text="触摸" />
-        </GridLayout>
-    </Page>
+  <Page loaded="pageLoaded" ref="page">
+    <ActionBar class="action-bar" title="Hello">
+      <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" @tap="$navigateBack" />
+    </ActionBar>
+    <GridLayout colums="*" rows="*">
+      <Button class="btn btn-primary m-t-20" ref="btn" text="触摸" @tap="touch" />
+      <Button class="btn btn-primary m-t-20" ref="btn" text="触摸" />
+    </GridLayout>
+  </Page>
 </template>
 
 <script>
@@ -15,19 +15,19 @@ import { log } from 'util';
 //import { Color } from 'color';
 import { Color, layout } from 'tns-core-modules/ui/core/view';
 export default {
-  data () {
+  data() {
     return {
       // msg: "Hello World! ",
       glyphs: []
     };
   },
-  mounted () {
+  mounted() {
     //this.touch();
     // let btn = this.$refs.btn.nativeView;
     // btn.ios.setTitleColorForState(new Color('red').ios,UIControlStateSelected);
   },
   methods: {
-    touch: function () {
+    touch: function() {
       // var colorModule = require("color");
       // var red = new colorModule.Color("#ff0000");
       let btn = this.$refs.btn.nativeView;
@@ -39,8 +39,8 @@ export default {
       btn.ios.showsTouchWhenHighlighted = 'YES';
       //btn.ios.ButtonType = 'custom';
       //btn.ios.setTitleColor = new Color('red');
-      btn.ios.setTitleColorForState(new Color('red').ios,UIControlStateNormal);
-      btn.ios.setTitleShadowColorForState(new Color('red').ios,UIControlStateNormal);
+      btn.ios.setTitleColorForState(new Color('red').ios, UIControlStateNormal);
+      btn.ios.setTitleShadowColorForState(new Color('red').ios, UIControlStateNormal);
       btn.ios.reversesTitleShadowWhenHighlighted = true;
       btn.ios.setShadowOpacity = 0.5;
       //btn.ios.setBorderWidth(3);
@@ -57,10 +57,10 @@ export default {
       // btn.android.setOnTouchListener(new android.view.View.OnTouchListener({
       //   onTouch: function (view, motionEvent) {
       //     // var action = motionEvent.getAction();
-      //     // if (action === android.view.MotionEvent.ACTION_DOWN) { 
+      //     // if (action === android.view.MotionEvent.ACTION_DOWN) {
       //     //   console.log('######')
       //     // }
-      //     // if (action === android.view.MotionEvent.ACTION_UP) { 
+      //     // if (action === android.view.MotionEvent.ACTION_UP) {
       //     //   console.log('@@@@@@')
       //     // }
       //     // return false;
@@ -120,7 +120,7 @@ ActionBar {
   color: #333333;
 }
 .icons {
-  font-family: "icomoon";
+  font-family: 'icomoon';
   font-size: 48;
 }
 .icon {

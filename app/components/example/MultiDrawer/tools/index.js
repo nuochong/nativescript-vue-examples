@@ -1,6 +1,6 @@
-import mergeOptions from 'merge-options'
+import mergeOptions from 'merge-options';
 
-import MultiDrawer from './MultiDrawer'
+import MultiDrawer from './MultiDrawer';
 
 export let defaultOptions = {
   debug: false,
@@ -17,10 +17,10 @@ export let defaultOptions = {
     swipeOpenTriggerProperties: {},
     animation: {
       openDuration: 300,
-      closeDuration: 300,
+      closeDuration: 300
     },
     translationOffsetMultiplier: -1,
-    axis: 'X',
+    axis: 'X'
   },
   right: {
     width: '70%',
@@ -34,10 +34,10 @@ export let defaultOptions = {
     swipeOpenTriggerProperties: {},
     animation: {
       openDuration: 300,
-      closeDuration: 300,
+      closeDuration: 300
     },
     translationOffsetMultiplier: 1,
-    axis: 'X',
+    axis: 'X'
   },
   top: {
     width: null,
@@ -51,10 +51,10 @@ export let defaultOptions = {
     swipeOpenTriggerProperties: {},
     animation: {
       openDuration: 300,
-      closeDuration: 300,
+      closeDuration: 300
     },
     translationOffsetMultiplier: -1,
-    axis: 'Y',
+    axis: 'Y'
   },
   bottom: {
     width: null,
@@ -68,17 +68,17 @@ export let defaultOptions = {
     swipeOpenTriggerProperties: {},
     animation: {
       openDuration: 300,
-      closeDuration: 300,
+      closeDuration: 300
     },
     translationOffsetMultiplier: 1,
-    axis: 'Y',
-  },
-}
+    axis: 'Y'
+  }
+};
 
 export default function install(Vue, options) {
-  if(options) {
-    defaultOptions = mergeOptions(defaultOptions, options)
+  if (options) {
+    defaultOptions = mergeOptions(defaultOptions, options);
   }
 
-  Vue.component('MultiDrawer', MultiDrawer)
+  Vue.component('MultiDrawer', MultiDrawer);
 }

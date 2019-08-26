@@ -1,10 +1,16 @@
 <template>
-    <FlexboxLayout flexDirection="row" justifyContent="space-between" id="footer">
-        <FlexboxLayout class="btn" :class="{ active: (index === active) }" v-for="(btn,index) in btns" :key="index" @tap="goTo(btn.link,index)">
-            <Image :src=" '~/assets/icons/' + btn.icon+'.png'" class="icon " />
-            <Label class="circle" v-if="index === active" />
-        </FlexboxLayout>
+  <FlexboxLayout flexDirection="row" justifyContent="space-between" id="footer">
+    <FlexboxLayout
+      class="btn"
+      :class="{ active: (index === active) }"
+      v-for="(btn,index) in btns"
+      :key="index"
+      @tap="goTo(btn.link,index)"
+    >
+      <Image :src=" '~/assets/icons/' + btn.icon+'.png'" class="icon" />
+      <Label class="circle" v-if="index === active" />
     </FlexboxLayout>
+  </FlexboxLayout>
 </template>
 
 <script>
@@ -14,35 +20,36 @@ import tabbar3 from './tabbar/tabbar3';
 import app from '../App';
 import main from './Main';
 export default {
-  data () {
+  data() {
     return {
-      btns: [{
-        icon: "user",
-        iconNor: 'user',
-        iconAct: 'user-Red',
-        link: 'tabbar1',
-        active: false,
-      },
-      {
-        icon: "Home",
-        iconNor: 'Home',
-        iconAct: 'Home-Red',
-        link: 'tabbar2',
-        active: false,
-      },
-      {
-        icon: "Search-Red",
-        iconNor: 'Search',
-        iconAct: 'Search-Red',
-        link: 'tabbar3',
-        active: true,
-      }
+      btns: [
+        {
+          icon: 'user',
+          iconNor: 'user',
+          iconAct: 'user-Red',
+          link: 'tabbar1',
+          active: false
+        },
+        {
+          icon: 'Home',
+          iconNor: 'Home',
+          iconAct: 'Home-Red',
+          link: 'tabbar2',
+          active: false
+        },
+        {
+          icon: 'Search-Red',
+          iconNor: 'Search',
+          iconAct: 'Search-Red',
+          link: 'tabbar3',
+          active: true
+        }
       ],
-      active: 2,
+      active: 2
     };
   },
   methods: {
-    goTo (link, index) {
+    goTo(link, index) {
       console.log('xxxx');
       // let pageArr = {
       //     'tabbar1':tabbar1,
@@ -55,7 +62,7 @@ export default {
       // }
       this.active = index;
       this.btns.forEach(v => {
-        console.log('jjjj', v)
+        console.log('jjjj', v);
         if (v['link'] == link && !v.active) {
           v.icon = v.iconAct;
           v.active = true;
@@ -64,9 +71,9 @@ export default {
           v.active = false;
         }
       });
-      this.$emit('change', index)
+      this.$emit('change', index);
     }
-  },
+  }
 };
 </script>
 

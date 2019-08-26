@@ -1,37 +1,20 @@
 <template>
   <Page>
-
-    <ActionBar
-      class="action-bar"
-      :flat="isFlat"
-    >
-      <Label
-        :text="title"
-        class="hidden"
-        ref="topTitle"
-        fontSize="17"
-        verticalAlignment="center"
-      />
+    <ActionBar class="action-bar" :flat="isFlat">
+      <Label :text="title" class="hidden" ref="topTitle" fontSize="17" verticalAlignment="center" />
       <ActionItem
         @tap="someMethod"
         ios.systemIcon="13"
         ios.position="right"
         text="refresh"
         android.position="popup"
-      >
-      </ActionItem>
+      ></ActionItem>
     </ActionBar>
 
-    <ScrollView
-      ref="scrollView"
-      @scroll="onScroll()"
-    >
+    <ScrollView ref="scrollView" @scroll="onScroll()">
       <StackLayout class="container">
         <StackLayout class="header">
-          <Label
-            ref="title"
-            :text="title"
-          />
+          <Label ref="title" :text="title" />
         </StackLayout>
         <StackLayout class="content">
           <Label
@@ -52,35 +35,27 @@
         </StackLayout>
       </StackLayout>
     </ScrollView>
-
   </Page>
 </template>
 
 <script>
 export default {
   data() {
-    return { title: "My title", isFlat: true };
+    return { title: 'My title', isFlat: true };
   },
   methods: {
     onScroll() {
       let topTitle = this.$refs.topTitle.nativeView;
       let scrollView = this.$refs.scrollView.nativeView;
       let title = this.$refs.title.nativeView;
-      scrollView.verticalOffset > 59
-        ? (this.isFlat = false)
-        : (this.isFlat = true);
-      scrollView.verticalOffset > 49
-        ? (topTitle.className = "visible")
-        : (topTitle.className = "hidden");
+      scrollView.verticalOffset > 59 ? (this.isFlat = false) : (this.isFlat = true);
+      scrollView.verticalOffset > 49 ? (topTitle.className = 'visible') : (topTitle.className = 'hidden');
       if (scrollView.verticalOffset < 0) {
-        title.translateX = -(
-          scrollView.verticalOffset -
-          scrollView.verticalOffset / 1.05
-        );
+        title.translateX = -(scrollView.verticalOffset - scrollView.verticalOffset / 1.05);
       }
     },
     someMethod() {
-      console.log("refresh was tapped");
+      console.log('refresh was tapped');
     }
   }
 };
