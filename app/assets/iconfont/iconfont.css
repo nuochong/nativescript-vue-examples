@@ -1,4 +1,3 @@
-
 @font-face {font-family: "iconfont";
   src: url('iconfont.eot?t=1541166919255'); /* IE9*/
   src: url('iconfont.eot?t=1541166919255#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -6,30 +5,19 @@
   url('iconfont.ttf?t=1541166919255') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
   url('iconfont.svg?t=1541166919255#iconfont') format('svg'); /* iOS 4.1- */
 }
-
 .iconfont {
-  font-family:"iconfont" !important;
-  font-size:16px;
-  font-style:normal;
+  font-family: 'iconfont' !important;
+  font-size: 16px;
+  font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 .icon-tiaoshi:before { content: "\eb61"; }
-
 .icon-changjingguanli:before { content: "\eb62"; }
-
 .icon-fenxiangfangshi:before { content: "\eb63"; }
-
 .icon-bianji:before { content: "\eb64"; }
-
 .icon-guanlianshebei:before { content: "\eb65"; }
-
 .icon-guanfangbanben:before { content: "\eb66"; }
-
 .icon-gongnengdingyi:before { content: "\eb67"; }
-
 .icon-jichuguanli:before { content: "\eb68"; }
-
 .icon-jishufuwu:before { content: "\eb69"; }
-
