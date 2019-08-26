@@ -1,9 +1,26 @@
 <template>
   <Page>
     <ActionBar class="action-bar" title="Welcome to NativeScript-Vue!">
-      <ActionItem @tap="onTapEdit" v-show="!isEditing" ios.systemIcon="2" ios.position="right" android.systemIcon="ic_menu_edit" />
-      <ActionItem @tap="onTapSave" v-show="isEditing" ios.systemIcon="3" ios.position="right" android.systemIcon="ic_menu_save" />
-      <ActionItem @tap="onTapCancel" v-show="isEditing" ios.systemIcon="1" android.systemIcon="ic_menu_close_clear_cancel" />
+      <ActionItem
+        @tap="onTapEdit"
+        v-show="!isEditing"
+        ios.systemIcon="2"
+        ios.position="right"
+        android.systemIcon="ic_menu_edit"
+      />
+      <ActionItem
+        @tap="onTapSave"
+        v-show="isEditing"
+        ios.systemIcon="3"
+        ios.position="right"
+        android.systemIcon="ic_menu_save"
+      />
+      <ActionItem
+        @tap="onTapCancel"
+        v-show="isEditing"
+        ios.systemIcon="1"
+        android.systemIcon="ic_menu_close_clear_cancel"
+      />
     </ActionBar>
     <ScrollView>
       <!--<GridLayout colums="*" rows="*">-->
@@ -13,19 +30,18 @@
         <Button class="btn btn-primary dd" text="应用" @tap="project" />
       </StackLayout>
       <!-- </GridLayout> -->
-
     </ScrollView>
   </Page>
 </template>
 
 <script>
-import example from "./example/Main";
-import project from "./project/Main";
+import example from './example/Main';
+import project from './project/Main';
 
 export default {
   data() {
     return {
-      msg: "Hello World!"
+      msg: 'Hello World!'
     };
   },
   mounted() {},
@@ -35,18 +51,18 @@ export default {
     },
     project: function() {
       this.$navigateTo(project);
-      console.log("project");
+      console.log('project');
     },
     onButtonTap: function() {
       this.$navigateTo(HelloWorld, {
         animated: true,
         transition: {
-          name: "slide",
+          name: 'slide',
           duration: 380,
-          curve: "easeIn"
+          curve: 'easeIn'
         }
       });
-    },
+    }
   }
 };
 </script>

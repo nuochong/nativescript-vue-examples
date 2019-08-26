@@ -1,68 +1,138 @@
 <template>
-    <Page class="page" actionBarHidden="true">
-        <ActionBar id="header head">
-            <StackLayout orientation="horizontal" class="btn menu hh">
-                <Image src="~/assets/icons/arrow.png" class="icon" @tap="$navigateBack" width="40" height="40" verticalAlignment="left" />
-                <Label class="tess" text="NativeScript" fontSize="24" horizontalAlignment="right" />
-            </StackLayout>
-            <!-- <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" @tap="$navigateBack"/> -->
-        </ActionBar>
+  <Page class="page" actionBarHidden="true">
+    <ActionBar id="header head">
+      <StackLayout orientation="horizontal" class="btn menu hh">
+        <Image
+          src="~/assets/icons/arrow.png"
+          class="icon"
+          @tap="$navigateBack"
+          width="40"
+          height="40"
+          verticalAlignment="left"
+        />
+        <Label class="tess" text="NativeScript" fontSize="24" horizontalAlignment="right" />
+      </StackLayout>
+      <!-- <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" @tap="$navigateBack"/> -->
+    </ActionBar>
 
-        <GridLayout rows="60, *, auto" backgroundColor="#26252A">
-            <Header class="header" row="0" />
-            <ScrollView orientation="vertical" row="1" backgroundColor="red" v-show="selectedTabview == 0">
-                <StackLayout flexDirection="column" height="100%">
-                    <!-- <Tabbar2 v-for="(place,index) in places" :key="index" :place="place" :index="index" :active="active" width="100%" /> -->
-                    <ListView ref='ca' for="(place,index) in places" :key="index" :place="place" :index="index" :active="active" height="100%" class="dt" backgroundColor="white">
-                      <v-template>
-                    <WrapLayout  height="415" class="card" flexDirection="column" justifyContent="center" >
-                        <AbsoluteLayout width="56%" height="80%" class="ll" alignSelf="center">
-                            <Image src="~/assets/icons/box-shadow.png" width="100%" height="97%" class="background" />
-                            <FlexboxLayout flexDirection="column" width="100%" height="97%" padding="12">
-                                <StackLayout orientation="vertical" class="head">
-                                    <Label :text="place.name" class="title bold" />
-                                    <Label :text="place.type" class="subTitle semi-bold" horizontalAlignment="center" />
-                                    <FlexboxLayout flexDirection="row" height="12" marginTop="4">
-                                        <Image src="~/assets/icons/Star-Red.png" v-for="star in place.stars" :key="star" marginRight="4" />
-                                        <Image src="~/assets/icons/Star-grey.png" v-for="star in (5 - place.stars)" :key="(star * 10)" marginRight="4" />
-                                    </FlexboxLayout>
-                                </StackLayout>
-                                <StackLayout orientation="vertical" :backgroundImage="'~/assets/media/' + place.media" height="58%" width="100%" class="img">
-                                </StackLayout>
-                            </FlexboxLayout>
-                        </AbsoluteLayout>
-                    </WrapLayout>
-                    </v-template>
-                    <!-- <Label text="first" width="100%" height="415" backgroundColor="#43b883" />
+    <GridLayout rows="60, *, auto" backgroundColor="#26252A">
+      <Header class="header" row="0" />
+      <ScrollView
+        orientation="vertical"
+        row="1"
+        backgroundColor="red"
+        v-show="selectedTabview == 0"
+      >
+        <StackLayout flexDirection="column" height="100%">
+          <!-- <Tabbar2 v-for="(place,index) in places" :key="index" :place="place" :index="index" :active="active" width="100%" /> -->
+          <ListView
+            ref="ca"
+            for="(place,index) in places"
+            :key="index"
+            :place="place"
+            :index="index"
+            :active="active"
+            height="100%"
+            class="dt"
+            backgroundColor="white"
+          >
+            <v-template>
+              <WrapLayout height="415" class="card" flexDirection="column" justifyContent="center">
+                <AbsoluteLayout width="56%" height="80%" class="ll" alignSelf="center">
+                  <Image
+                    src="~/assets/icons/box-shadow.png"
+                    width="100%"
+                    height="97%"
+                    class="background"
+                  />
+                  <FlexboxLayout flexDirection="column" width="100%" height="97%" padding="12">
+                    <StackLayout orientation="vertical" class="head">
+                      <Label :text="place.name" class="title bold" />
+                      <Label
+                        :text="place.type"
+                        class="subTitle semi-bold"
+                        horizontalAlignment="center"
+                      />
+                      <FlexboxLayout flexDirection="row" height="12" marginTop="4">
+                        <Image
+                          src="~/assets/icons/Star-Red.png"
+                          v-for="star in place.stars"
+                          :key="star"
+                          marginRight="4"
+                        />
+                        <Image
+                          src="~/assets/icons/Star-grey.png"
+                          v-for="star in (5 - place.stars)"
+                          :key="(star * 10)"
+                          marginRight="4"
+                        />
+                      </FlexboxLayout>
+                    </StackLayout>
+                    <StackLayout
+                      orientation="vertical"
+                      :backgroundImage="'~/assets/media/' + place.media"
+                      height="58%"
+                      width="100%"
+                      class="img"
+                    ></StackLayout>
+                  </FlexboxLayout>
+                </AbsoluteLayout>
+              </WrapLayout>
+            </v-template>
+            <!-- <Label text="first" width="100%" height="415" backgroundColor="#43b883" />
                     <Label text="second" width="100%" height="415" backgroundColor="#1c6b48" />
                     <Label text="third" width="100%" height="415" backgroundColor="#289062" />
                     <Label text="fourth" width="100%" height="415" backgroundColor="#1c6b48" />
-                    <Label text="third" width="100%" height="415" backgroundColor="#289062" /> -->
-                    </ListView>
-                </StackLayout>
-            </ScrollView>
-            <ScrollView orientation="vertical" row="1" backgroundColor="yellow" v-show="selectedTabview == 1">
-                <StackLayout>
-                    <Tabbar2 v-for="(place,index) in places" :key="index" :place="place" :index="index" :active="active" width="100%"/>
-                </StackLayout>
-            </ScrollView>
-            <ScrollView orientation="vertical" row="1" backgroundColor="green" v-show="selectedTabview == 2">
-                <StackLayout>
-                    <Tabbar2 v-for="(place,index) in places" :key="index" :place="place" :index="index" :active="active" width="100%"/>
-                </StackLayout>
-            </ScrollView>
-            <Footer class="footer" row="2" @change="change" />
-        </GridLayout>
-    </Page>
+            <Label text="third" width="100%" height="415" backgroundColor="#289062" />-->
+          </ListView>
+        </StackLayout>
+      </ScrollView>
+      <ScrollView
+        orientation="vertical"
+        row="1"
+        backgroundColor="yellow"
+        v-show="selectedTabview == 1"
+      >
+        <StackLayout>
+          <Tabbar2
+            v-for="(place,index) in places"
+            :key="index"
+            :place="place"
+            :index="index"
+            :active="active"
+            width="100%"
+          />
+        </StackLayout>
+      </ScrollView>
+      <ScrollView
+        orientation="vertical"
+        row="1"
+        backgroundColor="green"
+        v-show="selectedTabview == 2"
+      >
+        <StackLayout>
+          <Tabbar2
+            v-for="(place,index) in places"
+            :key="index"
+            :place="place"
+            :index="index"
+            :active="active"
+            width="100%"
+          />
+        </StackLayout>
+      </ScrollView>
+      <Footer class="footer" row="2" @change="change" />
+    </GridLayout>
+  </Page>
 </template>
 
 <script>
-import Header from "./Header";
-import Footer from "./Footer";
-import Home from "./Home";
-import Tabbar1 from "./tabbar/tabbar1";
-import Tabbar2 from "./tabbar/tabbar2";
-import Tabbar3 from "./tabbar/tabbar3";
+import Header from './Header';
+import Footer from './Footer';
+import Home from './Home';
+import Tabbar1 from './tabbar/tabbar1';
+import Tabbar2 from './tabbar/tabbar2';
+import Tabbar3 from './tabbar/tabbar3';
 export default {
   components: {
     Header,
@@ -71,42 +141,43 @@ export default {
     //Searching,
     Tabbar1,
     Tabbar2,
-    Tabbar3,
+    Tabbar3
   },
-  data () {
+  data() {
     return {
       surprise: false,
-      title: "点击我！【Tap me!】",
-      imgsrc: "res://icon",
-      places: [{
-        name: "The Custom House1",
-        type: "Architecture",
-        stars: 4,
-        media: "Dublin.jpg"
-      },
-      {
-        name: "Christ Church's",
-        type: "Architecture",
-        stars: 4,
-        media: "Cathedral.jpg"
-      },
-      {
-        name: "Bord Gáis Energ",
-        type: "Architecture",
-        stars: 5,
-        media: "Theater.jpg"
-      }
+      title: '点击我！【Tap me!】',
+      imgsrc: 'res://icon',
+      places: [
+        {
+          name: 'The Custom House1',
+          type: 'Architecture',
+          stars: 4,
+          media: 'Dublin.jpg'
+        },
+        {
+          name: "Christ Church's",
+          type: 'Architecture',
+          stars: 4,
+          media: 'Cathedral.jpg'
+        },
+        {
+          name: 'Bord Gáis Energ',
+          type: 'Architecture',
+          stars: 5,
+          media: 'Theater.jpg'
+        }
       ],
-      selectedTabview: 0,
+      selectedTabview: 0
     };
   },
-  mounted () {
-    console.log('jjjj',this.$refs.ca.nativeView);
+  mounted() {
+    console.log('jjjj', this.$refs.ca.nativeView);
     this.$refs.ca.nativeView.separatorColor = 'white';
-    this.$refs.ca.nativeView.itemsProperty = 'white'
+    this.$refs.ca.nativeView.itemsProperty = 'white';
   },
   methods: {
-    change: function (value) {
+    change: function(value) {
       //console.log('我是伏组件');
       this.selectedTabview = value;
     }
@@ -115,10 +186,9 @@ export default {
 </script>
 
 <style scoped>
-.dt{
+.dt {
   padding: 0;
 }
-
 
 .home-panel {
   background-color: red;
