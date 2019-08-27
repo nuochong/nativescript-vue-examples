@@ -25,8 +25,8 @@
     <ScrollView>
       <!--<GridLayout colums="*" rows="*">-->
       <StackLayout>
-        <Button class="btn btn-primary" @tap="counter">计数器</Button>
-        <Button class="btn btn-primary" @tap="camera">Vuex及相机</Button>
+        <Button class="btn btn-primary" @tap="counter">Vuex计数器</Button>
+        <Button class="btn btn-primary" @tap="camera">相机</Button>
         <Button class="btn btn-primary" @tap="login">模拟登录</Button>
         <Button class="btn btn-primary" @tap="btnToast">提示</Button>
         <Button class="btn btn-primary" @tap="btnAlert">精美提示框</Button>
