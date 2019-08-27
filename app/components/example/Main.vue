@@ -75,9 +75,9 @@
 </template>
 
 <script>
-import Counter from './base/Counter';
-import HelloWorlds from './base/HelloWorld.vue';
-import Login from './base/Login.vue';
+import Counter from './Counter';
+import HelloWorlds from './HelloWorld';
+import Login from './Login';
 
 import * as Toast from 'nativescript-toast';
 import { TNSFancyAlert, TNSFancyAlertButton } from 'nativescript-fancyalert';
@@ -88,7 +88,6 @@ import { LocalNotifications } from 'nativescript-local-notifications';
 const dialogs = require('tns-core-modules/ui/dialogs');
 
 const platformModule = require('tns-core-modules/platform');
-
 const phone = require('nativescript-phone');
 
 const geolocation = require('nativescript-geolocation');
