@@ -32,12 +32,11 @@
         <Button class="btn btn-primary" @tap="btnAlert">精美提示框【Alert】</Button>
         <Button class="btn btn-primary" @tap="info">消息通知【Info】</Button>
         <Button class="btn btn-primary" @tap="btnDialog">对话框【Dialog】</Button>
-        <Button class="btn btn-primary" @tap="btnPlatformModule">平台型号【PlatformModule】</Button>
+        <Button class="btn btn-primary" @tap="btnPlatformModule">获取设备信息，平台型号【PlatformModule】</Button>
         <Button class="btn btn-primary" @tap="btnPhone">电话【Phone】</Button>
         <Button class="btn btn-primary" @tap="btnSms">短信【Sms】</Button>
         <Button class="btn btn-primary" @tap="btnGeolocation">定位</Button>
         <Button class="btn btn-primary" @tap="btnPermissions">获取权限1</Button>
-        <Button class="btn btn-primary" @tap="btnPlatformModule">获取设备信息</Button>
         <Button class="btn btn-primary btn-green" @tap="btnChange" ref="btn">改变按钮【Change Btn】</Button>
         <Label class="message" :text="msg" col="0" row="0" />
         <Button class="btn btn-primary" text="路由跳转" @tap="onButtonTap" />
@@ -74,9 +73,9 @@ import Login from './Login';
 import Toast from './toast';
 import fancyalert from './Fancyalert';
 import info from './info';
-const dialogs = require('tns-core-modules/ui/dialogs');
+import dialog from './dialog';
+import platformmodule from './platformmodule';
 
-const platformModule = require('tns-core-modules/platform');
 const phone = require('nativescript-phone');
 
 const geolocation = require('nativescript-geolocation');
@@ -174,16 +173,24 @@ export default {
       });
     },
     btnDialog: function() {
-      dialogs.alert({
-        title: 'Notification received',
-        message: 'message',
-        okButtonText: 'Excellent!'
+      this.$navigateTo(dialog, {
+        animated: true,
+        transition: {
+          name: 'slide',
+          duration: 380,
+          curve: 'easeIn'
+        }
       });
     },
     btnPlatformModule: function() {
-      console.log('######');
-      console.log(platformModule.device.model);
-      console.log('######');
+      this.$navigateTo(platformmodule, {
+        animated: true,
+        transition: {
+          name: 'slide',
+          duration: 380,
+          curve: 'easeIn'
+        }
+      });
     },
     btnPhone: function() {
       phone.requestCallPermission();
@@ -233,24 +240,6 @@ export default {
       //   .catch(function() {
       //     console.log("Uh oh, no permissions - plan B time!");
       //   });
-    },
-    btnPlatformModule: function() {
-      console.log('######');
-      console.log(platformModule.device.model);
-      console.log('######');
-      // vm.set("deviceInformationmodel", platformModule.device.model);
-      // vm.set("deviceInformationdeviceType", platformModule.device.deviceType);
-      // vm.set("deviceInformationos", platformModule.device.os);
-      // vm.set("deviceInformationosVersion", platformModule.device.osVersion);
-      // vm.set("deviceInformationsdkVersion", platformModule.device.sdkVersion);
-      // vm.set("deviceInformationlanguage", platformModule.device.language);
-      // vm.set("deviceInformationmanufacturer", platformModule.device.manufacturer);
-      // vm.set("deviceInformationuuid", platformModule.device.uuid);
-      // vm.set("screenInformationheightDIPs", platformModule.screen.mainScreen.heightDIPs);
-      // vm.set("screenInformationheightPixels", platformModule.screen.mainScreen.heightPixels);
-      // vm.set("screenInformationscale", platformModule.screen.mainScreen.scale);
-      // vm.set("screenInformationwidthDIPs", platformModule.screen.mainScreen.widthDIPs);
-      // vm.set("screenInformationwidthPixels", platformModule.screen.mainScreen.widthPixels);
     },
     btnChange: function() {
       let btn = this.$refs.btn.nativeView;
