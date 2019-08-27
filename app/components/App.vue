@@ -34,10 +34,6 @@ export default {
     },
     project: function() {
       this.$navigateTo(project);
-      console.log('project');
-    },
-    onButtonTap: function() {
-      this.navigateTo(this, HelloWorld);
     }
   }
 };
