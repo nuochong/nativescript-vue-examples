@@ -1,6 +1,5 @@
 import Vue from 'nativescript-vue';
 import App from './components/App';
-//import router from './router';
 import store from './store';
 //import VueDevtools from 'nativescript-vue-devtools'
 
@@ -179,7 +178,6 @@ Vue.use(Dialog, {
 // );
 
 new Vue({
-  //router,
   store,
   render: h => h('frame', [h(App)])
 }).$start();
