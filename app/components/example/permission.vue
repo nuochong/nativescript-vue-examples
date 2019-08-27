@@ -1,8 +1,6 @@
 <template>
   <Page class="page">
-    <ActionBar class="action-bar" title="获取权限">
-      <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" @tap="$navigateBack" />
-    </ActionBar>
+    <me-actionbar :title="'获取权限'"></me-actionbar>
 
     <StackLayout class="hello-world">
       <Button class="btn btn-primary" @tap="test" text="获取权限" />
@@ -14,7 +12,11 @@
 const permissions = require('nativescript-permissions');
 //const CALL_PHONE = android.Manifest.permission.CALL_PHONE;
 //const Intent = android.content.Intent;
+import meActionbar from './public/actionbar';
 export default {
+  components: {
+    meActionbar
+  },
   data() {
     return {
       title: ''

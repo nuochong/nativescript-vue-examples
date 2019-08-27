@@ -1,6 +1,6 @@
 <template>
   <Page class="page">
-    <ActionBar title="Local Data Storage" class="action-bar" />
+    <me-actionbar :title="'本地存储'"></me-actionbar>
     <ScrollView>
       <StackLayout class="home-panel form input-field">
         <Label
@@ -49,7 +49,11 @@
 <script>
 const appSettings = require('tns-core-modules/application-settings');
 const dialogs = require('tns-core-modules/ui/dialogs');
+import meActionbar from './public/actionbar';
 export default {
+  components: {
+    meActionbar
+  },
   data() {
     return {
       num: null,

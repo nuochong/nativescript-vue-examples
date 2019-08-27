@@ -1,5 +1,6 @@
 <template>
   <Page class="page" navigatingTo="onNavigatingTo">
+    <me-actionbar :title="'模拟登录'"></me-actionbar>
     <FlexboxLayout class="page page-login" backgroundImage="res://mesh">
       <StackLayout class="flexbox-item company-name-container">
         <Label class="t-30 company-name" text="你的公司名称【Your Company Name】"></Label>
@@ -19,7 +20,11 @@
 </template>
 <script>
 import Counter from './Counter';
+import meActionbar from './public/actionbar';
 export default {
+  components: {
+    meActionbar
+  },
   data() {
     return {
       msg: 'Hello World!'

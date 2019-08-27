@@ -1,8 +1,6 @@
 <template>
   <Page loaded="pageLoaded" ref="page">
-    <ActionBar class="action-bar" title="Hello">
-      <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" @tap="$navigateBack" />
-    </ActionBar>
+    <me-actionbar :title="'动画效果'"></me-actionbar>
     <GridLayout colums="*" rows="*" id="dd">
       <Label class="animateicon" text="xxx" col="0" row="0" />
       <Image class="animateicon" src="~/assets/images/NativeScript-Vue.png" />
@@ -11,7 +9,11 @@
 </template>
 
 <script>
+import meActionbar from './public/actionbar';
 export default {
+  components: {
+    meActionbar
+  },
   data() {
     return {
       msg: 'Hello World! '

@@ -1,8 +1,6 @@
 <template>
   <Page class="page">
-    <ActionBar class="action-bar" title="获取设备信息">
-      <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" @tap="$navigateBack" />
-    </ActionBar>
+    <me-actionbar :title="'获取设备信息'"></me-actionbar>
 
     <StackLayout class="hello-world">
       <Button class="btn btn-primary" @tap="getinfo" text="获取设备信息" />
@@ -12,7 +10,11 @@
 
 <script>
 const platformModule = require('tns-core-modules/platform');
+import meActionbar from './public/actionbar';
 export default {
+  components: {
+    meActionbar
+  },
   data() {
     return {
       title: ''

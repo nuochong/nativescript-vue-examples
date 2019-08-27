@@ -1,8 +1,6 @@
 <template>
   <Page class="page">
-    <ActionBar class="action-bar" title="改变按钮">
-      <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" @tap="$navigateBack" />
-    </ActionBar>
+    <me-actionbar :title="'改变按钮'"></me-actionbar>
 
     <StackLayout class="hello-world">
       <Button class="btn btn-primary btn-green" @tap="changebtn" ref="btn" text="改变按钮" />
@@ -11,7 +9,11 @@
 </template>
 
 <script>
+import meActionbar from './public/actionbar';
 export default {
+  components: {
+    meActionbar
+  },
   data() {
     return {
       title: ''

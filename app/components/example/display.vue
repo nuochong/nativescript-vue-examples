@@ -1,9 +1,6 @@
 <template>
   <Page class="page">
-    <ActionBar class="action-bar" title="显示隐藏">
-      <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" @tap="$navigateBack" />
-    </ActionBar>
-
+    <me-actionbar :title="'显示隐藏'"></me-actionbar>
     <StackLayout class="hello-world">
       <Label class="body" textWrap="true" text="这是一个hello world组件，如果你挑战，请点击这个按钮" />
       <Label
@@ -20,7 +17,11 @@
 
 <script>
 import { LocalNotifications } from 'nativescript-local-notifications';
+import meActionbar from './public/actionbar';
 export default {
+  components: {
+    meActionbar
+  },
   data() {
     return {
       surprise: false

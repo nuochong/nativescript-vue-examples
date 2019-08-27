@@ -1,8 +1,6 @@
 <template>
   <Page>
-    <ActionBar class="action-bar" title="world">
-      <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" @tap="$navigateBack" />
-    </ActionBar>
+    <me-actionbar :title="'路由跳转-页面二'"></me-actionbar>
     <GridLayout colums="*" rows="*">
       <Label class="message" :text="msg" col="0" row="0" />
       <Button text="Button" @tap="onButton" />
@@ -11,8 +9,12 @@
 </template>
 
 <script>
-import app from '../App';
+import app from '../../App';
+import meActionbar from '../public/actionbar';
 export default {
+  components: {
+    meActionbar
+  },
   data() {
     return {
       msg: 'Hello World!'
@@ -20,7 +22,6 @@ export default {
   },
   methods: {
     onButtonTap: function() {
-      console.log('xxxxx');
       this.$navigateTo(app);
     }
   }

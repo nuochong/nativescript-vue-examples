@@ -1,8 +1,6 @@
 <template>
   <Page class="page">
-    <ActionBar class="action-bar" title="拨打电话及发送短信">
-      <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" @tap="$navigateBack" />
-    </ActionBar>
+    <me-actionbar :title="'拨打电话及发送短信'"></me-actionbar>
 
     <StackLayout class="hello-world">
       <Button class="btn btn-primary" @tap="phone" text="拨打电话" />
@@ -13,7 +11,11 @@
 
 <script>
 const phone = require('nativescript-phone');
+import meActionbar from './public/actionbar';
 export default {
+  components: {
+    meActionbar
+  },
   data() {
     return {
       title: ''

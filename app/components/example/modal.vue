@@ -1,8 +1,6 @@
 <template>
   <Page class="page">
-    <ActionBar class="action-bar" title="模态对话框">
-      <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" @tap="$navigateBack" />
-    </ActionBar>
+    <me-actionbar :title="'模态对话框'"></me-actionbar>
 
     <StackLayout class="hello-world">
       <Button class="btn btn-primary" @tap="modal" text="模态对话框" />
@@ -12,7 +10,11 @@
 
 <script>
 import ModalComponent from './customModel/ModalComponent';
+import meActionbar from './public/actionbar';
 export default {
+  components: {
+    meActionbar
+  },
   data() {
     return {
       title: ''

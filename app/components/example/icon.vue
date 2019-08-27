@@ -1,12 +1,9 @@
 <template>
   <Page loaded="pageLoaded" ref="page">
-    <ActionBar class="action-bar" title="Hello">
-      <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" @tap="$navigateBack" />
-    </ActionBar>
+    <me-actionbar :title="'图标'"></me-actionbar>
     <GridLayout colums="*" rows="*">
       <Label class="message" :text="msg" col="0" row="0" />
       <!-- <Button text="Button" @tap="onButton" /> -->
-      11111
       <!-- <Label :text="this.$icon.glyphs[0].icon" class="icon" />
       <Label :text="this.$icon.glyphs[11].icon" class="icons" />-->
       <!-- <Label :text="this.$icon.glyphs[0].eb61" class="icon" />
@@ -24,8 +21,12 @@
 </template>
 
 <script>
-var observable = require('tns-core-modules/data/observable');
+const observable = require('tns-core-modules/data/observable');
+import meActionbar from './public/actionbar';
 export default {
+  components: {
+    meActionbar
+  },
   data() {
     return {
       msg: 'Hello World! ',

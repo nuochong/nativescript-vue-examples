@@ -1,8 +1,6 @@
 <template>
   <Page loaded="pageLoaded" ref="page">
-    <ActionBar class="action-bar" title="Hello">
-      <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" @tap="$navigateBack" />
-    </ActionBar>
+    <me-actionbar :title="'下拉刷新'"></me-actionbar>
     <FlexboxLayout
       flexDirection="column"
       backgroundColor="#3c495e"
@@ -38,7 +36,11 @@
 </template>
 
 <script>
+import meActionbar from './public/actionbar';
 export default {
+  components: {
+    meActionbar
+  },
   data() {
     return {
       msg: 'Hello World! ',

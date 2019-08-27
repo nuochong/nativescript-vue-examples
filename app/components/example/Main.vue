@@ -77,9 +77,9 @@ import permission from './permission';
 import changebtn from './changebtn';
 import display from './display';
 
-import HelloWorld from './hello';
-import Input from './Input';
-import Fab from './Fab';
+import target from './target/target';
+import storage from './storage';
+import Fab from './fab/Fab';
 import Todo from './todo/todo';
 import Drawer from './drawer';
 import Icon from './icon';
@@ -249,7 +249,7 @@ export default {
       console.log('安卓导航栏编辑按钮被点击了');
     },
     onButtonTap: function() {
-      this.$navigateTo(HelloWorld, {
+      this.$navigateTo(target, {
         animated: true,
         transition: {
           name: 'slide',
@@ -259,7 +259,7 @@ export default {
       });
     },
     onInput: function() {
-      this.$navigateTo(Input, {
+      this.$navigateTo(storage, {
         animated: true,
         transition: {
           name: 'fade',

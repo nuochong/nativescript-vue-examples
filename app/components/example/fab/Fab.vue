@@ -1,6 +1,6 @@
 <template>
   <Page class="page" @loaded="appLoaded">
-    <ActionBar title="Home" />
+    <me-actionbar :title="'记事薄'"></me-actionbar>
     <AbsoluteLayout ref="rootLayout">
       <ListView
         for="item in items"
@@ -37,13 +37,18 @@
 </template>
 
 <script>
-import FabButton from '../example/FabButton';
-import FabItem from '../example/FabItem';
+import FabButton from './FabButton';
+import FabItem from './FabItem';
 
 const app = require('tns-core-modules/application');
 const platform = require('tns-core-modules/platform');
-
+import meActionbar from '../public/actionbar';
 export default {
+  components: {
+    FabButton,
+    FabItem,
+    meActionbar
+  },
   mounted() {
     for (let i = 1; i < 21; i++) {
       this.items.push(i);
@@ -88,8 +93,7 @@ export default {
     onButtonTap(args) {
       this.isActive = !this.isActive;
     }
-  },
-  components: { FabButton, FabItem }
+  }
 };
 </script>
 

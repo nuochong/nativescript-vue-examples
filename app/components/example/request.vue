@@ -1,8 +1,6 @@
 <template>
   <Page>
-    <ActionBar class="action-bar" title="Hello">
-      <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" @tap="$navigateBack" />
-    </ActionBar>
+    <me-actionbar :title="'请求'"></me-actionbar>
     <GridLayout colums="*" rows="*">
       <!-- <Label class="message" :text="msg" col="0" row="0" /> -->
       <Button class="request" text="start request" @tap="onButton" />
@@ -11,13 +9,16 @@
 </template>
 
 <script>
-import app from '../App';
 import { Http } from '@billow/nsv-http';
 import { isAndroid } from 'platform';
 import { getString } from 'application-settings'; // Example Only
 // import { log } from 'util';
 //import * as http from 'http';
+import meActionbar from './public/actionbar';
 export default {
+  components: {
+    meActionbar
+  },
   data() {
     return {
       msg: 'Hello World! '

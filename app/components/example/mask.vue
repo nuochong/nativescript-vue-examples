@@ -1,8 +1,6 @@
 <template>
   <Page :class="{ dialogOpen: dialogOpen }">
-    <ActionBar class="action-bar" title="Hello">
-      <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" @tap="$navigateBack" />
-    </ActionBar>
+    <me-actionbar :title="'遮罩层'"></me-actionbar>
     <GridLayout colums="*" rows="*">
       <StackLayout>
         <Label class="message" :text="msg" col="0" row="0" />
@@ -25,9 +23,11 @@
 </template>
 
 <script>
-import app from '../App';
-import world from '../example/world';
+import meActionbar from './public/actionbar';
 export default {
+  components: {
+    meActionbar
+  },
   data() {
     return {
       msg: 'Hello World! ',

@@ -1,8 +1,6 @@
 <template>
   <Page class="page">
-    <ActionBar class="action-bar" title="计数器">
-      <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" @tap="$navigateBack" />
-    </ActionBar>
+    <me-actionbar :title="'计数器'"></me-actionbar>
 
     <StackLayout>
       <FlexboxLayout flexDirection="row" justifyContent="center">
@@ -18,7 +16,11 @@
 <script>
 import { mapActions } from 'vuex';
 
+import meActionbar from './public/actionbar';
 export default {
+  components: {
+    meActionbar
+  },
   computed: {
     message() {
       return this.$store.state.counter.count.toString();

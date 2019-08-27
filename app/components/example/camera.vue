@@ -1,8 +1,6 @@
 <template>
   <Page class="page">
-    <ActionBar class="action-bar" title="相机">
-      <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" @tap="$navigateBack" />
-    </ActionBar>
+    <me-actionbar :title="'相机'"></me-actionbar>
 
     <StackLayout class="hello-world">
       <Button class="btn btn-primary" @tap="test" text="相机" />
@@ -14,7 +12,11 @@
 <script>
 import * as camera from 'nativescript-camera';
 //var imageModule = require("tns-core-modules/ui/image");
+import meActionbar from './public/actionbar';
 export default {
+  components: {
+    meActionbar
+  },
   data() {
     return {
       imgsrc: 'res://icon'

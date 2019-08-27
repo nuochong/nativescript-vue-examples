@@ -1,7 +1,9 @@
 <template>
   <!-- <Page> -->
   <!-- <RadSideDrawer [drawerTransition]="sideDrawerTransition"> -->
+    
   <GridLayout tkDrawerContent rows="auto, *" class="sidedrawer sidedrawer-left">
+    <me-actionbar :title="'侧滑菜单'"></me-actionbar>
     <StackLayout row="0" class="sidedrawer-header">
       <Label class="sidedrawer-header-image fa" text="&#xf2bd;"></Label>
       <Label class="sidedrawer-header-brand" text="User Name"></Label>
@@ -88,7 +90,11 @@
 <script>
 //import app from "../App";
 //import world from "../example/world";
+import meActionbar from './public/actionbar';
 export default {
+  components: {
+    meActionbar
+  },
   props: ['drawer'],
   data() {
     return {

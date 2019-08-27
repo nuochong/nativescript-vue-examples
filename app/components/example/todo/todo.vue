@@ -1,6 +1,6 @@
 <template>
   <Page class="page">
-    <ActionBar title="My Tasks" class="action-bar" />
+    <me-actionbar :title="'备忘录'"></me-actionbar>
 
     <TabView height="100%">
       <TabViewItem title="To Do" class="tabview">
@@ -47,7 +47,6 @@
   font-size: 20;
   margin: 15;
 }
-
 .description-label {
   margin-bottom: 15;
 }
@@ -56,7 +55,11 @@
 }
 </style>
 <script>
+import meActionbar from '../public/actionbar';
 export default {
+  components: {
+    meActionbar
+  },
   methods: {
     onItemTap: function(args) {
       action('What do you want to do with this task?', 'Cancel', ['Mark completed', 'Delete forever']).then(result => {

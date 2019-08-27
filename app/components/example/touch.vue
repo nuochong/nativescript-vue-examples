@@ -1,8 +1,6 @@
 <template>
   <Page loaded="pageLoaded" ref="page">
-    <ActionBar class="action-bar" title="Hello">
-      <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" @tap="$navigateBack" />
-    </ActionBar>
+    <me-actionbar :title="'触摸事件'"></me-actionbar>
     <GridLayout colums="*" rows="*">
       <Button class="btn btn-primary" ref="btn" text="触摸" @tap="touch" />
       <Button class="btn btn-primary" ref="btn" text="触摸" />
@@ -14,7 +12,11 @@
 import { log } from 'util';
 //import { Color } from 'color';
 import { Color, layout } from 'tns-core-modules/ui/core/view';
+import meActionbar from './public/actionbar';
 export default {
+  components: {
+    meActionbar
+  },
   data() {
     return {
       // msg: "Hello World! ",

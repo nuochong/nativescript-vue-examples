@@ -37,8 +37,10 @@
 
 <script>
 import Drawer from '../drawer';
+import meActionbar from '../public/actionbar';
 export default {
   components: {
+    meActionbar,
     Drawer
   },
   data() {
