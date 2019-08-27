@@ -1,6 +1,6 @@
 <template>
   <Page>
-    <ActionBar class="action-bar" title="Welcome to NativeScript-Vue!">
+    <ActionBar class="action-bar" title="示例">
       <ActionItem
         @tap="onTapEdit"
         v-show="!isEditing"
@@ -26,7 +26,7 @@
       <!--<GridLayout colums="*" rows="*">-->
       <StackLayout>
         <Button class="btn btn-primary" @tap="counter">计数器</Button>
-        <Button class="btn btn-primary" @tap="hello">Vuex及相机</Button>
+        <Button class="btn btn-primary" @tap="camera">Vuex及相机</Button>
         <Button class="btn btn-primary" @tap="login">模拟登录</Button>
         <Button class="btn btn-primary" @tap="btnToast">提示</Button>
         <Button class="btn btn-primary" @tap="btnAlert">精美提示框</Button>
@@ -37,6 +37,7 @@
         <Button class="btn btn-primary" @tap="btnGeolocation">定位</Button>
         <Button class="btn btn-primary" @tap="btnPermissions">获取权限</Button>
         <Button class="btn btn-primary" @tap="btnChange">改变按钮</Button>
+        <Button class="btn btn-primary" @tap="btnDisplay">显示隐藏</Button>
         <Label class="message" :text="msg" col="0" row="0" />
         <Button class="btn btn-primary" text="路由跳转" @tap="onButtonTap" />
         <Button class="btn btn-primary" text="本地存储示例" @tap="onInput" />
@@ -63,7 +64,7 @@
 
 <script>
 import Counter from './Counter';
-import HelloWorlds from './HelloWorld';
+import camera from './camera';
 import Login from './Login';
 import Toast from './toast';
 import fancyalert from './Fancyalert';
@@ -74,6 +75,7 @@ import phone from './phone';
 import geolocation from './geolocation';
 import permission from './permission';
 import changebtn from './changebtn';
+import display from './display';
 
 import HelloWorld from './hello';
 import Input from './Input';
@@ -111,8 +113,8 @@ export default {
         }
       });
     },
-    hello: function() {
-      this.$navigateTo(HelloWorlds, {
+    camera: function() {
+      this.$navigateTo(camera, {
         animated: true,
         transition: {
           name: 'slide',
@@ -203,6 +205,16 @@ export default {
     },
     btnPermissions: function() {
       this.$navigateTo(permission, {
+        animated: true,
+        transition: {
+          name: 'slide',
+          duration: 380,
+          curve: 'easeIn'
+        }
+      });
+    },
+    btnDisplay:function(){
+      this.$navigateTo(display, {
         animated: true,
         transition: {
           name: 'slide',
