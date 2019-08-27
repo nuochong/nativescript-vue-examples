@@ -73,10 +73,7 @@ import HelloWorlds from './HelloWorld';
 import Login from './Login';
 import Toast from './toast';
 import fancyalert from './Fancyalert';
-//import * as LocalNotifications from "nativescript-local-notifications";
-import { LocalNotifications } from 'nativescript-local-notifications';
-//var LocalNotifications = require("nativescript-local-notifications");
-
+import info from './info';
 const dialogs = require('tns-core-modules/ui/dialogs');
 
 const platformModule = require('tns-core-modules/platform');
@@ -167,62 +164,14 @@ export default {
       });
     },
     info: function() {
-      //console.dir(LocalNotifications);
-      // LocalNotifications.schedule([{
-      //     id: 2,
-      //     title: 'Hi',
-      //     body: 'I\'m soundless',
-      //     sound: null,
-      //     at: new Date(new Date().getTime() + 10*1000)
-      // }])
-
-      LocalNotifications.schedule([
-        {
-          id: 1,
-          title: 'The title',
-          body: 'Recurs every minute until cancelled',
-          ticker: 'The ticker',
-          color: 'red',
-          badge: 1,
-          groupedMessages: ['The first', 'Second', 'Keep going', 'one more..', 'OK Stop'], //android only
-          groupSummary: 'Summary of the grouped messages above', //android only
-          ongoing: true, // makes the notification ongoing (Android only)
-          icon: 'res://heart',
-          image: 'https://cdn-images-1.medium.com/max/1200/1*c3cQvYJrVezv_Az0CoDcbA.jpeg',
-          thumbnail: true,
-          interval: 'minute',
-          channel: 'My Channel', // default: 'Channel'
-          sound: 'customsound-ios.wav', // falls back to the default sound on Android
-          at: new Date(new Date().getTime() + 10 * 1000) // 10 seconds from now
+      this.$navigateTo(info, {
+        animated: true,
+        transition: {
+          name: 'slide',
+          duration: 380,
+          curve: 'easeIn'
         }
-      ]).then(
-        function() {
-          console.log('Notification scheduled');
-        },
-        function(error) {
-          console.log('scheduling error: ' + error);
-        }
-      );
-
-      // LocalNotifications.addOnMessageReceivedCallback(
-      //     function (notificationData) {
-      //         dialogs.alert({
-      //             title: "Notification received",
-      //             message: "ID: " + notificationData.id +
-      //             "\nTitle: " + notificationData.title +
-      //             "\nBody: " + notificationData.body,
-      //             okButtonText: "Excellent!"
-      //         });
-      //     }
-      // ).then(
-      //     function() {
-      //         dialogs.alert({
-      //             title: "Listener added",
-      //             message: "We'll let you know when a notification is received.",
-      //             okButtonText: "Nice :)"
-      //         });
-      //     }
-      // );
+      });
     },
     btnDialog: function() {
       dialogs.alert({
