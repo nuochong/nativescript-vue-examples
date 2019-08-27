@@ -35,6 +35,7 @@
         <Button class="btn btn-primary" text="下拉刷❤" @tap="refreshNew" />
         <Button class="btn btn-primary" text="触摸事件" @tap="touch" />
         <Button class="btn btn-primary" text="请求" @tap="request" />
+        <Button class="btn btn-primary" text="获取全局数据" @tap="common" />
       </StackLayout>
       <!-- </GridLayout> -->
     </ScrollView>
@@ -119,8 +120,8 @@ export default {
     btnPermissions: function() {
       this.navigateTo(this, permission);
     },
-    btnDisplay: function() {
-      this.navigateTo(this, display);
+    common: function() {
+      console.log('common：', this.localUrl);
     },
     btnChange: function() {
       this.navigateTo(this, changebtn);
@@ -175,6 +176,9 @@ export default {
     },
     refresh() {
       this.navigateTo(this, Refresh);
+    },
+    btnDisplay: function() {
+      this.navigateTo(this, display);
     }
   }
 };

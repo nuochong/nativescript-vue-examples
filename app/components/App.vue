@@ -6,8 +6,7 @@
       <StackLayout class="hello-world">
         <Label class="message" :text="msg" col="0" row="0" />
         <Button class="btn btn-primary" text="示例" @tap="example" />
-        <Button class="btn btn-primary dd" text="应用" @tap="project" />
-        <Button class="btn btn-primary dd" text="应用" @tap="common" />
+        <Button class="btn btn-primary" text="应用" @tap="project" />
       </StackLayout>
       <!-- </GridLayout> -->
     </ScrollView>
@@ -39,9 +38,6 @@ export default {
     },
     onButtonTap: function() {
       this.navigateTo(this, HelloWorld);
-    },
-    common: function() {
-      console.log('xxxxxx', this.localUrl);
     }
   }
 };
