@@ -25,38 +25,34 @@
     <ScrollView>
       <!--<GridLayout colums="*" rows="*">-->
       <StackLayout>
-        <Button class="btn btn-primary" @tap="counter">计数器【Counter】</Button>
+        <Button class="btn btn-primary" @tap="counter">计数器</Button>
         <Button class="btn btn-primary" @tap="hello">Vuex及相机</Button>
-        <Button class="btn btn-primary" @tap="login">模拟登录【login】</Button>
-        <Button class="btn btn-primary" @tap="btnToast">提示【Toast】</Button>
-        <Button class="btn btn-primary" @tap="btnAlert">精美提示框【Alert】</Button>
-        <Button class="btn btn-primary" @tap="info">消息通知【Info】</Button>
-        <Button class="btn btn-primary" @tap="btnDialog">对话框【Dialog】</Button>
-        <Button class="btn btn-primary" @tap="btnPlatformModule">获取设备信息，平台型号【PlatformModule】</Button>
-        <Button class="btn btn-primary" @tap="btnPhone">电话【Phone】/短信【Sms】</Button>
+        <Button class="btn btn-primary" @tap="login">模拟登录</Button>
+        <Button class="btn btn-primary" @tap="btnToast">提示</Button>
+        <Button class="btn btn-primary" @tap="btnAlert">精美提示框</Button>
+        <Button class="btn btn-primary" @tap="info">消息通知</Button>
+        <Button class="btn btn-primary" @tap="btnDialog">对话框</Button>
+        <Button class="btn btn-primary" @tap="btnPlatformModule">获取设备信息，平台型号</Button>
+        <Button class="btn btn-primary" @tap="btnPhone">电话/短信</Button>
         <Button class="btn btn-primary" @tap="btnGeolocation">定位</Button>
         <Button class="btn btn-primary" @tap="btnPermissions">获取权限1</Button>
-        <Button class="btn btn-primary" @tap="btnChange">改变按钮【Change Btn】</Button>
+        <Button class="btn btn-primary" @tap="btnChange">改变按钮</Button>
         <Label class="message" :text="msg" col="0" row="0" />
         <Button class="btn btn-primary" text="路由跳转" @tap="onButtonTap" />
         <Button class="btn btn-primary" text="本地存储示例" @tap="onInput" />
-        <Button class="btn btn-primary" text="记事薄【Fab】" @tap="onFab" />
-        <Button class="btn btn-primary" text="备忘录【ToDo】" @tap="onTodo" />
-        <Button class="btn btn-primary" text="侧滑菜单【Drawer】" @tap="onDrawer" />
-        <Button class="btn btn-primary" text="图标【Icon】" @tap="onIcon" />
-        <Button class="btn btn-primary" text="遮罩层【mask】" @tap="onMask" />
-        <Button class="btn btn-primary m-t-20" text="模态对话框【Open Modal】" @tap="showModal" />
-        <Button class="btn btn-primary m-t-20" text="侧滑组件新【drawer】" @tap="onDrawers" />
-        <Button
-          class="btn btn-primary m-t-20"
-          text="带有大标题的iOS导航栏【iOS NavigationBar with Large Title】"
-          @tap="onlargeTitle"
-        />
+        <Button class="btn btn-primary" text="记事薄" @tap="onFab" />
+        <Button class="btn btn-primary" text="备忘录" @tap="onTodo" />
+        <Button class="btn btn-primary" text="侧滑菜单" @tap="onDrawer" />
+        <Button class="btn btn-primary" text="图标" @tap="onIcon" />
+        <Button class="btn btn-primary" text="遮罩层" @tap="onMask" />
+        <Button class="btn btn-primary m-t-20" text="模态对话框" @tap="showModal" />
+        <Button class="btn btn-primary m-t-20" text="侧滑组件新" @tap="onDrawers" />
+        <Button class="btn btn-primary m-t-20" text="带有大标题的iOS导航栏" @tap="onlargeTitle" />
         <Button class="btn btn-primary m-t-20" text="自定义对话框" @tap="dialog" />
         <Button class="btn btn-primary m-t-20" text="自定义弹出框" @tap="pop" />
         <Button class="btn btn-primary m-t-20" text="animateCSS" @tap="animate" />
         <Button class="btn btn-primary m-t-20" text="下拉刷新" @tap="refresh" />
-        <Button class="btn btn-primary m-t-20" text="下拉刷新❤新" @tap="refreshNew" />
+        <Button class="btn btn-primary m-t-20" text="下拉刷❤" @tap="refreshNew" />
         <Button class="btn btn-primary m-t-20" text="触摸事件" @tap="touch" />
         <Button class="btn btn-primary m-t-20" text="请求" @tap="request" />
       </StackLayout>
