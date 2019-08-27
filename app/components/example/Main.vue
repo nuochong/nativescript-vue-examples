@@ -75,8 +75,7 @@ import fancyalert from './Fancyalert';
 import info from './info';
 import dialog from './dialog';
 import platformmodule from './platformmodule';
-
-const phone = require('nativescript-phone');
+import phone from './phone';
 
 const geolocation = require('nativescript-geolocation');
 const { Accuracy } = require('tns-core-modules/ui/enums');
@@ -193,8 +192,14 @@ export default {
       });
     },
     btnPhone: function() {
-      phone.requestCallPermission();
-      phone.dial('212-555-1234', true);
+      this.$navigateTo(phone, {
+        animated: true,
+        transition: {
+          name: 'slide',
+          duration: 380,
+          curve: 'easeIn'
+        }
+      });
     },
     btnSms: function() {
       phone
