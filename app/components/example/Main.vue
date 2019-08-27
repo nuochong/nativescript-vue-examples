@@ -35,7 +35,7 @@
         <Button class="btn btn-primary" @tap="btnPlatformModule">获取设备信息，平台型号</Button>
         <Button class="btn btn-primary" @tap="btnPhone">电话/短信</Button>
         <Button class="btn btn-primary" @tap="btnGeolocation">定位</Button>
-        <Button class="btn btn-primary" @tap="btnPermissions">获取权限1</Button>
+        <Button class="btn btn-primary" @tap="btnPermissions">获取权限</Button>
         <Button class="btn btn-primary" @tap="btnChange">改变按钮</Button>
         <Label class="message" :text="msg" col="0" row="0" />
         <Button class="btn btn-primary" text="路由跳转" @tap="onButtonTap" />
@@ -45,16 +45,16 @@
         <Button class="btn btn-primary" text="侧滑菜单" @tap="onDrawer" />
         <Button class="btn btn-primary" text="图标" @tap="onIcon" />
         <Button class="btn btn-primary" text="遮罩层" @tap="onMask" />
-        <Button class="btn btn-primary m-t-20" text="模态对话框" @tap="showModal" />
-        <Button class="btn btn-primary m-t-20" text="侧滑组件新" @tap="onDrawers" />
-        <Button class="btn btn-primary m-t-20" text="带有大标题的iOS导航栏" @tap="onlargeTitle" />
-        <Button class="btn btn-primary m-t-20" text="自定义对话框" @tap="dialog" />
-        <Button class="btn btn-primary m-t-20" text="自定义弹出框" @tap="pop" />
-        <Button class="btn btn-primary m-t-20" text="animateCSS" @tap="animate" />
-        <Button class="btn btn-primary m-t-20" text="下拉刷新" @tap="refresh" />
-        <Button class="btn btn-primary m-t-20" text="下拉刷❤" @tap="refreshNew" />
-        <Button class="btn btn-primary m-t-20" text="触摸事件" @tap="touch" />
-        <Button class="btn btn-primary m-t-20" text="请求" @tap="request" />
+        <Button class="btn btn-primary" text="模态对话框" @tap="showModal" />
+        <Button class="btn btn-primary" text="侧滑组件新" @tap="onDrawers" />
+        <Button class="btn btn-primary" text="带有大标题的iOS导航栏" @tap="onlargeTitle" />
+        <Button class="btn btn-primary" text="自定义对话框" @tap="dialog" />
+        <Button class="btn btn-primary" text="自定义弹出框" @tap="pop" />
+        <Button class="btn btn-primary" text="动画效果" @tap="animate" />
+        <Button class="btn btn-primary" text="下拉刷新" @tap="refresh" />
+        <Button class="btn btn-primary" text="下拉刷❤" @tap="refreshNew" />
+        <Button class="btn btn-primary" text="触摸事件" @tap="touch" />
+        <Button class="btn btn-primary" text="请求" @tap="request" />
       </StackLayout>
       <!-- </GridLayout> -->
     </ScrollView>
@@ -82,7 +82,7 @@ import Todo from './todo/todo';
 import Drawer from './drawer';
 import Icon from './icon';
 import Mask from './mask';
-import ModalComponent from './customModel/ModalComponent';
+import modal from './modal';
 import Drawers from './MultiDrawer/drawers';
 import LargeTitle from './largeTitle/largeTitle';
 import Dialog from './Dialog/dialog';
@@ -96,7 +96,7 @@ import Request from './request';
 export default {
   data() {
     return {
-      msg: 'Hello World!'
+      msg: '---------分割线--------'
     };
   },
   mounted() {},
@@ -280,11 +280,10 @@ export default {
       this.$navigateTo(Icon);
     },
     onMask: function() {
-      console.log('遮罩层');
       this.$navigateTo(Mask);
     },
     showModal() {
-      this.$showModal(ModalComponent);
+      this.$navigateTo(modal);
     },
     onDrawers() {
       this.$navigateTo(Drawers);

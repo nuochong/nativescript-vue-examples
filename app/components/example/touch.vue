@@ -4,8 +4,8 @@
       <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" @tap="$navigateBack" />
     </ActionBar>
     <GridLayout colums="*" rows="*">
-      <Button class="btn btn-primary m-t-20" ref="btn" text="触摸" @tap="touch" />
-      <Button class="btn btn-primary m-t-20" ref="btn" text="触摸" />
+      <Button class="btn btn-primary" ref="btn" text="触摸" @tap="touch" />
+      <Button class="btn btn-primary" ref="btn" text="触摸" />
     </GridLayout>
   </Page>
 </template>
