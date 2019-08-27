@@ -28,24 +28,17 @@
         <Button class="btn btn-primary" @tap="counter">计数器【Counter】</Button>
         <Button class="btn btn-primary" @tap="hello">Vuex及相机</Button>
         <Button class="btn btn-primary" @tap="login">模拟登录【login】</Button>
-
         <Button class="btn btn-primary" @tap="btnToast">提示【Toast】</Button>
         <Button class="btn btn-primary" @tap="btnAlert">精美提示框【Alert】</Button>
         <Button class="btn btn-primary" @tap="info">消息通知【Info】</Button>
-
         <Button class="btn btn-primary" @tap="btnDialog">对话框【Dialog】</Button>
-
         <Button class="btn btn-primary" @tap="btnPlatformModule">平台型号【PlatformModule】</Button>
-
         <Button class="btn btn-primary" @tap="btnPhone">电话【Phone】</Button>
         <Button class="btn btn-primary" @tap="btnSms">短信【Sms】</Button>
-
         <Button class="btn btn-primary" @tap="btnGeolocation">定位</Button>
         <Button class="btn btn-primary" @tap="btnPermissions">获取权限1</Button>
-
         <Button class="btn btn-primary" @tap="btnPlatformModule">获取设备信息</Button>
         <Button class="btn btn-primary btn-green" @tap="btnChange" ref="btn">改变按钮【Change Btn】</Button>
-
         <Label class="message" :text="msg" col="0" row="0" />
         <Button class="btn btn-primary" text="路由跳转" @tap="onButtonTap" />
         <Button class="btn btn-primary" text="本地存储示例" @tap="onInput" />
@@ -78,9 +71,8 @@
 import Counter from './Counter';
 import HelloWorlds from './HelloWorld';
 import Login from './Login';
-
-import * as Toast from 'nativescript-toast';
-import { TNSFancyAlert, TNSFancyAlertButton } from 'nativescript-fancyalert';
+import Toast from './toast';
+import fancyalert from './Fancyalert';
 //import * as LocalNotifications from "nativescript-local-notifications";
 import { LocalNotifications } from 'nativescript-local-notifications';
 //var LocalNotifications = require("nativescript-local-notifications");
@@ -155,15 +147,23 @@ export default {
       });
     },
     btnToast: function() {
-      console.log('111');
-      let toast = Toast.makeText('你好世界【Hello World】', 'long');
-      toast.show();
+      this.$navigateTo(Toast, {
+        animated: true,
+        transition: {
+          name: 'slide',
+          duration: 380,
+          curve: 'easeIn'
+        }
+      });
     },
     btnAlert: function() {
-      console.log('xxx');
-      //TNSFancyAlert.showSuccess('Success!', 'Fancy alerts are nice.', 'Yes they are!');
-      TNSFancyAlert.showSuccess('成功！Success!', '花哨的提醒很不错。【Fancy alerts are nice.】', '是的【Yes they are!】').then(() => {
-        /* user pressed the button */
+      this.$navigateTo(fancyalert, {
+        animated: true,
+        transition: {
+          name: 'slide',
+          duration: 380,
+          curve: 'easeIn'
+        }
       });
     },
     info: function() {

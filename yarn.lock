@@ -4273,10 +4273,10 @@ nativescript-dev-webpack@next:
     webpack-cli "~3.1.1"
     webpack-sources "~1.3.0"
 
-nativescript-fancyalert@^2.0.0:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/nativescript-fancyalert/-/nativescript-fancyalert-2.0.1.tgz#36f8effb7e9ae36891a754a98791547b14199336"
-  integrity sha512-wxAhqLOdfX7a9gpz5Ze+wZ6DAKlw1WrImeG426vEiUal/JfTCuGUBCv2Z47r9nxRWhMNpSGItQYFgHDg2u+UmA==
+nativescript-fancyalert@^3.0.9:
+  version "3.0.9"
+  resolved "https://registry.yarnpkg.com/nativescript-fancyalert/-/nativescript-fancyalert-3.0.9.tgz#a841b3a6e2bb5f0f495f90037da1390a8fff17d1"
+  integrity sha512-pXWXko+vXv9dQi/A2Vyme7rbb6H2m7LSipRVIyY7bksTg+YmL5Ud2zb0m0Tlhq1N4cZEhNPYBRXtLCAwSY2wmQ==
 
 nativescript-geolocation@5.1.0:
   version "5.1.0"
