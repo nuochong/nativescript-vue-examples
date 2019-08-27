@@ -4,19 +4,19 @@
     <ScrollView>
       <!-- <GridLayout class="hello-world" colums="*" rows="*"> -->
       <StackLayout>
-        <Button class="btn btn-primary" @tap="counter">Vuex计数器</Button>
-        <Button class="btn btn-primary" @tap="camera">相机</Button>
-        <Button class="btn btn-primary" @tap="login">模拟登录</Button>
-        <Button class="btn btn-primary" @tap="btnToast">提示</Button>
-        <Button class="btn btn-primary" @tap="btnAlert">精美提示框</Button>
-        <Button class="btn btn-primary" @tap="info">消息通知</Button>
-        <Button class="btn btn-primary" @tap="btnDialog">对话框</Button>
-        <Button class="btn btn-primary" @tap="btnPlatformModule">获取设备信息</Button>
-        <Button class="btn btn-primary" @tap="btnPhone">电话/短信</Button>
-        <Button class="btn btn-primary" @tap="btnGeolocation">定位</Button>
-        <Button class="btn btn-primary" @tap="btnPermissions">获取权限</Button>
-        <Button class="btn btn-primary" @tap="btnChange">改变按钮</Button>
-        <Button class="btn btn-primary" @tap="btnDisplay">显示隐藏</Button>
+        <Button class="btn btn-primary" text="Vuex计数器" @tap="counter" />
+        <Button class="btn btn-primary" text="相机" @tap="camera" />
+        <Button class="btn btn-primary" text="模拟登录" @tap="login" />
+        <Button class="btn btn-primary" text="提示" @tap="btnToast" />
+        <Button class="btn btn-primary" text="精美提示框" @tap="btnAlert" />
+        <Button class="btn btn-primary" text="消息通知" @tap="info" />
+        <Button class="btn btn-primary" text="对话框" @tap="btnDialog" />
+        <Button class="btn btn-primary" text="获取设备信息" @tap="btnPlatformModule" />
+        <Button class="btn btn-primary" text="电话/短信" @tap="btnPhone" />
+        <Button class="btn btn-primary" text="定位" @tap="btnGeolocation" />
+        <Button class="btn btn-primary" text="获取权限" @tap="btnPermissions" />
+        <Button class="btn btn-primary" text="改变按钮" @tap="btnChange" />
+        <Button class="btn btn-primary" text="显示隐藏" @tap="btnDisplay" />
         <Label class="message" :text="msg" col="0" row="0" />
         <Button class="btn btn-primary" text="路由跳转" @tap="onButtonTap" />
         <Button class="btn btn-primary" text="本地存储示例" @tap="onInput" />
