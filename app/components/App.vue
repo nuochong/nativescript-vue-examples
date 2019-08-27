@@ -15,8 +15,8 @@
 <script>
 import example from './example/Main';
 import project from './project/Main';
-
 import meActionbarMain from './example/public/actionbarMain';
+
 export default {
   components: {
     meActionbarMain
@@ -27,10 +27,10 @@ export default {
   mounted() {},
   methods: {
     example: function() {
-      this.$navigateTo(example);
+      this.navigateTo(this, example);
     },
     project: function() {
-      this.$navigateTo(project);
+      this.navigateTo(this, project);
     }
   }
 };

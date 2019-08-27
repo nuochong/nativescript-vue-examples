@@ -76,6 +76,7 @@ import Touch from './touch';
 import Request from './request';
 
 import meActionbarMain from './public/actionbarMain';
+
 export default {
   components: {
     meActionbarMain

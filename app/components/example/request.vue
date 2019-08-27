@@ -1,9 +1,11 @@
 <template>
   <Page>
     <me-actionbar :title="'请求'"></me-actionbar>
-    <GridLayout colums="*" rows="*">
+    <!-- <GridLayout colums="*" rows="*"> -->
+    <StackLayout>
       <Button class="btn btn-primary" text="开始请求" @tap="onButton" />
-    </GridLayout>
+    </StackLayout>
+    <!-- </GridLayout> -->
   </Page>
 </template>
 
