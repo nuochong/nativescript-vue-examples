@@ -25,7 +25,7 @@ export default {
       phone.requestCallPermission();
       phone.dial('212-555-1234', true);
     },
-        sms: function() {
+    sms: function() {
       phone
         .sms('212-555-1234', '我的消息【My Message】') //New Method for single number is phone.sms(["212-555-1234"],"My Message")
         .then(
@@ -37,7 +37,7 @@ export default {
             console.log('Error: ' + err);
           }
         );
-    },
+    }
   }
 };
 </script>

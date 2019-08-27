@@ -213,7 +213,7 @@ export default {
         }
       });
     },
-    btnDisplay:function(){
+    btnDisplay: function() {
       this.$navigateTo(display, {
         animated: true,
         transition: {
