@@ -36,7 +36,7 @@
         <Button class="btn btn-primary" @tap="btnPhone">电话【Phone】/短信【Sms】</Button>
         <Button class="btn btn-primary" @tap="btnGeolocation">定位</Button>
         <Button class="btn btn-primary" @tap="btnPermissions">获取权限1</Button>
-        <Button class="btn btn-primary btn-green" @tap="btnChange" ref="btn">改变按钮【Change Btn】</Button>
+        <Button class="btn btn-primary" @tap="btnChange">改变按钮【Change Btn】</Button>
         <Label class="message" :text="msg" col="0" row="0" />
         <Button class="btn btn-primary" text="路由跳转" @tap="onButtonTap" />
         <Button class="btn btn-primary" text="本地存储示例" @tap="onInput" />
@@ -76,13 +76,8 @@ import dialog from './dialog';
 import platformmodule from './platformmodule';
 import phone from './phone';
 import geolocation from './geolocation';
-
-
-
-const permissions = require('nativescript-permissions');
-//const CALL_PHONE = android.Manifest.permission.CALL_PHONE;
-//const Intent = android.content.Intent;
-const app = require('application');
+import permission from './permission';
+import changebtn from './changebtn';
 
 import HelloWorld from './hello';
 import Input from './Input';
@@ -211,32 +206,24 @@ export default {
       });
     },
     btnPermissions: function() {
-      // permissions
-      //   .requestPermission(
-      //     android.Manifest.permission.READ_CONTACTS,
-      //     "I need these permissions because I'm cool"
-      //   )
-      //   .then(function() {
-      //     console.log("Woo Hoo, I have the power!");
-      //   })
-      //   .catch(function() {
-      //     console.log("Uh oh, no permissions - plan B time!");
-      //   });
+      this.$navigateTo(permission, {
+        animated: true,
+        transition: {
+          name: 'slide',
+          duration: 380,
+          curve: 'easeIn'
+        }
+      });
     },
     btnChange: function() {
-      let btn = this.$refs.btn.nativeView;
-      btn.color = 'blue';
-      //btn.background = "red";
-      btn.fontSize = 50;
-      btn.text = 'xxx';
-      btn.rotate = '10';
-      btn.opacity = 0.5;
-      btn.padding = 10;
-
-      //console.log(btn._getNativeViewsCount());
-      // btn.on("tap", function(params) {
-      //   console.log("呵呵");
-      // });
+      this.$navigateTo(changebtn, {
+        animated: true,
+        transition: {
+          name: 'slide',
+          duration: 380,
+          curve: 'easeIn'
+        }
+      });
     },
     request: function() {
       this.$navigateTo(Request);
@@ -254,13 +241,12 @@ export default {
       console.log('xxxx');
     },
     onButtonTap: function() {
-      console.log('xxxxx');
       this.$navigateTo(HelloWorld, {
         animated: true,
         transition: {
           name: 'slide',
           duration: 380,
-          curve: 'easeIn' //spring
+          curve: 'easeIn'
         }
       });
     },
@@ -302,7 +288,6 @@ export default {
       this.$navigateTo(Mask);
     },
     showModal() {
-      console.dir('xxxxxx', this);
       this.$showModal(ModalComponent);
     },
     onDrawers() {
@@ -337,10 +322,5 @@ ActionBar {
   text-align: center;
   font-size: 20;
   color: #333333;
-}
-.btn-green {
-  background-color: blue;
-  color: green;
-  font-size: 20px;
 }
 </style>

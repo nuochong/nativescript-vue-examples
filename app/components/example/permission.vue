@@ -1,0 +1,50 @@
+<template>
+  <Page class="page">
+    <ActionBar class="action-bar" title="获取权限">
+      <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" @tap="$navigateBack" />
+    </ActionBar>
+
+    <StackLayout class="hello-world">
+      <Button class="btn btn-primary" @tap="test" text="获取权限" />
+    </StackLayout>
+  </Page>
+</template>
+
+<script>
+const permissions = require('nativescript-permissions');
+//const CALL_PHONE = android.Manifest.permission.CALL_PHONE;
+//const Intent = android.content.Intent;
+export default {
+  data() {
+    return {
+      title: ''
+    };
+  },
+  mounted() {},
+  methods: {
+    permission: function() {
+      // permissions
+      //   .requestPermission(
+      //     android.Manifest.permission.READ_CONTACTS,
+      //     "I need these permissions because I'm cool"
+      //   )
+      //   .then(function() {
+      //     console.log("Woo Hoo, I have the power!");
+      //   })
+      //   .catch(function() {
+      //     console.log("Uh oh, no permissions - plan B time!");
+      //   });
+    }
+  }
+};
+</script>
+
+<style scoped>
+.hello-world {
+  margin: 20;
+}
+
+label {
+  color: red;
+}
+</style>
