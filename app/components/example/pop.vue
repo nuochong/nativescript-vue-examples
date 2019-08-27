@@ -116,11 +116,6 @@ export default {
   /* background-color: red; */
   /* border-radius: 15; */
 }
-ActionBar {
-  background-color: #53ba82;
-  color: #ffffff;
-}
-
 .message {
   vertical-align: center;
   text-align: center;

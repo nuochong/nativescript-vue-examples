@@ -104,226 +104,103 @@ export default {
   mounted() {},
   methods: {
     counter: function() {
-      this.$navigateTo(Counter, {
-        animated: true,
-        transition: {
-          name: 'slide',
-          duration: 380,
-          curve: 'easeIn'
-        }
-      });
+      this.navigateTo(this, Counter);
     },
     camera: function() {
-      this.$navigateTo(camera, {
-        animated: true,
-        transition: {
-          name: 'slide',
-          duration: 380,
-          curve: 'easeIn'
-        }
-      });
+      this.navigateTo(this, camera);
     },
     login: function() {
-      this.$navigateTo(Login, {
-        animated: true,
-        transition: {
-          name: 'slide',
-          duration: 380,
-          curve: 'easeIn'
-        }
-      });
+      this.navigateTo(this, Login);
     },
     btnToast: function() {
-      this.$navigateTo(Toast, {
-        animated: true,
-        transition: {
-          name: 'slide',
-          duration: 380,
-          curve: 'easeIn'
-        }
-      });
+      this.navigateTo(this, Toast);
     },
     btnAlert: function() {
-      this.$navigateTo(fancyalert, {
-        animated: true,
-        transition: {
-          name: 'slide',
-          duration: 380,
-          curve: 'easeIn'
-        }
-      });
+      this.navigateTo(this, fancyalert);
     },
     info: function() {
-      this.$navigateTo(info, {
-        animated: true,
-        transition: {
-          name: 'slide',
-          duration: 380,
-          curve: 'easeIn'
-        }
-      });
+      this.navigateTo(this, info);
     },
     btnDialog: function() {
-      this.$navigateTo(dialog, {
-        animated: true,
-        transition: {
-          name: 'slide',
-          duration: 380,
-          curve: 'easeIn'
-        }
-      });
+      this.navigateTo(this, dialog);
     },
     btnPlatformModule: function() {
-      this.$navigateTo(platformmodule, {
-        animated: true,
-        transition: {
-          name: 'slide',
-          duration: 380,
-          curve: 'easeIn'
-        }
-      });
+      this.navigateTo(this, platformmodule);
     },
     btnPhone: function() {
-      this.$navigateTo(phone, {
-        animated: true,
-        transition: {
-          name: 'slide',
-          duration: 380,
-          curve: 'easeIn'
-        }
-      });
+      this.navigateTo(this, phone);
     },
     btnGeolocation: function() {
-      this.$navigateTo(geolocation, {
-        animated: true,
-        transition: {
-          name: 'slide',
-          duration: 380,
-          curve: 'easeIn'
-        }
-      });
+      this.navigateTo(this, geolocation);
     },
     btnPermissions: function() {
-      this.$navigateTo(permission, {
-        animated: true,
-        transition: {
-          name: 'slide',
-          duration: 380,
-          curve: 'easeIn'
-        }
-      });
+      this.navigateTo(this, permission);
     },
     btnDisplay: function() {
-      this.$navigateTo(display, {
-        animated: true,
-        transition: {
-          name: 'slide',
-          duration: 380,
-          curve: 'easeIn'
-        }
-      });
+      this.navigateTo(this, display);
     },
     btnChange: function() {
-      this.$navigateTo(changebtn, {
-        animated: true,
-        transition: {
-          name: 'slide',
-          duration: 380,
-          curve: 'easeIn'
-        }
-      });
+      this.navigateTo(this, changebtn);
     },
     request: function() {
-      this.$navigateTo(Request);
+      this.navigateTo(this, Request);
     },
     touch: function() {
-      this.$navigateTo(Touch);
+      this.navigateTo(this, Touch);
     },
     refreshNew: function() {
-      this.$navigateTo(RefreshNew);
+      this.navigateTo(this, RefreshNew);
     },
     onDrawer: function() {
-      this.$navigateTo(Drawer);
+      this.navigateTo(this, Drawer);
     },
     onTapEdit: function() {
       console.log('安卓导航栏编辑按钮被点击了');
     },
     onButtonTap: function() {
-      this.$navigateTo(target, {
-        animated: true,
-        transition: {
-          name: 'slide',
-          duration: 380,
-          curve: 'easeIn'
-        }
-      });
+      this.navigateTo(this, target);
     },
     onInput: function() {
-      this.$navigateTo(storage, {
-        animated: true,
-        transition: {
-          name: 'fade',
-          duration: 380,
-          curve: 'easeIn'
-        }
-      });
+      this.navigateTo(this, storage);
     },
     onFab: function() {
-      this.$navigateTo(Fab, {
-        animated: true,
-        transition: {
-          name: 'fade',
-          duration: 380,
-          curve: 'easeIn'
-        }
-      });
+      this.navigateTo(this, Fab);
     },
     onTodo: function() {
-      this.$navigateTo(Todo, {
-        animated: true,
-        transition: {
-          name: 'fade',
-          duration: 380,
-          curve: 'easeIn'
-        }
-      });
+      this.navigateTo(this, Todo);
     },
     onIcon: function() {
-      this.$navigateTo(Icon);
+      this.navigateTo(this, Icon);
     },
     onMask: function() {
-      this.$navigateTo(Mask);
+      this.navigateTo(this, Mask);
     },
     showModal() {
-      this.$navigateTo(modal);
+      this.navigateTo(this, modal);
     },
     onDrawers() {
-      this.$navigateTo(Drawers);
+      this.navigateTo(this, Drawers);
     },
     onlargeTitle() {
-      this.$navigateTo(LargeTitle);
+      this.navigateTo(this, LargeTitle);
     },
     dialog() {
-      this.$navigateTo(Dialog);
+      this.navigateTo(this, Dialog);
     },
     pop() {
-      this.$navigateTo(Pop);
+      this.navigateTo(this, Pop);
     },
     animate() {
-      this.$navigateTo(Animate);
+      this.navigateTo(this, Animate);
     },
     refresh() {
-      this.$navigateTo(Refresh);
+      this.navigateTo(this, Refresh);
     }
   }
 };
 </script>
 
 <style scoped>
-ActionBar {
-  background-color: #53ba82;
-  color: #ffffff;
-}
 .message {
   vertical-align: center;
   text-align: center;

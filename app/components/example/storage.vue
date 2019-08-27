@@ -101,11 +101,6 @@ export default {
 </script>
 
 <style scoped>
-ActionBar {
-  background-color: #53ba82;
-  color: #ffffff;
-}
-
 .home-panel {
   font-size: 16;
   margin: 15;

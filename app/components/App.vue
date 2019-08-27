@@ -28,6 +28,7 @@
         <Label class="message" :text="msg" col="0" row="0" />
         <Button class="btn btn-primary" text="示例" @tap="example" />
         <Button class="btn btn-primary dd" text="应用" @tap="project" />
+        <Button class="btn btn-primary dd" text="应用" @tap="common" />
       </StackLayout>
       <!-- </GridLayout> -->
     </ScrollView>
@@ -54,24 +55,16 @@ export default {
       console.log('project');
     },
     onButtonTap: function() {
-      this.$navigateTo(HelloWorld, {
-        animated: true,
-        transition: {
-          name: 'slide',
-          duration: 380,
-          curve: 'easeIn'
-        }
-      });
+      this.navigateTo(this,HelloWorld);
+    },
+    common:function(){
+      console.log('xxxxxx',this.localUrl)
     }
   }
 };
 </script>
 
 <style scoped>
-ActionBar {
-  background-color: #53ba82;
-  color: #ffffff;
-}
 .message {
   vertical-align: center;
   text-align: center;
