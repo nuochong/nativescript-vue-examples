@@ -4311,12 +4311,12 @@ nativescript-permissions@1.2.3:
   resolved "https://registry.yarnpkg.com/nativescript-permissions/-/nativescript-permissions-1.2.3.tgz#e3e65545f98fe488dd5578f7ff90ebae3088e700"
   integrity sha1-4+ZVRfmP5IjdVXj3/5DrrjCI5wA=
 
-nativescript-permissions@^1.2.3, nativescript-permissions@~1.3.0:
+nativescript-permissions@^1.3.7, nativescript-permissions@~1.3.0:
   version "1.3.7"
   resolved "https://registry.yarnpkg.com/nativescript-permissions/-/nativescript-permissions-1.3.7.tgz#41be2b5027fce6f1bedf6722298a55e51c6d896d"
   integrity sha512-wX+PGNCKsh/3V6w59ZXVHMcyP1WU5cPsAdFmI4sYk+hAXbeCNMLmMSKToR+DPLJ7Ag8+A3YkQCMEtJX/KWAZvA==
 
-nativescript-phone@^1.3.1:
+nativescript-phone@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/nativescript-phone/-/nativescript-phone-1.4.0.tgz#6979b9b6700d9610f924a67aca8a07c9284ff6b2"
   integrity sha512-vHQvE+n9loyZRyGgu73jNaJEnNWLF9OgBoy6RSBoxRl7jOp9eoZaLo6dRn5m+L1KWLQ5gQ2nrYceJmi8v//zrw==
@@ -4328,10 +4328,10 @@ nativescript-pulltorefresh@^2.2.0:
   resolved "https://registry.yarnpkg.com/nativescript-pulltorefresh/-/nativescript-pulltorefresh-2.3.0.tgz#126a8b99f14de087317854ebc1462f68b3a69d0b"
   integrity sha512-Y5o1NDMtQB5xvuGTS9QHQNLV1U6Ha7nWqKqGowGgdLTVx/ArVRVpOs+I2E9bbY2HX1k604+5dkG4BdkqsFRaiQ==
 
-nativescript-socket.io@^0.9.0:
-  version "0.9.0"
-  resolved "https://registry.yarnpkg.com/nativescript-socket.io/-/nativescript-socket.io-0.9.0.tgz#3bd64f0549dbc5165a92b425484f15fe9ed35878"
-  integrity sha512-AcXgIQmlklcdeHJqAcdhIz/Wl8tlN23HzhmWaOi9Iqkp77sDGnRXbUh/xXHCx4OjTL+1U/1YbpyE+JX4EO1sfg==
+nativescript-socket.io@^0.11.0:
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/nativescript-socket.io/-/nativescript-socket.io-0.11.0.tgz#10c2fe23ab066b6f4ff5917b8b4079aa470ebb53"
+  integrity sha512-R0m8Gu0YXBJo0NDhbnXm2+UW1HrpOmdlMiNJ7JszZx+Ak3FOpUWKnhYa9IJQqUIbBZChhy3eKM0rZD42W9lNmg==
 
 nativescript-theme-core@^1.0.4:
   version "1.0.6"
