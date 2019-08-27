@@ -203,10 +203,6 @@ export default {
   margin: 0;
   padding: 0;
 }
-.hello-world {
-  margin: 20;
-}
-
 label {
   color: red;
 }

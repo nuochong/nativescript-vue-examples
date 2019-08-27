@@ -31,10 +31,6 @@ export default {
 </script>
 
 <style scoped>
-.hello-world {
-  margin: 20;
-}
-
 label {
   color: red;
 }

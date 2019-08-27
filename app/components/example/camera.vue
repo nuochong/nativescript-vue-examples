@@ -2,9 +2,9 @@
   <Page class="page">
     <me-actionbar :title="'相机'"></me-actionbar>
 
-    <StackLayout class="hello-world">
+    <StackLayout class="hello-world camera-container">
       <Button class="btn btn-primary" @tap="test" text="相机" />
-      <Image :src="imgsrc" stretch="none" ref="img" />
+      <Image class="camera-img" :src="imgsrc" stretch="none" ref="img" />
     </StackLayout>
   </Page>
 </template>
@@ -47,11 +47,15 @@ export default {
 </script>
 
 <style scoped>
-.hello-world {
-  margin: 20;
-}
-
 label {
   color: red;
+}
+.camera-container {
+  background-color: blue;
+  text-align: center;
+}
+.camera-img {
+  margin:0 auto;
+  horizontal-align:center;
 }
 </style>

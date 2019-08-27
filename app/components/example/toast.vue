@@ -23,7 +23,7 @@ export default {
   mounted() {},
   methods: {
     btnToast: function() {
-      let toast = Toast.makeText('你好世界【Hello World】', 'long');
+      const toast = Toast.makeText('你好世界', 'long');
       toast.show();
     }
   }
@@ -31,10 +31,6 @@ export default {
 </script>
 
 <style scoped>
-.hello-world {
-  margin: 20;
-}
-
 label {
   color: red;
 }
