@@ -2,7 +2,7 @@
   <Page loaded="pageLoaded" ref="page">
     <me-actionbar :title="'动画效果'"></me-actionbar>
     <GridLayout colums="*" rows="*" id="dd">
-      <Label class="animateicon" text="xxx" col="0" row="0" />
+      <Label class="animateicon" :text="msg" col="0" row="0" />
       <Image class="animateicon" src="~/assets/images/NativeScript-Vue.png" />
     </GridLayout>
   </Page>
@@ -24,5 +24,5 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 </style>

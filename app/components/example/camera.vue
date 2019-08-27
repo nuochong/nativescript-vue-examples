@@ -55,7 +55,7 @@ label {
   text-align: center;
 }
 .camera-img {
-  margin:0 auto;
-  horizontal-align:center;
+  margin: 0 auto;
+  horizontal-align: center;
 }
 </style>

@@ -116,10 +116,4 @@ export default {
   /* background-color: red; */
   /* border-radius: 15; */
 }
-.message {
-  vertical-align: center;
-  text-align: center;
-  font-size: 20;
-  color: #333333;
-}
 </style>

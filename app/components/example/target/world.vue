@@ -23,10 +23,4 @@ export default {
 </script>
 
 <style scoped>
-.message {
-  vertical-align: center;
-  text-align: center;
-  font-size: 20;
-  color: #333333;
-}
 </style>

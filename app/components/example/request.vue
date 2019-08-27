@@ -2,8 +2,7 @@
   <Page>
     <me-actionbar :title="'请求'"></me-actionbar>
     <GridLayout colums="*" rows="*">
-      <!-- <Label class="message" :text="msg" col="0" row="0" /> -->
-      <Button class="request" text="start request" @tap="onButton" />
+      <Button class="btn btn-primary" text="开始请求" @tap="onButton" />
     </GridLayout>
   </Page>
 </template>
@@ -109,14 +108,4 @@ export default {
 </script>
 
 <style scoped>
-.message {
-  vertical-align: center;
-  text-align: center;
-  font-size: 20;
-  color: #333333;
-}
-.request {
-  color: green;
-  font-size: 24px;
-}
 </style>

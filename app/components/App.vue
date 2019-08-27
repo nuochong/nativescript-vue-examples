@@ -1,9 +1,9 @@
 <template>
   <Page>
     <me-actionbar-main :title="'Welcome to NativeScript-Vue!'"></me-actionbar-main>
-    <ScrollView >
+    <ScrollView>
       <!-- <GridLayout  colums="*" rows="*"> -->
-      <StackLayout class="hello-world" >
+      <StackLayout class="hello-world">
         <Label class="message" :text="msg" col="0" row="0" />
         <Button class="btn btn-primary" text="示例" @tap="example" />
         <Button class="btn btn-primary dd" text="应用" @tap="project" />
@@ -38,20 +38,14 @@ export default {
       console.log('project');
     },
     onButtonTap: function() {
-      this.navigateTo(this,HelloWorld);
+      this.navigateTo(this, HelloWorld);
     },
-    common:function(){
-      console.log('xxxxxx',this.localUrl)
+    common: function() {
+      console.log('xxxxxx', this.localUrl);
     }
   }
 };
 </script>
 
 <style scoped>
-.message {
-  vertical-align: center;
-  text-align: center;
-  font-size: 20;
-  color: #333333;
-}
 </style>
