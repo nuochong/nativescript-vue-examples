@@ -3,7 +3,7 @@
     <me-actionbar :title="'遮罩层'"></me-actionbar>
     <GridLayout colums="*" rows="*">
       <StackLayout>
-        <Button class="btn-mask" text="遮罩层" @tap="showDialog" />
+        <Button class="btn btn-primary" text="遮罩层" @tap="showDialog" />
       </StackLayout>
 
       <AbsoluteLayout class="dialog-wrapper">
@@ -44,11 +44,6 @@ export default {
 </script>
 
 <style scoped>
-.btn-mask {
-  width: 500px;
-  height: 250px;
-}
-
 @keyframes show {
   from {
     opacity: 0;

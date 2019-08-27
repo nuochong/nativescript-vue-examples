@@ -4,7 +4,6 @@
     <ScrollView>
       <!-- <GridLayout  colums="*" rows="*"> -->
       <StackLayout class="hello-world">
-        <Label class="message" :text="msg" col="0" row="0" />
         <Button class="btn btn-primary" text="示例" @tap="example" />
         <Button class="btn btn-primary" text="应用" @tap="project" />
       </StackLayout>
@@ -23,9 +22,7 @@ export default {
     meActionbarMain
   },
   data() {
-    return {
-      msg: 'Hello World!'
-    };
+    return {};
   },
   mounted() {},
   methods: {

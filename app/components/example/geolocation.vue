@@ -16,9 +16,7 @@ export default {
     meActionbar
   },
   data() {
-    return {
-      title: ''
-    };
+    return {};
   },
   mounted() {},
   methods: {
@@ -31,12 +29,12 @@ export default {
           timeout: 20000
         })
         .then(res => {
-          this.lat = res.latitude;
-          this.lon = res.longitude;
-          this.speed = res.speed;
-          console.log('定位', this.lat);
-          console.log('定位', this.lon);
-          console.log('定位', this.lat);
+          const lat = res.latitude;
+          const lon = res.longitude;
+          const speed = res.speed;
+          console.log('纬度', lat);
+          console.log('经度', lon);
+          console.log('速度', speed);
         });
     }
   }

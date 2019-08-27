@@ -3,7 +3,8 @@
     <me-actionbar :title="'消息通知'"></me-actionbar>
 
     <StackLayout class="hello-world">
-      <Button class="btn btn-primary" @tap="info" text="消息通知" />
+      <Button class="btn btn-primary" @tap="infoOpen" text="开启通知" />
+      <Button class="btn btn-primary" @tap="infoClose" text="关闭通知" />
     </StackLayout>
   </Page>
 </template>
@@ -17,26 +18,17 @@ export default {
   },
   data() {
     return {
-      title: ''
+      localNotificationsId: 1
     };
   },
   mounted() {},
   methods: {
-    info: function() {
-      //console.dir(LocalNotifications);
-      // LocalNotifications.schedule([{
-      //     id: 2,
-      //     title: 'Hi',
-      //     body: 'I\'m soundless',
-      //     sound: null,
-      //     at: new Date(new Date().getTime() + 10*1000)
-      // }])
-
+    infoOpen: function() {
       LocalNotifications.schedule([
         {
-          id: 1,
-          title: 'The title',
-          body: 'Recurs every minute until cancelled',
+          id: this.localNotificationsId,
+          title: '标题',
+          body: '每分钟重复一次，直到取消为止',
           ticker: 'The ticker',
           color: 'red',
           badge: 1,
@@ -79,6 +71,15 @@ export default {
       //         });
       //     }
       // );
+    },
+    infoClose: function() {
+      LocalNotifications.cancel(this.localNotificationsId).then(function(foundAndCanceled) {
+        if (foundAndCanceled) {
+          console.log("OK, it's gone!");
+        } else {
+          console.log('No ID 5 was scheduled');
+        }
+      });
     }
   }
 };

@@ -24,9 +24,9 @@ export default {
   methods: {
     dialog: function() {
       dialogs.alert({
-        title: 'Notification received',
-        message: 'message',
-        okButtonText: 'Excellent!'
+        title: '收到通知',
+        message: '消息内容',
+        okButtonText: '放弃'
       });
     }
   }
