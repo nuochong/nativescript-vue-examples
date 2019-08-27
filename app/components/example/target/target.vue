@@ -2,14 +2,14 @@
   <Page>
     <me-actionbar :title="'路由跳转'"></me-actionbar>
     <GridLayout colums="*" rows="*">
-      <Label class="message" :text="msg" col="0" row="0" />
-      <Button text="Button" @tap="onButton" />
+      <!-- <StackLayout class="hello-world"> -->
+      <Button class="btn btn-primary" text="跳转" @tap="onButton" />
+      <!-- </StackLayout> -->
     </GridLayout>
   </Page>
 </template>
 
 <script>
-import app from '../../App';
 import world from './world';
 import meActionbar from '../public/actionbar';
 export default {

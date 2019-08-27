@@ -3,13 +3,11 @@
     <me-actionbar :title="'路由跳转-页面二'"></me-actionbar>
     <GridLayout colums="*" rows="*">
       <Label class="message" :text="msg" col="0" row="0" />
-      <Button text="Button" @tap="onButton" />
     </GridLayout>
   </Page>
 </template>
 
 <script>
-import app from '../../App';
 import meActionbar from '../public/actionbar';
 export default {
   components: {
@@ -20,11 +18,7 @@ export default {
       msg: 'Hello World!'
     };
   },
-  methods: {
-    onButtonTap: function() {
-      this.$navigateTo(app);
-    }
-  }
+  methods: {}
 };
 </script>
 
