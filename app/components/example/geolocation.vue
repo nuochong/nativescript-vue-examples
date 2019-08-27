@@ -42,7 +42,4 @@ export default {
 </script>
 
 <style scoped>
-label {
-  color: red;
-}
 </style>

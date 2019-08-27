@@ -40,9 +40,6 @@ export default {
 </script>
 
 <style scoped>
-label {
-  color: red;
-}
 .btn-green {
   background-color: blue;
   color: green;

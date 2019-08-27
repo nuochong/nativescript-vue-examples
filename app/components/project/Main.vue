@@ -203,9 +203,6 @@ export default {
   margin: 0;
   padding: 0;
 }
-label {
-  color: red;
-}
 
 .searching {
   z-index: 100000;

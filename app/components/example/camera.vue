@@ -47,9 +47,6 @@ export default {
 </script>
 
 <style scoped>
-label {
-  color: red;
-}
 .camera-container {
   background-color: blue;
   text-align: center;
