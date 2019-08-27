@@ -1,7 +1,7 @@
 <template>
   <!-- <Page> -->
   <!-- <RadSideDrawer [drawerTransition]="sideDrawerTransition"> -->
-    
+
   <GridLayout tkDrawerContent rows="auto, *" class="sidedrawer sidedrawer-left">
     <me-actionbar :title="'侧滑菜单'"></me-actionbar>
     <StackLayout row="0" class="sidedrawer-header">

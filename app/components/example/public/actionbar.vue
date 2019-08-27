@@ -1,12 +1,12 @@
 <template>
-    <ActionBar class="action-bar" :title="title">
-      <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" @tap="$navigateBack" />
-    </ActionBar>
+  <ActionBar class="action-bar" :title="title">
+    <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" @tap="$navigateBack" />
+  </ActionBar>
 </template>
 
 <script>
 export default {
-  props:['title'],
+  props: ['title'],
   data() {
     return {};
   },

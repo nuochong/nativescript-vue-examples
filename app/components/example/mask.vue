@@ -3,8 +3,7 @@
     <me-actionbar :title="'遮罩层'"></me-actionbar>
     <GridLayout colums="*" rows="*">
       <StackLayout>
-        <Label class="message" :text="msg" col="0" row="0" />
-        <Button class="btn-mask" text="Button" @tap="showDialog" />
+        <Button class="btn-mask" text="遮罩层" @tap="showDialog" />
       </StackLayout>
 
       <AbsoluteLayout class="dialog-wrapper">
@@ -30,7 +29,6 @@ export default {
   },
   data() {
     return {
-      msg: 'Hello World! ',
       dialogOpen: false
     };
   },
@@ -94,7 +92,6 @@ ActionBar {
   border-color: black;
   background-color: white;
   width: 100%;
-  /* margin-top: 100; */
   padding: 20;
 }
 
