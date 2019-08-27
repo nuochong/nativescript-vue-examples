@@ -32,7 +32,7 @@
         <Button class="btn btn-primary" @tap="btnAlert">精美提示框</Button>
         <Button class="btn btn-primary" @tap="info">消息通知</Button>
         <Button class="btn btn-primary" @tap="btnDialog">对话框</Button>
-        <Button class="btn btn-primary" @tap="btnPlatformModule">获取设备信息，平台型号</Button>
+        <Button class="btn btn-primary" @tap="btnPlatformModule">获取设备信息</Button>
         <Button class="btn btn-primary" @tap="btnPhone">电话/短信</Button>
         <Button class="btn btn-primary" @tap="btnGeolocation">定位</Button>
         <Button class="btn btn-primary" @tap="btnPermissions">获取权限</Button>
@@ -47,7 +47,7 @@
         <Button class="btn btn-primary" text="遮罩层" @tap="onMask" />
         <Button class="btn btn-primary" text="模态对话框" @tap="showModal" />
         <Button class="btn btn-primary" text="侧滑组件新" @tap="onDrawers" />
-        <Button class="btn btn-primary" text="带有大标题的iOS导航栏" @tap="onlargeTitle" />
+        <Button class="btn btn-primary" text="大标题iOS导航栏" @tap="onlargeTitle" />
         <Button class="btn btn-primary" text="自定义对话框" @tap="dialog" />
         <Button class="btn btn-primary" text="自定义弹出框" @tap="pop" />
         <Button class="btn btn-primary" text="动画效果" @tap="animate" />
@@ -234,7 +234,7 @@ export default {
       this.$navigateTo(Drawer);
     },
     onTapEdit: function() {
-      console.log('xxxx');
+      console.log('安卓导航栏编辑按钮被点击了');
     },
     onButtonTap: function() {
       this.$navigateTo(HelloWorld, {
