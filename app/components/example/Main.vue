@@ -33,8 +33,7 @@
         <Button class="btn btn-primary" @tap="info">消息通知【Info】</Button>
         <Button class="btn btn-primary" @tap="btnDialog">对话框【Dialog】</Button>
         <Button class="btn btn-primary" @tap="btnPlatformModule">获取设备信息，平台型号【PlatformModule】</Button>
-        <Button class="btn btn-primary" @tap="btnPhone">电话【Phone】</Button>
-        <Button class="btn btn-primary" @tap="btnSms">短信【Sms】</Button>
+        <Button class="btn btn-primary" @tap="btnPhone">电话【Phone】/短信【Sms】</Button>
         <Button class="btn btn-primary" @tap="btnGeolocation">定位</Button>
         <Button class="btn btn-primary" @tap="btnPermissions">获取权限1</Button>
         <Button class="btn btn-primary btn-green" @tap="btnChange" ref="btn">改变按钮【Change Btn】</Button>
@@ -76,9 +75,9 @@ import info from './info';
 import dialog from './dialog';
 import platformmodule from './platformmodule';
 import phone from './phone';
+import geolocation from './geolocation';
 
-const geolocation = require('nativescript-geolocation');
-const { Accuracy } = require('tns-core-modules/ui/enums');
+
 
 const permissions = require('nativescript-permissions');
 //const CALL_PHONE = android.Manifest.permission.CALL_PHONE;
@@ -201,37 +200,15 @@ export default {
         }
       });
     },
-    btnSms: function() {
-      phone
-        .sms('212-555-1234', '我的消息【My Message】') //New Method for single number is phone.sms(["212-555-1234"],"My Message")
-        .then(
-          function(args) {
-            /// args.reponse: "success", "cancelled", "failed"
-            console.log(JSON.stringify(args));
-          },
-          function(err) {
-            console.log('Error: ' + err);
-          }
-        );
-    },
     btnGeolocation: function() {
-      geolocation.enableLocationRequest();
-      console.log('xxxx');
-      geolocation
-        .getCurrentLocation({
-          desiredAccuracy: Accuracy.high,
-          maximumAge: 5000,
-          timeout: 20000
-        })
-        .then(res => {
-          console.log('***');
-          this.lat = res.latitude;
-          this.lon = res.longitude;
-          this.speed = res.speed;
-          console.log('定位', this.lat);
-          console.log('定位', this.lon);
-          console.log('定位', this.lat);
-        });
+      this.$navigateTo(geolocation, {
+        animated: true,
+        transition: {
+          name: 'slide',
+          duration: 380,
+          curve: 'easeIn'
+        }
+      });
     },
     btnPermissions: function() {
       // permissions
