@@ -1,6 +1,6 @@
 <template>
   <Page>
-    <ActionBarFirstNew :title="'示例'"></ActionBarFirstNew>
+    <ActionBarSecond :title="'示例'"></ActionBarSecond>
     <ScrollView>
       <!-- <GridLayout class="hello-world" colums="*" rows="*"> -->
       <StackLayout>
@@ -76,12 +76,11 @@ import RefreshNew from './refresh-new';
 import Touch from './touch';
 import Request from './request';
 
-//import ActionBarFirstNew from './public/action-bar-first-new';
-import ActionBarFirstNew from './public/action-bar-first-new';
+import ActionBarSecond from './public/action-bar-second';
 
 export default {
   components: {
-    ActionBarFirstNew
+    ActionBarSecond
   },
   data() {
     return {
