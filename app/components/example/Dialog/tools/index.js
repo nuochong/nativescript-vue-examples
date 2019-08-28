@@ -1,5 +1,5 @@
 import mergeOptions from 'merge-options';
-import Dialog from './Dialog';
+import Dialog from './dialog';
 
 export let defaultOptions = {
   debug: false,

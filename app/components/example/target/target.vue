@@ -10,8 +10,8 @@
 </template>
 
 <script>
-import world from './World';
-import ActionBarSecond from '../Public/ActionBarSecond';
+import world from './world';
+import ActionBarSecond from '../public/action-bar-second';
 export default {
   components: {
     ActionBarSecond

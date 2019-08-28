@@ -14,10 +14,10 @@
 </template>
 
 <script>
-import Tabbar1 from './Tabbar/Tabbar1';
-import Tabbar2 from './Tabbar/Tabbar2';
-import Tabbar3 from './Tabbar/Tabbar3';
-import main from './Main';
+import Tabbar1 from './tabbar/tabbar1';
+import Tabbar2 from './tabbar/tabbar2';
+import Tabbar3 from './tabbar/tabbar3';
+import main from './main';
 export default {
   data() {
     return {

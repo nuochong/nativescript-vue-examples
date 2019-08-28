@@ -1,5 +1,5 @@
 import mergeOptions from 'merge-options';
-import MultiDrawer from './MultiDrawer';
+import MultiDrawer from './multi-drawer';
 
 export let defaultOptions = {
   debug: false,

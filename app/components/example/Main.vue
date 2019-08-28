@@ -44,40 +44,40 @@
 
 <script>
 
-import Counter from './Counter';
-import Camera from './Camera';
-import Login from './Login';
-import Toast from './Toast';
-import FancyAlert from './FancyAlert';
-import Info from './Info';
-import DialogNew from './DialogNew';
-import PlatformModule from './PlatformModule';
-import Phone from './Phone';
-import Geolocation from './Geolocation';
-import Permission from './Permission';
-import ChangeBtn from './ChangeBtn';
-import Display from './Display';
+import Counter from './counter';
+import Camera from './camera';
+import Login from './login';
+import Toast from './toast';
+import FancyAlert from './fancy-alert';
+import Info from './info';
+import DialogNew from './dialog-new';
+import PlatformModule from './platform-module';
+import Phone from './phone';
+import Geolocation from './geolocation';
+import Permission from './permission';
+import ChangeBtn from './change-btn';
+import Display from './display';
 
-import Target from './Target/Target';
-import Storage from './Storage';
-import Fab from './fab/Fab';
-import Todo from './todo/Todo';
-import Drawer from './Drawer';
-import Icon from './Icon';
-import Mask from './Mask';
-import Modal from './Modal';
-import Drawers from './MultiDrawer/Drawers';
-import LargeTitle from './largeTitle/LargeTitle';
-// import Dialog from './Dialog/Dialog';
-import Pop from './Pop';
-import Animate from './Animate';
-import Refresh from './Refresh';
-import RefreshNew from './RefreshNew';
-import Touch from './Touch';
-import Request from './Request';
+import Target from './target/target';
+import Storage from './storage';
+import Fab from './fab/fab';
+import Todo from './todo/todo';
+import Drawer from './drawer';
+import Icon from './icon';
+import Mask from './mask';
+import Modal from './modal';
+import Drawers from './multi-drawer/drawers';
+import LargeTitle from './large-title/large-title';
+// import Dialog from './dialog/dialog';
+import Pop from './pop';
+import Animate from './animate';
+import Refresh from './refresh';
+import RefreshNew from './refresh-new';
+import Touch from './touch';
+import Request from './request';
 
 //import ActionBarFirstNew from './public/action-bar-first-new';
-import ActionBarFirstNew from './public/ActionBarFirstNew';
+import ActionBarFirstNew from './public/action-bar-first-new';
 
 export default {
   components: {

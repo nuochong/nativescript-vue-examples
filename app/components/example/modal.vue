@@ -9,8 +9,8 @@
 </template>
 
 <script>
-import ModalComponent from './CustomModel/ModalComponent';
-import ActionBarSecond from './Public/ActionBarSecond';
+import ModalComponent from './custom-model/modal-component';
+import ActionBarSecond from './public/action-bar-second';
 export default {
   components: {
     ActionBarSecond

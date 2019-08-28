@@ -36,8 +36,8 @@
 </template>
 
 <script>
-import Drawer from '../Drawer';
-import ActionBarSecond from '../Public/ActionBarSecond';
+import Drawer from '../drawer';
+import ActionBarSecond from '../public/action-bar-second';
 
 export default {
   components: {

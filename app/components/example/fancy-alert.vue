@@ -10,7 +10,7 @@
 
 <script>
 import { TNSFancyAlert, TNSFancyAlertButton } from 'nativescript-fancyalert';
-import ActionBarSecond from './Public/ActionBarSecond';
+import ActionBarSecond from './public/action-bar-second';
 export default {
   components: {
     ActionBarSecond

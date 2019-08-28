@@ -37,12 +37,12 @@
 </template>
 
 <script>
-import FabButton from './FabButton';
-import FabItem from './FabItem';
+import FabButton from './fab-button';
+import FabItem from './fab-item';
 
 const app = require('tns-core-modules/application');
 const platform = require('tns-core-modules/platform');
-import ActionBarSecond from '../Public/ActionBarSecond';
+import ActionBarSecond from '../public/action-bar-second';
 export default {
   components: {
     FabButton,

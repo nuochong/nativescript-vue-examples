@@ -19,8 +19,8 @@
   </Page>
 </template>
 <script>
-import Counter from './Counter';
-import ActionBarSecond from './Public/ActionBarSecond';
+import Counter from './counter';
+import ActionBarSecond from './public/action-bar-second';
 export default {
   components: {
     ActionBarSecond

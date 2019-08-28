@@ -10,7 +10,7 @@
 
 <script>
 const dialogs = require('tns-core-modules/ui/dialogs');
-import ActionBarSecond from './Public/ActionBarSecond';
+import ActionBarSecond from './public/action-bar-second';
 export default {
   components: {
     ActionBarSecond

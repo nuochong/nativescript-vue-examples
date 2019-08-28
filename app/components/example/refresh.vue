@@ -29,7 +29,7 @@
 </template>
 
 <script>
-import ActionBarSecond from './Public/ActionBarSecond';
+import ActionBarSecond from './public/action-bar-second';
 export default {
   components: {
     ActionBarSecond

@@ -12,7 +12,7 @@
 import { log } from 'util';
 //import { Color } from 'color';
 import { Color, layout } from 'tns-core-modules/ui/core/view';
-import ActionBarSecond from './Public/ActionBarSecond';
+import ActionBarSecond from './public/action-bar-second';
 export default {
   components: {
     ActionBarSecond

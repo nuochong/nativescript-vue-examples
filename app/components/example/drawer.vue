@@ -90,7 +90,7 @@
 <script>
 //import app from "../App";
 //import world from "../Example/World";
-import ActionBarSecond from './Public/ActionBarSecond';
+import ActionBarSecond from './public/action-bar-second';
 export default {
   components: {
     ActionBarSecond

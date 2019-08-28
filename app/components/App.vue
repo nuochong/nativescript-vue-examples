@@ -13,9 +13,9 @@
 </template>
 
 <script>
-import Example from './Example/Main';
-import Project from './Project/Main';
-import ActionBarFirst from './Example/Public/ActionBarFirst';
+import Example from './example/main';
+import Project from './project/main';
+import ActionBarFirst from './example/public/action-bar-first';
 
 export default {
   components: {

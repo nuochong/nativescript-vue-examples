@@ -127,12 +127,12 @@
 </template>
 
 <script>
-import Header from './Header';
-import Footer from './Footer';
-import Home from './Home';
-import Tabbar1 from './Tabbar/Tabbar1';
-import Tabbar2 from './Tabbar/Tabbar2';
-import Tabbar3 from './Tabbar/Tabbar3';
+import Header from './header';
+import Footer from './footer';
+import Home from './home';
+import Tabbar1 from './tabbar/tabbar1';
+import Tabbar2 from './tabbar/tabbar2';
+import Tabbar3 from './tabbar/tabbar3';
 export default {
   components: {
     Header,

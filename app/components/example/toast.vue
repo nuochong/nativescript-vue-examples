@@ -10,7 +10,7 @@
 
 <script>
 import * as Toast from 'nativescript-toast';
-import ActionBarSecond from './Public/ActionBarSecond';
+import ActionBarSecond from './public/action-bar-second';
 export default {
   components: {
     ActionBarSecond
