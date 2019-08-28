@@ -1,6 +1,6 @@
 <template>
   <Page class="page">
-    <me-actionbar :title="'计数器'"></me-actionbar>
+    <action-bar-second :title="'计数器'"></action-bar-second>
 
     <StackLayout>
       <FlexboxLayout flexDirection="row" justifyContent="center">
@@ -16,10 +16,10 @@
 <script>
 import { mapActions } from 'vuex';
 
-import meActionbar from './public/actionbar';
+import ActionBarSecond from './Public/ActionBarSecond';
 export default {
   components: {
-    meActionbar
+    ActionBarSecond
   },
   computed: {
     message() {

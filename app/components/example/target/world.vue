@@ -1,6 +1,6 @@
 <template>
   <Page>
-    <me-actionbar :title="'路由跳转-页面二'"></me-actionbar>
+    <action-bar-second :title="'路由跳转-页面二'"></action-bar-second>
     <GridLayout colums="*" rows="*">
       <Label class="message" :text="msg" col="0" row="0" />
     </GridLayout>
@@ -8,10 +8,10 @@
 </template>
 
 <script>
-import meActionbar from '../public/actionbar';
+import ActionBarSecond from '../Public/ActionBarSecond';
 export default {
   components: {
-    meActionbar
+    ActionBarSecond
   },
   data() {
     return {

@@ -1,6 +1,6 @@
 <template>
   <Page loaded="pageLoaded" ref="page">
-    <me-actionbar :title="'触摸事件'"></me-actionbar>
+    <action-bar-second :title="'触摸事件'"></action-bar-second>
     <GridLayout colums="*" rows="*">
       <Button class="btn btn-primary" ref="btn" text="触摸" @tap="touch" />
       <Button class="btn btn-primary" ref="btn" text="触摸" />
@@ -12,10 +12,10 @@
 import { log } from 'util';
 //import { Color } from 'color';
 import { Color, layout } from 'tns-core-modules/ui/core/view';
-import meActionbar from './public/actionbar';
+import ActionBarSecond from './Public/ActionBarSecond';
 export default {
   components: {
-    meActionbar
+    ActionBarSecond
   },
   data() {
     return {

@@ -1,6 +1,6 @@
 <template>
   <Page class="page">
-    <me-actionbar :title="'消息通知'"></me-actionbar>
+    <action-bar-second :title="'消息通知'"></action-bar-second>
 
     <StackLayout class="hello-world">
       <Button class="btn btn-primary" @tap="infoOpen" text="开启通知" />
@@ -11,10 +11,10 @@
 
 <script>
 import { LocalNotifications } from 'nativescript-local-notifications';
-import meActionbar from './public/actionbar';
+import ActionBarSecond from './Public/ActionBarSecond';
 export default {
   components: {
-    meActionbar
+    ActionBarSecond
   },
   data() {
     return {

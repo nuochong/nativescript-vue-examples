@@ -1,6 +1,6 @@
 <template>
   <Page class="page">
-    <me-actionbar :title="'相机'"></me-actionbar>
+    <action-bar-second :title="'相机'"></action-bar-second>
 
     <StackLayout class="hello-world camera-container">
       <Button class="btn btn-primary" @tap="test" text="相机" />
@@ -12,10 +12,10 @@
 <script>
 import * as camera from 'nativescript-camera';
 //var imageModule = require("tns-core-modules/ui/image");
-import meActionbar from './public/actionbar';
+import ActionBarSecond from './Public/ActionBarSecond';
 export default {
   components: {
-    meActionbar
+    ActionBarSecond
   },
   data() {
     return {

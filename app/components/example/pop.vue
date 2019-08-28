@@ -1,6 +1,6 @@
 <template>
   <Page width="100%">
-    <me-actionbar :title="'自定义弹出框'"></me-actionbar>
+    <action-bar-second :title="'自定义弹出框'"></action-bar-second>
     <!-- <GridLayout colums="*" rows="*">
             <Label class="message" :text="msg" col="0" row="0"/>
             <Button text="Button" @tap="onButton" />
@@ -74,10 +74,10 @@
 </template>
 
 <script>
-import meActionbar from './public/actionbar';
+import ActionBarSecond from './Public/ActionBarSecond';
 export default {
   components: {
-    meActionbar
+    ActionBarSecond
   },
   data() {
     return {

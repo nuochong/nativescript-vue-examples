@@ -1,6 +1,6 @@
 <template>
   <Page>
-    <me-actionbar :title="'请求'"></me-actionbar>
+    <action-bar-second :title="'请求'"></action-bar-second>
     <!-- <GridLayout colums="*" rows="*"> -->
     <StackLayout>
       <Button class="btn btn-primary" text="开始请求" @tap="onButton" />
@@ -15,10 +15,10 @@ import { isAndroid } from 'platform';
 import { getString } from 'application-settings'; // Example Only
 // import { log } from 'util';
 //import * as http from 'http';
-import meActionbar from './public/actionbar';
+import ActionBarSecond from './Public/ActionBarSecond';
 export default {
   components: {
-    meActionbar
+    ActionBarSecond
   },
   data() {
     return {

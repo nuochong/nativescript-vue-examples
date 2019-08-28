@@ -1,6 +1,6 @@
 <template>
   <Page class="page">
-    <me-actionbar :title="'拨打电话及发送短信'"></me-actionbar>
+    <action-bar-second :title="'拨打电话及发送短信'"></action-bar-second>
 
     <StackLayout class="hello-world">
       <Button class="btn btn-primary" @tap="phone" text="拨打电话" />
@@ -11,10 +11,10 @@
 
 <script>
 const phone = require('nativescript-phone');
-import meActionbar from './public/actionbar';
+import ActionBarSecond from './Public/ActionBarSecond';
 export default {
   components: {
-    meActionbar
+    ActionBarSecond
   },
   data() {
     return {

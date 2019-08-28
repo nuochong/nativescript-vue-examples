@@ -1,6 +1,6 @@
 <template>
   <Page class="page">
-    <me-actionbar :title="'精美提示框'"></me-actionbar>
+    <action-bar-second :title="'精美提示框'"></action-bar-second>
 
     <StackLayout class="hello-world">
       <Button class="btn btn-primary" @tap="btnfancyalert" text="精美提示框" />
@@ -10,10 +10,10 @@
 
 <script>
 import { TNSFancyAlert, TNSFancyAlertButton } from 'nativescript-fancyalert';
-import meActionbar from './public/actionbar';
+import ActionBarSecond from './Public/ActionBarSecond';
 export default {
   components: {
-    meActionbar
+    ActionBarSecond
   },
   data() {
     return {

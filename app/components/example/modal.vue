@@ -1,6 +1,6 @@
 <template>
   <Page class="page">
-    <me-actionbar :title="'模态对话框'"></me-actionbar>
+    <action-bar-second :title="'模态对话框'"></action-bar-second>
 
     <StackLayout class="hello-world">
       <Button class="btn btn-primary" @tap="modal" text="模态对话框" />
@@ -9,11 +9,11 @@
 </template>
 
 <script>
-import ModalComponent from './customModel/ModalComponent';
-import meActionbar from './public/actionbar';
+import ModalComponent from './CustomModel/ModalComponent';
+import ActionBarSecond from './Public/ActionBarSecond';
 export default {
   components: {
-    meActionbar
+    ActionBarSecond
   },
   data() {
     return {

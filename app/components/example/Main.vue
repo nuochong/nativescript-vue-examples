@@ -1,6 +1,6 @@
 <template>
   <Page>
-    <me-actionbar-main :title="'示例'"></me-actionbar-main>
+    <ActionBarFirstNew :title="'示例'"></ActionBarFirstNew>
     <ScrollView>
       <!-- <GridLayout class="hello-world" colums="*" rows="*"> -->
       <StackLayout>
@@ -10,7 +10,6 @@
         <Button class="btn btn-primary" text="提示" @tap="btnToast" />
         <Button class="btn btn-primary" text="精美提示框" @tap="btnAlert" />
         <Button class="btn btn-primary" text="消息通知" @tap="info" />
-        <Button class="btn btn-primary" text="对话框" @tap="btnDialog" />
         <Button class="btn btn-primary" text="获取设备信息" @tap="btnPlatformModule" />
         <Button class="btn btn-primary" text="电话/短信" @tap="btnPhone" />
         <Button class="btn btn-primary" text="定位" @tap="btnGeolocation" />
@@ -28,7 +27,8 @@
         <Button class="btn btn-primary" text="模态对话框" @tap="showModal" />
         <Button class="btn btn-primary" text="侧滑组件新" @tap="onDrawers" />
         <Button class="btn btn-primary" text="大标题iOS导航栏" @tap="onlargeTitle" />
-        <Button class="btn btn-primary" text="自定义对话框" @tap="dialog" />
+        <!-- <Button class="btn btn-primary" text="对话框" @tap="Dialog" /> -->
+        <Button class="btn btn-primary" text="自定义对话框" @tap="DialogNew" />
         <Button class="btn btn-primary" text="自定义弹出框" @tap="pop" />
         <Button class="btn btn-primary" text="动画效果" @tap="animate" />
         <Button class="btn btn-primary" text="下拉刷新" @tap="refresh" />
@@ -43,43 +43,45 @@
 </template>
 
 <script>
+
 import Counter from './Counter';
-import camera from './camera';
+import Camera from './Camera';
 import Login from './Login';
-import Toast from './toast';
-import fancyalert from './Fancyalert';
-import info from './info';
-import dialog from './dialog';
-import platformmodule from './platformmodule';
-import phone from './phone';
-import geolocation from './geolocation';
-import permission from './permission';
-import changebtn from './changebtn';
-import display from './display';
+import Toast from './Toast';
+import FancyAlert from './FancyAlert';
+import Info from './Info';
+import DialogNew from './DialogNew';
+import PlatformModule from './PlatformModule';
+import Phone from './Phone';
+import Geolocation from './Geolocation';
+import Permission from './Permission';
+import ChangeBtn from './ChangeBtn';
+import Display from './Display';
 
-import target from './target/target';
-import storage from './storage';
+import Target from './Target/Target';
+import Storage from './Storage';
 import Fab from './fab/Fab';
-import Todo from './todo/todo';
-import Drawer from './drawer';
-import Icon from './icon';
-import Mask from './mask';
-import modal from './modal';
-import Drawers from './MultiDrawer/drawers';
-import LargeTitle from './largeTitle/largeTitle';
-import Dialog from './Dialog/dialog';
-import Pop from './pop';
-import Animate from './animate';
-import Refresh from './refresh';
-import RefreshNew from './refreshNew';
-import Touch from './touch';
-import Request from './request';
+import Todo from './todo/Todo';
+import Drawer from './Drawer';
+import Icon from './Icon';
+import Mask from './Mask';
+import Modal from './Modal';
+import Drawers from './MultiDrawer/Drawers';
+import LargeTitle from './largeTitle/LargeTitle';
+// import Dialog from './Dialog/Dialog';
+import Pop from './Pop';
+import Animate from './Animate';
+import Refresh from './Refresh';
+import RefreshNew from './RefreshNew';
+import Touch from './Touch';
+import Request from './Request';
 
-import meActionbarMain from './public/actionbarMain';
+//import ActionBarFirstNew from './public/action-bar-first-new';
+import ActionBarFirstNew from './public/ActionBarFirstNew';
 
 export default {
   components: {
-    meActionbarMain
+    ActionBarFirstNew
   },
   data() {
     return {
@@ -92,7 +94,7 @@ export default {
       this.navigateTo(this, Counter);
     },
     camera: function() {
-      this.navigateTo(this, camera);
+      this.navigateTo(this, Camera);
     },
     login: function() {
       this.navigateTo(this, Login);
@@ -101,31 +103,31 @@ export default {
       this.navigateTo(this, Toast);
     },
     btnAlert: function() {
-      this.navigateTo(this, fancyalert);
+      this.navigateTo(this, FancyAlert);
     },
     info: function() {
-      this.navigateTo(this, info);
+      this.navigateTo(this, Info);
     },
-    btnDialog: function() {
-      this.navigateTo(this, dialog);
-    },
+    // btnDialog: function() {
+    //   this.navigateTo(this, Dialog);
+    // },
     btnPlatformModule: function() {
-      this.navigateTo(this, platformmodule);
+      this.navigateTo(this, PlatformModule);
     },
     btnPhone: function() {
-      this.navigateTo(this, phone);
+      this.navigateTo(this, Phone);
     },
     btnGeolocation: function() {
-      this.navigateTo(this, geolocation);
+      this.navigateTo(this, Geolocation);
     },
     btnPermissions: function() {
-      this.navigateTo(this, permission);
+      this.navigateTo(this, Permission);
     },
     common: function() {
       console.log('common：', this.localUrl);
     },
     btnChange: function() {
-      this.navigateTo(this, changebtn);
+      this.navigateTo(this, ChangeBtn);
     },
     request: function() {
       this.navigateTo(this, Request);
@@ -140,10 +142,10 @@ export default {
       this.navigateTo(this, Drawer);
     },
     onButtonTap: function() {
-      this.navigateTo(this, target);
+      this.navigateTo(this, Target);
     },
     onInput: function() {
-      this.navigateTo(this, storage);
+      this.navigateTo(this, Storage);
     },
     onFab: function() {
       this.navigateTo(this, Fab);
@@ -158,7 +160,7 @@ export default {
       this.navigateTo(this, Mask);
     },
     showModal() {
-      this.navigateTo(this, modal);
+      this.navigateTo(this, Modal);
     },
     onDrawers() {
       this.navigateTo(this, Drawers);
@@ -166,8 +168,8 @@ export default {
     onlargeTitle() {
       this.navigateTo(this, LargeTitle);
     },
-    dialog() {
-      this.navigateTo(this, Dialog);
+    dialogNew() {
+      this.navigateTo(this, DialogNew);
     },
     pop() {
       this.navigateTo(this, Pop);

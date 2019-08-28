@@ -1,6 +1,6 @@
 <template>
   <Page loaded="pageLoaded" ref="page">
-    <me-actionbar :title="'图标'"></me-actionbar>
+    <action-bar-second :title="'图标'"></action-bar-second>
     <GridLayout colums="*" rows="*">
       <Label class="message" :text="msg" col="0" row="0" />
       <!-- <Button text="Button" @tap="onButton" /> -->
@@ -22,10 +22,10 @@
 
 <script>
 const observable = require('tns-core-modules/data/observable');
-import meActionbar from './public/actionbar';
+import ActionBarSecond from './Public/ActionBarSecond';
 export default {
   components: {
-    meActionbar
+    ActionBarSecond
   },
   data() {
     return {

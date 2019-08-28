@@ -1,6 +1,6 @@
 <template>
   <Page>
-    <me-actionbar-main :title="'Welcome to NativeScript-Vue!'"></me-actionbar-main>
+    <ActionBarFirst :title="'Welcome to NativeScript-Vue!'"></ActionBarFirst>
     <ScrollView>
       <!-- <GridLayout  colums="*" rows="*"> -->
       <StackLayout class="hello-world">
@@ -13,13 +13,13 @@
 </template>
 
 <script>
-import example from './example/Main';
-import project from './project/Main';
-import meActionbarMain from './example/public/actionbarMain';
+import Example from './Example/Main';
+import Project from './Project/Main';
+import ActionBarFirst from './Example/Public/ActionBarFirst';
 
 export default {
   components: {
-    meActionbarMain
+    ActionBarFirst
   },
   data() {
     return {};
@@ -27,10 +27,10 @@ export default {
   mounted() {},
   methods: {
     example: function() {
-      this.navigateTo(this, example);
+      this.navigateTo(this, Example);
     },
     project: function() {
-      this.navigateTo(this, project);
+      this.navigateTo(this, Project);
     }
   }
 };

@@ -1,6 +1,6 @@
 <template>
   <Page class="page">
-    <me-actionbar :title="'本地存储'"></me-actionbar>
+    <action-bar-second :title="'本地存储'"></action-bar-second>
     <ScrollView>
       <StackLayout class="home-panel form input-field">
         <Label
@@ -49,10 +49,10 @@
 <script>
 const appSettings = require('tns-core-modules/application-settings');
 const dialogs = require('tns-core-modules/ui/dialogs');
-import meActionbar from './public/actionbar';
+import ActionBarSecond from './Public/ActionBarSecond';
 export default {
   components: {
-    meActionbar
+    ActionBarSecond
   },
   data() {
     return {

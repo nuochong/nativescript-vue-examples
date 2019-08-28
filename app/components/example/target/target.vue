@@ -1,6 +1,6 @@
 <template>
   <Page>
-    <me-actionbar :title="'路由跳转'"></me-actionbar>
+    <action-bar-second :title="'路由跳转'"></action-bar-second>
     <GridLayout colums="*" rows="*">
       <!-- <StackLayout class="hello-world"> -->
       <Button class="btn btn-primary" text="跳转" @tap="onButton" />
@@ -10,11 +10,11 @@
 </template>
 
 <script>
-import world from './world';
-import meActionbar from '../public/actionbar';
+import world from './World';
+import ActionBarSecond from '../Public/ActionBarSecond';
 export default {
   components: {
-    meActionbar
+    ActionBarSecond
   },
   data() {
     return {

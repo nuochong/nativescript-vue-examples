@@ -1,6 +1,6 @@
 <template>
   <Page class="page">
-    <me-actionbar :title="'对话框'"></me-actionbar>
+    <action-bar-second :title="'对话框'"></action-bar-second>
 
     <StackLayout class="hello-world">
       <Button class="btn btn-primary" @tap="dialog" text="对话框" />
@@ -10,10 +10,10 @@
 
 <script>
 const dialogs = require('tns-core-modules/ui/dialogs');
-import meActionbar from './public/actionbar';
+import ActionBarSecond from './Public/ActionBarSecond';
 export default {
   components: {
-    meActionbar
+    ActionBarSecond
   },
   data() {
     return {

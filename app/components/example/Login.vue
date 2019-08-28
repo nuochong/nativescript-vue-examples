@@ -1,6 +1,6 @@
 <template>
   <Page class="page" navigatingTo="onNavigatingTo">
-    <me-actionbar :title="'模拟登录'"></me-actionbar>
+    <action-bar-second :title="'模拟登录'"></action-bar-second>
     <FlexboxLayout class="page page-login" backgroundImage="res://mesh">
       <StackLayout class="flexbox-item company-name-container">
         <Label class="t-30 company-name" text="你的公司名称【Your Company Name】"></Label>
@@ -20,10 +20,10 @@
 </template>
 <script>
 import Counter from './Counter';
-import meActionbar from './public/actionbar';
+import ActionBarSecond from './Public/ActionBarSecond';
 export default {
   components: {
-    meActionbar
+    ActionBarSecond
   },
   data() {
     return {

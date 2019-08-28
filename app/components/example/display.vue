@@ -1,6 +1,6 @@
 <template>
   <Page class="page">
-    <me-actionbar :title="'显示隐藏'"></me-actionbar>
+    <action-bar-second :title="'显示隐藏'"></action-bar-second>
     <StackLayout class="hello-world">
       <Label class="body" textWrap="true" text="这是一个hello world组件，如果你挑战，请点击这个按钮" />
       <Label
@@ -17,10 +17,10 @@
 
 <script>
 import { LocalNotifications } from 'nativescript-local-notifications';
-import meActionbar from './public/actionbar';
+import ActionBarSecond from './Public/ActionBarSecond';
 export default {
   components: {
-    meActionbar
+    ActionBarSecond
   },
   data() {
     return {

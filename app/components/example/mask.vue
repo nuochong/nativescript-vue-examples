@@ -1,6 +1,6 @@
 <template>
   <Page :class="{ dialogOpen: dialogOpen }">
-    <me-actionbar :title="'遮罩层'"></me-actionbar>
+    <action-bar-second :title="'遮罩层'"></action-bar-second>
     <GridLayout colums="*" rows="*">
       <StackLayout>
         <Button class="btn btn-primary" text="遮罩层" @tap="showDialog" />
@@ -22,10 +22,10 @@
 </template>
 
 <script>
-import meActionbar from './public/actionbar';
+import ActionBarSecond from './Public/ActionBarSecond';
 export default {
   components: {
-    meActionbar
+    ActionBarSecond
   },
   data() {
     return {

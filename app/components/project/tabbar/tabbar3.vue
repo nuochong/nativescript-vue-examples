@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import app from '../../App';
+import App from '../../App';
 export default {
   data() {
     return {
@@ -20,7 +20,7 @@ export default {
   },
   methods: {
     onButtonTap: function() {
-      this.$navigateTo(app);
+      this.$navigateTo(App);
     }
   }
 };

@@ -1,6 +1,6 @@
 <template>
   <Page class="page">
-    <me-actionbar :title="'获取位置信息'"></me-actionbar>
+    <action-bar-second :title="'获取位置信息'"></action-bar-second>
     <StackLayout class="hello-world">
       <Button class="btn btn-primary" @tap="geolocation" text="获取位置信息" />
     </StackLayout>
@@ -10,10 +10,10 @@
 <script>
 const geolocation = require('nativescript-geolocation');
 const { Accuracy } = require('tns-core-modules/ui/enums');
-import meActionbar from './public/actionbar';
+import ActionBarSecond from './Public/ActionBarSecond';
 export default {
   components: {
-    meActionbar
+    ActionBarSecond
   },
   data() {
     return {};

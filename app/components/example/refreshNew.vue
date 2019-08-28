@@ -1,6 +1,6 @@
 <template>
   <Page loaded="pageLoaded" ref="page">
-    <me-actionbar :title="'下拉刷新'"></me-actionbar>
+    <action-bar-second :title="'下拉刷新'"></action-bar-second>
     <FlexboxLayout
       flexDirection="column"
       backgroundColor="#3c495e"
@@ -36,10 +36,10 @@
 </template>
 
 <script>
-import meActionbar from './public/actionbar';
+import ActionBarSecond from './Public/ActionBarSecond';
 export default {
   components: {
-    meActionbar
+    ActionBarSecond
   },
   data() {
     return {

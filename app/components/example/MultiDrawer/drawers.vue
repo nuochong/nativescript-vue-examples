@@ -36,11 +36,12 @@
 </template>
 
 <script>
-import Drawer from '../drawer';
-import meActionbar from '../public/actionbar';
+import Drawer from '../Drawer';
+import ActionBarSecond from '../Public/ActionBarSecond';
+
 export default {
   components: {
-    meActionbar,
+    ActionBarSecond,
     Drawer
   },
   data() {

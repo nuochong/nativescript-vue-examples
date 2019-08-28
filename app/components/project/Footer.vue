@@ -14,9 +14,9 @@
 </template>
 
 <script>
-import tabbar1 from './tabbar/tabbar1';
-import tabbar2 from './tabbar/tabbar2';
-import tabbar3 from './tabbar/tabbar3';
+import Tabbar1 from './Tabbar/Tabbar1';
+import Tabbar2 from './Tabbar/Tabbar2';
+import Tabbar3 from './Tabbar/Tabbar3';
 import main from './Main';
 export default {
   data() {

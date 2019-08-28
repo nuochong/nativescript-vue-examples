@@ -12,7 +12,7 @@
       @tap="close()"
     />
 
-    <template v-for="side in computedSidesEnabled">
+    <template v-for="(side,index) in computedSidesEnabled">
       <!-- Drawer Content -->
       <GridLayout
         @layoutChanged="onDrawerLayoutChange(side)"
@@ -20,6 +20,7 @@
         @pan="onDrawerPan(side, $event)"
         :ref="`${side}Drawer`"
         :style="computedDrawerStyle(side)"
+        :key="index"
       >
         <slot :name="side" />
       </GridLayout>
@@ -28,6 +29,7 @@
         v-show="computedShowSwipeOpenTrigger(side)"
         v-bind="computedSwipeOpenTriggerProperties(side)"
         @pan="onOpenTriggerPan(side, $event)"
+        :key="index"
       />
     </template>
   </GridLayout>

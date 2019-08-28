@@ -1,6 +1,6 @@
 <template>
   <Page class="page">
-    <me-actionbar :title="'改变按钮'"></me-actionbar>
+    <action-bar-second :title="'改变按钮'"></action-bar-second>
 
     <StackLayout class="hello-world">
       <Button class="btn btn-primary btn-green" @tap="changebtn" ref="btn" text="改变按钮" />
@@ -9,10 +9,10 @@
 </template>
 
 <script>
-import meActionbar from './public/actionbar';
+import ActionBarSecond from './Public/ActionBarSecond';
 export default {
   components: {
-    meActionbar
+    ActionBarSecond
   },
   data() {
     return {

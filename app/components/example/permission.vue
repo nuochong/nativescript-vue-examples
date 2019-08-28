@@ -1,6 +1,6 @@
 <template>
   <Page class="page">
-    <me-actionbar :title="'获取权限'"></me-actionbar>
+    <action-bar-second :title="'获取权限'"></action-bar-second>
 
     <StackLayout class="hello-world">
       <Button class="btn btn-primary" @tap="test" text="获取权限" />
@@ -12,10 +12,10 @@
 const permissions = require('nativescript-permissions');
 //const CALL_PHONE = android.Manifest.permission.CALL_PHONE;
 //const Intent = android.content.Intent;
-import meActionbar from './public/actionbar';
+import ActionBarSecond from './Public/ActionBarSecond';
 export default {
   components: {
-    meActionbar
+    ActionBarSecond
   },
   data() {
     return {

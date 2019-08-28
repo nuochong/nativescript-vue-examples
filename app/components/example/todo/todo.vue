@@ -1,6 +1,6 @@
 <template>
   <Page class="page">
-    <me-actionbar :title="'备忘录'"></me-actionbar>
+    <action-bar-second :title="'备忘录'"></action-bar-second>
 
     <TabView height="100%">
       <TabViewItem title="To Do" class="tabview">
@@ -55,10 +55,10 @@
 }
 </style>
 <script>
-import meActionbar from '../public/actionbar';
+import ActionBarSecond from '../Public/ActionBarSecond';
 export default {
   components: {
-    meActionbar
+    ActionBarSecond
   },
   methods: {
     onItemTap: function(args) {

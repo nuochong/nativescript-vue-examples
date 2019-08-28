@@ -1,6 +1,6 @@
 <template>
   <Page class="page">
-    <me-actionbar :title="'提示'"></me-actionbar>
+    <action-bar-second :title="'提示'"></action-bar-second>
 
     <StackLayout class="hello-world">
       <Button class="btn btn-primary" @tap="btnToast" text="提示" />
@@ -10,10 +10,10 @@
 
 <script>
 import * as Toast from 'nativescript-toast';
-import meActionbar from './public/actionbar';
+import ActionBarSecond from './Public/ActionBarSecond';
 export default {
   components: {
-    meActionbar
+    ActionBarSecond
   },
   data() {
     return {

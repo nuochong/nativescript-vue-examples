@@ -1,6 +1,6 @@
 <template>
   <Page loaded="pageLoaded" ref="page">
-    <me-actionbar :title="'动画效果'"></me-actionbar>
+    <action-bar-second :title="'动画效果'"></action-bar-second>
     <GridLayout colums="*" rows="*" id="dd">
       <Label class="animateicon" :text="msg" col="0" row="0" />
       <Image class="animateicon" src="~/assets/images/NativeScript-Vue.png" />
@@ -9,10 +9,10 @@
 </template>
 
 <script>
-import meActionbar from './public/actionbar';
+import ActionBarSecond from './Public/ActionBarSecond';
 export default {
   components: {
-    meActionbar
+    ActionBarSecond
   },
   data() {
     return {

@@ -11,7 +11,7 @@
       @tap="close()"
     />
 
-    <template v-for="side in computedSidesEnabled">
+    <template v-for="(side,index) in computedSidesEnabled">
       <!-- Drawer Content -->
       <GridLayout
         @layoutChanged="onDrawerLayoutChange(side)"
@@ -19,6 +19,7 @@
         :ref="`${side}Drawer`"
         :style="computedDrawerStyle(side)"
         opacity="0"
+        :key="index"
       >
         <slot :name="side" />
       </GridLayout>

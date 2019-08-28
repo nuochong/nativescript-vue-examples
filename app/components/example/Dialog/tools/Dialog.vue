@@ -11,7 +11,7 @@
       @tap="close()"
     />
 
-    <template v-for="side in computedSidesEnabled">
+    <template v-for="(side,index) in computedSidesEnabled">
       <!-- Drawer Content -->
       <GridLayout
         @layoutChanged="onDrawerLayoutChange(side)"
@@ -19,6 +19,7 @@
         :ref="`${side}Drawer`"
         :style="computedDrawerStyle(side)"
         opacity="0"
+        :key="index"
       >
         <slot :name="side" />
       </GridLayout>
@@ -30,7 +31,7 @@
 <script>
 import * as utils from 'tns-core-modules/utils/utils';
 import mergeOptions from 'merge-options';
-import { defaultOptions } from './index';
+// import { defaultOptions } from './index';
 
 export default {
   model: {

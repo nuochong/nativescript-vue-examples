@@ -1,6 +1,6 @@
 <template>
   <Page class="page">
-    <me-actionbar :title="'获取设备信息'"></me-actionbar>
+    <action-bar-second :title="'获取设备信息'"></action-bar-second>
 
     <StackLayout class="hello-world">
       <Button class="btn btn-primary" @tap="getinfo" text="获取设备信息" />
@@ -10,10 +10,10 @@
 
 <script>
 const platformModule = require('tns-core-modules/platform');
-import meActionbar from './public/actionbar';
+import ActionBarSecond from './Public/ActionBarSecond';
 export default {
   components: {
-    meActionbar
+    ActionBarSecond
   },
   data() {
     return {
