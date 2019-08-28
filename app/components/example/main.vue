@@ -43,7 +43,6 @@
 </template>
 
 <script>
-
 import Counter from './counter';
 import Camera from './camera';
 import Login from './login';
