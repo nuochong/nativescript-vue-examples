@@ -4338,10 +4338,10 @@ nativescript-theme-core@^1.0.4:
   resolved "https://registry.yarnpkg.com/nativescript-theme-core/-/nativescript-theme-core-1.0.6.tgz#cea174696bc5b3bd2025412c9c2eb4a5ed2b7f2d"
   integrity sha512-p9v8w0xC/WJDJat/HwxJ/u7Xf50i3JiZR0zx0M7445Gi4HaBClFcjfVc+TLOZEARU4RKauBTopYlLN4xke6tYw==
 
-nativescript-toast@^1.4.6:
-  version "1.4.6"
-  resolved "https://registry.yarnpkg.com/nativescript-toast/-/nativescript-toast-1.4.6.tgz#512464251028cf278c94cffcf65af8cc0f7ae4fa"
-  integrity sha1-USRkJRAozyeMlM/89lr4zA965Po=
+nativescript-toast@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/nativescript-toast/-/nativescript-toast-2.0.0.tgz#ef3245d0c35d50ca10da4554d1459356a99687aa"
+  integrity sha512-xqyNfFS894oGfrEVO7CjpioAQLiLNNcd77Euq9XIUTf1U3W0PsIgAJbLP7+kkVGIJxdLtlBkbcQ4wDmf2DCi1w==
 
 nativescript-ui-core@~3.0.0:
   version "3.0.0"
