@@ -83,7 +83,7 @@ export default {
   },
   data() {
     return {
-      msg: '---------分割线--------'
+      msg: '---------分割线---------'
     };
   },
   mounted() {},

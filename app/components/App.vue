@@ -5,7 +5,7 @@
       <!-- <GridLayout  colums="*" rows="*"> -->
       <StackLayout class="hello-world">
         <Button class="btn btn-primary" text="示例" @tap="example" />
-        <Button class="btn btn-primary" text="应用" @tap="project" />
+        <Button class="btn btn-primary" text="实例" @tap="project" />
       </StackLayout>
       <!-- </GridLayout> -->
     </ScrollView>

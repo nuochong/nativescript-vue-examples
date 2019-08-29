@@ -1,6 +1,7 @@
 <template>
-  <Page class="page" actionBarHidden="true">
-    <ActionBar id="header head">
+  <Page class="page" actionBarHidden="false">
+    <ActionBarSecond :title="'实例'"></ActionBarSecond>
+    <!-- <ActionBar id="header head">
       <StackLayout orientation="horizontal" class="btn menu hh">
         <Image
           src="~/assets/icons/arrow.png"
@@ -12,8 +13,8 @@
         />
         <Label class="tess" text="NativeScript" fontSize="24" horizontalAlignment="right" />
       </StackLayout>
-      <!-- <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" @tap="$navigateBack"/> -->
-    </ActionBar>
+      <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" @tap="$navigateBack"/>
+    </ActionBar> -->
 
     <GridLayout rows="60, *, auto" backgroundColor="#26252A">
       <Header class="header" row="0" />
@@ -133,8 +134,11 @@ import Home from './home';
 import Tabbar1 from './tabbar/tabbar1';
 import Tabbar2 from './tabbar/tabbar2';
 import Tabbar3 from './tabbar/tabbar3';
+import ActionBarSecond from '../example/public/action-bar-second';
+
 export default {
   components: {
+    ActionBarSecond,
     Header,
     Footer,
     Home,
@@ -145,9 +149,6 @@ export default {
   },
   data() {
     return {
-      surprise: false,
-      title: '点击我！【Tap me!】',
-      imgsrc: 'res://icon',
       places: [
         {
           name: 'The Custom House1',
@@ -172,13 +173,13 @@ export default {
     };
   },
   mounted() {
-    console.log('jjjj', this.$refs.ca.nativeView);
+    console.log('xxx', this.$refs.ca.nativeView);
     this.$refs.ca.nativeView.separatorColor = 'white';
     this.$refs.ca.nativeView.itemsProperty = 'white';
   },
   methods: {
     change: function(value) {
-      //console.log('我是伏组件');
+      //console.log('我是父组件');
       this.selectedTabview = value;
     }
   }

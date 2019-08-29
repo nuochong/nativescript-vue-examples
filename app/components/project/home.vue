@@ -1,6 +1,5 @@
 <template>
   <StackLayout id="home">
-    111
     <!-- <Label textWrap="true" text="Hello John !" class="h1 align-center extra-bold" /> -->
     <!-- <Button width="30" height="5" class="hr" />
         <Label textWrap="true" text="Which city are you looking for today ?"
