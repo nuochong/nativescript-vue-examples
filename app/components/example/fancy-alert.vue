@@ -23,7 +23,6 @@ export default {
   mounted() {},
   methods: {
     btnfancyalert: function() {
-      console.log('xxx');
       TNSFancyAlert.showSuccess('Success!', 'Fancy alerts are nice.', 'Yes they are!');
     }
   }

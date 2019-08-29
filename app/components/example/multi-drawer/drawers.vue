@@ -46,7 +46,6 @@ export default {
   },
   data() {
     return {
-      msg: 'Hello World! ',
       listOfItems: [{ text: '111' }, { text: '2222' }, { text: '3333' }],
       drawerState: false
     };

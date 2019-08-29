@@ -32,7 +32,6 @@ export default {
   },
   methods: {
     onButtonTap: function() {
-      console.log('xxxxx');
       this.$navigateTo(App);
     }
   }

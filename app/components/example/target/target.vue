@@ -17,13 +17,10 @@ export default {
     ActionBarSecond
   },
   data() {
-    return {
-      msg: 'Hello World! '
-    };
+    return {};
   },
   methods: {
     onButton: function() {
-      console.log('000');
       this.$navigateTo(world);
     }
   }

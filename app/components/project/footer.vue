@@ -49,7 +49,6 @@ export default {
   },
   methods: {
     goTo(link, index) {
-      console.log('xxxx');
       // let pageArr = {
       //     'tabbar1':tabbar1,
       //     'tabbar2':tabbar2,

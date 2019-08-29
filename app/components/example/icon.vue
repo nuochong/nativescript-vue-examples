@@ -48,15 +48,15 @@ export default {
 
       //     glyph.set("icon", String.fromCharCode(charCode));
       //     glyph.set("code", charCode.toString(16));
-      //     console.log("666666666666",glyph);
+      //     console.log("666",glyph);
       //     glyphs.push(glyph);
       //   }
       //   this.glyphs = glyphs;
       //   viewModel.set("glyphs", glyphs);
-      //   console.log('xxxxxx',typeof(viewModel));
+      //   console.log('xxx',typeof(viewModel));
 
       //   page.bindingContext = viewModel;
-      console.log('xxxxx', this.$icon);
+      console.log('xxx', this.$icon);
       this.glyphs = this.$icon.glyphs;
       //page.bindingContext = this.$icon;
     },

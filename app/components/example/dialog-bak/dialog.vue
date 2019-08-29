@@ -25,7 +25,6 @@
 export default {
   data() {
     return {
-      msg: 'Hello World! ',
       listOfItems: [{ text: '111' }, { text: '2222' }, { text: '3333' }],
       drawerState: false
     };
@@ -37,7 +36,6 @@ export default {
         this.drawerState = false;
       } else {
         this.drawerState = 'bottom';
-        console.log('xxxx', this.drawerState);
       }
       //this.$refs.drawer.open('bottom')
     }

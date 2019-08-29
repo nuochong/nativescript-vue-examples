@@ -75,15 +75,12 @@ export default {
         if (this.isTime) {
           this.isTime = false;
           this.await();
-          console.log('666666');
         }
       }
-      console.log('xxxxx', ht.marginTop);
     },
     onListPane(side, args) {
       let list = this.$refs.list.nativeView;
       let scrollTop = this.getScrollY();
-      console.log('kkk', scrollTop);
       if (scrollTop == 0) {
         this.isStart = true;
       }

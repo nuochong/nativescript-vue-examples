@@ -1,7 +1,7 @@
 <template>
   <Page class="page">
     <ActionBarSecond :title="'相机'"></ActionBarSecond>
-    
+
     <StackLayout class="hello-world camera-container">
       <Button class="btn btn-primary" @tap="test" text="相机" />
       <Image class="camera-img" :src="img" stretch="none" ref="img" />
@@ -34,7 +34,6 @@ export default {
           console.log('Result is an image asset instance');
           //var image = new imageModule.Image();
           //image.src = imageAsset;
-          console.log('xxx', imageAsset);
           _this.imgsrc = imageAsset._android;
           //this.$refs.
           //this.$refs.img.src = imageAsset;

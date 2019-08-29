@@ -21,9 +21,7 @@ export default {
     ActionBarSecond
   },
   data() {
-    return {
-      msg: 'Hello World! '
-    };
+    return {};
   },
   methods: {
     onButton: function() {
