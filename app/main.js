@@ -93,7 +93,7 @@ appShortcuts.available().then(function(available) {
 // function createPage() {
 //   const stack = new StackLayout();
 //   const label = new Label();
-//   label.text = "Hello, worlddddd!";
+//   label.text = "Hello, world!";
 //   stack.addChild(label);
 
 //   const page = new Page();
@@ -119,7 +119,7 @@ for (; charCode <= 0xeb69; charCode++) {
   // // glyph.set("code", charCode.toString(16));
 
   // glyph.set(charCode.toString(16), String.fromCharCode(charCode));
-  // console.log("666666666666",glyph);
+  // console.log("xxx",glyph);
   // glyphs.push(glyph);
   viewModel.set(charCode.toString(16), String.fromCharCode(charCode));
 }
@@ -130,7 +130,7 @@ for (; charCodes <= 0xe902; charCodes++) {
   // // glyph.set("icon", String.fromCharCode(charCodes));
   // // glyph.set("code", charCodes.toString(16));
   // glyph.set(charCode.toString(16), String.fromCharCode(charCodes));
-  // console.log("666666666666",glyph);
+  // console.log("xxx",glyph);
   // glyphs.push(glyph);
 
   viewModel.set(charCodes.toString(16), String.fromCharCode(charCodes));
