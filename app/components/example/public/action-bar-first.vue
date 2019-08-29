@@ -39,8 +39,8 @@ export default {
 </script>
 
 <style scoped>
-ActionBar {
+/* ActionBar {
   background-color: #53ba82;
   color: #ffffff;
-}
+} */
 </style>

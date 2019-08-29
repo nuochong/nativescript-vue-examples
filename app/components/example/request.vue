@@ -1,5 +1,5 @@
 <template>
-  <Page>
+  <Page class="page">
     <ActionBarSecond :title="'请求'"></ActionBarSecond>
     <!-- <GridLayout colums="*" rows="*"> -->
     <StackLayout>

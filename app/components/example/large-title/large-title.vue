@@ -1,5 +1,5 @@
 <template>
-  <Page>
+  <Page class="page">
     <ActionBar class="action-bar" :flat="isFlat">
       <Label :text="title" class="hidden" ref="topTitle" fontSize="17" verticalAlignment="center" />
       <ActionItem

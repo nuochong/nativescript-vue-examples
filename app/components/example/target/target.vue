@@ -1,5 +1,5 @@
 <template>
-  <Page>
+  <Page class="page">
     <ActionBarSecond :title="'路由跳转'"></ActionBarSecond>
     <GridLayout colums="*" rows="*">
       <!-- <StackLayout class="hello-world"> -->

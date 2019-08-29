@@ -1,5 +1,5 @@
 <template>
-  <!-- <Page> -->
+  <!-- <Page class="page"> -->
   <!-- <RadSideDrawer [drawerTransition]="sideDrawerTransition"> -->
 
   <GridLayout tkDrawerContent rows="auto, *" class="sidedrawer sidedrawer-left">

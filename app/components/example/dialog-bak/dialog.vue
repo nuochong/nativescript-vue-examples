@@ -1,5 +1,5 @@
 <template>
-  <Page>
+  <Page class="page">
     <ActionBar class="action-bar" title="Hello">
       <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" @tap="$navigateBack" />
       <StackLayout orientation="horizontal">

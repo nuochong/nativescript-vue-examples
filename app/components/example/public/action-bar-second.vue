@@ -16,11 +16,11 @@ export default {
 </script>
 
 <style scoped>
-ActionBar {
+/* ActionBar {
   background-color: #53ba82;
   color: #ffffff;
 }
 .hello-world {
   margin: 20;
-}
+} */
 </style>

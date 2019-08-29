@@ -1,5 +1,5 @@
 <template>
-  <Page>
+  <Page class="page">
     <ActionBarFirst :title="'Welcome to NativeScript-Vue!'"></ActionBarFirst>
     <ScrollView>
       <!-- <GridLayout  colums="*" rows="*"> -->
