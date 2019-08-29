@@ -1,5 +1,5 @@
 <template>
-  <Page :class="{ dialogOpen: dialogOpen }">
+  <Page class="page" :class="{ dialogOpen: dialogOpen }">
     <ActionBarSecond :title="'遮罩层'"></ActionBarSecond>
     <GridLayout colums="*" rows="*">
       <StackLayout>

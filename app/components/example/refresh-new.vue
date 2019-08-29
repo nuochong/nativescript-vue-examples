@@ -1,5 +1,5 @@
 <template>
-  <Page loaded="pageLoaded" ref="page">
+  <Page class="page" loaded="pageLoaded" ref="page">
     <ActionBarSecond :title="'下拉刷新'"></ActionBarSecond>
     <FlexboxLayout
       flexDirection="column"

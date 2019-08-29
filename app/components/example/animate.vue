@@ -1,5 +1,5 @@
 <template>
-  <Page loaded="pageLoaded" ref="page">
+  <Page  class="page" loaded="pageLoaded" ref="page">
     <ActionBarSecond :title="'动画效果'"></ActionBarSecond>
 
     <GridLayout colums="*" rows="*" id="dd">

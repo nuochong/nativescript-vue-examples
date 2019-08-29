@@ -1,5 +1,5 @@
 <template>
-  <Page loaded="pageLoaded" ref="page">
+  <Page class="page" loaded="pageLoaded" ref="page">
     <ActionBarSecond :title="'图标'"></ActionBarSecond>
     <GridLayout colums="*" rows="*">
       <Label class="message" :text="msg" col="0" row="0" />
