@@ -4323,7 +4323,7 @@ nativescript-phone@^1.4.0:
   dependencies:
     nativescript-permissions "1.2.3"
 
-nativescript-pulltorefresh@^2.2.0:
+nativescript-pulltorefresh@^2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/nativescript-pulltorefresh/-/nativescript-pulltorefresh-2.3.0.tgz#126a8b99f14de087317854ebc1462f68b3a69d0b"
   integrity sha512-Y5o1NDMtQB5xvuGTS9QHQNLV1U6Ha7nWqKqGowGgdLTVx/ArVRVpOs+I2E9bbY2HX1k604+5dkG4BdkqsFRaiQ==

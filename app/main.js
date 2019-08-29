@@ -147,7 +147,7 @@ Vue.use(MultiDrawer, {
   debug: true
 });
 
-import Dialog from './components/example/Dialog/tools';
+import Dialog from './components/example/dialog/tools';
 Vue.use(Dialog, {
   // override any option here
   // for example enable debug mode
