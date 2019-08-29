@@ -7,3 +7,7 @@ node_modules
 # NativeScript application
 hooks
 platforms
+
+# System
+.DS_Store
+*/.DS_Store
