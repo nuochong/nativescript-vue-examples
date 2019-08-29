@@ -23,7 +23,6 @@ export default {
   mounted() {},
   methods: {
     getinfo: function() {
-      // console.log('######');
       // console.log(platformModule.device.model);
       console.log('######');
       console.log(platformModule.device.model);
@@ -41,7 +40,6 @@ export default {
       // vm.set("screenInformationscale", platformModule.screen.mainScreen.scale);
       // vm.set("screenInformationwidthDIPs", platformModule.screen.mainScreen.widthDIPs);
       // vm.set("screenInformationwidthPixels", platformModule.screen.mainScreen.widthPixels);
-      // console.log('######');
     }
   }
 };
