@@ -1,10 +1,10 @@
 <template>
   <Page class="page">
-    <action-bar-second :title="'相机'"></action-bar-second>
-
+    <ActionBarSecond :title="'相机'"></ActionBarSecond>
+    
     <StackLayout class="hello-world camera-container">
       <Button class="btn btn-primary" @tap="test" text="相机" />
-      <Image class="camera-img" :src="imgsrc" stretch="none" ref="img" />
+      <Image class="camera-img" :src="img" stretch="none" ref="img" />
     </StackLayout>
   </Page>
 </template>
@@ -19,7 +19,8 @@ export default {
   },
   data() {
     return {
-      imgsrc: 'res://icon'
+      imgsrc: 'res://icon',
+      img: '~/assets/icons/johndoe.jpg'
     };
   },
   mounted() {},
@@ -49,10 +50,8 @@ export default {
 <style scoped>
 .camera-container {
   background-color: blue;
-  text-align: center;
 }
 .camera-img {
-  margin: 0 auto;
   horizontal-align: center;
 }
 </style>

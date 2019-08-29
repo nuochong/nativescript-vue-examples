@@ -1,6 +1,6 @@
 <template>
   <Page :class="{ dialogOpen: dialogOpen }">
-    <action-bar-second :title="'遮罩层'"></action-bar-second>
+    <ActionBarSecond :title="'遮罩层'"></ActionBarSecond>
     <GridLayout colums="*" rows="*">
       <StackLayout>
         <Button class="btn btn-primary" text="遮罩层" @tap="showDialog" />

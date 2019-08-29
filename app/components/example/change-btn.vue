@@ -1,7 +1,6 @@
 <template>
   <Page class="page">
-    <action-bar-second :title="'改变按钮'"></action-bar-second>
-
+    <ActionBarSecond :title="'改变按钮'"></ActionBarSecond>
     <StackLayout class="hello-world">
       <Button class="btn btn-primary btn-green" @tap="changebtn" ref="btn" text="改变按钮" />
     </StackLayout>

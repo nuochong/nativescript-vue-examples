@@ -1,6 +1,7 @@
 <template>
   <Page loaded="pageLoaded" ref="page">
-    <action-bar-second :title="'动画效果'"></action-bar-second>
+    <ActionBarSecond :title="'动画效果'"></ActionBarSecond>
+    
     <GridLayout colums="*" rows="*" id="dd">
       <Label class="animateicon" :text="msg" col="0" row="0" />
       <Image class="animateicon" src="~/assets/images/NativeScript-Vue.png" />

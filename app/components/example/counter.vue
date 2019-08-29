@@ -1,7 +1,7 @@
 <template>
   <Page class="page">
-    <action-bar-second :title="'计数器'"></action-bar-second>
-
+    <ActionBarSecond :title="'计数器'"></ActionBarSecond>
+    
     <StackLayout>
       <FlexboxLayout flexDirection="row" justifyContent="center">
         <Button @tap="decrement" text="-" class="btn btn-outline" />

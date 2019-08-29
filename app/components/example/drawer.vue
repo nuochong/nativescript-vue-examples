@@ -3,7 +3,7 @@
   <!-- <RadSideDrawer [drawerTransition]="sideDrawerTransition"> -->
 
   <GridLayout tkDrawerContent rows="auto, *" class="sidedrawer sidedrawer-left">
-    <action-bar-second :title="'侧滑菜单'"></action-bar-second>
+    <ActionBarSecond :title="'侧滑菜单'"></ActionBarSecond>
     <StackLayout row="0" class="sidedrawer-header">
       <Label class="sidedrawer-header-image fa" text="&#xf2bd;"></Label>
       <Label class="sidedrawer-header-brand" text="User Name"></Label>

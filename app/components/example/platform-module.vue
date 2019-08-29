@@ -1,6 +1,6 @@
 <template>
   <Page class="page">
-    <action-bar-second :title="'获取设备信息'"></action-bar-second>
+    <ActionBarSecond :title="'获取设备信息'"></ActionBarSecond>
 
     <StackLayout class="hello-world">
       <Button class="btn btn-primary" @tap="getinfo" text="获取设备信息" />

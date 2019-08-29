@@ -1,6 +1,6 @@
 <template>
   <Page class="page">
-    <action-bar-second :title="'拨打电话及发送短信'"></action-bar-second>
+    <ActionBarSecond :title="'拨打电话及发送短信'"></ActionBarSecond>
 
     <StackLayout class="hello-world">
       <Button class="btn btn-primary" @tap="phone" text="拨打电话" />

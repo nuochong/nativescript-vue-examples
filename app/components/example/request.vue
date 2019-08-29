@@ -1,6 +1,6 @@
 <template>
   <Page>
-    <action-bar-second :title="'请求'"></action-bar-second>
+    <ActionBarSecond :title="'请求'"></ActionBarSecond>
     <!-- <GridLayout colums="*" rows="*"> -->
     <StackLayout>
       <Button class="btn btn-primary" text="开始请求" @tap="onButton" />

@@ -1,6 +1,6 @@
 <template>
   <Page loaded="pageLoaded" ref="page">
-    <action-bar-second :title="'图标'"></action-bar-second>
+    <ActionBarSecond :title="'图标'"></ActionBarSecond>
     <GridLayout colums="*" rows="*">
       <Label class="message" :text="msg" col="0" row="0" />
       <!-- <Button text="Button" @tap="onButton" /> -->

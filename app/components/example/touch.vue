@@ -1,6 +1,6 @@
 <template>
   <Page loaded="pageLoaded" ref="page">
-    <action-bar-second :title="'触摸事件'"></action-bar-second>
+    <ActionBarSecond :title="'触摸事件'"></ActionBarSecond>
     <GridLayout colums="*" rows="*">
       <Button class="btn btn-primary" ref="btn" text="触摸" @tap="touch" />
       <Button class="btn btn-primary" ref="btn" text="触摸" />

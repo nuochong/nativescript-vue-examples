@@ -1,6 +1,6 @@
 <template>
   <Page>
-    <action-bar-second :title="'路由跳转-页面二'"></action-bar-second>
+    <ActionBarSecond :title="'路由跳转-页面二'"></ActionBarSecond>
     <GridLayout colums="*" rows="*">
       <Label class="message" :text="msg" col="0" row="0" />
     </GridLayout>

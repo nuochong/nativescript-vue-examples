@@ -1,7 +1,7 @@
 <template>
   <Page class="page">
-    <action-bar-second :title="'对话框'"></action-bar-second>
-
+    <ActionBarSecond :title="'对话框'"></ActionBarSecond>
+    
     <StackLayout class="hello-world">
       <Button class="btn btn-primary" @tap="dialog" text="对话框" />
     </StackLayout>

@@ -1,6 +1,6 @@
 <template>
   <Page class="page" @loaded="appLoaded">
-    <action-bar-second :title="'记事薄'"></action-bar-second>
+    <ActionBarSecond :title="'记事薄'"></ActionBarSecond>
     <AbsoluteLayout ref="rootLayout">
       <ListView
         for="item in items"
