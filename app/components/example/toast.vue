@@ -9,8 +9,9 @@
 </template>
 
 <script>
-import * as Toast from 'nativescript-toast';
+import { Toasty } from 'nativescript-toasty';
 import ActionBarSecond from './public/action-bar-second';
+
 export default {
   components: {
     ActionBarSecond
@@ -23,7 +24,7 @@ export default {
   mounted() {},
   methods: {
     btnToast: function() {
-      const toast = Toast.makeText('你好世界', 'long');
+      const toast = new Toasty({ text: 'Toast message' });
       toast.show();
     }
   }
