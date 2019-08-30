@@ -41,7 +41,7 @@ export default {
       }, 3000);
     },
     refreshList(args) {
-      var pullRefresh = args.object;
+      let pullRefresh = args.object;
       setTimeout(function() {
         pullRefresh.refreshing = false;
       }, 1000);

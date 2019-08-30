@@ -1,22 +1,17 @@
 <template>
   <Page class="page" loaded="pageLoaded" ref="page">
     <ActionBarSecond :title="'图标'"></ActionBarSecond>
-    <GridLayout colums="*" rows="*">
-      <Label class="message" :text="msg" col="0" row="0" />
-      <!-- <Button text="Button" @tap="onButton" /> -->
-      <!-- <Label :text="this.$icon.glyphs[0].icon" class="icon" />
-      <Label :text="this.$icon.glyphs[11].icon" class="icons" />-->
-      <!-- <Label :text="this.$icon.glyphs[0].eb61" class="icon" />
-      <Label :text="this.$icon.glyphs[11].eb6a" class="icons" />-->
-      <Label :text="this.$icon.eb61" class="icon" />
-      <Label :text="this.$icon.e902" class="icons" />
-    </GridLayout>
-    <!-- <ListView for="item in this.$icon.glyphs">
-            <v-template>
-                
-                <Label :text="item.icon" class="icon" />
-            </v-template>
-    </ListView>-->
+    <ScrollView>
+      <ListView for="(item,index) in icons" class="list-group">
+        <v-template>
+          <GridLayout class="list-group-item" rows="*" columns="auto, *">
+            <!-- <Image row="0" col="0" :src="item.src" class="thumb img-circle" /> -->
+            <Label row="0" col="0" class="icon" :text="item.icon" />
+            <Label row="0" col="1" class="icon" :text="item.code" />
+          </GridLayout>
+        </v-template>
+      </ListView>
+    </ScrollView>
   </Page>
 </template>
 
@@ -29,36 +24,17 @@ export default {
   },
   data() {
     return {
-      msg: 'Hello World! ',
-      glyphs: []
+      icons: {}
     };
   },
   mounted() {
     this.pageLoaded();
+    this.icons = this.$icon.glyphs;
   },
   methods: {
     pageLoaded: function(args) {
-      //var page = args.object;
-      var page = this.$refs.page.nativeView;
-      //   var viewModel = new observable.Observable();
-      //   var glyphs = new Array();
-      //   var charCode = 0xeb61;
-      //   for (; charCode <= 0xeb69; charCode++) {
-      //     var glyph = new observable.Observable();
-
-      //     glyph.set("icon", String.fromCharCode(charCode));
-      //     glyph.set("code", charCode.toString(16));
-      //     console.log("666",glyph);
-      //     glyphs.push(glyph);
-      //   }
-      //   this.glyphs = glyphs;
-      //   viewModel.set("glyphs", glyphs);
-      //   console.log('xxx',typeof(viewModel));
-
-      //   page.bindingContext = viewModel;
-      console.log('xxx', this.$icon);
-      this.glyphs = this.$icon.glyphs;
-      //page.bindingContext = this.$icon;
+      let page = this.$refs.page.nativeView;
+      console.dir('xxx', this.$icon);
     },
     onButton: function() {}
   }
@@ -66,12 +42,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.icons {
-  font-family: 'icomoon';
-  font-size: 48;
-}
 .icon {
   font-family: iconfont;
   font-size: 48;
+  color: white;
 }
 </style>

@@ -54,7 +54,7 @@ export default {
 
       //console.log('hhhhhs', http);
       // console.log('hhhhhs', isAndroid);
-      // var formdata = new FormData();
+      // let formdata = new FormData();
       // //可以通过append()方法来追加数据
       // formdata.append('name', 'laotie');
       // let content = {
@@ -79,7 +79,7 @@ export default {
       //     });
 
       //             console.log('hhhhhs', isAndroid);
-      // var formdata = new FormData();
+      // let formdata = new FormData();
       // //可以通过append()方法来追加数据
       // formdata.append('name', 'laotie');
       // let content = {

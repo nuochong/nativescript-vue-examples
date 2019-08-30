@@ -11,7 +11,7 @@
 
 <script>
 import * as camera from 'nativescript-camera';
-//var imageModule = require("tns-core-modules/ui/image");
+//let imageModule = require("tns-core-modules/ui/image");
 import ActionBarSecond from './public/action-bar-second';
 export default {
   components: {
@@ -32,7 +32,7 @@ export default {
         .takePicture()
         .then(function(imageAsset) {
           console.log('Result is an image asset instance');
-          //var image = new imageModule.Image();
+          //let image = new imageModule.Image();
           //image.src = imageAsset;
           _this.imgsrc = imageAsset._android;
           //this.$refs.

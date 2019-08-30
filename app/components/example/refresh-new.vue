@@ -81,7 +81,7 @@ export default {
       ht.marginTop = -60;
     },
     // refreshList (args) {
-    //   var pullRefresh = args.object;
+    //   let pullRefresh = args.object;
     //   let that = this;
     //   setTimeout(function () {
     //     pullRefresh.refreshing = false;

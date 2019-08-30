@@ -30,13 +30,13 @@ export default {
   },
   methods: {
     touch: function() {
-      // var colorModule = require("color");
-      // var red = new colorModule.Color("#ff0000");
+      // let colorModule = require("color");
+      // let red = new colorModule.Color("#ff0000");
       let btn = this.$refs.btn.nativeView;
       console.log('xxxx', btn.ios);
       //设置button按钮文字
       btn.ios.setTitleForState('Button title', UIControlStateNormal);
-      //var UIButton = UIButton.alloc.init;
+      //let UIButton = UIButton.alloc.init;
       //btn.ios.frame = CGRectMake(5, 5, 5, 5)
       btn.ios.showsTouchWhenHighlighted = 'YES';
       //btn.ios.ButtonType = 'custom';
@@ -58,7 +58,7 @@ export default {
       //btn.ios.addTargetWithActionForControlEvent(this, cccontrol_selector(HelloWorld:: touchDownAction), CCControlEventTouchDown);
       // btn.android.setOnTouchListener(new android.view.View.OnTouchListener({
       //   onTouch: function (view, motionEvent) {
-      //     // var action = motionEvent.getAction();
+      //     // let action = motionEvent.getAction();
       //     // if (action === android.view.MotionEvent.ACTION_DOWN) {
       //     //   console.log('######')
       //     // }
