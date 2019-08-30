@@ -12,13 +12,13 @@
                   <Label :text="place.type" class="subTitle semi-bold" />
                   <FlexboxLayout flexDirection="row" height="12" marginTop="4">
                     <Image
-                      src="~/assets/icons/Star-Red.png"
+                      src="~/assets/images/project/Star-Red.png"
                       v-for="star in place.stars"
                       :key="star"
                       marginRight="4"
                     />
                     <Image
-                      src="~/assets/icons/Star-grey.png"
+                      src="~/assets/images/project/Star-grey.png"
                       v-for="star in (5 - place.stars)"
                       marginRight="4"
                       :key="(star * 10)"
@@ -37,7 +37,7 @@
                   <StackLayout orientation="horizontal" height="40" class="actions" width="100%">
                     <AbsoluteLayout width="40" height="40" class="ac-btn" id="star">
                       <Image
-                        src="~/assets/icons/Star-White.png"
+                        src="~/assets/images/project/Star-White.png"
                         width="15"
                         height="15"
                         left="12.5"
@@ -46,7 +46,7 @@
                     </AbsoluteLayout>
                     <AbsoluteLayout width="40" height="40" class="ac-btn" id="plus">
                       <Image
-                        src="~/assets/icons/Plus.png"
+                        src="~/assets/images/project/Plus.png"
                         width="15"
                         height="15"
                         left="12.5"

@@ -8,20 +8,20 @@
     @tap="goToPlace(place)"
   >
     <AbsoluteLayout width="56%" height="80%" class="ll" alignSelf="center">
-      <Image src="~/assets/icons/box-shadow.png" width="100%" height="97%" class="background" />
+      <Image src="~/assets/images/project/box-shadow.png" width="100%" height="97%" class="background" />
       <FlexboxLayout flexDirection="column" width="100%" height="97%" padding="12">
         <StackLayout orientation="vertical" class="head">
           <Label :text="place.name" class="title bold" />
           <Label :text="place.type" class="subTitle semi-bold" horizontalAlignment="center" />
           <FlexboxLayout flexDirection="row" height="12" marginTop="4">
             <Image
-              src="~/assets/icons/Star-Red.png"
+              src="~/assets/images/project/Star-Red.png"
               v-for="star in place.stars"
               :key="star"
               marginRight="4"
             />
             <Image
-              src="~/assets/icons/Star-grey.png"
+              src="~/assets/images/project/Star-grey.png"
               v-for="star in (5 - place.stars)"
               :key="(star * 10)"
               marginRight="4"

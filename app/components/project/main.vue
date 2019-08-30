@@ -4,7 +4,7 @@
     <!-- <ActionBar id="header head">
       <StackLayout orientation="horizontal" class="btn menu hh">
         <Image
-          src="~/assets/icons/arrow.png"
+          src="~/assets/images/project/arrow.png"
           class="icon"
           @tap="$navigateBack"
           width="40"
@@ -41,7 +41,7 @@
               <WrapLayout height="415" class="card" flexDirection="column" justifyContent="center">
                 <AbsoluteLayout width="56%" height="80%" class="ll" alignSelf="center">
                   <Image
-                    src="~/assets/icons/box-shadow.png"
+                    src="~/assets/images/project/box-shadow.png"
                     width="100%"
                     height="97%"
                     class="background"
@@ -56,13 +56,13 @@
                       />
                       <FlexboxLayout flexDirection="row" height="12" marginTop="4">
                         <Image
-                          src="~/assets/icons/Star-Red.png"
+                          src="~/assets/images/project/Star-Red.png"
                           v-for="star in place.stars"
                           :key="star"
                           marginRight="4"
                         />
                         <Image
-                          src="~/assets/icons/Star-grey.png"
+                          src="~/assets/images/project/Star-grey.png"
                           v-for="star in (5 - place.stars)"
                           :key="(star * 10)"
                           marginRight="4"
