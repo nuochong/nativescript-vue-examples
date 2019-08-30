@@ -20,7 +20,7 @@
         </StackLayout>
         <StackLayout slot="right">
           <Label text="Im in the right drawer" />
-          <Drawer></Drawer>
+          <Sidebar></Sidebar>
         </StackLayout>
         <StackLayout slot="top">
           <Label text="Im in the top drawer" />
@@ -36,13 +36,13 @@
 </template>
 
 <script>
-import Drawer from './drawer';
+import Sidebar from './sidebar';
 import ActionBarSecond from '../public/action-bar-second';
 
 export default {
   components: {
     ActionBarSecond,
-    Drawer
+    Sidebar
   },
   data() {
     return {
