@@ -14,6 +14,7 @@
     }
   },
   "dependencies": {
+    "@nstudio/nativescript-pulltorefresh": "^1.0.1",
     "@vue/devtools": "^5.1.1",
     "nativescript-app-shortcuts": "^2.1.0",
     "nativescript-camera": "^4.5.0",

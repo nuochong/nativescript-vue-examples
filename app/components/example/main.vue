@@ -31,7 +31,7 @@
         <Button class="btn btn-primary" text="自定义弹出框" @tap="pop" />
         <Button class="btn btn-primary" text="动画效果" @tap="animate" />
         <Button class="btn btn-primary" text="下拉刷新" @tap="refresh" />
-        <Button class="btn btn-primary" text="下拉刷❤" @tap="refreshNew" />
+        <Button class="btn btn-primary" text="自定义下拉刷❤" @tap="refreshNew" />
         <Button class="btn btn-primary" text="触摸事件" @tap="touch" />
         <Button class="btn btn-primary" text="请求" @tap="request" />
         <Button class="btn btn-primary" text="获取全局数据" @tap="common" />

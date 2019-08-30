@@ -654,6 +654,11 @@
   resolved "https://registry.yarnpkg.com/@billow/nsv-http/-/nsv-http-1.0.5.tgz#06dd7f819002122949c8f7b15eacc90e9d4108fb"
   integrity sha512-N7Vn8dtnQtL+OI2Qh6YkK6MVRQXd4qjb89O4bLst4zxS219FZhwS3OvMRwCqAoAwmQM4m2kNgNgditqLO8sUsg==
 
+"@nstudio/nativescript-pulltorefresh@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@nstudio/nativescript-pulltorefresh/-/nativescript-pulltorefresh-1.0.1.tgz#8559be883489a6bf446530257d883b6cf3981f86"
+  integrity sha512-RHitdycERp2yt+tCjy3kEIETR5GJoUO7cb1c1NKl13VyR7dHV0gGQwOcMxVPOe7E0QJk/yUpqWwedSretNLEKw==
+
 "@types/node@^7.0.18":
   version "7.10.7"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-7.10.7.tgz#8604623912010235185f1166c7a5a9aa7de9fcd8"
