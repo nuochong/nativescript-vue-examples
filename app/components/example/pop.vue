@@ -86,11 +86,11 @@ export default {
   },
   mounted() {
     let widht = this.$refs.page.nativeView.width;
-    console.log('888888', widht);
+    console.log('xxx', widht);
   },
   methods: {
     onButton: function() {
-      console.log('000');
+      console.log('xxx');
     }
   }
 };
