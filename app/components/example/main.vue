@@ -66,7 +66,7 @@ import Icon from './icon';
 import Mask from './mask';
 import Modal from './modal';
 import Drawers from './multi-drawer/drawers';
-//import LargeTitle from './large-title/large-title';//this is bug
+import LargeTitle from './large-title/large-title';//this is bug
 import Dialog from './dialog/dialog';
 import Pop from './pop';
 import Animate from './animate';
@@ -163,9 +163,9 @@ export default {
     onDrawers() {
       this.navigateTo(this, Drawers);
     },
-    // onlargeTitle() {
-    //   this.navigateTo(this, LargeTitle);
-    // },
+    onlargeTitle() {
+      this.navigateTo(this, LargeTitle);
+    },
     dialogNew() {
       this.navigateTo(this, DialogNew);
     },

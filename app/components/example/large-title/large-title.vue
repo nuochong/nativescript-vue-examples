@@ -1,6 +1,7 @@
 <template>
   <Page class="page">
     <ActionBar class="action-bar" :flat="isFlat">
+      <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" @tap="$navigateBack" />
       <Label :text="title" class="hidden" ref="topTitle" fontSize="17" verticalAlignment="center" />
       <ActionItem
         @tap="someMethod"
@@ -62,30 +63,30 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.page {
-  background-color: #f7f7f7;
-}
+// .page {
+//   background-color: #f7f7f7;
+// }
 
 .container {
   margin-top: 0;
 }
 
-.content {
-  background-color: #fff;
-  padding: 20;
-  font-size: 20;
-}
+// .content {
+//   background-color: #fff;
+//   padding: 20;
+//   font-size: 20;
+// }
 
-.action-bar {
-  background-color: #f7f7f7;
-  border-width: 0;
-  margin-bottom: 0;
-}
+// .action-bar {
+//   background-color: #f7f7f7;
+//   border-width: 0;
+//   margin-bottom: 0;
+// }
 
-.action-bar label {
-  font-weight: bold;
-  opacity: 0;
-}
+// .action-bar label {
+//   font-weight: bold;
+//   opacity: 0;
+// }
 
 .header {
   margin-top: 0;
