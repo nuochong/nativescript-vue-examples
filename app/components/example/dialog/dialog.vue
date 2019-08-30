@@ -44,7 +44,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .wrap {
   border-width: 1;
   border-color: red;

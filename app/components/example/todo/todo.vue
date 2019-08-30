@@ -36,7 +36,7 @@
     </TabView>
   </Page>
 </template>
-<style scoped>
+<style scoped lang="scss">
 .btn {
   border: 1px;
   color: black;

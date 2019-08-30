@@ -61,13 +61,13 @@ import Target from './target/target';
 import Storage from './storage';
 import Fab from './fab/fab';
 import Todo from './todo/todo';
- import Drawer from './drawer';
+import Drawer from './drawer';
 import Icon from './icon';
 import Mask from './mask';
 import Modal from './modal';
- import Drawers from './multi-drawer/drawers';
- //import LargeTitle from './large-title/large-title';//问题根源
- import Dialog from './dialog/dialog';
+import Drawers from './multi-drawer/drawers';
+//import LargeTitle from './large-title/large-title';//this is bug
+import Dialog from './dialog/dialog';
 import Pop from './pop';
 import Animate from './animate';
 import Refresh from './refresh';
@@ -185,5 +185,5 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 </style>

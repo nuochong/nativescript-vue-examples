@@ -97,7 +97,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 ListView label {
   height: 48;
   min-height: 48;

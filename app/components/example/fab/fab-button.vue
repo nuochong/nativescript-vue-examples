@@ -31,7 +31,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .fab-button {
   width: 56;
   height: 56;

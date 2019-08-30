@@ -96,7 +96,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .sanjiao {
   width: 30;
   height: 15;

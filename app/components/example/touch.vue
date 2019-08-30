@@ -109,7 +109,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .icons {
   font-family: 'icomoon';
   font-size: 48;

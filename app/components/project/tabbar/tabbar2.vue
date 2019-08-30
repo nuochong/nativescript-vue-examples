@@ -72,7 +72,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .ll {
   background-color: black;
 }

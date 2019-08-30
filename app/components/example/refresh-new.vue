@@ -126,7 +126,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .first {
   margin-top: -60;
 }

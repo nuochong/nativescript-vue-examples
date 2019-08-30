@@ -46,7 +46,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .camera-container {
   background-color: blue;
 }

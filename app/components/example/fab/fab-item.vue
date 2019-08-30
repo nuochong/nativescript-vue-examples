@@ -10,7 +10,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .fab-item {
   width: 40;
   height: 40;

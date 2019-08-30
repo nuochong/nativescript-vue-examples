@@ -110,7 +110,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .fa {
   font-family: 'FontAwesome';
 }

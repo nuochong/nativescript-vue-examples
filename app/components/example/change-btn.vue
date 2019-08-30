@@ -38,7 +38,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .btn-green {
   background-color: blue;
   color: green;

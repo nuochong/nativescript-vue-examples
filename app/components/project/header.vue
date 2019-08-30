@@ -34,7 +34,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 #header {
   padding: 0;
   width: 100%;

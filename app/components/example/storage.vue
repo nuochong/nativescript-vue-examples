@@ -100,7 +100,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .home-panel {
   font-size: 16;
   margin: 15;
