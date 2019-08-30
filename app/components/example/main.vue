@@ -21,7 +21,6 @@
         <Button class="btn btn-primary" text="本地存储示例" @tap="onInput" />
         <Button class="btn btn-primary" text="记事薄" @tap="onFab" />
         <Button class="btn btn-primary" text="备忘录" @tap="onTodo" />
-        <Button class="btn btn-primary" text="侧滑菜单" @tap="onDrawer" />
         <Button class="btn btn-primary" text="图标" @tap="onIcon" />
         <Button class="btn btn-primary" text="遮罩层" @tap="onMask" />
         <Button class="btn btn-primary" text="模态对话框" @tap="showModal" />
@@ -61,7 +60,6 @@ import Target from './target/target';
 import Storage from './storage';
 import Fab from './fab/fab';
 import Todo from './todo/todo';
-import Drawer from './drawer';
 import Icon from './icon';
 import Mask from './mask';
 import Modal from './modal';
@@ -135,9 +133,6 @@ export default {
     },
     refreshNew: function() {
       this.navigateTo(this, RefreshNew);
-    },
-    onDrawer: function() {
-      this.navigateTo(this, Drawer);
     },
     onButtonTap: function() {
       this.navigateTo(this, Target);

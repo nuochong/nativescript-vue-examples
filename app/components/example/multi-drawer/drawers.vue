@@ -36,7 +36,7 @@
 </template>
 
 <script>
-import Drawer from '../drawer';
+import Drawer from './drawer';
 import ActionBarSecond from '../public/action-bar-second';
 
 export default {
@@ -46,7 +46,7 @@ export default {
   },
   data() {
     return {
-      listOfItems: [{ text: '111' }, { text: '2222' }, { text: '3333' }],
+      listOfItems: [{ text: '111' }, { text: '222' }, { text: '333' }],
       drawerState: false
     };
   },
@@ -58,7 +58,6 @@ export default {
       } else {
         this.drawerState = 'bottom';
       }
-
       //this.$refs.drawer.open('left')
     }
   }
