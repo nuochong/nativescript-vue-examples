@@ -24,7 +24,7 @@
         <Button class="btn btn-primary" text="图标" @tap="onIcon" />
         <Button class="btn btn-primary" text="遮罩层" @tap="onMask" />
         <Button class="btn btn-primary" text="模态对话框" @tap="showModal" />
-        <Button class="btn btn-primary" text="侧滑组件新" @tap="onDrawers" />
+        <Button class="btn btn-primary" text="侧滑组件" @tap="onDrawer" />
         <Button class="btn btn-primary" text="大标题iOS导航栏" @tap="onlargeTitle" />
         <!-- <Button class="btn btn-primary" text="对话框" @tap="Dialog" /> -->
         <Button class="btn btn-primary" text="自定义对话框" @tap="DialogNew" />
@@ -63,7 +63,7 @@ import Todo from './todo/todo';
 import Icon from './icon';
 import Mask from './mask';
 import Modal from './modal';
-import Drawers from './multi-drawer/drawers';
+import Drawer from './multi-drawer/drawer';
 import LargeTitle from './large-title/large-title';//this is bug
 import Dialog from './dialog/dialog';
 import Pop from './pop';
@@ -155,8 +155,8 @@ export default {
     showModal() {
       this.navigateTo(this, Modal);
     },
-    onDrawers() {
-      this.navigateTo(this, Drawers);
+    onDrawer() {
+      this.navigateTo(this, Drawer);
     },
     onlargeTitle() {
       this.navigateTo(this, LargeTitle);
