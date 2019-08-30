@@ -27,7 +27,6 @@ export default {
 
 <style scoped lang="scss">
 .animateicon {
-  color: red;
   animation-name: bounceInOpacity;
   animation-duration: 1s;
   animation-delay: 0.5s;

@@ -3,9 +3,8 @@
     <ActionBarSecond :title="'显示隐藏'"></ActionBarSecond>
 
     <StackLayout class="hello-world">
-      <Label class="body" textWrap="true" text="这是一个hello world组件，如果你挑战，请点击这个按钮" />
+      <Label textWrap="true" text="这是一个hello world组件，如果你挑战，请点击这个按钮" />
       <Label
-        class="body"
         textWrap="true"
         text="This is a hello world component, tap the button if you dare"
       />
