@@ -3,23 +3,17 @@ import VueDevtools from 'nativescript-vue-devtools';
 import App from './components/App';
 import store from './store';
 import CommonLocal from './assets/js/common.js';
+import shortcuts from './app.shortcuts.js';
 Vue.use(CommonLocal);
 
-if(TNS_ENV !== 'production') {
-  Vue.use(VueDevtools)
+if (TNS_ENV !== 'production') {
+  Vue.use(VueDevtools);
 }
 //Prints Vue logs when --env.production is *NOT* set while building
-Vue.config.silent = (TNS_ENV === 'production')
+Vue.config.silent = TNS_ENV === 'production';
 
-const AppShortcuts = require('nativescript-app-shortcuts').AppShortcuts;
-const appShortcuts = new AppShortcuts();
-appShortcuts.available().then(function(available) {
-  if (available) {
-    console.log('****This device supports app shortcuts');
-  } else {
-    console.log('****No app shortcuts capability, ask the user to upgrade :)');
-  }
-});
+//检测是否支持AppShortcus
+shortcuts.isSuppertAppShortcus();
 
 // const LinearLayout = android.widget.LinearLayout;
 // const LayoutParams = android.widget.LinearLayout.LayoutParams;
