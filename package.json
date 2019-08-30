@@ -14,8 +14,10 @@
     }
   },
   "dependencies": {
-    "@nstudio/nativescript-pulltorefresh": "^1.0.1",
     "@vue/devtools": "^5.1.1",
+    "nativescript-socketio": "^3.2.1",
+    "nativescript-toasty": "^1.3.0",
+    "@nstudio/nativescript-pulltorefresh": "^1.0.1",
     "nativescript-app-shortcuts": "^2.1.0",
     "nativescript-camera": "^4.5.0",
     "nativescript-fancyalert": "^3.0.9",
@@ -34,6 +36,7 @@
     "vuex": "^3.1.1"
   },
   "devDependencies": {
+    "nativescript-worker-loader": "~0.9.0",
     "@babel/core": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
     "babel-loader": "^8.0.2",

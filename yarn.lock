@@ -3918,15 +3918,15 @@ nativescript-phone@^1.4.0:
   dependencies:
     nativescript-permissions "1.2.3"
 
-nativescript-pulltorefresh@^2.3.0:
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/nativescript-pulltorefresh/-/nativescript-pulltorefresh-2.3.0.tgz#126a8b99f14de087317854ebc1462f68b3a69d0b"
-  integrity sha512-Y5o1NDMtQB5xvuGTS9QHQNLV1U6Ha7nWqKqGowGgdLTVx/ArVRVpOs+I2E9bbY2HX1k604+5dkG4BdkqsFRaiQ==
-
 nativescript-socket.io@^0.11.0:
   version "0.11.0"
   resolved "https://registry.yarnpkg.com/nativescript-socket.io/-/nativescript-socket.io-0.11.0.tgz#10c2fe23ab066b6f4ff5917b8b4079aa470ebb53"
   integrity sha512-R0m8Gu0YXBJo0NDhbnXm2+UW1HrpOmdlMiNJ7JszZx+Ak3FOpUWKnhYa9IJQqUIbBZChhy3eKM0rZD42W9lNmg==
+
+nativescript-socketio@^3.2.1:
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/nativescript-socketio/-/nativescript-socketio-3.3.1.tgz#816089e18a5d54cb8ed3a133b91a89d0d5724203"
+  integrity sha512-D6MbMJAy9wjv62ga+oieIv7gxjcGA0CPGORN0VeC31WL/bdZltulu7RMPWY9uAck/4YSDIPoYVY17WGH9AXsIw==
 
 nativescript-theme-core@^1.0.6:
   version "1.0.6"
@@ -3937,6 +3937,11 @@ nativescript-toast@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/nativescript-toast/-/nativescript-toast-2.0.0.tgz#ef3245d0c35d50ca10da4554d1459356a99687aa"
   integrity sha512-xqyNfFS894oGfrEVO7CjpioAQLiLNNcd77Euq9XIUTf1U3W0PsIgAJbLP7+kkVGIJxdLtlBkbcQ4wDmf2DCi1w==
+
+nativescript-toasty@^1.3.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/nativescript-toasty/-/nativescript-toasty-1.4.0.tgz#bb648dfd196a075d19a220d307d58b41a5e5d5c9"
+  integrity sha512-DA7axS90VMYFoupSsrnFLUrjAiy84OwDdcd0FyPmJo3Ixa8AbXJt12NI+DarRPJJec2UqVR9JGlULHY9zqS/jA==
 
 nativescript-ui-core@~3.0.0:
   version "3.0.0"

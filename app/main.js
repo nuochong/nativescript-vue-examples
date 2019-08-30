@@ -1,20 +1,18 @@
 import Vue from 'nativescript-vue';
+import VueDevtools from 'nativescript-vue-devtools';
 import App from './components/App';
 import store from './store';
-//import VueDevtools from 'nativescript-vue-devtools'
 import CommonLocal from './assets/js/common.js';
 Vue.use(CommonLocal);
-const application = require('tns-core-modules/application');
 
-// Vue.use(VueDevtools)
-// if (TNS_ENV !== 'production') {
-//     Vue.use(VueDevtools)
-// }
-// Prints Vue logs when --env.production is *NOT* set while building
-Vue.config.silent = TNS_ENV === 'production';
+if(TNS_ENV !== 'production') {
+  Vue.use(VueDevtools)
+}
+//Prints Vue logs when --env.production is *NOT* set while building
+Vue.config.silent = (TNS_ENV === 'production')
 
 const AppShortcuts = require('nativescript-app-shortcuts').AppShortcuts;
-let appShortcuts = new AppShortcuts();
+const appShortcuts = new AppShortcuts();
 appShortcuts.available().then(function(available) {
   if (available) {
     console.log('****This device supports app shortcuts');
