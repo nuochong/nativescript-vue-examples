@@ -32,3 +32,6 @@ export default {
   methods: mapActions(['decrement', 'increment'])
 };
 </script>
+
+<style scoped lang="scss">
+</style>
