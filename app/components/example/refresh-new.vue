@@ -1,6 +1,6 @@
 <template>
   <Page class="page" loaded="pageLoaded" ref="page">
-    <ActionBarSecond :title="'下拉刷新'"></ActionBarSecond>
+    <ActionBarSecond :title="'下拉刷新'" />
     <FlexboxLayout
       flexDirection="column"
       backgroundColor="#3c495e"

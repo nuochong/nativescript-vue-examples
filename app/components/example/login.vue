@@ -1,6 +1,6 @@
 <template>
   <Page class="page" navigatingTo="onNavigatingTo">
-    <ActionBarSecond :title="'模拟登录'"></ActionBarSecond>
+    <ActionBarSecond :title="'模拟登录'" />
     <FlexboxLayout class="page page-login" backgroundImage="res://mesh">
       <StackLayout class="flexbox-item company-name-container">
         <Label class="t-30 company-name" text="你的公司名称【Your Company Name】"></Label>

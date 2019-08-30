@@ -1,6 +1,6 @@
 <template>
   <Page class="page">
-    <ActionBarSecond :title="'模态对话框'"></ActionBarSecond>
+    <ActionBarSecond :title="'模态对话框'" />
 
     <StackLayout class="hello-world">
       <Button class="btn btn-primary" @tap="modal" text="模态对话框" />

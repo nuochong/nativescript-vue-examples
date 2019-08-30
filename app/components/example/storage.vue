@@ -1,6 +1,6 @@
 <template>
   <Page class="page">
-    <ActionBarSecond :title="'本地存储'"></ActionBarSecond>
+    <ActionBarSecond :title="'本地存储'" />
     <ScrollView>
       <StackLayout class="home-panel form input-field">
         <Label

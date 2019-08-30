@@ -1,6 +1,6 @@
 <template>
   <Page class="page">
-    <ActionBarSecond :title="'消息通知'"></ActionBarSecond>
+    <ActionBarSecond :title="'消息通知'" />
 
     <StackLayout class="hello-world">
       <Button class="btn btn-primary" @tap="infoOpen" text="开启通知" />

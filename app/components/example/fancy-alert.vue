@@ -1,6 +1,6 @@
 <template>
   <Page class="page">
-    <ActionBarSecond :title="'精美提示框'"></ActionBarSecond>
+    <ActionBarSecond :title="'精美提示框'" />
 
     <StackLayout class="hello-world">
       <Button class="btn btn-primary" @tap="btnfancyalert" text="精美提示框" />

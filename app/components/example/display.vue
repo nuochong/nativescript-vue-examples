@@ -1,6 +1,6 @@
 <template>
   <Page class="page">
-    <ActionBarSecond :title="'显示隐藏'"></ActionBarSecond>
+    <ActionBarSecond :title="'显示隐藏'" />
 
     <StackLayout class="hello-world">
       <Label textWrap="true" text="这是一个hello world组件，如果你挑战，请点击这个按钮" />

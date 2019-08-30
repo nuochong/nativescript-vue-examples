@@ -1,6 +1,6 @@
 <template>
   <Page class="page">
-    <ActionBarFirst :title="'Welcome to NativeScript-Vue!'"></ActionBarFirst>
+    <ActionBarFirst :title="'Welcome to NativeScript-Vue!'" />
     <ScrollView>
       <!-- <GridLayout  colums="*" rows="*"> -->
       <StackLayout class="hello-world">

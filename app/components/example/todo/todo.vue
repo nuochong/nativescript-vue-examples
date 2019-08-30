@@ -1,6 +1,6 @@
 <template>
   <Page class="page">
-    <ActionBarSecond :title="'备忘录'"></ActionBarSecond>
+    <ActionBarSecond :title="'备忘录'" />
 
     <TabView height="100%">
       <TabViewItem title="To Do" class="tabview">

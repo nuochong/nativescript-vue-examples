@@ -1,6 +1,6 @@
 <template>
   <Page class="page">
-    <ActionBarSecond :title="'计数器'"></ActionBarSecond>
+    <ActionBarSecond :title="'计数器'" />
 
     <StackLayout>
       <FlexboxLayout flexDirection="row" justifyContent="center">

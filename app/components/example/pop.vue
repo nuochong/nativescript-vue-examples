@@ -1,6 +1,6 @@
 <template>
   <Page width="100%">
-    <ActionBarSecond :title="'自定义弹出框'"></ActionBarSecond>
+    <ActionBarSecond :title="'自定义弹出框'" />
     <!-- <GridLayout colums="*" rows="*">
             <Label class="message" :text="msg" col="0" row="0"/>
             <Button text="Button" @tap="onButton" />

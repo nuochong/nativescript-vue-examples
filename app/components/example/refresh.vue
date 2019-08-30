@@ -1,6 +1,6 @@
 <template>
   <Page class="page" loaded="pageLoaded" ref="page">
-    <ActionBarSecond :title="'下拉刷新'"></ActionBarSecond>
+    <ActionBarSecond :title="'下拉刷新'" />
 
     <GridLayout colums="*" rows="*">
       <PullToRefresh @refresh="refreshList">

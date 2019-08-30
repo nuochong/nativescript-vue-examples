@@ -1,6 +1,6 @@
 <template>
   <Page class="page" actionBarHidden="false">
-    <ActionBarSecond :title="'实例'"></ActionBarSecond>
+    <ActionBarSecond :title="'实例'" />
     <!-- <ActionBar id="header head">
       <StackLayout orientation="horizontal" class="btn menu hh">
         <Image

@@ -1,6 +1,6 @@
 <template>
   <Page class="page" loaded="pageLoaded" ref="page">
-    <ActionBarSecond :title="'动画效果'"></ActionBarSecond>
+    <ActionBarSecond :title="'动画效果'" />
 
     <GridLayout colums="*" rows="*">
       <Label class="animateicon" :text="msg" col="0" row="0" />

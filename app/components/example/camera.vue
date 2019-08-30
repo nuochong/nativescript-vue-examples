@@ -1,6 +1,6 @@
 <template>
   <Page class="page">
-    <ActionBarSecond :title="'相机'"></ActionBarSecond>
+    <ActionBarSecond :title="'相机'" />
 
     <StackLayout class="hello-world camera-container">
       <Button class="btn btn-primary" @tap="test" text="相机" />

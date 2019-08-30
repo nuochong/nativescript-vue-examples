@@ -1,6 +1,6 @@
 <template>
   <Page class="page" loaded="pageLoaded" ref="page">
-    <ActionBarSecond :title="'图标'"></ActionBarSecond>
+    <ActionBarSecond :title="'图标'" />
     <ScrollView>
       <ListView for="(item,index) in icons" class="list-group">
         <v-template>

@@ -1,6 +1,6 @@
 <template>
   <Page class="page">
-    <ActionBarSecond :title="'提示'"></ActionBarSecond>
+    <ActionBarSecond :title="'提示'" />
 
     <StackLayout class="hello-world">
       <Button class="btn btn-primary" @tap="btnToast" text="提示" />

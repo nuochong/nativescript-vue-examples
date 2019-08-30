@@ -1,6 +1,6 @@
 <template>
   <Page class="page">
-    <ActionBarSecond :title="'获取权限'"></ActionBarSecond>
+    <ActionBarSecond :title="'获取权限'" />
 
     <StackLayout class="hello-world">
       <Button class="btn btn-primary" @tap="test" text="获取权限" />

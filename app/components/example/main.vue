@@ -1,6 +1,6 @@
 <template>
   <Page class="page">
-    <ActionBarSecond :title="'示例'"></ActionBarSecond>
+    <ActionBarSecond :title="'示例'" />
     <ScrollView>
       <!-- <GridLayout class="hello-world" colums="*" rows="*"> -->
       <StackLayout>

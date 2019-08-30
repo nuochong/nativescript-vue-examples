@@ -1,6 +1,6 @@
 <template>
   <Page class="page">
-    <ActionBarSecond :title="'获取位置信息'"></ActionBarSecond>
+    <ActionBarSecond :title="'获取位置信息'" />
     <StackLayout class="hello-world">
       <Button class="btn btn-primary" @tap="geolocation" text="获取位置信息" />
     </StackLayout>
