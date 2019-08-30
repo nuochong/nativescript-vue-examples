@@ -25,7 +25,7 @@
         <Button class="btn btn-primary" text="遮罩层" @tap="onMask" />
         <Button class="btn btn-primary" text="模态对话框" @tap="showModal" />
         <Button class="btn btn-primary" text="侧滑组件" @tap="onDrawer" />
-        <Button class="btn btn-primary" text="大标题iOS导航栏" @tap="onlargeTitle" />
+        <Button class="btn btn-primary" text="大标题导航栏" @tap="onlargeTitle" />
         <Button class="btn btn-primary" text="对话框" @tap="DialogOld" />
         <Button class="btn btn-primary" text="自定义对话框" @tap="DialogNew" />
         <Button class="btn btn-primary" text="自定义弹出框" @tap="pop" />
