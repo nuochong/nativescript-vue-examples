@@ -31,7 +31,7 @@
 <script>
 import * as utils from 'tns-core-modules/utils/utils';
 import mergeOptions from 'merge-options';
-// import { defaultOptions } from './index';
+import { defaultOptions } from './index';
 
 export default {
   model: {

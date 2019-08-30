@@ -1,4 +1,5 @@
 <template>
+  <!--该插件修改自drawer，侧滑与弹出类似-->
   <Page class="page">
     <ActionBar class="action-bar" title="Hello">
       <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" @tap="$navigateBack" />
@@ -26,13 +27,14 @@
 export default {
   data() {
     return {
-      listOfItems: [{ text: '111' }, { text: '2222' }, { text: '3333' }],
       drawerState: false
     };
   },
+  mounted() {
+    console.log('对话框');
+  },
   methods: {
     open: function() {
-      console.log('打开了');
       if (this.drawerState == 'bottom') {
         this.drawerState = false;
       } else {

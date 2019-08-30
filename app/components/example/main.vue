@@ -26,7 +26,7 @@
         <Button class="btn btn-primary" text="模态对话框" @tap="showModal" />
         <Button class="btn btn-primary" text="侧滑组件" @tap="onDrawer" />
         <Button class="btn btn-primary" text="大标题iOS导航栏" @tap="onlargeTitle" />
-        <!-- <Button class="btn btn-primary" text="对话框" @tap="Dialog" /> -->
+        <Button class="btn btn-primary" text="对话框" @tap="DialogOld" />
         <Button class="btn btn-primary" text="自定义对话框" @tap="DialogNew" />
         <Button class="btn btn-primary" text="自定义弹出框" @tap="pop" />
         <Button class="btn btn-primary" text="动画效果" @tap="animate" />
@@ -64,7 +64,7 @@ import Icon from './icon';
 import Mask from './mask';
 import Modal from './modal';
 import Drawer from './multi-drawer/drawer';
-import LargeTitle from './large-title/large-title';//this is bug
+import LargeTitle from './large-title/large-title';
 import Dialog from './dialog/dialog';
 import Pop from './pop';
 import Animate from './animate';
@@ -104,9 +104,9 @@ export default {
     info: function() {
       this.navigateTo(this, Info);
     },
-    // btnDialog: function() {
-    //   this.navigateTo(this, Dialog);
-    // },
+    DialogOld: function() {
+      this.navigateTo(this, Dialog);
+    },
     btnPlatformModule: function() {
       this.navigateTo(this, PlatformModule);
     },

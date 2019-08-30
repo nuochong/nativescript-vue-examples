@@ -30,27 +30,9 @@ Vue.use(MultiDrawer, {
 
 import Dialog from './components/example/dialog/tools';
 Vue.use(Dialog, {
-  // override any option here
-  // for example enable debug mode
-  debug: false,
-  backdropColor: 'rgba(255, 0, 0, 0.7)',
-  bottom: {
-    width: null,
-    height: '50%',
-    backgroundColor: 'rgba(255, 255, 0, 0.7)',
-    canSwipeOpen: true,
-    swipeOpenTriggerWidth: null,
-    swipeOpenTriggerHeight: 30,
-    swipeOpenTriggerMinDrag: 50,
-    swipeCloseTriggerMinDrag: 50,
-    swipeOpenTriggerProperties: {},
-    animation: {
-      openDuration: 200,
-      closeDuration: 200
-    },
-    translationOffsetMultiplier: 1,
-    axis: 'Y'
-  }
+  debug: false
+  // backdropColor: 'rgba(255, 0, 0, 0.7)',
+  //其它配置参看插件源代码
 });
 
 //注册下拉刷新
