@@ -30,6 +30,11 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.extra-bold {
+  font-family: 'Assistant-ExtraBold', 'Assistant ExtraBold';
+  font-weight: 800;
+}
+
 #home {
   animation-name: bounceIn;
 }
