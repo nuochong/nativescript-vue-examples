@@ -14,7 +14,7 @@
         <Label class="tess" text="NativeScript" fontSize="24" horizontalAlignment="right" />
       </StackLayout>
       <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" @tap="$navigateBack"/>
-    </ActionBar> -->
+    </ActionBar>-->
 
     <GridLayout rows="60, *, auto" backgroundColor="#26252A">
       <Header class="header" row="0" />

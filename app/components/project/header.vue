@@ -7,7 +7,11 @@
         v-if="canBack == true"
         @tap="$navigateBack"
       />
-      <Image src="~/assets/images/project/Menu-Red.png" class="icon" v-else-if="secondary == false" />
+      <Image
+        src="~/assets/images/project/Menu-Red.png"
+        class="icon"
+        v-else-if="secondary == false"
+      />
       <Image src="~/assets/images/project/Menu-White.png" class="icon" v-else />
     </FlexboxLayout>
     <FlexboxLayout class="btn pp">

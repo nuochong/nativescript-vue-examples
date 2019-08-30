@@ -25,7 +25,6 @@ export default {
   },
   methods: {
     onButton: function() {
-      console.log('000');
       let http = new Http({
         // Configure a base url for all requests
         baseUrl: 'https://www.easy-mock.com',
@@ -51,9 +50,6 @@ export default {
           console.log('错误是：', err);
         }
       );
-
-      //console.log('hhhhhs', http);
-      // console.log('hhhhhs', isAndroid);
       // let formdata = new FormData();
       // //可以通过append()方法来追加数据
       // formdata.append('name', 'laotie');
@@ -78,7 +74,6 @@ export default {
       //         //return failure(error);
       //     });
 
-      //             console.log('hhhhhs', isAndroid);
       // let formdata = new FormData();
       // //可以通过append()方法来追加数据
       // formdata.append('name', 'laotie');

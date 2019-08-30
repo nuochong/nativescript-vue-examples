@@ -30,9 +30,7 @@ export default {
       msg: 'Hello World!'
     };
   },
-  mounted() {
-    console.log('***********');
-  },
+  mounted() {},
   methods: {
     login: function() {
       this.$navigateTo(Counter, {

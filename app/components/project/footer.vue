@@ -60,7 +60,6 @@ export default {
       // }
       this.active = index;
       this.btns.forEach(v => {
-        console.log('jjjj', v);
         if (v['link'] == link && !v.active) {
           v.icon = v.iconAct;
           v.active = true;

@@ -77,7 +77,7 @@ export default {
     restore: function() {
       console.log('返回了');
       let ht = this.$refs.ht.nativeView;
-      console.log('hhhh', ht.marginTop);
+      console.log('xxx', ht.marginTop);
       ht.marginTop = -60;
     },
     // refreshList (args) {
@@ -105,11 +105,11 @@ export default {
     onListPane(side, args) {
       let list = this.$refs.list.nativeView;
       let scrollTop = this.getScrollY();
-      console.log('kkk', scrollTop);
+      console.log('xxx', scrollTop);
       if (scrollTop == 0) {
         this.isStart = true;
       }
-      //console.log('kkkk',list.android.smoothScrollToPosition(500));
+      //console.log('xxx',list.android.smoothScrollToPosition(500));
       //list.scrollToIndex(500)
     },
     getScrollY() {

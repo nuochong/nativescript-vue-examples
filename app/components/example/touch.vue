@@ -18,10 +18,7 @@ export default {
     ActionBarSecond
   },
   data() {
-    return {
-      // msg: "Hello World! ",
-      glyphs: []
-    };
+    return {};
   },
   mounted() {
     //this.touch();
@@ -33,7 +30,7 @@ export default {
       // let colorModule = require("color");
       // let red = new colorModule.Color("#ff0000");
       let btn = this.$refs.btn.nativeView;
-      console.log('xxxx', btn.ios);
+      console.log('xxx', btn.ios);
       //设置button按钮文字
       btn.ios.setTitleForState('Button title', UIControlStateNormal);
       //let UIButton = UIButton.alloc.init;
