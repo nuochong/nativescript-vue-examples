@@ -1,13 +1,8 @@
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
 # vscode configuration
-.vscode/
-.DS_Store
-/build
-
-# local env files
-.env.local
-.env.*.local
+*.vscode/
+*.DS_Store
 
 # Log files
 npm-debug.log*
