@@ -35,7 +35,7 @@
         </StackLayout>
         <StackLayout
           orientation="vertical"
-          :backgroundImage="'~/assets/media/' + place.media"
+          :backgroundImage="'~/assets/project/media/' + place.media"
           height="58%"
           width="100%"
           class="img"

@@ -31,7 +31,7 @@
                     left="0"
                     :height="(210 - 20)"
                     width="100%"
-                    :backgroundImage="'~/assets/media/' + place.media"
+                    :backgroundImage="'~/assets/project/media/' + place.media"
                     class="image"
                   ></StackLayout>
                   <StackLayout orientation="horizontal" height="40" class="actions" width="100%">
