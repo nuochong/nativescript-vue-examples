@@ -1,6 +1,6 @@
 <template>
   <Page class="page" :class="{ dialogOpen: dialogOpen }">
-    <ActionBarSecond :title="'遮罩层'" />
+    <ActionBarSecond :title="title" />
     <GridLayout colums="*" rows="*">
       <StackLayout>
         <Button class="btn btn-primary" text="遮罩层" @tap="showDialog" />
@@ -29,7 +29,7 @@ export default {
   },
   data() {
     return {
-      title: '',
+      title: '遮罩层',
       dialogOpen: false
     };
   },

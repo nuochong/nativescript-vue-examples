@@ -1,6 +1,6 @@
 <template>
   <Page class="page">
-    <ActionBarSecond :title="'提示'" />
+    <ActionBarSecond :title="title" />
 
     <StackLayout class="hello-world">
       <Button class="btn btn-primary" @tap="btnToast" text="提示" />
@@ -18,7 +18,7 @@ export default {
   },
   data() {
     return {
-      title: ''
+      title: '提示'
     };
   },
   mounted() {},

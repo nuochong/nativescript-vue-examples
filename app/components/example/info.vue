@@ -1,6 +1,6 @@
 <template>
   <Page class="page">
-    <ActionBarSecond :title="'消息通知'" />
+    <ActionBarSecond :title="title" />
 
     <StackLayout class="hello-world">
       <Button class="btn btn-primary" @tap="infoOpen" text="开启通知" />
@@ -18,7 +18,7 @@ export default {
   },
   data() {
     return {
-      title: '',
+      title: '消息通知',
       localNotificationsId: 1
     };
   },

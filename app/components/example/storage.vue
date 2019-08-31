@@ -1,6 +1,6 @@
 <template>
   <Page class="page">
-    <ActionBarSecond :title="'本地存储'" />
+    <ActionBarSecond :title="title" />
     <ScrollView>
       <StackLayout class="home-panel form input-field">
         <Label
@@ -56,7 +56,7 @@ export default {
   },
   data() {
     return {
-      title: '',
+      title: '本地存储',
       num: null,
       str: '',
       bool: false

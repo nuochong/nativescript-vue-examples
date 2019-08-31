@@ -1,6 +1,6 @@
 <template>
   <Page class="page" loaded="pageLoaded" ref="page">
-    <ActionBarSecond :title="'动画效果'" />
+    <ActionBarSecond :title="title" />
 
     <GridLayout colums="*" rows="*">
       <Label class="animateicon" :text="msg" col="0" row="0" />
@@ -17,7 +17,7 @@ export default {
   },
   data() {
     return {
-      title: '',
+      title: '动画效果',
       msg: 'Hello World! '
     };
   },

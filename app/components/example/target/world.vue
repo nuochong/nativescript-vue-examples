@@ -1,6 +1,6 @@
 <template>
   <Page class="page">
-    <ActionBarSecond :title="'路由跳转-页面二'" />
+    <ActionBarSecond :title="title" />
     <GridLayout colums="*" rows="*">
       <Label class="message" :text="msg" col="0" row="0" />
     </GridLayout>
@@ -15,7 +15,7 @@ export default {
   },
   data() {
     return {
-      title: '',
+      title: '路由跳转-页面二',
       msg: 'Hello World!'
     };
   },

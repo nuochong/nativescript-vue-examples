@@ -1,6 +1,6 @@
 <template>
   <Page class="page" @loaded="appLoaded">
-    <ActionBarSecond :title="'记事薄'" />
+    <ActionBarSecond :title="title" />
     <AbsoluteLayout ref="rootLayout">
       <ListView
         for="item in items"
@@ -56,7 +56,7 @@ export default {
   },
   data() {
     return {
-      title: '',
+      title: '记事薄',
       isActive: false,
       items: []
     };

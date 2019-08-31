@@ -1,6 +1,6 @@
 <template>
   <Page class="page">
-    <ActionBarSecond :title="'路由跳转'" />
+    <ActionBarSecond :title="title" />
     <GridLayout colums="*" rows="*">
       <!-- <StackLayout class="hello-world"> -->
       <Button class="btn btn-primary" text="跳转" @tap="onButton" />
@@ -18,7 +18,7 @@ export default {
   },
   data() {
     return {
-      title: ''
+      title: '路由跳转'
     };
   },
   methods: {

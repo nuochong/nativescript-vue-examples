@@ -1,6 +1,6 @@
 <template>
   <Page class="page" loaded="pageLoaded" ref="page">
-    <ActionBarSecond :title="'触摸事件'" />
+    <ActionBarSecond :title="title" />
     <GridLayout colums="*" rows="*">
       <Button class="btn btn-primary" ref="btn" text="触摸" @tap="touch" />
       <Button class="btn btn-primary" ref="btn" text="触摸" />
@@ -19,7 +19,7 @@ export default {
   },
   data() {
     return {
-      title: ''
+      title: '触摸事件'
     };
   },
   mounted() {

@@ -1,6 +1,6 @@
 <template>
   <Page class="page">
-    <ActionBarSecond :title="'获取权限'" />
+    <ActionBarSecond :title="title" />
 
     <StackLayout class="hello-world">
       <Button class="btn btn-primary" @tap="test" text="获取权限" />
@@ -19,7 +19,7 @@ export default {
   },
   data() {
     return {
-      title: ''
+      title: '获取权限'
     };
   },
   mounted() {},

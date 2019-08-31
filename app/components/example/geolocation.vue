@@ -1,6 +1,6 @@
 <template>
   <Page class="page">
-    <ActionBarSecond :title="'获取位置信息'" />
+    <ActionBarSecond :title="title" />
     <StackLayout class="hello-world">
       <Button class="btn btn-primary" @tap="geolocation" text="获取位置信息" />
     </StackLayout>
@@ -17,7 +17,7 @@ export default {
   },
   data() {
     return {
-      title: ''
+      title: '获取位置信息'
     };
   },
   mounted() {},

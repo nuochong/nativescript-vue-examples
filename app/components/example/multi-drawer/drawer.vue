@@ -1,6 +1,6 @@
 <template>
   <Page class="page">
-    <ActionBar class="action-bar" title="Hello">
+    <ActionBar class="action-bar" :title="title">
       <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" @tap="$navigateBack" />
       <StackLayout orientation="horizontal">
         <Image src="res://icon" width="40" height="40" verticalAlignment="center" @tap="open" />
@@ -46,7 +46,7 @@ export default {
   },
   data() {
     return {
-      title: '',
+      title: 'Hello',
       listOfItems: [{ text: '111' }, { text: '222' }, { text: '333' }],
       drawerState: false
     };

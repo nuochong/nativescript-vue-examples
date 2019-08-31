@@ -1,6 +1,6 @@
 <template>
   <Page class="page">
-    <ActionBarSecond :title="'计数器'" />
+    <ActionBarSecond :title="title" />
 
     <StackLayout>
       <FlexboxLayout flexDirection="row" justifyContent="center">
@@ -20,6 +20,11 @@ import ActionBarSecond from './public/action-bar-second';
 export default {
   components: {
     ActionBarSecond
+  },
+  data() {
+    return {
+      title: '计数器'
+    };
   },
   computed: {
     message() {

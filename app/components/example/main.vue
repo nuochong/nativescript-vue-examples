@@ -1,6 +1,6 @@
 <template>
   <Page class="page">
-    <ActionBarSecond :title="'示例'" />
+    <ActionBarSecond :title="title" />
     <ScrollView>
       <!-- <GridLayout class="hello-world" colums="*" rows="*"> -->
       <StackLayout>
@@ -81,7 +81,7 @@ export default {
   },
   data() {
     return {
-      title: '',
+      title: '示例',
       msg: '---------分割线---------'
     };
   },

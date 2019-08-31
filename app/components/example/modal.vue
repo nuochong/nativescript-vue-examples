@@ -1,6 +1,6 @@
 <template>
   <Page class="page">
-    <ActionBarSecond :title="'模态对话框'" />
+    <ActionBarSecond :title="title" />
 
     <StackLayout class="hello-world">
       <Button class="btn btn-primary" @tap="modal" text="模态对话框" />
@@ -17,7 +17,7 @@ export default {
   },
   data() {
     return {
-      title: ''
+      title: '模态对话框'
     };
   },
   mounted() {},

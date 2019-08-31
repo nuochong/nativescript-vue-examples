@@ -1,6 +1,6 @@
 <template>
   <Page class="page">
-    <ActionBarFirst :title="'Welcome to NativeScript-Vue!'" />
+    <ActionBarFirst :title="title" />
     <ScrollView>
       <!-- <GridLayout  colums="*" rows="*"> -->
       <StackLayout class="hello-world">
@@ -23,7 +23,7 @@ export default {
   },
   data() {
     return {
-      title: ''
+      title: 'Welcome to NativeScript-Vue!'
     };
   },
   mounted() {},

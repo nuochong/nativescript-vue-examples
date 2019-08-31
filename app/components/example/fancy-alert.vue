@@ -1,6 +1,6 @@
 <template>
   <Page class="page">
-    <ActionBarSecond :title="'精美提示框'" />
+    <ActionBarSecond :title="title" />
 
     <StackLayout class="hello-world">
       <Button class="btn btn-primary" @tap="btnfancyalert" text="精美提示框" />
@@ -17,7 +17,7 @@ export default {
   },
   data() {
     return {
-      title: ''
+      title: '精美提示框'
     };
   },
   mounted() {},

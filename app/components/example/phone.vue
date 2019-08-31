@@ -1,6 +1,6 @@
 <template>
   <Page class="page">
-    <ActionBarSecond :title="'拨打电话及发送短信'" />
+    <ActionBarSecond :title="title" />
 
     <StackLayout class="hello-world">
       <Button class="btn btn-primary" @tap="phone" text="拨打电话" />
@@ -18,7 +18,7 @@ export default {
   },
   data() {
     return {
-      title: ''
+      title: '拨打电话及发送短信'
     };
   },
   mounted() {},

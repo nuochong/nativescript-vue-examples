@@ -1,6 +1,6 @@
 <template>
   <Page class="page">
-    <ActionBarSecond :title="'备忘录'" />
+    <ActionBarSecond :title="title" />
 
     <TabView height="100%">
       <TabViewItem title="To Do" class="tabview">
@@ -60,6 +60,14 @@ export default {
   components: {
     ActionBarSecond
   },
+  data() {
+    return {
+      title: '备忘录',
+      dones: [],
+      todos: [],
+      textFieldValue: ''
+    };
+  },
   methods: {
     onItemTap: function(args) {
       action('What do you want to do with this task?', 'Cancel', ['Mark completed', 'Delete forever']).then(result => {
@@ -102,15 +110,6 @@ export default {
       }); // Adds tasks in the ToDo array. Newly added tasks are immediately shown on the screen.
       this.textFieldValue = ''; // Clears the text field so that users can start adding new tasks immediately.
     }
-  },
-
-  data() {
-    return {
-      title: '',
-      dones: [],
-      todos: [],
-      textFieldValue: ''
-    };
   }
 };
 </script>

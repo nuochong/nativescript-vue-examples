@@ -1,6 +1,6 @@
 <template>
   <Page class="page" loaded="pageLoaded" ref="page">
-    <ActionBarSecond :title="'下拉刷新'" />
+    <ActionBarSecond :title="title" />
 
     <GridLayout colums="*" rows="*">
       <PullToRefresh @refresh="refreshList">
@@ -24,7 +24,7 @@ export default {
   },
   data() {
     return {
-      title: '',
+      title: '下拉刷新',
       msg: 'Hello World! ',
       listOfItems: [{ text: '下拉刷新' }, { text: '下拉刷新' }, { text: '下拉刷新' }]
     };

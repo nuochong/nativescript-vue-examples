@@ -1,6 +1,6 @@
 <template>
   <Page class="page">
-    <ActionBarSecond :title="'获取设备信息'" />
+    <ActionBarSecond :title="title" />
 
     <StackLayout class="hello-world">
       <Button class="btn btn-primary" @tap="getinfo" text="获取设备信息" />
@@ -17,7 +17,7 @@ export default {
   },
   data() {
     return {
-      title: ''
+      title: '获取设备信息'
     };
   },
   mounted() {},

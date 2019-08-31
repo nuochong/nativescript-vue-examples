@@ -1,6 +1,6 @@
 <template>
   <Page class="page" loaded="pageLoaded" ref="page">
-    <ActionBarSecond :title="'图标'" />
+    <ActionBarSecond :title="title" />
     <ScrollView>
       <ListView for="(item,index) in icons" class="list-group">
         <v-template>
@@ -24,7 +24,7 @@ export default {
   },
   data() {
     return {
-      title: '',
+      title: '图标',
       icons: {}
     };
   },

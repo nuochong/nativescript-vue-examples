@@ -1,6 +1,6 @@
 <template>
   <Page class="page" actionBarHidden="false">
-    <ActionBarSecond :title="'实例'" />
+    <ActionBarSecond :title="title" />
     <!-- <ActionBar id="header head">
       <StackLayout orientation="horizontal" class="btn menu hh">
         <Image
@@ -149,7 +149,7 @@ export default {
   },
   data() {
     return {
-      title: '',
+      title: '实例',
       places: [
         {
           name: 'The Custom House1',

@@ -1,6 +1,6 @@
 <template>
   <Page class="page">
-    <ActionBarSecond :title="'对话框'" />
+    <ActionBarSecond :title="title" />
 
     <StackLayout class="hello-world">
       <Button class="btn btn-primary" @tap="dialog" text="对话框" />
@@ -17,7 +17,7 @@ export default {
   },
   data() {
     return {
-      title: ''
+      title: '对话框'
     };
   },
   mounted() {},

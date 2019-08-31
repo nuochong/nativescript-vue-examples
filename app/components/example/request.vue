@@ -1,6 +1,6 @@
 <template>
   <Page class="page">
-    <ActionBarSecond :title="'请求'" />
+    <ActionBarSecond :title="title" />
     <!-- <GridLayout colums="*" rows="*"> -->
     <StackLayout>
       <Button class="btn btn-primary" text="开始请求" @tap="onButton" />
@@ -22,7 +22,7 @@ export default {
   },
   data() {
     return {
-      title: ''
+      title: '请求'
     };
   },
   methods: {
