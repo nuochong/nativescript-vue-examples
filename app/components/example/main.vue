@@ -61,7 +61,7 @@ import Target from './target/target';
 import Storage from './storage';
 import Fab from './fab/fab';
 import Todo from './todo/todo';
-import Icon from './icon';
+import IconMain from './icon/icon-main';
 import Mask from './mask';
 import Modal from './modal';
 import Drawer from './multi-drawer/drawer';
@@ -149,7 +149,7 @@ export default {
       this.navigateTo(this, Todo);
     },
     onIcon: function() {
-      this.navigateTo(this, Icon);
+      this.navigateTo(this, IconMain);
     },
     onMask: function() {
       this.navigateTo(this, Mask);

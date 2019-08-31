@@ -18,7 +18,7 @@
 
 <script>
 const observable = require('tns-core-modules/data/observable');
-import ActionBarSecond from './public/action-bar-second';
+import ActionBarSecond from '../public/action-bar-second';
 
 export default {
   components: {
@@ -26,7 +26,7 @@ export default {
   },
   data() {
     return {
-      title: '图标',
+      title: '自定义图标',
       icons: {}
     };
   },
