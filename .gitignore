@@ -1,13 +1,31 @@
-# JetBrains project files
-.idea
+# See https://help.github.com/ignore-files/ for more about ignoring files.
 
-# NPM
-node_modules
+# vscode configuration
+.vscode/
+.DS_Store
+/build
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
+
+# dependencies
+/node_modules
 
 # NativeScript application
 hooks
 platforms
-
-# System
-.DS_Store
-*/.DS_Store
