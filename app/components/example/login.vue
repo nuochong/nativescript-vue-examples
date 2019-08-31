@@ -21,6 +21,7 @@
 <script>
 import Counter from './counter';
 import ActionBarSecond from './public/action-bar-second';
+
 export default {
   components: {
     ActionBarSecond

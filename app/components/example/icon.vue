@@ -18,6 +18,7 @@
 <script>
 const observable = require('tns-core-modules/data/observable');
 import ActionBarSecond from './public/action-bar-second';
+
 export default {
   components: {
     ActionBarSecond

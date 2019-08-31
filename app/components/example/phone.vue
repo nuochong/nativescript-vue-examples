@@ -12,6 +12,7 @@
 <script>
 const phone = require('nativescript-phone');
 import ActionBarSecond from './public/action-bar-second';
+
 export default {
   components: {
     ActionBarSecond

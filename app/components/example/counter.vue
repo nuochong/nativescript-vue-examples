@@ -17,6 +17,7 @@
 import { mapActions } from 'vuex';
 
 import ActionBarSecond from './public/action-bar-second';
+
 export default {
   components: {
     ActionBarSecond

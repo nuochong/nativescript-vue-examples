@@ -13,6 +13,7 @@
 import * as camera from 'nativescript-camera';
 //let imageModule = require("tns-core-modules/ui/image");
 import ActionBarSecond from './public/action-bar-second';
+
 export default {
   components: {
     ActionBarSecond

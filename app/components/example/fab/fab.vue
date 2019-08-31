@@ -43,6 +43,7 @@ import FabItem from './fab-item';
 const app = require('tns-core-modules/application');
 const platform = require('tns-core-modules/platform');
 import ActionBarSecond from '../public/action-bar-second';
+
 export default {
   components: {
     FabButton,

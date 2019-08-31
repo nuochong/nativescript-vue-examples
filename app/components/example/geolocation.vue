@@ -11,6 +11,7 @@
 const geolocation = require('nativescript-geolocation');
 const { Accuracy } = require('tns-core-modules/ui/enums');
 import ActionBarSecond from './public/action-bar-second';
+
 export default {
   components: {
     ActionBarSecond

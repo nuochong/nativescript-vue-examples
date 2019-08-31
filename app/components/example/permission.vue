@@ -13,6 +13,7 @@ const permissions = require('nativescript-permissions');
 //const CALL_PHONE = android.Manifest.permission.CALL_PHONE;
 //const Intent = android.content.Intent;
 import ActionBarSecond from './public/action-bar-second';
+
 export default {
   components: {
     ActionBarSecond

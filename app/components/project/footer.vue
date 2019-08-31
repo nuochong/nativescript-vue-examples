@@ -18,6 +18,7 @@ import Tabbar1 from './tabbar/tabbar1';
 import Tabbar2 from './tabbar/tabbar2';
 import Tabbar3 from './tabbar/tabbar3';
 import main from './main';
+
 export default {
   data() {
     return {

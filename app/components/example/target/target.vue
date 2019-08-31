@@ -12,6 +12,7 @@
 <script>
 import world from './world';
 import ActionBarSecond from '../public/action-bar-second';
+
 export default {
   components: {
     ActionBarSecond

@@ -12,6 +12,7 @@
 
 <script>
 import App from '../../App';
+
 export default {
   data() {
     return {

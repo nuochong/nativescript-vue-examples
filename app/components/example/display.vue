@@ -14,6 +14,7 @@
 <script>
 import { LocalNotifications } from 'nativescript-local-notifications';
 import ActionBarSecond from './public/action-bar-second';
+
 export default {
   components: {
     ActionBarSecond

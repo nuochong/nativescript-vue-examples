@@ -11,6 +11,7 @@
 <script>
 const platformModule = require('tns-core-modules/platform');
 import ActionBarSecond from './public/action-bar-second';
+
 export default {
   components: {
     ActionBarSecond

@@ -50,6 +50,7 @@
 const appSettings = require('tns-core-modules/application-settings');
 const dialogs = require('tns-core-modules/ui/dialogs');
 import ActionBarSecond from './public/action-bar-second';
+
 export default {
   components: {
     ActionBarSecond
