@@ -8,7 +8,7 @@ export default{
           animated: true,
           transition: {
             name: 'slide',
-            duration: 380,
+            duration: 200,
             curve: 'easeIn'
           }
         });
