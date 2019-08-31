@@ -1,6 +1,7 @@
 <template>
   <Page class="page" loaded="pageLoaded" ref="page">
     <ActionBarSecond :title="title" />
+
     <FlexboxLayout
       flexDirection="column"
       backgroundColor="#3c495e"

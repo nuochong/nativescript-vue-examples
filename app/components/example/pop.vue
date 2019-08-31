@@ -1,6 +1,7 @@
 <template>
   <Page width="100%">
     <ActionBarSecond :title="title" />
+
     <!-- <GridLayout colums="*" rows="*">
             <Label class="message" :text="msg" col="0" row="0"/>
             <Button text="Button" @tap="onButton" />

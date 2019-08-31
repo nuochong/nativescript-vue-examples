@@ -1,6 +1,7 @@
 <template>
   <Page class="page">
     <ActionBarSecond :title="title" />
+
     <GridLayout colums="*" rows="*">
       <!-- <StackLayout class="hello-world"> -->
       <Button class="btn btn-primary" text="跳转" @tap="onButton" />
