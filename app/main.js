@@ -38,6 +38,16 @@ Vue.use(Dialog, {
 //注册下拉刷新
 Vue.registerElement('PullToRefresh', () => require('@nstudio/nativescript-pulltorefresh').PullToRefresh);
 
+// import FontIcon from 'nativescript-vue-fonticon';
+
+// Vue.use(FontIcon, {
+//   componentName: 'IconFont', // <-- Optional. Will be the name for component icon.
+//   debug: true, // <-- Optional. Will output the css mapping to console.
+//   paths: {
+//     iconfont: './assets/icons/iconfont.css',
+//   }
+// })
+
 new Vue({
   store,
   render: h => h('frame', [h(App)])

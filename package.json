@@ -13,11 +13,19 @@
       "version": "6.0.2"
     }
   },
+  "scripts": {
+    "install": "npm install",
+    "preview": "tns preview",
+    "run:android": "tns run android",
+    "run:ios": "tns run ios",
+    "debug:android": "tns debug android",
+    "debug:ios": "tns debug ios",
+    "build:android": "tns build android --env.production",
+    "build:ios": "tns build ios --env.production"
+  },
   "dependencies": {
-    "@vue/devtools": "^5.1.1",
-    "nativescript-socketio": "^3.3.1",
-    "nativescript-toasty": "^2.0.1",
     "@nstudio/nativescript-pulltorefresh": "^1.0.1",
+    "@vue/devtools": "^5.1.1",
     "nativescript-app-shortcuts": "^2.1.0",
     "nativescript-camera": "^4.5.0",
     "nativescript-fancyalert": "^3.0.9",
@@ -25,10 +33,13 @@
     "nativescript-local-notifications": "^4.0.1",
     "nativescript-permissions": "^1.3.7",
     "nativescript-phone": "^1.4.0",
+    "nativescript-socketio": "^3.3.1",
     "nativescript-theme-core": "^1.0.6",
+    "nativescript-toasty": "^2.0.1",
     "nativescript-ui-sidedrawer": "^7.0.0",
     "nativescript-vue": "^2.4.0",
     "nativescript-vue-devtools": "^1.2.0",
+    "nativescript-vue-fonticon": "^1.0.3",
     "nativescript-vue-multi-drawer": "0.0.2",
     "tns-core-modules": "^6.0.7",
     "vuex": "^3.1.1"

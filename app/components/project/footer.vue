@@ -7,7 +7,7 @@
       :key="index"
       @tap="goTo(btn.link,index)"
     >
-      <Image :src=" '~/assets/icons/' + btn.icon+'.png'" class="icon" />
+      <Image :src=" '~/assets/images/project/' + btn.icon+'.png'" class="icon" />
       <Label class="circle" v-if="index === active" />
     </FlexboxLayout>
   </FlexboxLayout>

@@ -22,7 +22,7 @@ export default {
     return {
       title: '相机',
       imgsrc: 'res://icon',
-      img: '~/assets/icons/johndoe.jpg'
+      img: '~/assets/images/project/johndoe.jpg'
     };
   },
   mounted() {},
