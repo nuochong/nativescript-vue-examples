@@ -21,6 +21,7 @@ import main from './main';
 export default {
   data() {
     return {
+      title: '',
       btns: [
         {
           icon: 'user',

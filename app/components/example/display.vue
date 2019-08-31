@@ -20,6 +20,7 @@ export default {
   },
   data() {
     return {
+      title: '',
       surprise: false
     };
   },

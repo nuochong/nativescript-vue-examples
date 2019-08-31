@@ -72,7 +72,9 @@ export default {
   },
 
   data() {
-    return {};
+    return {
+      title: ''
+    };
   }
 };
 </script>

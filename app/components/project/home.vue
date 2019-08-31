@@ -18,7 +18,9 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+      title: ''
+    };
   },
 
   methods: {

@@ -16,7 +16,9 @@ export default {
     ActionBarSecond
   },
   data() {
-    return {};
+    return {
+      title: ''
+    };
   },
   mounted() {},
   methods: {

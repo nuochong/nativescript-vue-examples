@@ -46,6 +46,7 @@ export default {
   },
   data() {
     return {
+      title: '',
       listOfItems: [{ text: '111' }, { text: '222' }, { text: '333' }],
       drawerState: false
     };

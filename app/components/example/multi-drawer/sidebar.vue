@@ -116,7 +116,9 @@ export default {
   },
   props: ['drawer'],
   data() {
-    return {};
+    return {
+      title: ''
+    };
   },
   methods: {
     onButton: function() {

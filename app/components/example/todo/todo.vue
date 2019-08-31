@@ -106,6 +106,7 @@ export default {
 
   data() {
     return {
+      title: '',
       dones: [],
       todos: [],
       textFieldValue: ''

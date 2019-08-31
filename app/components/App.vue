@@ -22,7 +22,9 @@ export default {
     ActionBarFirst
   },
   data() {
-    return {};
+    return {
+      title: ''
+    };
   },
   mounted() {},
   methods: {

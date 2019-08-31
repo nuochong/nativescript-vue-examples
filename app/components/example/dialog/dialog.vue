@@ -27,6 +27,7 @@
 export default {
   data() {
     return {
+      title: '',
       drawerState: false
     };
   },

@@ -1,9 +1,9 @@
 <template>
   <Page class="page">
-    <ActionBarSecond :title="'相机'" />
+    <ActionBarSecond :title="title" />
 
     <StackLayout class="hello-world camera-container">
-      <Button class="btn btn-primary" @tap="test" text="相机" />
+      <Button class="btn btn-primary" @tap="test" :text="title" />
       <Image class="camera-img" :src="img" stretch="none" ref="img" />
     </StackLayout>
   </Page>
@@ -19,6 +19,7 @@ export default {
   },
   data() {
     return {
+      title: '相机',
       imgsrc: 'res://icon',
       img: '~/assets/icons/johndoe.jpg'
     };

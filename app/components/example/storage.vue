@@ -56,6 +56,7 @@ export default {
   },
   data() {
     return {
+      title: '',
       num: null,
       str: '',
       bool: false

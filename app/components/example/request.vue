@@ -21,7 +21,9 @@ export default {
     ActionBarSecond
   },
   data() {
-    return {};
+    return {
+      title: ''
+    };
   },
   methods: {
     onButton: function() {

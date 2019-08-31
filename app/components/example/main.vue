@@ -81,6 +81,7 @@ export default {
   },
   data() {
     return {
+      title: '',
       msg: '---------分割线---------'
     };
   },

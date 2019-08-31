@@ -18,7 +18,9 @@ export default {
     ActionBarSecond
   },
   data() {
-    return {};
+    return {
+      title: ''
+    };
   },
   mounted() {
     //this.touch();

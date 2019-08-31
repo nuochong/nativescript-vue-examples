@@ -149,6 +149,7 @@ export default {
   },
   data() {
     return {
+      title: '',
       places: [
         {
           name: 'The Custom House1',

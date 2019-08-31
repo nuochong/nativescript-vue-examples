@@ -72,7 +72,7 @@ export default {
     }
   },
   data() {
-    return {
+    return {title:'',
       // handled by the watcher
       optionsInternal: {},
       sides: {

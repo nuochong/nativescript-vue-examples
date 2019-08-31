@@ -24,6 +24,7 @@ export default {
   },
   data() {
     return {
+      title: '',
       msg: 'Hello World! ',
       listOfItems: [{ text: '下拉刷新' }, { text: '下拉刷新' }, { text: '下拉刷新' }]
     };
