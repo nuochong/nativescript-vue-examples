@@ -79,37 +79,31 @@ export default {
 <style scoped lang="scss">
 #footer {
   background-color: antiquewhite;
-}
-
-#footer .btn {
-  height: 100%;
-  padding: 0;
-  margin: 0;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-#footer .btn.active {
-  /* background:red; */
-}
-
-#footer .btn.active .icon {
-  height: 70%;
-}
-
-#footer .btn .icon {
-  z-index: 100000;
-  height: 100%;
-  top: 0px;
-  left: 0px;
-}
-
-#footer .btn .circle {
-  width: 5;
-  height: 5;
-  border-radius: 100%;
-  background: red;
-  margin-top: 5;
+  .btn {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &.active {
+      .icon {
+        height: 70%;
+      }
+    }
+    .icon {
+      z-index: 100000;
+      height: 100%;
+      top: 0px;
+      left: 0px;
+    }
+    .circle {
+      width: 5;
+      height: 5;
+      border-radius: 100%;
+      background: red;
+      margin-top: 5;
+    }
+  }
 }
 </style>

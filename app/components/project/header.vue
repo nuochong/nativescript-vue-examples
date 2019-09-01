@@ -45,30 +45,27 @@ export default {
   padding: 0;
   width: 100%;
   background-color: yellow;
-}
-
-#header .btn {
-  margin: 0;
-  padding: 0;
-  justify-content: center;
-  align-items: center;
-}
-
-#header .btn .icon {
-  padding: 0;
-  margin: 0;
-}
-
-#header .btn.pp {
-  height: 100%;
-}
-
-#header .btn.menu .icon {
-  height: 60%;
-}
-
-#header .btn.pp .icon {
-  border: 2px solid #ffffff;
-  border-radius: 100%;
+  .btn {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    .icon {
+      padding: 0;
+      margin: 0;
+    }
+    &.pp {
+      height: 100%;
+      .icon {
+        border: 2px solid #ffffff;
+        border-radius: 100%;
+      }
+    }
+    &.menu {
+      .icon {
+        height: 60%;
+      }
+    }
+  }
 }
 </style>

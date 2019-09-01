@@ -24,7 +24,7 @@ export default {
   },
   data() {
     return {
-      title: '模拟登录',
+      title: '模拟登录'
     };
   },
   mounted() {},
@@ -54,22 +54,21 @@ export default {
   flex-direction: column;
   align-items: center;
 }
-
 .btn {
   color: #ffffff;
   background-color: #3c59fd;
   margin: 20 0 30 0;
+  &:highlighted {
+    background-color: #2241f0;
+  }
 }
-
-.btn:highlighted {
-  background-color: #2241f0;
-}
-
 .flexbox-item {
   width: 95%;
   text-align: center;
+  label {
+    margin-bottom: 4;
+  }
 }
-
 .action-bar {
   background-color: #3c59fd;
   color: #ffffff;
@@ -81,7 +80,6 @@ export default {
   margin-top: 21;
   height: 1;
 }
-
 /* Login */
 .page-login-container {
   background-color: #3c59fd;
@@ -102,40 +100,29 @@ export default {
 .company-name {
   margin-top: 60;
 }
-
 .company-logo {
   flex-grow: 1;
 }
-
 .login-text {
   margin-top: 60;
   white-space: normal;
 }
-
 .btn-login {
   color: #000000;
   background-color: #ffffff;
+  &:highlighted {
+    background-color: #eaeaea;
+    color: #000000;
+  }
 }
-
-.btn-login:highlighted {
-  background-color: #eaeaea;
-  color: #000000;
-}
-
 /*  Welcome */
-
 .title {
   color: #3c59fd;
   margin-top: 20;
 }
-.flexbox-item label {
-  margin-bottom: 4;
-}
-
 .menu-container {
   width: 90%;
 }
-
 .menu-item {
   vertical-align: top;
   width: 50%;
@@ -152,7 +139,6 @@ export default {
   background-color: #ffffff;
   border-color: #d8d8d8;
 }
-
 .action-button {
   font-size: 20;
 }

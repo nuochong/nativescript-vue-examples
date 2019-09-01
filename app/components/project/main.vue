@@ -192,7 +192,6 @@ export default {
 .dt {
   padding: 0;
 }
-
 .home-panel {
   background-color: red;
   padding: 0;
@@ -201,64 +200,44 @@ export default {
   background-color: blue;
   margin-top: 0;
 }
-
 .page {
   margin: 0;
   padding: 0;
 }
-
 .searching {
   z-index: 100000;
 }
-
 .header {
   padding: 10;
   height: 40;
 }
-
 .footer {
   padding: 10 50 10;
   height: 50;
 }
-
 #view {
   vertical-align: center;
 }
-
 #app {
   z-index: 10;
 }
-
 #earth {
   z-index: 5;
   animation-name: bounceInOpacity;
   animation-duration: 1s;
   animation-delay: 0.5s;
 }
-
 #background {
   width: 100;
   height: 100;
   border-radius: 100%;
-}
-
-#background.secondary {
-  background: linear-gradient(-45deg, #ff067f, #ff0154);
-  animation-name: circle;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes circle {
-  from {
-    transform: scale(0);
-  }
-
-  to {
-    transform: scale(10);
+  &.secondary {
+    background: linear-gradient(-45deg, #ff067f, #ff0154);
+    animation-name: circle;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
   }
 }
-
 /*导航头部*/
 .hh {
   background-color: #ff0154;
@@ -273,47 +252,89 @@ export default {
 }
 #header {
   padding: 0;
+  .btn {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    .icon {
+      padding: 0;
+      margin: 0;
+    }
+    &.pp {
+      height: 100%;
+      .icon {
+        border: 2px solid #ffffff;
+        border-radius: 100%;
+      }
+    }
+    &.menu {
+      .icon {
+        height: 60%;
+      }
+    }
+  }
 }
-
-#header .btn {
-  margin: 0;
-  padding: 0;
-  justify-content: center;
-  align-items: center;
-}
-
-#header .btn .icon {
-  padding: 0;
-  margin: 0;
-}
-
-#header .btn.pp {
-  height: 100%;
-}
-
-#header .btn.menu .icon {
-  height: 60%;
-}
-
-#header .btn.pp .icon {
-  border: 2px solid #ffffff;
-  border-radius: 100%;
-}
-
 .ll {
   background-color: black;
 }
-.card .background {
-  background-color: green;
-  transform: scale(1.05);
-  opacity: 0.75;
+.card {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: scale(0.85);
+  background-color: yellowgreen;
+  vertical-align: center;
+  margin-bottom: 0;
+  .background {
+    background-color: green;
+    transform: scale(1.05);
+    opacity: 0.75;
+  }
+  &.active {
+    animation-name: highlight;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+  }
+  &.inactive {
+    animation-name: downlight;
+    animation-duration: 0.25s;
+    animation-fill-mode: backwards;
+  }
+  .head {
+    border-radius: 14 14 0 0;
+    background: #ffffff;
+    padding: 12;
+  }
+  .img {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0 0 14 14;
+  }
+  .title {
+    color: #545454;
+    font-size: 18;
+  }
+  .subTitle {
+    color: #dadada;
+    font-size: 16;
+  }
+}
+
+@keyframes circle {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(10);
+  }
 }
 
 @keyframes highlight {
   from {
     transform: scale(0.85);
   }
-
   to {
     transform: scale(1);
   }
@@ -323,54 +344,8 @@ export default {
   from {
     transform: scale(1);
   }
-
   to {
     transform: scale(0.85);
   }
-}
-
-.card {
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  transform: scale(0.85);
-  background-color: yellowgreen;
-  vertical-align: center;
-  margin-bottom: 0;
-}
-
-.card.active {
-  animation-name: highlight;
-  animation-duration: 0.25s;
-  animation-fill-mode: forwards;
-}
-
-.card.inactive {
-  animation-name: downlight;
-  animation-duration: 0.25s;
-  animation-fill-mode: backwards;
-}
-
-.card .head {
-  border-radius: 14 14 0 0;
-  background: #ffffff;
-  padding: 12;
-}
-
-.card .img {
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 0 0 14 14;
-}
-
-.card .title {
-  color: #545454;
-  font-size: 18;
-}
-
-.card .subTitle {
-  color: #dadada;
-  font-size: 16;
 }
 </style>

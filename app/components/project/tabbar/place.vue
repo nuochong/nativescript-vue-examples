@@ -102,7 +102,6 @@ export default {
 .image {
   background-size: cover;
 }
-
 .desc {
   text-justify: justify;
   font-size: 14;
@@ -110,59 +109,48 @@ export default {
   background-color: transparent;
   border-color: transparent;
 }
-
 .text {
   margin: 0 25;
+  .title {
+    margin-top: 8;
+  }
+  .desc {
+    margin-top: 16;
+  }
 }
-
-.text .title {
-  margin-top: 8;
-}
-
-.text .desc {
-  margin-top: 16;
-}
-
 .actions {
-  /* background-color: blue; */
   z-index: 10;
   left: 0;
   top: 170;
   padding: 0 25;
+  .ac-btn {
+    border-radius: 100%;
+    margin-right: 8;
+    background: linear-gradient(-45deg, #ff067f, #ff0154);
+  }
+  #star {
+    opacity: 0;
+    animation-name: bounceIn;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.75s;
+  }
+  #plus {
+    opacity: 0;
+    animation-name: bounceIn;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+  }
 }
-
-.actions .ac-btn {
-  border-radius: 100%;
-  margin-right: 8;
-  background: linear-gradient(-45deg, #ff067f, #ff0154);
-}
-
-.actions #star {
-  opacity: 0;
-  animation-name: bounceIn;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-  animation-delay: 0.75s;
-}
-
-.actions #plus {
-  opacity: 0;
-  animation-name: bounceIn;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-  animation-delay: 1s;
-}
-
 .header {
   margin: 25 10 10;
   height: 32;
 }
-
 .footer {
   margin: 10 50 10;
   height: 32;
 }
-
 .head {
   padding: 0 25;
   margin-bottom: 25;
@@ -173,16 +161,15 @@ export default {
   animation-fill-mode: forwards;
   animation-delay: 0.25s;
 }
-
 .title {
   color: #545454;
   font-size: 28;
   margin-bottom: 4;
 }
-
 .subTitle {
   color: #dadada;
   font-size: 20;
   margin-bottom: 10;
 }
+
 </style>
