@@ -1,36 +1,7 @@
 <template>
   <Page width="100%">
     <ActionBarSecond :title="title" />
-
-    <!-- <GridLayout colums="*" rows="*">
-            <Label class="message" :text="msg" col="0" row="0"/>
-            <Button text="Button" @tap="onButton" />
-    </GridLayout>-->
-    <!-- <AbsoluteLayout backgroundColor="#3c495e">
-            <Label text="10,10" left="10" top="10" width="100" height="100" backgroundColor="#43b883" />
-            <Label text="120,10" left="120" top="10" width="100" height="100" backgroundColor="#43b883" />
-            <Label text="10,120" left="10" top="120" width="100" height="100" backgroundColor="#43b883" />
-            <Label text="120,120" left="120" top="120" width="100" height="100" backgroundColor="#43b883" />
-            <Label text="120,120" right="120" top="120" width="100" height="100" backgroundColor="#43b883" />
-    </AbsoluteLayout>-->
-    <!-- <DockLayout stretchLastChild="false" backgroundColor="#3c495e">
-            <Label text="left" dock="left" width="40" backgroundColor="#43b883" />
-            <Label text="top" dock="top" height="40" backgroundColor="#289062" />
-            <Label text="right" dock="right" width="40" backgroundColor="#43b883" />
-            <Label text="bottom" dock="bottom" height="40" backgroundColor="#289062" />
-    </DockLayout>-->
-    <!-- <FlexboxLayout flexDirection="column-reverse" justifyContent="space-around" backgroundColor="#3c495e">
-            <Label text="first" height="70" backgroundColor="#43b883" />
-            <Label text="second" alignSelf="center" width="70" height="70" backgroundColor="#1c6b48" />
-            <Label text="third\nflex-end" alignSelf="flex-end" width="70" height="70" backgroundColor="#289062" />
-            <Label text="fourth" height="70" backgroundColor="#289062" />
-    </FlexboxLayout>-->
-    <StackLayout backgroundColor="#3c495e">
-      <!-- <Label text="left" horizontalAlignment="left" width="33%" height="70" backgroundColor="#43b883" />
-            <Label text="center" horizontalAlignment="center" width="33%" height="70" backgroundColor="#289062" />
-            <Label text="right" horizontalAlignment="right" top="0" width="33%" height="70" backgroundColor="#1c6b48" />
-      <Label text="stretch" horizontalAlignment="stretch" height="70" backgroundColor="#43b883" />-->
-    </StackLayout>
+    <StackLayout backgroundColor="#3c495e"></StackLayout>
     <AbsoluteLayout backgroundColor="#3c495e" ref="page" width="100%">
       <FlexboxLayout
         width="100%"
@@ -39,10 +10,6 @@
         justifyContent="space-around"
         backgroundColor="#3c495e"
       >
-        <!-- <Label text="first" height="70" backgroundColor="#43b883" />
-        <Label text="second" alignSelf="center" width="70" height="70" backgroundColor="#1c6b48" />-->
-        <!-- <Label text="third\nflex-end" alignSelf="flex-end" width="90" height="270" backgroundColor="#289062" /> -->
-        <!-- <Label text="fourth" height="70" backgroundColor="#289062" /> -->
         <ScrollView
           style="border-radius: 10;"
           orientation="vertical"
@@ -53,11 +20,6 @@
         >
           <StackLayout>
             <Label text class="sanjiao" />
-            <!-- <Label text="first" height="70" backgroundColor="#43b883" />
-                        <Label text="first" height="70" backgroundColor="#43b883" />
-                        <Label text="first" height="70" backgroundColor="#43b883" />
-                        <Label text="first" height="70" backgroundColor="#43b883" />
-            <Label text="first" height="70" backgroundColor="#43b883" />-->
           </StackLayout>
         </ScrollView>
       </FlexboxLayout>
@@ -84,7 +46,6 @@ export default {
   data() {
     return {
       title: '自定义弹出框',
-      msg: 'Hello World! '
     };
   },
   mounted() {
