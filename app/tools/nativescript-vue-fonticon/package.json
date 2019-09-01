@@ -1,0 +1,69 @@
+{
+  "_from": "nativescript-vue-fonticon",
+  "_id": "nativescript-vue-fonticon@1.0.3",
+  "_inBundle": false,
+  "_integrity": "sha512-4wSevllAp3eF5TojZen0Xrc5l85oG2+N5594v+jkocykCMtTT1bN+ePTtPb4MFWQgedTHyBZMPQS9oSgre3ytA==",
+  "_location": "/nativescript-vue-fonticon",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "nativescript-vue-fonticon",
+    "name": "nativescript-vue-fonticon",
+    "escapedName": "nativescript-vue-fonticon",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/nativescript-vue-fonticon/-/nativescript-vue-fonticon-1.0.3.tgz",
+  "_shasum": "bdce2ac220381308c3c8d597c932634be063a5c9",
+  "_spec": "nativescript-vue-fonticon",
+  "_where": "/Users/superman/Documents/code/learn-nsvue/hero",
+  "author": {
+    "name": "Emilio Romero",
+    "email": "emilio.romero1989@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/emiliogrv/nativescript-vue-fonticon/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "nativescript-fonticon": "^2.0.0"
+  },
+  "deprecated": false,
+  "description": "A simpler way to use font icons with NativeScript + Vue.js",
+  "homepage": "https://github.com/emiliogrv/nativescript-vue-fonticon#readme",
+  "keywords": [
+    "nativescript",
+    "nativescript-vue",
+    "vue",
+    "vuejs",
+    "icon",
+    "fonticon"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "name": "nativescript-vue-fonticon",
+  "nativescript": {
+    "platforms": {
+      "android": "4.2.0",
+      "ios": "4.2.0"
+    },
+    "plugin": {
+      "vue": "true",
+      "category": "Developer"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emiliogrv/nativescript-vue-fonticon.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.3"
+}
