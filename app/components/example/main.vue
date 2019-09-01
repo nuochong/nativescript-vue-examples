@@ -63,7 +63,7 @@ import Fab from './fab/fab';
 import Todo from './todo/todo';
 import IconMain from './icon/icon-main';
 import Mask from './mask';
-import Modal from './modal';
+import Modal from './custom-model/modal';
 import Drawer from './multi-drawer/drawer';
 import LargeTitle from './large-title/large-title';
 import Dialog from './dialog/dialog';
