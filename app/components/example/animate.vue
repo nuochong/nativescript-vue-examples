@@ -19,7 +19,7 @@ export default {
   data() {
     return {
       title: '动画效果',
-      msg: 'Hello World! '
+      msg: '此处演示使用CSS动画效果'
     };
   },
   mounted() {},
