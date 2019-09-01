@@ -4,11 +4,7 @@
 
     <ScrollView>
       <StackLayout class="home-panel form input-field">
-        <Label
-          text="Store and retrieve data locally by using Application Settings (similar to 'local storage' on the web)."
-          textWrap="true"
-          class="lbl"
-        />
+        <Label text="使用应用程序设置(类似于web上的“本地存储”)在本地存储和检索数据。" textWrap="true" class="lbl" />
 
         <!-- store/retrieve number -->
         <Label text="Number" class="heading" />
@@ -19,29 +15,29 @@
           keyboardType="number"
         />
         <StackLayout orientation="horizontal" horizontalAlignment="center">
-          <Button text="Save" @tap="saveNumber" class="btn btn-primary" />
-          <Button text="Remove" @tap="removeNumber" class="btn btn-primary" />
+          <Button text="保存" @tap="saveNumber" class="btn btn-primary" />
+          <Button text="移除" @tap="removeNumber" class="btn btn-primary" />
         </StackLayout>
 
         <!-- store/retrieve string -->
         <Label text="String" class="heading" />
         <TextField v-model="str" hint="Enter a String..." class="input input-border" />
         <StackLayout orientation="horizontal" horizontalAlignment="center">
-          <Button text="Save" @tap="saveString" class="btn btn-primary" />
-          <Button text="Remove" @tap="removeString" class="btn btn-primary" />
+          <Button text="保存" @tap="saveString" class="btn btn-primary" />
+          <Button text="移除" @tap="removeString" class="btn btn-primary" />
         </StackLayout>
 
         <!-- store/retrieve boolean -->
         <Label text="Boolean" class="heading" />
         <Switch v-model="bool" class="switch" />
         <StackLayout orientation="horizontal" horizontalAlignment="center">
-          <Button text="Save" @tap="saveBoolean" class="btn btn-primary" />
-          <Button text="Remove" @tap="removeBoolean" class="btn btn-primary" />
+          <Button text="保存" @tap="saveBoolean" class="btn btn-primary" />
+          <Button text="移除" @tap="removeBoolean" class="btn btn-primary" />
         </StackLayout>
 
         <StackLayout class="hr-light" />
 
-        <Button text="Remove All App Settings" @tap="removeAll" class="btn btn-primary" />
+        <Button text="删除所有应用程序设置" @tap="removeAll" class="btn btn-primary" />
       </StackLayout>
     </ScrollView>
   </Page>
@@ -67,34 +63,34 @@ export default {
   methods: {
     saveNumber() {
       appSettings.setNumber('someNumber', parseFloat(this.num));
-      dialogs.alert('You saved: ' + appSettings.getNumber('someNumber'));
+      dialogs.alert('你保存了: ' + appSettings.getNumber('someNumber'));
     },
     removeNumber() {
       appSettings.remove('someNumber');
-      dialogs.alert('You removed the number from app settings!');
+      dialogs.alert('你从应用程序设置中删除了number！');
       this.num = null;
     },
     saveString() {
       appSettings.setString('someString', this.str);
-      dialogs.alert('You saved: ' + appSettings.getString('someString'));
+      dialogs.alert('你保存了: ' + appSettings.getString('someString'));
     },
     removeString() {
       appSettings.remove('someString');
-      dialogs.alert('You removed the string from app settings!');
+      dialogs.alert('你从应用程序设置中删除了string！');
       this.str = '';
     },
     saveBoolean() {
       appSettings.setBoolean('someBoolean', this.bool);
-      dialogs.alert('You saved: ' + appSettings.getBoolean('someBoolean'));
+      dialogs.alert('你保存了: ' + appSettings.getBoolean('someBoolean'));
     },
     removeBoolean() {
       appSettings.remove('someBoolean');
-      dialogs.alert('You removed the boolean from app settings!');
+      dialogs.alert('你从应用程序设置中删除了boolean！');
       this.bool = false;
     },
     removeAll() {
       appSettings.clear();
-      dialogs.alert('All app settings values have been cleared!');
+      dialogs.alert('所有应用程序设置值都已清除！');
       this.num = null;
       this.str = '';
       this.bool = false;
