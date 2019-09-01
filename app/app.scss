@@ -1,17 +1,17 @@
-// NativeScript core theme
+// NativeScript 核心主题
 // @see https://docs.nativescript.org/ui/theme
 //@import '~nativescript-theme-core/scss/light';
 //@import '~nativescript-theme-core/css/core.light.css';
 @import '~nativescript-theme-core/css/core.dark.css';
 
-// Override variables here
+// 在这里覆盖样式
 
 //@import '~nativescript-theme-core/scss/index';
 // ActionBar{
 //   background: green;
 // }
 
-// Global SCSS styling
+// 全局 SCSS 样式
 // @see https://docs.nativescript.org/ui/styling
 
 @import './assets/css/animate.css';
