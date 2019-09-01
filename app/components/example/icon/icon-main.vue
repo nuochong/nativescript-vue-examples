@@ -23,12 +23,10 @@ export default {
   },
   data() {
     return {
-      title: '图标',
+      title: '图标'
     };
   },
-  mounted() {
-
-  },
+  mounted() {},
   methods: {
     btnIconCustom: function() {
       this.navigateTo(this, IconCustomer);
