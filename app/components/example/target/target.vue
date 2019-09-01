@@ -2,11 +2,11 @@
   <Page class="page">
     <ActionBarSecond :title="title" />
 
-    <GridLayout colums="*" rows="*">
-      <!-- <StackLayout class="hello-world"> -->
+    <!-- <GridLayout colums="*" rows="*"> -->
+    <StackLayout class="hello-world">
       <Button class="btn btn-primary" text="跳转" @tap="onButton" />
-      <!-- </StackLayout> -->
-    </GridLayout>
+    </StackLayout>
+    <!-- </GridLayout> -->
   </Page>
 </template>
 
