@@ -14,7 +14,7 @@
 // Global SCSS styling
 // @see https://docs.nativescript.org/ui/styling
 
-@import './css/animate.css';
+@import './assets/css/animate.css';
 
 .bold {
   font-family: 'Assistant-Bold', 'Assistant';
@@ -33,10 +33,4 @@
   vertical-align: center;
   text-align: center;
   font-size: 20;
-}
-
-.iconfont{
-  font-family: iconfont;
-  font-size: 48;
-  color: white;
 }

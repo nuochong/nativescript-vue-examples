@@ -1,6 +1,6 @@
 <template>
   <Label
-    :class="type"
+    class="icon"
     :color="color"
     :fontSize="size"
     :text="name | fonticon"
@@ -34,6 +34,13 @@ export default {
       type: String,
       default: "fa"
     }
-  }
+  },
+  mounted() {
+    console.log('name：',this.name)
+    console.log('type：',this.type)
+  },
 };
 </script>
+<style scoped>
+
+</style>

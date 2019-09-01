@@ -5,10 +5,12 @@ var lib = require("./lib");
 var TNSFontIcon = (function () {
     function TNSFontIcon() {
     }
+    
     TNSFontIcon.loadCss = function () {
         var cnt = 0;
         var currentName;
         var fontIconCollections = Object.keys(TNSFontIcon.paths);
+        
         if (TNSFontIcon.debug) {
             console.log("Collections to load: " + fontIconCollections);
         }
@@ -24,8 +26,11 @@ var TNSFontIcon = (function () {
             var cssFile = file_system_1.knownFolders.currentApp().getFile(path);
             return new Promise(function (resolve, reject) {
                 cssFile.readText().then(function (data) {
+                  
                     var map = lib.mapCss(data, TNSFontIcon.debug);
                     TNSFontIcon.css[currentName] = map;
+                    console.log('过滤器键值对的值：',map)
+                    console.log('过滤器键值对的键：',currentName)
                     resolve();
                 }, function (err) {
                     reject(err);
@@ -48,6 +53,7 @@ var TNSFontIcon = (function () {
                 }
             });
         };
+        console.log('loadFiles',loadFiles())
         return loadFiles();
     };
     TNSFontIcon.css = {};
@@ -60,6 +66,8 @@ function fonticon(value) {
     if (value) {
         if (value.indexOf('-') > -1) {
             var prefix = value.split('-')[0];
+            console.log('用于查询icon数组TNSFontIcon.css的键值对：',prefix,value)
+            console.log('过滤器函数查询且要返回的值',TNSFontIcon.css[prefix][value])
             return TNSFontIcon.css[prefix][value];
         }
         else {
@@ -68,5 +76,6 @@ function fonticon(value) {
     }
     return value;
 }
+
 exports.fonticon = fonticon;
 //# sourceMappingURL=nativescript-fonticon.js.map

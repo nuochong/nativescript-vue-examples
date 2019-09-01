@@ -24,7 +24,7 @@ export default {
   mounted() {},
   methods: {
     btnToast: function() {
-      const toast = new Toasty({ text: 'Toast message' });
+      const toast = new Toasty({ text: '提示信息' });
       toast.show();
     }
   }
