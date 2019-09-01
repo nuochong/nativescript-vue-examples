@@ -5,102 +5,33 @@
   <GridLayout tkDrawerContent rows="auto, *" class="sidedrawer sidedrawer-left">
     <StackLayout row="0" class="sidedrawer-header">
       <Label class="sidedrawer-header-image fa" text="&#xf2bd;"></Label>
-      <Label class="sidedrawer-header-brand" text="User Name"></Label>
+      <Label class="sidedrawer-header-brand" text="用户名"></Label>
       <Label class="footnote" text="username@mail.com"></Label>
     </StackLayout>
 
     <ScrollView row="1">
       <StackLayout class="sidedrawer-content">
-        <GridLayout columns="auto, *" class="sidedrawer-list-item">
-          <Label col="0" text="&#xf015;" class="fa iconfont">&#xeb69;</Label>
-          <Label col="1" text="Home" class="p-r-10"></Label>
-        </GridLayout>
-        <GridLayout columns="auto, *" class="sidedrawer-list-item">
-          <Label col="0" text="&#xf015;" class="fa iconfont">&#xeb69;</Label>
-          <Label col="1" text="Home" class="p-r-10"></Label>
-        </GridLayout>
-        <GridLayout columns="auto, *" class="sidedrawer-list-item">
-          <Label col="0" text="&#xf015;" class="fa iconfont">&#xeb69;</Label>
-          <Label col="1" text="Home" class="p-r-10"></Label>
-        </GridLayout>
-        <GridLayout columns="auto, *" class="sidedrawer-list-item">
-          <Label col="0" text="&#xf015;" class="fa iconfont">&#xeb69;</Label>
-          <Label col="1" text="Home" class="p-r-10"></Label>
-        </GridLayout>
-        <GridLayout columns="auto, *" class="sidedrawer-list-item">
-          <Label col="0" text="&#xf015;" class="fa iconfont">&#xeb69;</Label>
-          <Label col="1" text="Home" class="p-r-10"></Label>
-        </GridLayout>
-        <GridLayout columns="auto, *" class="sidedrawer-list-item">
-          <Label col="0" text="&#xf015;" class="fa iconfont">&#xeb69;</Label>
-          <Label col="1" text="Home" class="p-r-10"></Label>
-        </GridLayout>
-        <GridLayout columns="auto, *" class="sidedrawer-list-item">
-          <Label col="0" text="&#xf015;" class="fa iconfont">&#xeb69;</Label>
-          <Label col="1" text="Home" class="p-r-10"></Label>
-        </GridLayout>
-
-        <GridLayout columns="auto, *" class="sidedrawer-list-item">
-          <Label col="0" text="&#xf1ea;" class="fa"></Label>
-          <Label col="1" text="Browse" class="p-r-10"></Label>
-        </GridLayout>
-
-        <GridLayout columns="auto, *" class="sidedrawer-list-item">
-          <Label col="0" text="&#xf002;" class="fa"></Label>
-          <Label col="1" text="Search" class="p-r-10"></Label>
-        </GridLayout>
-
-        <GridLayout columns="auto, *" class="sidedrawer-list-item">
-          <Label col="0" text="&#xf005;" class="fa"></Label>
-          <Label col="1" text="Featured" class="p-r-10"></Label>
-        </GridLayout>
-
-        <GridLayout columns="auto, *" class="sidedrawer-list-item">
-          <Label col="0" text="&#xf005;" class="fa"></Label>
-          <Label col="1" text="Featured" class="p-r-10"></Label>
-        </GridLayout>
-
-        <GridLayout columns="auto, *" class="sidedrawer-list-item">
-          <Label col="0" text="&#xf005;" class="fa"></Label>
-          <Label col="1" text="Featured" class="p-r-10"></Label>
-        </GridLayout>
-
-        <GridLayout columns="auto, *" class="sidedrawer-list-item">
-          <Label col="0" text="&#xf005;" class="fa"></Label>
-          <Label col="1" text="Featured" class="p-r-10"></Label>
-        </GridLayout>
-
-        <GridLayout columns="auto, *" class="sidedrawer-list-item">
-          <Label col="0" text="&#xf005;" class="fa"></Label>
-          <Label col="1" text="Featured" class="p-r-10"></Label>
-        </GridLayout>
-
+        <SidebarItem :img="'&#xf005;'" :title="'测试按钮'" />
+        <SidebarItem :img="'&#xf005;'" :title="'测试按钮'" />
+        <SidebarItem :img="'&#xf005;'" :title="'测试按钮'" />
+        <SidebarItem :img="'&#xf005;'" :title="'测试按钮'" />
+        <SidebarItem :img="'&#xf005;'" :title="'测试按钮'" />
+        <SidebarItem :img="'&#xf005;'" :title="'测试按钮'" />
+        <SidebarItem :img="'&#xf005;'" :title="'测试按钮'" />
         <StackLayout class="hr-light"></StackLayout>
-
-        <GridLayout columns="auto, *" class="sidedrawer-list-item">
-          <Label col="0" text="&#xf013;" class="fa"></Label>
-          <Label col="1" text="Settings" class="p-r-10"></Label>
-        </GridLayout>
-
-        <GridLayout columns="auto, *" class="sidedrawer-list-item">
-          <Label col="0" text="&#xf005;" class="fa"></Label>
-          <Label col="1" text="Featured" class="p-r-10"></Label>
-        </GridLayout>
-
-        <GridLayout columns="auto, *" class="sidedrawer-list-item">
-          <Label col="0" text="&#xf005;" class="fa"></Label>
-          <Label col="1" text="Featured" class="p-r-10"></Label>
-        </GridLayout>
-
-        <GridLayout columns="auto, *" class="sidedrawer-list-item">
-          <Label col="0" text="&#xf005;" class="fa"></Label>
-          <Label col="1" text="Featured" class="p-r-10"></Label>
-        </GridLayout>
-
-        <GridLayout columns="auto, *" class="sidedrawer-list-item">
-          <Label col="0" text="&#xf005;" class="fa"></Label>
-          <Label col="1" text="Featured" class="p-r-10"></Label>
-        </GridLayout>
+        <SidebarItem :img="'&#xf005;'" :title="'测试按钮'" />
+        <SidebarItem :img="'&#xf005;'" :title="'测试按钮'" />
+        <SidebarItem :img="'&#xf005;'" :title="'测试按钮'" />
+        <SidebarItem :img="'&#xf005;'" :title="'测试按钮'" />
+        <SidebarItem :img="'&#xf005;'" :title="'测试按钮'" />
+        <SidebarItem :img="'&#xf005;'" :title="'测试按钮'" />
+        <SidebarItem :img="'&#xf005;'" :title="'测试按钮'" />
+        <SidebarItem :img="'&#xf005;'" :title="'测试按钮'" />
+        <StackLayout class="hr-light"></StackLayout>
+        <SidebarItem :img="'&#xf005;'" :title="'测试按钮'" />
+        <SidebarItem :img="'&#xf005;'" :title="'测试按钮'" />
+        <SidebarItem :img="'&#xf005;'" :title="'测试按钮'" />
+        <SidebarItem :img="'&#xf005;'" :title="'测试按钮'" />
       </StackLayout>
     </ScrollView>
   </GridLayout>
@@ -109,11 +40,13 @@
 </template>
 
 <script>
+import SidebarItem from './sidebar-item';
 //import ActionBarSecond from './public/action-bar-second';
 
 export default {
   components: {
-    //ActionBarSecond
+    //ActionBarSecond,
+    SidebarItem
   },
   props: ['drawer'],
   data() {

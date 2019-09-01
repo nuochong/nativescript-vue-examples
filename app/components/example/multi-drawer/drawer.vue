@@ -10,23 +10,23 @@
     <GridLayout colums="*" rows="*">
       <MultiDrawer ref="drawer" v-model="drawerState">
         <StackLayout slot="left">
+          <!-- <Label text="我在左边的抽屉里" /> -->
+          <Sidebar></Sidebar>          
+        </StackLayout>
+        <StackLayout slot="right">
+          <Label text="我在右边的抽屉里" />
           <ListView for="item in listOfItems">
             <v-template>
               <!-- Shows the list item label in the default color and style. -->
               <Label :text="item.text" />
             </v-template>
           </ListView>
-          <Label text="Im in the left drawer" />
-        </StackLayout>
-        <StackLayout slot="right">
-          <Label text="Im in the right drawer" />
-          <Sidebar></Sidebar>
         </StackLayout>
         <StackLayout slot="top">
-          <Label text="Im in the top drawer" />
+          <Label text="我在上边的抽屉里" />
         </StackLayout>
         <StackLayout slot="bottom">
-          <Label text="Im in the bottom drawer" />
+          <Label text="我在下边的抽屉里" />
         </StackLayout>
 
         <Frame />
