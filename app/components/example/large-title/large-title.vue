@@ -61,28 +61,23 @@ export default {
 // .page {
 //   background-color: #f7f7f7;
 // }
-
 .container {
   margin-top: 0;
 }
-
 // .content {
 //   background-color: #fff;
 //   padding: 20;
 //   font-size: 20;
 // }
-
-// .action-bar {
-//   background-color: #f7f7f7;
-//   border-width: 0;
-//   margin-bottom: 0;
-// }
-
-// .action-bar label {
-//   font-weight: bold;
-//   opacity: 0;
-// }
-
+.action-bar {
+  // background-color: #f7f7f7;
+  // border-width: 0;
+  // margin-bottom: 0;
+  label {
+    font-weight: bold;
+    opacity: 0;
+  }
+}
 .header {
   margin-top: 0;
   margin-bottom: 0;
@@ -94,27 +89,23 @@ export default {
   padding-right: 16;
   border-bottom-width: 1;
   border-bottom-color: rgba(0, 0, 0, 0.2);
+  label {
+    font-size: 36;
+    font-weight: bold;
+    margin-left: 20;
+  }
 }
-
-.header label {
-  font-size: 36;
-  font-weight: bold;
-  margin-left: 20;
-}
-
 .description-label {
   margin-bottom: 16;
   line-height: 3;
   color: rgba(0, 0, 0, 0.87);
 }
-
 .hidden {
   animation-name: show;
   animation-duration: 0.2;
   animation-fill-mode: forwards;
   animation-direction: reverse;
 }
-
 .visible {
   animation-name: show;
   animation-duration: 0.2;
