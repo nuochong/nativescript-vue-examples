@@ -4,7 +4,7 @@
 
     <FlexboxLayout class="page page-login" backgroundImage="res://mesh">
       <StackLayout class="flexbox-item company-name-container">
-        <Label class="t-30 company-name" text="这里是公司名称"></Label>
+        <Label class="t-30 company-name" text="公司名称"></Label>
       </StackLayout>
       <Image src="res://company_logo" stretch="none" class="company-logo" />
       <StackLayout class="flexbox-item">
