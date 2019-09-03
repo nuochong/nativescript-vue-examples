@@ -1,5 +1,3 @@
-# nativescript-vue-examples
-
 # NSVue Examples
 
 > A native application built with NativeScript-Vue
