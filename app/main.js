@@ -39,12 +39,11 @@ Vue.use(Dialog, {
 Vue.registerElement('PullToRefresh', () => require('@nstudio/nativescript-pulltorefresh').PullToRefresh);
 
 import FontIcon from './tools/nativescript-vue-fonticon';
-
 Vue.use(FontIcon, {
   // 可选,组件图标名称。
   componentName: 'FIcon',
   //可选。将css映射输出到控制台。
-  //debug: true,
+  debug: false,
   paths: {
     fa: './fonts/font-awesome.css',
     icon: './fonts/iconfont.css',
