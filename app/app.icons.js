@@ -1,7 +1,6 @@
 const observable = require('tns-core-modules/data/observable');
 
 const initIcons = function() {
-  //let page = this.$refs.page.nativeView;
   let viewModel = new observable.Observable();
   let glyphs = new Array();
   //let glyphs = new observable.Observable();
@@ -11,7 +10,7 @@ const initIcons = function() {
     glyph.set('icon', String.fromCharCode(charCode));
     glyph.set('code', charCode.toString(16));
     glyph.set(charCode.toString(16), String.fromCharCode(charCode));
-    console.log('xxx', glyph);
+    //console.log('xxx', glyph);
     glyphs.push(glyph);
     //viewModel.set(charCode.toString(16), String.fromCharCode(charCode));
   }

@@ -40,7 +40,7 @@ export default {
   data() {
     return {
       title: '图标插件',
-      icons: [0, 1, 2, 3, 4, 5],
+      icons: [0],
       content:
         '目前icon图标仅支持ttf格式，其它还不支持，以上的插件nativescript-vue-fonticon及nativescript-fonticon都有bug，需要修改，如果只使用官方推荐的IcoMoon和Font Awesome则不回出现bug。'
     };

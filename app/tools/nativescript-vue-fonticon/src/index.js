@@ -8,7 +8,7 @@ const install = (Vue, { componentName, debug = false, paths = {} } = {}) => {
   TNSFontIcon.loadCss();
 
   Vue.component(componentName || FontIcon.name, FontIcon);
-  console.dir('过滤器函数：', fonticon);
+  //console.dir('过滤器函数：', fonticon);
   Vue.filter('fonticon', fonticon);
 };
 
