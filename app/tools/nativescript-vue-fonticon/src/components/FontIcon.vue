@@ -26,13 +26,14 @@ export default {
 
     size: {
       type: [String, Number],
-      default: 15,
+      //这里不能设置默认值，行内样式的权重大于class，否则在class中的样式就没有效果。
+      //default: 15,
       validation: s => !isNaN(s)
     },
 
     type: {
-      type: String,
-      default: 'fa'
+      type: String
+      //default: 'fa'
     }
   },
   mounted() {

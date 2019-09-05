@@ -21,7 +21,7 @@
             <!--直接使用vue的过滤器加载原生nativescript-fonticon插件的过滤方法-->
             <!-- <Label class="iconfont" :text="'icon-guanlianshebei' | fonticon"></Label>  -->
             <!--直接使用nativescript-vue-fonticon的组件形式引入icon-->
-            <FIcon name="fa-heart" type="fa"/>
+            <FIcon name="fa-heart" type="fa" size="48" />
             <FIcon name="icon-guanlianshebei" type="icon" />
           </GridLayout>
         </v-template>
@@ -51,14 +51,16 @@ export default {
 </script>
 
 <style scoped lang="scss">
+//颜色值不能添加权重符号!important,会导致设置颜色无效。
+//通过size属性设置的行内样式权重高于class样式，设置完成后后退重新进入该页面才能显示样式。
 .fa {
   font-family: 'font-awesome';
-  font-size: 48;
+  font-size: 24;
   color: green;
 }
 .icon {
   font-family: 'iconfont';
-  font-size: 48;
+  font-size: 96;
   color: white;
 }
 </style>
