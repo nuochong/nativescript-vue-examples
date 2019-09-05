@@ -27,9 +27,7 @@
 export default {
   props: ['title'],
   data() {
-    return {
-      title: ''
-    };
+    return {};
   },
   mounted() {},
   methods: {
