@@ -21,7 +21,7 @@
             <!--直接使用vue的过滤器加载原生nativescript-fonticon插件的过滤方法-->
             <!-- <Label class="iconfont" :text="'icon-guanlianshebei' | fonticon"></Label>  -->
             <!--直接使用nativescript-vue-fonticon的组件形式引入icon-->
-            <FIcon name="fa-heart" type="fa" size="48" />
+            <FIcon name="fa-weixin" type="fa" size="48" />
             <FIcon name="icon-guanlianshebei" type="icon" />
           </GridLayout>
         </v-template>

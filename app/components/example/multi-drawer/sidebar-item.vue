@@ -1,7 +1,9 @@
 <template>
   <GridLayout columns="auto, *" class="sidedrawer-list-item" @tap="btnDarwerItem">
     <!-- <Label col="0" :text="img" class="fa"></Label> -->
-    <FIcon  :name="icon" type="fa" size="20"/>
+    <!-- <FIcon name="fa-weixin" type="fa" size="20"/> -->
+    <!-- <Label class="fa" :text="'fa-weixin' | fonticon"></Label>  -->
+    <Label col="0" class="fa" :text="icon | fonticon"></Label>
     <Label col="1" :text="title" class="p-r-10"></Label>
   </GridLayout>
 </template>
@@ -9,12 +11,11 @@
 <script>
 export default {
   components: {},
-  props: [ 'icon','title'],
+  props: ['icon', 'title'],
   data() {
-    return {
-      //icon:'fa-heart'
-    };
+    return {};
   },
+  mounted() {},
   methods: {
     btnDarwerItem: function() {
       console.log('点击了侧栏按钮');
@@ -24,7 +25,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
 .sidedrawer-list-item {
   padding-left: 15;
   label {
