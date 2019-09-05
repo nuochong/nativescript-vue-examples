@@ -62,7 +62,7 @@ exports.mapCss = function(data, debug) {
       }
     }
   }
-  console.log('map', map);
+  //console.log('map', map);
   return map;
 };
 //fix:regular bug

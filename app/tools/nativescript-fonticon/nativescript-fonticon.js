@@ -53,7 +53,7 @@ var TNSFontIcon = (function () {
                 }
             });
         };
-        console.log('loadFiles',loadFiles())
+        //console.log('loadFiles',loadFiles())
         return loadFiles();
     };
     TNSFontIcon.css = {};

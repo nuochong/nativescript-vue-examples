@@ -46,8 +46,9 @@ Vue.use(FontIcon, {
   //可选。将css映射输出到控制台。
   //debug: true,
   paths: {
+    fa: './fonts/font-awesome.css',
     icon: './fonts/iconfont.css',
-    fa: './fonts/font-awesome.css'
+    //fa: './fonts/fontawesome.css'
   }
 });
 

@@ -1,6 +1,6 @@
 <template>
   <Label
-    class="icon"
+    :class="type"
     :color="color"
     :fontSize="size"
     :text="name | fonticon"
@@ -12,7 +12,7 @@
 
 <script>
 export default {
-  name: "FontIcon",
+  name: 'FontIcon',
 
   props: {
     color: {
@@ -32,15 +32,14 @@ export default {
 
     type: {
       type: String,
-      default: "fa"
+      default: 'fa'
     }
   },
   mounted() {
-    console.log('name：',this.name)
-    console.log('type：',this.type)
-  },
+    console.log('name：', this.name);
+    console.log('type：', this.type);
+  }
 };
 </script>
 <style scoped>
-
 </style>
