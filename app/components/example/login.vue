@@ -30,14 +30,7 @@ export default {
   mounted() {},
   methods: {
     login: function() {
-      this.$navigateTo(Counter, {
-        animated: true,
-        transition: {
-          name: 'slide',
-          duration: 380,
-          curve: 'spring'
-        }
-      });
+      this.navigateTo(this, Counter, 'bounce');
     }
   }
 };
