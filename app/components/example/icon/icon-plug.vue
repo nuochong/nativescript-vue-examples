@@ -61,7 +61,7 @@ export default {
 }
 .icon {
   font-family: 'iconfont';
-  font-size: 48;
+  font-size: 96;
   color: white;
 }
 </style>
