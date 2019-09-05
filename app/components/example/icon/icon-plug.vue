@@ -40,7 +40,7 @@ export default {
   data() {
     return {
       title: '图标插件',
-      icons: [0],
+      icons: [0, 1],
       content:
         '目前icon图标仅支持ttf格式，其它还不支持，以上的插件nativescript-vue-fonticon及nativescript-fonticon都有bug，需要修改，如果只使用官方推荐的IcoMoon和Font Awesome则不回出现bug。'
     };
@@ -53,7 +53,8 @@ export default {
 <style scoped lang="scss">
 //颜色值不能添加权重符号!important,会导致设置颜色无效。
 //通过size属性设置的行内样式权重高于class样式，设置完成后后退重新进入该页面才能显示样式。
-//如果只是单单使用同一种设置方法，那么修改该设置方法的样式是可以快速热更新，不必退出刷新页面。
+//如果只是单单使用同样式方法，那么修改该设置方法的样式是可以快速热更新，不必退出刷新页面。
+//如果使用了行内样式，即vue传值，就需要刷新页面才能看到更改后的效果。
 .fa {
   font-family: 'font-awesome';
   font-size: 24;
