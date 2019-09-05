@@ -25,7 +25,7 @@ export default {
   },
   methods: {
     onButton: function() {
-      this.$navigateTo(world);
+      this.navigateTo(this, world);
     }
   }
 };

@@ -27,12 +27,20 @@
 export default {
   props: ['title'],
   data() {
-    return {};
+    return {
+      isEditing: false
+    };
   },
   mounted() {},
   methods: {
     onTapEdit: function() {
       console.log('安卓导航栏编辑按钮被点击了');
+    },
+    onTapSave: function() {
+      console.log('安卓导航栏保存按钮被点击了');
+    },
+    onTapCancel: function() {
+      console.log('安卓导航栏放弃按钮被点击了');
     }
   }
 };
