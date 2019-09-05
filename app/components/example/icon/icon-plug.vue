@@ -53,6 +53,7 @@ export default {
 <style scoped lang="scss">
 //颜色值不能添加权重符号!important,会导致设置颜色无效。
 //通过size属性设置的行内样式权重高于class样式，设置完成后后退重新进入该页面才能显示样式。
+//如果只是单单使用同一种设置方法，那么修改该设置方法的样式是可以快速热更新，不必退出刷新页面。
 .fa {
   font-family: 'font-awesome';
   font-size: 24;
@@ -60,7 +61,7 @@ export default {
 }
 .icon {
   font-family: 'iconfont';
-  font-size: 96;
+  font-size: 48;
   color: white;
 }
 </style>
