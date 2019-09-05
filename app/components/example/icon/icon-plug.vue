@@ -3,7 +3,7 @@
     <ActionBarSecond :title="title" />
 
     <ScrollView>
-      <ListView for="(item,index) in icons" class="list-group">
+      <ListView for="(item,index) in icons" class="list-group" ref="lv">
         <v-template>
           <GridLayout class="list-group-item" rows="*" columns="auto, *">
             <!--原生nativescript旧方法，已经不能使用-->
@@ -32,6 +32,7 @@
 
 <script>
 import ActionBarSecond from '../public/action-bar-second';
+import { log } from 'util';
 
 export default {
   components: {
@@ -45,7 +46,9 @@ export default {
         '目前icon图标仅支持ttf格式，其它还不支持，以上的插件nativescript-vue-fonticon及nativescript-fonticon都有bug，需要修改，如果只使用官方推荐的IcoMoon和Font Awesome则不回出现bug。'
     };
   },
-  mounted() {},
+  mounted() {
+    console.log('xxxx',this.$refs.lv.nativeView)
+  },
   methods: {}
 };
 </script>

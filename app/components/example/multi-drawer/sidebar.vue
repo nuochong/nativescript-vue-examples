@@ -4,34 +4,34 @@
   <!-- <RadSideDrawer [drawerTransition]="sideDrawerTransition"> -->
   <GridLayout tkDrawerContent rows="auto, *" class="sidedrawer sidedrawer-left">
     <StackLayout row="0" class="sidedrawer-header">
-      <Label class="sidedrawer-header-image fa" text="&#xf2bd;"></Label>
+      <!-- <Label class="sidedrawer-header-image fa" text="&#xf2bd;"></Label> -->
+      <Image class="sidedrawer-header-image" src="~/assets/images/example/multi-drawer/head.jpg" />
       <Label class="sidedrawer-header-brand" text="用户名"></Label>
       <Label class="footnote" text="username@mail.com"></Label>
     </StackLayout>
 
     <ScrollView row="1">
       <StackLayout class="sidedrawer-content">
-        <SidebarItem :img="'&#xf005;'" :title="'测试按钮'" />
-        <SidebarItem :img="'&#xf005;'" :title="'测试按钮'" />
-        <SidebarItem :img="'&#xf005;'" :title="'测试按钮'" />
-        <SidebarItem :img="'&#xf005;'" :title="'测试按钮'" />
-        <SidebarItem :img="'&#xf005;'" :title="'测试按钮'" />
-        <SidebarItem :img="'&#xf005;'" :title="'测试按钮'" />
-        <SidebarItem :img="'&#xf005;'" :title="'测试按钮'" />
+        <SidebarItem :icon="'fa-heart'" :title="'测试按钮'" />
+        <SidebarItem :icon="'fa-twitter'" :title="'测试按钮'" />
+        <SidebarItem :icon="'fa-weixin'" :title="'测试按钮'" />
+        <SidebarItem :icon="'fa-user'" :title="'测试按钮'" />
+        <SidebarItem :icon="'fa-film'" :title="'测试按钮'" />
+        <SidebarItem :icon="'fa-music'" :title="'测试按钮'" />
+        <SidebarItem :icon="'fa-search'" :title="'测试按钮'" />
+        <SidebarItem :icon="'fa-envelope-o'" :title="'测试按钮'" />
         <StackLayout class="hr-light"></StackLayout>
-        <SidebarItem :img="'&#xf005;'" :title="'测试按钮'" />
-        <SidebarItem :img="'&#xf005;'" :title="'测试按钮'" />
-        <SidebarItem :img="'&#xf005;'" :title="'测试按钮'" />
-        <SidebarItem :img="'&#xf005;'" :title="'测试按钮'" />
-        <SidebarItem :img="'&#xf005;'" :title="'测试按钮'" />
-        <SidebarItem :img="'&#xf005;'" :title="'测试按钮'" />
-        <SidebarItem :img="'&#xf005;'" :title="'测试按钮'" />
-        <SidebarItem :img="'&#xf005;'" :title="'测试按钮'" />
+        <SidebarItem :icon="'fa-star'" :title="'测试按钮'" />
+        <SidebarItem :icon="'fa-star-o'" :title="'测试按钮'" />
+        <SidebarItem :icon="'fa-th-large'" :title="'测试按钮'" />
+        <SidebarItem :icon="'fa-th'" :title="'测试按钮'" />
+        <SidebarItem :icon="'fa-th-list'" :title="'测试按钮'" />
+        <SidebarItem :icon="'fa-check'" :title="'测试按钮'" />
+        <SidebarItem :icon="'fa-remove'" :title="'测试按钮'" />
         <StackLayout class="hr-light"></StackLayout>
-        <SidebarItem :img="'&#xf005;'" :title="'测试按钮'" />
-        <SidebarItem :img="'&#xf005;'" :title="'测试按钮'" />
-        <SidebarItem :img="'&#xf005;'" :title="'测试按钮'" />
-        <SidebarItem :img="'&#xf005;'" :title="'测试按钮'" />
+        <SidebarItem :icon="'fa-home'" :title="'测试按钮'" />
+        <SidebarItem :icon="'fa-search-plus'" :title="'测试按钮'" />
+        <SidebarItem :icon="'fa-inbox'" :title="'测试按钮'" />
       </StackLayout>
     </ScrollView>
   </GridLayout>
@@ -50,9 +50,7 @@ export default {
   },
   props: ['drawer'],
   data() {
-    return {
-      title: ''
-    };
+    return {};
   },
   methods: {
     onButton: function() {
@@ -63,6 +61,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+$main-theme-color: #53ba82;
 .fa {
   font-family: 'FontAwesome';
 }
@@ -84,7 +83,7 @@ export default {
 .sidedrawer {
   margin-bottom: -100;
   &.sidedrawer-left {
-    background-color: #3a53ff;
+    background-color: $main-theme-color;
     .sidedrawer-header-image {
       color: #f8f8f8;
       height: 60;
@@ -99,7 +98,7 @@ export default {
     }
   }
   .sidedrawer-header {
-    background-color: #3a53ff;
+    background-color: $main-theme-color;
     .sidedrawer-header-brand {
       color: #fff;
     }
