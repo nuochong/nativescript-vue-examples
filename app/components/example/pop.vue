@@ -45,7 +45,7 @@ export default {
   },
   data() {
     return {
-      title: '自定义弹出框',
+      title: '自定义弹出框'
     };
   },
   mounted() {

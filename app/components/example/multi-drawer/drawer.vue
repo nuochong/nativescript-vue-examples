@@ -11,7 +11,7 @@
       <MultiDrawer ref="drawer" v-model="drawerState">
         <StackLayout slot="left">
           <!-- <Label text="我在左边的抽屉里" /> -->
-          <Sidebar></Sidebar>          
+          <Sidebar></Sidebar>
         </StackLayout>
         <StackLayout slot="right">
           <Label text="我在右边的抽屉里" />

@@ -44,10 +44,10 @@ Vue.registerElement('RadSideDrawer', () => require('nativescript-ui-sidedrawer')
 //注册下拉刷新
 Vue.registerElement('PullToRefresh', () => require('@nstudio/nativescript-pulltorefresh').PullToRefresh);
 
-//检测是否支持AppShortcus
-shortcuts.isSuppertAppShortcus();
 //初始化icons
 Vue.prototype.$icon = icons.initIcons();
+//检测是否支持AppShortcus
+shortcuts.isSuppertAppShortcus();
 
 new Vue({
   store,

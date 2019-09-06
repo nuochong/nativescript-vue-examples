@@ -9,11 +9,7 @@
 
       <AbsoluteLayout class="dialog-wrapper">
         <StackLayout class="dialog">
-          <Label
-            class="h3"
-            textWrap="true"
-            text="您确定要与他人共享数据吗?"
-          ></Label>
+          <Label class="h3" textWrap="true" text="您确定要与他人共享数据吗?"></Label>
           <Button class="btn btn-primary" text="共享"></Button>
           <Button class="btn btn-outline" text="取消" @tap="closeDialog"></Button>
         </StackLayout>

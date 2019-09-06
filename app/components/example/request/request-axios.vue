@@ -26,7 +26,8 @@ export default {
   },
   data() {
     return {
-      title: 'NSVue Axios'
+      title: 'NSVue Axios',
+      data: ''
     };
   },
   methods: {

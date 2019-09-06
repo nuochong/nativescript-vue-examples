@@ -171,5 +171,4 @@ export default {
   font-size: 20;
   margin-bottom: 10;
 }
-
 </style>
