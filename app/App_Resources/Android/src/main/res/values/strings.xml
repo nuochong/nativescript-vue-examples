@@ -1,8 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <resources>
-    <string name="app_name">NSVue Examples</string>
-    <string name="title_activity_kimera">NSVue Examples</string>
-	<string name="shortcut_disabled_message1">111</string> 
-    <string name="shortcut_long_label1">222</string> 
-    <string name="shortcut_short_label1">666</string>
+  <string name="app_name">NSVue Examples</string>
+  <string name="title_activity_kimera">NSVue Examples</string>
+
+  <string name="shortcut_disabled_message1">功能1-disabled</string>
+  <string name="shortcut_long_label1">功能1-long</string>
+  <string name="shortcut_short_label1">功能1-short</string>
+
+  <string name="shortcut_disabled_message2">功能2-disabled</string>
+  <string name="shortcut_long_label2">功能2-long</string>
+  <string name="shortcut_short_label2">功能2-short</string>
+
+  <string name="shortcut_disabled_message3">功能3-disabled</string>
+  <string name="shortcut_long_label3">功能3-long</string>
+  <string name="shortcut_short_label3">功能3-short</string>
 </resources>

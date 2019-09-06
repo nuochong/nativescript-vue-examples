@@ -2,44 +2,44 @@
 <shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
 
   <shortcut
-      android:shortcutId="compose"
-      android:enabled="true"
-      android:icon="@drawable/icon"
-      android:shortcutShortLabel="@string/shortcut_short_label1"
-      android:shortcutLongLabel="@string/shortcut_long_label1"
-      android:shortcutDisabledMessage="@string/shortcut_disabled_message1">
+    android:shortcutId="shortcut1"
+    android:enabled="true"
+    android:icon="@drawable/icon"
+    android:shortcutShortLabel="@string/shortcut_short_label1"
+    android:shortcutLongLabel="@string/shortcut_long_label1"
+    android:shortcutDisabledMessage="@string/shortcut_disabled_message1">
     <intent
-        android:action="shortcut.type.compose"
-        android:targetPackage="org.nativescript.application"
-        android:targetClass="com.tns.NativeScriptActivity"/>
+      android:action="shortcut.type.shortcut1"
+      android:targetPackage="org.nativescript.application"
+      android:targetClass="com.tns.NativeScriptActivity"/>
     <categories android:name="android.shortcut.conversation"/>
   </shortcut>
 
   <shortcut
-      android:shortcutId="test"
-      android:enabled="true"
-      android:icon="@drawable/icon"
-      android:shortcutShortLabel="@string/shortcut_short_label1"
-      android:shortcutLongLabel="@string/shortcut_long_label1"
-      android:shortcutDisabledMessage="@string/shortcut_disabled_message1">
+    android:shortcutId="shortcut2"
+    android:enabled="true"
+    android:icon="@drawable/icon"
+    android:shortcutShortLabel="@string/shortcut_short_label2"
+    android:shortcutLongLabel="@string/shortcut_long_label2"
+    android:shortcutDisabledMessage="@string/shortcut_disabled_message2">
     <intent
-        android:action="shortcut.type.test"
-        android:targetPackage="org.nativescript.application"
-        android:targetClass="com.tns.NativeScriptActivity"/>
+      android:action="shortcut.type.shortcut2"
+      android:targetPackage="org.nativescript.application"
+      android:targetClass="com.tns.NativeScriptActivity"/>
     <categories android:name="android.shortcut.conversation"/>
   </shortcut>
 
   <shortcut
-      android:shortcutId="you"
-      android:enabled="true"
-      android:icon="@drawable/icon"
-      android:shortcutShortLabel="@string/shortcut_short_label1"
-      android:shortcutLongLabel="@string/shortcut_long_label1"
-      android:shortcutDisabledMessage="@string/shortcut_disabled_message1">
+    android:shortcutId="shortcut3"
+    android:enabled="true"
+    android:icon="@drawable/icon"
+    android:shortcutShortLabel="@string/shortcut_short_label3"
+    android:shortcutLongLabel="@string/shortcut_long_label3"
+    android:shortcutDisabledMessage="@string/shortcut_disabled_message3">
     <intent
-        android:action="shortcut.type.you"
-        android:targetPackage="org.nativescript.application"
-        android:targetClass="com.tns.NativeScriptActivity"/>
+      android:action="shortcut.type.shortcut3"
+      android:targetPackage="org.nativescript.application"
+      android:targetClass="com.tns.NativeScriptActivity"/>
     <categories android:name="android.shortcut.conversation"/>
   </shortcut>
 
