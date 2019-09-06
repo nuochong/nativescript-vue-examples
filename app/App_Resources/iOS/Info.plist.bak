@@ -42,28 +42,6 @@
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
-  </array>
-  
-  <key>UIApplicationShortcutItems</key>
-  <array>
-    <dict>
-      <key>UIApplicationShortcutItemIconFile</key>
-      <string>Eye</string>
-      <key>UIApplicationShortcutItemTitle</key>
-      <string>Eye from plist</string>
-      <key>UIApplicationShortcutItemSubtitle</key>
-      <string>Awesome subtitle</string>
-      <key>UIApplicationShortcutItemType</key>
-      <string>eyefromplist</string>
-    </dict>
-    <dict>
-      <key>UIApplicationShortcutItemIconType</key>
-      <string>UIApplicationShortcutIconTypeCompose</string>
-      <key>UIApplicationShortcutItemTitle</key>
-      <string>Compose</string>
-      <key>UIApplicationShortcutItemType</key>
-      <string>compose</string>
-    </dict>
-  </array>
+	</array>
 </dict>
 </plist>
