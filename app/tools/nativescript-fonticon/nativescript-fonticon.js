@@ -26,11 +26,10 @@ var TNSFontIcon = (function () {
             var cssFile = file_system_1.knownFolders.currentApp().getFile(path);
             return new Promise(function (resolve, reject) {
                 cssFile.readText().then(function (data) {
-                  
                     var map = lib.mapCss(data, TNSFontIcon.debug);
                     TNSFontIcon.css[currentName] = map;
-                    console.log('过滤器键值对的值：',map)
-                    console.log('过滤器键值对的键：',currentName)
+                    //console.log('过滤器键值对的值：',map)
+                    //console.log('过滤器键值对的键：',currentName)
                     resolve();
                 }, function (err) {
                     reject(err);
@@ -68,7 +67,7 @@ function fonticon(value) {
             var prefix = value.split('-')[0];
             console.log('用于查询icon数组TNSFontIcon.css的键值对：',prefix,value)
             console.log('过滤器函数查询且要返回的值：',TNSFontIcon.css[prefix][value])
-            console.log('返回的过滤数组：',TNSFontIcon.css);
+            //console.log('返回的过滤数组：',TNSFontIcon.css);
             return TNSFontIcon.css[prefix][value];
         }
         else {
