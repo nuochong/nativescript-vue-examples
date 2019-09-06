@@ -16,7 +16,7 @@ import { isAndroid } from 'platform';
 import { getString } from 'application-settings'; // Example Only
 // import { log } from 'util';
 //import * as http from 'http';
-import ActionBarSecond from './public/action-bar-second';
+import ActionBarSecond from '../public/action-bar-second';
 
 export default {
   components: {

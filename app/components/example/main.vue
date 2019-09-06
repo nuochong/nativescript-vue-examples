@@ -34,7 +34,7 @@
         <Button class="btn btn-primary" text="下拉刷新" @tap="refresh" />
         <Button class="btn btn-primary" text="自定义下拉刷❤" @tap="refreshNew" />
         <Button class="btn btn-primary" text="触摸事件" @tap="touch" />
-        <Button class="btn btn-primary" text="请求" @tap="request" />
+        <Button class="btn btn-primary" text="请求" @tap="requestMain" />
         <Button class="btn btn-primary" text="获取全局数据" @tap="common" />
       </StackLayout>
       <!-- </GridLayout> -->
@@ -72,7 +72,7 @@ import Animate from './animate';
 import Refresh from './refresh';
 import RefreshNew from './refresh-new';
 import Touch from './touch';
-import Request from './request';
+import RequestMain from './request/request-main';
 
 import ActionBarSecond from './public/action-bar-second';
 
@@ -127,8 +127,8 @@ export default {
     btnChange: function() {
       this.navigateTo(this, ChangeBtn);
     },
-    request: function() {
-      this.navigateTo(this, Request);
+    requestMain: function() {
+      this.navigateTo(this, RequestMain);
     },
     touch: function() {
       this.navigateTo(this, Touch);
