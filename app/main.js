@@ -5,7 +5,7 @@ import store from './store';
 import CommonLocal from './assets/js/common.js';
 import shortcuts from './app.shortcuts.js';
 import icons from './app.icons.js';
-import axios from 'axios';
+import axios from './api/api';
 import VueAxios from 'vue-axios';
 //import { DrawerTransitionBase, RadSideDrawer, SlideInOnTopTransition } from "nativescript-ui-sidedrawer";
 import MultiDrawer from 'nativescript-vue-multi-drawer';
