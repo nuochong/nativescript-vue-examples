@@ -16,8 +16,7 @@ export default {
   components: {},
   props: ['content'],
   data() {
-    return {
-    };
+    return {};
   },
   methods: {}
 };

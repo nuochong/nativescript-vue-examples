@@ -182,10 +182,10 @@ export default {
     btnDisplay: function() {
       this.navigateTo(this, Display);
     },
-    btnQrcode:function(){
+    btnQrcode: function() {
       this.navigateTo(this, Qrcode);
     },
-    btnWebview:function(){
+    btnWebview: function() {
       this.navigateTo(this, Webview);
     }
   }

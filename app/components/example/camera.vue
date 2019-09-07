@@ -43,7 +43,7 @@ export default {
 
 <style scoped lang="scss">
 .camera-container {
-  background-color:beige;
+  background-color: beige;
 }
 .camera-img {
   horizontal-align: center;
