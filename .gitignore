@@ -1,7 +1,6 @@
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
-# vscode configuration
-*.vscode/
+# System
 *.DS_Store
 
 # Log files
@@ -24,3 +23,10 @@ yarn-error.log*
 # NativeScript application
 hooks
 platforms
+
+# Lock files
+package-lock.json
+yarn.lock
+
+# migration_backup
+.migration_backup
