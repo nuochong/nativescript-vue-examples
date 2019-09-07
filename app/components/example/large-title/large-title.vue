@@ -19,8 +19,6 @@
         </StackLayout>
         <StackLayout class="content">
           <Label textWrap="true" :text="content" class="description-label" />
-          <Label textWrap="true" :text="content" class="description-label" />
-          <Label textWrap="true" :text="content" class="description-label" />
         </StackLayout>
       </StackLayout>
     </ScrollView>

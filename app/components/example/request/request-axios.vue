@@ -5,7 +5,7 @@
     <StackLayout>
       <Button class="btn btn-primary" text="GET请求" @tap="axiosGet" />
       <Button class="btn btn-primary" text="POST请求" @tap="axiosPost" />
-      <RequestContent :content="data" />
+      <RequestContent :content="content" />
     </StackLayout>
   </Page>
 </template>
@@ -50,7 +50,7 @@ export default {
         .postTest(param, config)
         .then(response => {
           console.dir('axios获取的自定义post请求是：', response);
-          this.data = JSON.stringify(response);
+          this.content = JSON.stringify(response);
         })
         .catch(err => {
           console.log(err);
