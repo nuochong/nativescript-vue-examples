@@ -5,7 +5,7 @@
     <!-- <GridLayout colums="*" rows="*"> -->
     <StackLayout>
       <Button class="btn btn-primary" text="开始请求" @tap="onButton" />
-      <RequestContent :content="data" />
+      <RequestContent :content="content" />
     </StackLayout>
     <!-- </GridLayout> -->
   </Page>
@@ -14,9 +14,9 @@
 <script>
 import { Http } from '@billow/nsv-http';
 import { isAndroid } from 'platform';
-import { getString } from 'application-settings'; // Example Only
+import { getString } from 'application-settings';
 // import { log } from 'util';
-//import * as http from 'http';
+// import * as http from 'http';
 import RequestContent from './request-content';
 import ActionBarSecond from '../public/action-bar-second';
 
