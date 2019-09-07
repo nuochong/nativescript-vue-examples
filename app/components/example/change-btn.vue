@@ -20,21 +20,23 @@ export default {
       title: '改变按钮'
     };
   },
-  mounted() {},
+  mounted() {
+    let btn = this.$refs.btn.nativeView;
+    btn.on('tap', params => {
+      console.log('点击了按钮');
+    });
+  },
   methods: {
     changebtn: function() {
       let btn = this.$refs.btn.nativeView;
-      btn.color = 'blue';
-      //btn.background = "red";
+      btn.color = 'yellow';
+      btn.background = 'green';
       btn.fontSize = 50;
       btn.text = 'xxx';
-      btn.rotate = '10';
+      btn.rotate = '5';
       btn.opacity = 0.5;
       btn.padding = 10;
-      //console.log(btn._getNativeViewsCount());
-      // btn.on("tap", function(params) {
-      //   console.log("呵呵");
-      // });
+      console.log(btn._getNativeViewsCount());
     }
   }
 };
