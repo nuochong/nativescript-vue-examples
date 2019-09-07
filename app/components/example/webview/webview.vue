@@ -4,7 +4,7 @@
 
     <StackLayout class="hello-world">
       <Button class="btn btn-primary" @tap="open1" text="打开网页1" />
-      <Button class="btn btn-primary" @tap="open2" text="打开网页1" />
+      <Button class="btn btn-primary" @tap="open2" text="打开网页2" />
     </StackLayout>
   </Page>
 </template>
@@ -18,7 +18,7 @@ export default {
   },
   data() {
     return {
-      title:'网页',
+      title: '网页',
       url1: 'http://m.baidu.com',
       url2: 'http://m.baidu.com'
     };
