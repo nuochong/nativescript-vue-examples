@@ -17,6 +17,10 @@ import Example from './example/main';
 import Project from './project/main';
 import ActionBarFirst from './example/public/action-bar-first';
 import shortcuts from '../app.shortcuts.js';
+
+const Custom = require('../assets/js/transition/custom-transition');
+const CustomTransition = new Custom.CustomTransition(500, 'spring');
+
 export default {
   components: {
     ActionBarFirst
@@ -31,7 +35,22 @@ export default {
   },
   methods: {
     example: function() {
-      this.navigateTo(this, Example);
+      this.$navigateTo(Example, {
+        animated: true,
+        transition: {
+          name: 'CustomTransition',
+          duration: 1000,
+          instance: CustomTransition,
+          curve: 'spring'
+        }
+        // transitionAndroid: {
+        //   name: 'CustomTransition',
+        //   duration: 1000,
+        //   instance:transition,
+        //   curve: 'spring'
+        // },
+      });
+      //this.navigateTo(this, Example);
     },
     project: function() {
       this.navigateTo(this, Project);
