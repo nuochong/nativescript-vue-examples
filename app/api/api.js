@@ -1,11 +1,12 @@
 import axios from 'axios';
 
-// axios 配置
-axios.defaults.timeout = 5000; //响应时间
-axios.defaults.headers.post['Content-Type'] = 'application/json'; //配置请求头
-axios.defaults.headers.get['Content-Type'] = 'text/json'; //配置请求头
-axios.defaults.headers.delete['Content-Type'] = 'application/json'; //配置请求头
-axios.defaults.headers.put['Content-Type'] = 'application/json'; //配置请求头
+//配置响应时间
+axios.defaults.timeout = 5000;
+//配置请求头
+axios.defaults.headers.post['Content-Type'] = 'application/json';
+axios.defaults.headers.get['Content-Type'] = 'text/json';
+axios.defaults.headers.delete['Content-Type'] = 'application/json';
+axios.defaults.headers.put['Content-Type'] = 'application/json';
 
 const postBase = 'https://www.easy-mock.com/mock/5d60c006f81908124e0fcc23/example';
 const getBase = 'https://jsonplaceholder.typicode.com';
