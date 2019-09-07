@@ -1,6 +1,6 @@
 import Vue from 'nativescript-vue';
-import World from './components/example/target/world';
 import Toast from './components/example/toast';
+import World from './components/example/target/world';
 import FancyAlert from './components/example/fancy-alert';
 import { isIOS } from 'tns-core-modules/platform';
 
