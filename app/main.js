@@ -43,6 +43,8 @@ Vue.use(FontIcon, {
 Vue.registerElement('RadSideDrawer', () => require('nativescript-ui-sidedrawer').RadSideDrawer);
 //注册下拉刷新
 Vue.registerElement('PullToRefresh', () => require('@nstudio/nativescript-pulltorefresh').PullToRefresh);
+//注册扫码
+Vue.registerElement('BarcodeScanner', () => require('nativescript-barcodescanner').BarcodeScannerView)
 //初始化icons
 Vue.prototype.$icon = icons.initIcons();
 //检测是否支持AppShortcus

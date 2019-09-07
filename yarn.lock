@@ -3848,6 +3848,11 @@ nativescript-app-shortcuts@^2.1.0:
   resolved "https://registry.yarnpkg.com/nativescript-app-shortcuts/-/nativescript-app-shortcuts-2.1.0.tgz#5772f4527bf4e2fb1bc3615de1e213603e2b18bc"
   integrity sha1-V3L0Unv04vsbw2Fd4eITYD4rGLw=
 
+nativescript-barcodescanner@^3.2.2:
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/nativescript-barcodescanner/-/nativescript-barcodescanner-3.2.2.tgz#2a93c2ffe84f1740ddbaf9e9be92b88da960a497"
+  integrity sha512-FHt00E6wATZEWlcaFexwYfO9iYu7NABZ8CVCfopH4pLTF9vZ2pH6vrk1RjJQKdcHBFaOsLnE7J5pEqGVemeFYw==
+
 nativescript-camera@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/nativescript-camera/-/nativescript-camera-4.5.0.tgz#92260208cb34e1df5760c66ad16725edf6fbfffd"
