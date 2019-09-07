@@ -31,6 +31,7 @@ export default {
   },
   data() {
     return {
+      title: '扫码',
       readme: 'https://github.com/eddyverbruggen/nativescript-barcodescanner'
     };
   },
