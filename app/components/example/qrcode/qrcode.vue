@@ -42,9 +42,9 @@ export default {
       barcodescanner
         .scan({
           formats: 'QR_CODE', // 如果你想把扫描限制在某些类型：PDF_417
-          cancelLabel: 'EXIT. Also, try the volume buttons!', // 只有iOS，默认“关闭”
+          cancelLabel: '退出。还有，试试音量按钮!', // 只有iOS，默认“关闭”
           cancelLabelBackgroundColor: '#333333', // 只有iOS，默认 '#000000' (black)
-          message: 'Use the volume buttons for extra light', // 只有Android, 默认是 '在取景器矩形内放置条形码进行扫描。'
+          message: '使用音量按钮增加亮度', // 只有Android, 默认是 '在取景器矩形内放置条形码进行扫描。'
           showFlipCameraButton: true, // 默认 false
           preferFrontCamera: false, // 默认 false
           showTorchButton: true, // 默认 false
