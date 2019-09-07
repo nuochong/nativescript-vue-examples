@@ -4,7 +4,9 @@
 
     <StackLayout class="hello-world">
       <GridLayout>
-        <WebView src="<div style='text-align:center'><h1>自定义HTML内容</h1><button type='button' onclick='alert(`Hello World!`)'>按钮</button></div>" />
+        <WebView
+          src="<div style='text-align:center'><h1>自定义HTML内容</h1><button type='button' onclick='alert(`Hello World!`)'>按钮</button></div>"
+        />
       </GridLayout>
     </StackLayout>
   </Page>
@@ -19,7 +21,7 @@ export default {
   },
   data() {
     return {
-      title: '显示自定义html内容',
+      title: '显示自定义html内容'
     };
   },
   mounted() {},
