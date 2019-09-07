@@ -20,7 +20,6 @@ export default {
   data() {
     return {
       title: '相机',
-      iconsrc: 'res://icon',
       img: '~/assets/images/project/johndoe.jpg'
     };
   },
