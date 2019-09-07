@@ -5,7 +5,7 @@
     <StackLayout class="hello-world">
       <Label textWrap="true" text="这是一个扫描二维码的演示" />
       <Button class="btn btn-primary" text="扫描二维码" @tap="scan" />
-      <Image src="~/assets/images/NativeScript-Vue.png" />
+      <!-- <Image src="~/assets/images/NativeScript-Vue.png" /> -->
       <BarcodeScanner
         row="1"
         height="300"
