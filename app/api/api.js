@@ -7,14 +7,14 @@ axios.defaults.headers.get['Content-Type'] = 'text/json'; //配置请求头
 axios.defaults.headers.delete['Content-Type'] = 'application/json'; //配置请求头
 axios.defaults.headers.put['Content-Type'] = 'application/json'; //配置请求头
 
+const postBase = 'https://www.easy-mock.com/mock/5d60c006f81908124e0fcc23/example';
+const getBase = 'https://jsonplaceholder.typicode.com';
 // 当实例创建时设置默认配置
-//const base = process.env.API_HOST + '/api/xxx/';
-axios.defaults.baseURL = 'https://www.easy-mock.com/mock/5d60c006f81908124e0fcc23/example';
+//axios.defaults.baseURL = 'https://www.easy-mock.com/mock/5d60c006f81908124e0fcc23/example';
 
 export default {
-  //getTest: params => axios.get(`${base}disease_menu`,params),
-  postTest: params => axios.post(`/upload`, params)
-  // diseaseList: params => axios.get(`${base}disease_list`,params),
+  getTest: params => axios.get(`${getBase}/posts`, params),
+  postTest: params => axios.post(`${postBase}/upload`, params)
 };
 
 //http request 拦截器
