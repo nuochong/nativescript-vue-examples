@@ -3,7 +3,9 @@
     <ActionBarSecond :title="title" />
 
     <StackLayout class="hello-world">
-      <WebView :src="url2" />
+      <GridLayout>
+        <WebView :src="url2" />
+      </GridLayout>
     </StackLayout>
   </Page>
 </template>

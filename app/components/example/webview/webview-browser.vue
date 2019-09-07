@@ -2,12 +2,11 @@
   <Page class="page">
     <ActionBarSecond :title="title" />
 
-    <!-- <StackLayout class="hello-world"> -->
-    <GridLayout>
-      <WebView :src="url2" />
-      <!-- <WebView src="<div><h1>Some static HTML</h1><button>button</button></div>" /> -->
-    </GridLayout>
-    <!-- </StackLayout> -->
+    <StackLayout class="hello-world">
+      <GridLayout>
+        <WebView :src="url2" />
+      </GridLayout>
+    </StackLayout>
   </Page>
 </template>
 
