@@ -37,6 +37,7 @@
         <Button class="btn btn-primary" text="请求" @tap="requestMain" />
         <Button class="btn btn-primary" text="获取全局数据" @tap="common" />
         <Button class="btn btn-primary" text="扫码" @tap="btnQrcode" />
+        <Button class="btn btn-primary" text="网页" @tap="btnWebview" />
       </StackLayout>
       <!-- </GridLayout> -->
     </ScrollView>
@@ -75,6 +76,7 @@ import RefreshNew from './refresh-new';
 import Touch from './touch';
 import RequestMain from './request/request-main';
 import Qrcode from './qrcode/qrcode';
+import Webview from './webview/webview';
 
 import ActionBarSecond from './public/action-bar-second';
 
@@ -182,6 +184,9 @@ export default {
     },
     btnQrcode:function(){
       this.navigateTo(this, Qrcode);
+    },
+    btnWebview:function(){
+      this.navigateTo(this, Webview);
     }
   }
 };
