@@ -7,7 +7,6 @@ const CustomTransition = (function(_super) {
     _super.apply(this, arguments);
   }
   CustomTransition.prototype.createAndroidAnimator = function(transitionType) {
-    console.log('zhecishi');
     const scaleValues = java.lang.reflect.Array.newInstance(floatType, 2);
     switch (transitionType) {
       case transition.AndroidTransitionType.enter:
