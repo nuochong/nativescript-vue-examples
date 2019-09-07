@@ -5,6 +5,7 @@
     <!-- <GridLayout colums="*" rows="*"> -->
     <StackLayout>
       <Button class="btn btn-primary" text="开始请求" @tap="onButton" />
+      <RequestContent :content="data" />
     </StackLayout>
     <!-- </GridLayout> -->
   </Page>
@@ -16,15 +17,18 @@ import { isAndroid } from 'platform';
 import { getString } from 'application-settings'; // Example Only
 // import { log } from 'util';
 //import * as http from 'http';
+import RequestContent from './request-content';
 import ActionBarSecond from '../public/action-bar-second';
 
 export default {
   components: {
-    ActionBarSecond
+    ActionBarSecond,
+    RequestContent
   },
   data() {
     return {
-      title: '请求'
+      title: '请求',
+      content: ''
     };
   },
   methods: {
@@ -45,12 +49,13 @@ export default {
       http.post(
         '/mock/5d60c006f81908124e0fcc23/example/upload',
         {},
-        function(res) {
+        res => {
+          this.content = JSON.stringify(res.content);
           console.log('返回的数据是：', res);
           console.log('返回的内容是：', res.content);
           console.log('拿到数据：', res.content.data.img);
         },
-        function(err) {
+        err => {
           console.log('错误是：', err);
         }
       );

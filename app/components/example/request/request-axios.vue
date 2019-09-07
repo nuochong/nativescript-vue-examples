@@ -3,33 +3,26 @@
     <ActionBarSecond :title="title" />
 
     <StackLayout>
-      <Button class="btn btn-primary" text="Get from URL" @tap="axiosGet" />
-      <Button class="btn btn-primary" text="Post JSON" @tap="axiosPost" />
-      <ScrollView ref="scrollView">
-        <StackLayout class="content">
-          <Label textWrap="true">
-            <FormattedString>
-              <Span text="返回的数据是如下：" />
-              <Span :text="data" />
-            </FormattedString>
-          </Label>
-        </StackLayout>
-      </ScrollView>
+      <Button class="btn btn-primary" text="GET请求" @tap="axiosGet" />
+      <Button class="btn btn-primary" text="POST请求" @tap="axiosPost" />
+      <RequestContent :content="data" />
     </StackLayout>
   </Page>
 </template>
 
 <script>
+import RequestContent from './request-content';
 import ActionBarSecond from '../public/action-bar-second';
 
 export default {
   components: {
-    ActionBarSecond
+    ActionBarSecond,
+    RequestContent
   },
   data() {
     return {
       title: 'NSVue Axios',
-      data: ''
+      content: ''
     };
   },
   methods: {
@@ -38,7 +31,7 @@ export default {
         .getTest()
         .then(response => {
           console.dir('axios获取的get请求是：', response);
-          this.data = JSON.stringify(response);
+          this.content = JSON.stringify(response);
         })
         .catch(err => {
           console.log(err);
@@ -62,7 +55,7 @@ export default {
         .catch(err => {
           console.log(err);
         });
-    },
+    }
   }
 };
 </script>
