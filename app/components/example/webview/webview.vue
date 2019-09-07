@@ -3,14 +3,17 @@
     <ActionBarSecond :title="title" />
 
     <StackLayout class="hello-world">
-      <!-- <Button class="btn btn-primary" @tap="open1" text="打开网页1" />
-      <Button class="btn btn-primary" @tap="open2" text="打开网页2" /> -->
-      <WebView :src="url1" />
+      <Button class="btn btn-primary" @tap="btnBrowser" text="简易浏览器" />
+      <Button class="btn btn-primary" @tap="open1" text="显示网页" />
+      <Button class="btn btn-primary" @tap="open2" text="显示自定义html内容" />
     </StackLayout>
   </Page>
 </template>
 
 <script>
+import WebviewBrowser from './webview-browser';
+import WebviewWeb from './webview-web';
+import WebviewHtml from './webview-html';
 import ActionBarSecond from '../public/action-bar-second';
 
 export default {
@@ -19,18 +22,19 @@ export default {
   },
   data() {
     return {
-      title: '网页',
-      url1: 'http://m.baidu.com',
-      url2: 'http://m.baidu.com'
+      title: '网页'
     };
   },
   mounted() {},
   methods: {
     open1: function() {
-      console.log('打开网页1');
+      this.navigateTo(this, WebviewWeb);
     },
     open2: function() {
-      console.log('打开网页2');
+      this.navigateTo(this, WebviewHtml);
+    },
+    btnBrowser: function() {
+      this.navigateTo(this, WebviewBrowser);
     }
   }
 };
