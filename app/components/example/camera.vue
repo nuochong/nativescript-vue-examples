@@ -4,14 +4,13 @@
 
     <StackLayout class="hello-world camera-container">
       <Button class="btn btn-primary" @tap="test" :text="title" />
-      <Image class="camera-img" :src="img" stretch="none" ref="img" />
+      <Image class="camera-img" :src="img" stretch="none" />
     </StackLayout>
   </Page>
 </template>
 
 <script>
 import * as camera from 'nativescript-camera';
-//let imageModule = require("tns-core-modules/ui/image");
 import ActionBarSecond from './public/action-bar-second';
 
 export default {
@@ -21,27 +20,22 @@ export default {
   data() {
     return {
       title: '相机',
-      imgsrc: 'res://icon',
+      iconsrc: 'res://icon',
       img: '~/assets/images/project/johndoe.jpg'
     };
   },
   mounted() {},
   methods: {
     test: function() {
-      let _this = this;
       camera.requestPermissions();
       camera
         .takePicture()
-        .then(function(imageAsset) {
-          console.log('Result is an image asset instance');
-          //let image = new imageModule.Image();
-          //image.src = imageAsset;
-          _this.imgsrc = imageAsset._android;
-          //this.$refs.
-          //this.$refs.img.src = imageAsset;
+        .then(imageAsset => {
+          console.log('结果是一个映像资产实例:', imageAsset);
+          this.img = imageAsset._android;
         })
-        .catch(function(err) {
-          console.log('Error -> ' + err.message);
+        .catch(err => {
+          console.log('拍照错误 -> ' + err.message);
         });
     }
   }
@@ -50,7 +44,7 @@ export default {
 
 <style scoped lang="scss">
 .camera-container {
-  background-color: blue;
+  background-color:beige;
 }
 .camera-img {
   horizontal-align: center;
