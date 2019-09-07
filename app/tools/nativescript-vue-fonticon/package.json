@@ -1,0 +1,41 @@
+{
+  "name": "nativescript-vue-fonticon",
+  "version": "1.0.3",
+  "description": "A simpler way to use font icons with NativeScript + Vue.js",
+  "main": "src/index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emiliogrv/nativescript-vue-fonticon.git"
+  },
+  "keywords": [
+    "nativescript",
+    "nativescript-vue",
+    "vue",
+    "vuejs",
+    "icon",
+    "fonticon"
+  ],
+  "author": {
+    "name": "Emilio Romero",
+    "email": "emilio.romero1989@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/emiliogrv/nativescript-vue-fonticon/issues"
+  },
+  "homepage": "https://github.com/emiliogrv/nativescript-vue-fonticon#readme",
+  "nativescript": {
+    "platforms": {
+      "android": "4.2.0",
+      "ios": "4.2.0"
+    },
+    "plugin": {
+      "vue": "true",
+      "category": "Developer"
+    }
+  },
+  "dependencies": {
+    "nativescript-fonticon": "^2.0.0"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "name": "nativescript-fonticon",
+  "version": "2.0.0",
+  "description": "Use custom font icon collections seamlessly with NativeScript.",
+  "main": "nativescript-fonticon",
+  "typings": "index.d.ts",
+  "nativescript": {
+    "platforms": {
+      "android": "2.0.0",
+      "ios": "2.0.0"
+    }
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NathanWalker/nativescript-fonticon.git"
+  },
+  "keywords": [
+    "NativeScript",
+    "JavaScript",
+    "Android",
+    "iOS",
+    "icon",
+    "font icon",
+    "font"
+  ],
+  "author": {
+    "name": "Nathan Walker",
+    "email": "walkerrunpdx@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "Nathanael Anderson",
+      "email": "nathan@master-technology",
+      "url": "https://github.com/nathanaela"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/NathanWalker/nativescript-fonticon/issues"
+  },
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/NathanWalker/nativescript-fonticon/blob/master/LICENSE"
+  },
+  "homepage": "https://github.com/NathanWalker/nativescript-fonticon",
+  "readmeFilename": "README.md",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "5.1.0",
+    "@types/mocha": "^5.2.3",
+    "@types/node": "^10.10.0",
+    "cross-env": "^5.2.0",
+    "mocha": "^5.2.0",
+    "tns-core-modules": "^4.2.0",
+    "ts-node": "^7.0.0",
+    "tslint": "5.10.0",
+    "typescript": "^2.9.0"
+  }
+}
