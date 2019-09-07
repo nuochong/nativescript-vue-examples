@@ -36,6 +36,7 @@
         <Button class="btn btn-primary" text="触摸事件" @tap="touch" />
         <Button class="btn btn-primary" text="请求" @tap="requestMain" />
         <Button class="btn btn-primary" text="获取全局数据" @tap="common" />
+        <Button class="btn btn-primary" text="扫码" @tap="btnQrcode" />
       </StackLayout>
       <!-- </GridLayout> -->
     </ScrollView>
@@ -73,6 +74,7 @@ import Refresh from './refresh';
 import RefreshNew from './refresh-new';
 import Touch from './touch';
 import RequestMain from './request/request-main';
+import Qrcode from './qrcode/qrcode';
 
 import ActionBarSecond from './public/action-bar-second';
 
@@ -177,6 +179,9 @@ export default {
     },
     btnDisplay: function() {
       this.navigateTo(this, Display);
+    },
+    btnQrcode:function(){
+      this.navigateTo(this, Qrcode);
     }
   }
 };
