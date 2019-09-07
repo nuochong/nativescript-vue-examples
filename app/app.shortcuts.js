@@ -10,9 +10,9 @@ const appShortcuts = new AppShortcuts();
 const isSuppertAppShortcus = function() {
   appShortcuts.available().then(function(available) {
     if (available) {
-      console.log('****This device supports app shortcuts');
+      console.log('***此设备支持app捷径:)');
     } else {
-      console.log('****No app shortcuts capability, ask the user to upgrade :)');
+      console.log('***此设备不支持app捷径:(');
     }
   });
 };
@@ -34,29 +34,33 @@ const handleTask = function() {
     // }
     switch (shortcutItem.type) {
       case 'shortcut1':
-        console.log('点击了功能1');
-        // new Vue({
-        //   render: h => h('frame', [h(Example)])
-        // }).$start();
-        //Vue.prototype.$navigateTo(Example);
-        //let frames = require("ui/frame");
+        console.log('点击了静态功能1');
         setTimeout(() => {
           Vue.prototype.$navigateTo(Toast);
-          //frames.topmost().navigate(h(Example));
         });
         break;
       case 'shortcut2':
-        console.log('点击了功能2');
+        console.log('点击了静态功能2');
         setTimeout(() => {
           Vue.prototype.$navigateTo(World);
-          //frames.topmost().navigate(h(Example));
         });
         break;
       case 'shortcut3':
-        console.log('点击了功能3');
+        console.log('点击了静态功能3');
         setTimeout(() => {
           Vue.prototype.$navigateTo(FancyAlert);
-          //frames.topmost().navigate(h(Example));
+        });
+        break;
+      case 'shortcut4':
+        console.log('点击了动态功能4');
+        setTimeout(() => {
+          Vue.prototype.$navigateTo(FancyAlert);
+        });
+        break;
+      case 'shortcut5':
+        console.log('点击了动态功能5');
+        setTimeout(() => {
+          Vue.prototype.$navigateTo(FancyAlert);
         });
         break;
     }
@@ -65,15 +69,15 @@ const handleTask = function() {
   appShortcuts
     .configureQuickActions([
       {
-        type: 'capturePhoto',
-        title: 'Snag a pic',
+        type: 'shortcut4',
+        title: '动态功能4',
         subtitle: 'You have 23 snags left', // iOS only
         iconType: isIOS ? UIApplicationShortcutIconType.CapturePhoto : null,
         iconTemplate: 'eye' // ignored by iOS, if iconType is set as well
       },
       {
-        type: 'beer',
-        title: 'Beer-tastic!',
+        type: 'shortcut5',
+        title: '动态功能5',
         subtitle: 'Check in & share', // iOS only
         iconTemplate: 'beer'
       }
