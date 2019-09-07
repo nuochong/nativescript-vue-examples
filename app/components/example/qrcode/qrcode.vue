@@ -21,8 +21,8 @@
 </template>
 
 <script>
-var BarcodeScanner = require('nativescript-barcodescanner').BarcodeScanner;
-var barcodescanner = new BarcodeScanner();
+const BarcodeScanner = require('nativescript-barcodescanner').BarcodeScanner;
+const barcodescanner = new BarcodeScanner();
 import ActionBarSecond from '../public/action-bar-second';
 
 export default {
