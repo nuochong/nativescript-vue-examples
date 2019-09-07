@@ -3,8 +3,9 @@
     <ActionBarSecond :title="title" />
 
     <StackLayout class="hello-world">
-      <Button class="btn btn-primary" @tap="open1" text="打开网页1" />
-      <Button class="btn btn-primary" @tap="open2" text="打开网页2" />
+      <!-- <Button class="btn btn-primary" @tap="open1" text="打开网页1" />
+      <Button class="btn btn-primary" @tap="open2" text="打开网页2" /> -->
+      <WebView :src="url1" />
     </StackLayout>
   </Page>
 </template>
