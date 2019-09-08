@@ -8,15 +8,12 @@
       @tap="goTo(btn.link,index)"
     >
       <Label class="icon footer-icon" :text="btn.icon | fonticon"></Label>
-      <!-- <Image :src=" '~/assets/images/project/' + btn.icon+'.png'" class="icon" /> -->
       <Label class="footer-text" :text="btn.text" />
     </FlexboxLayout>
   </FlexboxLayout>
 </template>
 
 <script>
-import main from './main';
-
 export default {
   data() {
     return {
@@ -90,6 +87,9 @@ export default {
 <style scoped lang="scss">
 #footer {
   background-color: white;
+  padding: 3;
+  border-top-width: 1;
+  border-top-color: gray;
   .btn {
     height: 100%;
     padding: 0;
@@ -100,15 +100,18 @@ export default {
     color: gray;
     &.active {
       color: #ea6f5a;
+      .icon {
+        color: #ea6f5a;
+      }
     }
     .icon {
-      height: 100%;
+      font-size: 20;
       top: 0px;
       left: 0px;
       color: gray;
     }
-    .footer-text{
-      font-size:12;
+    .footer-text {
+      font-size: 10;
     }
     .circle {
       width: 5;
