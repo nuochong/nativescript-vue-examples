@@ -11,6 +11,7 @@
         v-show="selectedTabview == 0"
       >
         <StackLayout ref="ca">
+          <Home/>
           <Tabbar1
             v-for="(place,index) in places"
             :key="index"
