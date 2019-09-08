@@ -71,23 +71,24 @@ const handleTask = function() {
       {
         type: 'shortcut4',
         title: '动态功能4',
-        subtitle: 'You have 23 snags left', // iOS only
+        subtitle: '我是动态功能4中的subtitle', // 仅支持iOS
         iconType: isIOS ? UIApplicationShortcutIconType.CapturePhoto : null,
-        iconTemplate: 'eye' // ignored by iOS, if iconType is set as well
+        iconTemplate: 'eye' // 如果iconType也设置好了，iOS会忽略它
       },
       {
         type: 'shortcut5',
         title: '动态功能5',
-        subtitle: 'Check in & share', // iOS only
+        subtitle: '我是动态功能5中的subtitle', // 仅支持iOS
         iconTemplate: 'beer'
       }
     ])
     .then(
       () => {
-        alert('Added 2 actions, close the app and apply pressure to the app icon to check it out!');
+        // 使用alert会被转化为android原生弹出框
+        console.log('Added 2 actions, close the app and apply pressure to the app icon to check it out!');
       },
       errorMessage => {
-        alert(errorMessage);
+        console.log(errorMessage);
       }
     );
 };

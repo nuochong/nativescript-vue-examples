@@ -1,7 +1,7 @@
 export default {
   install(Vue, options) {
     Vue.prototype.localUrl = 'test common local';
-    Vue.prototype.itemImgPath = process.env.publicUrl + 'img/bigData/';
+    Vue.prototype.itemImgPath = process.env.publicUrl + 'img/xxx/';
     Vue.prototype.navigateTo = function(_this, target, type = 'left') {
       console.log('me-navigateTo');
       let name = 'slide';
@@ -15,7 +15,7 @@ export default {
           break;
         case 'bounce':
           name = 'slide';
-          duration = 380;
+          duration = 200;
           curve = 'spring';
           break;
       }
