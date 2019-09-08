@@ -38,6 +38,7 @@
         <Button class="btn btn-primary" text="获取全局数据" @tap="common" />
         <Button class="btn btn-primary" text="扫码" @tap="btnQrcode" />
         <Button class="btn btn-primary" text="网页" @tap="btnWebview" />
+        <Button class="btn btn-primary" text="自定义过渡效果" @tap="btnEffect" />
       </StackLayout>
       <!-- </GridLayout> -->
     </ScrollView>
@@ -77,6 +78,7 @@ import Touch from './touch';
 import RequestMain from './request/request-main';
 import Qrcode from './qrcode/qrcode';
 import Webview from './webview/webview';
+import Effect from './effect';
 
 import ActionBarSecond from './public/action-bar-second';
 
@@ -187,6 +189,9 @@ export default {
     },
     btnWebview: function() {
       this.navigateTo(this, Webview);
+    },
+    btnEffect: function() {
+      this.navigateTo(this, Effect);
     }
   }
 };
