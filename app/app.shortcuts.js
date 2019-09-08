@@ -73,13 +73,14 @@ const handleTask = function() {
         title: '动态功能4',
         subtitle: '我是动态功能4中的subtitle', // 仅支持iOS
         iconType: isIOS ? UIApplicationShortcutIconType.CapturePhoto : null,
-        iconTemplate: 'eye' // 如果iconType也设置好了，iOS会忽略它
+        iconTemplate: 'beer' // 如果iconType也设置好了，iOS会忽略它,不能添加后缀名，否则无法识别
+        //这里安卓的图标要放在app`/App_Resources/Android/src/main/res/drawable`文件夹下，每个需要适配的分辨率都要放
       },
       {
         type: 'shortcut5',
         title: '动态功能5',
         subtitle: '我是动态功能5中的subtitle', // 仅支持iOS
-        iconTemplate: 'beer'
+        iconTemplate: 'eye'
       }
     ])
     .then(
