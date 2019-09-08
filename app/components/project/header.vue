@@ -15,12 +15,13 @@
       <Image src="~/assets/images/project/Menu-White.png" class="icon" v-else />
     </FlexboxLayout>
     <FlexboxLayout class="btn pp">
-      <Image src="~/assets/images/project/johndoe.jpg" class="icon" />
+      <Image src="~/assets/images/project/johndoe.jpg" class="icon" @tap="btnSettings"/>
     </FlexboxLayout>
   </FlexboxLayout>
 </template>
 
 <script>
+import SettingsMain from './settings/settings-main';
 export default {
   props: {
     secondary: {
@@ -36,7 +37,13 @@ export default {
     return {
       title: ''
     };
-  }
+  },
+   methods: {
+     btnSettings:function(){
+       console.log('点击了设置按钮');
+       this.navigateTo(this, SettingsMain);
+     }
+   }
 };
 </script>
 
