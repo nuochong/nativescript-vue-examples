@@ -26,7 +26,6 @@
         v-show="selectedTabview == 0"
       >
         <StackLayout flexDirection="column" height="100%">
-          <!-- <Tabbar2 v-for="(place,index) in places" :key="index" :place="place" :index="index" :active="active" width="100%" /> -->
           <ListView
             ref="ca"
             for="(place,index) in places"
@@ -38,54 +37,11 @@
             class="dt"
             backgroundColor="white"
           >
-            <v-template>
-              <WrapLayout height="415" class="card" flexDirection="column" justifyContent="center">
-                <AbsoluteLayout width="56%" height="80%" class="ll" alignSelf="center">
-                  <Image
-                    src="~/assets/images/project/box-shadow.png"
-                    width="100%"
-                    height="97%"
-                    class="background"
-                  />
-                  <FlexboxLayout flexDirection="column" width="100%" height="97%" padding="12">
-                    <StackLayout orientation="vertical" class="head">
-                      <Label :text="place.name" class="title bold" />
-                      <Label
-                        :text="place.type"
-                        class="subTitle semi-bold"
-                        horizontalAlignment="center"
-                      />
-                      <FlexboxLayout flexDirection="row" height="12" marginTop="4">
-                        <Image
-                          src="~/assets/images/project/Star-Red.png"
-                          v-for="star in place.stars"
-                          :key="star"
-                          marginRight="4"
-                        />
-                        <Image
-                          src="~/assets/images/project/Star-grey.png"
-                          v-for="star in (5 - place.stars)"
-                          :key="(star * 10)"
-                          marginRight="4"
-                        />
-                      </FlexboxLayout>
-                    </StackLayout>
-                    <StackLayout
-                      orientation="vertical"
-                      :backgroundImage="'~/assets/images/project/media/' + place.media"
-                      height="58%"
-                      width="100%"
-                      class="img"
-                    ></StackLayout>
-                  </FlexboxLayout>
-                </AbsoluteLayout>
-              </WrapLayout>
-            </v-template>
-            <!-- <Label text="first" width="100%" height="415" backgroundColor="#43b883" />
-                    <Label text="second" width="100%" height="415" backgroundColor="#1c6b48" />
-                    <Label text="third" width="100%" height="415" backgroundColor="#289062" />
-                    <Label text="fourth" width="100%" height="415" backgroundColor="#1c6b48" />
-            <Label text="third" width="100%" height="415" backgroundColor="#289062" />-->
+            <Label text="first" width="100%" height="415" backgroundColor="#43b883" />
+            <Label text="second" width="100%" height="415" backgroundColor="#1c6b48" />
+            <Label text="third" width="100%" height="415" backgroundColor="#289062" />
+            <Label text="fourth" width="100%" height="415" backgroundColor="#1c6b48" />
+            <Label text="third" width="100%" height="415" backgroundColor="#289062" />
           </ListView>
         </StackLayout>
       </ScrollView>
@@ -113,7 +69,43 @@
         v-show="selectedTabview == 2"
       >
         <StackLayout>
-          <Tabbar2
+          <Tabbar3
+            v-for="(place,index) in places"
+            :key="index"
+            :place="place"
+            :index="index"
+            :active="active"
+            width="100%"
+          />
+        </StackLayout>
+      </ScrollView>
+
+      <ScrollView
+        orientation="vertical"
+        row="1"
+        backgroundColor="green"
+        v-show="selectedTabview == 3"
+      >
+        <StackLayout>
+          <Tabbar4
+            v-for="(place,index) in places"
+            :key="index"
+            :place="place"
+            :index="index"
+            :active="active"
+            width="100%"
+          />
+        </StackLayout>
+      </ScrollView>
+
+      <ScrollView
+        orientation="vertical"
+        row="1"
+        backgroundColor="green"
+        v-show="selectedTabview == 4"
+      >
+        <StackLayout>
+          <Tabbar5
             v-for="(place,index) in places"
             :key="index"
             :place="place"
@@ -135,6 +127,8 @@ import Home from './home';
 import Tabbar1 from './tabbar/tabbar1';
 import Tabbar2 from './tabbar/tabbar2';
 import Tabbar3 from './tabbar/tabbar3';
+import Tabbar4 from './tabbar/tabbar4';
+import Tabbar5 from './tabbar/tabbar5';
 import ActionBarSecond from '../example/public/action-bar-second';
 
 export default {
@@ -146,7 +140,9 @@ export default {
     //Searching,
     Tabbar1,
     Tabbar2,
-    Tabbar3
+    Tabbar3,
+    Tabbar4,
+    Tabbar5
   },
   data() {
     return {
@@ -163,12 +159,6 @@ export default {
           type: 'Architecture',
           stars: 4,
           media: 'Cathedral.jpg'
-        },
-        {
-          name: 'Bord Gáis Energ',
-          type: 'Architecture',
-          stars: 5,
-          media: 'Theater.jpg'
         }
       ],
       selectedTabview: 0
@@ -181,7 +171,7 @@ export default {
   },
   methods: {
     change: function(value) {
-      //console.log('我是父组件');
+      console.log('我是父组件接收到的tabbarID', value);
       this.selectedTabview = value;
     }
   }

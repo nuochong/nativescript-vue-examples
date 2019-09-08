@@ -7,16 +7,14 @@
       :key="index"
       @tap="goTo(btn.link,index)"
     >
-      <Image :src=" '~/assets/images/project/' + btn.icon+'.png'" class="icon" />
-      <Label class="circle" v-if="index === active" />
+      <Label class="icon footer-icon" :text="btn.icon | fonticon"></Label>
+      <!-- <Image :src=" '~/assets/images/project/' + btn.icon+'.png'" class="icon" /> -->
+      <Label class="footer-text" :text="btn.text" />
     </FlexboxLayout>
   </FlexboxLayout>
 </template>
 
 <script>
-import Tabbar1 from './tabbar/tabbar1';
-import Tabbar2 from './tabbar/tabbar2';
-import Tabbar3 from './tabbar/tabbar3';
 import main from './main';
 
 export default {
@@ -25,47 +23,60 @@ export default {
       title: '',
       btns: [
         {
-          icon: 'user',
-          iconNor: 'user',
-          iconAct: 'user-Red',
+          icon: 'icon-shouye',
+          iconNor: 'icon-shouye',
+          iconAct: 'icon-shouye',
           link: 'tabbar1',
-          active: false
+          active: false,
+          text: '首页'
         },
         {
-          icon: 'Home',
-          iconNor: 'Home',
-          iconAct: 'Home-Red',
+          icon: 'icon-guanzhu',
+          iconNor: 'icon-guanzhu',
+          iconAct: 'icon-guanzhu',
           link: 'tabbar2',
-          active: false
+          active: false,
+          text: '关注'
         },
         {
-          icon: 'Search-Red',
-          iconNor: 'Search',
-          iconAct: 'Search-Red',
+          icon: 'icon-zuanshi',
+          iconNor: 'icon-zuanshi',
+          iconAct: 'icon-zuanshi',
           link: 'tabbar3',
-          active: true
+          active: true,
+          text: '会员'
+        },
+        {
+          icon: 'icon-xiaoxi',
+          iconNor: 'icon-xiaoxi',
+          iconAct: 'icon-xiaoxi',
+          link: 'tabbar4',
+          active: false,
+          text: '消息'
+        },
+        {
+          icon: 'icon-wode',
+          iconNor: 'icon-wode',
+          iconAct: 'icon-wode',
+          link: 'tabbar5',
+          active: false,
+          text: '我的'
         }
       ],
-      active: 2
+      active: 3
     };
   },
   methods: {
     goTo(link, index) {
-      // let pageArr = {
-      //     'tabbar1':tabbar1,
-      //     'tabbar2':tabbar2,
-      //     'tabbar3':tabbar3,
-      // }
-      //  if (link !== "") {
-      //      console.log('keyile',link);
-      //     this.$navigateTo(pageArr[link]);
-      // }
+      console.log('xxxxx', link, index);
       this.active = index;
       this.btns.forEach(v => {
         if (v['link'] == link && !v.active) {
+          console.log('我在上边', v.iconAct);
           v.icon = v.iconAct;
           v.active = true;
         } else {
+          console.log('我在下边', v.iconNor);
           v.icon = v.iconNor;
           v.active = false;
         }
@@ -78,7 +89,7 @@ export default {
 
 <style scoped lang="scss">
 #footer {
-  background-color: antiquewhite;
+  background-color: white;
   .btn {
     height: 100%;
     padding: 0;
@@ -86,23 +97,23 @@ export default {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    color: gray;
     &.active {
-      .icon {
-        height: 70%;
-      }
+      color: #ea6f5a;
     }
     .icon {
-      z-index: 100000;
       height: 100%;
       top: 0px;
       left: 0px;
+      color: gray;
+    }
+    .footer-text{
+      font-size:12;
     }
     .circle {
       width: 5;
       height: 5;
       border-radius: 100%;
-      background: red;
-      margin-top: 5;
     }
   }
 }

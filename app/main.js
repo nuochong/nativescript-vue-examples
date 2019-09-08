@@ -36,8 +36,8 @@ Vue.use(FontIcon, {
   debug: false,
   paths: {
     fa: './fonts/font-awesome.css',
-    if: './fonts/iconfont.css',
-    ic: './fonts/icommon.css',
+    icon: './fonts/iconfont.css',
+    //ic: './fonts/icommon.css',
   }
 });
 
