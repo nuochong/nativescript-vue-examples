@@ -37,7 +37,7 @@ var ParallaxTransition = (function(_super) {
         }
         break;
     }
-    console.log('动画', transitionType);
+
     var prop;
     if (this._direction === 'left') {
       prop = 'translationX';
