@@ -65,7 +65,7 @@ const handleTask = function() {
         break;
     }
   });
-
+  //ios最多支持四个捷径，安卓有些支持四个，有些支持五个，如果支持四个，有三个静态方式，再添加两个动态方式，那么最后一个静态方式会被覆盖。动态优先。
   appShortcuts
     .configureQuickActions([
       {
@@ -86,7 +86,7 @@ const handleTask = function() {
     .then(
       () => {
         // 使用alert会被转化为android原生弹出框
-        console.log('Added 2 actions, close the app and apply pressure to the app icon to check it out!');
+        console.log('添加了2个操作，关闭应用程序并对应用程序图标施加压力以进行检查！');
       },
       errorMessage => {
         console.log(errorMessage);
