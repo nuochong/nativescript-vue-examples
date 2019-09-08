@@ -21,6 +21,12 @@ import shortcuts from '../app.shortcuts.js';
 const Custom = require('../assets/js/transition/custom-transition');
 const CustomTransition = new Custom.CustomTransition(500, 'spring');
 
+const Slide = require('../assets/js/transition/slide-transition');
+const SlideTransition = new Slide.SlideTransition('right', 500, 'spring');
+
+const Parallax = require('../assets/js/transition/parallax-transition.android');
+const ParallaxTransition = new Parallax.ParallaxTransition('right', 500, 'spring');
+
 export default {
   components: {
     ActionBarFirst
@@ -37,10 +43,22 @@ export default {
     example: function() {
       this.$navigateTo(Example, {
         animated: true,
+        // transition: {
+        //   name: 'CustomTransition',
+        //   duration: 1000,
+        //   instance: CustomTransition,
+        //   curve: 'spring'
+        // },
+        // transition: {
+        //   name: 'SlideTransition',
+        //   duration: 1000,
+        //   instance: SlideTransition,
+        //   curve: 'spring'
+        // },
         transition: {
-          name: 'CustomTransition',
+          name: 'ParallaxTransition',
           duration: 1000,
-          instance: CustomTransition,
+          instance: ParallaxTransition,
           curve: 'spring'
         }
         // transitionAndroid: {
