@@ -2,21 +2,6 @@
   <Page class="page" actionBarHidden="false">
     <ActionBarSecond :title="title" />
 
-    <!-- <ActionBar id="header head">
-      <StackLayout orientation="horizontal" class="btn menu hh">
-        <Image
-          src="~/assets/images/project/arrow.png"
-          class="icon"
-          @tap="$navigateBack"
-          width="40"
-          height="40"
-          verticalAlignment="left"
-        />
-        <Label class="tess" text="NativeScript" fontSize="24" horizontalAlignment="right" />
-      </StackLayout>
-      <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" @tap="$navigateBack"/>
-    </ActionBar>-->
-
     <GridLayout rows="60, *, auto" backgroundColor="#26252A">
       <Header class="header" row="0" />
       <ScrollView
@@ -25,24 +10,15 @@
         backgroundColor="red"
         v-show="selectedTabview == 0"
       >
-        <StackLayout flexDirection="column" height="100%">
-          <ListView
-            ref="ca"
-            for="(place,index) in places"
+        <StackLayout ref="ca">
+          <Tabbar1
+            v-for="(place,index) in places"
             :key="index"
             :place="place"
             :index="index"
             :active="active"
-            height="100%"
-            class="dt"
-            backgroundColor="white"
-          >
-            <Label text="first" width="100%" height="415" backgroundColor="#43b883" />
-            <Label text="second" width="100%" height="415" backgroundColor="#1c6b48" />
-            <Label text="third" width="100%" height="415" backgroundColor="#289062" />
-            <Label text="fourth" width="100%" height="415" backgroundColor="#1c6b48" />
-            <Label text="third" width="100%" height="415" backgroundColor="#289062" />
-          </ListView>
+            width="100%"
+          />
         </StackLayout>
       </ScrollView>
       <ScrollView
@@ -137,7 +113,6 @@ export default {
     Header,
     Footer,
     Home,
-    //Searching,
     Tabbar1,
     Tabbar2,
     Tabbar3,
@@ -147,6 +122,7 @@ export default {
   data() {
     return {
       title: '实例',
+      active: 3,
       places: [
         {
           name: 'The Custom House1',
@@ -193,9 +169,6 @@ export default {
 .page {
   margin: 0;
   padding: 0;
-}
-.searching {
-  z-index: 100000;
 }
 .header {
   padding: 10;
