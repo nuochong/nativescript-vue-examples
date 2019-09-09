@@ -4,8 +4,8 @@
       <Image row="0" rowSpan="2" col="0" class="connect-team-avatar p-5 m-r-10 m-y-auto text-center" :src="headimg" stretch="none" />
       <Label row="0" col="1" text="用户名" class="font-weight-bold"></Label>
       <WrapLayout class="head-introduce" row="1" col="1">
-        <Label class="head-introduce-title" text="关注"  />
-        <Label class="head-introduce-content" text="122"  />
+        <Label class="head-introduce-title" text="关注" />
+        <Label class="head-introduce-content" text="122" />
         <Label class="head-introduce-title" text="粉丝" />
         <Label class="head-introduce-content" text="45" />
       </WrapLayout>
@@ -25,7 +25,7 @@ export default {
   components: {},
   data() {
     return {
-      headimg:'~/assets/images/example/multi-drawer/head.jpg'
+      headimg: '~/assets/images/example/multi-drawer/head.jpg'
     };
   },
   methods: {
@@ -37,19 +37,19 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.head{
-  padding:15;
+.head {
+  padding: 15;
 }
 .head-introduce {
   //background-color: #3c495e;
   .head-introduce-title {
-    color:#8E8E8E;
+    color: #8e8e8e;
     // background-color:"#43b883";
   }
   .head-introduce-content {
-    margin-left:5;
-    margin-right:10;
-    color:#000000;
+    margin-left: 5;
+    margin-right: 10;
+    color: #000000;
     // background-color:"#289062";
   }
 }
@@ -64,9 +64,9 @@ export default {
 }
 .connect-team-avatar {
   width: 66;
-  height:66;
-  border-radius:50%;
-  padding:0;
+  height: 66;
+  border-radius: 50%;
+  padding: 0;
 }
 
 .connect-contact-attribute-title {

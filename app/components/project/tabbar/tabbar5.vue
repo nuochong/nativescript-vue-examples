@@ -38,6 +38,7 @@
     </TabView> -->
 
         <HeadPanel />
+        <TaskPanel />
         <InfoPanel />
         <InfoPanel />
         <InfoPanel />
@@ -51,13 +52,15 @@
 import InfoPanel from '../settings/info-panel';
 import HeadPanel from '../settings/head-panel';
 import MyHeader from '../settings/my-header';
+import TaskPanel from '../settings/task-panel';
 import App from '../../App';
 
 export default {
   components: {
     InfoPanel,
     HeadPanel,
-    MyHeader
+    MyHeader,
+    TaskPanel
   },
   data() {
     return {

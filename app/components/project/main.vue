@@ -20,7 +20,7 @@
         <Tabbar4 width="100%" />
       </ScrollView>
       <StackLayout row="0" backgroundColor="white" v-show="selectedTabview == 4">
-           <Tabbar5 row="1"  col="0"/>
+        <Tabbar5 row="1" col="0" />
       </StackLayout>
       <Footer class="footer" row="1" @change="change" />
     </GridLayout>
