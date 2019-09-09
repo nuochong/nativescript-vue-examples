@@ -15,10 +15,10 @@
           <Tabbar2 v-for="(place,index) in places" :key="index" :place="place" :index="index" :active="active" width="100%" />
         </StackLayout>
       </ScrollView>
-      <ScrollView orientation="vertical" row="0" backgroundColor="green" v-show="selectedTabview == 2">
-        <!-- <StackLayout> -->
-        <Tabbar3 width="100%" />
-        <!-- </StackLayout> -->
+      <ScrollView orientation="vertical" row="0" backgroundColor="green" v-show="selectedTabview == 2" height="100%">
+        <StackLayout>
+        <Tabbar3 v-for="(place,index) in places" :key="index" :place="place" :index="index" :active="active" width="100%" />
+        </StackLayout>
       </ScrollView>
 
       <ScrollView orientation="vertical" row="0" backgroundColor="green" v-show="selectedTabview == 3">
@@ -68,6 +68,18 @@ export default {
           type: 'Architecture',
           stars: 4,
           media: 'Dublin.jpg'
+        },
+        {
+          name: "Christ Church's",
+          type: 'Architecture',
+          stars: 4,
+          media: 'Cathedral.jpg'
+        },
+        {
+          name: "Christ Church's",
+          type: 'Architecture',
+          stars: 4,
+          media: 'Cathedral.jpg'
         },
         {
           name: "Christ Church's",
