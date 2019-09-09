@@ -56,7 +56,6 @@ import MyHeader from '../settings/my-header';
 import TaskPanel from '../settings/task-panel';
 import BindingPrompt from '../settings/binding-prompt';
 import Swiper from '../settings/swiper';
-import App from '../../App';
 
 export default {
   components: {
@@ -74,9 +73,7 @@ export default {
     };
   },
   methods: {
-    onButtonTap: function() {
-      this.$navigateTo(App);
-    }
+    onButtonTap: function() {}
   }
 };
 </script>

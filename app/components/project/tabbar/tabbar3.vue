@@ -48,12 +48,10 @@ export default {
   },
   data() {
     return {
-      title: '',
       canBack: true,
       lorem: `Celeri discursantes optandi nobis nec praedam qui similes parvi aut similes umquam optandi poterat impetraverint si nobis rapiunt nec discursantes qui poterat rapacium nobis milvorum aut volatu nobis impetraverint impetraverint parvi momento volatu impetraverint qui celeri parvi nisi amici similes tamen optandi parvi discursantes impetraverint volatu non discursantes nisi.`
     };
   },
-
   components: {
     Header,
     Footer

@@ -13,8 +13,6 @@
 </template>
 
 <script>
-import App from '../../App';
-
 export default {
   components: {},
   data() {
@@ -27,9 +25,7 @@ export default {
     console.log('tabbar1');
   },
   methods: {
-    onButtonTap: function() {
-      this.$navigateTo(App);
-    }
+    onButtonTap: function() {}
   }
 };
 </script>

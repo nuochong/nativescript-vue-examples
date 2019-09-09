@@ -16,9 +16,8 @@
     </AbsoluteLayout>
   </WrapLayout>
 </template>
-<script>
-//import Place from "./Place";
 
+<script>
 export default {
   props: {
     place: {
@@ -31,22 +30,14 @@ export default {
       type: Number
     }
   },
+  data() {
+    return {};
+  },
   mounted() {},
   methods: {
     goToPlace(place) {
       console.log('card');
-      // this.$navigateTo(Place, {
-      //     props: {
-      //         place: place
-      //     }
-      // });
     }
-  },
-
-  data() {
-    return {
-      title: ''
-    };
   }
 };
 </script>

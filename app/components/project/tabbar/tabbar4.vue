@@ -19,7 +19,6 @@ export default {
       title: ''
     };
   },
-
   methods: {
     toggleSearch() {
       console.log('CLICK');
