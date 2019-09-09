@@ -79,7 +79,6 @@ export default {
     margin: 0;
     text-align: right;
     horizontal-align: right;
-    vertical-align: right;
     .task-list-headerRightIcon {
       margin: 0;
       text-align: right;

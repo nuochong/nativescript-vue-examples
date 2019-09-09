@@ -4,7 +4,7 @@
     <Button width="30" height="5" class="hr" />
     <Label textWrap="true" text="Which city are you looking for today ?" class="h2 align-center bold" />
     <AbsoluteLayout width="80" height="80" class="search-btn">
-      <Image src="~/assets/images/project/Search.png" left="28" top="25" width="25" height="25" class="icon" />
+      <Image src="~/assets/images/project/johndoe.jpg" left="28" top="25" width="25" height="25" class="icon" />
       <Button class="background" left="0" top="0" width="100%" height="100%" />
     </AbsoluteLayout>
 
