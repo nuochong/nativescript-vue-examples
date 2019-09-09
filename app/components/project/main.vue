@@ -1,35 +1,34 @@
 <template>
   <Page class="page" actionBarHidden="false">
     <ActionBarSecond :title="title" />
-
     <GridLayout rows=" *,auto" backgroundColor="#26252A">
-
-      <ScrollView orientation="vertical" row="0" backgroundColor="red" v-show="selectedTabview == 0">
+      <ScrollView orientation="vertical" row="0" backgroundColor="white" v-show="selectedTabview == 0">
         <Tabbar1 width="100%" />
       </ScrollView>
-      <ScrollView orientation="vertical" row="0" backgroundColor="yellow" v-show="selectedTabview == 1">
+      <ScrollView orientation="vertical" row="0" backgroundColor="white" v-show="selectedTabview == 1">
         <StackLayout ref="ca">
           <Header class="header" row="0" />
           <Tabbar2 v-for="(place,index) in places" :key="index" :place="place" :index="index" :active="active" width="100%" />
         </StackLayout>
       </ScrollView>
-      <ScrollView orientation="vertical" row="0" backgroundColor="green" v-show="selectedTabview == 2" height="100%">
+      <ScrollView orientation="vertical" row="0" backgroundColor="white" v-show="selectedTabview == 2" height="100%">
         <StackLayout>
           <Tabbar3 v-for="(place,index) in places" :key="index" :place="place" :index="index" :active="active" width="100%" />
         </StackLayout>
       </ScrollView>
-      <ScrollView orientation="vertical" row="0" backgroundColor="green" v-show="selectedTabview == 3">
+      <ScrollView orientation="vertical" row="0" backgroundColor="white" v-show="selectedTabview == 3">
         <Tabbar4 width="100%" />
       </ScrollView>
-      <ScrollView orientation="vertical" row="0" backgroundColor="yellow" v-show="selectedTabview == 4">
-        <Tabbar5 />
-      </ScrollView>
+      <StackLayout row="0" backgroundColor="white" v-show="selectedTabview == 4">
+           <Tabbar5 row="1"  col="0"/>
+      </StackLayout>
       <Footer class="footer" row="1" @change="change" />
     </GridLayout>
   </Page>
 </template>
 
 <script>
+import MyHeader from './settings/my-header';
 import Footer from './footer';
 import Header from './header';
 import Tabbar1 from './tabbar/tabbar1';
@@ -41,6 +40,7 @@ import ActionBarSecond from '../example/public/action-bar-second';
 
 export default {
   components: {
+    MyHeader,
     ActionBarSecond,
     Header,
     Footer,

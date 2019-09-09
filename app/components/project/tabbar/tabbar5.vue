@@ -1,6 +1,9 @@
 <template>
-  <WrapLayout height="100%">
-    <TabView :selectedIndex="selectedIndex">
+  <GridLayout rows="auto, *">
+    <MyHeader row="0" col="0" />
+    <ScrollView row="1" col="0" orientation="vertical" scrollBarIndicatorVisible="false">
+      <StackLayout>
+        <!-- <TabView :selectedIndex="selectedIndex">
       <TabViewItem title="关注">
         <StackLayout>
           <GridLayout class="page" rows="auto, *">
@@ -32,14 +35,30 @@
       <TabViewItem title="文集">
         <Label text="Content for Tab 2" />
       </TabViewItem>
-    </TabView>
-  </WrapLayout>
+    </TabView> -->
+
+        <HeadPanel />
+        <InfoPanel />
+        <InfoPanel />
+        <InfoPanel />
+        <InfoPanel />
+      </StackLayout>
+    </ScrollView>
+  </GridLayout>
 </template>
 
 <script>
+import InfoPanel from '../settings/info-panel';
+import HeadPanel from '../settings/head-panel';
+import MyHeader from '../settings/my-header';
 import App from '../../App';
 
 export default {
+  components: {
+    InfoPanel,
+    HeadPanel,
+    MyHeader
+  },
   data() {
     return {
       title: '',
