@@ -3,9 +3,9 @@
     <ActionBarSecond :title="title" />
 
     <StackLayout class="hello-world">
-      <GridLayout>
-        <WebView :src="url2" />
-      </GridLayout>
+      <!-- <GridLayout> -->
+        <WebView :src="url1" />
+      <!-- </GridLayout> -->
     </StackLayout>
   </Page>
 </template>
@@ -20,7 +20,7 @@ export default {
   data() {
     return {
       title: '显示网页',
-      url1: 'https://m.baidu.com',
+      url1: 'http://m.baidu.com',
       url2: 'https://cn.bing.com'
     };
   },
