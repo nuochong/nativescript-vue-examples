@@ -2,104 +2,45 @@
   <Page class="page" actionBarHidden="false">
     <ActionBarSecond :title="title" />
 
-    <GridLayout rows="60, *, auto" backgroundColor="#26252A">
-      <Header class="header" row="0" />
-      <ScrollView
-        orientation="vertical"
-        row="1"
-        backgroundColor="red"
-        v-show="selectedTabview == 0"
-      >
+    <GridLayout rows=" *,auto" backgroundColor="#26252A">
+
+      <ScrollView orientation="vertical" row="0" backgroundColor="red" v-show="selectedTabview == 0">
         <StackLayout ref="ca">
-          <Home/>
-          <Tabbar1
-            v-for="(place,index) in places"
-            :key="index"
-            :place="place"
-            :index="index"
-            :active="active"
-            width="100%"
-          />
+          <Home />
+          <Tabbar1 v-for="(place,index) in places" :key="index" :place="place" :index="index" :active="active" width="100%" />
         </StackLayout>
       </ScrollView>
-      <ScrollView
-        orientation="vertical"
-        row="1"
-        backgroundColor="yellow"
-        v-show="selectedTabview == 1"
-      >
+      <ScrollView orientation="vertical" row="0" backgroundColor="yellow" v-show="selectedTabview == 1">
         <StackLayout>
-          <Tabbar2
-            v-for="(place,index) in places"
-            :key="index"
-            :place="place"
-            :index="index"
-            :active="active"
-            width="100%"
-          />
+          <Header class="header" row="0" />
+          <Tabbar2 v-for="(place,index) in places" :key="index" :place="place" :index="index" :active="active" width="100%" />
         </StackLayout>
       </ScrollView>
-      <ScrollView
-        orientation="vertical"
-        row="1"
-        backgroundColor="green"
-        v-show="selectedTabview == 2"
-      >
+      <ScrollView orientation="vertical" row="0" backgroundColor="green" v-show="selectedTabview == 2">
         <StackLayout>
-          <Tabbar3
-            v-for="(place,index) in places"
-            :key="index"
-            :place="place"
-            :index="index"
-            :active="active"
-            width="100%"
-          />
+          <Tabbar3 v-for="(place,index) in places" :key="index" :place="place" :index="index" :active="active" width="100%" />
         </StackLayout>
       </ScrollView>
 
-      <ScrollView
-        orientation="vertical"
-        row="1"
-        backgroundColor="green"
-        v-show="selectedTabview == 3"
-      >
+      <ScrollView orientation="vertical" row="0" backgroundColor="green" v-show="selectedTabview == 3">
         <StackLayout>
-          <Tabbar4
-            v-for="(place,index) in places"
-            :key="index"
-            :place="place"
-            :index="index"
-            :active="active"
-            width="100%"
-          />
+          <Tabbar4 v-for="(place,index) in places" :key="index" :place="place" :index="index" :active="active" width="100%" />
         </StackLayout>
       </ScrollView>
 
-      <ScrollView
-        orientation="vertical"
-        row="1"
-        backgroundColor="green"
-        v-show="selectedTabview == 4"
-      >
+      <ScrollView orientation="vertical" row="0" backgroundColor="green" v-show="selectedTabview == 4">
         <StackLayout>
-          <Tabbar5
-            v-for="(place,index) in places"
-            :key="index"
-            :place="place"
-            :index="index"
-            :active="active"
-            width="100%"
-          />
+          <Tabbar5 />
         </StackLayout>
       </ScrollView>
-      <Footer class="footer" row="2" @change="change" />
+      <Footer class="footer" row="1" @change="change" />
     </GridLayout>
   </Page>
 </template>
 
 <script>
-import Header from './header';
 import Footer from './footer';
+import Header from './header';
 import Home from './home';
 import Tabbar1 from './tabbar/tabbar1';
 import Tabbar2 from './tabbar/tabbar2';

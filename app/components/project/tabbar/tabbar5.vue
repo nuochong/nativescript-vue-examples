@@ -1,13 +1,14 @@
 <template>
-  <Page class="page">
-    <ActionBar class="action-bar" title="world">
-      <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" @tap="$navigateBack" />
-    </ActionBar>
-    <GridLayout colums="*" rows="*">
-      <Label class="message" :text="msg" col="0" row="0" />
-      <Button text="tabbar3" @tap="onButton" />
-    </GridLayout>
-  </Page>
+  <WrapLayout>
+    <TabView :selectedIndex="selectedIndex">
+      <TabViewItem title="Tab 1">
+        <Label text="Content for Tab 1" />
+      </TabViewItem>
+      <TabViewItem title="Tab 2">
+        <Label text="Content for Tab 2" />
+      </TabViewItem>
+    </TabView>
+  </WrapLayout>
 </template>
 
 <script>
