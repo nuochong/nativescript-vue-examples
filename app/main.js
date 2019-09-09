@@ -53,19 +53,18 @@ Vue.prototype.$icon = icons.initIcons();
 shortcuts.isSuppertAppShortcus();
 shortcuts.handleTask();
 
-// import Toast from './components/example/toast';
+// import SplashScreenMain from './components/example/splash-screen/splash-screen-main';
 // //import * as imageModule from 'nativescript-image';
 // if (application.android) {
 //   application.on("launch", args => {
 //       console.log("onLaunch");
+//       Vue.prototype.$navigateTo(SplashScreenMain);
 //       //imageModule.initialize();
 //       application.android.on("activityStarted", ({activity}) => {
 //           console.log("onStarted");
-//           Vue.prototype.$navigateTo(Toast);
 //           // var window = activity.getWindow();
 //           // if (window) {
 //           //     window.setBackgroundDrawable(new android.graphics.drawable.ColorDrawable(0xFF151F2F));
-
 //           //     // Prevent the soft keyboard from hiding EditText's while typing.
 //           //     window.setSoftInputMode(32); //android.view.WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN;
 //           // }

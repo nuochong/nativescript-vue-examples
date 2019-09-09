@@ -64,7 +64,6 @@ export default {
 .sanjiao {
   width: 30;
   height: 15;
-
   border-left-width: 30;
   border-right-width: 30;
   border-top-width: 0;
