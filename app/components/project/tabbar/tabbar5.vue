@@ -42,8 +42,6 @@
         <BindingPrompt />
         <InfoPanel />
         <InfoPanel />
-        <InfoPanel />
-        <InfoPanel />
       </StackLayout>
     </ScrollView>
   </GridLayout>
