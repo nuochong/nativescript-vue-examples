@@ -5,12 +5,10 @@
     <GridLayout rows=" *,auto" backgroundColor="#26252A">
 
       <ScrollView orientation="vertical" row="0" backgroundColor="red" v-show="selectedTabview == 0">
-        <StackLayout ref="ca">
-          <Tabbar1 width="100%" />
-        </StackLayout>
+        <Tabbar1 width="100%" />
       </ScrollView>
       <ScrollView orientation="vertical" row="0" backgroundColor="yellow" v-show="selectedTabview == 1">
-        <StackLayout>
+        <StackLayout ref="ca">
           <Header class="header" row="0" />
           <Tabbar2 v-for="(place,index) in places" :key="index" :place="place" :index="index" :active="active" width="100%" />
         </StackLayout>
@@ -20,17 +18,11 @@
           <Tabbar3 v-for="(place,index) in places" :key="index" :place="place" :index="index" :active="active" width="100%" />
         </StackLayout>
       </ScrollView>
-
       <ScrollView orientation="vertical" row="0" backgroundColor="green" v-show="selectedTabview == 3">
-        <!-- <StackLayout> -->
         <Tabbar4 width="100%" />
-        <!-- </StackLayout> -->
       </ScrollView>
-
       <ScrollView orientation="vertical" row="0" backgroundColor="yellow" v-show="selectedTabview == 4">
-        <!-- <StackLayout> -->
         <Tabbar5 />
-        <!-- </StackLayout> -->
       </ScrollView>
       <Footer class="footer" row="1" @change="change" />
     </GridLayout>
@@ -92,9 +84,9 @@ export default {
     };
   },
   mounted() {
-    console.log('xxx', this.$refs.ca.nativeView);
-    this.$refs.ca.nativeView.separatorColor = 'white';
-    this.$refs.ca.nativeView.itemsProperty = 'white';
+    // console.log('xxx', this.$refs.ca.nativeView);
+    // this.$refs.ca.nativeView.separatorColor = 'white';
+    // this.$refs.ca.nativeView.itemsProperty = 'white';
   },
   methods: {
     change: function(value) {
