@@ -1,21 +1,12 @@
 <template>
   <FlexboxLayout flexDirection="row" justifyContent="space-between" id="header">
     <FlexboxLayout class="btn menu">
-      <Image
-        src="~/assets/images/project/arrow.png"
-        class="icon"
-        v-if="canBack == true"
-        @tap="$navigateBack"
-      />
-      <Image
-        src="~/assets/images/project/Menu-Red.png"
-        class="icon"
-        v-else-if="secondary == false"
-      />
+      <Image src="~/assets/images/project/arrow.png" class="icon" v-if="canBack == true" @tap="$navigateBack" />
+      <Image src="~/assets/images/project/Menu-Red.png" class="icon" v-else-if="secondary == false" />
       <Image src="~/assets/images/project/Menu-White.png" class="icon" v-else />
     </FlexboxLayout>
     <FlexboxLayout class="btn pp">
-      <Image src="~/assets/images/project/johndoe.jpg" class="icon" @tap="btnSettings"/>
+      <Image src="~/assets/images/project/johndoe.jpg" class="icon" @tap="btnSettings" />
     </FlexboxLayout>
   </FlexboxLayout>
 </template>
@@ -38,12 +29,12 @@ export default {
       title: ''
     };
   },
-   methods: {
-     btnSettings:function(){
-       console.log('点击了设置按钮');
-       this.navigateTo(this, SettingsMain);
-     }
-   }
+  methods: {
+    btnSettings: function() {
+      console.log('点击了设置按钮');
+      this.navigateTo(this, SettingsMain);
+    }
+  }
 };
 </script>
 

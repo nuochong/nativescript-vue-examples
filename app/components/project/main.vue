@@ -6,7 +6,6 @@
 
       <ScrollView orientation="vertical" row="0" backgroundColor="red" v-show="selectedTabview == 0">
         <StackLayout ref="ca">
-          <!-- <Home /> -->
           <Tabbar1 width="100%" />
         </StackLayout>
       </ScrollView>
@@ -41,7 +40,6 @@
 <script>
 import Footer from './footer';
 import Header from './header';
-import Home from './home';
 import Tabbar1 from './tabbar/tabbar1';
 import Tabbar2 from './tabbar/tabbar2';
 import Tabbar3 from './tabbar/tabbar3';
@@ -54,7 +52,6 @@ export default {
     ActionBarSecond,
     Header,
     Footer,
-    Home,
     Tabbar1,
     Tabbar2,
     Tabbar3,

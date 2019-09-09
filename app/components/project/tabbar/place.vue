@@ -11,47 +11,18 @@
                   <Label :text="place.name" class="title bold" />
                   <Label :text="place.type" class="subTitle semi-bold" />
                   <FlexboxLayout flexDirection="row" height="12" marginTop="4">
-                    <Image
-                      src="~/assets/images/project/Star-Red.png"
-                      v-for="star in place.stars"
-                      :key="star"
-                      marginRight="4"
-                    />
-                    <Image
-                      src="~/assets/images/project/Star-grey.png"
-                      v-for="star in (5 - place.stars)"
-                      marginRight="4"
-                      :key="(star * 10)"
-                    />
+                    <Image src="~/assets/images/project/Star-Red.png" v-for="star in place.stars" :key="star" marginRight="4" />
+                    <Image src="~/assets/images/project/Star-grey.png" v-for="star in (5 - place.stars)" marginRight="4" :key="(star * 10)" />
                   </FlexboxLayout>
                 </StackLayout>
                 <AbsoluteLayout width="100%" height="210">
-                  <StackLayout
-                    top="0"
-                    left="0"
-                    :height="(210 - 20)"
-                    width="100%"
-                    :backgroundImage="'~/assets/images/project/media/' + place.media"
-                    class="image"
-                  ></StackLayout>
+                  <StackLayout top="0" left="0" :height="(210 - 20)" width="100%" :backgroundImage="'~/assets/images/project/media/' + place.media" class="image"></StackLayout>
                   <StackLayout orientation="horizontal" height="40" class="actions" width="100%">
                     <AbsoluteLayout width="40" height="40" class="ac-btn" id="star">
-                      <Image
-                        src="~/assets/images/project/Star-White.png"
-                        width="15"
-                        height="15"
-                        left="12.5"
-                        top="12.5"
-                      />
+                      <Image src="~/assets/images/project/Star-White.png" width="15" height="15" left="12.5" top="12.5" />
                     </AbsoluteLayout>
                     <AbsoluteLayout width="40" height="40" class="ac-btn" id="plus">
-                      <Image
-                        src="~/assets/images/project/Plus.png"
-                        width="15"
-                        height="15"
-                        left="12.5"
-                        top="12.5"
-                      />
+                      <Image src="~/assets/images/project/Plus.png" width="15" height="15" left="12.5" top="12.5" />
                     </AbsoluteLayout>
                   </StackLayout>
                 </AbsoluteLayout>

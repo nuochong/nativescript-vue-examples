@@ -1,12 +1,6 @@
 <template>
   <FlexboxLayout flexDirection="row" justifyContent="space-between" id="footer">
-    <FlexboxLayout
-      class="btn"
-      :class="{ active: (index === active) }"
-      v-for="(btn,index) in btns"
-      :key="index"
-      @tap="goTo(btn.link,index)"
-    >
+    <FlexboxLayout class="btn" :class="{ active: (index === active) }" v-for="(btn,index) in btns" :key="index" @tap="goTo(btn.link,index)">
       <Label class="icon footer-icon" :text="btn.icon | fonticon"></Label>
       <Label class="footer-text" :text="btn.text" />
     </FlexboxLayout>
