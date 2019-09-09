@@ -17,7 +17,7 @@
       </ScrollView>
       <ScrollView orientation="vertical" row="0" backgroundColor="green" v-show="selectedTabview == 2" height="100%">
         <StackLayout>
-        <Tabbar3 v-for="(place,index) in places" :key="index" :place="place" :index="index" :active="active" width="100%" />
+          <Tabbar3 v-for="(place,index) in places" :key="index" :place="place" :index="index" :active="active" width="100%" />
         </StackLayout>
       </ScrollView>
 
