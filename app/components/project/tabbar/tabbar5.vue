@@ -39,6 +39,7 @@
 
         <HeadPanel />
         <TaskPanel />
+        <BindingPrompt />
         <InfoPanel />
         <InfoPanel />
         <InfoPanel />
@@ -53,6 +54,8 @@ import InfoPanel from '../settings/info-panel';
 import HeadPanel from '../settings/head-panel';
 import MyHeader from '../settings/my-header';
 import TaskPanel from '../settings/task-panel';
+import BindingPrompt from '../settings/binding-prompt';
+import Swiper from '../settings/swiper';
 import App from '../../App';
 
 export default {
@@ -60,7 +63,9 @@ export default {
     InfoPanel,
     HeadPanel,
     MyHeader,
-    TaskPanel
+    TaskPanel,
+    BindingPrompt,
+    Swiper
   },
   data() {
     return {
