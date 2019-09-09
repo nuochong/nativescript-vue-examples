@@ -52,7 +52,6 @@ Vue.prototype.$icon = icons.initIcons();
 //检测是否支持AppShortcus
 shortcuts.isSuppertAppShortcus();
 shortcuts.handleTask();
-shortcuts.addDynamicShortcuts();
 
 // import Toast from './components/example/toast';
 // //import * as imageModule from 'nativescript-image';

@@ -37,6 +37,10 @@ const handleTask = function() {
         console.log('点击了静态功能1');
         setTimeout(() => {
           Vue.prototype.$navigateTo(Toast);
+          //彩蛋，新增动态动能
+          addDynamicShortcuts();
+          //设置动态功能不能放在main.js中，否则会报getClass无法获取的错误。
+          //'动态功能设置失败' [TypeError: Cannot read property 'getClass' of undefined]
         });
         break;
       case 'shortcut2':
@@ -65,9 +69,9 @@ const handleTask = function() {
         break;
     }
   });
-  //ios最多支持四个捷径，安卓有些支持四个，有些支持五个，如果支持四个，有三个静态方式，再添加两个动态方式，那么最后一个静态方式会被覆盖。动态优先。
 };
 const addDynamicShortcuts = function() {
+  //ios最多支持四个捷径，安卓有些支持四个，有些支持五个，如果支持四个，有三个静态方式，再添加两个动态方式，那么最后一个静态方式会被覆盖。动态优先。
   appShortcuts
     .configureQuickActions([
       {
@@ -91,7 +95,7 @@ const addDynamicShortcuts = function() {
         console.log('添加了2个操作，关闭应用程序并对应用程序图标施加压力以进行检查！');
       },
       errorMessage => {
-        console.log('动态功能设置失败',errorMessage);
+        console.log('动态功能设置失败', errorMessage);
       }
     );
 };
