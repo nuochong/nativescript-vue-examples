@@ -6,8 +6,8 @@
 
       <ScrollView orientation="vertical" row="0" backgroundColor="red" v-show="selectedTabview == 0">
         <StackLayout ref="ca">
-          <Home />
-          <Tabbar1 v-for="(place,index) in places" :key="index" :place="place" :index="index" :active="active" width="100%" />
+          <!-- <Home /> -->
+          <Tabbar1 width="100%" />
         </StackLayout>
       </ScrollView>
       <ScrollView orientation="vertical" row="0" backgroundColor="yellow" v-show="selectedTabview == 1">
@@ -17,21 +17,21 @@
         </StackLayout>
       </ScrollView>
       <ScrollView orientation="vertical" row="0" backgroundColor="green" v-show="selectedTabview == 2">
-        <StackLayout>
-          <Tabbar3 v-for="(place,index) in places" :key="index" :place="place" :index="index" :active="active" width="100%" />
-        </StackLayout>
+        <!-- <StackLayout> -->
+        <Tabbar3 width="100%" />
+        <!-- </StackLayout> -->
       </ScrollView>
 
       <ScrollView orientation="vertical" row="0" backgroundColor="green" v-show="selectedTabview == 3">
-        <StackLayout>
-          <Tabbar4 v-for="(place,index) in places" :key="index" :place="place" :index="index" :active="active" width="100%" />
-        </StackLayout>
+        <!-- <StackLayout> -->
+        <Tabbar4 width="100%" />
+        <!-- </StackLayout> -->
       </ScrollView>
 
-      <ScrollView orientation="vertical" row="0" backgroundColor="green" v-show="selectedTabview == 4">
-        <StackLayout>
-          <Tabbar5 />
-        </StackLayout>
+      <ScrollView orientation="vertical" row="0" backgroundColor="yellow" v-show="selectedTabview == 4">
+        <!-- <StackLayout> -->
+        <Tabbar5 />
+        <!-- </StackLayout> -->
       </ScrollView>
       <Footer class="footer" row="1" @change="change" />
     </GridLayout>

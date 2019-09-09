@@ -1,10 +1,35 @@
 <template>
-  <WrapLayout>
+  <WrapLayout height="100%">
     <TabView :selectedIndex="selectedIndex">
-      <TabViewItem title="Tab 1">
-        <Label text="Content for Tab 1" />
+      <TabViewItem title="关注">
+        <StackLayout>
+          <GridLayout class="page" rows="auto, *">
+            <ScrollView row="1">
+              <StackLayout>
+                <StackLayout>
+                  <StackLayout class="hr-light"></StackLayout>
+                  <Label text="care team" class="care-common-list-header text-uppercase t-14 p-l-15 p-t-30 p-b-7"></Label>
+                  <StackLayout class="hr-light"></StackLayout>
+                </StackLayout>
+                <GridLayout rows="auto, auto, auto" columns="auto, *, auto" class="p-t-10 p-l-15" (tap)="onContactTap(contact)">
+                  <Label row="0" rowSpan="2" col="0" class="connect-team-avatar p-5 m-r-10 m-y-auto text-center" text="contact.monogram"></Label>
+                  <Label row="0" col="1" text="contact.name" class="font-weight-bold"></Label>
+                  <Label row="1" col="1" text="contact.relation" class="text-muted m-b-10"></Label>
+                  <Label row="0" rowSpan="3" col="2" text=">" class="fa text-muted m-r-10 m-b-10 m-y-auto"></Label>
+                  <StackLayout row="2" colSpan="3" class="hr-light"></StackLayout>
+                </GridLayout>
+              </StackLayout>
+            </ScrollView>
+          </GridLayout>
+        </StackLayout>
       </TabViewItem>
-      <TabViewItem title="Tab 2">
+      <TabViewItem title="专题">
+        <Label text="Content for Tab 2" />
+      </TabViewItem>
+      <TabViewItem title="连载">
+        <Label text="Content for Tab 2" />
+      </TabViewItem>
+      <TabViewItem title="文集">
         <Label text="Content for Tab 2" />
       </TabViewItem>
     </TabView>
