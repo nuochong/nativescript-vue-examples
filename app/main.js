@@ -11,6 +11,7 @@ import VueAxios from 'vue-axios';
 import MultiDrawer from 'nativescript-vue-multi-drawer';
 import Dialog from './components/example/dialog/tools';
 import FontIcon from './tools/nativescript-vue-fonticon';
+//const application = require('tns-core-modules/application');
 
 //在production环境开启VueDevtools工具
 TNS_ENV !== 'production' && Vue.use(VueDevtools);
@@ -50,6 +51,36 @@ Vue.registerElement('BarcodeScanner', () => require('nativescript-barcodescanner
 Vue.prototype.$icon = icons.initIcons();
 //检测是否支持AppShortcus
 shortcuts.isSuppertAppShortcus();
+shortcuts.handleTask();
+shortcuts.addDynamicShortcuts();
+
+// import Toast from './components/example/toast';
+// //import * as imageModule from 'nativescript-image';
+// if (application.android) {
+//   application.on("launch", args => {
+//       console.log("onLaunch");
+//       //imageModule.initialize();
+//       application.android.on("activityStarted", ({activity}) => {
+//           console.log("onStarted");
+//           Vue.prototype.$navigateTo(Toast);
+//           // var window = activity.getWindow();
+//           // if (window) {
+//           //     window.setBackgroundDrawable(new android.graphics.drawable.ColorDrawable(0xFF151F2F));
+
+//           //     // Prevent the soft keyboard from hiding EditText's while typing.
+//           //     window.setSoftInputMode(32); //android.view.WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN;
+//           // }
+//       });
+//   });
+// }
+
+// if (application.ios) {
+//   application.on("launch", args => {
+//       setTimeout(() => {
+//           UIApplication.sharedApplication.keyWindow.backgroundColor = UIColor.blackColor;
+//       }, 1);
+//   });
+// }
 
 new Vue({
   store,

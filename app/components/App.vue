@@ -27,9 +27,7 @@ export default {
       title: 'Welcome to NativeScript-Vue!'
     };
   },
-  mounted() {
-    shortcuts.handleTask();
-  },
+  mounted() {},
   methods: {
     example: function() {
       this.navigateTo(this, Example, 'left');
