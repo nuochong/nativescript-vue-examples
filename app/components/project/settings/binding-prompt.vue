@@ -1,26 +1,10 @@
 <template>
   <WrapLayout>
-    <StackLayout backgroundColor="#E0E0E0">
-      <StackLayout class="hr-light"></StackLayout>
-      <Label text="通用设置" class="care-common-list-header text-uppercase t-14 p-l-15 p-t-30 p-b-7"></Label>
-      <StackLayout class="hr-light"></StackLayout>
-    </StackLayout>
-    <GridLayout rows="auto, auto, auto" columns="auto, *, auto,auto" class="p-t-10 p-l-15" @tap="onContactTap()">
-      <Label row="0" rowSpan="2" col="0" class="connect-team-avatar p-5 m-r-10 m-y-auto text-center" text="图标"></Label>
-      <Label row="0" col="1" text="名称" class="font-weight-bold"></Label>
-      <Label row="1" col="1" text="这里是描述的编写" class="text-muted m-b-10"></Label>
-      <Label row="0" rowSpan="3" col="1" text="未设置" class="text-muted m-r-10 m-b-10 m-y-auto right-text"></Label>
-      <Switch row="0" rowSpan="3" col="2" checked="true" class="text-muted m-r-10 m-b-10 m-y-auto" />
-      <FIcon row="0" rowSpan="3" col="3" name="icon-jiantou" type="icon" class="icon setting-icon text-muted m-r-10 m-b-10 m-y-auto" />
-      <!-- <Label row="0" rowSpan="3" col="3" :text="icon-jiantou | fonticon" class="icon setting-icon text-muted m-r-10 m-b-10 m-y-auto"></Label> -->
-      <StackLayout row="2" colSpan="4" class="hr-light"></StackLayout>
-    </GridLayout>
-    <GridLayout rows="auto, auto, auto" columns="auto, *, auto" class="p-t-10 p-l-15" @tap="onContactTap()">
-      <Label row="0" rowSpan="2" col="0" class="connect-team-avatar p-5 m-r-10 m-y-auto text-center" text="图标"></Label>
-      <Label row="0" col="1" text="名称" class="font-weight-bold"></Label>
-      <Label row="1" col="1" text="这里是描述的编写" class="text-muted m-b-10"></Label>
-      <FIcon row="0" rowSpan="3" col="2" name="icon-jiantou" type="icon" class="icon setting-icon text-muted m-r-10 m-b-10 m-y-auto" />
-      <StackLayout row="2" colSpan="3" class="hr-light"></StackLayout>
+    <GridLayout rows="auto, auto" columns="auto, *,auto" class="p-t-10 p-l-15 bind-wrap">
+      <Label row="0" col="0" text="您还没有绑定手机号和微信号" class="font-weight-bold bind-content bind-content-top"></Label>
+      <Label row="1" col="0" text="绑定后可以收取其他用户赠送的兑换币" class="text-muted m-b-10 bind-content"></Label>
+      <label row="0" rowSpan="2" col="1" text="去绑定" class=" m-y-auto bind-btn" />
+      <FIcon row="0" rowSpan="2" col="2" name="icon-guanbi" type="icon" class="icon bind-icon text-muted m-r-10 m-b-10 m-y-auto" />
     </GridLayout>
   </WrapLayout>
 </template>
@@ -40,6 +24,38 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.bind-wrap {
+  background-color: #efeff4;
+  padding: 15;
+  margin: 0;
+}
+.bind-content {
+  color: black;
+  padding: 0;
+}
+.bind-content-top {
+  margin-bottom: 5;
+}
+.bind-icon {
+  vertical-align: center;
+  color: gray;
+  margin: 0;
+  padding: 0;
+  font-size:10;
+}
+.bind-btn {
+  width: 50;
+  height: 20;
+  text-align: center;
+  border-width: 1;
+  border-color: #009100;
+  color: #009100;
+  vertical-align: center;
+  font-size: 10;
+  padding: 2;
+  margin: 0;
+  border-radius: 50%;
+}
 .care-common-main-header {
   background-color: #f5f4f6;
 }

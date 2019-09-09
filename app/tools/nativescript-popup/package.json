@@ -1,0 +1,53 @@
+{
+  "name": "nativescript-popup",
+  "version": "1.5.0",
+  "description": "",
+  "main": "popup",
+  "typings": "index.d.ts",
+  "nativescript": {
+    "platforms": {
+      "ios": "3.0.0",
+      "android": "3.0.0"
+    }
+  },
+  "scripts": {},
+  "keywords": [
+    "NativeScript",
+    "JavaScript",
+    "Android",
+    "iOS",
+    "popup"
+  ],
+  "author": {
+    "name": "Osei Fortune",
+    "email": "fortune.osei@yahoo.com"
+  },
+  "contributors": [
+    {
+      "name": "Shiv19",
+      "url": "https://shiv19.com",
+      "email": "sp@shiv19.com"
+    },
+    {
+      "name": "Brad Martin",
+      "url": "https://github.com/bradmartin",
+      "email": "bmartin@nstudio.io"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/triniwiz/nativescript-popup/issues"
+  },
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/triniwiz/nativescript-popup",
+  "readmeFilename": "README.md",
+  "devDependencies": {
+    "tns-core-modules": "^3.1.0",
+    "tns-platform-declarations": "^3.1.0",
+    "typescript": "~2.3.0",
+    "prompt": "^1.0.0",
+    "rimraf": "^2.5.0",
+    "tslint": "^5.0.0"
+  },
+  "dependencies": {},
+  "bootstrapper": "nativescript-plugin-seed"
+}
