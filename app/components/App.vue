@@ -16,7 +16,6 @@
 import Example from './example/main';
 import Project from './project/main';
 import ActionBarFirst from './example/public/action-bar-first';
-import shortcuts from '../app.shortcuts.js';
 
 export default {
   components: {

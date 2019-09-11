@@ -80,7 +80,7 @@ export default {
           media: 'Cathedral.jpg'
         }
       ],
-      selectedTabview: 0
+      selectedTabview: 4
     };
   },
   mounted() {
