@@ -3,7 +3,7 @@
     <ActionBarSecond :title="title" />
 
     <ScrollView>
-      <StackLayout>
+      <StackLayout class="hello-world">
         <Button class="btn btn-primary" text="自定义图标" @tap="btnIconCustom" />
         <Button class="btn btn-primary" text="自定义图标" @tap="btnIconPlug" />
       </StackLayout>

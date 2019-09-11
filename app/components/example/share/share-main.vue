@@ -3,7 +3,7 @@
     <ActionBarSecond :title="title" />
 
     <ScrollView>
-      <StackLayout>
+      <StackLayout class="hello-world">
         <Button class="btn btn-primary" text="分享" @tap="btnShare" />
         <Button class="btn btn-primary" text="分享图片" @tap="btnShareImg" />
         <Button class="btn btn-primary" text="分享文本" @tap="btnShareText" />

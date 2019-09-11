@@ -1,12 +1,13 @@
 <template>
   <Page class="page">
     <ActionBarSecond :title="title" />
-
-    <StackLayout class="hello-world">
-      <!-- <GridLayout> -->
+    <ScrollView>
+      <StackLayout class="hello-world">
+        <!-- <GridLayout> -->
         <WebView :src="url1" />
-      <!-- </GridLayout> -->
-    </StackLayout>
+        <!-- </GridLayout> -->
+      </StackLayout>
+    </ScrollView>
   </Page>
 </template>
 

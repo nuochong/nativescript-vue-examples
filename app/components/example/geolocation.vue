@@ -1,10 +1,11 @@
 <template>
   <Page class="page">
     <ActionBarSecond :title="title" />
-
-    <StackLayout class="hello-world">
-      <Button class="btn btn-primary" @tap="geolocation" text="获取位置信息" />
-    </StackLayout>
+    <ScrollView>
+      <StackLayout class="hello-world">
+        <Button class="btn btn-primary" @tap="geolocation" text="获取位置信息" />
+      </StackLayout>
+    </ScrollView>
   </Page>
 </template>
 

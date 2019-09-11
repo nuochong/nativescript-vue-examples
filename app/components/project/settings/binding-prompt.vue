@@ -41,7 +41,7 @@ export default {
   color: gray;
   margin: 0;
   padding: 0;
-  font-size:10;
+  font-size: 10;
 }
 .bind-btn {
   width: 50;

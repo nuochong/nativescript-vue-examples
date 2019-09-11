@@ -3,34 +3,14 @@
     <ActionBarSecond :title="title" />
     <StackLayout backgroundColor="#3c495e"></StackLayout>
     <AbsoluteLayout backgroundColor="#3c495e" ref="page" width="100%">
-      <FlexboxLayout
-        width="100%"
-        height="290"
-        flexDirection="column-reverse"
-        justifyContent="space-around"
-        backgroundColor="#3c495e"
-      >
-        <ScrollView
-          style="border-radius: 10;"
-          orientation="vertical"
-          alignSelf="flex-end"
-          width="90"
-          height="270"
-          backgroundColor="transparent"
-        >
+      <FlexboxLayout width="100%" height="290" flexDirection="column-reverse" justifyContent="space-around" backgroundColor="#3c495e">
+        <ScrollView style="border-radius: 10;" orientation="vertical" alignSelf="flex-end" width="90" height="270" backgroundColor="transparent">
           <StackLayout>
             <Label text class="sanjiao" />
           </StackLayout>
         </ScrollView>
       </FlexboxLayout>
-      <Label
-        text="10,10"
-        left="100%-40"
-        top="-10"
-        width="100"
-        height="100"
-        backgroundColor="#289062"
-      />
+      <Label text="10,10" left="100%-40" top="-10" width="100" height="100" backgroundColor="#289062" />
       <Label text="30,40" left="30" top="40" width="100" height="100" backgroundColor="#43b883" />
     </AbsoluteLayout>
   </Page>

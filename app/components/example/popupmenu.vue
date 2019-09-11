@@ -3,8 +3,8 @@
     <ActionBarSecond :title="title" />
 
     <ScrollView>
-      <StackLayout>
-        <Button class="btn btn-primary" text="简易弹出菜单" ref="btn"  @tap="btnPopup" />
+      <StackLayout class="hello-world">
+        <Button class="btn btn-primary" text="简易弹出菜单" ref="btn" @tap="btnPopup" />
       </StackLayout>
     </ScrollView>
   </Page>

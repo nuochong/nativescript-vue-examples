@@ -1,11 +1,12 @@
 <template>
   <Page class="page">
     <ActionBarSecond :title="title" />
-
-    <StackLayout class="hello-world">
-      <Button class="btn btn-primary" @tap="phone" text="拨打电话" />
-      <Button class="btn btn-primary" @tap="sms" text="发送短信" />
-    </StackLayout>
+    <ScrollView>
+      <StackLayout class="hello-world">
+        <Button class="btn btn-primary" @tap="phone" text="拨打电话" />
+        <Button class="btn btn-primary" @tap="sms" text="发送短信" />
+      </StackLayout>
+    </ScrollView>
   </Page>
 </template>
 

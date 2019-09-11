@@ -1,13 +1,7 @@
 <template>
   <ActionBar class="action-bar" :title="title">
     <NavigationButton text="返回" android.systemIcon="ic_menu_back" @tap="$navigateBack" />
-    <ActionItem
-      @tap="onTapEdit"
-      v-show="!isEditing"
-      ios.systemIcon="2"
-      ios.position="right"
-      android.systemIcon="ic_menu_edit"
-    />
+    <ActionItem @tap="onTapEdit" v-show="!isEditing" ios.systemIcon="2" ios.position="right" android.systemIcon="ic_menu_edit" />
     <!-- <ActionItem
       @tap="onTapSave"
       v-show="isEditing"
@@ -21,9 +15,9 @@
       ios.systemIcon="1"
       android.systemIcon="ic_menu_close_clear_cancel"
     /> -->
-    
+
   </ActionBar>
-  
+
 </template>
 
 <script>

@@ -3,27 +3,12 @@
     <ActionBarSecond :title="title" />
 
     <AbsoluteLayout ref="rootLayout">
-      <ListView
-        for="item in items"
-        @itemTap="onItemTap"
-        left="10"
-        top="10"
-        height="97%"
-        width="100%"
-        marginBottom="48"
-      >
+      <ListView for="item in items" @itemTap="onItemTap" left="10" top="10" height="97%" width="100%" marginBottom="48">
         <v-template>
           <Label :text="item" />
         </v-template>
       </ListView>
-      <StackLayout
-        left="0"
-        top="0"
-        height="100%"
-        width="100%"
-        class="backdrop"
-        :class="classBackdrop"
-      />
+      <StackLayout left="0" top="0" height="100%" width="100%" class="backdrop" :class="classBackdrop" />
 
       <AbsoluteLayout ref="fabItemPosition" marginTop="87%" marginLeft="80%">
         <GridLayout ref="fabItemContainer" left="8" top="8">

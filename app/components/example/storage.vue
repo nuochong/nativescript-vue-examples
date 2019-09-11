@@ -8,12 +8,7 @@
 
         <!-- store/retrieve number -->
         <Label text="Number" class="heading" />
-        <TextField
-          v-model="num"
-          hint="Enter a Number..."
-          class="input input-border"
-          keyboardType="number"
-        />
+        <TextField v-model="num" hint="Enter a Number..." class="input input-border" keyboardType="number" />
         <StackLayout orientation="horizontal" horizontalAlignment="center">
           <Button text="保存" @tap="saveNumber" class="btn btn-primary" />
           <Button text="移除" @tap="removeNumber" class="btn btn-primary" />

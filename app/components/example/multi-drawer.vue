@@ -3,34 +3,15 @@
     <!-- Main Content (default slot) -->
     <slot />
 
-    <Label
-      v-show="backdropVisible"
-      ref="backDrop"
-      opacity="0"
-      :backgroundColor="optionsInternal.backdropColor"
-      @pan="onBackDropPan"
-      @tap="close()"
-    />
+    <Label v-show="backdropVisible" ref="backDrop" opacity="0" :backgroundColor="optionsInternal.backdropColor" @pan="onBackDropPan" @tap="close()" />
 
     <template v-for="(side,index) in computedSidesEnabled">
       <!-- Drawer Content -->
-      <GridLayout
-        @layoutChanged="onDrawerLayoutChange(side)"
-        @tap="noop"
-        @pan="onDrawerPan(side, $event)"
-        :ref="`${side}Drawer`"
-        :style="computedDrawerStyle(side)"
-        :key="index"
-      >
+      <GridLayout @layoutChanged="onDrawerLayoutChange(side)" @tap="noop" @pan="onDrawerPan(side, $event)" :ref="`${side}Drawer`" :style="computedDrawerStyle(side)" :key="index">
         <slot :name="side" />
       </GridLayout>
       <!-- Open Trigger -->
-      <Label
-        v-show="computedShowSwipeOpenTrigger(side)"
-        v-bind="computedSwipeOpenTriggerProperties(side)"
-        @pan="onOpenTriggerPan(side, $event)"
-        :key="index"
-      />
+      <Label v-show="computedShowSwipeOpenTrigger(side)" v-bind="computedSwipeOpenTriggerProperties(side)" @pan="onOpenTriggerPan(side, $event)" :key="index" />
     </template>
   </GridLayout>
 </template>

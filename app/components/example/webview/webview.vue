@@ -1,12 +1,13 @@
 <template>
   <Page class="page">
     <ActionBarSecond :title="title" />
-
-    <StackLayout class="hello-world">
-      <Button class="btn btn-primary" @tap="btnBrowser" text="简易浏览器" />
-      <Button class="btn btn-primary" @tap="open1" text="显示网页" />
-      <Button class="btn btn-primary" @tap="open2" text="显示自定义html内容" />
-    </StackLayout>
+    <ScrollView>
+      <StackLayout class="hello-world">
+        <Button class="btn btn-primary" @tap="btnBrowser" text="简易浏览器" />
+        <Button class="btn btn-primary" @tap="open1" text="显示网页" />
+        <Button class="btn btn-primary" @tap="open2" text="显示自定义html内容" />
+      </StackLayout>
+    </ScrollView>
   </Page>
 </template>
 

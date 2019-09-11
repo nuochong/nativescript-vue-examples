@@ -3,24 +3,11 @@
     <!-- Main Content (default slot) -->
     <slot />
 
-    <Label
-      v-show="backdropVisible"
-      ref="backDrop"
-      opacity="0"
-      :backgroundColor="optionsInternal.backdropColor"
-      @tap="close()"
-    />
+    <Label v-show="backdropVisible" ref="backDrop" opacity="0" :backgroundColor="optionsInternal.backdropColor" @tap="close()" />
 
     <template v-for="(side,index) in computedSidesEnabled">
       <!-- Drawer Content -->
-      <GridLayout
-        @layoutChanged="onDrawerLayoutChange(side)"
-        @tap="noop"
-        :ref="`${side}Drawer`"
-        :style="computedDrawerStyle(side)"
-        opacity="0"
-        :key="index"
-      >
+      <GridLayout @layoutChanged="onDrawerLayoutChange(side)" @tap="noop" :ref="`${side}Drawer`" :style="computedDrawerStyle(side)" opacity="0" :key="index">
         <slot :name="side" />
       </GridLayout>
       <!-- Open Trigger -->

@@ -2,19 +2,8 @@
   <Page class="page" loaded="pageLoaded" ref="page">
     <ActionBarSecond :title="title" />
 
-    <FlexboxLayout
-      flexDirection="column"
-      backgroundColor="#3c495e"
-      @pan="onDrawerPan(side, $event)"
-    >
-      <Label
-        class="first"
-        text="first"
-        height="70"
-        backgroundColor="#43b883"
-        ref="ht"
-        flexShrink="0"
-      />
+    <FlexboxLayout flexDirection="column" backgroundColor="#3c495e" @pan="onDrawerPan(side, $event)">
+      <Label class="first" text="first" height="70" backgroundColor="#43b883" ref="ht" flexShrink="0" />
       <Label text="second" height="70" backgroundColor="#1c6b48" flexShrink="0" />
       <!-- <Label text="third" height="100%" backgroundColor="#289062" /> -->
       <ListView for="item in listArr" ref="list" @pan="onListPane(side,$event)">

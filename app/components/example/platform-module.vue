@@ -1,10 +1,11 @@
 <template>
   <Page class="page">
     <ActionBarSecond :title="title" />
-
-    <StackLayout class="hello-world">
-      <Button class="btn btn-primary" @tap="getinfo" text="获取设备信息" />
-    </StackLayout>
+    <ScrollView>
+      <StackLayout class="hello-world">
+        <Button class="btn btn-primary" @tap="getinfo" text="获取设备信息" />
+      </StackLayout>
+    </ScrollView>
   </Page>
 </template>
 

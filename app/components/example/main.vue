@@ -3,8 +3,7 @@
     <ActionBarSecond :title="title" />
 
     <ScrollView>
-      <!-- <GridLayout class="hello-world" colums="*" rows="*"> -->
-      <StackLayout>
+      <StackLayout class="hello-world">
         <Button class="btn btn-primary" text="Vuex计数器" @tap="counter" />
         <Button class="btn btn-primary" text="相机" @tap="camera" />
         <Button class="btn btn-primary" text="模拟登录" @tap="login" />
@@ -42,7 +41,6 @@
         <Button class="btn btn-primary" text="弹出菜单" @tap="btnPopupmenu" />
         <Button class="btn btn-primary" text="分享" @tap="btnShareMain" />
       </StackLayout>
-      <!-- </GridLayout> -->
     </ScrollView>
   </Page>
 </template>

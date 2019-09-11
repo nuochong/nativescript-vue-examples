@@ -2,7 +2,7 @@
   <Page class="page">
     <ActionBarSecond :title="title" />
 
-    <StackLayout>
+    <StackLayout class="hello-world">
       <Button class="btn btn-primary" text="GET请求" @tap="axiosGet" />
       <Button class="btn btn-primary" text="POST请求" @tap="axiosPost" />
       <RequestContent :content="content" />
