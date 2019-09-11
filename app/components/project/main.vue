@@ -1,23 +1,23 @@
 <template>
-  <Page class="page" actionBarHidden="false">
+  <Page class="page" actionBarHidden="true">
     <ActionBarSecond :title="title" />
     <GridLayout rows=" *,auto" backgroundColor="#26252A">
       <ScrollView orientation="vertical" row="0" backgroundColor="white" v-show="selectedTabview == 0">
-        <Tabbar1 width="100%" />
+        <Tabbar1 />
       </ScrollView>
       <ScrollView orientation="vertical" row="0" backgroundColor="white" v-show="selectedTabview == 1">
         <StackLayout ref="ca">
           <Header class="header" row="0" />
-          <Tabbar2 v-for="(place,index) in places" :key="index" :place="place" :index="index" :active="active" width="100%" />
+          <Tabbar2 v-for="(place,index) in places" :key="index" :place="place" :index="index" :active="active" />
         </StackLayout>
       </ScrollView>
-      <ScrollView orientation="vertical" row="0" backgroundColor="white" v-show="selectedTabview == 2" height="100%">
+      <ScrollView orientation="vertical" row="0" backgroundColor="white" v-show="selectedTabview == 2">
         <StackLayout>
-          <Tabbar3 v-for="(place,index) in places" :key="index" :place="place" :index="index" :active="active" width="100%" />
+          <Tabbar3 v-for="(place,index) in places" :key="index" :place="place" :index="index" :active="active" />
         </StackLayout>
       </ScrollView>
       <ScrollView orientation="vertical" row="0" backgroundColor="white" v-show="selectedTabview == 3">
-        <Tabbar4 width="100%" />
+        <Tabbar4 />
       </ScrollView>
       <StackLayout row="0" backgroundColor="white" v-show="selectedTabview == 4">
         <Tabbar5 row="1" col="0" />
@@ -80,7 +80,7 @@ export default {
           media: 'Cathedral.jpg'
         }
       ],
-      selectedTabview: 0
+      selectedTabview: 4
     };
   },
   mounted() {
@@ -109,10 +109,10 @@ export default {
   background-color: blue;
   margin-top: 0;
 }
-.page {
-  margin: 0;
-  padding: 0;
-}
+// .page {
+//   margin: 0;
+//   padding: 0;
+// }
 .header {
   padding: 10;
   height: 40;

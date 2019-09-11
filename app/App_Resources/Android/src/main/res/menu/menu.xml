@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:id="@+id/next" android:icon="@drawable/icon" android:title="下一首播放" android:orderInCategory="100" android:showAsAction="never"/>
+  <item android:id="@+id/add" android:icon="@drawable/icon" android:title="添加到歌单" android:orderInCategory="100" android:showAsAction="never"/>
+  <item android:id="@+id/detail" android:icon="@drawable/icon" android:title="歌曲详情" android:orderInCategory="100" android:showAsAction="never"/>
+  <item android:id="@+id/del" android:icon="@drawable/icon" android:title="删除歌曲" android:orderInCategory="100" android:showAsAction="never"/>
+</menu>

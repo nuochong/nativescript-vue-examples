@@ -80,6 +80,10 @@ shortcuts.handleTask();
 //   });
 // }
 
+import {setStatusBarColors,setStatusBarFontColors} from './tools/status-bar-util';
+Vue.prototype.$setStatusBarFontColors = setStatusBarFontColors;
+//setStatusBarColors();
+
 new Vue({
   store,
   render: h => h('frame', [h(App)])

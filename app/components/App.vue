@@ -1,14 +1,15 @@
 <template>
-  <Page class="page">
-    <ActionBarFirst :title="title" />
-    <ScrollView>
-      <!-- <GridLayout  colums="*" rows="*"> -->
-      <StackLayout class="hello-world">
-        <Button class="btn btn-primary" text="示例" @tap="example" />
-        <Button class="btn btn-primary" text="实例" @tap="project" />
-      </StackLayout>
-      <!-- </GridLayout> -->
-    </ScrollView>
+  <Page class="page" actionBarHidden="true">
+    <!-- <ActionBarFirst :title="title" /> -->
+    <GridLayout>
+      <GridLayout ref="bg" scaleX="1.4" scaleY="1.4" class="background"></GridLayout>
+      <ScrollView>
+        <StackLayout class="hello-world">
+          <Button class="btn btn-primary" text="示例" @tap="example" />
+          <Button class="btn btn-primary" text="实例" @tap="project" />
+        </StackLayout>
+      </ScrollView>
+    </GridLayout>
   </Page>
 </template>
 
@@ -16,7 +17,6 @@
 import Example from './example/main';
 import Project from './project/main';
 import ActionBarFirst from './example/public/action-bar-first';
-import shortcuts from '../app.shortcuts.js';
 
 export default {
   components: {
@@ -27,17 +27,35 @@ export default {
       title: 'Welcome to NativeScript-Vue!'
     };
   },
-  mounted() {},
+  mounted() {
+    //this.startBackgroundAnimation();
+  },
   methods: {
     example: function() {
       this.navigateTo(this, Example, 'left');
+      this.$setStatusBarFontColors('black');
     },
     project: function() {
       this.navigateTo(this, Project, 'left');
+      this.$setStatusBarFontColors('white');
+    },
+    startBackgroundAnimation() {
+      let background = this.$refs.bg.nativeView;
+      background.animate({
+        scale: { x: 1.0, y: 1.0 },
+        duration: 10000
+      });
     }
   }
 };
 </script>
 
 <style scoped lang="scss">
+.background {
+  background-image: url('res://bg_login');
+  //background-color: blue;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 </style>

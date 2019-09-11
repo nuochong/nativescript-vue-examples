@@ -20,7 +20,7 @@ var Menu = (function(_super) {
             for (var i = 0; i < options.actions.length; i++) {
                 var action = options.actions[i];
                 console.log('菜单值',action);
-                popupMenu_1.getMenu().add(action).setIcon();
+                popupMenu_1.getMenu().add(action);
             }
             // console.log('测试开始',android.R.menu)
             // popupMenu_1.getMenuInflater().inflate(android.R.menu, popupMenu_1.getMenu());

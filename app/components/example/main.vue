@@ -39,6 +39,8 @@
         <Button class="btn btn-primary" text="扫码" @tap="btnQrcode" />
         <Button class="btn btn-primary" text="网页" @tap="btnWebview" />
         <Button class="btn btn-primary" text="自定义过渡效果" @tap="btnEffect" />
+        <Button class="btn btn-primary" text="弹出菜单" @tap="btnPopupmenu" />
+        <Button class="btn btn-primary" text="分享" @tap="btnShareMain" />
       </StackLayout>
       <!-- </GridLayout> -->
     </ScrollView>
@@ -79,6 +81,8 @@ import RequestMain from './request/request-main';
 import Qrcode from './qrcode/qrcode';
 import Webview from './webview/webview';
 import Effect from './effect';
+import Popupmenu from './popupmenu';
+import ShareMain from './share/share-main';
 
 import ActionBarSecond from './public/action-bar-second';
 
@@ -94,6 +98,12 @@ export default {
   },
   mounted() {},
   methods: {
+    btnShareMain: function() {
+      this.navigateTo(this, ShareMain);
+    },
+    btnPopupmenu: function() {
+      this.navigateTo(this, Popupmenu);
+    },
     counter: function() {
       this.navigateTo(this, Counter);
     },

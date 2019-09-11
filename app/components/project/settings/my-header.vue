@@ -9,6 +9,7 @@
 </template>
 
 <script>
+import WriteArticle from './write-article';
 export default {
   components: {},
   data() {
@@ -20,6 +21,7 @@ export default {
     },
     btnEdit: function() {
       console.log('点击了文章按钮');
+      this.navigateTo(this, WriteArticle);
     }
   }
 };
