@@ -1,4 +1,4 @@
-import Example from '~/components/example/example';
+import Example from '~/components/example/main';
 import Project from '~/components/project/main';
 import World from '~/components/example/target/world';
 

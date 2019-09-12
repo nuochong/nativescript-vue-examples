@@ -40,6 +40,8 @@
         <Button class="btn btn-primary" text="自定义过渡效果" @tap="btnEffect" />
         <Button class="btn btn-primary" text="弹出菜单" @tap="btnPopupmenu" />
         <Button class="btn btn-primary" text="分享" @tap="btnShareMain" />
+        <Button class="btn btn-primary" text="检测网络类型" @tap="btnCheckNetworkType" />
+        <Button class="btn btn-primary" text="广播" @tap="btnBroadcastReceiver" />
       </StackLayout>
     </ScrollView>
   </Page>
@@ -81,6 +83,8 @@ import Webview from './webview/webview';
 import Effect from './effect';
 import Popupmenu from './popupmenu';
 import ShareMain from './share/share-main';
+import BtnCheckNetworkType from './check-network-type';
+import BroadcastReceiver from './broadcast-receiver';
 
 import ActionBarSecond from './public/action-bar-second';
 
@@ -96,6 +100,12 @@ export default {
   },
   mounted() {},
   methods: {
+    btnBroadcastReceiver: function() {
+      this.navigateTo(this, BroadcastReceiver);
+    },
+    btnCheckNetworkType: function() {
+      this.navigateTo(this, BtnCheckNetworkType);
+    },
     btnShareMain: function() {
       this.navigateTo(this, ShareMain);
     },
