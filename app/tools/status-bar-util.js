@@ -14,22 +14,22 @@ function setStatusBarColors() {
       const window = application.android.startActivity.getWindow();
       // window.addFlags(android.view.WindowManager.LayoutParams.FlAG_TRANSLUCENT_STATUS);
       // window.addFlags(android.view.WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-      // window.setStatusBarColor(0x000000);//设置导航栏为透明颜色
-
-      //const decorView = window.getDecorView();
-      //var color = android.graphics.Color.parseColor('#f0f0f0');
-      setStatusBarFontColors('black');
-      //以下操作隐藏导航栏
-      // decorView.setSystemUiVisibility(
-      //   View.SYSTEM_UI_FLAG_LAYOUT_STABLE |
-      //     View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION |
-      //     View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN |
-      //     View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
-      // );
+      // 设置导航栏为透明颜色
+      window.setStatusBarColor(0x000000);
+      const decorView = window.getDecorView();
+      // 以下操作隐藏导航栏
+      decorView.setSystemUiVisibility(
+        View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+        // View.SYSTEM_UI_FLAG_LAYOUT_IN_SCREEN |
+        // View.SYSTEM_UI_FLAG_LAYOUT_STABLE |
+        // View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION |
+        // View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
+      );
     });
   }
 }
 //设置安卓顶部导航背景颜色并根据亮色和暗色自动切换导航字体颜色
+//setStatusBarFontColors('black');
 function setStatusBarFontColors(color = 'default') {
   if (application.android) {
     const View = android.view.View;

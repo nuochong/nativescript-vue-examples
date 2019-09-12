@@ -1,8 +1,8 @@
 <template>
-  <Page class="page" actionBarHidden="true">
-    <!-- <ActionBarFirst :title="title" /> -->
-    <GridLayout>
-      <GridLayout ref="bg" scaleX="1.4" scaleY="1.4" class="background"></GridLayout>
+  <Page class="page background" actionBarHidden="true">
+    <ActionBarFirst :title="title" />
+    <GridLayout class="body-wrap">
+      <!-- <GridLayout ref="bg" scaleX="1.4" scaleY="1.4" class="background"></GridLayout> -->
       <ScrollView>
         <StackLayout class="hello-world">
           <Button class="btn btn-primary" text="示例" @tap="example" />
@@ -33,11 +33,11 @@ export default {
   methods: {
     example: function() {
       this.navigateTo(this, Example, 'left');
-      this.$setStatusBarFontColors('black');
+      //this.$setStatusBarFontColors('black');
     },
     project: function() {
       this.navigateTo(this, Project, 'left');
-      this.$setStatusBarFontColors('white');
+      //this.$setStatusBarFontColors('white');
     },
     startBackgroundAnimation() {
       let background = this.$refs.bg.nativeView;
@@ -51,6 +51,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
+// .body-wrap{
+//   margin-top:15;
+// }
 .background {
   background-image: url('res://bg_login');
   //background-color: blue;

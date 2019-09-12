@@ -1,27 +1,27 @@
 <template>
-  <Page class="page" actionBarHidden="true">
+  <Page class="page" actionBarHidden="false">
     <ActionBarSecond :title="title" />
-    <GridLayout rows=" *,auto" backgroundColor="#26252A">
-      <ScrollView orientation="vertical" row="0" backgroundColor="white" v-show="selectedTabview == 0">
+    <GridLayout columns="*" rows="*, 50">
+      <ScrollView row="0" col="0" class="scroll" v-show="selectedTabview == 0">
         <Tabbar1 />
       </ScrollView>
-      <ScrollView orientation="vertical" row="0" backgroundColor="white" v-show="selectedTabview == 1">
+      <ScrollView row="0" col="0" class="scroll" v-show="selectedTabview == 1">
         <StackLayout ref="ca">
-          <Header class="header" row="0" />
+          <Header class="header" />
           <Tabbar2 v-for="(place,index) in places" :key="index" :place="place" :index="index" :active="active" />
         </StackLayout>
       </ScrollView>
-      <ScrollView orientation="vertical" row="0" backgroundColor="white" v-show="selectedTabview == 2">
+      <ScrollView row="0" col="0" class="scroll" v-show="selectedTabview == 2">
         <StackLayout>
           <Tabbar3 v-for="(place,index) in places" :key="index" :place="place" :index="index" :active="active" />
         </StackLayout>
       </ScrollView>
-      <ScrollView orientation="vertical" row="0" backgroundColor="white" v-show="selectedTabview == 3">
+      <ScrollView row="0" col="0" class="scroll" v-show="selectedTabview == 3">
         <Tabbar4 />
       </ScrollView>
-      <StackLayout row="0" backgroundColor="white" v-show="selectedTabview == 4">
-        <Tabbar5 row="1" col="0" />
-      </StackLayout>
+      <ScrollView row="0" col="0" class="scroll" v-show="selectedTabview == 4">
+        <Tabbar5 />
+      </ScrollView>
       <Footer class="footer" row="1" @change="change" />
     </GridLayout>
   </Page>
@@ -98,6 +98,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.scroll {
+  background-color: white;
+}
 .dt {
   padding: 0;
 }
