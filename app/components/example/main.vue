@@ -42,6 +42,7 @@
         <Button class="btn btn-primary" text="分享" @tap="btnShareMain" />
         <Button class="btn btn-primary" text="检测网络类型" @tap="btnCheckNetworkType" />
         <Button class="btn btn-primary" text="广播" @tap="btnBroadcastReceiver" />
+        <Button class="btn btn-primary" text="获取平台信息" @tap="btnPlatform" />
       </StackLayout>
     </ScrollView>
   </Page>
@@ -85,6 +86,7 @@ import Popupmenu from './popupmenu';
 import ShareMain from './share/share-main';
 import BtnCheckNetworkType from './check-network-type';
 import BroadcastReceiver from './broadcast-receiver';
+import Platform from './Platform';
 
 import ActionBarSecond from './public/action-bar-second';
 
@@ -100,6 +102,9 @@ export default {
   },
   mounted() {},
   methods: {
+    btnPlatform:function(){
+this.navigateTo(this, Platform);
+    },
     btnBroadcastReceiver: function() {
       this.navigateTo(this, BroadcastReceiver);
     },
