@@ -37,7 +37,7 @@ Vue.use(FontIcon, {
   debug: false,
   paths: {
     fa: './fonts/font-awesome.css',
-    icon: './fonts/iconfont.css',
+    icon: './fonts/iconfont.css'
     //ic: './fonts/icommon.css',
   }
 });
@@ -46,7 +46,7 @@ Vue.registerElement('RadSideDrawer', () => require('nativescript-ui-sidedrawer')
 //注册下拉刷新
 Vue.registerElement('PullToRefresh', () => require('@nstudio/nativescript-pulltorefresh').PullToRefresh);
 //注册扫码
-Vue.registerElement('BarcodeScanner', () => require('nativescript-barcodescanner').BarcodeScannerView)
+Vue.registerElement('BarcodeScanner', () => require('nativescript-barcodescanner').BarcodeScannerView);
 //初始化icons
 Vue.prototype.$icon = icons.initIcons();
 //检测是否支持AppShortcus
@@ -80,9 +80,15 @@ shortcuts.handleTask();
 //   });
 // }
 
-import {setStatusBarColors,setStatusBarFontColors} from './tools/status-bar-util';
+import { setStatusBarColors, setStatusBarFontColors } from './tools/status-bar-util';
 Vue.prototype.$setStatusBarFontColors = setStatusBarFontColors;
 //setStatusBarColors();
+
+import router from './router/router';
+Vue.prototype.$router = router;
+Vue.prototype.$goto = function(to, options) {
+  this.$navigateTo(this.$router[to], options);
+};
 
 new Vue({
   store,
