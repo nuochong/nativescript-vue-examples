@@ -53,8 +53,7 @@ export default {
 //   margin-top:15;
 // }
 .background {
-  background-image: url('res://bg_login');
-  //background-color: blue;
+  background-image: url('res://bg_login_new');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
