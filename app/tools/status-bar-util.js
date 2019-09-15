@@ -19,11 +19,12 @@ function setStatusBarColors() {
       const decorView = window.getDecorView();
       // 以下操作隐藏导航栏
       decorView.setSystemUiVisibility(
-        View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
-        // View.SYSTEM_UI_FLAG_LAYOUT_IN_SCREEN |
-        // View.SYSTEM_UI_FLAG_LAYOUT_STABLE |
-        // View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION |
-        // View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
+        View.SYSTEM_UI_FLAG_FULLSCREEN |
+          //View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN |
+          //View.SYSTEM_UI_FLAG_LAYOUT_IN_SCREEN |
+          //View.SYSTEM_UI_FLAG_LAYOUT_STABLE //|
+          //View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION |
+          View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
       );
     });
   }
@@ -32,7 +33,6 @@ function setStatusBarColors() {
 //setStatusBarFontColors('black');
 function setStatusBarFontColors(color = 'default') {
   if (application.android) {
-    const View = android.view.View;
     const window = application.android.startActivity.getWindow();
     if (color == 'default') {
       window.setStatusBarColor(defaultColor);
@@ -56,16 +56,30 @@ function setStatusBarFontColors(color = 'default') {
     console.log('现在的颜色：', colorChange);
     const v = androidx.core.graphics.ColorUtils.calculateLuminance(colorChange);
     console.log('亮度处理后的值是：', v);
-    const decorView = window.getDecorView();
     if (v >= 0.5) {
-      console.log('是亮色,设置导航栏为黑色字体');
-      decorView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
-      //设置黑色状态栏字体
+      setBarFontColor('black');
     } else {
-      console.log('是暗色，设置导航栏为白色字体');
-      decorView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_VISIBLE);
+      setBarFontColor('white');
     }
   }
 }
 
-export { setStatusBarColors, setStatusBarFontColors };
+function setBarFontColor(type = 'black') {
+  const View = android.view.View;
+  const window = application.android.startActivity.getWindow();
+  if (application.android) {
+    const decorView = window.getDecorView();
+    if (type == 'black') {
+      console.log('是亮色,设置导航栏为黑色字体');
+      decorView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
+      //设置黑色状态栏字体
+    } else if (type == 'white') {
+      console.log('是暗色，设置导航栏为白色字体');
+      decorView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_VISIBLE);
+    } else {
+      console.log('颜色错误');
+    }
+  }
+}
+
+export { setStatusBarColors, setStatusBarFontColors, setBarFontColor };

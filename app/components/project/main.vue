@@ -1,5 +1,5 @@
 <template>
-  <Page class="page" actionBarHidden="false">
+  <Page class="page" actionBarHidden="true">
     <ActionBarSecond :title="title" />
     <GridLayout columns="*" rows="*, 50">
       <ScrollView row="0" col="0" class="scroll" v-show="selectedTabview == 0">

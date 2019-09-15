@@ -80,8 +80,9 @@ shortcuts.handleTask();
 //   });
 // }
 
-import { setStatusBarColors, setStatusBarFontColors } from './tools/status-bar-util';
+import { setStatusBarColors, setStatusBarFontColors ,setBarFontColor} from './tools/status-bar-util';
 Vue.prototype.$setStatusBarFontColors = setStatusBarFontColors;
+Vue.prototype.$setBarFontColor = setBarFontColor;
 setStatusBarColors();
 
 // import router from './router/router';

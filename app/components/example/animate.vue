@@ -1,11 +1,14 @@
 <template>
-  <Page class="page" loaded="pageLoaded" ref="page">
+  <Page class="page" loaded="pageLoaded" ref="page" @loaded="startBackgroundAnimation">
     <ActionBarSecond :title="title" />
 
-    <GridLayout colums="*" rows="*">
-      <Label class="animateicon" :text="msg" col="0" row="0" />
-      <Image class="animateicon" src="~/assets/images/NativeScript-Vue.png" />
-    </GridLayout>
+    <ScrollView>
+      <StackLayout class="hello-world">
+        <Button class="btn btn-primary" text="实例1" @tap="startBackgroundAnimation" ref="bg" scaleX="1.4" scaleY="1.4" />
+        <Label class="animateicon" :text="msg" col="0" row="0" />
+        <Image class="animateicon" src="~/assets/images/NativeScript-Vue.png" />
+      </StackLayout>
+    </ScrollView>
   </Page>
 </template>
 
@@ -22,8 +25,28 @@ export default {
       msg: '此处演示使用CSS动画效果'
     };
   },
-  mounted() {},
-  methods: {}
+  // created() {
+  //   this.startBackgroundAnimation();
+  ////如果使用created钩子则无法进入页面
+  // },
+  mounted() {
+    this.startBackgroundAnimation();
+    //将动画放在mounted中无法启动，只能通过在page中@loaded或者按钮点击事件触发。
+  },
+  methods: {
+    startBackgroundAnimation: function() {
+      this.$refs.bg.nativeView
+        .animate({
+          rotate: 360,
+          scale: { x: 1.0, y: 1.0 },
+          duration: 10000
+        })
+        .then(() => {
+          console.log('动画执行完毕');
+          //do something
+        });
+    }
+  }
 };
 </script>
 

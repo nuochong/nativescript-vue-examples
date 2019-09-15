@@ -1,8 +1,8 @@
 <template>
-  <Page class="page background" actionBarHidden="true">
+  <Page class="page" actionBarHidden="true">
     <ActionBarFirst :title="title" />
     <GridLayout class="body-wrap">
-      <!-- <GridLayout ref="bg" scaleX="1.4" scaleY="1.4" class="background"></GridLayout> -->
+      <GridLayout class="background" ref="bg" scaleX="1.4" scaleY="1.4" @loaded="startBackgroundAnimation"></GridLayout>
       <ScrollView>
         <StackLayout class="hello-world">
           <Button class="btn btn-primary" text="示例" @tap="example" />
@@ -27,9 +27,7 @@ export default {
       title: 'Welcome to NativeScript-Vue!'
     };
   },
-  mounted() {
-    //this.startBackgroundAnimation();
-  },
+  created() {},
   methods: {
     example: function() {
       this.navigateTo(this, Example, 'left');
@@ -37,11 +35,11 @@ export default {
     },
     project: function() {
       this.navigateTo(this, Project, 'left');
+      //this.$setBarFontColor('black');
       //this.$setStatusBarFontColors('white');
     },
-    startBackgroundAnimation() {
-      let background = this.$refs.bg.nativeView;
-      background.animate({
+    startBackgroundAnimation: function() {
+      this.$refs.bg.nativeView.animate({
         scale: { x: 1.0, y: 1.0 },
         duration: 10000
       });

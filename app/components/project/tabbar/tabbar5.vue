@@ -76,7 +76,7 @@ export default {
   methods: {
     btnExit: function() {
       this.$navigateBack();
-      this.$setStatusBarFontColors();
+      //this.$setStatusBarFontColors();
     }
   }
 };
