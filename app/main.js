@@ -83,7 +83,7 @@ shortcuts.handleTask();
 import { setStatusBarColors, setStatusBarFontColors ,setBarFontColor} from './tools/status-bar-util';
 Vue.prototype.$setStatusBarFontColors = setStatusBarFontColors;
 Vue.prototype.$setBarFontColor = setBarFontColor;
-setStatusBarColors();
+//setStatusBarColors();
 
 // import router from './router/router';
 // Vue.prototype.$router = router;

@@ -19,9 +19,9 @@
       <ScrollView row="0" col="0" class="scroll" v-show="selectedTabview == 3">
         <Tabbar4 />
       </ScrollView>
-      <ScrollView row="0" col="0" class="scroll" v-show="selectedTabview == 4">
-        <Tabbar5 />
-      </ScrollView>
+      <!-- <ScrollView row="0" col="0" class="scroll" v-show="selectedTabview == 4"> -->
+        <Tabbar5 row="0" col="0" class="scroll" v-show="selectedTabview == 4"/>
+      <!-- </ScrollView> -->
       <Footer class="footer" row="1" @change="change" />
     </GridLayout>
   </Page>
