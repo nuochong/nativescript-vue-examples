@@ -5,23 +5,22 @@
       <ScrollView row="0" col="0" class="scroll" v-show="selectedTabview == 0">
         <Tabbar1 />
       </ScrollView>
+      
       <ScrollView row="0" col="0" class="scroll" v-show="selectedTabview == 1">
         <StackLayout ref="ca">
           <Header class="header" />
           <Tabbar2 v-for="(place,index) in places" :key="index" :place="place" :index="index" :active="active" />
         </StackLayout>
       </ScrollView>
-      <ScrollView row="0" col="0" class="scroll" v-show="selectedTabview == 2">
-        <StackLayout>
-          <Tabbar3 v-for="(place,index) in places" :key="index" :place="place" :index="index" :active="active" />
-        </StackLayout>
-      </ScrollView>
+
+      <Tabbar3 row="0" col="0" class="scroll" v-show="selectedTabview == 2" />
+
       <ScrollView row="0" col="0" class="scroll" v-show="selectedTabview == 3">
         <Tabbar4 />
       </ScrollView>
-      <!-- <ScrollView row="0" col="0" class="scroll" v-show="selectedTabview == 4"> -->
-        <Tabbar5 row="0" col="0" class="scroll" v-show="selectedTabview == 4"/>
-      <!-- </ScrollView> -->
+
+      <Tabbar5 row="0" col="0" class="scroll" v-show="selectedTabview == 4" />
+
       <Footer class="footer" row="1" @change="change" />
     </GridLayout>
   </Page>
@@ -60,12 +59,6 @@ export default {
           type: 'Architecture',
           stars: 4,
           media: 'Dublin.jpg'
-        },
-        {
-          name: "Christ Church's",
-          type: 'Architecture',
-          stars: 4,
-          media: 'Cathedral.jpg'
         },
         {
           name: "Christ Church's",
