@@ -1,7 +1,7 @@
 <template>
-  <WrapLayout height="415" class="card" flexDirection="column" justifyContent="center" :class="{'active':(index == active), 'inactive':(index != active)}" @tap="goToPlace(place)">
-    <AbsoluteLayout width="56%" height="80%" class="ll" alignSelf="center">
-      <Image src="~/assets/images/project/box-shadow.png" width="100%" height="97%" class="background" />
+  <WrapLayout height="415" class="card" flexDirection="column" justifyContent="center" :class="{'active':(index == active), 'inactive':(index != active)}">
+    <AbsoluteLayout width="100%" height="100%" class="ll" alignSelf="center">
+      <Image src="~/assets/images/project/box-shadow.png" width="100%" height="100%" />
       <FlexboxLayout flexDirection="column" width="100%" height="97%" padding="12">
         <StackLayout orientation="vertical" class="head">
           <Label :text="place.name" class="title bold" />
@@ -44,18 +44,18 @@ export default {
 
 <style scoped lang="scss">
 .ll {
-  background-color: black;
+  //@errorbackground-color: white;
 }
 .card {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   transform: scale(0.85);
-  background-color: yellowgreen;
+  //background-color: white;
   vertical-align: center;
   margin-bottom: 0;
   .background {
-    background-color: green;
+    //background-color: white;
     transform: scale(1.05);
     opacity: 0.75;
   }
@@ -71,7 +71,7 @@ export default {
   }
   .head {
     border-radius: 14 14 0 0;
-    background: #ffffff;
+    //background: #ffffff;
     padding: 12;
   }
   .img {
