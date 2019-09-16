@@ -52,31 +52,31 @@ export default {
       active: 3,
       places: [
         {
-          name: 'The Custom House1',
-          type: 'Architecture',
+          name: '海关大楼',
+          type: '建筑学',
           stars: 4,
           media: 'Dublin.jpg'
         },
         {
-          name: "Christ Church's",
-          type: 'Architecture',
+          name: '基督教堂',
+          type: '建筑学',
           stars: 4,
           media: 'Cathedral.jpg'
         },
         {
-          name: "Christ Church's",
-          type: 'Architecture',
+          name: '剧院',
+          type: '建筑学',
           stars: 4,
-          media: 'Cathedral.jpg'
+          media: 'Theater.jpg'
         }
       ],
       selectedTabview: 4
     };
   },
   mounted() {
-    // console.log('xxx', this.$refs.ca.nativeView);
-    // this.$refs.ca.nativeView.separatorColor = 'white';
-    // this.$refs.ca.nativeView.itemsProperty = 'white';
+    // const ca = this.$refs.ca.nativeView;
+    // ca.separatorColor = 'white';
+    // ca.itemsProperty = 'white';
   },
   methods: {
     change: function(value) {
