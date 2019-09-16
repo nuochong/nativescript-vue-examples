@@ -7,16 +7,19 @@
         <PreviousNextView>
           <StackLayout>
             <StackLayout>
-              <TextField hint="Email"></TextField>
+              <TextField hint="用户姓名"></TextField>
             </StackLayout>
             <StackLayout>
-              <TextField hint="Password"></TextField>
+              <TextField hint="电子邮件"></TextField>
+            </StackLayout>
+            <StackLayout>
+              <TextField hint="居住地址"></TextField>
             </StackLayout>
           </StackLayout>
         </PreviousNextView>
 
-        <TextView hint="Not working TextView hint"></TextView>
-        <TextViewWithHint hint="Working TextView hint 🤪"></TextViewWithHint>
+        <TextView hint="不工作的TextView提示"></TextView>
+        <TextViewWithHint hint="工作的TextView提示🤪"></TextViewWithHint>
       </StackLayout>
     </ScrollView>
   </Page>
