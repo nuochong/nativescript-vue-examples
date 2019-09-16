@@ -1,5 +1,5 @@
 <template>
-  <WrapLayout height="415" class="card" flexDirection="column" justifyContent="center" :class="{'active':(index == active), 'inactive':(index != active)}">
+  <WrapLayout height="345" class="card" flexDirection="column" justifyContent="center" :class="{'active':(index == active), 'inactive':(index != active)}">
     <AbsoluteLayout width="100%" height="100%" class="ll" alignSelf="center">
       <Image src="~/assets/images/project/box-shadow.png" width="100%" height="100%" />
       <FlexboxLayout flexDirection="column" width="100%" height="97%" padding="12">
@@ -11,7 +11,7 @@
             <Image src="~/assets/images/project/Star-grey.png" v-for="star in (5 - place.stars)" :key="(star * 10)" marginRight="4" />
           </FlexboxLayout>
         </StackLayout>
-        <StackLayout orientation="vertical" :backgroundImage="'~/assets/images/project/media/' + place.media" height="58%" width="100%" class="img"></StackLayout>
+        <StackLayout orientation="vertical" :backgroundImage="'~/assets/images/project/media/' + place.media" height="60%" width="100%" class="img"></StackLayout>
       </FlexboxLayout>
     </AbsoluteLayout>
   </WrapLayout>
@@ -51,11 +51,11 @@ export default {
   background-size: cover;
   background-repeat: no-repeat;
   transform: scale(0.85);
-  //background-color: white;
+  background-color: green;
   vertical-align: center;
   margin-bottom: 0;
   .background {
-    //background-color: white;
+    background-color: blue;
     transform: scale(1.05);
     opacity: 0.75;
   }
@@ -71,7 +71,7 @@ export default {
   }
   .head {
     border-radius: 14 14 0 0;
-    //background: #ffffff;
+    background: #ffffff;
     padding: 12;
   }
   .img {
