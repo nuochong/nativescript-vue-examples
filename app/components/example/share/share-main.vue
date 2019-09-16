@@ -57,13 +57,13 @@ export default {
     },
     btnShareImg: function() {
       var image = imageSourceModule.fromFile('~/assets/images/NativeScript-Vue.png');
-      SocialShare.shareImage(image);
+      SocialShare.shareImage(image, '您想如何分享这张图片?');
     },
     btnShareText: function() {
-      SocialShare.shareText('我爱 NativeScript!', '你想如何分享这篇文章?');
+      SocialShare.shareText('我爱 NativeScript!', '您想如何分享这篇文章?');
     },
     btnShareUrl: function() {
-      SocialShare.shareUrl('https://cn.biying.com/', '必应中国', '您想如何共享这个url?');
+      SocialShare.shareUrl('https://cn.biying.com/', '必应中国', '您想如何分享这个链接?');
     }
   }
 };
