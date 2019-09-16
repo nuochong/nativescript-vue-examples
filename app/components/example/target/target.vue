@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import world from './world';
+import World from '../public/world';
 import ActionBarSecond from '../public/action-bar-second';
 
 export default {
@@ -25,7 +25,7 @@ export default {
   },
   methods: {
     onButton: function() {
-      this.navigateTo(this, world);
+      this.navigateTo(this, World);
     }
   }
 };

@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import World from './target/world';
+import World from './public/world';
 import ActionBarSecond from './public/action-bar-second';
 
 const Custom = require('../../assets/js/transition/custom-transition');

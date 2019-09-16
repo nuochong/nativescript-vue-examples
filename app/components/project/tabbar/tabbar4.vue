@@ -1,6 +1,6 @@
 <template>
   <StackLayout>
-    <Label textWrap="true" text="消息" class="label-text" />
+    <Label textWrap="true" text="消息" class="label-text-white" />
   </StackLayout>
 </template>
 

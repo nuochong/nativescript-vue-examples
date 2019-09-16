@@ -2,9 +2,11 @@
   <Page class="page">
     <ActionBarSecond :title="title" />
 
-    <GridLayout colums="*" rows="*">
-      <Label class="message" :text="msg" col="0" row="0" />
-    </GridLayout>
+    <ScrollView>
+      <StackLayout class="hello-world">
+        <Label class="label-text-white" :text="msg" />
+      </StackLayout>
+    </ScrollView>
   </Page>
 </template>
 
@@ -17,7 +19,7 @@ export default {
   },
   data() {
     return {
-      title: '路由跳转-页面二',
+      title: '路由跳转-公用页面',
       msg: 'Hello World!'
     };
   },
