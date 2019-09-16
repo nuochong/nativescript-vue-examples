@@ -1,6 +1,6 @@
 <template>
   <WrapLayout>
-    <GridLayout rows="auto, auto" columns="auto, *" class="head p-t-10 p-l-15" @tap="onContactTap()">
+    <GridLayout rows="auto, auto" columns="auto, *" class="head p-t-10 p-l-15" @tap="btnSettings()">
       <Image row="0" rowSpan="2" col="0" class="connect-team-avatar p-5 m-r-10 m-y-auto text-center" :src="headimg" stretch="none" />
       <Label row="0" col="1" text="用户名" class="font-weight-bold"></Label>
       <WrapLayout class="head-introduce" row="1" col="1">
@@ -21,6 +21,8 @@
 </template>
 
 <script>
+import SettingsMain from './settings-main';
+
 export default {
   components: {},
   data() {
@@ -29,8 +31,9 @@ export default {
     };
   },
   methods: {
-    onContactTap: function() {
+    btnSettings: function() {
       console.log('点击了设置按钮');
+      this.navigateTo(this, SettingsMain);
     }
   }
 };

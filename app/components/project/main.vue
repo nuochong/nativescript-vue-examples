@@ -5,10 +5,9 @@
       <ScrollView row="0" col="0" class="scroll" v-show="selectedTabview == 0">
         <Tabbar1 />
       </ScrollView>
-      
+
       <ScrollView row="0" col="0" class="scroll" v-show="selectedTabview == 1">
         <StackLayout ref="ca">
-          <Header class="header" />
           <Tabbar2 v-for="(place,index) in places" :key="index" :place="place" :index="index" :active="active" />
         </StackLayout>
       </ScrollView>
@@ -29,7 +28,6 @@
 <script>
 import MyHeader from './settings/my-header';
 import Footer from './footer';
-import Header from './header';
 import Tabbar1 from './tabbar/tabbar1';
 import Tabbar2 from './tabbar/tabbar2';
 import Tabbar3 from './tabbar/tabbar3';
@@ -41,7 +39,6 @@ export default {
   components: {
     MyHeader,
     ActionBarSecond,
-    Header,
     Footer,
     Tabbar1,
     Tabbar2,
