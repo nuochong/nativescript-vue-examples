@@ -27,7 +27,7 @@
         <Button class="btn btn-primary" text="侧滑组件" @tap="onDrawer" />
         <Button class="btn btn-primary" text="大标题导航栏" @tap="onlargeTitle" />
         <Button class="btn btn-primary" text="对话框" @tap="DialogOld" />
-        <Button class="btn btn-primary" text="自定义对话框" @tap="DialogNew" />
+        <Button class="btn btn-primary" text="自定义对话框" @tap="btnDialogNew" />
         <Button class="btn btn-primary" text="自定义弹出框" @tap="pop" />
         <Button class="btn btn-primary" text="动画效果" @tap="animate" />
         <Button class="btn btn-primary" text="下拉刷新" @tap="refresh" />
@@ -197,7 +197,7 @@ export default {
     onlargeTitle() {
       this.navigateTo(this, LargeTitle);
     },
-    dialogNew() {
+    btnDialogNew() {
       this.navigateTo(this, DialogNew);
     },
     pop() {
