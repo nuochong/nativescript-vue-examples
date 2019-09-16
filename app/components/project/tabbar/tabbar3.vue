@@ -14,10 +14,10 @@
           </GridLayout>
           <GridLayout rows="auto, auto" columns="*, auto" class=" p-t-10 p-l-15">
             <Label row="0" colSpan="2" col="0" class="focus-title" text="生活明朗，万物可爱，人间值得，未来可期。" />
-            <Label row="1" col="0" class="focus-content" ref="textview" :text="content">
-              <!-- <FormattedString>
+            <Label row="1" col="0" class="focus-content" ref="textview">
+              <FormattedString>
                 <Span :text="content" />
-              </FormattedString> -->
+              </FormattedString>
             </Label>
             <Image @loaded="goToPlace" row="1" col="1" class="focus-content-img p-5 m-r-10 m-y-auto text-center" :src="headimg" stretch="none" />
           </GridLayout>
