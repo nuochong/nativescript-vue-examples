@@ -43,7 +43,7 @@
         <Button class="btn btn-primary" text="检测网络类型" @tap="btnCheckNetworkType" />
         <Button class="btn btn-primary" text="广播" @tap="btnBroadcastReceiver" />
         <Button class="btn btn-primary" text="获取平台信息" @tap="btnPlatform" />
-        <Button class="btn btn-primary" text="IQKeyboardManager" @tap="btnIQKeyboardManager" />
+        <Button class="btn btn-primary" text="IOS键盘管理" @tap="btnIQKeyboardManager" />
       </StackLayout>
     </ScrollView>
   </Page>
