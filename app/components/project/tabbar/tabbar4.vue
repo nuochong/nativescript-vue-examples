@@ -15,9 +15,7 @@
 <script>
 export default {
   data() {
-    return {
-      title: ''
-    };
+    return {};
   },
   methods: {
     toggleSearch() {

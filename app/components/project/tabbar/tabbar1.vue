@@ -1,12 +1,10 @@
 <template>
   <GridLayout colums="*" rows="*">
-    <Label class="message" :text="msg" col="0" row="0" />
-    <!-- <Button text="tabbar1" @tap="onButton" /> -->
     <Label textWrap="true">
       <FormattedString>
-        <Span text="red " style="color: red" />
-        <Span text="Also, this bit is italic, " fontStyle="italic" />
-        <Span text="and this bit is bold." fontWeight="bold" />
+        <Span text="红色 " style="color: red" />
+        <Span text="还有，这段是斜体， " fontStyle="italic" />
+        <Span text="这部分是粗体。" fontWeight="bold" />
       </FormattedString>
     </Label>
   </GridLayout>
@@ -16,17 +14,12 @@
 export default {
   components: {},
   data() {
-    return {
-      title: '',
-      msg: 'Hello World!'
-    };
+    return {};
   },
   mounted() {
     console.log('tabbar1');
   },
-  methods: {
-    onButtonTap: function() {}
-  }
+  methods: {}
 };
 </script>
 

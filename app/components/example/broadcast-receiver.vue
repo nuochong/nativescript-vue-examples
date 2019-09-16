@@ -12,7 +12,7 @@
 
 <script>
 const applicationModule = require('tns-core-modules/application');
-const platformModule = require("tns-core-modules/platform");
+const platformModule = require('tns-core-modules/platform');
 import RequestContent from './request/request-content';
 import ActionBarSecond from './public/action-bar-second';
 

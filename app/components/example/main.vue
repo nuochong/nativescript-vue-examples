@@ -16,7 +16,7 @@
         <Button class="btn btn-primary" text="获取权限" @tap="btnPermissions" />
         <Button class="btn btn-primary" text="改变按钮" @tap="btnChange" />
         <Button class="btn btn-primary" text="显示隐藏" @tap="btnDisplay" />
-        <Label class="message" :text="msg" col="0" row="0" />
+        <Label class="split" :text="msg" />
         <Button class="btn btn-primary" text="路由跳转" @tap="onButtonTap" />
         <Button class="btn btn-primary" text="本地存储示例" @tap="onInput" />
         <Button class="btn btn-primary" text="记事薄" @tap="onFab" />
@@ -99,7 +99,7 @@ export default {
   data() {
     return {
       title: '示例',
-      msg: '---------分割线---------'
+      msg: '---------- 分割线 ----------'
     };
   },
   mounted() {},

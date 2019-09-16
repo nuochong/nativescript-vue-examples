@@ -2,7 +2,7 @@
   <StackLayout>
     <TabView :selectedIndex="selectedIndex">
       <TabViewItem title="关注">
-        <!-- <Label text="Content for Tab 1" /> -->
+        <!-- <Label text="关注的内容" /> -->
         <WrapLayout>
           <GridLayout rows="auto, auto" columns="auto, *" class=" p-t-10 p-l-15">
             <Image row="0" rowSpan="2" col="0" class="connect-team-avatar p-5 m-r-10 m-y-auto text-center" :src="headimg" stretch="none" />
@@ -24,13 +24,13 @@
         </WrapLayout>
       </TabViewItem>
       <TabViewItem title="专题">
-        <Label text="Content for Tab 2" />
+        <Label text="专题的内容" />
       </TabViewItem>
       <TabViewItem title="连载">
-        <Label text="Content for Tab 3" />
+        <Label text="连载的内容" />
       </TabViewItem>
       <TabViewItem title="文集">
-        <Label text="Content for Tab 4" />
+        <Label text="文集的内容" />
       </TabViewItem>
     </TabView>
   </StackLayout>

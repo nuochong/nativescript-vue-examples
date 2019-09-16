@@ -35,7 +35,6 @@ export default {
   },
   data() {
     return {
-      title: '',
       msg: 'Hello World!'
     };
   },

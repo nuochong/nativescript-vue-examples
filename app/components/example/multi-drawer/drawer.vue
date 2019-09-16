@@ -1,5 +1,5 @@
 <template>
-  <Page class="page"  actionBarHidden="true">
+  <Page class="page" actionBarHidden="true">
     <ActionBar class="action-bar" :title="title">
       <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" @tap="$navigateBack" />
       <StackLayout orientation="horizontal">

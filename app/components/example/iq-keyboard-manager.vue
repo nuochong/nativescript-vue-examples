@@ -14,7 +14,7 @@
             </StackLayout>
           </StackLayout>
         </PreviousNextView>
-        
+
         <TextView hint="Not working TextView hint"></TextView>
         <TextViewWithHint hint="Working TextView hint 🤪"></TextViewWithHint>
       </StackLayout>
