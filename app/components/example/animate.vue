@@ -4,7 +4,7 @@
 
     <ScrollView>
       <StackLayout class="hello-world">
-        <Button class="btn btn-primary" text="实例1" @tap="startBackgroundAnimation" ref="bg" scaleX="1.4" scaleY="1.4" />
+        <Button class="btn btn-primary" text="按钮动画" @tap="startBackgroundAnimation" ref="btnAnimate" scaleX="1.4" scaleY="1.4" />
         <Label class="animateicon" :text="msg" col="0" row="0" />
         <Image class="animateicon" src="~/assets/images/NativeScript-Vue.png" />
       </StackLayout>
@@ -35,7 +35,7 @@ export default {
   },
   methods: {
     startBackgroundAnimation: function() {
-      this.$refs.bg.nativeView
+      this.$refs.btnAnimate.nativeView
         .animate({
           rotate: 360,
           scale: { x: 1.0, y: 1.0 },
