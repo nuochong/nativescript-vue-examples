@@ -47,6 +47,9 @@ Vue.registerElement('RadSideDrawer', () => require('nativescript-ui-sidedrawer')
 Vue.registerElement('PullToRefresh', () => require('@nstudio/nativescript-pulltorefresh').PullToRefresh);
 //注册扫码
 Vue.registerElement('BarcodeScanner', () => require('nativescript-barcodescanner').BarcodeScannerView);
+//注册iqkeyboardmanager
+Vue.registerElement('PreviousNextView', () => require('nativescript-iqkeyboardmanager').PreviousNextView);
+Vue.registerElement('TextViewWithHint', () => require('nativescript-iqkeyboardmanager').TextViewWithHint);
 //初始化icons
 Vue.prototype.$icon = icons.initIcons();
 //检测是否支持AppShortcus
@@ -80,7 +83,7 @@ shortcuts.handleTask();
 //   });
 // }
 
-import { setStatusBarColors, setStatusBarFontColors ,setBarFontColor} from './tools/status-bar-util';
+import { setStatusBarColors, setStatusBarFontColors, setBarFontColor } from './tools/status-bar-util';
 Vue.prototype.$setStatusBarFontColors = setStatusBarFontColors;
 Vue.prototype.$setBarFontColor = setBarFontColor;
 //setStatusBarColors();

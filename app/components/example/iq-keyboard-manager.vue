@@ -3,34 +3,41 @@
     <ActionBarSecond :title="title" />
     <ScrollView>
       <StackLayout class="hello-world">
-        <Button class="btn btn-primary" text="IQKeyboardManager" @tap="btn" />
-        <RequestContent :content="content" />
+
+        <PreviousNextView>
+          <StackLayout>
+            <StackLayout>
+              <TextField hint="Email"></TextField>
+            </StackLayout>
+            <StackLayout>
+              <TextField hint="Password"></TextField>
+            </StackLayout>
+          </StackLayout>
+        </PreviousNextView>
+        
+        <TextView hint="Not working TextView hint"></TextView>
+        <TextViewWithHint hint="Working TextView hint 🤪"></TextViewWithHint>
       </StackLayout>
     </ScrollView>
   </Page>
 </template>
 
 <script>
-import RequestContent from './request/request-content';
 import ActionBarSecond from './public/action-bar-second';
 
 export default {
   components: {
-    ActionBarSecond,
-    RequestContent
+    ActionBarSecond
   },
   data() {
     return {
-      title: 'IQKeyboardManager',
-      content: 'null'
+      title: 'IQKeyboardManager'
     };
   },
   mounted() {},
   methods: {
     btn: function() {
       console.log('点击了按钮');
-
-      console.log(this.content);
     }
   }
 };
