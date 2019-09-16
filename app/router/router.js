@@ -1,6 +1,6 @@
 import Example from '~/components/example/main';
 import Project from '~/components/project/main';
-import World from '~/components/example/target/world';
+import World from '~/components/example/public/world';
 
 import Counter from '~/components/example/counter';
 import Camera from '~/components/example/camera';
