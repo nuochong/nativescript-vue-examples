@@ -37,6 +37,7 @@
 </template>
 
 <script>
+const platformModule = require('tns-core-modules/platform');
 export default {
   components: {},
   props: {
@@ -56,14 +57,25 @@ export default {
   mounted() {},
   methods: {
     goToPlace(place) {
-      let nv = this.$refs.textview.nativeView;
-      nv.opacity = 0.3;
-      nv.rowSpan = 3;
-      nv.height = 50;
-      nv.android.setEllipsize(android.text.TextUtils.TruncateAt.valueOf('END'));
-      nv.android.setSingleLine(true);
-      nv.android.setMaxEms(7);
-      nv.android.setMinLines(2);
+      if (platformModule.isAndroid) {
+        const nv = this.$refs.textview.nativeView;
+        nv.opacity = 0.3;
+        nv.rowSpan = 3;
+        nv.height = 50;
+        nv.android.setEllipsize(android.text.TextUtils.TruncateAt.valueOf('END'));
+        nv.android.setSingleLine(true);
+        nv.android.setMaxEms(7);
+        nv.android.setMinLines(2);
+      } else {
+        console.log('IOS不支持此功能');
+        // alert({
+        //   title: '温馨提示',
+        //   message: ' IOS不支持此功能',
+        //   okButtonText: '确定'
+        // }).then(() => {
+        //   console.log('点击了确认');
+        // });
+      }
     }
   }
 };
