@@ -53,7 +53,7 @@ export default {
 //   margin-top:15;
 // }
 .background {
-  background-image: url('res://bg_login_new');
+  background-image: url('res://bg_login_rabbit');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
