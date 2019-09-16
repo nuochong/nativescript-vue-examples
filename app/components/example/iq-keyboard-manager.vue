@@ -3,25 +3,36 @@
     <ActionBarSecond :title="title" />
     <ScrollView>
       <StackLayout class="hello-world">
-        <Label textWrap="true" text="这是一个hello world组件，如果你想尝试一下，请点击这个按钮" />
-        <Button class="btn btn-primary" text="显示隐藏" @tap="surprise = !surprise" />
-        <Image v-if="surprise" src="~/assets/images/NativeScript-Vue.png" />
+        <Button class="btn btn-primary" text="IQKeyboardManager" @tap="btn" />
+        <RequestContent :content="content" />
       </StackLayout>
     </ScrollView>
   </Page>
 </template>
 
 <script>
+import RequestContent from './request/request-content';
+import ActionBarSecond from './public/action-bar-second';
+
 export default {
-  components: {},
+  components: {
+    ActionBarSecond,
+    RequestContent
+  },
   data() {
     return {
       title: 'IQKeyboardManager',
-      surprise: false
+      content: 'null'
     };
   },
   mounted() {},
-  methods: {}
+  methods: {
+    btn: function() {
+      console.log('点击了按钮');
+
+      console.log(this.content);
+    }
+  }
 };
 </script>
 
