@@ -1,12 +1,12 @@
 // NativeScript 核心主题
 // @see https://docs.nativescript.org/ui/theme
-//@import '~nativescript-theme-core/scss/light';
-//@import '~nativescript-theme-core/css/core.light.css';
+// @import '~nativescript-theme-core/scss/light';
+// @import '~nativescript-theme-core/css/core.light.css';
 @import '~nativescript-theme-core/css/core.dark.css';
 
 // 在这里覆盖样式
 
-//@import '~nativescript-theme-core/scss/index';
+// @import '~nativescript-theme-core/scss/index';
 // ActionBar{
 //   background: green;
 // }
@@ -19,7 +19,6 @@
 // .fa {
 //   font-family: 'FontAwesome', 'fontawesome-webfont','font-awesome';
 //   font-size: 24;
-//   color: green;
 // }
 .bold {
   font-family: 'Assistant-Bold', 'Assistant';
