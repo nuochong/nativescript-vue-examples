@@ -1,8 +1,8 @@
 <template>
   <WrapLayout height="345" class="card" flexDirection="column" justifyContent="center" :class="{'active':(index == active), 'inactive':(index != active)}">
-    <AbsoluteLayout width="100%" height="100%" class="ll" alignSelf="center">
+    <AbsoluteLayout width="100%" height="100%" alignSelf="center">
       <Image src="~/assets/images/project/box-shadow.png" width="100%" height="100%" />
-      <FlexboxLayout flexDirection="column" width="100%" height="97%" padding="12">
+      <FlexboxLayout flexDirection="column" width="100%" height="98%" padding="10">
         <StackLayout orientation="vertical" class="head">
           <Label :text="place.name" class="title bold" />
           <Label :text="place.type" class="subTitle semi-bold" horizontalAlignment="center" />
@@ -11,7 +11,7 @@
             <Image src="~/assets/images/project/Star-grey.png" v-for="star in (5 - place.stars)" :key="(star * 10)" marginRight="4" />
           </FlexboxLayout>
         </StackLayout>
-        <StackLayout orientation="vertical" :backgroundImage="'~/assets/images/project/media/' + place.media" height="60%" width="100%" class="img"></StackLayout>
+        <StackLayout orientation="vertical" :backgroundImage="'~/assets/images/project/media/' + place.media" height="65%" width="100%" class="img"></StackLayout>
       </FlexboxLayout>
     </AbsoluteLayout>
   </WrapLayout>
@@ -43,19 +43,16 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.ll {
-  //@errorbackground-color: white;
-}
 .card {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   transform: scale(0.85);
-  background-color: green;
+  //background-color: green;
   vertical-align: center;
   margin-bottom: 0;
   .background {
-    background-color: blue;
+    //background-color: blue;
     transform: scale(1.05);
     opacity: 0.75;
   }
