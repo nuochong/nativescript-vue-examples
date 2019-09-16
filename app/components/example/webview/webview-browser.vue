@@ -3,13 +3,13 @@
     <ActionBarSecond :title="title" />
     <ScrollView>
       <StackLayout class="hello-world">
-        <Button class="btn btn-primary" row="0" col="0" text="返回" @tap="goBack()" />
-        <TextField ref="urlField" row="0" col="1" hint="Enter URL" :text="text" returnKeyType="done" autocorrect="false" verticalAlignment="center" class="input input-border m-t-0"
-          autocapitalizationType="none"></TextField>
-        <Button class="btn btn-primary" :isEnabled="enabled" row="0" col="2" text="前进" @tap="goForward()"></Button>
-        <Button class="btn btn-primary" row="0" col="2" text="访问" @tap="submit()"></Button>
-        <WebView row="1" ref="myWebView" :src="webViewSrc"></WebView>
-        <Label row="2" ref="labelResult"></Label>
+        <Button class="btn btn-primary" text="返回" @tap="goBack()" />
+        <TextField ref="urlField" hint="请输入 URL" :text="text" returnKeyType="done" autocorrect="false" verticalAlignment="center" class="input input-border m-t-0 webview-textfield"
+          autocapitalizationType="none" />
+        <Button class="btn btn-primary" :isEnabled="enabled" text="前进" @tap="goForward()" />
+        <Button class="btn btn-primary" text="访问" @tap="submit()" />
+        <WebView class="webview" ref="myWebView" :src="webViewSrc" />
+        <Label class="webview-label" row="2" ref="labelResult" />
       </StackLayout>
     </ScrollView>
   </Page>
@@ -90,4 +90,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.webview,
+.webview-textfield,
+.webview-label {
+  margin: 10 20;
+}
 </style>
