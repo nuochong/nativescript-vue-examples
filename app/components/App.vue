@@ -1,7 +1,7 @@
 <template>
   <Page class="page" actionBarHidden="true">
     <ActionBarFirst :title="title" />
-    <GridLayout class="body-wrap">
+    <GridLayout>
       <GridLayout class="background" ref="bg" scaleX="1.4" scaleY="1.4" @loaded="startBackgroundAnimation"></GridLayout>
       <ScrollView>
         <StackLayout class="hello-world">
@@ -49,9 +49,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-// .body-wrap{
-//   margin-top:15;
-// }
 .background {
   background-image: url('res://bg_login_rabbit');
   background-repeat: no-repeat;
