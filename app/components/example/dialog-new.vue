@@ -25,11 +25,15 @@ export default {
   mounted() {},
   methods: {
     dialog: function() {
-      dialogs.alert({
-        title: '收到通知',
-        message: '消息内容',
-        okButtonText: '放弃'
-      });
+      dialogs
+        .alert({
+          title: '收到通知',
+          message: '消息内容',
+          okButtonText: '确认'
+        })
+        .then(() => {
+          console.log('对话框关闭');
+        });
     }
   }
 };
