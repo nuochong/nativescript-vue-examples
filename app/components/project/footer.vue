@@ -54,7 +54,7 @@ export default {
           text: '我的'
         }
       ],
-      active: 3
+      active: 4
     };
   },
   methods: {
