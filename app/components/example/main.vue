@@ -4,30 +4,30 @@
 
     <ScrollView>
       <StackLayout class="hello-world">
-        <Button class="btn btn-primary" text="Vuex计数器" @tap="counter" />
-        <Button class="btn btn-primary" text="相机" @tap="camera" />
-        <Button class="btn btn-primary" text="模拟登录" @tap="login" />
+        <Button class="btn btn-primary" text="Vuex计数器" @tap="btnCounter" />
+        <Button class="btn btn-primary" text="相机" @tap="btnCamera" />
+        <Button class="btn btn-primary" text="模拟登录" @tap="btnLogin" />
         <Button class="btn btn-primary" text="提示" @tap="btnToast" />
         <Button class="btn btn-primary" text="精美提示框" @tap="btnAlert" />
-        <Button class="btn btn-primary" text="消息通知" @tap="info" />
+        <Button class="btn btn-primary" text="消息通知" @tap="btnInfo" />
         <Button class="btn btn-primary" text="电话/短信" @tap="btnPhone" />
         <Button class="btn btn-primary" text="定位" @tap="btnGeolocation" />
         <Button class="btn btn-primary" text="获取权限" @tap="btnPermissions" />
         <Button class="btn btn-primary" text="改变按钮" @tap="btnChange" />
         <Button class="btn btn-primary" text="显示隐藏" @tap="btnDisplay" />
         <Label class="split" :text="msg" />
-        <Button class="btn btn-primary" text="路由跳转" @tap="onButtonTap" />
-        <Button class="btn btn-primary" text="本地存储" @tap="onInput" />
-        <Button class="btn btn-primary" text="记事薄" @tap="onFab" />
-        <Button class="btn btn-primary" text="备忘录" @tap="onTodo" />
-        <Button class="btn btn-primary" text="图标" @tap="onIcon" />
-        <Button class="btn btn-primary" text="模态对话框" @tap="showModal" />
-        <Button class="btn btn-primary" text="侧滑组件" @tap="onDrawer" />
-        <Button class="btn btn-primary" text="大标题导航栏" @tap="onlargeTitle" />
-        <Button class="btn btn-primary" text="动画效果" @tap="animate" />
-        <Button class="btn btn-primary" text="触摸事件" @tap="touch" />
-        <Button class="btn btn-primary" text="请求" @tap="requestMain" />
-        <Button class="btn btn-primary" text="获取全局数据" @tap="common" />
+        <Button class="btn btn-primary" text="路由跳转" @tap="btnButtonTap" />
+        <Button class="btn btn-primary" text="本地存储" @tap="btnInput" />
+        <Button class="btn btn-primary" text="记事薄" @tap="btnFab" />
+        <Button class="btn btn-primary" text="备忘录" @tap="btnTodo" />
+        <Button class="btn btn-primary" text="图标" @tap="btnIcon" />
+        <Button class="btn btn-primary" text="模态对话框" @tap="btnShowModal" />
+        <Button class="btn btn-primary" text="侧滑组件" @tap="btnDrawer" />
+        <Button class="btn btn-primary" text="大标题导航栏" @tap="btnlargeTitle" />
+        <Button class="btn btn-primary" text="动画效果" @tap="btnAnimate" />
+        <Button class="btn btn-primary" text="IOS原生方法" @tap="btnIosApi" />
+        <Button class="btn btn-primary" text="请求" @tap="btnRequestMain" />
+        <Button class="btn btn-primary" text="获取全局数据" @tap="btnCommon" />
         <Button class="btn btn-primary" text="扫码" @tap="btnQrcode" />
         <Button class="btn btn-primary" text="网页" @tap="btnWebview" />
         <Button class="btn btn-primary" text="自定义过渡效果" @tap="btnEffect" />
@@ -66,14 +66,14 @@ import Modal from './custom-model/modal';
 import Drawer from './multi-drawer/drawer';
 import LargeTitle from './large-title/large-title';
 import Animate from './animate';
-import Touch from './touch';
+import IosApi from './ios-api';
 import RequestMain from './request/request-main';
 import Qrcode from './qrcode/qrcode';
 import Webview from './webview/webview';
 import Effect from './effect';
 import Popupmenu from './popupmenu';
 import ShareMain from './share/share-main';
-import BtnCheckNetworkType from './check-network-type';
+import CheckNetworkType from './check-network-type';
 import BroadcastReceiver from './broadcast-receiver';
 import Platform from './platform';
 import IQKeyboardManager from './iq-keyboard-manager';
@@ -110,7 +110,7 @@ export default {
       this.navigateTo(this, BroadcastReceiver);
     },
     btnCheckNetworkType: function() {
-      this.navigateTo(this, BtnCheckNetworkType);
+      this.navigateTo(this, CheckNetworkType);
     },
     btnShareMain: function() {
       this.navigateTo(this, ShareMain);
@@ -118,13 +118,13 @@ export default {
     btnPopupmenu: function() {
       this.navigateTo(this, Popupmenu);
     },
-    counter: function() {
+    btnCounter: function() {
       this.navigateTo(this, Counter);
     },
-    camera: function() {
+    btnCamera: function() {
       this.navigateTo(this, Camera);
     },
-    login: function() {
+    btnLogin: function() {
       this.navigateTo(this, Login);
     },
     btnToast: function() {
@@ -133,7 +133,7 @@ export default {
     btnAlert: function() {
       this.navigateTo(this, FancyAlert);
     },
-    info: function() {
+    btnInfo: function() {
       this.navigateTo(this, Info);
     },
     btnPhone: function() {
@@ -145,43 +145,43 @@ export default {
     btnPermissions: function() {
       this.navigateTo(this, Permission);
     },
-    common: function() {
+    btnCommon: function() {
       console.log('common：', this.localUrl);
     },
     btnChange: function() {
       this.navigateTo(this, ChangeBtn);
     },
-    requestMain: function() {
+    btnRequestMain: function() {
       this.navigateTo(this, RequestMain);
     },
-    touch: function() {
-      this.navigateTo(this, Touch);
+    btnIosApi: function() {
+      this.navigateTo(this, IosApi);
     },
-    onButtonTap: function() {
+    btnButtonTap: function() {
       this.navigateTo(this, Target);
     },
-    onInput: function() {
+    btnInput: function() {
       this.navigateTo(this, Storage);
     },
-    onFab: function() {
+    btnFab: function() {
       this.navigateTo(this, Fab);
     },
-    onTodo: function() {
+    btnTodo: function() {
       this.navigateTo(this, Todo);
     },
-    onIcon: function() {
+    btnIcon: function() {
       this.navigateTo(this, IconMain);
     },
-    showModal() {
+    btnShowModal() {
       this.navigateTo(this, Modal);
     },
-    onDrawer() {
+    btnDrawer() {
       this.navigateTo(this, Drawer);
     },
-    onlargeTitle() {
+    btnlargeTitle() {
       this.navigateTo(this, LargeTitle);
     },
-    animate() {
+    btnAnimate() {
       this.navigateTo(this, Animate);
     },
     btnDisplay: function() {
