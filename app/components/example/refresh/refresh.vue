@@ -1,5 +1,5 @@
 <template>
-  <Page class="page" loaded="pageLoaded" ref="page">
+  <Page class="page">
     <ActionBarSecond :title="title" />
 
     <GridLayout colums="*" rows="*">

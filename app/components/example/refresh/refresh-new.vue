@@ -1,5 +1,5 @@
 <template>
-  <Page class="page" loaded="pageLoaded" ref="page">
+  <Page class="page">
     <ActionBarSecond :title="title" />
 
     <FlexboxLayout flexDirection="column" backgroundColor="#3c495e" @pan="onDrawerPan(side, $event)">
@@ -50,12 +50,9 @@ export default {
       time_error: '时间有问题'
     };
   },
-  mounted() {
-    this.pageLoaded();
-  },
+  mounted() {},
   methods: {
     setIsAbleToPull: function() {},
-    pageLoaded: function(args) {},
     await: function() {
       console.log('丁丁事');
       let that = this;

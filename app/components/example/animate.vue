@@ -1,5 +1,5 @@
 <template>
-  <Page class="page" loaded="pageLoaded" ref="page" @loaded="startBackgroundAnimation">
+  <Page class="page" ref="page" @loaded="startBackgroundAnimation">
     <ActionBarSecond :title="title" />
 
     <ScrollView>
