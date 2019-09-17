@@ -25,7 +25,7 @@ export default {
     },
     index: {
       type: Number
-    },
+    }
   },
   data() {
     return {};
