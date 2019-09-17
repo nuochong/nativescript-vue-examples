@@ -10,7 +10,6 @@
         <Button class="btn btn-primary" text="提示" @tap="btnToast" />
         <Button class="btn btn-primary" text="精美提示框" @tap="btnAlert" />
         <Button class="btn btn-primary" text="消息通知" @tap="info" />
-        <Button class="btn btn-primary" text="获取设备信息" @tap="btnPlatformModule" />
         <Button class="btn btn-primary" text="电话/短信" @tap="btnPhone" />
         <Button class="btn btn-primary" text="定位" @tap="btnGeolocation" />
         <Button class="btn btn-primary" text="获取权限" @tap="btnPermissions" />
@@ -55,7 +54,6 @@ import Toast from './toast';
 import FancyAlert from './fancy-alert';
 import Info from './info';
 import DialogNew from './dialog-new';
-import PlatformModule from './platform-module';
 import Phone from './phone';
 import Geolocation from './geolocation';
 import Permission from './permission';
@@ -83,7 +81,7 @@ import Popupmenu from './popupmenu';
 import ShareMain from './share/share-main';
 import BtnCheckNetworkType from './check-network-type';
 import BroadcastReceiver from './broadcast-receiver';
-import Platform from './Platform';
+import Platform from './platform';
 import IQKeyboardManager from './iq-keyboard-manager';
 
 import ActionBarSecond from './public/action-bar-second';
@@ -135,9 +133,6 @@ export default {
     },
     info: function() {
       this.navigateTo(this, Info);
-    },
-    btnPlatformModule: function() {
-      this.navigateTo(this, PlatformModule);
     },
     btnPhone: function() {
       this.navigateTo(this, Phone);
