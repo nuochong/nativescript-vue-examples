@@ -4,8 +4,8 @@
       <!-- <StackLayout class="hr-light"></StackLayout> -->
       <WrapLayout row="0" col="0" class="task-list-headerLeft">
         <FIcon name="icon-wenzhangguanli" height="auto" type="icon" class="icon task-list-headerLeftIcon" />
-        <Label text="总资产：" class="text-uppercase task-list-headerLeftTitle"></Label>
-        <Label text="2000" class="text-uppercase task-list-headerLeftContent"></Label>
+        <Label text="总资产：" class="task-list-headerLeftTitle"></Label>
+        <Label text="2000" class="task-list-headerLeftContent"></Label>
       </WrapLayout>
       <WrapLayout row="0" col="1" class="task-list-headerRight">
         <Label text="查看" class=""></Label>
@@ -82,7 +82,6 @@ export default {
     .task-list-headerRightIcon {
       margin: 0;
       text-align: right;
-      //background-color: green;
     }
   }
 }
@@ -96,11 +95,9 @@ export default {
   .task-list-title {
     font-size: 14;
     color: black;
-    //background-color: #1c6b48;
   }
   .task-list-introduce {
     font-size: 10;
-    //background-color: #289062;
   }
 }
 .care-common-main-header {
