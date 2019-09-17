@@ -11,6 +11,7 @@ import VueAxios from 'vue-axios';
 //import MultiDrawer from 'nativescript-vue-multi-drawer';
 import MultiDrawer from './components/example/multi-drawer/tools';
 import FontIcon from './tools/nativescript-vue-fonticon';
+import { setStatusBarColors, setStatusBarFontColors, setBarFontColor } from './tools/status-bar-util';
 //const application = require('tns-core-modules/application');
 
 //在production环境开启VueDevtools工具
@@ -49,6 +50,9 @@ Vue.registerElement('PreviousNextView', () => require('nativescript-iqkeyboardma
 Vue.registerElement('TextViewWithHint', () => require('nativescript-iqkeyboardmanager').TextViewWithHint);
 //初始化icons
 Vue.prototype.$icon = icons.initIcons();
+Vue.prototype.$setStatusBarFontColors = setStatusBarFontColors;
+Vue.prototype.$setBarFontColor = setBarFontColor;
+//setStatusBarColors();
 //检测是否支持AppShortcus
 shortcuts.isSuppertAppShortcus();
 shortcuts.handleTask();
@@ -79,11 +83,6 @@ shortcuts.handleTask();
 //       }, 1);
 //   });
 // }
-
-import { setStatusBarColors, setStatusBarFontColors, setBarFontColor } from './tools/status-bar-util';
-Vue.prototype.$setStatusBarFontColors = setStatusBarFontColors;
-Vue.prototype.$setBarFontColor = setBarFontColor;
-//setStatusBarColors();
 
 // import router from './router/router';
 // Vue.prototype.$router = router;
