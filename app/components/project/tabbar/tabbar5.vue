@@ -9,7 +9,7 @@
         <InfoPanel />
         <InfoPanel />
         <Button class="btn setting-exit" text="退出当前账号" @tap="btnExit" />
-      </StackLayout>
+      </StackLayout><AbsoluteLayout></AbsoluteLayout>
     </ScrollView>
   </GridLayout>
 </template>

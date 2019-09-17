@@ -4,12 +4,12 @@
 
     <FlexboxLayout class="page page-login" backgroundImage="res://mesh">
       <StackLayout class="flexbox-item company-name-container">
-        <Label class="t-30 company-name" text="公司名称"></Label>
+        <Label class="t-30 company-name" text="公司名称" />
       </StackLayout>
       <Image src="res://company_logo" stretch="none" class="company-logo" />
       <StackLayout class="flexbox-item">
-        <Label class="t-18 login-text" text="登录您的组织帐户"></Label>
-        <Button class="btn btn-login btn-rounded-sm font-weight-bold t-18" @tap="login" text="登录"></Button>
+        <Label class="t-18 login-text" text="登录您的组织帐户" />
+        <Button class="btn btn-login btn-rounded-sm font-weight-bold t-18" @tap="login" text="登录" />
       </StackLayout>
     </FlexboxLayout>
   </Page>

@@ -2,8 +2,8 @@
   <!-- <WrapLayout> -->
   <GridLayout rows="*" columns="auto, *" class="header-bar p-t-10 p-l-15 ">
     <FIcon row="0" col="0" name="icon-saoma" type="icon" class="icon text-muted m-r-10 m-b-10 m-y-auto header-bar-scan" @tap="btnScan" />
-    <!-- <Label row="0" col="0" text="扫码" class="header-bar-scan text-muted m-b-10 m-y-auto" @tap="btnScan"></Label> -->
-    <Label row="0" rowSpan="1" col="1" text="写文章" class="header-bar-edit text-muted m-b-10 m-y-auto" @tap="btnEdit"></Label>
+    <!-- <Label row="0" col="0" text="扫码" class="header-bar-scan text-muted m-b-10 m-y-auto" @tap="btnScan" /> -->
+    <Label row="0" rowSpan="1" col="1" text="写文章" class="header-bar-edit text-muted m-b-10 m-y-auto" @tap="btnEdit" />
   </GridLayout>
   <!-- </WrapLayout> -->
 </template>

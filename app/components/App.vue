@@ -2,7 +2,7 @@
   <Page class="page" actionBarHidden="true">
     <ActionBarFirst :title="title" />
     <GridLayout>
-      <GridLayout class="background" ref="bg" scaleX="1.4" scaleY="1.4" @loaded="startBackgroundAnimation"></GridLayout>
+      <GridLayout class="background" ref="bg" scaleX="1.4" scaleY="1.4" @loaded="startBackgroundAnimation" />
       <ScrollView>
         <StackLayout class="hello-world">
           <Button class="btn btn-primary" text="示例" @tap="example" />

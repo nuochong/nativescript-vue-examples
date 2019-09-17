@@ -1,17 +1,17 @@
 <template>
   <WrapLayout>
     <GridLayout rows=“auto” columns="auto,*" class="p-t-10 p-l-15 task-list-header">
-      <!-- <StackLayout class="hr-light"></StackLayout> -->
+      <!-- <StackLayout class="hr-light" /> -->
       <WrapLayout row="0" col="0" class="task-list-headerLeft">
         <FIcon name="icon-wenzhangguanli" height="auto" type="icon" class="icon task-list-headerLeftIcon" />
-        <Label text="总资产：" class="task-list-headerLeftTitle"></Label>
-        <Label text="2000" class="task-list-headerLeftContent"></Label>
+        <Label text="总资产：" class="task-list-headerLeftTitle" />
+        <Label text="2000" class="task-list-headerLeftContent" />
       </WrapLayout>
       <WrapLayout row="0" col="1" class="task-list-headerRight">
-        <Label text="查看" class=""></Label>
+        <Label text="查看" class="" />
         <FIcon name="icon-jiantou" type="icon" class="icon m-y-auto task-list-headerRightIcon" />
       </WrapLayout>
-      <!-- <StackLayout class="hr-light"></StackLayout> -->
+      <!-- <StackLayout class="hr-light" /> -->
     </GridLayout>
     <GridLayout rows="auto" columns="*, *, *,*" class="p-t-10 p-l-15 task-list">
       <FlexboxLayout row="0" col="0" flexDirection="column">
@@ -34,7 +34,7 @@
         <Label text="奖励任务" height="auto" class="task-list-title" />
         <Label text="领取奖励" height="auto" class="task-list-introduce" />
       </FlexboxLayout>
-      <!-- <StackLayout row="2" colSpan="4" class="hr-light"></StackLayout> -->
+      <!-- <StackLayout row="2" colSpan="4" class="hr-light" /> -->
     </GridLayout>
 
   </WrapLayout>

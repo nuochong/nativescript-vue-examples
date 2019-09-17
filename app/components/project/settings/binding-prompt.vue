@@ -1,8 +1,8 @@
 <template>
   <WrapLayout>
     <GridLayout rows="auto, auto" columns="auto, *,auto" class="p-t-10 p-l-15 bind-wrap">
-      <Label row="0" col="0" text="您还没有绑定手机号和微信号" class="font-weight-bold bind-content bind-content-top"></Label>
-      <Label row="1" col="0" text="绑定后可以收取其他用户赠送的兑换币" class="text-muted m-b-10 bind-content"></Label>
+      <Label row="0" col="0" text="您还没有绑定手机号和微信号" class="font-weight-bold bind-content bind-content-top" />
+      <Label row="1" col="0" text="绑定后可以收取其他用户赠送的兑换币" class="text-muted m-b-10 bind-content" />
       <label row="0" rowSpan="2" col="1" text="去绑定" class=" m-y-auto bind-btn" />
       <FIcon row="0" rowSpan="2" col="2" name="icon-guanbi" type="icon" class="icon bind-icon text-muted m-r-10 m-b-10 m-y-auto" />
     </GridLayout>

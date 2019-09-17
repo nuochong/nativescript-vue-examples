@@ -11,7 +11,7 @@
             <Image src="~/assets/images/project/Star-grey.png" v-for="star in (5 - place.stars)" :key="(star * 10)" marginRight="4" />
           </FlexboxLayout>
         </StackLayout>
-        <StackLayout orientation="vertical" :backgroundImage="'~/assets/images/project/media/' + place.media" height="65%" width="100%" class="img"></StackLayout>
+        <StackLayout orientation="vertical" :backgroundImage="'~/assets/images/project/media/' + place.media" height="65%" width="100%" class="img" />
       </FlexboxLayout>
     </AbsoluteLayout>
   </WrapLayout>

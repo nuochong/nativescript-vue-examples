@@ -3,7 +3,7 @@
     <ActionBar class="action-bar" :flat="isFlat">
       <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" @tap="$navigateBack" />
       <Label :text="title" class="hidden" ref="topTitle" fontSize="17" verticalAlignment="center" />
-      <ActionItem @tap="someMethod" ios.systemIcon="13" ios.position="right" text="refresh" android.position="popup"></ActionItem>
+      <ActionItem @tap="someMethod" ios.systemIcon="13" ios.position="right" text="refresh" android.position="popup" />
     </ActionBar>
 
     <ScrollView ref="scrollView" @scroll="onScroll()">

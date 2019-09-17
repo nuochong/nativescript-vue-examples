@@ -1,10 +1,10 @@
 <template>
   <GridLayout columns="auto, *" class="sidedrawer-list-item" @tap="btnDarwerItem">
-    <!-- <Label col="0" :text="img" class="fa"></Label> -->
+    <!-- <Label col="0" :text="img" class="fa" /> -->
     <!-- <FIcon name="fa-weixin" type="fa" size="20"/> -->
-    <!-- <Label class="fa" :text="'fa-weixin' | fonticon"></Label>  -->
-    <Label col="0" class="fa" :text="icon | fonticon"></Label>
-    <Label col="1" :text="title" class="p-r-10"></Label>
+    <!-- <Label class="fa" :text="'fa-weixin' | fonticon" />  -->
+    <Label col="0" class="fa" :text="icon | fonticon" />
+    <Label col="1" :text="title" class="p-r-10" />
   </GridLayout>
 </template>
 

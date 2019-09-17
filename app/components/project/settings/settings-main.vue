@@ -5,8 +5,8 @@
     <GridLayout rows="auto, *">
       <ScrollView row="1">
         <StackLayout>
-          <InfoPanel></InfoPanel>
-          <InfoPanel></InfoPanel>
+          <InfoPanel />
+          <InfoPanel />
         </StackLayout>
       </ScrollView>
     </GridLayout>

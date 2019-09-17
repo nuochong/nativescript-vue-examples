@@ -5,8 +5,8 @@
   <GridLayout tkDrawerContent rows="auto, *" class="sidedrawer sidedrawer-left">
     <StackLayout row="0" class="sidedrawer-header">
       <Image class="sidedrawer-header-image" src="~/assets/images/example/multi-drawer/head.jpg" />
-      <Label class="sidedrawer-header-brand" text="用户名"></Label>
-      <Label class="footnote" text="username@mail.com"></Label>
+      <Label class="sidedrawer-header-brand" text="用户名" />
+      <Label class="footnote" text="username@mail.com" />
     </StackLayout>
 
     <ScrollView row="1">
@@ -20,7 +20,7 @@
         <SidebarItem :icon="'fa-music'" :title="'测试按钮7'" />
         <SidebarItem :icon="'fa-search'" :title="'测试按钮8'" />
         <SidebarItem :icon="'fa-envelope-o'" :title="'测试按钮9'" />
-        <StackLayout class="hr-light"></StackLayout>
+        <StackLayout class="hr-light" />
         <SidebarItem :icon="'fa-star'" :title="'测试按钮10'" />
         <SidebarItem :icon="'fa-star-o'" :title="'测试按钮11'" />
         <SidebarItem :icon="'fa-th-large'" :title="'测试按钮12'" />
@@ -28,7 +28,7 @@
         <SidebarItem :icon="'fa-th-list'" :title="'测试按钮14'" />
         <SidebarItem :icon="'fa-check'" :title="'测试按钮15'" />
         <SidebarItem :icon="'fa-remove'" :title="'测试按钮16'" />
-        <StackLayout class="hr-light"></StackLayout>
+        <StackLayout class="hr-light" />
         <SidebarItem :icon="'fa-home'" :title="'测试按钮17'" />
         <SidebarItem :icon="'fa-search-plus'" :title="'测试按钮18'" />
         <SidebarItem :icon="'fa-inbox'" :title="'测试按钮19'" />
