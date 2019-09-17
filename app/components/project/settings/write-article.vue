@@ -2,7 +2,7 @@
   <page class="page">
     <WriteHeader />
     <GridLayout rows="*,auto,auto">
-      <ScrollView row="0" col="0" orientation="vertical" scrollBarIndicatorVisible="false" backgroundColor="blue">
+      <ScrollView row="0" col="0" orientation="vertical" scrollBarIndicatorVisible="false" backgroundColor="#019858">
         <StackLayout>
           <TextView hint="请输入标题" v-model="title" ref="txtMessage" />
           <TextView hint="请输入正文" v-model="content" ref="searchBar" />
