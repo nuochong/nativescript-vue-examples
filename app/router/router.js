@@ -36,7 +36,6 @@ import Webview from '~/components/example/webview/webview';
 import Effect from '~/components/example/effect';
 import Popupmenu from '~/components/example/popupmenu';
 import ShareMain from '~/components/example/share/share-main';
-import Counter from '~/store/modules/counter';
 
 const router = {
   World,
