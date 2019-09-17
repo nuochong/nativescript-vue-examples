@@ -26,9 +26,6 @@ export default {
     index: {
       type: Number
     },
-    active: {
-      type: Number
-    }
   },
   data() {
     return {};

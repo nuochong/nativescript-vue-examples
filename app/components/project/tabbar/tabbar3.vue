@@ -8,7 +8,7 @@
             <Image row="0" rowSpan="2" col="0" class="connect-team-avatar p-5 m-r-10 m-y-auto text-center" :src="headimg" stretch="none" />
             <Label row="0" col="1" text="吴江月" class="font-weight-bold"></Label>
             <WrapLayout class="head-introduce" row="1" col="1">
-              <Label class="head-introduce-title" text="攒了文章 |" />
+              <Label class="head-introduce-title" text="赞了文章 |" />
               <Label class="head-introduce-content" text="08.31 06:15" />
             </WrapLayout>
           </GridLayout>
