@@ -37,6 +37,7 @@ axios.interceptors.response.use(
     return response.data;
   },
   error => {
-    return Promise.reject(error.response); // 返回接口返回的错误信息
+    // 返回接口返回的错误信息
+    return Promise.reject(error.response); 
   }
 );
