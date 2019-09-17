@@ -1,6 +1,6 @@
 <template>
   <StackLayout>
-    <Label textWrap="true" text="消息" class="label-text-white" />
+    <Label class="label-black" textWrap="true" text="消息的内容" />
   </StackLayout>
 </template>
 
@@ -10,11 +10,7 @@ export default {
     return {};
   },
   mounted() {},
-  methods: {
-    btn: function() {
-      console.log('点击了按钮');
-    }
-  }
+  methods: {}
 };
 </script>
 

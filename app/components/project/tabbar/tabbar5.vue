@@ -34,9 +34,7 @@ export default {
     WriteArticle
   },
   data() {
-    return {
-      msg: 'Hello World!'
-    };
+    return {};
   },
   mounted() {},
   methods: {

@@ -31,11 +31,7 @@ export default {
     return {};
   },
   mounted() {},
-  methods: {
-    goToPlace(place) {
-      console.log('card');
-    }
-  }
+  methods: {}
 };
 </script>
 
