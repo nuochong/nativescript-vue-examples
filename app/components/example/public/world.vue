@@ -19,7 +19,7 @@ export default {
   },
   data() {
     return {
-      title: '路由跳转-公用页面',
+      title: '路由跳转-公共页面',
       msg: 'Hello World!'
     };
   },
