@@ -31,7 +31,7 @@
         <Button class="btn btn-primary" text="扫码" @tap="btnQrcode" />
         <Button class="btn btn-primary" text="网页" @tap="btnWebview" />
         <Button class="btn btn-primary" text="自定义过渡效果" @tap="btnEffect" />
-        <Button class="btn btn-primary" text="弹出菜单" @tap="btnPopupmenu" />
+        <Button class="btn btn-primary" text="简易弹出菜单" @tap="btnPopupmenu" />
         <Button class="btn btn-primary" text="分享" @tap="btnShareMain" />
         <Button class="btn btn-primary" text="检测网络类型" @tap="btnCheckNetworkType" />
         <Button class="btn btn-primary" text="广播" @tap="btnBroadcastReceiver" />

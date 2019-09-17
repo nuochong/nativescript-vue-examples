@@ -1,5 +1,5 @@
 <template>
-  <Page class="page" ref="page">
+  <Page class="page">
     <ActionBarSecond :title="title" />
     <ScrollView>
       <StackLayout class="hello-world">

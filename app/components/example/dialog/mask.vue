@@ -44,7 +44,7 @@ export default {
 
 <style scoped lang="scss">
 .dialogOpen {
-  opacity: 0.2;
+  opacity: 0.8;
   &.dialog-wrapper {
     visibility: visible;
     animation-name: show;
