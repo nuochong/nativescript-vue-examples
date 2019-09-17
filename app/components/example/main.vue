@@ -18,7 +18,7 @@
         <Button class="btn btn-primary" text="显示隐藏" @tap="btnDisplay" />
         <Label class="split" :text="msg" />
         <Button class="btn btn-primary" text="路由跳转" @tap="onButtonTap" />
-        <Button class="btn btn-primary" text="本地存储示例" @tap="onInput" />
+        <Button class="btn btn-primary" text="本地存储" @tap="onInput" />
         <Button class="btn btn-primary" text="记事薄" @tap="onFab" />
         <Button class="btn btn-primary" text="备忘录" @tap="onTodo" />
         <Button class="btn btn-primary" text="图标" @tap="onIcon" />
