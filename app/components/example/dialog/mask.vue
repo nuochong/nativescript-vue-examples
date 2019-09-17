@@ -1,19 +1,23 @@
 <template>
-  <Page class="page" :class="{ dialogOpen: dialogOpen }">
+  <Page class="page">
     <ActionBarSecond :title="title" />
 
     <GridLayout colums="*" rows="*">
-      <StackLayout>
-        <Button class="btn btn-primary" text="遮罩层" @tap="showDialog" />
-      </StackLayout>
-
-      <AbsoluteLayout class="dialog-wrapper">
-        <StackLayout class="dialog">
-          <Label class="h3" textWrap="true" text="您确定要与他人共享数据吗?" />
-          <Button class="btn btn-primary" text="共享" />
-          <Button class="btn btn-outline" text="取消" @tap="closeDialog" />
+      <AbsoluteLayout>
+        <StackLayout class="dialog-content">
+          <Button class="btn btn-primary" text="遮罩层" @tap="showDialog" />
         </StackLayout>
+
+        <StackLayout class="dialog-wrapper" :class="{ dialogOpen: dialogOpen }">
+          <StackLayout class="dialog">
+            <Label class="label-black" textWrap="true" text="您确定要与他人共享数据吗?" />
+            <Button class="btn btn-primary" text="共享" />
+            <Button class="btn btn-outline" text="取消" @tap="closeDialog" />
+          </StackLayout>
+        </StackLayout>
+
       </AbsoluteLayout>
+
     </GridLayout>
   </Page>
 </template>
@@ -43,8 +47,11 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.dialog-content {
+  width: 100%;
+  height: 100%;
+}
 .dialogOpen {
-  opacity: 0.8;
   &.dialog-wrapper {
     visibility: visible;
     animation-name: show;
@@ -54,13 +61,15 @@ export default {
 }
 .dialog-wrapper {
   visibility: collapse;
-  opacity: 0;
-  background-color: black;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  background-color: rgba(29, 30, 35, 0.9);
   .dialog {
     border-width: 1 0 1 0;
     border-color: black;
     background-color: white;
-    width: 100%;
+    width: 60%;
     padding: 20;
     &label {
       margin: 0 15 15 15;
