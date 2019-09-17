@@ -4,11 +4,11 @@
 
     <FlexboxLayout flexDirection="column" backgroundColor="#3c495e" @pan="onDrawerPan(side, $event)">
       <Label class="label-white first" text="first" height="70" backgroundColor="#43b883" ref="ht" flexShrink="0" />
-      <Label class="label-white" text="second" height="70" backgroundColor="#1c6b48" flexShrink="0" />
+      <Label class="label-white lable-refresh" text="(*_*)" height="70" backgroundColor="#1c6b48" flexShrink="0" />
       <!-- <Label text="third" height="100%" backgroundColor="#289062" /> -->
       <ListView for="item in listArr" ref="list" @pan="onListPane(side,$event)">
         <v-template>
-          <Label class="label-white icon" :text="item" />
+          <Label class="label-white lable-refresh" :text="item" />
         </v-template>
       </ListView>
     </FlexboxLayout>
@@ -54,12 +54,10 @@ export default {
   methods: {
     setIsAbleToPull: function() {},
     await: function() {
-      console.log('丁丁事');
       let that = this;
       setTimeout(function() {
         console.log('对不起, 要你久候');
         that.isTime = true;
-        console.log('定时了');
         that.restore();
       }, 3000);
     },
@@ -78,7 +76,6 @@ export default {
     //     console.log('定时了');·
     //   }, 1000);
     // },
-    onButton: function() {},
     onDrawerPan(side, args) {
       let ht = this.$refs.ht.nativeView;
       if (ht.marginTop < 0 && this.isStart) {
@@ -118,14 +115,10 @@ export default {
 <style scoped lang="scss">
 .first {
   margin-top: -60;
+  text-align: center;
 }
-
-.icons {
-  font-family: 'icomoon';
+.lable-refresh {
   font-size: 48;
-}
-.icon {
-  font-family: iconfont;
-  font-size: 48;
+  text-align: center;
 }
 </style>

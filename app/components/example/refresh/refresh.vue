@@ -6,7 +6,7 @@
       <PullToRefresh @refresh="refreshList">
         <ListView for="item in listOfItems" @itemTap="onItemTap">
           <v-template>
-            <label class="label-white" :text="item.text" />
+            <label class="label-white lable-refresh" :text="item.text" />
           </v-template>
         </ListView>
       </PullToRefresh>
@@ -51,4 +51,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.lable-refresh {
+  font-size: 48;
+  text-align: center;
+}
 </style>
