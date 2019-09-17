@@ -6,21 +6,21 @@
       <ListView for="(item,index) in icons" class="list-group" ref="lv">
         <v-template>
           <GridLayout class="list-group-item" rows="*" columns="auto, *">
-            <!--原生nativescript旧方法，已经不能使用-->
+            <!-- 原生nativescript旧方法，已经不能使用 -->
             <!-- <Label class="iconfont" text="\uf019;" /> -->
-            <!--原生nativescript新方法1，目前可用-->
-            <!-- <Label class="fa" text="&#xeb68;" />
-            <!--原生nativescript新方法2，目前可用-->
-            <!-- <Image src="'font://&#xeb68;'" stretch="none" class="iconfont" />
-            <!--以上方法在nativescript-vue中都不支持-->
+            <!-- 原生nativescript新方法1，目前可用 -->
+            <!-- <Label class="fa" text="&#xeb68;" /> -->
+            <!-- 原生nativescript新方法2，目前可用 -->
+            <!-- <Image src="'font://&#xeb68;'" stretch="none" class="iconfont" /> -->
+            <!-- 以上方法在nativescript-vue中都不支持 -->
 
-            <!--原生nativescript插件nativescript-fonticon方法,原生可用，nativescript-vue中不可使用，因为不支持原生模版及过滤器-->
-            <!-- <Label class="iconfont" text="{{'fa-mail-reply' | fonticon}}" />
+            <!-- 原生nativescript插件nativescript-fonticon方法,原生可用，nativescript-vue中不可使用，因为不支持原生模版及过滤器 -->
+            <!-- <Label class="iconfont" text="{{'fa-mail-reply' | fonticon}}" /> -->
 
-            <!--原生nativescript-vue插件nativescript-vue-fonticon方法,可用，支持vue模版及过滤器，基于原生nativescript-fonticon插件-->
-            <!--直接使用vue的过滤器加载原生nativescript-fonticon插件的过滤方法-->
-            <!-- <Label class="iconfont" :text="'icon-guanlianshebei' | fonticon" />
-            <!--直接使用nativescript-vue-fonticon的组件形式引入icon-->
+            <!-- 原生nativescript-vue插件nativescript-vue-fonticon方法,可用，支持vue模版及过滤器，基于原生nativescript-fonticon插件 -->
+            <!-- 直接使用vue的过滤器加载原生nativescript-fonticon插件的过滤方法 -->
+            <!-- <Label class="iconfont" :text="'icon-guanlianshebei' | fonticon" /> -->
+            <!-- 直接使用nativescript-vue-fonticon的组件形式引入icon -->
             <FIcon name="fa-weixin" type="fa" size="48" />
             <FIcon name="icon-guanlianshebei" type="icon" />
           </GridLayout>
