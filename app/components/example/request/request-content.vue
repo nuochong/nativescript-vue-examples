@@ -3,8 +3,8 @@
     <StackLayout class="content">
       <Label textWrap="true">
         <FormattedString>
-          <Span text="返回的数据是如下：" />
-          <Span :text="content" />
+          <Span class="span-white" text="返回的数据是如下：" />
+          <Span class="span-white" :text="content" />
         </FormattedString>
       </Label>
     </StackLayout>

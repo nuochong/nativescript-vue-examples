@@ -2,17 +2,17 @@
   <Page class="page">
     <ActionBar class="action-bar" :flat="isFlat">
       <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" @tap="$navigateBack" />
-      <Label :text="title" class="hidden" ref="topTitle" fontSize="17" verticalAlignment="center" />
+      <Label class="label-white hidden" :text="title" ref="topTitle" fontSize="17" verticalAlignment="center" />
       <ActionItem @tap="someMethod" ios.systemIcon="13" ios.position="right" text="refresh" android.position="popup" />
     </ActionBar>
 
     <ScrollView ref="scrollView" @scroll="onScroll()">
       <StackLayout class="container">
         <StackLayout class="header">
-          <Label ref="title" :text="title" />
+          <Label class="label-white" ref="title" :text="title" />
         </StackLayout>
         <StackLayout class="content">
-          <Label textWrap="true" :text="content" class="description-label" />
+          <Label textWrap="true" :text="content" class="label-white description-label" />
         </StackLayout>
       </StackLayout>
     </ScrollView>
@@ -120,7 +120,7 @@ export default {
     .content {
       padding: 20;
       // background-color: #fff;
-      font-size: 20;
+      font-size: 18;
       .description-label {
         margin-bottom: 16;
         line-height: 3;
