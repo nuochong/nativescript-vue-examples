@@ -3,7 +3,7 @@
     <ActionBarSecond :title="title" />
     <ScrollView>
       <StackLayout class="hello-world">
-        <Button class="btn btn-primary" @tap="dialog" text="对话框" />
+        <Button class="btn btn-primary" @tap="dialog" text="提示框" />
       </StackLayout>
     </ScrollView>
   </Page>
@@ -11,7 +11,7 @@
 
 <script>
 const dialogs = require('tns-core-modules/ui/dialogs');
-import ActionBarSecond from './public/action-bar-second';
+import ActionBarSecond from '../public/action-bar-second';
 
 export default {
   components: {
@@ -19,7 +19,7 @@ export default {
   },
   data() {
     return {
-      title: '对话框'
+      title: '提示框'
     };
   },
   mounted() {},
@@ -32,7 +32,7 @@ export default {
           okButtonText: '确认'
         })
         .then(() => {
-          console.log('对话框关闭');
+          console.log('提示框关闭');
         });
     }
   }

@@ -21,13 +21,10 @@
         <Button class="btn btn-primary" text="记事薄" @tap="onFab" />
         <Button class="btn btn-primary" text="备忘录" @tap="onTodo" />
         <Button class="btn btn-primary" text="图标" @tap="onIcon" />
-        <Button class="btn btn-primary" text="遮罩层" @tap="onMask" />
         <Button class="btn btn-primary" text="模态对话框" @tap="showModal" />
         <Button class="btn btn-primary" text="侧滑组件" @tap="onDrawer" />
         <Button class="btn btn-primary" text="大标题导航栏" @tap="onlargeTitle" />
-        <Button class="btn btn-primary" text="对话框" @tap="btnDialogNew" />
         <Button class="btn btn-primary" text="动画效果" @tap="animate" />
-
         <Button class="btn btn-primary" text="触摸事件" @tap="touch" />
         <Button class="btn btn-primary" text="请求" @tap="requestMain" />
         <Button class="btn btn-primary" text="获取全局数据" @tap="common" />
@@ -41,6 +38,7 @@
         <Button class="btn btn-primary" text="获取平台信息" @tap="btnPlatform" />
         <Button class="btn btn-primary" text="IOS键盘管理" @tap="btnIQKeyboardManager" />
         <Button class="btn btn-primary" text="下拉刷新" @tap="btnRefreshMain" />
+        <Button class="btn btn-primary" text="对话框" @tap="btnDialog" />
       </StackLayout>
     </ScrollView>
   </Page>
@@ -53,19 +51,17 @@ import Login from './login';
 import Toast from './toast';
 import FancyAlert from './fancy-alert';
 import Info from './info';
-import DialogNew from './dialog-new';
+
 import Phone from './phone';
 import Geolocation from './geolocation';
 import Permission from './permission';
 import ChangeBtn from './change-btn';
 import Display from './display';
-
 import Target from './target/target';
 import Storage from './storage';
 import Fab from './fab/fab';
 import Todo from './todo/todo';
 import IconMain from './icon/icon-main';
-import Mask from './mask';
 import Modal from './custom-model/modal';
 import Drawer from './multi-drawer/drawer';
 import LargeTitle from './large-title/large-title';
@@ -82,6 +78,7 @@ import BroadcastReceiver from './broadcast-receiver';
 import Platform from './platform';
 import IQKeyboardManager from './iq-keyboard-manager';
 import RefreshMain from './refresh/refresh-main';
+import DialogMain from './dialog/refresh-main';
 
 import ActionBarSecond from './public/action-bar-second';
 
@@ -97,6 +94,9 @@ export default {
   },
   mounted() {},
   methods: {
+    btnDialog: function() {
+      this.navigateTo(this, DialogMain);
+    },
     btnRefreshMain: function() {
       this.navigateTo(this, RefreshMain);
     },
@@ -172,9 +172,6 @@ export default {
     onIcon: function() {
       this.navigateTo(this, IconMain);
     },
-    onMask: function() {
-      this.navigateTo(this, Mask);
-    },
     showModal() {
       this.navigateTo(this, Modal);
     },
@@ -183,9 +180,6 @@ export default {
     },
     onlargeTitle() {
       this.navigateTo(this, LargeTitle);
-    },
-    btnDialogNew() {
-      this.navigateTo(this, DialogNew);
     },
     animate() {
       this.navigateTo(this, Animate);
