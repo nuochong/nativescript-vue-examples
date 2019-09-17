@@ -40,6 +40,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.semi-bold {
+  font-family: 'Assistant-SemiBold', 'Assistant SemiBold';
+  font-weight: 600;
+}
 .card {
   background-position: center center;
   background-size: cover;
