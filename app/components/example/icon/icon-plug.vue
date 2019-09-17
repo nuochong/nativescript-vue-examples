@@ -47,7 +47,7 @@ export default {
     };
   },
   mounted() {
-    console.log('xxxx', this.$refs.lv.nativeView);
+    console.log('xxx', this.$refs.lv.nativeView);
   },
   methods: {}
 };

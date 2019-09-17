@@ -88,7 +88,7 @@ export default {
     //   let _myDelegate = delegates.myUITextViewDelegateImpl.initWithOwner({
     //     owner: new WeakRef(application),
     //     onTextViewShouldBeginEditing: () => {
-    //       console.log('xxxxx')
+    //       console.log('xxxx')
     //       StackPanelID.height = TheCurrentKeyBoardHeight;
     //     },
     //     onTextViewDidEndEditing: () => {
