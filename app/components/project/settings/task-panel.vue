@@ -9,7 +9,7 @@
       </WrapLayout>
       <WrapLayout row="0" col="1" class="task-list-headerRight">
         <Label text="查看" class=""></Label>
-        <FIcon name="icon-jiantou" type="icon" class="icon setting-icon m-y-auto task-list-headerRightIcon" />
+        <FIcon name="icon-jiantou" type="icon" class="icon m-y-auto task-list-headerRightIcon" />
       </WrapLayout>
       <!-- <StackLayout class="hr-light"></StackLayout> -->
     </GridLayout>
@@ -82,6 +82,7 @@ export default {
     .task-list-headerRightIcon {
       margin: 0;
       text-align: right;
+      color: #5b5b5b;
     }
   }
 }
@@ -99,34 +100,5 @@ export default {
   .task-list-introduce {
     font-size: 10;
   }
-}
-.care-common-main-header {
-  background-color: #f5f4f6;
-}
-
-.care-common-list-header {
-  background-color: #efeff4;
-  color: #6d6d72;
-  padding-bottom: 10;
-}
-.connect-team-avatar {
-  min-width: 36;
-  color: #ffffff;
-  background-color: #808080;
-}
-
-.connect-contact-attribute-title {
-  color: #62c5f3;
-}
-
-.connect-contact-icon {
-  color: #62c5f3;
-}
-
-.setting-icon {
-  color: #5b5b5b;
-}
-.right-text {
-  text-align: right;
 }
 </style>
