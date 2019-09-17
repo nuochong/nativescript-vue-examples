@@ -1,7 +1,7 @@
 import Vue from 'nativescript-vue';
 import VueDevtools from 'nativescript-vue-devtools';
 import App from './components/App';
-import store from './store';
+import Store from './store';
 import CommonLocal from './assets/js/common.js';
 import shortcuts from './app.shortcuts.js';
 import icons from './app.icons.js';
@@ -95,6 +95,6 @@ shortcuts.handleTask();
 // };
 
 new Vue({
-  store,
+  Store,
   render: h => h('frame', [h(App)])
 }).$start();
