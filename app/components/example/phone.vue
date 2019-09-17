@@ -30,17 +30,17 @@ export default {
       phone.dial('212-555-1234', true);
     },
     sms: function() {
-      phone
-        .sms('212-555-1234', '我的消息【My Message】') //New Method for single number is phone.sms(["212-555-1234"],"My Message")
-        .then(
-          function(args) {
-            /// args.reponse: "success", "cancelled", "failed"
-            console.log(JSON.stringify(args));
-          },
-          function(err) {
-            console.log('Error: ' + err);
-          }
-        );
+      // 单个电话号的新方法是
+      // phone.sms(["212-555-1234"],"My Message")
+      phone.sms('212-555-1234', '我的消息').then(
+        function(args) {
+          // args.reponse: "success", "cancelled", "failed"
+          console.log(JSON.stringify(args));
+        },
+        function(err) {
+          console.log('错误: ' + err);
+        }
+      );
     }
   }
 };
