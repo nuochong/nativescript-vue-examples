@@ -1,10 +1,10 @@
 <template>
-  <Page class="page" loaded="pageLoaded" ref="page">
+  <Page class="page">
     <ActionBarSecond :title="title" />
 
     <ScrollView>
       <StackLayout class="hello-world">
-        <Button class="btn btn-primary" ref="btn" text="IOS原生事件" @tap="btnIos" />
+        <Button class="btn btn-primary" ref="btn" text="IOS原生方法" @tap="btnIos" />
       </StackLayout>
     </ScrollView>
   </Page>
@@ -12,9 +12,9 @@
 
 <script>
 import { log } from 'util';
-//import { Color } from 'color';
-let colorModule = require('color');
-import { Color, layout } from 'tns-core-modules/ui/core/view';
+import { Color } from 'color';
+//const Color = require('color');
+//import { Color, layout } from 'tns-core-modules/ui/core/view';
 import ActionBarSecond from './public/action-bar-second';
 
 export default {
