@@ -20,6 +20,11 @@
 //   font-family: 'FontAwesome', 'fontawesome-webfont','font-awesome';
 //   font-size: 24;
 // }
+.icon {
+  font-family: 'iconfont';
+  font-size: 24;
+  color: white;
+}
 .bold {
   font-family: 'Assistant-Bold', 'Assistant';
   font-weight: 700;
@@ -33,26 +38,21 @@
   font-size: 15;
   color: white;
 }
-.icon {
-  font-family: 'iconfont';
-  font-size: 24;
-  color: white;
-}
-.label-text-black {
+.label-black {
   color: black;
 }
 .label-white {
   color: white;
 }
-.text-field-white{
+.text-field-white {
   color: white;
-  placeholder-color:gray;
+  placeholder-color: gray;
 }
-.text-view-white{
-  background-color:black;
+.text-view-white {
+  background-color: black;
   color: black;
-  placeholder-color:gray;
+  placeholder-color: gray;
 }
-.span-white{
-  color:white;
+.span-white {
+  color: white;
 }

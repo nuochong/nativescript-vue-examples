@@ -4,8 +4,8 @@
     <!-- <ScrollView> -->
     <StackLayout class="hello-world">
       <Button class="btn btn-primary" text="返回" @tap="goBack()" />
-      <TextField ref="urlField" hint="请输入 URL" :text="text" returnKeyType="done" autocorrect="false" verticalAlignment="center" class="text-field-white input input-border m-t-0 webview-textfield"
-        autocapitalizationType="none" />
+      <TextField ref="urlField" hint="请输入 URL" :text="text" returnKeyType="done" autocorrect="false" verticalAlignment="center"
+        class="text-field-white input input-border m-t-0 webview-textfield" autocapitalizationType="none" />
       <Button class="btn btn-primary" :isEnabled="enabled" text="前进" @tap="goForward()" />
       <Button class="btn btn-primary" text="访问" @tap="submit()" />
       <GridLayout>
