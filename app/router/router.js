@@ -25,7 +25,6 @@ import Mask from '~/components/example/mask';
 import Modal from '~/components/example/custom-model/modal';
 import Drawer from '~/components/example/multi-drawer/drawer';
 import LargeTitle from '~/components/example/large-title/large-title';
-import Dialog from '~/components/example/dialog/dialog';
 import Pop from '~/components/example/pop';
 import Animate from '~/components/example/animate';
 import Refresh from '~/components/example/refresh';
@@ -37,9 +36,7 @@ import Webview from '~/components/example/webview/webview';
 import Effect from '~/components/example/effect';
 import Popupmenu from '~/components/example/popupmenu';
 import ShareMain from '~/components/example/share/share-main';
-import counter from '~/store/modules/counter';
-
-Counter
+import Counter from '~/store/modules/counter';
 
 const router = {
   World,
@@ -68,7 +65,6 @@ const router = {
   Modal,
   Drawer,
   LargeTitle,
-  Dialog,
   Pop,
   Animate,
   Refresh,
@@ -79,7 +75,6 @@ const router = {
   Webview,
   Effect,
   Popupmenu,
-  ShareMain,
-
+  ShareMain
 };
 export default router;

@@ -27,7 +27,6 @@
         <Button class="btn btn-primary" text="侧滑组件" @tap="onDrawer" />
         <Button class="btn btn-primary" text="大标题导航栏" @tap="onlargeTitle" />
         <Button class="btn btn-primary" text="对话框" @tap="btnDialogNew" />
-        <Button class="btn btn-primary" text="自定义弹出框" @tap="pop" />
         <Button class="btn btn-primary" text="动画效果" @tap="animate" />
         <Button class="btn btn-primary" text="下拉刷新" @tap="refresh" />
         <Button class="btn btn-primary" text="自定义下拉刷❤" @tap="refreshNew" />
@@ -72,7 +71,6 @@ import Mask from './mask';
 import Modal from './custom-model/modal';
 import Drawer from './multi-drawer/drawer';
 import LargeTitle from './large-title/large-title';
-import Pop from './pop';
 import Animate from './animate';
 import Refresh from './refresh';
 import RefreshNew from './refresh-new';
@@ -194,9 +192,6 @@ export default {
     },
     btnDialogNew() {
       this.navigateTo(this, DialogNew);
-    },
-    pop() {
-      this.navigateTo(this, Pop);
     },
     animate() {
       this.navigateTo(this, Animate);

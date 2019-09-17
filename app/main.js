@@ -8,8 +8,8 @@ import icons from './app.icons.js';
 import axios from './api/api';
 import VueAxios from 'vue-axios';
 //import { DrawerTransitionBase, RadSideDrawer, SlideInOnTopTransition } from "nativescript-ui-sidedrawer";
-import MultiDrawer from 'nativescript-vue-multi-drawer';
-import Dialog from './components/example/dialog/tools';
+//import MultiDrawer from 'nativescript-vue-multi-drawer';
+import MultiDrawer from './components/example/multi-drawer/tools';
 import FontIcon from './tools/nativescript-vue-fonticon';
 //const application = require('tns-core-modules/application');
 
@@ -24,9 +24,6 @@ Vue.use(MultiDrawer, {
   //重写覆盖这里的任何选项
   //例如，启用调试模式
   debug: true
-});
-Vue.use(Dialog, {
-  debug: false
   // backdropColor: 'rgba(255, 0, 0, 0.7)',
   //其它配置参看插件源代码
 });
