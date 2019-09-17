@@ -6,7 +6,7 @@
       <PullToRefresh @refresh="refreshList">
         <ListView for="item in listOfItems" @itemTap="onItemTap">
           <v-template>
-            <!-- Shows the list item label in the default color and style. -->
+            <!-- 以默认颜色和样式显示列表项标签。-->
             <Label class="message" :text="msg" col="0" row="0" />
             <label :text="item.text" />
           </v-template>
@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import ActionBarSecond from './public/action-bar-second';
+import ActionBarSecond from '../public/action-bar-second';
 
 export default {
   components: {
@@ -25,7 +25,7 @@ export default {
   },
   data() {
     return {
-      title: '下拉刷新',
+      title: '第三方下拉刷新',
       msg: 'Hello World! ',
       listOfItems: [{ text: '下拉刷新' }, { text: '下拉刷新' }, { text: '下拉刷新' }]
     };

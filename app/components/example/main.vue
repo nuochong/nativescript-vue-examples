@@ -27,8 +27,7 @@
         <Button class="btn btn-primary" text="大标题导航栏" @tap="onlargeTitle" />
         <Button class="btn btn-primary" text="对话框" @tap="btnDialogNew" />
         <Button class="btn btn-primary" text="动画效果" @tap="animate" />
-        <Button class="btn btn-primary" text="下拉刷新" @tap="refresh" />
-        <Button class="btn btn-primary" text="自定义下拉刷❤" @tap="refreshNew" />
+
         <Button class="btn btn-primary" text="触摸事件" @tap="touch" />
         <Button class="btn btn-primary" text="请求" @tap="requestMain" />
         <Button class="btn btn-primary" text="获取全局数据" @tap="common" />
@@ -41,6 +40,7 @@
         <Button class="btn btn-primary" text="广播" @tap="btnBroadcastReceiver" />
         <Button class="btn btn-primary" text="获取平台信息" @tap="btnPlatform" />
         <Button class="btn btn-primary" text="IOS键盘管理" @tap="btnIQKeyboardManager" />
+        <Button class="btn btn-primary" text="下拉刷新" @tap="btnRefreshMain" />
       </StackLayout>
     </ScrollView>
   </Page>
@@ -70,8 +70,6 @@ import Modal from './custom-model/modal';
 import Drawer from './multi-drawer/drawer';
 import LargeTitle from './large-title/large-title';
 import Animate from './animate';
-import Refresh from './refresh';
-import RefreshNew from './refresh-new';
 import Touch from './touch';
 import RequestMain from './request/request-main';
 import Qrcode from './qrcode/qrcode';
@@ -83,6 +81,7 @@ import BtnCheckNetworkType from './check-network-type';
 import BroadcastReceiver from './broadcast-receiver';
 import Platform from './platform';
 import IQKeyboardManager from './iq-keyboard-manager';
+import RefreshMain from './refresh/refresh-main';
 
 import ActionBarSecond from './public/action-bar-second';
 
@@ -98,6 +97,9 @@ export default {
   },
   mounted() {},
   methods: {
+    btnRefreshMain: function() {
+      this.navigateTo(this, RefreshMain);
+    },
     btnIQKeyboardManager: function() {
       this.navigateTo(this, IQKeyboardManager);
     },
@@ -155,9 +157,6 @@ export default {
     touch: function() {
       this.navigateTo(this, Touch);
     },
-    refreshNew: function() {
-      this.navigateTo(this, RefreshNew);
-    },
     onButtonTap: function() {
       this.navigateTo(this, Target);
     },
@@ -190,9 +189,6 @@ export default {
     },
     animate() {
       this.navigateTo(this, Animate);
-    },
-    refresh() {
-      this.navigateTo(this, Refresh);
     },
     btnDisplay: function() {
       this.navigateTo(this, Display);
