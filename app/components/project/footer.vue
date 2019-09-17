@@ -59,15 +59,15 @@ export default {
   },
   methods: {
     goTo(link, index) {
-      console.log('xxxxx', link, index);
+      console.log('xxx', link, index);
       this.active = index;
       this.btns.forEach(v => {
         if (v['link'] == link && !v.active) {
-          console.log('我在上边', v.iconAct);
+          console.log('上', v.iconAct);
           v.icon = v.iconAct;
           v.active = true;
         } else {
-          console.log('我在下边', v.iconNor);
+          console.log('下', v.iconNor);
           v.icon = v.iconNor;
           v.active = false;
         }
