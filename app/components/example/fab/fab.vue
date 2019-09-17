@@ -5,7 +5,7 @@
     <AbsoluteLayout ref="rootLayout">
       <ListView for="item in items" @itemTap="onItemTap" left="10" top="10" height="97%" width="100%" marginBottom="48">
         <v-template>
-          <Label :text="item" />
+          <Label :class="label-white" :text="item" />
         </v-template>
       </ListView>
       <StackLayout left="0" top="0" height="100%" width="100%" class="backdrop" :class="classBackdrop" />

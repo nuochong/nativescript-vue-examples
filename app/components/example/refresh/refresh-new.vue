@@ -4,11 +4,11 @@
 
     <FlexboxLayout flexDirection="column" backgroundColor="#3c495e" @pan="onDrawerPan(side, $event)">
       <Label class="label-white first" text="first" height="70" backgroundColor="#43b883" ref="ht" flexShrink="0" />
-      <Label text="second" height="70" backgroundColor="#1c6b48" flexShrink="0" />
+      <Label class="label-white" text="second" height="70" backgroundColor="#1c6b48" flexShrink="0" />
       <!-- <Label text="third" height="100%" backgroundColor="#289062" /> -->
       <ListView for="item in listArr" ref="list" @pan="onListPane(side,$event)">
         <v-template>
-          <Label :text="item" class="icon" />
+          <Label class="label-white icon" :text="item"  />
         </v-template>
       </ListView>
     </FlexboxLayout>
@@ -17,7 +17,7 @@
             <PullToRefresh @refresh="refreshList">
                 <ListView for="item in listArr">
                     <v-template>
-                        <Label :text="item" class="icon" />
+                        <Label class="label-white icon" :text="item" />
                     </v-template>
                 </ListView>
             </PullToRefresh>

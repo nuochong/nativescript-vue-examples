@@ -9,7 +9,7 @@
           <GridLayout columns="2*,*" rows="*" width="100%" height="25%">
             <TextField class="text-field-white" col="0" row="0" v-model="textFieldValue" hint="添加新任务..." editable="true" @returnPress="onButtonTap" />
             <!-- Configures the text field and ensures that pressing Return on the keyboard produces the same result as tapping the button. -->
-            <Button class="btn" col="1" row="0" text="添加任务" @tap="onButtonTap" />
+            <Button class="btn btn-primary" col="1" row="0" text="添加任务" @tap="onButtonTap" />
           </GridLayout>
 
           <ListView class="list-group" for="todo in todos" @itemTap="onItemTap" style="height:75%">
