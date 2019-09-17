@@ -1,8 +1,8 @@
 <template>
   <StackLayout class="fab-button" @tap="$emit('onButtonTap')" @touch="onButtonTouch">
     <GridLayout rows="2, auto" horizontalAlignment="center" class="fab-icon" :class="buttonAnimation">
-      <Label row="1" class="fab-dash--1" />
-      <Label row="1" class="fab-dash--2" />
+      <Label row="1" class="label-text-white fab-dash--1" />
+      <Label row="1" class="label-text-white fab-dash--2" />
     </GridLayout>
   </StackLayout>
 </template>

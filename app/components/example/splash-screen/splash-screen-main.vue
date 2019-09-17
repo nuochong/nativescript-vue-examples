@@ -2,7 +2,7 @@
   <Page class="page">
 
     <GridLayout colums="*" rows="*">
-      <Label class="message" :text="msg" col="0" row="0" />
+      <Label class="label-text-white message" :text="msg" col="0" row="0" />
     </GridLayout>
   </Page>
 </template>

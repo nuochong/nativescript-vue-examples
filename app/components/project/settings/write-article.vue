@@ -4,8 +4,8 @@
     <GridLayout rows="*,auto,auto">
       <ScrollView row="0" col="0" orientation="vertical" scrollBarIndicatorVisible="false" backgroundColor="#019858">
         <StackLayout>
-          <TextView hint="请输入标题" v-model="title" ref="txtMessage" />
-          <TextView hint="请输入正文" v-model="content" ref="searchBar" />
+          <TextView class="text-white" hint="请输入标题" v-model="title" ref="txtMessage" />
+          <TextView class="text-white" hint="请输入正文" v-model="content" ref="searchBar" />
         </StackLayout>
       </ScrollView>
       <GridLayout row="1" col="0" rows="auto" columns="*,*,*,*,*,*" class="p-t-10 p-l-15 article-list">
