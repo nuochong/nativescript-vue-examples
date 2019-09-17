@@ -13,7 +13,6 @@
 
 <script>
 const Observable = require('tns-core-modules/data/observable').Observable;
-const platformModule = require('tns-core-modules/platform');
 import RequestContent from './request/request-content';
 import ActionBarSecond from './public/action-bar-second';
 
@@ -33,19 +32,20 @@ export default {
     btnPlatform: function() {
       console.log('点击了按钮');
       const vm = new Observable();
-      vm.set('deviceInformationmodel', platformModule.device.model);
-      vm.set('deviceInformationdeviceType', platformModule.device.deviceType);
-      vm.set('deviceInformationos', platformModule.device.os);
-      vm.set('deviceInformationosVersion', platformModule.device.osVersion);
-      vm.set('deviceInformationsdkVersion', platformModule.device.sdkVersion);
-      vm.set('deviceInformationlanguage', platformModule.device.language);
-      vm.set('deviceInformationmanufacturer', platformModule.device.manufacturer);
-      vm.set('deviceInformationuuid', platformModule.device.uuid);
-      vm.set('screenInformationheightDIPs', platformModule.screen.mainScreen.heightDIPs);
-      vm.set('screenInformationheightPixels', platformModule.screen.mainScreen.heightPixels);
-      vm.set('screenInformationscale', platformModule.screen.mainScreen.scale);
-      vm.set('screenInformationwidthDIPs', platformModule.screen.mainScreen.widthDIPs);
-      vm.set('screenInformationwidthPixels', platformModule.screen.mainScreen.widthPixels);
+      const platform = this.$platform;
+      vm.set('deviceInformationmodel', platform.device.model);
+      vm.set('deviceInformationdeviceType', platform.device.deviceType);
+      vm.set('deviceInformationos', platform.device.os);
+      vm.set('deviceInformationosVersion', platform.device.osVersion);
+      vm.set('deviceInformationsdkVersion', platform.device.sdkVersion);
+      vm.set('deviceInformationlanguage', platform.device.language);
+      vm.set('deviceInformationmanufacturer', platform.device.manufacturer);
+      vm.set('deviceInformationuuid', platform.device.uuid);
+      vm.set('screenInformationheightDIPs', platform.screen.mainScreen.heightDIPs);
+      vm.set('screenInformationheightPixels', platform.screen.mainScreen.heightPixels);
+      vm.set('screenInformationscale', platform.screen.mainScreen.scale);
+      vm.set('screenInformationwidthDIPs', platform.screen.mainScreen.widthDIPs);
+      vm.set('screenInformationwidthPixels', platform.screen.mainScreen.widthPixels);
 
       vm.set('deviceInfoButton', 'Show device info');
       vm.set('screenInfoButton', 'Show screen info');
@@ -55,10 +55,9 @@ export default {
       console.log(this.content);
     },
     checkPlatformType: function(args) {
-      let message = '';
-      if (platformModule.isAndroid) {
+      if (this.$platform.isAndroid) {
         this.content = 'You are using Android device';
-      } else if (platformModule.isIOS) {
+      } else if (this.$platform.isIOS) {
         this.content = 'You are using IOS device';
       }
       console.log(this.content);

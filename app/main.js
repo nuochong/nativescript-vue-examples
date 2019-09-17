@@ -12,7 +12,9 @@ import VueAxios from 'vue-axios';
 import MultiDrawer from './components/example/multi-drawer/tools';
 import FontIcon from './tools/nativescript-vue-fonticon';
 import { setStatusBarColors, setStatusBarFontColors, setBarFontColor } from './tools/status-bar-util';
-//const application = require('tns-core-modules/application');
+
+const application = require('tns-core-modules/application');
+const platform = require('tns-core-modules/platform');
 
 //在production环境开启VueDevtools工具
 TNS_ENV !== 'production' && Vue.use(VueDevtools);
@@ -52,6 +54,8 @@ Vue.registerElement('TextViewWithHint', () => require('nativescript-iqkeyboardma
 Vue.prototype.$icon = icons.initIcons();
 Vue.prototype.$setStatusBarFontColors = setStatusBarFontColors;
 Vue.prototype.$setBarFontColor = setBarFontColor;
+Vue.prototype.$application= application;
+Vue.prototype.$platform= platform;
 //setStatusBarColors();
 //检测是否支持AppShortcus
 shortcuts.isSuppertAppShortcus();

@@ -24,7 +24,6 @@
 <script>
 import WriteHeader from '../settings/write-header';
 import { textProperty } from 'tns-core-modules/ui/text-base/text-base';
-const application = require('tns-core-modules/application');
 import { Menu } from '../../../tools/nativescript-menu';
 export default {
   components: {
@@ -70,20 +69,20 @@ export default {
     let _this = this;
     let txtMessage = this.$refs.txtMessage.nativeView;
     let StackPanelID = this.$refs.StackPanelID.nativeView;
-    if (application.ios) {
-      console.log('平台', application.ios);
-      application.ios.addNotificationObserver(UIKeyboardWillChangeFrameNotification, function(notification) {
+    if (this.$application.ios) {
+      console.log('平台', this.$application.ios);
+      this.$application.ios.addNotificationObserver(UIKeyboardWillChangeFrameNotification, function(notification) {
         _this.height = notification.userInfo.valueForKey(UIKeyboardFrameEndUserInfoKey).CGRectValue.size.height;
         StackPanelID.height = _this.height;
       });
-      application.ios.addNotificationObserver(UIKeyboardWillHideNotification, function(notification) {
+      this.$application.ios.addNotificationObserver(UIKeyboardWillHideNotification, function(notification) {
         console.log('隐藏了');
         _this.height = notification.userInfo.valueForKey(UIKeyboardFrameEndUserInfoKey).CGRectValue.size.height;
         StackPanelID.height = 0;
       });
     }
 
-    // if (application.ios) {
+    // if (this.$application.ios) {
     //   console.log('动了')
     //   let delegates = require('../../../tools/myUITextViewDelegateImpl');
     //   let _myDelegate = delegates.myUITextViewDelegateImpl.initWithOwner({
@@ -98,7 +97,7 @@ export default {
     //     }
     //   });
 
-    //   application.ios.delegate = _myDelegate;
+    //   this.$application.ios.delegate = _myDelegate;
     // }
   },
   methods: {
@@ -153,12 +152,12 @@ export default {
     },
     listen: function() {
       //https://docs.nativescript.org/api-reference/modules/_application_#lowmemoryevent
-      console.log('Functions', application.getCssFileName());
-      console.log('Variables', application.launchEvent);
+      console.log('Functions', this.$application.getCssFileName());
+      console.log('Variables', this.$application.launchEvent);
       let txtMessage = this.$refs.btn.nativeView;
       //txtMessage.height = 400;
 
-      // application.ios.addNotificationObserver(UIKeyboardWillChangeFrameNotification, function(notification) {
+      // this.$application.ios.addNotificationObserver(UIKeyboardWillChangeFrameNotification, function(notification) {
       //   console.log('xxx');
       //   // var frame = frameRef.get();
       //   // if (frame) {
@@ -169,7 +168,7 @@ export default {
       //   // }
       // });
 
-      // class CompositeForm extends application.IOSApplication {
+      // class CompositeForm extends this.$application.IOSApplication {
       //   constructor() {
       //     super(this);
       //   }

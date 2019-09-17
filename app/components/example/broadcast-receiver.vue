@@ -11,8 +11,6 @@
 </template>
 
 <script>
-const applicationModule = require('tns-core-modules/application');
-const platformModule = require('tns-core-modules/platform');
 import RequestContent from './request/request-content';
 import ActionBarSecond from './public/action-bar-second';
 
@@ -31,7 +29,7 @@ export default {
   methods: {
     btnBroadcastReceiver: function() {
       console.log('点击了按钮：');
-      if (platformModule.isAndroid) {
+      if (this.$platform.isAndroid) {
         // use tns-platform-dclarations to acces native APIs (e.g. ndroid.content.Intent)
         const receiverCallback = (androidContext, intent) => {
           const level = intent.getIntExtra(android.os.BatteryManager.EXTRA_LEVEL, -1);
@@ -40,7 +38,7 @@ export default {
           this.content = '目前的电池电量：' + percent;
           //vm.set('batteryLife', percent.toString());
         };
-        applicationModule.android.registerBroadcastReceiver(android.content.Intent.ACTION_BATTERY_CHANGED, receiverCallback);
+        this.$application.android.registerBroadcastReceiver(android.content.Intent.ACTION_BATTERY_CHANGED, receiverCallback);
       } else {
         this.content = '不是安卓平台';
       }

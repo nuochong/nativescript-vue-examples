@@ -37,7 +37,6 @@
 </template>
 
 <script>
-const platformModule = require('tns-core-modules/platform');
 export default {
   components: {},
   props: {
@@ -57,7 +56,7 @@ export default {
   mounted() {},
   methods: {
     goToPlace(place) {
-      if (platformModule.isAndroid) {
+      if (this.$platform.isAndroid) {
         const nv = this.$refs.textview.nativeView;
         nv.opacity = 0.3;
         nv.rowSpan = 3;

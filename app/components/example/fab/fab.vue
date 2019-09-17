@@ -25,9 +25,6 @@
 <script>
 import FabButton from './fab-button';
 import FabItem from './fab-item';
-
-const app = require('tns-core-modules/application');
-const platform = require('tns-core-modules/platform');
 import ActionBarSecond from '../public/action-bar-second';
 
 export default {
@@ -69,7 +66,7 @@ export default {
       let rootLayout = this.$refs.rootLayout.nativeView;
 
       // Needed to avoid masking child components on Android
-      if (app.android && platform.device.sdkVersion >= '21') {
+      if (this.$application.android && this.$platform.device.sdkVersion >= '21') {
         fabItemContainer.android.setClipChildren(false);
         fabItemPosition.android.setClipChildren(false);
         rootLayout.android.setClipChildren(false);
