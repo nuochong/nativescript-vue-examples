@@ -43,6 +43,31 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.dialogOpen {
+  opacity: 0.2;
+  &.dialog-wrapper {
+    visibility: visible;
+    animation-name: show;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+  }
+}
+.dialog-wrapper {
+  visibility: collapse;
+  opacity: 0;
+  background-color: black;
+  .dialog {
+    border-width: 1 0 1 0;
+    border-color: black;
+    background-color: white;
+    width: 100%;
+    padding: 20;
+    &label {
+      margin: 0 15 15 15;
+      color: black;
+    }
+  }
+}
 @keyframes show {
   from {
     opacity: 0;
@@ -50,36 +75,5 @@ export default {
   to {
     opacity: 1;
   }
-}
-
-.dialogOpen .content,
-.dialogOpen .action-bar {
-  opacity: 0.2;
-}
-
-.dialogOpen .dialog-wrapper {
-  visibility: visible;
-  animation-name: show;
-  animation-duration: 0.3s;
-  animation-fill-mode: forwards;
-}
-
-.dialog-wrapper {
-  visibility: collapse;
-  opacity: 0;
-  background-color: black;
-}
-
-.dialog {
-  border-width: 1 0 1 0;
-  border-color: black;
-  background-color: white;
-  width: 100%;
-  padding: 20;
-}
-
-.dialog label {
-  margin: 0 15 15 15;
-  color: black;
 }
 </style>
