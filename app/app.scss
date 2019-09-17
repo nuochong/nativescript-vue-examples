@@ -41,10 +41,15 @@
 .label-text-black {
   color: black;
 }
-.label-text-white {
+.label-white {
   color: white;
 }
-.text-white{
+.text-field-white{
   color: white;
+  placeholder-color:gray;
+}
+.text-view-white{
+  background-color:black;
+  color: black;
   placeholder-color:gray;
 }

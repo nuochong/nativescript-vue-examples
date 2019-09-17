@@ -7,7 +7,7 @@
         <ListView for="item in listOfItems" @itemTap="onItemTap">
           <v-template>
             <!-- 以默认颜色和样式显示列表项标签。-->
-            <Label class="label-text-white message" :text="msg" col="0" row="0" />
+            <Label class="label-white message" :text="msg" col="0" row="0" />
             <label :text="item.text" />
           </v-template>
         </ListView>

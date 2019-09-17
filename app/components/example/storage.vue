@@ -4,26 +4,26 @@
 
     <ScrollView>
       <StackLayout class="home-panel form input-field">
-        <Label text="使用应用程序设置(类似于web上的“本地存储”)在本地存储和检索数据。" textWrap="true" class="label-text-white lbl" />
+        <Label text="使用应用程序设置(类似于web上的“本地存储”)在本地存储和检索数据。" textWrap="true" class="label-white lbl" />
 
         <!-- store/retrieve number -->
-        <Label text="Number" class="label-text-white heading" />
-        <TextField v-model="num" hint="Enter a Number..." class="text-white input input-border" keyboardType="number" />
+        <Label text="Number" class="label-white heading" />
+        <TextField v-model="num" hint="Enter a Number..." class="text-field-white input input-border" keyboardType="number" />
         <StackLayout orientation="horizontal" horizontalAlignment="center">
           <Button text="保存" @tap="saveNumber" class="btn btn-primary" />
           <Button text="移除" @tap="removeNumber" class="btn btn-primary" />
         </StackLayout>
 
         <!-- store/retrieve string -->
-        <Label text="String" class="label-text-white heading" />
-        <TextField v-model="str" hint="Enter a String..." class="text-white input input-border" />
+        <Label text="String" class="label-white heading" />
+        <TextField v-model="str" hint="Enter a String..." class="text-field-white input input-border" />
         <StackLayout orientation="horizontal" horizontalAlignment="center">
           <Button text="保存" @tap="saveString" class="btn btn-primary" />
           <Button text="移除" @tap="removeString" class="btn btn-primary" />
         </StackLayout>
 
         <!-- store/retrieve boolean -->
-        <Label text="Boolean" class="label-text-white heading" />
+        <Label text="Boolean" class="label-white heading" />
         <Switch v-model="bool" class="switch" />
         <StackLayout orientation="horizontal" horizontalAlignment="center">
           <Button text="保存" @tap="saveBoolean" class="btn btn-primary" />

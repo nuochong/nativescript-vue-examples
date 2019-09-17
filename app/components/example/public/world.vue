@@ -4,7 +4,7 @@
 
     <ScrollView>
       <StackLayout class="hello-world">
-        <Label class="label-text-white" :text="msg" />
+        <Label class="label-white" :text="msg" />
       </StackLayout>
     </ScrollView>
   </Page>
