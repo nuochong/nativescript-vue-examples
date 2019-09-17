@@ -50,6 +50,11 @@ Vue.registerElement('BarcodeScanner', () => require('nativescript-barcodescanner
 //注册iqkeyboardmanager
 Vue.registerElement('PreviousNextView', () => require('nativescript-iqkeyboardmanager').PreviousNextView);
 Vue.registerElement('TextViewWithHint', () => require('nativescript-iqkeyboardmanager').TextViewWithHint);
+//注册轮播图
+// Vue.registerElement('Carousel', () => require('nativescript-carousel').Carousel);
+// Vue.registerElement('CarouselItem', () => require('nativescript-carousel').CarouselItem);
+Vue.registerElement('Carousel', () => require('./tools/nativescript-carousel').Carousel);
+Vue.registerElement('CarouselItem', () => require('./tools/nativescript-carousel').CarouselItem);
 //初始化icons
 Vue.prototype.$icon = icons.initIcons();
 Vue.prototype.$setStatusBarFontColors = setStatusBarFontColors;

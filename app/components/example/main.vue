@@ -39,6 +39,7 @@
         <Button class="btn btn-primary" text="IOS键盘管理" @tap="btnIQKeyboardManager" />
         <Button class="btn btn-primary" text="下拉刷新" @tap="btnRefreshMain" />
         <Button class="btn btn-primary" text="对话框" @tap="btnDialog" />
+        <Button class="btn btn-primary" text="轮播图" @tap="btnCarousel" />
       </StackLayout>
     </ScrollView>
   </Page>
@@ -79,6 +80,7 @@ import Platform from './platform';
 import IQKeyboardManager from './iq-keyboard-manager';
 import RefreshMain from './refresh/refresh-main';
 import DialogMain from './dialog/refresh-main';
+import Carousel from './carousel';
 
 import ActionBarSecond from './public/action-bar-second';
 
@@ -94,6 +96,9 @@ export default {
   },
   mounted() {},
   methods: {
+    btnCarousel: function() {
+      this.navigateTo(this, Carousel);
+    },
     btnDialog: function() {
       this.navigateTo(this, DialogMain);
     },

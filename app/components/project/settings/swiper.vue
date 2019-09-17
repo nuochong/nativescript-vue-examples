@@ -1,31 +1,36 @@
 <template>
-  <WrapLayout>
-    <StackLayout backgroundColor="#E0E0E0">
-      <StackLayout class="hr-light" />
-      <Label text="通用设置" class="care-common-list-header text-uppercase t-14 p-l-15 p-t-30 p-b-7" />
-      <StackLayout class="hr-light" />
-    </StackLayout>
-    <GridLayout rows="auto, auto, auto" columns="auto, *, auto,auto" class="p-t-10 p-l-15" @tap="onContactTap()">
-      <Label row="0" rowSpan="2" col="0" class="connect-team-avatar p-5 m-r-10 m-y-auto text-center" text="图标" />
-      <Label row="0" col="1" text="名称" class="font-weight-bold" />
-      <Label row="1" col="1" text="这里是描述的编写" class="text-muted m-b-10" />
-      <Label row="0" rowSpan="3" col="1" text="未设置" class="text-muted m-r-10 m-b-10 m-y-auto right-text" />
-      <Switch row="0" rowSpan="3" col="2" checked="true" class="text-muted m-r-10 m-b-10 m-y-auto" />
-      <FIcon row="0" rowSpan="3" col="3" name="icon-jiantou" type="icon" class="icon setting-icon text-muted m-r-10 m-b-10 m-y-auto" />
-      <!-- <Label row="0" rowSpan="3" col="3" :text="icon-jiantou | fonticon" class="icon setting-icon text-muted m-r-10 m-b-10 m-y-auto" /> -->
-      <StackLayout row="2" colSpan="4" class="hr-light" />
-    </GridLayout>
-    <GridLayout rows="auto, auto, auto" columns="auto, *, auto" class="p-t-10 p-l-15" @tap="onContactTap()">
-      <Label row="0" rowSpan="2" col="0" class="connect-team-avatar p-5 m-r-10 m-y-auto text-center" text="图标" />
-      <Label row="0" col="1" text="名称" class="font-weight-bold" />
-      <Label row="1" col="1" text="这里是描述的编写" class="text-muted m-b-10" />
-      <FIcon row="0" rowSpan="3" col="2" name="icon-jiantou" type="icon" class="icon setting-icon text-muted m-r-10 m-b-10 m-y-auto" />
-      <StackLayout row="2" colSpan="3" class="hr-light" />
-    </GridLayout>
-  </WrapLayout>
+  <GridLayout class="carousel-layout-fix">
+    <Carousel id="carousel" @pageChanged="myChangeEvent" autoPagingInterval="5" ios:indicatorOffset="0,-30" ios:finite="true" ios:bounce="false" showIndicator="true"
+      indicatorAnimation="SWAP" indicatorColor="#66ccff" indicatorColorUnselected="#cceeff" height="200" width="100%" debug="true">
+
+      <CarouselItem id="slide1" verticalAlignment="middle">
+        <Label text="Each slide is defined in the XML." textWrap="true" margin="30" />
+        <Label text="Slide 1" backgroundColor="#50000000" horizontalAlignment="center"></Label>
+        <Label text="Wrap the Carousel in a GridLayout in order to place the indicator on top (android)" textWrap="true" margin="30" ios:visibility="collapsed" />
+      </CarouselItem>
+
+      <CarouselItem id="slide2" verticalAlignment="middle">
+        <Label text="'finite' is set to True. Carousel will stop at the last slide." textWrap="true" margin="30" android:visibility="collapsed" />
+        <Label text="Indicator animation type: 'swap'" textWrap="true" ios:visibility="collapsed" margin="30" />
+        <Label text="Slide 2" backgroundColor="#50000000" horizontalAlignment="center"></Label>
+      </CarouselItem>
+
+      <CarouselItem id="slide3" verticalAlignment="middle">
+        <Label text="Carousel can be used in fullscreen, just set height to 100%" textWrap="true" margin="30" />
+        <Label text="Slide 3" backgroundColor="#50000000" horizontalAlignment="center"></Label>
+      </CarouselItem>
+
+      <CarouselItem id="slide4" verticalAlignment="middle">
+        <Label text="Enjoy using the Carousel plugin :)" textWrap="true" margin="30" />
+        <Label text="Slide 4" backgroundColor="#50000000" horizontalAlignment="center"></Label>
+      </CarouselItem>
+
+    </Carousel>
+  </GridLayout>
 </template>
 
 <script>
+const carousel = require('nativescript-carousel');
 export default {
   components: {},
   data() {
@@ -34,39 +39,37 @@ export default {
   methods: {
     onContactTap: function() {
       console.log('点击了设置按钮');
+    },
+    onTextRecognitionResult() {
+      console.log('onTextRecognitionResult');
+    },
+    myChangeEvent: function(args) {
+      var changeEventText = 'Page changed to index: ' + args.index;
+      console.log(changeEventText);
     }
   }
 };
 </script>
 
 <style scoped lang="scss">
-.care-common-main-header {
-  background-color: #f5f4f6;
+#slide1 {
+  background: linear-gradient(45deg, #f06f7e, #f34a30);
+  vertical-align: center;
 }
-
-.care-common-list-header {
-  background-color: #efeff4;
-  color: #6d6d72;
-  padding-bottom: 10;
+#slide2 {
+  background: linear-gradient(-45deg, #1d976c, #93f9b9);
+  vertical-align: center;
 }
-.connect-team-avatar {
-  min-width: 36;
-  color: #ffffff;
-  background-color: #808080;
+#slide3 {
+  background: linear-gradient(45deg, #1d2b64, #f8cdda);
+  vertical-align: center;
 }
-
-.connect-contact-attribute-title {
-  color: #62c5f3;
+#slide4 {
+  background: linear-gradient(tobottom, #003973, #e5e5be);
+  vertical-align: center;
 }
-
-.connect-contact-icon {
-  color: #62c5f3;
-}
-
-.setting-icon {
-  color: #5b5b5b;
-}
-.right-text {
-  text-align: right;
+.carousel-layout-fix {
+  padding: 0.1 0;
+  margin: -0.1 0;
 }
 </style>

@@ -6,6 +6,7 @@
         <HeadPanel />
         <TaskPanel />
         <BindingPrompt />
+        <Swiper />
         <InfoPanel />
         <InfoPanel />
         <Button class="btn setting-exit" text="退出当前账号" @tap="btnExit" />
@@ -55,5 +56,28 @@ export default {
   padding: 10;
   width: 40%;
   border-radius: 50%;
+}
+#slide1 {
+  background: linear-gradient(45deg, #f06f7e, #f34a30);
+  vertical-align: center;
+}
+
+#slide2 {
+  background: linear-gradient(-45deg, #1d976c, #93f9b9);
+  vertical-align: center;
+}
+
+#slide3 {
+  background: linear-gradient(45deg, #1d2b64, #f8cdda);
+  vertical-align: center;
+}
+
+#slide4 {
+  background: linear-gradient(tobottom, #003973, #e5e5be);
+  vertical-align: center;
+}
+.carousel-layout-fix {
+  padding: 0.1 0;
+  margin: -0.1 0;
 }
 </style>
