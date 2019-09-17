@@ -8,7 +8,7 @@
       <!-- <Label text="third" height="100%" backgroundColor="#289062" /> -->
       <ListView for="item in listArr" ref="list" @pan="onListPane(side,$event)">
         <v-template>
-          <Label class="label-white icon" :text="item"  />
+          <Label class="label-white icon" :text="item" />
         </v-template>
       </ListView>
     </FlexboxLayout>

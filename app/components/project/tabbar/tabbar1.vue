@@ -16,9 +16,7 @@ export default {
   data() {
     return {};
   },
-  mounted() {
-    console.log('tabbar1');
-  },
+  mounted() {},
   methods: {}
 };
 </script>

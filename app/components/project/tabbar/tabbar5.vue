@@ -38,6 +38,7 @@ export default {
       msg: 'Hello World!'
     };
   },
+  mounted() {},
   methods: {
     btnExit: function() {
       this.$navigateBack();

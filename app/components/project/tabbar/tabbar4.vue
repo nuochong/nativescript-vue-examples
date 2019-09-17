@@ -9,6 +9,7 @@ export default {
   data() {
     return {};
   },
+  mounted() {},
   methods: {
     btn: function() {
       console.log('点击了按钮');
