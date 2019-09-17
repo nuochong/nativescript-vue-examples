@@ -5,32 +5,32 @@
       <WrapLayout row="0" col="0" class="task-list-headerLeft">
         <FIcon name="icon-wenzhangguanli" height="auto" type="icon" class="icon task-list-headerLeftIcon" />
         <Label text="总资产：" class="text-uppercase task-list-headerLeftTitle"></Label>
-        <Label text="200000" class="text-uppercase task-list-headerLeftContent"></Label>
+        <Label text="2000" class="text-uppercase task-list-headerLeftContent"></Label>
       </WrapLayout>
       <WrapLayout row="0" col="1" class="task-list-headerRight">
         <Label text="查看" class=""></Label>
-        <FIcon name="icon-jiantou" type="icon" class="icon setting-icon text-muted m-r-10 m-b-10 m-y-auto task-list-headerRightIcon" />
+        <FIcon name="icon-jiantou" type="icon" class="icon setting-icon m-y-auto task-list-headerRightIcon" />
       </WrapLayout>
       <!-- <StackLayout class="hr-light"></StackLayout> -->
     </GridLayout>
     <GridLayout rows="auto" columns="*, *, *,*" class="p-t-10 p-l-15 task-list">
       <FlexboxLayout row="0" col="0" flexDirection="column">
-        <FIcon name="icon-wenzhangguanli" height="auto" type="icon" class="icon task-img task-list-icon" />
+        <FIcon name="icon-wenzhangguanli" height="auto" type="icon" class="icon task-list-icon" />
         <Label text="我的文章" height="auto" class="task-list-title" />
         <Label text="1篇私密" height="auto" class="task-list-introduce" />
       </FlexboxLayout>
       <FlexboxLayout row="0" col="1" flexDirection="column">
-        <FIcon name="icon-jiachang_shujia" height="auto" type="icon" class="icon task-img task-list-icon" />
+        <FIcon name="icon-jiachang_shujia" height="auto" type="icon" class="icon task-list-icon" />
         <Label text="我的书架" height="auto" class="task-list-title" />
         <Label text="含已购内容" height="auto" class="task-list-introduce" />
       </FlexboxLayout>
       <FlexboxLayout row="0" col="2" flexDirection="column">
-        <FIcon name="icon-shoucang" height="auto" type="icon" class="icon task-img task-list-icon" />
+        <FIcon name="icon-shoucang" height="auto" type="icon" class="icon task-list-icon" />
         <Label text="赞和收藏" height="auto" class="task-list-title" />
         <Label text="" height="auto" class="task-list-introduce" />
       </FlexboxLayout>
       <FlexboxLayout row="0" col="3" flexDirection="column">
-        <FIcon name="icon-jianglijilu" height="auto" type="icon" class="icon task-img task-list-icon" />
+        <FIcon name="icon-jianglijilu" height="auto" type="icon" class="icon task-list-icon" />
         <Label text="奖励任务" height="auto" class="task-list-title" />
         <Label text="领取奖励" height="auto" class="task-list-introduce" />
       </FlexboxLayout>
@@ -90,6 +90,7 @@ export default {
   text-align: center;
   padding: 20 15;
   .task-list-icon {
+    font-size: 30;
     color: black;
   }
   .task-list-title {
@@ -101,10 +102,6 @@ export default {
     font-size: 10;
     //background-color: #289062;
   }
-}
-.task-img {
-  font-size: 24;
-  color: gray;
 }
 .care-common-main-header {
   background-color: #f5f4f6;
