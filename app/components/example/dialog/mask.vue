@@ -52,6 +52,7 @@ export default {
   height: 100%;
 }
 .dialogOpen {
+  opacity: 0;
   &.dialog-wrapper {
     visibility: visible;
     animation-name: show;
