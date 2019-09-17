@@ -1,5 +1,5 @@
 <template>
-  <WrapLayout height="345" class="active card" flexDirection="column" justifyContent="center">
+  <WrapLayout height="345" class="inactive card" flexDirection="column" justifyContent="center">
     <AbsoluteLayout width="100%" height="100%" alignSelf="center">
       <Image src="~/assets/images/project/box-shadow.png" width="100%" height="100%" />
       <FlexboxLayout flexDirection="column" width="100%" height="98%" padding="10">
