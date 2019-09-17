@@ -26,8 +26,7 @@
         <Button class="btn btn-primary" text="模态对话框" @tap="showModal" />
         <Button class="btn btn-primary" text="侧滑组件" @tap="onDrawer" />
         <Button class="btn btn-primary" text="大标题导航栏" @tap="onlargeTitle" />
-        <Button class="btn btn-primary" text="对话框" @tap="DialogOld" />
-        <Button class="btn btn-primary" text="自定义对话框" @tap="btnDialogNew" />
+        <Button class="btn btn-primary" text="对话框" @tap="btnDialogNew" />
         <Button class="btn btn-primary" text="自定义弹出框" @tap="pop" />
         <Button class="btn btn-primary" text="动画效果" @tap="animate" />
         <Button class="btn btn-primary" text="下拉刷新" @tap="refresh" />
@@ -73,7 +72,6 @@ import Mask from './mask';
 import Modal from './custom-model/modal';
 import Drawer from './multi-drawer/drawer';
 import LargeTitle from './large-title/large-title';
-import Dialog from './dialog/dialog';
 import Pop from './pop';
 import Animate from './animate';
 import Refresh from './refresh';
@@ -139,9 +137,6 @@ export default {
     },
     info: function() {
       this.navigateTo(this, Info);
-    },
-    DialogOld: function() {
-      this.navigateTo(this, Dialog);
     },
     btnPlatformModule: function() {
       this.navigateTo(this, PlatformModule);
