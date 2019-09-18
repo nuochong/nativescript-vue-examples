@@ -40,6 +40,8 @@
         <Button class="btn btn-primary" text="下拉刷新" @tap="btnRefreshMain" />
         <Button class="btn btn-primary" text="对话框" @tap="btnDialog" />
         <Button class="btn btn-primary" text="轮播图" @tap="btnCarousel" />
+        <Button class="btn btn-primary" text="图像选择器" @tap="btnImagepicker" />
+        <Button class="btn btn-primary" text="富文本编辑器" @tap="btnRichTextEditorMain" />
       </StackLayout>
     </ScrollView>
   </Page>
@@ -81,6 +83,8 @@ import IQKeyboardManager from './iq-keyboard-manager';
 import RefreshMain from './refresh/refresh-main';
 import DialogMain from './dialog/refresh-main';
 import Carousel from './carousel';
+import Imagepicker from './imagepicker';
+import RichTextEditorMain from './rich-text-editor/rich-text-editor-main';
 
 import ActionBarSecond from './public/action-bar-second';
 
@@ -96,6 +100,12 @@ export default {
   },
   mounted() {},
   methods: {
+    btnRichTextEditorMain: function() {
+      this.navigateTo(this, RichTextEditorMain);
+    },
+    btnImagepicker: function() {
+      this.navigateTo(this, Imagepicker);
+    },
     btnCarousel: function() {
       this.navigateTo(this, Carousel);
     },

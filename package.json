@@ -30,8 +30,10 @@
     "nativescript-app-shortcuts": "^2.1.0",
     "nativescript-barcodescanner": "^3.2.2",
     "nativescript-camera": "^4.5.0",
+    "nativescript-carousel": "^6.1.1",
     "nativescript-fancyalert": "^3.0.9",
     "nativescript-geolocation": "5.1.0",
+    "nativescript-imagepicker": "^7.1.0",
     "nativescript-iqkeyboardmanager": "^1.5.1",
     "nativescript-local-notifications": "^4.0.1",
     "nativescript-menu": "^1.1.3",
@@ -50,8 +52,7 @@
     "nativescript-vue-multi-drawer": "0.0.2",
     "net": "^1.0.2",
     "tns-core-modules": "^6.0.7",
-    "vuex": "^3.1.1",
-    "nativescript-carousel": "^6.1.1"
+    "vuex": "^3.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",

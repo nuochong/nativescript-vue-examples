@@ -5,8 +5,8 @@
       <StackLayout>
         <HeadPanel />
         <TaskPanel />
-        <BindingPrompt />
         <Swiper />
+        <BindingPrompt />
         <InfoPanel />
         <InfoPanel />
         <Button class="btn setting-exit" text="退出当前账号" @tap="btnExit" />
