@@ -4,8 +4,7 @@
 
     <ScrollView>
       <StackLayout class="hello-world">
-        <Button class="btn btn-primary" text="TimeDatePicker1" @tap="btnModalDatetimepicker" />
-        <Button class="btn btn-primary" text="TimeDatePicker2" @tap="btnTimedatepicker" />
+        <Button class="btn btn-primary" text="日期时间选择器" @tap="btnModalDatetimepicker" />
       </StackLayout>
     </ScrollView>
   </Page>
@@ -13,7 +12,6 @@
 
 <script>
 import ModalDatetimepicker from './modal-datetimepicker';
-import Timedatepicker from './timedatepicker';
 import ActionBarSecond from '../public/action-bar-second';
 
 export default {
@@ -29,9 +27,6 @@ export default {
   methods: {
     btnModalDatetimepicker: function() {
       this.navigateTo(this, ModalDatetimepicker);
-    },
-    btnTimedatepicker() {
-      this.navigateTo(this, Timedatepicker);
     }
   }
 };
