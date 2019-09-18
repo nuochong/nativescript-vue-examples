@@ -4,25 +4,25 @@
       indicatorAnimation="SWAP" indicatorColor="#66ccff" indicatorColorUnselected="#cceeff" height="200" width="100%" debug="true">
 
       <CarouselItem id="slide1" verticalAlignment="middle">
-        <Label text="Each slide is defined in the XML." textWrap="true" margin="30" />
-        <Label text="Slide 1" backgroundColor="#50000000" horizontalAlignment="center"></Label>
-        <Label text="Wrap the Carousel in a GridLayout in order to place the indicator on top (android)" textWrap="true" margin="30" ios:visibility="collapsed" />
+        <Label text="每张幻灯片都是用XML定义的" textWrap="true" margin="30" />
+        <Label text="幻灯片 1" backgroundColor="#50000000" horizontalAlignment="center"></Label>
+        <Label text="将旋转木马包装成GridLayout，以便将指示器置于顶部(android)" textWrap="true" margin="30" ios:visibility="collapsed" />
       </CarouselItem>
 
       <CarouselItem id="slide2" verticalAlignment="middle">
-        <Label text="'finite' is set to True. Carousel will stop at the last slide." textWrap="true" margin="30" android:visibility="collapsed" />
-        <Label text="Indicator animation type: 'swap'" textWrap="true" ios:visibility="collapsed" margin="30" />
-        <Label text="Slide 2" backgroundColor="#50000000" horizontalAlignment="center"></Label>
+        <Label text="'limited'设置为True。传送带将在最后一张幻灯片处停止。" textWrap="true" margin="30" android:visibility="collapsed" />
+        <Label text="指示器动画类型:'swap'" textWrap="true" ios:visibility="collapsed" margin="30" />
+        <Label text="幻灯片 2" backgroundColor="#50000000" horizontalAlignment="center"></Label>
       </CarouselItem>
 
       <CarouselItem id="slide3" verticalAlignment="middle">
-        <Label text="Carousel can be used in fullscreen, just set height to 100%" textWrap="true" margin="30" />
-        <Label text="Slide 3" backgroundColor="#50000000" horizontalAlignment="center"></Label>
+        <Label text="旋转木马可用于全屏，只需设置高度为100%" textWrap="true" margin="30" />
+        <Label text="幻灯片 3" backgroundColor="#50000000" horizontalAlignment="center"></Label>
       </CarouselItem>
 
       <CarouselItem id="slide4" verticalAlignment="middle">
-        <Label text="Enjoy using the Carousel plugin :)" textWrap="true" margin="30" />
-        <Label text="Slide 4" backgroundColor="#50000000" horizontalAlignment="center"></Label>
+        <Label text="尽情享受吧:)" textWrap="true" margin="30" />
+        <Label text="幻灯片 4" backgroundColor="#50000000" horizontalAlignment="center"></Label>
       </CarouselItem>
 
     </Carousel>
@@ -41,10 +41,10 @@ export default {
       console.log('点击了设置按钮');
     },
     onTextRecognitionResult() {
-      console.log('onTextRecognitionResult');
+      console.log('文字识别结果');
     },
     myChangeEvent: function(args) {
-      var changeEventText = 'Page changed to index: ' + args.index;
+      var changeEventText = '页面更改为索引:' + args.index;
       console.log(changeEventText);
     }
   }
