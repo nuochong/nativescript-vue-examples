@@ -46,6 +46,7 @@
         <Button class="btn btn-primary" text="导航消息反馈" @tap="btnFeedback" />
         <Button class="btn btn-primary" text="动图" @tap="btnLottie" />
         <Button class="btn btn-primary" text="剪贴板" @tap="btnClipboard" />
+        <Button class="btn btn-primary" text="日期时间选择器" @tap="btnTimeDatePicker" />
       </StackLayout>
     </ScrollView>
   </Page>
@@ -93,6 +94,7 @@ import Checkbox from './checkbox';
 import Feedback from './feedback';
 import Lottie from './lottie';
 import Clipboard from './clipboard';
+import TimeDatePickerMain from './time-date-picker/time-date-picker-main';
 
 import ActionBarSecond from './public/action-bar-second';
 
@@ -108,6 +110,9 @@ export default {
   },
   mounted() {},
   methods: {
+    btnTimeDatePicker: function() {
+      this.navigateTo(this, TimeDatePickerMain);
+    },
     btnClipboard: function() {
       this.navigateTo(this, Clipboard);
     },

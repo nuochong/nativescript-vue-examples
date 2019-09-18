@@ -7,17 +7,31 @@
     <item name="android:timePickerStyle">@style/SpinnerTimePicker</item>
   </style>
 
+  <!-- 日期选择器旧样式 -->
   <!-- Default style for DatePicker - in spinner mode -->
-  <style name="SpinnerDatePicker" parent="android:Widget.Material.Light.DatePicker">
+  <!-- <style name="SpinnerDatePicker" parent="android:Widget.Material.Light.DatePicker">
     <item name="android:datePickerMode">spinner</item>
-  </style>
+  </style> -->
 
+  <!-- 日期选择器旧样式 -->
   <!-- Default style for TimePicker - in spinner mode -->
-  <style name="SpinnerTimePicker" parent="android:Widget.Material.Light.TimePicker">
+  <!-- <style name="SpinnerTimePicker" parent="android:Widget.Material.Light.TimePicker">
     <item name="android:timePickerMode">spinner</item>
-  </style>
+  </style> -->
 
   <style name="NativeScriptToolbarStyle" parent="NativeScriptToolbarStyleBase">
     <item name="android:elevation">4dp</item>
   </style>
+
+  <!-- 日期选择器新样式 -->
+  <!-- Default style for DatePicker - in spinner mode -->
+  <style name="SpinnerDatePicker" parent="android:Widget.Material.Light.DatePicker">
+    <item name="android:datePickerMode">calendar</item>
+  </style>
+
+  <!-- 时间选择器新样式 -->
+  <style name="SpinnerTimePicker" parent="android:Widget.Material.Light.TimePicker">
+    <item name="android:timePickerMode">clock</item>
+  </style>
+
 </resources>
