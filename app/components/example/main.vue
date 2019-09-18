@@ -42,6 +42,10 @@
         <Button class="btn btn-primary" text="轮播图" @tap="btnCarousel" />
         <Button class="btn btn-primary" text="图像选择器" @tap="btnImagepicker" />
         <Button class="btn btn-primary" text="富文本编辑器" @tap="btnRichTextEditorMain" />
+        <Button class="btn btn-primary" text="单选按钮" @tap="btnCheckbox" />
+        <Button class="btn btn-primary" text="导航消息反馈" @tap="btnFeedback" />
+        <Button class="btn btn-primary" text="动图" @tap="btnLottie" />
+        <Button class="btn btn-primary" text="剪贴板" @tap="btnClipboard" />
       </StackLayout>
     </ScrollView>
   </Page>
@@ -85,6 +89,10 @@ import DialogMain from './dialog/refresh-main';
 import Carousel from './carousel';
 import Imagepicker from './imagepicker';
 import RichTextEditorMain from './rich-text-editor/rich-text-editor-main';
+import Checkbox from './checkbox';
+import Feedback from './feedback';
+import Lottie from './lottie';
+import Clipboard from './clipboard';
 
 import ActionBarSecond from './public/action-bar-second';
 
@@ -100,6 +108,18 @@ export default {
   },
   mounted() {},
   methods: {
+    btnClipboard: function() {
+      this.navigateTo(this, Clipboard);
+    },
+    btnLottie: function() {
+      this.navigateTo(this, Lottie);
+    },
+    btnFeedback: function() {
+      this.navigateTo(this, Feedback);
+    },
+    btnCheckbox: function() {
+      this.navigateTo(this, Checkbox);
+    },
     btnRichTextEditorMain: function() {
       this.navigateTo(this, RichTextEditorMain);
     },

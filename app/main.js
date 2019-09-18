@@ -12,6 +12,7 @@ import VueAxios from 'vue-axios';
 import MultiDrawer from './components/example/multi-drawer/tools';
 import FontIcon from './tools/nativescript-vue-fonticon';
 import { setStatusBarColors, setStatusBarFontColors, setBarFontColor } from './tools/status-bar-util';
+import { Toasty } from 'nativescript-toasty';
 
 const application = require('tns-core-modules/application');
 const platform = require('tns-core-modules/platform');
@@ -55,12 +56,25 @@ Vue.registerElement('TextViewWithHint', () => require('nativescript-iqkeyboardma
 // Vue.registerElement('CarouselItem', () => require('nativescript-carousel').CarouselItem);
 Vue.registerElement('Carousel', () => require('./tools/nativescript-carousel').Carousel);
 Vue.registerElement('CarouselItem', () => require('./tools/nativescript-carousel').CarouselItem);
+//注册动画插件
+Vue.registerElement('LottieView', () => require('nativescript-lottie').LottieView);
+//注册单选按钮
+Vue.registerElement('CheckBox', () => require('@nstudio/nativescript-checkbox').CheckBox, {
+  model: {
+    prop: 'checked',
+    event: 'checkedChange'
+  }
+});
 //初始化icons
 Vue.prototype.$icon = icons.initIcons();
 Vue.prototype.$setStatusBarFontColors = setStatusBarFontColors;
 Vue.prototype.$setBarFontColor = setBarFontColor;
-Vue.prototype.$application= application;
-Vue.prototype.$platform= platform;
+Vue.prototype.$application = application;
+Vue.prototype.$platform = platform;
+Vue.prototype.$toast = content => {
+  const toast = new Toasty({ text: content });
+  toast.show();
+};
 //setStatusBarColors();
 //检测是否支持AppShortcus
 shortcuts.isSuppertAppShortcus();

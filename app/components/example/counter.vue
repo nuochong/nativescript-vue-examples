@@ -5,7 +5,7 @@
       <StackLayout class="hello-world">
         <FlexboxLayout flexDirection="row" justifyContent="center">
           <Button @tap="decrement" text="-" class="btn btn-outline" />
-          <Label :text="message" alignSelf="baseline" />
+          <Label class="label-white" :text="message" alignSelf="baseline" />
           <Button @tap="increment" text="+" class="btn btn-outline" />
         </FlexboxLayout>
         <Image v-if="surprise" src="~/assets/images/NativeScript-Vue.png" />
