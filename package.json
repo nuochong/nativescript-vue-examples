@@ -33,6 +33,7 @@
     "nativescript-camera": "^4.5.0",
     "nativescript-carousel": "^6.1.1",
     "nativescript-clipboard": "^1.2.0",
+    "nativescript-datetimepicker": "^1.2.1",
     "nativescript-fancyalert": "^3.0.9",
     "nativescript-feedback": "^1.3.11",
     "nativescript-geolocation": "5.1.0",

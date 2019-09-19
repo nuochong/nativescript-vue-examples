@@ -22,7 +22,7 @@ export default {
   },
   data() {
     return {
-      title: 'TimeDatePicker1'
+      title: '日期时间选择器1'
     };
   },
   mounted() {},
