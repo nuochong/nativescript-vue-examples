@@ -17,9 +17,7 @@
 import Example from './example/main';
 import Project from './project/main';
 import ActionBarFirst from './example/public/action-bar-first';
-const ModalPicker = require('nativescript-modal-datetimepicker').ModalDatetimepicker;
 
-const picker = new ModalPicker();
 export default {
   components: {
     ActionBarFirst

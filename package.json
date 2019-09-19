@@ -43,6 +43,7 @@
     "nativescript-lottie": "^4.0.0",
     "nativescript-menu": "^1.1.3",
     "nativescript-modal-datetimepicker": "^1.2.0",
+    "nativescript-open-app": "^0.3.0",
     "nativescript-permissions": "^1.3.7",
     "nativescript-phone": "^1.4.0",
     "nativescript-popup": "^1.5.0",

@@ -47,6 +47,7 @@
         <Button class="btn btn-primary" text="动图" @tap="btnLottie" />
         <Button class="btn btn-primary" text="剪贴板" @tap="btnClipboard" />
         <Button class="btn btn-primary" text="日期时间选择器" @tap="btnTimeDatePicker" />
+        <Button class="btn btn-primary" text="打开应用" @tap="btnOpenApp" />
       </StackLayout>
     </ScrollView>
   </Page>
@@ -95,6 +96,7 @@ import Feedback from './feedback';
 import Lottie from './lottie';
 import Clipboard from './clipboard';
 import TimeDatePickerMain from './time-date-picker/time-date-picker-main';
+import OpenApp from './open-app';
 
 import ActionBarSecond from './public/action-bar-second';
 
@@ -110,6 +112,9 @@ export default {
   },
   mounted() {},
   methods: {
+    btnOpenApp: function() {
+      this.navigateTo(this, OpenApp);
+    },
     btnTimeDatePicker: function() {
       this.navigateTo(this, TimeDatePickerMain);
     },
