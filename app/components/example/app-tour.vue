@@ -3,7 +3,7 @@
     <ActionBarSecond :title="title" />
     <ScrollView>
       <StackLayout class="hello-world">
-        <Label class="label-black" id="feat1" ref="feat1" text="元素1" width="80" />
+        <Label class="label-black" id="feat1" ref="feat1" text="元素1" width="40" />
         <Button class="btn btn-primary" text="开始" @tap=" startTour " />
         <button class="btn btn-primary" id="feat2" ref="feat2" text="元素2" height="80" width="80" />
       </StackLayout>
