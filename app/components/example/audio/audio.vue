@@ -44,10 +44,10 @@
           </GridLayout>
         </ScrollView>
       </TabViewItem>
-      <TabViewItem title="录音">
+      <TabViewItem title="简单示例">
         <ScrollView>
           <StackLayout class="p-10" width="100%">
-            <Button class="btn btn-primary" text="简单实例" @tap="playSample" />
+            <Button class="btn btn-primary" text="简单示例" @tap="playSample" />
           </StackLayout>
         </ScrollView>
       </TabViewItem>

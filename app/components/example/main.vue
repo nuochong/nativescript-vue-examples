@@ -57,6 +57,8 @@
         <Button class="btn btn-primary" text="引导" @tap="btnAppTour" />
         <Button class="btn btn-primary" text="传感器" @tap="btnSensorsMain" />
         <Button class="btn btn-primary" text="音频" @tap="btnAudio" />
+        <Button class="btn btn-primary" text="蓝牙" @tap="btnBluetooth" />
+        <Button class="btn btn-primary" text="视频" @tap="btnVideoMain" />
       </StackLayout>
     </ScrollView>
   </Page>
@@ -115,6 +117,8 @@ import Ripple from './ripple';
 import AppTour from './app-tour';
 import SensorsMain from './sensors/sensors-main';
 import Audio from './audio/audio';
+import Bluetooth from './bluetooth';
+import VideoMain from './video/video-main';
 
 import ActionBarSecond from './public/action-bar-second';
 
@@ -130,6 +134,12 @@ export default {
   },
   mounted() {},
   methods: {
+    btnVideoMain: function() {
+      this.navigateTo(this, VideoMain);
+    },
+    btnBluetooth: function() {
+      this.navigateTo(this, Bluetooth);
+    },
     btnAudio: function() {
       this.navigateTo(this, Audio);
     },

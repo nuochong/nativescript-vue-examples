@@ -17,6 +17,7 @@ import { setStatusBarColors, setStatusBarFontColors, setBarFontColor } from './t
 import { Toasty } from 'nativescript-toasty';
 import DateTimePicker from 'nativescript-datetimepicker/vue';
 import NSVueLifecycleHooks from 'nativescript-vue-lifecycle-hooks';
+import { Video } from 'nativescript-videoplayer';
 
 const application = require('tns-core-modules/application');
 const platform = require('tns-core-modules/platform');
@@ -83,6 +84,7 @@ Vue.registerElement('SVGImage', () => require('@teammaestro/nativescript-svg').S
 Vue.registerElement('KeyboardToolbar', () => require('nativescript-keyboard-toolbar').Toolbar);
 // 注册涟漪效果
 Vue.registerElement("Ripple", () => require("nativescript-ripple").Ripple);
+Vue.registerElement("Video", () => Video);
 
 // 初始化icons
 Vue.prototype.$icon = icons.initIcons();
