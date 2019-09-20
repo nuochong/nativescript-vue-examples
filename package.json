@@ -33,6 +33,7 @@
     "nativescript-accelerometer": "^2.0.1",
     "nativescript-app-shortcuts": "^2.1.0",
     "nativescript-app-tour": "^2.0.2",
+    "nativescript-audio": "^5.0.4",
     "nativescript-barcodescanner": "^3.2.2",
     "nativescript-camera": "^4.5.0",
     "nativescript-carousel": "^6.1.1",

@@ -55,6 +55,8 @@
         <Button class="btn btn-primary" text="键盘助手" @tap="btnKeyboardToolbar" />
         <Button class="btn btn-primary" text="涟漪效果" @tap="btnRipple" />
         <Button class="btn btn-primary" text="引导" @tap="btnAppTour" />
+        <Button class="btn btn-primary" text="传感器" @tap="btnSensorsMain" />
+        <Button class="btn btn-primary" text="音频" @tap="btnAudio" />
       </StackLayout>
     </ScrollView>
   </Page>
@@ -111,6 +113,8 @@ import Svg from './svg';
 import KeyboardToolbar from './keyboard-toolbar';
 import Ripple from './ripple';
 import AppTour from './app-tour';
+import SensorsMain from './sensors/sensors-main';
+import Audio from './audio/audio';
 
 import ActionBarSecond from './public/action-bar-second';
 
@@ -126,6 +130,12 @@ export default {
   },
   mounted() {},
   methods: {
+    btnAudio: function() {
+      this.navigateTo(this, Audio);
+    },
+    btnSensorsMain: function() {
+      this.navigateTo(this, SensorsMain);
+    },
     btnAppTour: function() {
       this.navigateTo(this, AppTour);
     },
