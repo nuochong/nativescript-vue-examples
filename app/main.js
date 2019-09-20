@@ -2,6 +2,8 @@ import Vue from 'nativescript-vue';
 import VueDevtools from 'nativescript-vue-devtools';
 import App from './components/App';
 import Store from './store';
+// import router, { routes } from './router';
+// import Dynamo from 'nativescript-vue-dynamo';
 import CommonLocal from './assets/js/common.js';
 import shortcuts from './app.shortcuts.js';
 import icons from './app.icons.js';
@@ -46,6 +48,10 @@ Vue.use(FontIcon, {
 });
 Vue.use(DateTimePicker);
 Vue.use(NSVueLifecycleHooks);
+// Vue.use( Dynamo, {
+//   router,
+//   routes,
+// });
 
 Vue.registerElement('RadSideDrawer', () => require('nativescript-ui-sidedrawer').RadSideDrawer);
 // 注册下拉刷新

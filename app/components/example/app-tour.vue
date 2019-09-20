@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import { AppTour, TourStop, TourEvents } from '../../tools/nativescript-app-tour';
+ import { AppTour, TourStop, TourEvents } from '../../tools/nativescript-app-tour';
 import { topmost } from 'tns-core-modules/ui/frame';
 import ActionBarSecond from './public/action-bar-second';
 
