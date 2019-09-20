@@ -3,9 +3,9 @@
     <ActionBarSecond :title="title" />
     <ScrollView>
       <StackLayout class="hello-world">
-        <Label id="feat1" ref="feat1" text="Feature 111" width="50"></Label>
-        <Button text="start" @tap=" startTour "></Button>
-        <button id="feat2" ref="feat2" text="Feature 2" height="50" width="50"></button>
+        <Label class="label-black" id="feat1" ref="feat1" text="元素1" width="80" />
+        <Button class="btn btn-primary" text="开始" @tap=" startTour " />
+        <button class="btn btn-primary" id="feat2" ref="feat2" text="元素2" height="80" width="80" />
       </StackLayout>
     </ScrollView>
   </Page>
@@ -33,16 +33,16 @@ export default {
       const stops = [
         {
           view: feat1,
-          title: 'Feature 1',
-          description: 'Feature 1 Description',
+          title: '功能 1',
+          description: '功能1描述',
           outerCircleColor: 'orange',
           rippleColor: 'black',
           dismissable: false
         },
         {
           view: feat2,
-          title: 'Feature 2',
-          description: 'Feature 2 Description',
+          title: '功能 2',
+          description: '功能2描述',
           outerCircleColor: 'red',
           rippleColor: 'black',
           dismissable: false
