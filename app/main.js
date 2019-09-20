@@ -14,6 +14,7 @@ import FontIcon from './tools/nativescript-vue-fonticon';
 import { setStatusBarColors, setStatusBarFontColors, setBarFontColor } from './tools/status-bar-util';
 import { Toasty } from 'nativescript-toasty';
 import DateTimePicker from 'nativescript-datetimepicker/vue';
+import NSVueLifecycleHooks from 'nativescript-vue-lifecycle-hooks';
 
 const application = require('tns-core-modules/application');
 const platform = require('tns-core-modules/platform');
@@ -44,6 +45,7 @@ Vue.use(FontIcon, {
   }
 });
 Vue.use(DateTimePicker);
+Vue.use(NSVueLifecycleHooks);
 
 Vue.registerElement('RadSideDrawer', () => require('nativescript-ui-sidedrawer').RadSideDrawer);
 // 注册下拉刷新
@@ -60,6 +62,8 @@ Vue.registerElement('Carousel', () => require('./tools/nativescript-carousel').C
 Vue.registerElement('CarouselItem', () => require('./tools/nativescript-carousel').CarouselItem);
 // 注册动画插件
 Vue.registerElement('LottieView', () => require('nativescript-lottie').LottieView);
+// 注册动态图
+Vue.registerElement('Gif', () => require('nativescript-gif').Gif);
 // 注册单选按钮
 Vue.registerElement('CheckBox', () => require('@nstudio/nativescript-checkbox').CheckBox, {
   model: {
@@ -67,6 +71,12 @@ Vue.registerElement('CheckBox', () => require('@nstudio/nativescript-checkbox').
     event: 'checkedChange'
   }
 });
+// 注册SVG
+Vue.registerElement('SVGImage', () => require('@teammaestro/nativescript-svg').SVGImage);
+// 注册键盘助手栏
+Vue.registerElement('KeyboardToolbar', () => require('nativescript-keyboard-toolbar').Toolbar);
+// 注册涟漪效果
+Vue.registerElement("Ripple", () => require("nativescript-ripple").Ripple);
 
 // 初始化icons
 Vue.prototype.$icon = icons.initIcons();

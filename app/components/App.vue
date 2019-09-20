@@ -17,7 +17,6 @@
 import Example from './example/main';
 import Project from './project/main';
 import ActionBarFirst from './example/public/action-bar-first';
-
 export default {
   components: {
     ActionBarFirst
@@ -28,6 +27,7 @@ export default {
     };
   },
   created() {},
+  mounted() {},
   methods: {
     example: function() {
       this.navigateTo(this, Example, 'left');

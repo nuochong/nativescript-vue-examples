@@ -1,0 +1,55 @@
+{
+  "name": "nativescript-app-tour",
+  "version": "2.0.2",
+  "description": "NativeScript plugin for building a tour, showcase or a walkthrough for your app.",
+  "main": "app-tour",
+  "typings": "index.d.ts",
+  "nativescript": {
+    "platforms": {
+      "android": "5.3.1",
+      "ios": "5.3.1"
+    }
+  },
+  "scripts": {},
+  "keywords": [
+    "NativeScript",
+    "JavaScript",
+    "Android",
+    "iOS",
+    "tour",
+    "showcase",
+    "walkthrough",
+    "coachmarks",
+    "instructions",
+    "guide",
+    "intro"
+  ],
+  "authors": {
+    "name": "hamdi wanis",
+    "email": "hamdiwanis@hotmail.com"
+  },
+  "contributors": [
+    {
+      "name": "MultiShiv19",
+      "email": "sp@shiv19.com",
+      "url": "https://shiv19.com"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/hamdiwanis/nativescript-app-tour/issues"
+  },
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/hamdiwanis/nativescript-app-tour",
+  "readmeFilename": "README.md",
+  "devDependencies": {
+    "tns-core-modules": "^5.3.2",
+    "tns-platform-declarations": "^5.4.1",
+    "typescript": "~2.3.0",
+    "prompt": "^1.0.0",
+    "rimraf": "^2.5.0",
+    "tslint": "^5.0.0",
+    "semver": "^5.5.0"
+  },
+  "dependencies": {},
+  "bootstrapper": "nativescript-plugin-seed"
+}

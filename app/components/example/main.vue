@@ -48,6 +48,13 @@
         <Button class="btn btn-primary" text="剪贴板" @tap="btnClipboard" />
         <Button class="btn btn-primary" text="日期时间选择器" @tap="btnTimeDatePicker" />
         <Button class="btn btn-primary" text="打开应用" @tap="btnOpenApp" />
+        <Button class="btn btn-primary" text="动态图" @tap="btnGif" />
+        <Button class="btn btn-primary" text="加速度计" @tap="btnAccelerometer" />
+        <Button class="btn btn-primary" text="生命周期" @tap="btnLifecycleHooks" />
+        <Button class="btn btn-primary" text="可缩放矢量图形" @tap="btnSvg" />
+        <Button class="btn btn-primary" text="键盘助手" @tap="btnKeyboardToolbar" />
+        <Button class="btn btn-primary" text="涟漪效果" @tap="btnRipple" />
+        <Button class="btn btn-primary" text="引导" @tap="btnAppTour" />
       </StackLayout>
     </ScrollView>
   </Page>
@@ -97,6 +104,13 @@ import Lottie from './lottie';
 import Clipboard from './clipboard';
 import TimeDatePickerMain from './time-date-picker/time-date-picker-main';
 import OpenApp from './open-app';
+import Gif from './gif';
+import Accelerometer from './accelerometer';
+import LifecycleHooks from './lifecycle-hooks';
+import Svg from './svg';
+import KeyboardToolbar from './keyboard-toolbar';
+import Ripple from './ripple';
+import AppTour from './app-tour';
 
 import ActionBarSecond from './public/action-bar-second';
 
@@ -112,6 +126,27 @@ export default {
   },
   mounted() {},
   methods: {
+    btnAppTour: function() {
+      this.navigateTo(this, AppTour);
+    },
+    btnRipple: function() {
+      this.navigateTo(this, Ripple);
+    },
+    btnKeyboardToolbar: function() {
+      this.navigateTo(this, KeyboardToolbar);
+    },
+    btnSvg: function() {
+      this.navigateTo(this, Svg);
+    },
+    btnLifecycleHooks: function() {
+      this.navigateTo(this, LifecycleHooks);
+    },
+    btnAccelerometer: function() {
+      this.navigateTo(this, Accelerometer);
+    },
+    btnGif: function() {
+      this.navigateTo(this, Gif);
+    },
     btnOpenApp: function() {
       this.navigateTo(this, OpenApp);
     },
