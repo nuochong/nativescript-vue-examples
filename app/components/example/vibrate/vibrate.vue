@@ -30,16 +30,16 @@
         </StackLayout>
 
       </StackLayout>
+    </ScrollView>
   </Page>
 </template>
 
 <script>
 import { TapticEngine, TapticEngineNotificationType, TapticEngineImpactStyle } from 'nativescript-taptic-engine';
-
 const tapticEngine = new TapticEngine();
-
 let lastSliderValueFeedback = 0;
 import ActionBarSecond from '../public/action-bar-second';
+
 export default {
   components: {
     ActionBarSecond
@@ -120,11 +120,6 @@ export default {
 </script>
 
 <style scoped>
-ActionBar {
-  background-color: #53ba82;
-  color: #ffffff;
-}
-
 .wrapper {
   margin: 12;
 }

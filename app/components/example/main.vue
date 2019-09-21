@@ -146,7 +146,7 @@ export default {
   },
   mounted() {},
   methods: {
-    btnVibrate: function() {
+    btnVibrateMain: function() {
       this.navigateTo(this, VibrateMain);
     },
     btnBrightness: function() {

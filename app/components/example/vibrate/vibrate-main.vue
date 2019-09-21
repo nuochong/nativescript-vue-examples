@@ -25,7 +25,7 @@ export default {
   },
   mounted() {},
   methods: {
-    btnRequest: function() {
+    btnVibrate: function() {
       this.navigateTo(this, Vibrate);
     },
   }
