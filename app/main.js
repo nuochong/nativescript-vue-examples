@@ -140,6 +140,10 @@ shortcuts.handleTask();
 // Vue.registerElement("ModalStack", () => ModalStack)
 // Vue.use(VueWindowedModal)
 
+import Pager from 'nativescript-accordion/vue'
+ 
+Vue.use(Pager)
+
 new Vue({
   Store,
   render: h => h('frame', [h(App)])

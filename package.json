@@ -32,6 +32,7 @@
     "@vue/devtools": "^5.1.1",
     "email-validator": "^2.0.4",
     "nativescript-accelerometer": "^2.0.1",
+    "nativescript-accordion": "^6.0.0-beta.2",
     "nativescript-app-settings": "^1.0.0",
     "nativescript-app-shortcuts": "^2.1.0",
     "nativescript-app-tour": "^2.0.2",

@@ -65,6 +65,7 @@
         <Button class="btn btn-primary" text="图片选择器" @tap="btnImagePicker" />
         <Button class="btn btn-primary" text="亮度" @tap="btnBrightness" />
         <Button class="btn btn-primary" text="震动" @tap="btnVibrateMain" />
+        <Button class="btn btn-primary" text="手风琴" @tap="btnAccordionMain" />
       </StackLayout>
     </ScrollView>
   </Page>
@@ -131,6 +132,7 @@ import SanckBar from './snack-bar';
 import ImagePikcer from './image-picker';
 import Brightness from './brightness';
 import VibrateMain from './vibrate/vibrate-main';
+import AccordionMain from './accordion/accordion-main';
 
 import ActionBarSecond from './public/action-bar-second';
 
@@ -146,6 +148,9 @@ export default {
   },
   mounted() {},
   methods: {
+    btnAccordionMain: function() {
+      this.navigateTo(this, AccordionMain);
+    },
     btnVibrateMain: function() {
       this.navigateTo(this, VibrateMain);
     },
