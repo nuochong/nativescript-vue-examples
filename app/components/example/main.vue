@@ -69,6 +69,9 @@
         <Button class="btn btn-primary" text="卡片" @tap="btnCardMain" />
         <Button class="btn btn-primary" text="浮动按钮" @tap="btnFloatingActionButton" />
         <Button class="btn btn-primary" text="加载动画" @tap="btnLoadingIndicator" />
+        <Button class="btn btn-primary" text="旋转屏幕" @tap="btnScreenOrientation" />
+        <Button class="btn btn-primary" text="检查应用" @tap="btnAppAvailability" />
+        <Button class="btn btn-primary" text="截屏" @tap="btnScreenshot" />
       </StackLayout>
     </ScrollView>
   </Page>
@@ -139,6 +142,9 @@ import AccordionMain from './accordion/accordion-main';
 import CardMain from './card/card-main';
 import FloatingActionButton from './floating-action-button/floating-action-button';
 import LoadingIndicator from './loading-indicator/loading-indicator';
+import ScreenOrientation from './screen-orientation';
+import AppAvailability from './appavailability';
+import Screenshot from './screenshot';
 
 import ActionBarSecond from './public/action-bar-second';
 
@@ -154,6 +160,15 @@ export default {
   },
   mounted() {},
   methods: {
+    btnScreenshot: function() {
+      this.navigateTo(this, Screenshot);
+    },
+    btnAppAvailability: function() {
+      this.navigateTo(this, AppAvailability);
+    },
+    btnScreenOrientation: function() {
+      this.navigateTo(this, ScreenOrientation);
+    },
     btnLoadingIndicator: function() {
       this.navigateTo(this, LoadingIndicator);
     },

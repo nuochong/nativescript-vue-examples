@@ -146,6 +146,17 @@ shortcuts.handleTask();
 // Vue.registerElement("ModalStack", () => ModalStack)
 // Vue.use(VueWindowedModal)
 
+import { StoreUpdate, AlertTypesConstants } from "nativescript-store-update";
+
+StoreUpdate.init({
+  majorUpdateAlertType: AlertTypesConstants.OPTION,
+  notifyNbDaysAfterRelease: 0,
+  alertOptions: {
+    title: '请注意',
+    message: '你的应用程序已经过时了',
+  },
+})
+
 new Vue({
   Store,
   render: h => h('frame', [h(App)])
