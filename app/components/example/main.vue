@@ -68,6 +68,7 @@
         <Button class="btn btn-primary" text="手风琴" @tap="btnAccordionMain" />
         <Button class="btn btn-primary" text="卡片" @tap="btnCardMain" />
         <Button class="btn btn-primary" text="浮动按钮" @tap="btnFloatingActionButton" />
+        <Button class="btn btn-primary" text="加载动画" @tap="btnLoadingIndicator" />
       </StackLayout>
     </ScrollView>
   </Page>
@@ -137,6 +138,7 @@ import VibrateMain from './vibrate/vibrate-main';
 import AccordionMain from './accordion/accordion-main';
 import CardMain from './card/card-main';
 import FloatingActionButton from './floating-action-button/floating-action-button';
+import LoadingIndicator from './loading-indicator/loading-indicator';
 
 import ActionBarSecond from './public/action-bar-second';
 
@@ -152,6 +154,9 @@ export default {
   },
   mounted() {},
   methods: {
+    btnLoadingIndicator: function() {
+      this.navigateTo(this, LoadingIndicator);
+    },
     btnFloatingActionButton: function() {
       this.navigateTo(this, FloatingActionButton);
     },
