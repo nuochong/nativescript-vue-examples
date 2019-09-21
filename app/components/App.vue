@@ -17,6 +17,7 @@
 import Example from './example/main';
 import Project from './project/main';
 import ActionBarFirst from './example/public/action-bar-first';
+
 export default {
   components: {
     ActionBarFirst
@@ -36,7 +37,6 @@ export default {
     project: function() {
       this.navigateTo(this, Project, 'left');
       //this.$setBarFontColor('black');
-      //this.$setStatusBarFontColors('white');
     },
     startBackgroundAnimation: function() {
       this.$refs.bg.nativeView.animate({

@@ -59,6 +59,12 @@
         <Button class="btn btn-primary" text="音频" @tap="btnAudio" />
         <Button class="btn btn-primary" text="蓝牙" @tap="btnBluetooth" />
         <Button class="btn btn-primary" text="视频" @tap="btnVideoMain" />
+        <Button class="btn btn-primary" text="图标徽章" @tap="btnBadge" />
+        <Button class="btn btn-primary" text="应用评分" @tap="btnRater" />
+        <Button class="btn btn-primary" text="底部提示" @tap="btnSnackBar" />
+        <Button class="btn btn-primary" text="图片选择器" @tap="btnImagePicker" />
+        <Button class="btn btn-primary" text="亮度" @tap="btnBrightness" />
+        <Button class="btn btn-primary" text="震动" @tap="btnVibrateMain" />
       </StackLayout>
     </ScrollView>
   </Page>
@@ -119,6 +125,12 @@ import SensorsMain from './sensors/sensors-main';
 import Audio from './audio/audio';
 import Bluetooth from './bluetooth';
 import VideoMain from './video/video-main';
+import Badge from './badge';
+import Rater from './rater';
+import SanckBar from './snack-bar';
+import ImagePikcer from './image-picker';
+import Brightness from './brightness';
+import VibrateMain from './vibrate/vibrate-main';
 
 import ActionBarSecond from './public/action-bar-second';
 
@@ -134,6 +146,24 @@ export default {
   },
   mounted() {},
   methods: {
+    btnVibrate: function() {
+      this.navigateTo(this, VibrateMain);
+    },
+    btnBrightness: function() {
+      this.navigateTo(this, Brightness);
+    },
+    btnImagePicker: function() {
+      this.navigateTo(this, ImagePikcer);
+    },
+    btnSnackBar: function() {
+      this.navigateTo(this, SanckBar);
+    },
+    btnRater: function() {
+      this.navigateTo(this, Rater);
+    },
+    btnBadge: function() {
+      this.navigateTo(this, Badge);
+    },
     btnVideoMain: function() {
       this.navigateTo(this, VideoMain);
     },

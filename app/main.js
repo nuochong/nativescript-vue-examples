@@ -134,6 +134,12 @@ shortcuts.handleTask();
 //   this.$navigateTo(this.$router[to], options);
 // };
 
+// import { ModalStack, overrideModalViewMethod, VueWindowedModal } from "nativescript-windowed-modal"
+ 
+// overrideModalViewMethod()
+// Vue.registerElement("ModalStack", () => ModalStack)
+// Vue.use(VueWindowedModal)
+
 new Vue({
   Store,
   render: h => h('frame', [h(App)])
