@@ -72,6 +72,7 @@
         <Button class="btn btn-primary" text="旋转屏幕" @tap="btnScreenOrientation" />
         <Button class="btn btn-primary" text="检查应用" @tap="btnAppAvailability" />
         <Button class="btn btn-primary" text="截屏" @tap="btnScreenshot" />
+        <Button class="btn btn-primary" text="绘图" @tap="btnCanvas" />
       </StackLayout>
     </ScrollView>
   </Page>
@@ -145,6 +146,7 @@ import LoadingIndicator from './loading-indicator/loading-indicator';
 import ScreenOrientation from './screen-orientation';
 import AppAvailability from './appavailability';
 import Screenshot from './screenshot';
+import Canvas from './canvas';
 
 import ActionBarSecond from './public/action-bar-second';
 
@@ -160,6 +162,9 @@ export default {
   },
   mounted() {},
   methods: {
+    btnCanvas: function() {
+      this.navigateTo(this, Canvas);
+    },
     btnScreenshot: function() {
       this.navigateTo(this, Screenshot);
     },

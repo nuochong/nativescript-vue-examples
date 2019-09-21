@@ -146,6 +146,11 @@ shortcuts.handleTask();
 // Vue.registerElement("ModalStack", () => ModalStack)
 // Vue.use(VueWindowedModal)
 
+
+import CanvasPlugin from 'nativescript-canvas/vue';
+ 
+Vue.use(CanvasPlugin);
+
 import { StoreUpdate, AlertTypesConstants } from "nativescript-store-update";
 
 StoreUpdate.init({
