@@ -67,6 +67,7 @@
         <Button class="btn btn-primary" text="震动" @tap="btnVibrateMain" />
         <Button class="btn btn-primary" text="手风琴" @tap="btnAccordionMain" />
         <Button class="btn btn-primary" text="卡片" @tap="btnCardMain" />
+        <Button class="btn btn-primary" text="浮动按钮" @tap="btnFloatingActionButton" />
       </StackLayout>
     </ScrollView>
   </Page>
@@ -135,6 +136,7 @@ import Brightness from './brightness';
 import VibrateMain from './vibrate/vibrate-main';
 import AccordionMain from './accordion/accordion-main';
 import CardMain from './card/card-main';
+import FloatingActionButton from './floating-action-button/floating-action-button';
 
 import ActionBarSecond from './public/action-bar-second';
 
@@ -150,6 +152,9 @@ export default {
   },
   mounted() {},
   methods: {
+    btnFloatingActionButton: function() {
+      this.navigateTo(this, FloatingActionButton);
+    },
     btnCardMain: function() {
       this.navigateTo(this, CardMain);
     },

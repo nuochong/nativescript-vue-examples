@@ -27,6 +27,8 @@
   "dependencies": {
     "@nstudio/nativescript-cardview": "^1.0.0",
     "@nstudio/nativescript-checkbox": "^1.0.0",
+    "@nstudio/nativescript-floatingactionbutton": "^1.1.0",
+    "@nstudio/nativescript-loading-indicator": "^1.0.0",
     "@nstudio/nativescript-pulltorefresh": "^1.0.1",
     "@nstudio/nativescript-snackbar": "^1.0.0",
     "@teammaestro/nativescript-svg": "^1.0.1",

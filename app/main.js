@@ -90,6 +90,8 @@ Vue.registerElement('Video', () => Video);
 // 注册自定义卡片
 Vue.registerElement('CardView', () => require('@nstudio/nativescript-cardview').CardView);
 
+Vue.registerElement('Fab', () => require('@nstudio/nativescript-floatingactionbutton').Fab);
+
 // 初始化icons
 Vue.prototype.$icon = icons.initIcons();
 Vue.prototype.$setStatusBarFontColors = setStatusBarFontColors;
