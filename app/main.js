@@ -18,6 +18,7 @@ import { Toasty } from 'nativescript-toasty';
 import DateTimePicker from 'nativescript-datetimepicker/vue';
 import NSVueLifecycleHooks from 'nativescript-vue-lifecycle-hooks';
 import { Video } from 'nativescript-videoplayer';
+import Pager from 'nativescript-accordion/vue'; //手风琴
 
 const application = require('tns-core-modules/application');
 const platform = require('tns-core-modules/platform');
@@ -53,6 +54,7 @@ Vue.use(NSVueLifecycleHooks);
 //   router,
 //   routes,
 // });
+Vue.use(Pager); //手风琴
 
 Vue.registerElement('RadSideDrawer', () => require('nativescript-ui-sidedrawer').RadSideDrawer);
 // 注册下拉刷新
@@ -83,8 +85,10 @@ Vue.registerElement('SVGImage', () => require('@teammaestro/nativescript-svg').S
 // 注册键盘助手栏
 Vue.registerElement('KeyboardToolbar', () => require('nativescript-keyboard-toolbar').Toolbar);
 // 注册涟漪效果
-Vue.registerElement("Ripple", () => require("nativescript-ripple").Ripple);
-Vue.registerElement("Video", () => Video);
+Vue.registerElement('Ripple', () => require('nativescript-ripple').Ripple);
+Vue.registerElement('Video', () => Video);
+// 注册自定义卡片
+Vue.registerElement('CardView', () => require('@nstudio/nativescript-cardview').CardView);
 
 // 初始化icons
 Vue.prototype.$icon = icons.initIcons();
@@ -135,14 +139,10 @@ shortcuts.handleTask();
 // };
 
 // import { ModalStack, overrideModalViewMethod, VueWindowedModal } from "nativescript-windowed-modal"
- 
+
 // overrideModalViewMethod()
 // Vue.registerElement("ModalStack", () => ModalStack)
 // Vue.use(VueWindowedModal)
-
-import Pager from 'nativescript-accordion/vue'
- 
-Vue.use(Pager)
 
 new Vue({
   Store,

@@ -25,6 +25,7 @@
     "doctor": "tns doctor"
   },
   "dependencies": {
+    "@nstudio/nativescript-cardview": "^1.0.0",
     "@nstudio/nativescript-checkbox": "^1.0.0",
     "@nstudio/nativescript-pulltorefresh": "^1.0.1",
     "@nstudio/nativescript-snackbar": "^1.0.0",
@@ -42,6 +43,7 @@
     "nativescript-brightness": "^1.0.1",
     "nativescript-camera": "^4.5.0",
     "nativescript-carousel": "^6.1.1",
+    "nativescript-carousel-view": "^2.9.0",
     "nativescript-clipboard": "^1.2.0",
     "nativescript-datetimepicker": "^1.2.1",
     "nativescript-fancyalert": "^3.0.9",
