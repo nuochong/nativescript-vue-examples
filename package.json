@@ -44,6 +44,7 @@
     "nativescript-barcodescanner": "^3.2.2",
     "nativescript-bluetooth": "^2.0.0-beta.24",
     "nativescript-brightness": "^1.0.1",
+    "nativescript-calendar": "^2.1.0",
     "nativescript-camera": "^4.5.0",
     "nativescript-canvas": "^2.1.8",
     "nativescript-carousel": "^6.1.1",
