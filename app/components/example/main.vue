@@ -74,6 +74,7 @@
         <Button class="btn btn-primary" text="截屏" @tap="btnScreenshot" />
         <Button class="btn btn-primary" text="绘图" @tap="btnCanvas" />
         <Button class="btn btn-primary" text="日历事件" @tap="btnCalendar" />
+        <Button class="btn btn-primary" text="下载" @tap="btnDownloader" />
       </StackLayout>
     </ScrollView>
   </Page>
@@ -149,6 +150,7 @@ import AppAvailability from './appavailability';
 import Screenshot from './screenshot';
 import Canvas from './canvas';
 import Calendar from './calendar';
+import Downloader from './downloader';
 
 import ActionBarSecond from './public/action-bar-second';
 
@@ -164,6 +166,9 @@ export default {
   },
   mounted() {},
   methods: {
+    btnDownloader: function() {
+      this.navigateTo(this, Downloader);
+    },
     btnCalendar: function() {
       this.navigateTo(this, Calendar);
     },
