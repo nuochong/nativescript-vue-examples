@@ -77,6 +77,7 @@
         <Button class="btn btn-primary" text="下载" @tap="btnDownloader" />
         <Button class="btn btn-primary" text="录音" @tap="btnRecord" />
         <Button class="btn btn-primary" text="导航栏" @tap="btnStatusBarMain" />
+        <Button class="btn btn-primary" text="通讯录" @tap="btnContactsMain" />
       </StackLayout>
     </ScrollView>
   </Page>
@@ -155,6 +156,7 @@ import Calendar from './calendar';
 import Downloader from './downloader';
 import Record from './audio/record';
 import StatusBarMain from './status-bar/status-bar-main';
+import ContactsMain from './contacts/contacts-main';
 
 import ActionBarSecond from './public/action-bar-second';
 
@@ -170,6 +172,9 @@ export default {
   },
   mounted() {},
   methods: {
+    btnContactsMain: function() {
+      this.navigateTo(this, ContactsMain);
+    },
     btnStatusBarMain: function() {
       this.navigateTo(this, StatusBarMain);
     },
