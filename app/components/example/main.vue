@@ -78,6 +78,7 @@
         <Button class="btn btn-primary" text="录音" @tap="btnRecord" />
         <Button class="btn btn-primary" text="导航栏" @tap="btnStatusBarMain" />
         <Button class="btn btn-primary" text="通讯录" @tap="btnContactsMain" />
+        <Button class="btn btn-primary" text="短信接收器" @tap="btnSmsReceiver" />
       </StackLayout>
     </ScrollView>
   </Page>
@@ -157,6 +158,7 @@ import Downloader from './downloader';
 import Record from './audio/record';
 import StatusBarMain from './status-bar/status-bar-main';
 import ContactsMain from './contacts/contacts-main';
+import SmsReceiver from './sms-receiver';
 
 import ActionBarSecond from './public/action-bar-second';
 
@@ -172,6 +174,9 @@ export default {
   },
   mounted() {},
   methods: {
+    btnSmsReceiver: function() {
+      this.navigateTo(this, SmsReceiver);
+    },
     btnContactsMain: function() {
       this.navigateTo(this, ContactsMain);
     },
