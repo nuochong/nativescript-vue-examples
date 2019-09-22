@@ -75,6 +75,8 @@
         <Button class="btn btn-primary" text="绘图" @tap="btnCanvas" />
         <Button class="btn btn-primary" text="日历事件" @tap="btnCalendar" />
         <Button class="btn btn-primary" text="下载" @tap="btnDownloader" />
+        <Button class="btn btn-primary" text="录音" @tap="btnRecord" />
+        <Button class="btn btn-primary" text="导航栏" @tap="btnStatusBarMain" />
       </StackLayout>
     </ScrollView>
   </Page>
@@ -151,6 +153,8 @@ import Screenshot from './screenshot';
 import Canvas from './canvas';
 import Calendar from './calendar';
 import Downloader from './downloader';
+import Record from './audio/record';
+import StatusBarMain from './status-bar/status-bar-main';
 
 import ActionBarSecond from './public/action-bar-second';
 
@@ -166,6 +170,12 @@ export default {
   },
   mounted() {},
   methods: {
+    btnStatusBarMain: function() {
+      this.navigateTo(this, StatusBarMain);
+    },
+    btnRecord: function() {
+      this.navigateTo(this, Record);
+    },
     btnDownloader: function() {
       this.navigateTo(this, Downloader);
     },
