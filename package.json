@@ -52,6 +52,7 @@
     "nativescript-carousel-view": "^2.9.0",
     "nativescript-clipboard": "^1.2.0",
     "nativescript-contacts": "^1.6.2",
+    "nativescript-contacts-lite": "^0.2.6",
     "nativescript-datetimepicker": "^1.2.1",
     "nativescript-downloader": "^2.1.5",
     "nativescript-fancyalert": "^3.0.9",

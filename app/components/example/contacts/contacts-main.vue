@@ -5,6 +5,7 @@
     <ScrollView>
       <StackLayout class="hello-world">
         <Button class="btn btn-primary" text="通讯录1" @tap="btnContacts" />
+        <Button class="btn btn-primary" text="通讯录轻量版" @tap="btnContactsLite" />
       </StackLayout>
     </ScrollView>
   </Page>
@@ -12,6 +13,7 @@
 
 <script>
 import Contacts from './contacts';
+import ContactsLite from './contacts-lite';
 import ActionBarSecond from '../public/action-bar-second';
 
 export default {
@@ -28,6 +30,9 @@ export default {
     btnContacts: function() {
       this.navigateTo(this, Contacts);
     },
+    btnContactsLite: function() {
+      this.navigateTo(this, ContactsLite);
+    }
   }
 };
 </script>
