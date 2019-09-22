@@ -11,7 +11,7 @@
 
 <script>
 import Modal from './modal';
-import ActionBarSecond from './public/action-bar-second';
+import ActionBarSecond from '../public/action-bar-second';
 
 export default {
   components: {

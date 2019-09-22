@@ -80,6 +80,7 @@
         <Button class="btn btn-primary" text="通讯录" @tap="btnContactsMain" />
         <Button class="btn btn-primary" text="短信接收器" @tap="btnSmsReceiver" />
         <Button class="btn btn-primary" text="模态窗口" @tap="btnWindowedModal" />
+        <Button class="btn btn-primary" text="视频录制" @tap="btnVideoRecorder" />
       </StackLayout>
     </ScrollView>
   </Page>
@@ -161,6 +162,7 @@ import StatusBarMain from './status-bar/status-bar-main';
 import ContactsMain from './contacts/contacts-main';
 import SmsReceiver from './sms-receiver';
 import WindowedModal from './windowed-modal/windowed-modal';
+import VideoRecorder from './video-recorder';
 
 import ActionBarSecond from './public/action-bar-second';
 
@@ -176,6 +178,9 @@ export default {
   },
   mounted() {},
   methods: {
+    btnVideoRecorder: function() {
+      this.navigateTo(this, VideoRecorder);
+    },
     btnWindowedModal: function() {
       this.navigateTo(this, WindowedModal);
     },
