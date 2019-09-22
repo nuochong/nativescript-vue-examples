@@ -19,6 +19,7 @@ import DateTimePicker from 'nativescript-datetimepicker/vue';
 import NSVueLifecycleHooks from 'nativescript-vue-lifecycle-hooks';
 import { Video } from 'nativescript-videoplayer';
 import Pager from 'nativescript-accordion/vue'; //手风琴
+import CanvasPlugin from 'nativescript-canvas/vue';
 
 const application = require('tns-core-modules/application');
 const platform = require('tns-core-modules/platform');
@@ -55,6 +56,7 @@ Vue.use(NSVueLifecycleHooks);
 //   routes,
 // });
 Vue.use(Pager); //手风琴
+Vue.use(CanvasPlugin);
 
 Vue.registerElement('RadSideDrawer', () => require('nativescript-ui-sidedrawer').RadSideDrawer);
 // 注册下拉刷新
@@ -89,8 +91,10 @@ Vue.registerElement('Ripple', () => require('nativescript-ripple').Ripple);
 Vue.registerElement('Video', () => Video);
 // 注册自定义卡片
 Vue.registerElement('CardView', () => require('@nstudio/nativescript-cardview').CardView);
-
+// 注册浮动按钮
 Vue.registerElement('Fab', () => require('@nstudio/nativescript-floatingactionbutton').Fab);
+// 注册导航栏颜色
+Vue.registerElement('StatusBar', () => require('nativescript-statusbar').StatusBar);
 
 // 初始化icons
 Vue.prototype.$icon = icons.initIcons();
@@ -146,13 +150,8 @@ shortcuts.handleTask();
 // Vue.registerElement("ModalStack", () => ModalStack)
 // Vue.use(VueWindowedModal)
 
-
-import CanvasPlugin from 'nativescript-canvas/vue';
- 
-Vue.use(CanvasPlugin);
-
+// 应用更新
 import { StoreUpdate, AlertTypesConstants } from "nativescript-store-update";
-
 StoreUpdate.init({
   majorUpdateAlertType: AlertTypesConstants.OPTION,
   notifyNbDaysAfterRelease: 0,

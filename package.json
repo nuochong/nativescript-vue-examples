@@ -77,6 +77,7 @@
     "nativescript-social-share": "^1.5.2",
     "nativescript-socketio": "^3.3.1",
     "nativescript-status-bar": "^1.2.0",
+    "nativescript-statusbar": "^5.0.0",
     "nativescript-store-update": "^1.0.2",
     "nativescript-taptic-engine": "^2.1.0",
     "nativescript-telegram-image-picker": "^1.0.3",
