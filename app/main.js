@@ -144,11 +144,11 @@ shortcuts.handleTask();
 //   this.$navigateTo(this.$router[to], options);
 // };
 
-// import { ModalStack, overrideModalViewMethod, VueWindowedModal } from "nativescript-windowed-modal"
-
-// overrideModalViewMethod()
-// Vue.registerElement("ModalStack", () => ModalStack)
-// Vue.use(VueWindowedModal)
+// 模态窗口
+import { ModalStack, overrideModalViewMethod, VueWindowedModal } from "nativescript-windowed-modal"
+overrideModalViewMethod()
+Vue.registerElement("ModalStack", () => ModalStack)
+Vue.use(VueWindowedModal)
 
 // 应用更新
 import { StoreUpdate, AlertTypesConstants } from "nativescript-store-update";

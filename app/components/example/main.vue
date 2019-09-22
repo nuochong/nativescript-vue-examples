@@ -79,6 +79,7 @@
         <Button class="btn btn-primary" text="导航栏" @tap="btnStatusBarMain" />
         <Button class="btn btn-primary" text="通讯录" @tap="btnContactsMain" />
         <Button class="btn btn-primary" text="短信接收器" @tap="btnSmsReceiver" />
+        <Button class="btn btn-primary" text="模态窗口" @tap="btnWindowedModal" />
       </StackLayout>
     </ScrollView>
   </Page>
@@ -159,6 +160,7 @@ import Record from './audio/record';
 import StatusBarMain from './status-bar/status-bar-main';
 import ContactsMain from './contacts/contacts-main';
 import SmsReceiver from './sms-receiver';
+import WindowedModal from './windowed-modal/windowed-modal';
 
 import ActionBarSecond from './public/action-bar-second';
 
@@ -174,6 +176,9 @@ export default {
   },
   mounted() {},
   methods: {
+    btnWindowedModal: function() {
+      this.navigateTo(this, WindowedModal);
+    },
     btnSmsReceiver: function() {
       this.navigateTo(this, SmsReceiver);
     },
