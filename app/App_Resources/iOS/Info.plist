@@ -65,8 +65,14 @@
         <string>compose</string>
       </dict>
     </array>
-    
+
     <key>NSContactsUsageDescription</key>
     <string>Kindly provide permission to access contact on your device.</string>
+
+    <key>com.apple.developer.nfc.readersession.formats</key>
+    <array>
+      <string>NDEF</string>
+    </array>
+
   </dict>
 </plist>

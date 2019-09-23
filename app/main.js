@@ -161,6 +161,10 @@ StoreUpdate.init({
   },
 })
 
+// 国际化
+// import { localize } from "nativescript-localize";
+// Vue.filter("L", localize);
+
 new Vue({
   Store,
   render: h => h('frame', [h(App)])

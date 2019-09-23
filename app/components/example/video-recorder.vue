@@ -28,7 +28,7 @@ export default {
     };
   },
   mounted() {
-    console.log('暂时无法使用');
+    console.log('IOS暂时无法使用');
   },
   methods: {
     btnVideoRecord: function() {

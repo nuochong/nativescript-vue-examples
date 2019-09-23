@@ -6,10 +6,10 @@
   "license": "MIT",
   "nativescript": {
     "id": "org.nativescript.application",
-    "tns-ios": {
+    "tns-android": {
       "version": "6.0.2"
     },
-    "tns-android": {
+    "tns-ios": {
       "version": "6.0.2"
     }
   },
@@ -39,7 +39,6 @@
     "nativescript-accordion": "^6.0.0-beta.2",
     "nativescript-app-settings": "^1.0.0",
     "nativescript-app-shortcuts": "^2.1.0",
-    "nativescript-app-tour": "^2.0.2",
     "nativescript-appavailability": "^1.3.2",
     "nativescript-audio": "^5.0.4",
     "nativescript-barcodescanner": "^3.2.2",
@@ -57,6 +56,7 @@
     "nativescript-downloader": "^2.1.5",
     "nativescript-fancyalert": "^3.0.9",
     "nativescript-feedback": "^1.3.11",
+    "nativescript-fingerprint-auth": "^7.0.1",
     "nativescript-geolocation": "5.1.0",
     "nativescript-gif": "^4.0.2",
     "nativescript-imagepicker": "^7.1.0",
@@ -66,6 +66,7 @@
     "nativescript-lottie": "^4.0.0",
     "nativescript-menu": "^1.1.3",
     "nativescript-modal-datetimepicker": "^1.2.0",
+    "nativescript-nfc": "^4.0.3",
     "nativescript-open-app": "^0.3.0",
     "nativescript-permissions": "^1.3.7",
     "nativescript-phone": "^1.4.0",
@@ -96,7 +97,6 @@
     "nativescript-vue-lifecycle-hooks": "^1.0.0",
     "nativescript-vue-multi-drawer": "0.0.2",
     "nativescript-vue-router-ns": "^1.0.4",
-    "nativescript-wechat-share-plugin": "0.0.1",
     "nativescript-windowed-modal": "^6.0.0",
     "net": "^1.0.2",
     "tns-core-modules": "^6.0.7",

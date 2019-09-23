@@ -12,8 +12,8 @@
 </template>
 
 <script>
- import { AppTour, TourStop, TourEvents } from '../../tools/nativescript-app-tour';
-import { topmost } from 'tns-core-modules/ui/frame';
+// import { AppTour, TourStop, TourEvents } from '../../tools/nativescript-app-tour';
+// import { topmost } from 'tns-core-modules/ui/frame';
 import ActionBarSecond from './public/action-bar-second';
 
 export default {
@@ -25,7 +25,9 @@ export default {
       title: '引导'
     };
   },
-  mounted() {},
+  mounted() {
+    console.log('android正常，如果安装，在IOS启动会报错，导致安卓也无法使用');
+  },
   methods: {
     startTour() {
       let feat1 = this.$refs.feat1.nativeView;

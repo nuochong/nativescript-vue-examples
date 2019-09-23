@@ -81,6 +81,10 @@
         <Button class="btn btn-primary" text="短信接收器" @tap="btnSmsReceiver" />
         <Button class="btn btn-primary" text="模态窗口" @tap="btnWindowedModal" />
         <Button class="btn btn-primary" text="视频录制" @tap="btnVideoRecorder" />
+        <Button class="btn btn-primary" text="国际化" @tap="btnI8n" />
+        <Button class="btn btn-primary" text="微信分享" @tap="btnWechatShare" />
+        <Button class="btn btn-primary" text="指纹识别" @tap="btnFingerprintAuth" />
+        <Button class="btn btn-primary" text="NFC" @tap="btnNfc" />
       </StackLayout>
     </ScrollView>
   </Page>
@@ -163,6 +167,10 @@ import ContactsMain from './contacts/contacts-main';
 import SmsReceiver from './sms-receiver';
 import WindowedModal from './windowed-modal/windowed-modal';
 import VideoRecorder from './video-recorder';
+import I18n from './i18n';
+import WechatShare from './wechat-share';
+import FingerprintAuth from './fingerprint-auth/fingerprint-auth';
+import Nfc from './nfc';
 
 import ActionBarSecond from './public/action-bar-second';
 
@@ -178,6 +186,18 @@ export default {
   },
   mounted() {},
   methods: {
+    btnNfc: function() {
+      this.navigateTo(this, Nfc);
+    },
+    btnFingerprintAuth: function() {
+      this.navigateTo(this, FingerprintAuth);
+    },
+    btnWechatShare: function() {
+      this.navigateTo(this, WechatShare);
+    },
+    btnI8n: function() {
+      this.navigateTo(this, I18n);
+    },
     btnVideoRecorder: function() {
       this.navigateTo(this, VideoRecorder);
     },
