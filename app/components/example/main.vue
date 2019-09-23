@@ -86,7 +86,7 @@
         <Button class="btn btn-primary" text="指纹识别" @tap="btnFingerprintAuth" />
         <Button class="btn btn-primary" text="NFC" @tap="btnNfc" />
         <Button class="btn btn-primary" text="社交登录(待完善）" @tap="btnSocialLogin" />
-        <Button class="btn btn-primary" text="地图" @tap="btnMapMain" />
+        <Button class="btn btn-primary" text="地图(待完善）" @tap="btnMapMain" />
       </StackLayout>
     </ScrollView>
   </Page>

@@ -95,6 +95,8 @@ Vue.registerElement('CardView', () => require('@nstudio/nativescript-cardview').
 Vue.registerElement('Fab', () => require('@nstudio/nativescript-floatingactionbutton').Fab);
 // 注册导航栏颜色
 Vue.registerElement('StatusBar', () => require('nativescript-statusbar').StatusBar);
+// 注册mapbox
+// Vue.registerElement("Mapbox", () => require("nativescript-mapbox").MapboxView);
 
 // 初始化icons
 Vue.prototype.$icon = icons.initIcons();
