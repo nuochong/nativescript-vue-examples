@@ -78,6 +78,7 @@
     "nativescript-screenshot": "0.0.2",
     "nativescript-share-file": "^1.0.6",
     "nativescript-sms-receiver": "^1.0.0",
+    "nativescript-social-login": "^4.0.1",
     "nativescript-social-share": "^1.5.2",
     "nativescript-socketio": "^3.3.1",
     "nativescript-status-bar": "^1.2.0",

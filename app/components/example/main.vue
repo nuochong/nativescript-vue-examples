@@ -85,6 +85,8 @@
         <Button class="btn btn-primary" text="微信分享" @tap="btnWechatShare" />
         <Button class="btn btn-primary" text="指纹识别" @tap="btnFingerprintAuth" />
         <Button class="btn btn-primary" text="NFC" @tap="btnNfc" />
+        <Button class="btn btn-primary" text="社交登录(待完善）" @tap="btnSocialLogin" />
+        <Button class="btn btn-primary" text="地图" @tap="btnMapMain" />
       </StackLayout>
     </ScrollView>
   </Page>
@@ -171,6 +173,8 @@ import I18n from './i18n';
 import WechatShare from './wechat-share';
 import FingerprintAuth from './fingerprint-auth/fingerprint-auth';
 import Nfc from './nfc';
+import SocialLogin from './social-login/social-login';
+import MapMain from './map/map-main';
 
 import ActionBarSecond from './public/action-bar-second';
 
@@ -186,6 +190,12 @@ export default {
   },
   mounted() {},
   methods: {
+    btnMapMain: function() {
+      this.navigateTo(this, MapMain);
+    },
+    btnSocialLogin: function() {
+      this.navigateTo(this, SocialLogin);
+    },
     btnNfc: function() {
       this.navigateTo(this, Nfc);
     },

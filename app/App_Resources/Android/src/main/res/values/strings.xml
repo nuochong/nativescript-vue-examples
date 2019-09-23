@@ -14,4 +14,8 @@
   <string name="shortcut_disabled_message3">功能3-disabled</string>
   <string name="shortcut_long_label3">功能3-long</string>
   <string name="shortcut_short_label3">功能3-short</string>
+  <!--社交登录start-->
+  <string name="facebook_app_id">{{ YOUR_FACEBOOK_APP_ID }}</string>
+  <string name="fb_login_protocol_scheme">fb{{ YOUR_FACEBOOK_APP_ID }}</string>
+  <!--社交登录end-->
 </resources>

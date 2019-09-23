@@ -74,5 +74,39 @@
       <string>NDEF</string>
     </array>
 
+    <!-- 社交登录start -->
+    <!-- FACEBOOK AND GOOGLE LOGIN -->
+    <key>CFBundleURLTypes</key>
+    <array>
+      <!-- GOOGLE START -->
+      <dict>
+        <key>CFBundleTypeRole</key>
+        <string>Editor</string>
+        <key>CFBundleURLSchemes</key>
+        <array>
+          <string>{YOUR_GOOGLE_REVERSED_CLIENT_ID}</string>
+          <!-- It shoud look like this: com.googleusercontent.apps.123123123-172648sdfsd76f8s7d6f8sd -->
+          <!-- Get it from your GoogleService-Info.plist -->
+          <!-- Read more - https://developers.google.com/identity/sign-in/ios/start-integrating -->
+        </array>
+      </dict>
+      <!-- GOOGLE END -->
+      <!-- FACEBOOK START -->
+      <dict>
+        <key>CFBundleURLSchemes</key>
+        <array>
+          <string>fb{YOUR_FACEBOOK_APP_ID_HERE}</string>
+        </array>
+      </dict>
+    </array>
+    <key>CFBundleVersion</key>
+    <string>1.0</string>
+    <key>FacebookAppID</key>
+    <string>{YOUR_FACEBOOK_APP_ID_HERE}</string>
+    <key>FacebookDisplayName</key>
+    <string>FacebookLoginDemo</string>
+    <!-- FACEBOOK END -->
+    <!-- 社交登录end -->
+
   </dict>
 </plist>
