@@ -89,6 +89,7 @@
         <Button class="btn btn-primary" text="社交登录(待完善）" @tap="btnSocialLogin" />
         <Button class="btn btn-primary" text="地图(待完善）" @tap="btnMapMain" />
         <Button class="btn btn-primary" text="修改图标(仅IOS）" @tap="btnIconChangerMain" />
+        <Button class="btn btn-primary" text="多种类文件选择器" @tap="btnMediaFilePickerMain" />
       </StackLayout>
     </ScrollView>
   </Page>
@@ -179,6 +180,7 @@ import SocialLogin from './social-login/social-login';
 import MapMain from './map/map-main';
 import WechatLogin from './wechat/wechat-login';
 import IconChangerMain from './icon-changer/icon-changer-main';
+import MediaFilePickerMain from './media-file-picker/media-file-picker-main';
 
 import ActionBarSecond from './public/action-bar-second';
 
@@ -194,6 +196,9 @@ export default {
   },
   mounted() {},
   methods: {
+    btnMediaFilePickerMain: function() {
+      this.navigateTo(this, MediaFilePickerMain);
+    },
     btnIconChangerMain: function() {
       this.navigateTo(this, IconChangerMain);
     },
