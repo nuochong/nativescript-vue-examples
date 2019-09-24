@@ -19,7 +19,7 @@
 // const appPath = fs.knownFolders.currentApp();
 // const applePath = fs.path.join(appPath.path, 'img', 'apple.jpg');
 // import { WechatSharePlugin, WechatSharingScene, WechatSharingType } from 'nativescript-wechat-share-plugin';
-import ActionBarSecond from './public/action-bar-second';
+import ActionBarSecond from '../public/action-bar-second';
 
 export default {
   components: {
