@@ -88,6 +88,7 @@
         <Button class="btn btn-primary" text="NFC" @tap="btnNfc" />
         <Button class="btn btn-primary" text="社交登录(待完善）" @tap="btnSocialLogin" />
         <Button class="btn btn-primary" text="地图(待完善）" @tap="btnMapMain" />
+        <Button class="btn btn-primary" text="修改图标(仅IOS）" @tap="btnIconChangerMain" />
       </StackLayout>
     </ScrollView>
   </Page>
@@ -177,6 +178,7 @@ import Nfc from './nfc';
 import SocialLogin from './social-login/social-login';
 import MapMain from './map/map-main';
 import WechatLogin from './wechat/wechat-login';
+import IconChangerMain from './icon-changer/icon-changer-main';
 
 import ActionBarSecond from './public/action-bar-second';
 
@@ -192,6 +194,9 @@ export default {
   },
   mounted() {},
   methods: {
+    btnIconChangerMain: function() {
+      this.navigateTo(this, IconChangerMain);
+    },
     btnWechatLogin: function() {
       this.navigateTo(this, WechatLogin);
     },

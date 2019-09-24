@@ -20,7 +20,8 @@ export default {
   },
   data() {
     return {
-      title: '修改图标'
+      title: '修改图标',
+      see: 'android修改图标：https://github.com/myinnos/AppIconNameChanger'
     };
   },
   mounted() {},
