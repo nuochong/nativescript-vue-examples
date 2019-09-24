@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import { Vibrate } from 'nativescript-vibrate';
+import { Vibrate } from '../../../tools/nativescript-vibrate';
 let vibrator = new Vibrate();
 import ActionBarSecond from '../public/action-bar-second';
 
