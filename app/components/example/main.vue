@@ -83,6 +83,7 @@
         <Button class="btn btn-primary" text="视频录制" @tap="btnVideoRecorder" />
         <Button class="btn btn-primary" text="国际化" @tap="btnI8n" />
         <Button class="btn btn-primary" text="微信分享" @tap="btnWechatShare" />
+        <Button class="btn btn-primary" text="微信登录" @tap="btnWechatLogin" />
         <Button class="btn btn-primary" text="指纹识别" @tap="btnFingerprintAuth" />
         <Button class="btn btn-primary" text="NFC" @tap="btnNfc" />
         <Button class="btn btn-primary" text="社交登录(待完善）" @tap="btnSocialLogin" />
@@ -170,11 +171,12 @@ import SmsReceiver from './sms-receiver';
 import WindowedModal from './windowed-modal/windowed-modal';
 import VideoRecorder from './video-recorder';
 import I18n from './i18n';
-import WechatShare from './wechat-share';
+import WechatShare from './wechat/wechat-share';
 import FingerprintAuth from './fingerprint-auth/fingerprint-auth';
 import Nfc from './nfc';
 import SocialLogin from './social-login/social-login';
 import MapMain from './map/map-main';
+import WechatLogin from './wechat/wechat-login';
 
 import ActionBarSecond from './public/action-bar-second';
 
@@ -190,6 +192,9 @@ export default {
   },
   mounted() {},
   methods: {
+    btnWechatLogin: function() {
+      this.navigateTo(this, WechatLogin);
+    },
     btnMapMain: function() {
       this.navigateTo(this, MapMain);
     },

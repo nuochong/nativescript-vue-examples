@@ -27,7 +27,8 @@ export default {
   },
   data() {
     return {
-      title: '微信分享'
+      title: '微信分享',
+      see:'https://market.nativescript.org/plugins/nativescript-wechat-share-plugin'
     };
   },
   mounted() {

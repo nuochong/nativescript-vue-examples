@@ -12,8 +12,12 @@ export default {
   components: {},
   data() {
     return {
-      msg: '我是闪屏页面'
+      msg: '我是闪屏页面',
+      see: 'https://market.nativescript.org/plugins/nativescript-splashscreen'
     };
+  },
+  mounted() {
+    console.log('闪屏不是页面，android需要在Manifest中配置，ios需要在main.js中配置');
   },
   methods: {}
 };

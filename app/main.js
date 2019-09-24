@@ -147,25 +147,27 @@ shortcuts.handleTask();
 // };
 
 // 模态窗口
-import { ModalStack, overrideModalViewMethod, VueWindowedModal } from "nativescript-windowed-modal"
-overrideModalViewMethod()
-Vue.registerElement("ModalStack", () => ModalStack)
-Vue.use(VueWindowedModal)
+import { ModalStack, overrideModalViewMethod, VueWindowedModal } from 'nativescript-windowed-modal';
+overrideModalViewMethod();
+Vue.registerElement('ModalStack', () => ModalStack);
+Vue.use(VueWindowedModal);
 
 // 应用更新
-import { StoreUpdate, AlertTypesConstants } from "nativescript-store-update";
+import { StoreUpdate, AlertTypesConstants } from 'nativescript-store-update';
 StoreUpdate.init({
   majorUpdateAlertType: AlertTypesConstants.OPTION,
   notifyNbDaysAfterRelease: 0,
   alertOptions: {
     title: '请注意',
-    message: '你的应用程序已经过时了',
-  },
-})
+    message: '你的应用程序已经过时了'
+  }
+});
 
 // 国际化
 // import { localize } from "nativescript-localize";
 // Vue.filter("L", localize);
+
+// 闪屏待完善
 
 new Vue({
   Store,

@@ -31,6 +31,8 @@
         <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED" />
       </intent-filter>
     </receiver>
+    <!--闪屏start-->
+    <!--闪屏end-->
     <activity android:windowSoftInputMode="adjustResize" android:name="com.tns.NativeScriptActivity" android:label="@string/title_activity_kimera" android:configChanges="keyboard|keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout|locale|uiMode" android:theme="@style/LaunchScreenTheme">
       <meta-data android:name="SET_THEME_ON_LAUNCH" android:resource="@style/AppTheme" />
       <intent-filter>
