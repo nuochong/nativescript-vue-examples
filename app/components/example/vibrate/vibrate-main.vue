@@ -4,6 +4,7 @@
 
     <ScrollView>
       <StackLayout class="hello-world">
+        <Button class="btn btn-primary" text="震动（仅IOS）" @tap="btnTapticEngine" />
         <Button class="btn btn-primary" text="震动" @tap="btnVibrate" />
       </StackLayout>
     </ScrollView>
@@ -12,6 +13,7 @@
 
 <script>
 import Vibrate from './vibrate';
+import TapticEngine from './taptic-engine';
 import ActionBarSecond from '../public/action-bar-second';
 
 export default {
@@ -25,9 +27,12 @@ export default {
   },
   mounted() {},
   methods: {
+    btnTapticEngine: function() {
+      this.navigateTo(this, TapticEngine);
+    },
     btnVibrate: function() {
       this.navigateTo(this, Vibrate);
-    },
+    }
   }
 };
 </script>
