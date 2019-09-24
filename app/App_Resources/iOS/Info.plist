@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
   <dict>
@@ -11,7 +11,7 @@
     <key>CFBundleInfoDictionaryVersion</key>
     <string>6.0</string>
     <key>CFBundleName</key>
-    <string>${PRODUCT_NAME}</string>
+    <string>NSVue Examples</string>
     <key>CFBundlePackageType</key>
     <string>APPL</string>
     <key>CFBundleShortVersionString</key>
@@ -19,13 +19,13 @@
     <key>CFBundleSignature</key>
     <string>????</string>
     <key>CFBundleVersion</key>
-    <string>1.0.0</string>
+    <string>1.0</string>
     <key>LSRequiresIPhoneOS</key>
-    <true />
+    <true/>
     <key>UILaunchStoryboardName</key>
     <string>LaunchScreen</string>
     <key>UIRequiresFullScreen</key>
-    <true />
+    <true/>
     <key>UIRequiredDeviceCapabilities</key>
     <array>
       <string>armv7</string>
@@ -43,7 +43,6 @@
       <string>UIInterfaceOrientationLandscapeLeft</string>
       <string>UIInterfaceOrientationLandscapeRight</string>
     </array>
-
     <key>UIApplicationShortcutItems</key>
     <array>
       <dict>
@@ -65,33 +64,22 @@
         <string>compose</string>
       </dict>
     </array>
-
     <key>NSContactsUsageDescription</key>
     <string>Kindly provide permission to access contact on your device.</string>
-
     <key>com.apple.developer.nfc.readersession.formats</key>
     <array>
       <string>NDEF</string>
     </array>
-
-    <!-- 社交登录start -->
-    <!-- FACEBOOK AND GOOGLE LOGIN -->
     <key>CFBundleURLTypes</key>
     <array>
-      <!-- GOOGLE START -->
       <dict>
         <key>CFBundleTypeRole</key>
         <string>Editor</string>
         <key>CFBundleURLSchemes</key>
         <array>
           <string>{YOUR_GOOGLE_REVERSED_CLIENT_ID}</string>
-          <!-- It shoud look like this: com.googleusercontent.apps.123123123-172648sdfsd76f8s7d6f8sd -->
-          <!-- Get it from your GoogleService-Info.plist -->
-          <!-- Read more - https://developers.google.com/identity/sign-in/ios/start-integrating -->
         </array>
       </dict>
-      <!-- GOOGLE END -->
-      <!-- FACEBOOK START -->
       <dict>
         <key>CFBundleURLSchemes</key>
         <array>
@@ -99,14 +87,9 @@
         </array>
       </dict>
     </array>
-    <key>CFBundleVersion</key>
-    <string>1.0</string>
     <key>FacebookAppID</key>
     <string>{YOUR_FACEBOOK_APP_ID_HERE}</string>
     <key>FacebookDisplayName</key>
     <string>FacebookLoginDemo</string>
-    <!-- FACEBOOK END -->
-    <!-- 社交登录end -->
-
   </dict>
 </plist>

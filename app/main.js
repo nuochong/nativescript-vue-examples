@@ -164,8 +164,8 @@ StoreUpdate.init({
 });
 
 // 国际化
-// import { localize } from "nativescript-localize";
-// Vue.filter("L", localize);
+import { localize } from "nativescript-localize";
+Vue.filter("L", localize);
 
 // 闪屏待完善
 
