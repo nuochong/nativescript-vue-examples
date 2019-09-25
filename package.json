@@ -37,6 +37,7 @@
     "email-validator": "^2.0.4",
     "nativescript-accelerometer": "^2.0.1",
     "nativescript-accordion": "^6.0.0-beta.2",
+    "nativescript-android-sensors": "^1.5.0",
     "nativescript-app-icon-changer": "^1.0.4",
     "nativescript-app-settings": "^1.0.0",
     "nativescript-app-shortcuts": "^2.1.0",

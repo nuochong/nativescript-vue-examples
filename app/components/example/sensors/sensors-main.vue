@@ -5,7 +5,7 @@
     <ScrollView>
       <StackLayout class="hello-world">
         <Button class="btn btn-primary" text="安卓传感器" @tap="btnAndroidSensors" />
-        <Button class="btn btn-primary" text="苹果传感器" @tap="btnCoremotion" />
+        <Button class="btn btn-primary" text="苹果传感器" @tap="btnIosSensors" />
       </StackLayout>
     </ScrollView>
   </Page>
@@ -13,7 +13,7 @@
 
 <script>
 import AndroidSensors from './android-sensors';
-import Coremotion from './coremotion';
+import IosSensors from './ios-sensors';
 import ActionBarSecond from '../public/action-bar-second';
 
 export default {
@@ -30,8 +30,8 @@ export default {
     btnAndroidSensors: function() {
       this.navigateTo(this, AndroidSensors);
     },
-    btnCoremotion() {
-      this.navigateTo(this, Coremotion);
+    btnIosSensors() {
+      this.navigateTo(this, IosSensors);
     }
   }
 };
