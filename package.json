@@ -22,7 +22,8 @@
     "debug:android": "tns debug android",
     "debug:ios": "tns debug ios",
     "preview": "tns preview",
-    "doctor": "tns doctor"
+    "doctor": "tns doctor",
+    "init:environment": "npm install -g nativescript"
   },
   "dependencies": {
     "@nstudio/nativescript-audio-recorder": "^0.1.0",

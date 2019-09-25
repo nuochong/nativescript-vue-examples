@@ -90,6 +90,8 @@
         <Button class="btn btn-primary" text="地图(待完善）" @tap="btnMapMain" />
         <Button class="btn btn-primary" text="修改图标(仅IOS）" @tap="btnIconChangerMain" />
         <Button class="btn btn-primary" text="多种类文件选择器" @tap="btnMediaFilePickerMain" />
+        <Button class="btn btn-primary" text="网络检测" @tap="btnNetWorkConnectivity" />
+        <Button class="btn btn-primary" text="页面分割" @tap="btnMasterPage" />
       </StackLayout>
     </ScrollView>
   </Page>
@@ -181,6 +183,8 @@ import MapMain from './map/map-main';
 import WechatLogin from './wechat/wechat-login';
 import IconChangerMain from './icon-changer/icon-changer-main';
 import MediaFilePickerMain from './media-file-picker/media-file-picker-main';
+import NetworkConnectivity from './network-connectivity';
+import MasterPage from './split-view/master-page';
 
 import ActionBarSecond from './public/action-bar-second';
 
@@ -196,6 +200,12 @@ export default {
   },
   mounted() {},
   methods: {
+    btnMasterPage:function () {
+      this.navigateTo(this, MasterPage);
+    },
+    btnNetWorkConnectivity:function () {
+      this.navigateTo(this, NetworkConnectivity);
+    },
     btnMediaFilePickerMain: function() {
       this.navigateTo(this, MediaFilePickerMain);
     },
