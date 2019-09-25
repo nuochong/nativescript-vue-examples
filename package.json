@@ -54,6 +54,7 @@
     "nativescript-clipboard": "^1.2.0",
     "nativescript-contacts": "^1.6.2",
     "nativescript-contacts-lite": "^0.2.6",
+    "nativescript-coremotion": "^0.1.7",
     "nativescript-datetimepicker": "^1.2.1",
     "nativescript-downloader": "^2.1.5",
     "nativescript-fancyalert": "^3.0.9",

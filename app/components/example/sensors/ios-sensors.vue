@@ -2,19 +2,17 @@
   <Page class="page">
     <ActionBarSecond :title="title" />
 
-    <GridLayout colums="*" rows="*">
-      <PullToRefresh @refresh="refreshList">
-        <ListView for="item in listOfItems" @itemTap="onItemTap">
-          <v-template>
-            <label class="label-white lable-refresh" :text="item.text" />
-          </v-template>
-        </ListView>
-      </PullToRefresh>
-    </GridLayout>
+    <ScrollView>
+      <StackLayout class="hello-world">
+        <Button class="btn btn-primary" text="是否支持加速度计" @tap="btnIsAccelerometerAvailable" />
+        <Button class="btn btn-primary" text="是否支持陀螺仪" @tap="btnIsGyroscopeAvailable" />
+      </StackLayout>
+    </ScrollView>
   </Page>
 </template>
 
 <script>
+// var Coremotion = require('nativescript-coremotion');
 import ActionBarSecond from '../public/action-bar-second';
 
 export default {
@@ -23,28 +21,20 @@ export default {
   },
   data() {
     return {
-      title: '苹果传感器',
-      msg: 'Hello World! ',
-      listOfItems: [{ text: '下拉刷新' }, { text: '下拉刷新' }, { text: '下拉刷新' }]
+      title: '苹果传感器'
     };
   },
   mounted() {
-    console.log('下拉刷新');
+    console.log('仅支持IOS，如果打开插件引用android会报错');
   },
   methods: {
-    await: function() {
-      let that = this;
-      setTimeout(function() {
-        console.log('对不起, 要你久候');
-        that.isTime = true;
-        console.log('定时了');
-      }, 3000);
+    btnIsAccelerometerAvailable: function() {
+      let state = Coremotion.isAccelerometerAvailable();
+      console.log('是否支持加速度计：', state);
     },
-    refreshList(args) {
-      let pullRefresh = args.object;
-      setTimeout(function() {
-        pullRefresh.refreshing = false;
-      }, 1000);
+    btnIsGyroscopeAvailable: function() {
+      let state = Coremotion.isGyroscopeAvailable();
+      console.log('是否支持陀螺仪：', state);
     }
   }
 };

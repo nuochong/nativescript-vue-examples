@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import { AndroidSensors, AndroidSensorListener, SensorDelay } from 'nativescript-android-sensors';
+// import { AndroidSensors, AndroidSensorListener, SensorDelay } from 'nativescript-android-sensors';
 import ActionBarSecond from '../public/action-bar-second';
 
 export default {
@@ -23,7 +23,7 @@ export default {
   data() {
     return {
       title: '安卓传感器',
-      see:'https://github.com/bradmartin/nativescript-android-sensors',
+      see: 'https://github.com/bradmartin/nativescript-android-sensors',
       message: 'string',
       androidSensors: AndroidSensors,
       sensorMaxFifoEventCount: 'string',
@@ -31,7 +31,7 @@ export default {
     };
   },
   mounted() {
-    console.log('下拉刷新');
+    console.log('仅支持android，由于在ios下引入该插件会报错，所以这里将其注释掉');
     this.init();
   },
   methods: {
