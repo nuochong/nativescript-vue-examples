@@ -24,6 +24,7 @@ module.exports = {
   'app.name': 'NSVue Examples',
   example: 'Example',
   project: 'Project',
+  Looking_forward_to_your_joining: 'Looking Forward To Your Joining',
   array: ['split the translation into ', 'multiples lines'],
   'hello.world': 'Hello World !',
   html: 'Text with <b>HTML</b> <wrong & Hi',

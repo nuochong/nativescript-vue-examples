@@ -7,6 +7,7 @@
         <StackLayout class="hello-world">
           <Button class="btn btn-primary" :text="'example' | L" @tap="example" />
           <Button class="btn btn-primary" :text="'project' | L" @tap="project" />
+          <Label class="label-black h3 text-center" :text="'Looking_forward_to_your_joining' | L" textWrap="true" />
         </StackLayout>
       </ScrollView>
     </GridLayout>
