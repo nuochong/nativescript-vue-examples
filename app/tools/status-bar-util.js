@@ -5,9 +5,9 @@ import { Color } from 'tns-core-modules/color';
 let defaultColor;
 
 function setStatusBarColors() {
-  // Make the Android status bar transparent.
+  // 使Android状态栏透明。
   // See http://bradmartin.net/2016/03/10/fullscreen-and-navigation-bar-color-in-a-nativescript-android-app/
-  // for details on the technique used.
+  // 有关所使用技术的详细信息。
   if (application.android && platform.device.sdkVersion >= '21') {
     application.android.on('activityStarted', () => {
       const View = android.view.View;

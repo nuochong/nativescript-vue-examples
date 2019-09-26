@@ -1,7 +1,7 @@
 var onTextViewShouldBeginEditing;
 var onTextViewDidBeginEditing;
 var onTextViewDidEndEditing;
-
+// IOS键盘导航栏问题处理
 var MyUITextViewDelegateImpl = (function (_super) {
     __extends(MyUITextViewDelegateImpl, _super);
     function MyUITextViewDelegateImpl() {
