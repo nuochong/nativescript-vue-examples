@@ -1,7 +1,5 @@
 <template>
   <!--组件内嵌页面不用page-->
-  <!-- <Page class="page"> -->
-  <!-- <RadSideDrawer [drawerTransition]="sideDrawerTransition"> -->
   <GridLayout tkDrawerContent rows="auto, *" class="sidedrawer sidedrawer-left">
     <StackLayout row="0" class="sidedrawer-header">
       <Image class="sidedrawer-header-image" src="~/assets/images/example/multi-drawer/head.jpg" />
@@ -39,8 +37,6 @@
       </StackLayout>
     </ScrollView>
   </GridLayout>
-  <!-- </RadSideDrawer> -->
-  <!-- </Page> -->
 </template>
 
 <script>

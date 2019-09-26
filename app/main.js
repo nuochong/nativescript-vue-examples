@@ -9,7 +9,6 @@ import shortcuts from './app.shortcuts.js';
 import icons from './app.icons.js';
 import axios from './api/api';
 import VueAxios from 'vue-axios';
-// import { DrawerTransitionBase, RadSideDrawer, SlideInOnTopTransition } from "nativescript-ui-sidedrawer";
 // import MultiDrawer from 'nativescript-vue-multi-drawer';
 import MultiDrawer from './components/example/multi-drawer/tools';
 import FontIcon from './tools/nativescript-vue-fonticon';
@@ -58,7 +57,6 @@ Vue.use(NSVueLifecycleHooks);
 Vue.use(Pager); //手风琴
 Vue.use(CanvasPlugin);
 
-// Vue.registerElement('RadSideDrawer', () => require('nativescript-ui-sidedrawer').RadSideDrawer);
 // 注册下拉刷新
 Vue.registerElement('PullToRefresh', () => require('@nstudio/nativescript-pulltorefresh').PullToRefresh);
 // 注册扫码
