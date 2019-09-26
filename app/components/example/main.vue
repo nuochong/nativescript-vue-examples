@@ -186,7 +186,7 @@ import IconChangerMain from './icon-changer/icon-changer-main';
 import MediaFilePickerMain from './media-file-picker/media-file-picker-main';
 import NetworkConnectivity from './network-connectivity';
 import MasterPage from './split-view/master-page';
- import SideDrawer from './ns-ui/SideDrawer';
+import SideDrawer from './ns-ui/SideDrawer';
 
 import ActionBarSecond from './public/action-bar-second';
 
@@ -202,13 +202,13 @@ export default {
   },
   mounted() {},
   methods: {
-    btnNSUI:function () {
+    btnNSUI: function() {
       this.navigateTo(this, SideDrawer);
     },
-    btnMasterPage:function () {
+    btnMasterPage: function() {
       this.navigateTo(this, MasterPage);
     },
-    btnNetWorkConnectivity:function () {
+    btnNetWorkConnectivity: function() {
       this.navigateTo(this, NetworkConnectivity);
     },
     btnMediaFilePickerMain: function() {

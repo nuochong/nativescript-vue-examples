@@ -91,7 +91,7 @@ export default {
 
 <style scoped lang="scss">
 // 启动自定义公共变量
-@import '../../app-variables';
+@import '../../assets/css/app-variables';
 // 结束自定义公共变量
 
 // 自定义风格

@@ -71,7 +71,7 @@ export default {
 
 <style scoped lang="scss">
 // Custom common variables
-@import '../../../ns-ui';
+@import '../../../assets/css/ns-ui';
 
 // Drawer navigation custom styles
 $sidedrawer-header-image-size: 60;
