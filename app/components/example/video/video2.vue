@@ -98,7 +98,7 @@ export default {
 
     this.currentTime = '';
     this.videoDuration = '';
-    //this.videoSrc = '~/videos/small.mp4';
+    //this.videoSrc = '~/assets/videos/small.mp4';
     this.videoSrc = 'https://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4';
     this.trackVideoCurrentPosition();
   },
@@ -188,10 +188,10 @@ export default {
      * Change the video src property
      */
     changeVideoSource() {
-      if (this.videoSrc === '~/videos/small.mp4') {
+      if (this.videoSrc === '~/assets/videos/small.mp4') {
         this._videoPlayer.src = 'https://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4';
       } else {
-        this._videoPlayer.src = '~/videos/small.mp4';
+        this._videoPlayer.src = '~/assets/videos/small.mp4';
       }
     },
 

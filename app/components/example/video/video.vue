@@ -5,7 +5,7 @@
     <ScrollView>
       <StackLayout class="hello-world">
         <!-- <VideoPlayer src="https://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" autoplay="true" height="300"></VideoPlayer> -->
-        <Video src="~/videos/small.mp4" autoplay="true" height="300" />
+        <Video src="~/assets/videos/small.mp4" autoplay="true" height="300" />
       </StackLayout>
     </ScrollView>
   </Page>
