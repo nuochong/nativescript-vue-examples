@@ -23,6 +23,8 @@
   <string name="html">"Text with &lt;b>HTML&lt;/b> &lt;wrong &amp; Hi"</string>
   <string name="_hello_world_Z2tF6Gu">"Hello World !"</string>
   <string name="array">"split the translation into multiples lines"</string>
+  <string name="project">"Project"</string>
+  <string name="example">"Example"</string>
   <string name="_app_name_1k3Sbz">"NSVue Examples"</string>
   <string name="app_name">"NSVue Examples"</string>
   <string name="title_activity_kimera">"NSVue Examples"</string>

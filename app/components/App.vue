@@ -5,8 +5,8 @@
       <GridLayout class="background" ref="bg" scaleX="1.4" scaleY="1.4" @loaded="startBackgroundAnimation" />
       <ScrollView>
         <StackLayout class="hello-world">
-          <Button class="btn btn-primary" text="示例" @tap="example" />
-          <Button class="btn btn-primary" text="实例" @tap="project" />
+          <Button class="btn btn-primary" :text="'example' | L" @tap="example" />
+          <Button class="btn btn-primary" :text="'project' | L" @tap="project" />
         </StackLayout>
       </ScrollView>
     </GridLayout>
