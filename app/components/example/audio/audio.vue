@@ -369,7 +369,7 @@ export default {
      * PLAY LOCAL AUDIO FILE from app folder
      */
     playLocalFile() {
-      const filepath = '~/audio/angel.mp3';
+      const filepath = '~/assets/audio/angel.mp3';
       this.playAudio(filepath, 'localFile');
     },
 
