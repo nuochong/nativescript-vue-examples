@@ -92,6 +92,7 @@
         <Button class="btn btn-primary" text="多种类文件选择器" @tap="btnMediaFilePickerMain" />
         <Button class="btn btn-primary" text="网络检测" @tap="btnNetWorkConnectivity" />
         <Button class="btn btn-primary" text="页面分割" @tap="btnMasterPage" />
+        <Button class="btn btn-primary" text="NSUI" @tap="btnNSUI" />
       </StackLayout>
     </ScrollView>
   </Page>
@@ -185,6 +186,7 @@ import IconChangerMain from './icon-changer/icon-changer-main';
 import MediaFilePickerMain from './media-file-picker/media-file-picker-main';
 import NetworkConnectivity from './network-connectivity';
 import MasterPage from './split-view/master-page';
+ import SideDrawer from './ns-ui/SideDrawer';
 
 import ActionBarSecond from './public/action-bar-second';
 
@@ -200,6 +202,9 @@ export default {
   },
   mounted() {},
   methods: {
+    btnNSUI:function () {
+      this.navigateTo(this, SideDrawer);
+    },
     btnMasterPage:function () {
       this.navigateTo(this, MasterPage);
     },

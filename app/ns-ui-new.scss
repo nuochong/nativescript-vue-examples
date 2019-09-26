@@ -1,0 +1,86 @@
+// Global SCSS styling
+// @see https://docs.nativescript.org/ui/styling
+// @import '~nativescript-theme-core/scss/dark';
+//@import '~nativescript-theme-core/css/core.dark.css';
+//@import '~nativescript-theme-core/scss/light';
+
+// Override variables here
+$secondary: #787e85;
+$red: #df2c45;
+$green: #53ba82;
+$grey: #eeeeee;
+$disabled: #787e85;
+//$headings-color: $primary;
+
+//@import '~nativescript-theme-core/scss/index';
+
+// Global SCSS styling
+// @see https://docs.nativescript.org/ui/styling
+
+.page {
+  align-items: center;
+  flex-direction: column;
+}
+
+.action-bar {
+  height: 50;
+}
+
+.item {
+  padding: 10;
+  background-color: white;
+  border-color: $grey;
+  border-bottom-width: 1;
+  border-bottom-style: solid;
+}
+
+.big {
+  font-size: 20;
+}
+
+.thumbnail {
+  margin-right: 10;
+}
+
+.swipe-item {
+  color: white;
+  padding: 16;
+}
+
+.swipe-item.left {
+  background-color: #240774;
+}
+
+.swipe-item.right {
+  background-color: #79000a;
+}
+
+.drawer {
+  padding: 10;
+  background-color: #333366;
+}
+
+.sideLogo {
+  margin-bottom: 10;
+}
+
+.sideLabel {
+  padding: 10;
+}
+
+.sideLightGrayLabel {
+  background-color: $grey;
+}
+
+/*autocomplete*/
+.item {
+  text-align: left;
+  vertical-align: center;
+  font-size: 16;
+  color:#404040;
+}
+
+.titleLabel {
+  margin: 16;
+  vertical-align: center;
+}

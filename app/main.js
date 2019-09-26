@@ -58,7 +58,7 @@ Vue.use(NSVueLifecycleHooks);
 Vue.use(Pager); //手风琴
 Vue.use(CanvasPlugin);
 
-Vue.registerElement('RadSideDrawer', () => require('nativescript-ui-sidedrawer').RadSideDrawer);
+// Vue.registerElement('RadSideDrawer', () => require('nativescript-ui-sidedrawer').RadSideDrawer);
 // 注册下拉刷新
 Vue.registerElement('PullToRefresh', () => require('@nstudio/nativescript-pulltorefresh').PullToRefresh);
 // 注册扫码
@@ -168,6 +168,22 @@ import { localize } from "nativescript-localize";
 Vue.filter("L", localize);
 
 // 闪屏待完善
+
+// ns-ui
+import RadListView from 'nativescript-ui-listview/vue'
+import RadCalendar from 'nativescript-ui-calendar/vue'
+import RadDataForm from 'nativescript-ui-dataform/vue'
+import RadChart from 'nativescript-ui-chart/vue'
+import RadSideDrawer from 'nativescript-ui-sidedrawer/vue'
+import RadAutoComplete from 'nativescript-ui-autocomplete/vue';
+import RadGauge from 'nativescript-ui-gauge/vue';
+Vue.use(RadListView)
+Vue.use(RadCalendar)
+Vue.use(RadChart)
+Vue.use(RadSideDrawer)
+Vue.use(RadDataForm)
+Vue.use(RadAutoComplete);
+Vue.use(RadGauge);
 
 new Vue({
   Store,

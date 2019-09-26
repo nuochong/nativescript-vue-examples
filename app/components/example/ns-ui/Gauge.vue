@@ -1,0 +1,160 @@
+<template>
+  <!-- <Page>
+    <ActionBar :title="title">
+      <NavigationButton text="Back" android.systemIcon="ic_menu_back" @tap="onNavigationButtonTap"></NavigationButton>
+    </ActionBar> -->
+    <GridLayout rows="*, auto">
+      <RadRadialGauge ref="myGauge" class="gauge" row="0"
+                      @loaded="onLoaded()"
+                      :title="model.title"
+                      :subtitle="model.subtitle">
+        <TitleStyle v-tkRadialGaugeTitleStyle
+                    :textColor="model.titleTextColor"
+                    :textSize="model.titleTextSize"
+                    :verticalOffset="model.titleVerticalOffset"
+                    :horizontalOffset="model.titleHorizontalOffset"></TitleStyle>
+        <SubtitleStyle v-tkRadialGaugeSubtitleStyle
+                       :textColor="model.subtitleTextColor"
+                       :textSize="model.subtitleTextSize"
+                       :verticalOffset="model.subtitleVerticalOffset" [horizontalOffset]="model.subtitleHorizontalOffset"></SubtitleStyle>
+        <RadialScale ref="myScale" v-tkRadialGaugeScales minimum="0" maximum="180" radius="0.9">
+            <ScaleStyle v-tkRadialScaleStyle
+                        :majorTicksCount="model.majorTicksCount"
+                        :minorTicksCount="model.minorTicksCount"
+                        :majorTicksWidth="model.majorTicksWidth"
+                        :minorTicksWidth="model.minorTicksWidth"
+                        :lineThickness="model.lineThickness"
+                        :lineColor="model.lineColor"
+                        :labelsColor="model.labelsColor"
+                        :labelsCount="model.labelsCount"
+                        ios:labelsSize="15" android:labelsSize="60"
+                        :labelsVisible="model.labelsVisible"></ScaleStyle>
+
+            <RadialBarIndicator v-tkRadialScaleIndicators minimum="0"
+                                :maximum="model.firstPoint" location="0.97">
+                <BarIndicatorStyle v-tkRadialBarIndicatorStyle
+                                   :fillColor="model.firstColor"></BarIndicatorStyle>
+            </RadialBarIndicator>
+
+            <RadialBarIndicator v-tkRadialScaleIndicators
+                                :minimum="model.firstPoint"
+                                :maximum="model.secondPoint"
+                                location="0.97">
+                <BarIndicatorStyle v-tkRadialBarIndicatorStyle
+                                   :fillColor="model.secondColor"></BarIndicatorStyle>
+            </RadialBarIndicator>
+
+            <RadialBarIndicator v-tkRadialScaleIndicators
+                                :minimum="model.secondPoint"
+                                maximum="180" location="0.97">
+                <BarIndicatorStyle v-tkRadialBarIndicatorStyle
+                                   fillColor="#A7010E"
+                                   :barWidth="model.barWidth"></BarIndicatorStyle>
+            </RadialBarIndicator>
+
+            <RadialNeedle v-tkRadialScaleIndicators
+                          :value="model.needleValue">
+                <NeedleStyle v-tkRadialNeedleStyle
+                             :length="model.needleLength"
+                             :circleRadius="model.circleRadius"
+                             :circleFillColor="model.fillColor"
+                             :circleStrokeColor="model.strokeColor"
+                             :circleStrokeWidth="model.strokeWidth"
+                             :fillColor="model.fillColor"
+                             :strokeColor="model.strokeColor"
+                             :strokeWidth="model.strokeWidth"
+                             :topWidth="model.topWidth"
+                             :bottomWidth="model.bottomWidth"></NeedleStyle>
+            </RadialNeedle>
+        </RadialScale>
+      </RadRadialGauge>
+      <StackLayout row="1" orientation="horizontal" horizontalAlignment="center">
+          <Button text="Update Binding" verticalAlignment="center"
+                  marginBottom="10" marginTop="0"
+                  @tap="onUpdateModel()" ></Button>
+          <Button text="Update Properties"
+                  verticalAlignment="center" marginLeft="10" marginBottom="10"
+                  @tap="onUpdateProperties()"></Button>
+          <Button text="Reset"
+                  verticalAlignment="center" marginLeft="10" marginBottom="10"
+                  @tap="onReset()"></Button>
+      </StackLayout>
+    </GridLayout>
+  <!-- </Page> -->
+</template>
+
+<script>
+import * as frameModule from 'tns-core-modules/ui/frame';
+// >> gauge-style-vue
+import {
+  TitleStyle,
+  SubtitleStyle,
+  RadRadialGauge,
+  RadialScale,
+  BarIndicator,
+  RadialNeedle } from 'nativescript-ui-gauge';
+import { style } from './data-gauge';
+import { Color } from 'tns-core-modules/color';
+const description = 'Styles';
+export default {
+  name: 'chart-view',
+  data() {
+    let model = new style();
+
+    return {
+      title: description,
+      model: model,
+    };
+  },
+    methods: {
+    onNavigationButtonTap() {
+      frameModule.topmost().goBack();
+    },
+    onLoaded() {
+      let gauge = this.$refs.myGauge.nativeView;
+      this._titleStyle = gauge.titleStyle;
+      this._subtitleStyle = gauge.subtitleStyle;
+      let scale = gauge.scales.getItem(0);
+      this._scaleStyle = scale.scaleStyle;
+      this._firstIndicatorStyle = (scale.indicators.getItem(0)).indicatorStyle;
+      this._secondIndicatorStyle = (scale.indicators.getItem(1)).indicatorStyle;
+      this._needle = scale.indicators.getItem(scale.indicators.length - 1);
+      this._needleStyle = this._needle.needleStyle;
+    },
+    onUpdateProperties() {
+      this._needle.value = 136;
+      this._titleStyle.textColor = new Color("DarkRed");
+      this._subtitleStyle.textColor = new Color("Red");
+      this._needleStyle.fillColor = new Color("Red");
+      this._needleStyle.circleFillColor = new Color("Red");
+      this._needleStyle.strokeColor = new Color("DarkGray");
+      this._needleStyle.circleStrokeColor = new Color("DarkGray");
+      this._firstIndicatorStyle.fillColor = new Color("LightGray");
+      this._secondIndicatorStyle.fillColor = new Color("Black");
+      this._scaleStyle.lineColor = new Color("SlateGray");
+      this._scaleStyle.labelsColor = new Color("DarkRed");
+    },
+    onUpdateModel() {
+      this.model.onUpdate();
+      this._needle.value = 136;
+    },
+    onReset() {
+      this.model.onReset();
+      this._needle.value = this.model.needleValue;
+      this._titleStyle.textColor = this.model.titleTextColor;
+      this._subtitleStyle.textColor = this.model.subtitleTextColor;
+      this._needleStyle.fillColor = this.model.fillColor;
+      this._needleStyle.circleFillColor = this.model.fillColor;
+      this._needleStyle.strokeColor = this.model.strokeColor;
+      this._needleStyle.circleStrokeColor = this.model.strokeColor;
+      this._firstIndicatorStyle.fillColor = this.model.firstColor;
+      this._secondIndicatorStyle.fillColor = this.model.secondColor;
+      this._scaleStyle.lineColor = this.model.lineColor;
+      this._scaleStyle.labelsColor = this.model.labelsColor;
+    },
+  },
+}
+</script>
+
+<style scoped>
+</style>
