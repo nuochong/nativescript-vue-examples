@@ -58,7 +58,7 @@ export default {
     },
 
     onEnhancedSliderValueChanged(e) {
-      // give feedback every increment
+      // 每一次增量都要反馈
       const currentValue = Math.round(e.object.value);
       this.enhancedSliderValue = currentValue;
       if (currentValue !== lastSliderValueFeedback) {

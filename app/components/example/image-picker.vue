@@ -27,9 +27,9 @@ export default {
       if (this.$application.android) {
         let openTelegramImagePicker = require('nativescript-telegram-image-picker').openTelegramImagePicker;
         //import { openTelegramImagePicker, TelegramPickerResponse } from 'nativescript-telegram-image-picker';
-        // Open the Telegram Gallery Image Picker Activity
+        // 打开Telegram Gallery图片采集活动
         openTelegramImagePicker(5).then(resp => {
-          // looping over the selected pictures in the response
+          // 在响应中循环选择的图片
           for (let i = 0; i < resp.photos.length; i++) {
             console.log(resp.photos[i]);
           }

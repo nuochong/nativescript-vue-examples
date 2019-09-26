@@ -4,11 +4,11 @@
 
     <TabView height="100%">
       <TabViewItem title="要做" class="tabview">
-        <!-- Positions an input field, a button, and the list of tasks in a vertical stack. -->
+        <!-- 将输入字段、按钮和任务列表放置在垂直堆栈中。 -->
         <StackLayout orientation="vertical" width="100%" height="100%">
           <GridLayout columns="2*,*" rows="*" width="100%" height="25%">
             <TextField class="text-field-white" col="0" row="0" v-model="textFieldValue" hint="添加新任务..." editable="true" @returnPress="onButtonTap" />
-            <!-- Configures the text field and ensures that pressing Return on the keyboard produces the same result as tapping the button. -->
+            <!-- 配置文本字段，并确保按下键盘上的Return与按下按钮产生相同的结果。 -->
             <Button class="btn btn-primary" col="1" row="0" text="添加任务" @tap="onButtonTap" />
           </GridLayout>
 

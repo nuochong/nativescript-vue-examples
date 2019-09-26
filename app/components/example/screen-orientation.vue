@@ -27,7 +27,7 @@ export default {
   methods: {
     pageLoaded() {
       orientationModule.setCurrentOrientation('landscape', function() {
-        console.log('landscape orientation set');
+        console.log('横向设置');
       });
     },
     onNavigatingFrom() {

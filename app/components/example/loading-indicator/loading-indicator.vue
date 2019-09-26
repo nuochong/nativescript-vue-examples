@@ -20,22 +20,22 @@ const options = {
   progress: 0.65,
   margin: 10,
   dimBackground: true,
-  color: '#4B9ED6', // color of indicator and labels
-  // background box around indicator
-  // hideBezel will override this if true
+  color: '#4B9ED6', // 指示灯和标签的颜色
+  // 指示器周围的背景框
+  // 如果为true，hideBezel将覆盖此设置
   backgroundColor: 'yellow',
-  userInteractionEnabled: false, // default true. Set false so that the touches will fall through it.
-  hideBezel: true // default false, can hide the surrounding bezel
-  // mode: Mode.AnnularDeterminate // see options below
+  userInteractionEnabled: false, // 默认为true。 设置为false，以便触摸效果。
+  hideBezel: true // 默认为false，可以隐藏周围的挡板
+  // mode: Mode.AnnularDeterminate // 请参阅下面的选项
   // android: {
-  //   view: someStackLayout.android, // Target view to show on top of (Defaults to entire window)
+  //   view: someStackLayout.android, // 目标视图显示在（默认为整个窗口）顶部
   //   cancelable: true,
   //   cancelListener: function(dialog) {
   //     console.log('Loading cancelled');
   //   }
   // },
   // ios: {
-  //   view: someButton.ios, // Target view to show on top of (Defaults to entire window)
+  //   view: someButton.ios, // 目标视图显示在（默认为整个窗口）顶部
   //   square: false
   // }
 };

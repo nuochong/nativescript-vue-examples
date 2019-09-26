@@ -29,7 +29,7 @@ export default {
     },
     btnSmsReceiver() {
       // SmsReceiver.getInstance();
-      // register Sms Listener to get SMS callbacks
+      // 注册Sms侦听器以获取SMS回调
       SmsReceiver.getInstance().registerListeners(
         function() {
           // onSMSReceiverStarted
@@ -43,9 +43,9 @@ export default {
           console.log('接收到短信：', message);
           // onSMSReceived
           console.log('onSMSReceived');
-          // handle sms here
-          console.log('handle sms here');
-          // deregister Sms Listener to avoid invalid operations
+          // 在这里处理短信
+          console.log('在这里处理短信');
+          // 注销Sms侦听器以避免无效操作
           SmsReceiver.getInstance().deregisterListeners();
         }.bind(this),
         function() {
@@ -53,8 +53,7 @@ export default {
           console.log('onSMSReceiverTimeOut');
         }.bind(this)
       );
-
-      // start sms receiver for single message
+      // 为单个消息启动短信接收器
       SmsReceiver.getInstance().startReceiver();
     }
   }

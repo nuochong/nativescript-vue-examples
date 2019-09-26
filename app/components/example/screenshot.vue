@@ -29,7 +29,6 @@ export default {
   mounted() {},
   methods: {
     stackLoaded: function(args) {
-      //stackLayout = args.object;
       stackLayout = this.$refs.stack.nativeView;
     },
     buttonTap: function(args) {

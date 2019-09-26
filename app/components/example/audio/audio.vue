@@ -116,17 +116,17 @@ export default {
   mounted() {
     console.log('fdfdfdfdfd', this._slider);
     this._player = new TNSPlayer();
-    this._player.debug = true; // set true for tns_player logs
+    this._player.debug = true; // 将tns_player日志设置为true
 
     this._recorder = new TNSRecorder();
-    this._recorder.debug = true; // set true for tns_recorder logs
+    this._recorder.debug = true; // 将tns_recorder日志设置为true
 
     this.currentVolume = 1;
     this._slider = this.$refs.volumeSlider.nativeView;
     //this._slider = topmost().currentPage.getViewById('volumeSlider');
     //this._slider = page.getViewById('volumeSlider') as Slider;
 
-    // Set player volume
+    // 设定播放器音量
     if (this._slider) {
       this._slider.on('valueChange', data => {
         console.log('监控音量1', this._slider.value);
@@ -174,7 +174,7 @@ export default {
         let androidEncoder;
         if (isAndroid) {
           // m4a
-          // static constants, using raw values here
+          // 静态常量，在此处使用原始值
           // androidFormat = android.media.MediaRecorder.OutputFormat.MPEG_4;
           androidFormat = 2;
           // androidEncoder = android.media.MediaRecorder.AudioEncoder.AAC;
@@ -248,7 +248,7 @@ export default {
     getFile() {
       try {
         const audioFolder = knownFolders.currentApp().getFolder('audio');
-        // get the last recorded audio file
+        // 获取最后录制的音频文件
         const recordedFile = audioFolder.getFile(this._lastRecordedAudioFile);
 
         console.log(JSON.stringify(recordedFile));
@@ -299,7 +299,7 @@ export default {
       this.isPlaying = true;
     },
 
-    /***** AUDIO PLAYER *****/
+    /***** 音频播放器*****/
 
     async playAudio(filepath, fileType) {
       try {
@@ -351,7 +351,7 @@ export default {
     },
 
     /**
-     * PLAY REMOTE AUDIO FILE
+     * 播放远程音频文件
      */
     playRemoteFile() {
       console.log('playRemoteFile');
@@ -366,7 +366,7 @@ export default {
     },
 
     /**
-     * PLAY LOCAL AUDIO FILE from app folder
+     * 从应用程序文件夹播放本地音频文件
      */
     playLocalFile() {
       const filepath = '~/assets/audio/angel.mp3';
@@ -374,7 +374,7 @@ export default {
     },
 
     /**
-     * PAUSE PLAYING
+     * 暂停播放
      */
     async pauseAudio() {
       try {
@@ -392,7 +392,7 @@ export default {
     },
 
     /**
-     * RESUME PLAYING
+     * 恢复播放
      */
     resumePlaying() {
       console.log('开始');
@@ -451,7 +451,7 @@ export default {
     },
 
     /**
-     * Create date time stamp similar to Java Date()
+     * 创建类似于Java Date（）的日期时间戳
      */
     _createDateTimeStamp() {
       let result = '';

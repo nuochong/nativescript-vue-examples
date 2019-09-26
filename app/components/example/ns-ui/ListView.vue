@@ -26,10 +26,9 @@ export default {
     },
     onPulling(listview) {
       this.itemsPulled++;
-
-      // in order to avoid race conditions (only on iOS),
-      // in which the UI may not be completely updated here
-      // we use this.$nextTick call
+      //为了避免出现竞争情况（仅在iOS上），
+      //此处的UI可能未完全更新
+      //我们使用 this.$nextTick 调用
       this.$nextTick(() => {
         this.itemList.unshift({
           name: `Item ${this.itemsPulled} pulled`,

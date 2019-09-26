@@ -65,7 +65,7 @@ export default {
       let fabItemPosition = this.$refs.fabItemPosition.nativeView;
       let rootLayout = this.$refs.rootLayout.nativeView;
 
-      // Needed to avoid masking child components on Android
+      // 需要避免在Android上屏蔽子组件
       if (this.$application.android && this.$platform.device.sdkVersion >= '21') {
         fabItemContainer.android.setClipChildren(false);
         fabItemPosition.android.setClipChildren(false);

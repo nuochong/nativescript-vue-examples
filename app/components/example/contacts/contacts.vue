@@ -47,7 +47,7 @@ export default {
       newContact.phoneNumbers.push({
         label: contacts.KnownLabel.HOME,
         value: '123457890'
-      }); // See below for known labels
+      }); // 参见下面的已知标签
       newContact.phoneNumbers.push({ label: 'My Custom Label', value: '11235813' });
       newContact.photo = imageSource.fromFileOrResource('~/assets/images/NativeScript-Vue.png');
       newContact.save();

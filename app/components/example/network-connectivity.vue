@@ -33,28 +33,28 @@ export default {
       const connectionType = connectivity.getConnectionType();
       switch (connectionType) {
         case connectivity.connectionType.none:
-          alert('No network connection available!');
+          alert('没有可用的网络连接！');
           break;
         case connectivity.connectionType.wifi:
-          alert('You are on wifi!');
+          alert('您正在使用wifi！');
           break;
         case connectivity.connectionType.mobile:
-          alert('You are on a mobile data network!');
+          alert('您正在使用移动数据网络！');
           break;
       }
     },
     monitorNetworkStart() {
-      this.networkStatus = 'Monitoring network connection changes.';
+      this.networkStatus = '监视网络连接更改。';
       connectivity.startMonitoring(newConnectionType => {
         switch (newConnectionType) {
           case connectivity.connectionType.none:
-            this.networkStatus = 'No network connection available!';
+            this.networkStatus = '没有可用的网络连接！';
             break;
           case connectivity.connectionType.wifi:
-            this.networkStatus = 'You are now on wifi!';
+            this.networkStatus = '您现在正在使用wifi！';
             break;
           case connectivity.connectionType.mobile:
-            this.networkStatus = 'You are now on a mobile data network!';
+            this.networkStatus = '您现在在移动数据网络上！';
             break;
         }
       });

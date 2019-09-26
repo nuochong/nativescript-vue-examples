@@ -1,11 +1,10 @@
 <template>
   <Page class="page">
     <ActionBarSecond :title="title" />
-    <!-- The [columns] bit here makes this app a two-column layout on tablets, and a one-column layout on phones -->
+    <!-- 这里的[列]位使该应用程序在平板电脑上是两列布局，在手机上是一列布局 -->
     <GridLayout :columns="isTablet ? '*, 2*' : '*'">
       <GridLayout col="0" class="left-column">
-        <!-- The ListView shows on both tablets and phones. On tablets the list occupies the left-hand side
-	          of the screen, and one phones the ListView takes up the whole screen. -->
+        <!-- 列表视图同时显示在平板电脑和手机上。在平板电脑上，列表占据屏幕的左侧，一个手机的列表视图占据整个屏幕。 -->
         <ListView class="list-group" for="item in pokemon" @itemTap="select">
           <v-template>
             <GridLayout class="list-group-item" rows="*" columns="auto, *">
@@ -15,11 +14,7 @@
           </v-template>
         </ListView>
       </GridLayout>
-      <!-- The markup below is duplicated in the DetailPage. You might want to abstract this bit
-	        of code into a shared component, or you may wish to keep the implementations separate so you have the
-	        ability to customize the markup based on whether the user is on a phone or tablet. The markup below
-	        is the UI that tablet users see, and the markup in DetailPage below is the markup that
-	        phone users see. -->
+      <!-- 下面的标记在DetailPage中复制。您可能希望将这段代码抽象为一个共享组件，或者您可能希望将实现保持独立，以便能够根据用户是在手机上还是在平板电脑上定制标记。下面的标记是平板电脑用户看到的UI，下面的DetailPage中的标记是手机用户看到的标记。-->
       <StackLayout col="1" class="p-20" v-if="isTablet">
         <Label class="h1 m-b-10" :text="selected.name"></Label>
         <Image height="200" :src="selected.src" class="thumb img-circle"></Image>
@@ -50,12 +45,11 @@ export default {
   },
   methods: {
     select: function(event) {
-      // Update the selected instance variable for tablet users
+      // 为平板电脑用户更新选定的实例变量
       const selected = pokemon[event.index];
       if (isTablet) {
         this.selected = selected;
       } else {
-        // And navigate phone users.
         this.$navigateTo(DetailPage, {
           props: { selected: selected }
         });

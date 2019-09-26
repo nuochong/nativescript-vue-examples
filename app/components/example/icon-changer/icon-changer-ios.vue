@@ -93,7 +93,7 @@ export default {
       this.appIconChanger
         .changeIcon({
           iconName: name,
-          suppressUserNotification: !this.showFeedback // default true
+          suppressUserNotification: !this.showFeedback // 默认为 true
         })
         .then(
           () => {

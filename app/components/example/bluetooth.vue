@@ -39,7 +39,7 @@ export default {
     },
     btnPermission: function() {
       bluetooth.hasCoarseLocationPermission().then(function(granted) {
-        // if this is 'false' you probably want to call 'requestCoarseLocationPermission' now
+        // 如果这是“false”，您现在可能想调用“requestselocationpermission”
         console.log('是否拥有本地权限? ' + granted);
       });
     },

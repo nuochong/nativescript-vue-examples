@@ -30,7 +30,7 @@ export default {
         fullscreen: false,
         animated: true,
         stretched: false,
-        dimAmount: 0.5 // Sets the alpha of the background dim,
+        dimAmount: 0.5 // 设置背景的alpha值为dim，
       });
     }
   }

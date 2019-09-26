@@ -41,7 +41,7 @@ export default {
       const listener = new AndroidSensorListener({
         onSensorChanged: result => {
           console.log('SensorChangedEvent', result);
-          // result is being returned as a string currently
+          // 当前以字符串形式返回结果
           const parsedData = JSON.parse(result);
           const rawSensorData = parsedData.data;
           this.sensorData = rawSensorData.x;
@@ -56,14 +56,14 @@ export default {
       this.androidSensors.setListener(listener);
     },
     startLinearAcceleration() {
-      // starting the acceleration sensor
+      // 启动加速度传感器
       const acceleration = this.androidSensors.startSensor(android.hardware.Sensor.TYPE_LINEAR_ACCELERATION, SensorDelay.NORMAL, 8000000);
-      // checking if it supports FIFO
+      // 检查它是否支持FIFO
       const x = acceleration.getFifoMaxEventCount();
       this.sensorMaxFifoEventCount = `Max Fifo Event Count: ${x}`;
 
-      // after 8 seconds we are stopping the acceleration sensor
-      //定时20秒自动关闭
+      // 8秒后，我们将停止加速度传感器
+      // 定时20秒自动关闭
       setTimeout(() => {
         this.androidSensors.stopSensor(acceleration);
         this.sensorData = 'Sensor has stopped!';

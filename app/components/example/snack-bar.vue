@@ -31,19 +31,19 @@ export default {
         this.set('jsonResult', JSON.stringify(args));
       });
     },
-    /// Show an Action snack bars
+    // 展示一个底部提示操作
     btnSnackBar2: function() {
       let someView = this.$refs.page.nativeView;
       const options = {
         actionText: 'actionText',
-        actionTextColor: '#ff4081', // Optional, Android only
+        actionTextColor: '#ff4081', // 可选，仅限Android
         snackText: 'snackText',
-        textColor: '#346db2', // Optional, Android only
+        textColor: '#346db2', // 可选，仅限Android
         hideDelay: 3500,
-        backgroundColor: '#eaeaea', // Optional, Android only
-        maxLines: 3, // Optional, Android Only
-        isRTL: false, // Optional, Android Only
-        view: someView // Optional, Android Only, default to topmost().currentPage
+        backgroundColor: '#eaeaea', // 可选，仅限Android
+        maxLines: 3, // 可选，仅限Android
+        isRTL: false, // 可选，仅限Android
+        view: someView // 可选，仅限Android, 默认为topmost（）。currentPage
       };
       const snackbarss = new SnackBar();
       snackbarss.action(options).then(args => {

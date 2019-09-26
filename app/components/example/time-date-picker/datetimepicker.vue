@@ -298,10 +298,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
-// Start custom common variables
+// 启动自定义公共变量
 @import '../../../assets/css/app-variables';
-// End custom common variables
-// Custom styles
+// 结束自定义公共变量
+// 自定义风格
 .content {
   font-size: 16;
   font-weight: bold;

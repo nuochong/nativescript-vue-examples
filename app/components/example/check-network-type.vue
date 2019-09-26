@@ -33,23 +33,23 @@ export default {
       const myConnectionType = connectivityModule.getConnectionType();
       switch (myConnectionType) {
         case connectivityModule.connectionType.none:
-          // Denotes no Internet connection.
+          // 表示没有Internet连接。
           this.content = 'No connection';
           break;
         case connectivityModule.connectionType.wifi:
-          // Denotes a WiFi connection.
+          // 表示WiFi连接。
           this.content = 'WiFi connection';
           break;
         case connectivityModule.connectionType.mobile:
-          // Denotes a mobile connection, i.e. cellular network or WAN.
+          // 表示移动连接，即蜂窝网络或WAN。
           this.content = 'Mobile connection';
           break;
         case connectivityModule.connectionType.ethernet:
-          // Denotes a ethernet connection.
+          // 表示以太网连接。
           this.content = 'Ethernet connection';
           break;
         case connectivityModule.connectionType.bluetooth:
-          // Denotes a bluetooth connection.
+          // 表示蓝牙连接。
           this.content = 'Bluetooth connection';
           break;
         default:

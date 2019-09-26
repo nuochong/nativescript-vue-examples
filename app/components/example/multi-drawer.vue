@@ -60,7 +60,6 @@ export default {
   data() {
     return {
       title: '',
-      // handled by the watcher
       optionsInternal: {},
       sides: {
         left: {
@@ -122,12 +121,12 @@ export default {
   },
   methods: {
     noop() {
-      // helper for catching events that we don't want to pass through.
+      // 捕获我们不想传递的事件的助手。
     },
     async open(side = null) {
       if (!side) {
         if (!this.computedSidesEnabled.length) {
-          throw new Error('No sides are enabled, at least one side must be enabled to open the drawer');
+          throw new Error('未启用任何边，至少必须启用一侧才能打开抽屉。');
         }
         side = this.computedSidesEnabled[0];
       }

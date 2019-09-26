@@ -159,8 +159,7 @@ export default {
   },
   methods: {
     init() {
-      // laughable code, I know, but it's just a quick demos
-
+      // 我知道这代码很可笑，但这只是一个简单的演示
       setTimeout(() => {
         const textView = topmost().currentPage.getViewById('tv3');
         if (!textView) {
@@ -280,7 +279,7 @@ export default {
       if (textView.height < 130) {
         textView.height += 10;
       } else {
-        console.log('Text already expanded to the maximum we allow ;)');
+        console.log('文字已扩展到我们允许的最大数量 ;)');
       }
     },
 
@@ -289,7 +288,7 @@ export default {
       if (textView.height > 30) {
         textView.height -= 10;
       } else {
-        console.log('Text already contracted to the minimum we allow ;)');
+        console.log('文字已压缩到我们允许的最小数量;)');
       }
     },
 
@@ -326,10 +325,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
-// Start custom common variables
+// 启动自定义公共变量
 @import '../../assets/css/app-variables';
-// End custom common variables
-// Custom styles
+// 结束自定义公共变量
+// 自定义风格
 .fa {
   color: $accent-dark;
 }

@@ -30,7 +30,6 @@
 <script>
 import * as frameModule from 'tns-core-modules/ui/frame';
 import { ObservableArray } from 'tns-core-modules/data/observable-array';
-// >> autocomplete-events-vue
 import { RadAutoCompleteTextView } from 'nativescript-ui-autocomplete';
 import { getCountriesCount, getCountry } from './data-auto-complete';
 

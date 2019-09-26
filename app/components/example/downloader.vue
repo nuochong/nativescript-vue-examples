@@ -40,8 +40,8 @@
 import { Observable } from 'tns-core-modules/data/observable';
 import { Downloader, ProgressEventData, DownloadEventData, DownloadEventError } from 'nativescript-downloader';
 import * as fs from 'tns-core-modules/file-system';
-Downloader.init(); // <= Try calling this after the app launches to start the downloader service
-//Downloader.setTimeout(120); //Increase timeout default 60s
+Downloader.init(); // <= 尝试在应用程序启动后调用这个函数来启动下载器服务
+//Downloader.setTimeout(120); //增加超时默认时间60秒
 import ActionBarSecond from './public/action-bar-second';
 
 export default {
@@ -71,12 +71,12 @@ export default {
         url:
           'https://images.unsplash.com/photo-1530559423894-148fad85faf7?ixlib=rb-0.3.5&q=100&fm=jpg&crop=entropy&cs=srgb&dl=daria-kopylova-723534-unsplash.jpg&s=46720eb1ac5a8e23d6ee46e73b64246e'
       });
-      console.log(`Image Id :${this.imageDownloaderId} `);
+      console.log(`图片 Id :${this.imageDownloaderId} `);
 
       this.fileDownloaderId = this.downloadManager.createDownload({
         url: 'http://ipv4.download.thinkbroadband.com/50MB.zip'
       });
-      console.log(`File Id :${this.fileDownloaderId} `);
+      console.log(`文件 Id :${this.fileDownloaderId} `);
     },
 
     generateAndStart() {
@@ -92,7 +92,7 @@ export default {
           this.fileSpeed = progressData.speed;
         })
         .then(completed => {
-          console.log(`File : ${completed.path}`);
+          console.log(`文件 : ${completed.path}`);
         })
         .catch(error => {
           console.log(error.message);

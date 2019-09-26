@@ -56,9 +56,9 @@ export default {
     },
     checkPlatformType: function(args) {
       if (this.$platform.isAndroid) {
-        this.content = 'You are using Android device';
+        this.content = '您正在使用Android设备';
       } else if (this.$platform.isIOS) {
-        this.content = 'You are using IOS device';
+        this.content = '您使用的是IOS设备';
       }
       console.log(this.content);
     }

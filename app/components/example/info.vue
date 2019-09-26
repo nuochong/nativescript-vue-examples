@@ -35,16 +35,16 @@ export default {
           ticker: 'The ticker',
           color: 'red',
           badge: 1,
-          groupedMessages: ['The first', 'Second', 'Keep going', 'one more..', 'OK Stop'], //android only
-          groupSummary: 'Summary of the grouped messages above', //android only
-          ongoing: true, // makes the notification ongoing (Android only)
+          groupedMessages: ['The first', 'Second', 'Keep going', 'one more..', 'OK Stop'], //仅限android
+          groupSummary: 'Summary of the grouped messages above', //仅限android
+          ongoing: true, // 使通知继续进行 (仅限android)
           icon: 'res://heart',
           image: 'https://cdn-images-1.medium.com/max/1200/1*c3cQvYJrVezv_Az0CoDcbA.jpeg',
           thumbnail: true,
           interval: 'minute',
-          channel: 'My Channel', // default: 'Channel'
-          sound: 'customsound-ios.wav', // falls back to the default sound on Android
-          at: new Date(new Date().getTime() + 10 * 1000) // 10 seconds from now
+          channel: 'My Channel', // 默认值: 'Channel'
+          sound: 'customsound-ios.wav', // 返回到Android上的默认声音
+          at: new Date(new Date().getTime() + 10 * 1000) // 从现在起10秒后
         }
       ]).then(
         function() {
@@ -78,9 +78,9 @@ export default {
     infoClose: function() {
       LocalNotifications.cancel(this.localNotificationsId).then(function(foundAndCanceled) {
         if (foundAndCanceled) {
-          console.log("OK, it's gone!");
+          console.log('好吧,它是不见了!');
         } else {
-          console.log('No ID 5 was scheduled');
+          console.log('没有 ID 5 的计划');
         }
       });
     }

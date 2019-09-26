@@ -1,4 +1,3 @@
-// >> autocomplete-gettingstarted-data-vue
 import { TokenModel } from 'nativescript-ui-autocomplete';
 
 export const countries = [
@@ -53,4 +52,3 @@ export const getCountryWithImage = i => {
 export const getCountriesCount = () => {
   return countries.length;
 };
-// << autocomplete-gettingstarted-data-vue

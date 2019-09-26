@@ -37,7 +37,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-/* Common */
+/* 通用 */
 .fa {
   font-family: 'FontAwesome';
 }
@@ -73,7 +73,7 @@ export default {
   margin-top: 21;
   height: 1;
 }
-/* Login */
+/* 登录 */
 .page-login-container {
   background-color: #3c59fd;
   android-status-bar-background: #3c59fd;
@@ -108,7 +108,7 @@ export default {
     color: #000000;
   }
 }
-/*  Welcome */
+/*  欢迎 */
 .title {
   color: #3c59fd;
   margin-top: 20;

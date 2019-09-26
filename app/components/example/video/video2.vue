@@ -65,9 +65,9 @@ export default {
   mounted() {
     this.completed = false;
     this._videoPlayer = this.$refs.nativeVideoPlayer.nativeView;
-    //this._videoPlayer = topmost().currentPage.getViewById('nativeVideoPlayer');
+    // this._videoPlayer = topmost().currentPage.getViewById('nativeVideoPlayer');
     this._videoPlayer.debug = true;
-    // event listener setup for Video
+    // 视频事件监听器设置
     this._videoPlayer.on(Video.finishedEvent, args => {
       console.log('Video.finishedEvent executed');
     });
@@ -104,28 +104,28 @@ export default {
   },
   methods: {
     /**
-     * Video Finished callback
+     * 视频完成回调
      */
     videoFinished(args) {
       this.completed = true;
     },
 
     /**
-     * Pause the video
+     * 暂停视频
      */
     pauseVideo() {
       this._videoPlayer.pause();
     },
 
     /**
-     * Play the video
+     * 播放视频
      */
     playVideo() {
       this._videoPlayer.play();
       this.completed = false;
     },
     /**
-     * Stop the video player
+     * 停止视频播放器
      */
     stopVideo() {
       if (isAndroid) {
@@ -134,7 +134,7 @@ export default {
     },
 
     /**
-     * Get the video duration
+     * 获取视频时长
      */
     getVideoDuration() {
       let videoDuration = this._videoPlayer.getDuration();
@@ -143,7 +143,7 @@ export default {
     },
 
     /**
-     * Go to 30 seconds
+     * 转到30秒
      */
     goToTime() {
       try {
@@ -173,7 +173,7 @@ export default {
     },
 
     /**
-     * Get the video current time
+     * 获取视频当前时间
      */
     getVideoCurrentTime() {
       try {
@@ -185,7 +185,7 @@ export default {
     },
 
     /**
-     * Change the video src property
+     * 更改video src属性
      */
     changeVideoSource() {
       if (this.videoSrc === '~/assets/videos/small.mp4') {

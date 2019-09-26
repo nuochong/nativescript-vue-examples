@@ -17,7 +17,7 @@
           <Label text="我在右边的抽屉里" />
           <ListView for="item in listOfItems">
             <v-template>
-              <!-- Shows the list item label in the default color and style. -->
+              <!-- 以默认颜色和样式显示列表项标签。 -->
               <Label :text="item.text" />
             </v-template>
           </ListView>

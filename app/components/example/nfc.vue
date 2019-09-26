@@ -26,7 +26,6 @@ export default {
   methods: {
     btnCheckNfc: function() {
       let nfc = new Nfc();
-
       nfc.available().then(function(avail) {
         console.log(avail ? 'Yes' : 'No');
       });

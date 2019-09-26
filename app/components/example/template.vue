@@ -29,7 +29,6 @@ export default {
   methods: {
     btn: function() {
       console.log('点击了按钮');
-
       console.log(this.content);
     }
   }

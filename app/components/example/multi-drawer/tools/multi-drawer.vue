@@ -1,16 +1,16 @@
 <template>
   <GridLayout>
-    <!-- Main Content (default slot) -->
+    <!-- 主要内容（默认位置） -->
     <slot />
 
     <Label v-show="backdropVisible" ref="backDrop" opacity="0" :backgroundColor="optionsInternal.backdropColor" @pan="onBackDropPan" @tap="close()" />
 
     <template v-for="(side,index) in computedSidesEnabled">
-      <!-- Drawer Content -->
+      <!-- 抽屉内容 -->
       <GridLayout @layoutChanged="onDrawerLayoutChange(side)" @tap="noop" @pan="onDrawerPan(side, $event)" :ref="`${side}Drawer`" :style="computedDrawerStyle(side)" :key="index">
         <slot :name="side" />
       </GridLayout>
-      <!-- Open Trigger -->
+      <!-- 打开触发器 -->
       <Label v-show="computedShowSwipeOpenTrigger(side)" v-bind="computedSwipeOpenTriggerProperties(side)" @pan="onOpenTriggerPan(side, $event)" :key="index" />
     </template>
   </GridLayout>
@@ -60,7 +60,7 @@ export default {
   data() {
     return {
       title: '',
-      // handled by the watcher
+      // 由观察者处理
       optionsInternal: {},
       sides: {
         left: {
@@ -122,7 +122,7 @@ export default {
   },
   methods: {
     noop() {
-      // helper for catching events that we don't want to pass through.
+      // 帮助捕获我们不想通过的事件。
     },
     async open(side = null) {
       if (!side) {
@@ -218,7 +218,7 @@ export default {
       let panProgress = 0;
 
       if (args.state === 1) {
-        // down
+        // 下
         this.isPanning = side;
 
         if (!this.sides[side].open) {
@@ -229,7 +229,7 @@ export default {
         this.prevDeltaX = 0;
         this.prevDeltaY = 0;
       } else if (args.state === 2) {
-        // panning
+        // 平移
 
         if (this.optionsInternal[side].axis === 'X') {
           this.constrainX(view, side, view.translateX + (args.deltaX - this.prevDeltaX));
@@ -244,11 +244,11 @@ export default {
 
         this.$refs.backDrop.nativeView.opacity = 1 - panProgress;
       } else if (args.state === 3) {
-        // up
+        // 上
         this.isPanning = false;
 
         if (this.computedOpenSide === side) {
-          // already open
+          // 已经打开
           let distanceFromFullyOpen = 0;
           if (this.optionsInternal[side].axis === 'X') {
             distanceFromFullyOpen = Math.abs(view.translateX);

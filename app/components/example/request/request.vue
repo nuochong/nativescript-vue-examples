@@ -34,14 +34,14 @@ export default {
   methods: {
     onButton: function() {
       let http = new Http({
-        // Configure a base url for all requests
+        // 为所有请求配置基本网址
         baseUrl: 'https://www.easy-mock.com',
 
-        // Example headers, typically this is what we use when interacting with a Laravel Passport API.
+        // 头部示例，通常是我们与Laravel Passport API交互时使用的头部。
         headers: {
           'Content-Type': 'application/json',
           Accept: 'application/json;charset=utf-8',
-          'Accept-Encoding': isAndroid ? 'identity' : 'gzip, deflate, br', // Android requests fail when the server is gzipping responses, this is a work around.
+          'Accept-Encoding': isAndroid ? 'identity' : 'gzip, deflate, br', // 服务器将响应压缩后，Android请求失败，这是一种解决方法。
           'X-Requested-With': 'XMLHttpRequest',
           Authorization: 'Bearer ' + getString('token', '')
         }

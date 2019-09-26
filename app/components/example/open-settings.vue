@@ -21,21 +21,21 @@ export default {
   },
   data() {
     return {
-      title: '打开wifi设置'
+      title: '打开WIFI设置'
     };
   },
   mounted() {},
   methods: {
     btnOpenWifi1: function() {
-      // open general settings
+      // 打开通用设置
       wifiSettings.openGeneralSettingsOnDevice();
     },
     btnOpenWifi2: function() {
-      // open wifi settings
+      // 打开wifi设置
       wifiSettings.openWifiSettingsOnDevice();
     },
     btnOpenWifi3: function() {
-      // open bluetooth settings
+      // 打开蓝牙设置
       wifiSettings.openBluetoothSettingsOnDevice();
     }
   }

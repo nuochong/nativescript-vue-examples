@@ -33,13 +33,13 @@ export default {
     btnImageFilePicker: function() {
       let options = {
         android: {
-          isCaptureMood: false, // if true then camera will open directly.
+          isCaptureMood: false, // 如果为真，则相机将直接打开。
           isNeedCamera: true,
           maxNumberFiles: 10,
           isNeedFolderList: true
         },
         ios: {
-          isCaptureMood: false, // if true then camera will open directly.
+          isCaptureMood: false, // 如果为真，则相机将直接打开。
           maxNumberFiles: 10
         }
       };
@@ -66,19 +66,20 @@ export default {
       let allowedVideoQualities = [];
 
       if (app.ios) {
-        allowedVideoQualities = [AVCaptureSessionPreset1920x1080, AVCaptureSessionPresetHigh]; // get more from here: https://developer.apple.com/documentation/avfoundation/avcapturesessionpreset?language=objc
+        allowedVideoQualities = [AVCaptureSessionPreset1920x1080, AVCaptureSessionPresetHigh];
+        // 从这里获得更多: https://developer.apple.com/documentation/avfoundation/avcapturesessionpreset?language=objc
       }
 
       let options = {
         android: {
-          isCaptureMood: false, // if true then camera will open directly.
+          isCaptureMood: false, // 如果为真，则相机将直接打开。
           isNeedCamera: true,
           maxNumberFiles: 2,
           isNeedFolderList: true,
           maxDuration: 20
         },
         ios: {
-          isCaptureMood: false, // if true then camera will open directly.
+          isCaptureMood: false, // 如果为真，则相机将直接打开。
           videoMaximumDuration: 10,
           allowedVideoQualities: allowedVideoQualities
         }
@@ -105,14 +106,14 @@ export default {
     btnAudioFilePicker: function() {
       let options = {
         android: {
-          isCaptureMood: false, // if true then voice recorder will open directly.
+          isCaptureMood: false, // 如果为真，则录音机将直接打开。
           isNeedRecorder: true,
           maxNumberFiles: 2,
           isNeedFolderList: true,
-          maxSize: 102400 // Maximum size of recorded file in bytes. 5900 = ~ 1 second
+          maxSize: 102400 // 以字节为单位记录的文件的最大大小。5900 = ~ 1秒
         },
         ios: {
-          isCaptureMood: false, // if true then voice recorder will open directly.
+          isCaptureMood: false, // 如果为真，则录音机将直接打开。
           maxNumberFiles: 5,
           audioMaximumDuration: 10
         }
@@ -140,7 +141,7 @@ export default {
       let extensions = [];
 
       if (app.ios) {
-        extensions = [kUTTypePDF, kUTTypeText]; // you can get more types from here: https://developer.apple.com/documentation/mobilecoreservices/uttype
+        extensions = [kUTTypePDF, kUTTypeText]; // 你可以从这里得到更多的类型: https://developer.apple.com/documentation/mobilecoreservices/uttype
       } else {
         extensions = ['txt', 'pdf'];
       }

@@ -30,7 +30,7 @@ export default {
     btnBroadcastReceiver: function() {
       console.log('点击了按钮：');
       if (this.$platform.isAndroid) {
-        // use tns-platform-dclarations to acces native APIs (e.g. ndroid.content.Intent)
+        // 使用tn -platform-dclarations访问本地api(例如android.content.Intent)
         const receiverCallback = (androidContext, intent) => {
           const level = intent.getIntExtra(android.os.BatteryManager.EXTRA_LEVEL, -1);
           const scale = intent.getIntExtra(android.os.BatteryManager.EXTRA_SCALE, -1);

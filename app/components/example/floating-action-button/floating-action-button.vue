@@ -100,7 +100,7 @@ export default {
     pageLoaded(args) {
       //const page = args.object;
       let page = this.$refs.page.nativeView;
-      // Change statusbar color on Lollipop
+      // 更改Lollipop上的状态栏颜色
       if (isAndroid && device.sdkVersion >= '21') {
         const window = app.android.startActivity.getWindow();
         window.setStatusBarColor(new Color('#303F9F').android);
