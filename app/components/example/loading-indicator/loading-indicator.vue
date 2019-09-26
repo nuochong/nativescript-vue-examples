@@ -25,7 +25,7 @@ const options = {
   // hideBezel will override this if true
   backgroundColor: 'yellow',
   userInteractionEnabled: false, // default true. Set false so that the touches will fall through it.
-  hideBezel: true, // default false, can hide the surrounding bezel
+  hideBezel: true // default false, can hide the surrounding bezel
   // mode: Mode.AnnularDeterminate // see options below
   // android: {
   //   view: someStackLayout.android, // Target view to show on top of (Defaults to entire window)

@@ -1,5 +1,7 @@
 // >> autocomplete-gettingstarted-data-vue
-import { TokenModel } from 'nativescript-ui-autocomplete';
+import {
+  TokenModel
+} from 'nativescript-ui-autocomplete';
 
 export const countries = [
   'Australia',

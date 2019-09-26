@@ -1,16 +1,15 @@
-
-import { getRootView } from "tns-core-modules/application"
+import { getRootView } from 'tns-core-modules/application';
 
 export const showDrawer = () => {
-    let drawerNativeView = getRootView();
-    if (drawerNativeView && drawerNativeView.showDrawer) {
-        drawerNativeView.showDrawer();
-    }
-}
+  let drawerNativeView = getRootView();
+  if (drawerNativeView && drawerNativeView.showDrawer) {
+    drawerNativeView.showDrawer();
+  }
+};
 
 export const closeDrawer = () => {
-    let drawerNativeView = getRootView();
-    if (drawerNativeView && drawerNativeView.showDrawer) {
-        drawerNativeView.closeDrawer();
-    }
-}
+  let drawerNativeView = getRootView();
+  if (drawerNativeView && drawerNativeView.showDrawer) {
+    drawerNativeView.closeDrawer();
+  }
+};

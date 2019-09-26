@@ -21,7 +21,7 @@ export default {
   },
   data() {
     return {
-      title: '动态图片',
+      title: '动态图片'
     };
   },
   mounted() {},

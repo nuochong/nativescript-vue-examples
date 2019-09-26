@@ -16,9 +16,12 @@
             <GridLayout rows="*, *, *, *" columns="*, *" class="m-t-20" horizontalAlignment="stretch">
               <Image row="0" col="0" @tap=" changeIconRed " src="~/assets/images/example/icon-changer/icon-red-180.png" horizontalAlignment="center" verticalAlignment="center" />
               <Image row="0" col="1" @tap=" changeIconBlue " src="~/assets/images/example/icon-changer/icon-blue-180.png" horizontalAlignment="center" verticalAlignment="center" />
-              <Image row="1" col="0" @tap=" changeIconGreen " src="~/assets/images/example/icon-changer/icon-green-180.png" horizontalAlignment="center" verticalAlignment="center" />
-              <Image row="1" col="1" @tap=" changeIconPurple " src="~/assets/images/example/icon-changer/icon-purple-180.png" horizontalAlignment="center" verticalAlignment="center" />
-              <Image row="2" col="0" @tap=" changeIconYellow " src="~/assets/images/example/icon-changer/icon-yellow-180.png" horizontalAlignment="center" verticalAlignment="center" />
+              <Image row="1" col="0" @tap=" changeIconGreen " src="~/assets/images/example/icon-changer/icon-green-180.png" horizontalAlignment="center"
+                verticalAlignment="center" />
+              <Image row="1" col="1" @tap=" changeIconPurple " src="~/assets/images/example/icon-changer/icon-purple-180.png" horizontalAlignment="center"
+                verticalAlignment="center" />
+              <Image row="2" col="0" @tap=" changeIconYellow " src="~/assets/images/example/icon-changer/icon-yellow-180.png" horizontalAlignment="center"
+                verticalAlignment="center" />
               <Image row="2" col="1" @tap=" changeIconDefault " src="~/assets/images/example/icon-changer/icon-180.png" horizontalAlignment="center" verticalAlignment="center" />
               <StackLayout row="3" colSpan="2" orientation="horizontal" horizontalAlignment="center" verticalAlignment="center">
                 <Switch :checked=" showFeedback " class="m-r-16" />

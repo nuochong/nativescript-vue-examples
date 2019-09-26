@@ -3,8 +3,8 @@
 'use strict';
 (global).__awaiter =
   (this && this.__awaiter) ||
-  function(thisArg, _arguments, P, generator) {
-    return new (P || (P = Promise))(function(resolve, reject) {
+  function (thisArg, _arguments, P, generator) {
+    return new(P || (P = Promise))(function (resolve, reject) {
       function fulfilled(value) {
         try {
           step(generator.next(value));
@@ -12,6 +12,7 @@
           reject(e);
         }
       }
+
       function rejected(value) {
         try {
           step(generator['throw'](value));
@@ -19,22 +20,23 @@
           reject(e);
         }
       }
+
       function step(result) {
-        result.done
-          ? resolve(result.value)
-          : new P(function(resolve) {
-              resolve(result.value);
-            }).then(fulfilled, rejected);
+        result.done ?
+          resolve(result.value) :
+          new P(function (resolve) {
+            resolve(result.value);
+          }).then(fulfilled, rejected);
       }
       step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
   };
 (global).__generator =
   (this && this.__generator) ||
-  function(thisArg, body) {
+  function (thisArg, body) {
     let _ = {
         label: 0,
-        sent: function() {
+        sent: function () {
           if (t[0] & 1) throw t[1];
           return t[1];
         },
@@ -44,19 +46,25 @@
       f,
       y,
       t;
-    return { next: verb(0), throw: verb(1), return: verb(2) };
+    return {
+      next: verb(0),
+      throw: verb(1),
+      return: verb(2)
+    };
+
     function verb(n) {
-      return function(v) {
+      return function (v) {
         return step([n, v]);
       };
     }
+
     function step(op) {
       if (f) throw new TypeError('Generator is already executing.');
       while (_)
         try {
           if (
             ((f = 1),
-            y &&
+              y &&
               (t = y[op[0] & 2 ? 'return' : op[0] ? 'throw' : 'next']) &&
               !(t = t.call(y, op[1])).done)
           )
@@ -69,7 +77,9 @@
               break;
             case 4:
               _.label++;
-              return { value: op[1], done: false };
+              return {
+                value: op[1], done: false
+              };
             case 5:
               _.label++;
               y = op[1];
@@ -84,7 +94,7 @@
                 !((t = _.trys), (t = t.length > 0 && t[t.length - 1])) &&
                 (op[0] === 6 || op[0] === 2)
               ) {
-                (_ ) = 0;
+                (_) = 0;
                 continue;
               }
               if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) {
@@ -113,6 +123,9 @@
           f = t = 0;
         }
       if (op[0] & 5) throw op[1];
-      return { value: op[0] ? op[1] : void 0, done: true };
+      return {
+        value: op[0] ? op[1] : void 0,
+        done: true
+      };
     }
   };

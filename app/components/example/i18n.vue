@@ -32,10 +32,10 @@
 </template>
 
 <style scoped>
-  Label {
-    border-color: #cccccc;
-    border-width: 1;
-    margin-bottom: 10;
-    padding: 5;
-  }
+label {
+  border-color: #cccccc;
+  border-width: 1;
+  margin-bottom: 10;
+  padding: 5;
+}
 </style>

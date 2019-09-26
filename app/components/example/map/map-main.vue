@@ -28,7 +28,7 @@ export default {
   methods: {
     btnMapbox: function() {
       this.navigateTo(this, Mapbox);
-    },
+    }
   }
 };
 </script>

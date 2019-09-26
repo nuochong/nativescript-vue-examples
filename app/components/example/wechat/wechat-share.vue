@@ -28,11 +28,11 @@ export default {
   data() {
     return {
       title: '微信分享',
-      see:'https://market.nativescript.org/plugins/nativescript-wechat-share-plugin'
+      see: 'https://market.nativescript.org/plugins/nativescript-wechat-share-plugin'
     };
   },
   mounted() {
-    console.log('android正常，如果安装，IOS报错，导致安卓也无法使用')
+    console.log('android正常，如果安装，IOS报错，导致安卓也无法使用');
   },
   methods: {
     btnWechatShareText: function() {

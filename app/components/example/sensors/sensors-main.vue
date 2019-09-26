@@ -23,7 +23,7 @@ export default {
   data() {
     return {
       title: '传感器',
-      about:'https://github.com/Akylas/nativescript-sensors'
+      about: 'https://github.com/Akylas/nativescript-sensors'
     };
   },
   mounted() {},

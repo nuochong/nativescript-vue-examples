@@ -190,7 +190,7 @@ export default {
 
 <style scoped lang="scss">
 .btn-yellow {
-    background-color: #fff000;
-    color: #000;
+  background-color: #fff000;
+  color: #000;
 }
 </style>

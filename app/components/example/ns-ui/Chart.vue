@@ -1,12 +1,9 @@
 <template>
-    <RadCartesianChart height="100%" width="100%">
-      <BarSeries v-tkCartesianSeries
-                 categoryProperty="Country"
-                 valueProperty="Amount"
-                 :items="items" />
-      <CategoricalAxis v-tkCartesianHorizontalAxis />
-      <LinearAxis v-tkCartesianVerticalAxis />
-    </RadCartesianChart>
+  <RadCartesianChart height="100%" width="100%">
+    <BarSeries v-tkCartesianSeries categoryProperty="Country" valueProperty="Amount" :items="items" />
+    <CategoricalAxis v-tkCartesianHorizontalAxis />
+    <LinearAxis v-tkCartesianVerticalAxis />
+  </RadCartesianChart>
 </template>
 
 <script>
@@ -16,10 +13,10 @@ export default {
   name: 'chart-view',
   data() {
     return {
-      items: getCountriesData(),
-    }
-  },
-}
+      items: getCountriesData()
+    };
+  }
+};
 </script>
 
 <style scoped lang="scss">

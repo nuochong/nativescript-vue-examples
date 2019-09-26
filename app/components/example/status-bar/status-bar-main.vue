@@ -31,7 +31,7 @@ export default {
     btnStatusBar: function() {
       this.navigateTo(this, StatusBar);
     },
-    btnStatusBarColor:function(){
+    btnStatusBarColor: function() {
       this.navigateTo(this, StatusBarColor);
     }
   }

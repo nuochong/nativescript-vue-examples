@@ -25,7 +25,7 @@ export default {
   methods: {
     whateverYouLike() {
       if (this.$application.android) {
-        let openTelegramImagePicker = require('nativescript-telegram-image-picker').openTelegramImagePicker
+        let openTelegramImagePicker = require('nativescript-telegram-image-picker').openTelegramImagePicker;
         //import { openTelegramImagePicker, TelegramPickerResponse } from 'nativescript-telegram-image-picker';
         // Open the Telegram Gallery Image Picker Activity
         openTelegramImagePicker(5).then(resp => {
@@ -34,8 +34,8 @@ export default {
             console.log(resp.photos[i]);
           }
         });
-      }else{
-        alert('仅支持安卓')
+      } else {
+        alert('仅支持安卓');
       }
     }
   }

@@ -27,7 +27,7 @@ export default {
   methods: {
     btnAccordion: function() {
       this.navigateTo(this, Accordion);
-    },
+    }
   }
 };
 </script>

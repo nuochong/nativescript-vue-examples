@@ -28,7 +28,7 @@ export default {
   methods: {
     btnCardView: function() {
       this.navigateTo(this, CardView);
-    },
+    }
   }
 };
 </script>

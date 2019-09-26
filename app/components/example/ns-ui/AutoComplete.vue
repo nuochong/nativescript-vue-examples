@@ -1,38 +1,30 @@
 <template>
-    <StackLayout height="100%" ios:backgroundColor="#CDCECE" padding="5">
-      <Label text="Select country"></Label>
-      <RadAutoCompleteTextView ref="autocomplete"
-                               suggestMode="Suggest"
-                               displayMode="Tokens"
-                               :items="dataItems"
-                               @suggestionViewBecameVisible="onSuggestionViewBecameVisible"
-                               @didAutoComplete="onDidAutoComplete"
-                               @textChanged="onTextChanged"
-                               @tokenAdded="onTokenAdded"
-                               @tokenRemoved="onTokenRemoved"
-                               @tokenSelected="onTokenSelected"
-                               @tokenDeselected="onTokenDeselected">
-        <SuggestionView ~suggestionView suggestionViewHeight="300">
-          <StackLayout v-suggestionItemTemplate orientation="vertical" padding="10">
-            <v-template>
-              <StackLayout orientation="vertical">
-                <Label :text="item.text" marginLeft="5" android:marginTop="15"></Label>
-              </StackLayout>
-            </v-template>
-          </StackLayout>
-        </SuggestionView>
-      </RadAutoCompleteTextView>
+  <StackLayout height="100%" ios:backgroundColor="#CDCECE" padding="5">
+    <Label text="Select country"></Label>
+    <RadAutoCompleteTextView ref="autocomplete" suggestMode="Suggest" displayMode="Tokens" :items="dataItems" @suggestionViewBecameVisible="onSuggestionViewBecameVisible"
+      @didAutoComplete="onDidAutoComplete" @textChanged="onTextChanged" @tokenAdded="onTokenAdded" @tokenRemoved="onTokenRemoved" @tokenSelected="onTokenSelected"
+      @tokenDeselected="onTokenDeselected">
+      <SuggestionView ~suggestionView suggestionViewHeight="300">
+        <StackLayout v-suggestionItemTemplate orientation="vertical" padding="10">
+          <v-template>
+            <StackLayout orientation="vertical">
+              <Label :text="item.text" marginLeft="5" android:marginTop="15"></Label>
+            </StackLayout>
+          </v-template>
+        </StackLayout>
+      </SuggestionView>
+    </RadAutoCompleteTextView>
 
-      <StackLayout orientation="vertical" marginTop="5">
-        <Label marginBottom="12" :text="eventsText"></Label>
-        <Label :text="eventName1"></Label>
-        <Label :text="eventName2"></Label>
-        <Label :text="eventName3"></Label>
-        <Label :text="eventName4"></Label>
-        <Label :text="eventName5"></Label>
-      </StackLayout>
-
+    <StackLayout orientation="vertical" marginTop="5">
+      <Label marginBottom="12" :text="eventsText"></Label>
+      <Label :text="eventName1"></Label>
+      <Label :text="eventName2"></Label>
+      <Label :text="eventName3"></Label>
+      <Label :text="eventName4"></Label>
+      <Label :text="eventName5"></Label>
     </StackLayout>
+
+  </StackLayout>
 </template>
 
 <script>
@@ -47,7 +39,7 @@ const description = 'Events';
 export default {
   name: 'Events',
   description: description,
-  data () {
+  data() {
     let dataItems = new ObservableArray();
 
     for (let i = 0; i < getCountriesCount(); i++) {
@@ -62,7 +54,7 @@ export default {
       eventName3: '',
       eventName4: '',
       eventName5: '',
-      currentEventNumber: 0,
+      currentEventNumber: 0
     };
   },
   methods: {
@@ -92,7 +84,7 @@ export default {
       let numberOfItems = autoComplete.filteredItems.length;
       let eventText = `${numberOfItems} Suggestions Visible`;
       if (numberOfItems > 0) {
-          eventText += ' - First is ' + autoComplete.filteredItems[0].text;
+        eventText += ' - First is ' + autoComplete.filteredItems[0].text;
       }
       this.logEvent(eventText);
     },
@@ -101,11 +93,21 @@ export default {
       this.updateEventsText();
 
       switch (this.currentEventNumber) {
-        case 1: this.eventName1 = eventText; return;
-        case 2: this.eventName2 = eventText; return;
-        case 3: this.eventName3 = eventText; return;
-        case 4: this.eventName4 = eventText; return;
-        case 5: this.eventName5 = eventText; return;
+        case 1:
+          this.eventName1 = eventText;
+          return;
+        case 2:
+          this.eventName2 = eventText;
+          return;
+        case 3:
+          this.eventName3 = eventText;
+          return;
+        case 4:
+          this.eventName4 = eventText;
+          return;
+        case 5:
+          this.eventName5 = eventText;
+          return;
         default:
           this.eventName1 = this.eventName2;
           this.eventName2 = this.eventName3;
@@ -117,17 +119,17 @@ export default {
     updateEventsText() {
       let text;
       if (this.currentEventNumber > 5) {
-          text = "Latest 5 fired events:";
+        text = 'Latest 5 fired events:';
       } else if (this.currentEventNumber === 0) {
-          text = "Events will appear here:";
+        text = 'Events will appear here:';
       } else if (this.currentEventNumber === 1) {
-          text = "Fired event:";
+        text = 'Fired event:';
       } else {
-          text = "Fired events:";
+        text = 'Fired events:';
       }
       this.eventsText = text;
-    },
-  },
+    }
+  }
 };
 </script>
 

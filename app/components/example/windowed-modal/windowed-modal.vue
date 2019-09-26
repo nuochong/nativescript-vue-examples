@@ -3,7 +3,7 @@
     <ActionBarSecond :title="title" />
     <ScrollView>
       <StackLayout class="hello-world">
-          <Button class="btn btn-primary" text="实例" @tap="openModalTap" />
+        <Button class="btn btn-primary" text="实例" @tap="openModalTap" />
       </StackLayout>
     </ScrollView>
   </Page>
@@ -19,7 +19,7 @@ export default {
   },
   data() {
     return {
-      title: '模态窗口',
+      title: '模态窗口'
     };
   },
   mounted() {},
@@ -32,7 +32,7 @@ export default {
         stretched: false,
         dimAmount: 0.5 // Sets the alpha of the background dim,
       });
-    },
+    }
   }
 };
 </script>
