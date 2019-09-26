@@ -1,7 +1,5 @@
 // >> autocomplete-gettingstarted-data-vue
-import {
-  TokenModel
-} from 'nativescript-ui-autocomplete';
+import { TokenModel } from 'nativescript-ui-autocomplete';
 
 export const countries = [
   'Australia',
@@ -42,12 +40,12 @@ export const countries = [
   'Chile'
 ];
 
-export const getCountry = (i) => {
+export const getCountry = i => {
   const country = countries[i];
   return new TokenModel(country, null);
 };
 
-export const getCountryWithImage = (i) => {
+export const getCountryWithImage = i => {
   const country = countries[i];
   return new TokenModel(country, `res://${country.toLowerCase()}`);
 };

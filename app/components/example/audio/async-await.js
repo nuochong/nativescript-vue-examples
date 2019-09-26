@@ -1,10 +1,10 @@
 /* tslint:disable */
 
 'use strict';
-(global).__awaiter =
+global.__awaiter =
   (this && this.__awaiter) ||
-  function (thisArg, _arguments, P, generator) {
-    return new(P || (P = Promise))(function (resolve, reject) {
+  function(thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function(resolve, reject) {
       function fulfilled(value) {
         try {
           step(generator.next(value));
@@ -22,21 +22,21 @@
       }
 
       function step(result) {
-        result.done ?
-          resolve(result.value) :
-          new P(function (resolve) {
-            resolve(result.value);
-          }).then(fulfilled, rejected);
+        result.done
+          ? resolve(result.value)
+          : new P(function(resolve) {
+              resolve(result.value);
+            }).then(fulfilled, rejected);
       }
       step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
   };
-(global).__generator =
+global.__generator =
   (this && this.__generator) ||
-  function (thisArg, body) {
+  function(thisArg, body) {
     let _ = {
         label: 0,
-        sent: function () {
+        sent: function() {
           if (t[0] & 1) throw t[1];
           return t[1];
         },
@@ -53,7 +53,7 @@
     };
 
     function verb(n) {
-      return function (v) {
+      return function(v) {
         return step([n, v]);
       };
     }
@@ -62,13 +62,7 @@
       if (f) throw new TypeError('Generator is already executing.');
       while (_)
         try {
-          if (
-            ((f = 1),
-              y &&
-              (t = y[op[0] & 2 ? 'return' : op[0] ? 'throw' : 'next']) &&
-              !(t = t.call(y, op[1])).done)
-          )
-            return t;
+          if (((f = 1), y && (t = y[op[0] & 2 ? 'return' : op[0] ? 'throw' : 'next']) && !(t = t.call(y, op[1])).done)) return t;
           if (((y = 0), t)) op = [0, t.value];
           switch (op[0]) {
             case 0:
@@ -78,7 +72,8 @@
             case 4:
               _.label++;
               return {
-                value: op[1], done: false
+                value: op[1],
+                done: false
               };
             case 5:
               _.label++;
@@ -90,11 +85,8 @@
               _.trys.pop();
               continue;
             default:
-              if (
-                !((t = _.trys), (t = t.length > 0 && t[t.length - 1])) &&
-                (op[0] === 6 || op[0] === 2)
-              ) {
-                (_) = 0;
+              if (!((t = _.trys), (t = t.length > 0 && t[t.length - 1])) && (op[0] === 6 || op[0] === 2)) {
+                _ = 0;
                 continue;
               }
               if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) {
