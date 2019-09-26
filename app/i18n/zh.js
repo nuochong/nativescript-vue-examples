@@ -24,7 +24,7 @@ module.exports = {
   'app.name': 'NSVue 示例',
   example: '示例',
   project: '实例',
-  Looking_forward_to_your_joining: '期待你的加入',
+  Looking_forward_to_your_joining: '期待你的参与',
   array: ['split the translation into ', 'multiples lines'],
   'hello.world': '你好世界!',
   html: 'Text with <b>HTML</b> <wrong & Hi',
