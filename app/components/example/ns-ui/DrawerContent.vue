@@ -70,10 +70,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
-// Custom common variables
+// 自定义公共变量
 @import '../../../assets/css/ns-ui';
 
-// Drawer navigation custom styles
+// 抽屉导航自定义样式
 $sidedrawer-header-image-size: 60;
 $sidedrawer-header-image-offset-top: 20;
 $sidedrawer-header-image-offset-bottom: 5;
