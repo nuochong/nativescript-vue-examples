@@ -11,7 +11,7 @@
 </template>
 
 <script>
-var Contacts = require('nativescript-contacts-lite');
+let Contacts = require('nativescript-contacts-lite');
 import ActionBarSecond from '../public/action-bar-second';
 
 export default {

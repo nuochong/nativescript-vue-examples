@@ -10,7 +10,7 @@
 </template>
 
 <script>
-var Nfc = require('nativescript-nfc').Nfc;
+let Nfc = require('nativescript-nfc').Nfc;
 import ActionBarSecond from './public/action-bar-second';
 
 export default {
@@ -25,7 +25,7 @@ export default {
   mounted() {},
   methods: {
     btnCheckNfc: function() {
-      var nfc = new Nfc();
+      let nfc = new Nfc();
 
       nfc.available().then(function(avail) {
         console.log(avail ? 'Yes' : 'No');

@@ -30,7 +30,7 @@ export default {
   methods: {
     createEvent() {
       // Only the `title`, `startDate` and `endDate` are mandatory, so this would suffice:
-      var options = {
+      let options = {
         title: 'Get groceries',
         // Make sure these are valid JavaScript Date objects.
         // In this case we schedule an Event for now + 1 hour, lasting 1 hour.
@@ -78,7 +78,7 @@ export default {
       );
     },
     findEvents() {
-      var options = {
+      let options = {
         // when searching, dates are mandatory - the event must be within this interval
         startDate: new Date(new Date().getTime() - 50 * 24 * 60 * 60 * 1000),
         endDate: new Date(new Date().getTime() + 50 * 24 * 60 * 60 * 1000)
@@ -102,7 +102,7 @@ export default {
       );
     },
     deleteEvents() {
-      var options = {
+      let options = {
         // when searching, dates are mandatory - the event must be within this interval
         startDate: new Date(new Date().getTime() - 50 * 24 * 60 * 60 * 1000),
         endDate: new Date(new Date().getTime() + 50 * 24 * 60 * 60 * 1000)

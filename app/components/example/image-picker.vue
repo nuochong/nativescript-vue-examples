@@ -30,7 +30,7 @@ export default {
         // Open the Telegram Gallery Image Picker Activity
         openTelegramImagePicker(5).then(resp => {
           // looping over the selected pictures in the response
-          for (var i = 0; i < resp.photos.length; i++) {
+          for (let i = 0; i < resp.photos.length; i++) {
             console.log(resp.photos[i]);
           }
         });

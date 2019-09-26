@@ -32,7 +32,7 @@
 (global).__generator =
   (this && this.__generator) ||
   function(thisArg, body) {
-    var _ = {
+    let _ = {
         label: 0,
         sent: function() {
           if (t[0] & 1) throw t[1];

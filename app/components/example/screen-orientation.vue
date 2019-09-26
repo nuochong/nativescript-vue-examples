@@ -11,7 +11,7 @@
 </template>
 
 <script>
-var orientationModule = require('nativescript-screen-orientation');
+let orientationModule = require('nativescript-screen-orientation');
 import ActionBarSecond from './public/action-bar-second';
 
 export default {

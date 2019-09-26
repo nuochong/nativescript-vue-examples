@@ -11,9 +11,9 @@
 </template>
 
 <script>
-var app = require('application');
-var contacts = require('nativescript-contacts');
-var imageSource = require('image-source');
+let app = require('application');
+let contacts = require('nativescript-contacts');
+let imageSource = require('image-source');
 const Permissions = require('nativescript-permissions');
 import ActionBarSecond from '../public/action-bar-second';
 
@@ -41,7 +41,7 @@ export default {
       }
     },
     operate() {
-      var newContact = new contacts.Contact();
+      let newContact = new contacts.Contact();
       newContact.name.given = 'John';
       newContact.name.family = 'Doe';
       newContact.phoneNumbers.push({

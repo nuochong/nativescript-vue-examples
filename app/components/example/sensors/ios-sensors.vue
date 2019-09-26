@@ -12,7 +12,7 @@
 </template>
 
 <script>
-// var Coremotion = require('nativescript-coremotion');
+// let Coremotion = require('nativescript-coremotion');
 import ActionBarSecond from '../public/action-bar-second';
 
 export default {

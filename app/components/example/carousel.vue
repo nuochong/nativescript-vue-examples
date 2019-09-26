@@ -55,7 +55,7 @@ export default {
       console.log('文字识别结果');
     },
     myChangeEvent: function(args) {
-      var changeEventText = '页面更改为索引:' + args.index;
+      let changeEventText = '页面更改为索引:' + args.index;
       console.log(changeEventText);
     }
   }

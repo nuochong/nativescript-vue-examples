@@ -18,8 +18,8 @@ import { ShareFile } from 'nativescript-share-file';
 import * as fs from 'tns-core-modules/file-system';
 import ActionBarSecond from '../public/action-bar-second';
 
-var SocialShare = require('nativescript-social-share');
-var imageSourceModule = require('image-source');
+let SocialShare = require('nativescript-social-share');
+let imageSourceModule = require('image-source');
 export default {
   components: {
     ActionBarSecond
@@ -56,7 +56,7 @@ export default {
       });
     },
     btnShareImg: function() {
-      var image = imageSourceModule.fromFile('~/assets/images/NativeScript-Vue.png');
+      let image = imageSourceModule.fromFile('~/assets/images/NativeScript-Vue.png');
       SocialShare.shareImage(image, '您想如何分享这张图片?');
     },
     btnShareText: function() {

@@ -35,8 +35,8 @@
 </template>
 
 <script>
-// var AppIconChangerPlugin = require('nativescript-app-icon-changer');
-// var appIconChanger = new AppIconChangerPlugin.AppIconChanger();
+// let AppIconChangerPlugin = require('nativescript-app-icon-changer');
+// let appIconChanger = new AppIconChangerPlugin.AppIconChanger();
 import { AppIconChanger } from 'nativescript-app-icon-changer';
 import ActionBarSecond from '../public/action-bar-second';
 
