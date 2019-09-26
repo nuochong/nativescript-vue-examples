@@ -13,7 +13,6 @@
         <Autocomplete v-show="componentsArr.Autocomplete" />
         <Dataform v-show="componentsArr.Dataform" />
         <Gauge v-show="componentsArr.Gauge" />
-
         <!-- <Chart v-show="currentActive == 'Chart'" />
         <Listview v-show="currentActive == 'Listview'" />
         <Calendar v-show="currentActive =='Calendar'" />
@@ -51,7 +50,7 @@ export default {
   },
   data() {
     return {
-      title:'NSUI',
+      title: 'NSUI',
       transition: new SlideInOnTopTransition(),
       componentsArr: {
         Chart: true,
@@ -66,13 +65,11 @@ export default {
   },
   methods: {
     change: function(name) {
-      console.log('将要激活', name);
       this.componentsArr[this.currentActive] = false;
       this.componentsArr[name] = true;
       this.currentActive = name;
-      console.log('xxxx',JSON.stringify(this.componentsArr))
-      //console.log('触发了', this.currentActive);
-       this.$refs.drawer.closeDrawer();
+      console.log('xxxx', JSON.stringify(this.componentsArr));
+      this.$refs.drawer.closeDrawer();
     }
     // goToHome() {
     //   this.$navigateTo(Home);
@@ -98,5 +95,5 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 </style>

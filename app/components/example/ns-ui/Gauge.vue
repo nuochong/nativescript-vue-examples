@@ -1,8 +1,4 @@
 <template>
-  <!-- <Page>
-    <ActionBar :title="title">
-      <NavigationButton text="Back" android.systemIcon="ic_menu_back" @tap="onNavigationButtonTap"></NavigationButton>
-    </ActionBar> -->
     <GridLayout rows="*, auto">
       <RadRadialGauge ref="myGauge" class="gauge" row="0"
                       @loaded="onLoaded()"
@@ -80,12 +76,10 @@
                   @tap="onReset()"></Button>
       </StackLayout>
     </GridLayout>
-  <!-- </Page> -->
 </template>
 
 <script>
 import * as frameModule from 'tns-core-modules/ui/frame';
-// >> gauge-style-vue
 import {
   TitleStyle,
   SubtitleStyle,
@@ -156,5 +150,5 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 </style>

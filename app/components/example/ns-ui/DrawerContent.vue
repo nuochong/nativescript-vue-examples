@@ -44,47 +44,26 @@
 </template>
 
 <script>
-// import Chart from './Chart';
-// import Listview from './ListView';
-// import Calendar from './Calendar';
-// import Autocomplete from './AutoComplete';
-// import Dataform from './DataForm';
-// import Gauge from './Gauge';
 // import * as utils from './shared/utils';
 import SelectedPageService from './shared/selected-page-service';
 
 export default {
-  mounted() {
-    SelectedPageService.getInstance().selectedPage$.subscribe(selectedPage => (this.selectedPage = selectedPage));
-  },
+  components: {},
   data() {
     return {
-      // Chart: Chart,
-      // Listview: Listview,
-      // Calendar: Calendar,
-      // Autocomplete: Autocomplete,
-      // Dataform: Dataform,
-      // Gauge: Gauge,
       selectedPage: ''
     };
   },
-  // components: {
-  //   Chart,
-  //   Listview,
-  //   Calendar,
-  //   Autocomplete,
-  //   Dataform,
-  //   Gauge
-  // },
+  mounted() {
+    SelectedPageService.getInstance().selectedPage$.subscribe(selectedPage => (this.selectedPage = selectedPage));
+  },
   methods: {
     onNavigationItemTap(component) {
       this.$emit('change', component);
-      
       // this.$navigateTo(component, {
       //   clearHistory: true
       // });
-      console.log('到了')
-       //utils.closeDrawer();
+      //utils.closeDrawer();
     }
   }
 };

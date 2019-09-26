@@ -1,17 +1,14 @@
 <template>
-  <!-- <Page class="page">
-    <ActionBar color="white" backgroundColor="#53ba82" class="action-bar" title="RadListView demo">
-    </ActionBar> -->
-    <StackLayout padding="15">
-      <item-list ref="list" :items="itemList" @itemTap="onItemTap" @itemDeleted="onItemDeleted" @pulling="onPulling">
-      </item-list>
-    </StackLayout>
-  <!-- </Page> -->
+  <StackLayout padding="15">
+    <item-list ref="list" :items="itemList" @itemTap="onItemTap" @itemDeleted="onItemDeleted" @pulling="onPulling">
+    </item-list>
+  </StackLayout>
 </template>
 
 <script>
 import { simpleItemList } from './data';
 import ItemList from './components/ItemList';
+
 export default {
   name: 'list-view',
   components: {
@@ -51,5 +48,5 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 </style>

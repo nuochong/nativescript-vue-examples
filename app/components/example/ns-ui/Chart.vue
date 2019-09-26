@@ -1,11 +1,4 @@
 <template>
-  <!-- <Page class="page">
-    <ActionBar
-      color="white"
-      backgroundColor="#53ba82"
-      class="action-bar"
-      title="Chart demo">
-    </ActionBar> -->
     <RadCartesianChart height="100%" width="100%">
       <BarSeries v-tkCartesianSeries
                  categoryProperty="Country"
@@ -14,7 +7,6 @@
       <CategoricalAxis v-tkCartesianHorizontalAxis />
       <LinearAxis v-tkCartesianVerticalAxis />
     </RadCartesianChart>
-  <!-- </Page> -->
 </template>
 
 <script>
@@ -30,5 +22,5 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 </style>

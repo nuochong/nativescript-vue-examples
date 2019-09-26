@@ -1,8 +1,4 @@
 <template>
-  <!-- <Page>
-    <ActionBar :title="title">
-      <NavigationButton text="Back" android.systemIcon="ic_menu_back" @tap="onNavigationButtonTap"></NavigationButton>
-    </ActionBar> -->
     <StackLayout height="100%" ios:backgroundColor="#CDCECE" padding="5">
       <Label text="Select country"></Label>
       <RadAutoCompleteTextView ref="autocomplete"
@@ -37,7 +33,6 @@
       </StackLayout>
 
     </StackLayout>
-  <!-- </Page> -->
 </template>
 
 <script>
@@ -136,5 +131,5 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 </style>

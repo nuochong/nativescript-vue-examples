@@ -1,5 +1,4 @@
 <template>
-  <!-- <Page class="page"> -->
   <StackLayout padding="15">
     <!-- <ActionBar color="white" backgroundColor="#53ba82" class="action-bar" title="RadCalendar demo">
       <ActionItem text="Week" android.position="popup" @tap="onWeekTap"></ActionItem>
@@ -9,16 +8,16 @@
       <ActionItem text="Day" android.position="popup" @tap="onDayTap"></ActionItem>
     </ActionBar> -->
     <GridLayout columns="*, *,*,*,*" rows="auto">
-  <Label text="Week" row="0" col="0" backgroundColor="#43b883" @tap="onWeekTap"/>
-  <Label text="Month" row="0" col="1" backgroundColor="#1c6b48" @tap="onMonthTap"/>
-  <Label text="Month Names" row="0" col="2" backgroundColor="#289062" @tap="onMonthNamesTap"/>
-  <Label text="Year" row="0" col="3" backgroundColor="#43b883"  @tap="onYearTap"/>
-  <Label text="Day" row="0" col="4" backgroundColor="#43b883" @tap="onDayTap"/>
-</GridLayout>
+      <Label text="Week" row="0" col="0" backgroundColor="#43b883" @tap="onWeekTap" />
+      <Label text="Month" row="0" col="1" backgroundColor="#1c6b48" @tap="onMonthTap" />
+      <Label text="Month Names" row="0" col="2" backgroundColor="#289062" @tap="onMonthNamesTap" />
+      <Label text="Year" row="0" col="3" backgroundColor="#43b883" @tap="onYearTap" />
+      <Label text="Day" row="0" col="4" backgroundColor="#43b883" @tap="onDayTap" />
+    </GridLayout>
     <RadCalendar :eventSource="events" :eventsViewMode="eventsViewMode" :viewMode="viewMode">
     </RadCalendar>
   </StackLayout>
-  <!-- </Page> -->
+
 </template>
 
 <script>
@@ -54,5 +53,5 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 </style>
