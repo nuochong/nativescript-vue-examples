@@ -1,8 +1,7 @@
 <template>
-  <Page>
-    <ActionBar title="Multi Templates">
-      <NavigationButton text="Go back" android.systemIcon="ic_menu_back" @tap="goBack" />
-    </ActionBar>
+  <Page class="page">
+    <ActionBarSecond :title="title" />
+
     <GridLayout columns="*" rows="auto,auto,*">
       <Button row="0" text="Expand All" @tap="expandAll"></Button>
       <Button row="1" text="Collapse All" @tap="collapseAll"></Button>
@@ -64,7 +63,12 @@
 
 <script>
 import Multi from './Multi';
+import ActionBarSecond from '../public/action-bar-second';
+
 export default {
+  components: {
+    ActionBarSecond
+  },
   data() {
     return {
       items: [

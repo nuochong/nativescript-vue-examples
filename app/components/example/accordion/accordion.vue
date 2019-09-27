@@ -1,6 +1,7 @@
 <template>
-  <Page>
-    <ActionBar title="Welcome to NativeScript-Vue!" />
+  <Page class="page">
+    <ActionBarSecond :title="title" />
+
     <GridLayout columns="*" rows="auto,*">
       <Button text="View Multi Template" @tap="goToMulti"></Button>
       <Accordion row="1" for="item of items">
@@ -36,7 +37,12 @@
 
 <script>
 import Multi from './Multi';
+import ActionBarSecond from '../public/action-bar-second';
+
 export default {
+  components: {
+    ActionBarSecond
+  },
   data() {
     return {
       items: [
