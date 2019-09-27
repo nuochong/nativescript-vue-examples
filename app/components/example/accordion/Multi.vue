@@ -3,8 +3,8 @@
     <ActionBarSecond :title="title" />
 
     <GridLayout columns="*" rows="auto,auto,*">
-      <Button class="btn btn-primary" row="0" text="Expand All" @tap="expandAll"></Button>
-      <Button class="btn btn-primary" row="1" text="Collapse All" @tap="collapseAll"></Button>
+      <Button class="btn btn-primary" row="0" :text="'expand_all' | L" @tap="expandAll"></Button>
+      <Button class="btn btn-primary" row="1" :text="'collapse_all' | L" @tap="collapseAll"></Button>
       <Accordion row="2" height="100%" ref="accordion" allowMultiple="true" childItems="children" for="item of items">
         <v-template if="$odd" name="header-odd">
           <StackLayout>
