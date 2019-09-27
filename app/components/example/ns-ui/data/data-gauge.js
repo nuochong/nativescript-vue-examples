@@ -2,44 +2,6 @@ import { Observable } from 'tns-core-modules/data/observable';
 import { Color } from 'tns-core-modules/color';
 
 export class style extends Observable {
-  // public title: string;
-  // public titleTextColor: Color;
-  // public titleTextSize: number;
-  // public titleVerticalOffset: number;
-  // public titleHorizontalOffset: number;
-
-  // public subtitle: string;
-  // public subtitleTextColor: Color;
-  // public subtitleTextSize: number;
-  // public subtitleVerticalOffset: number;
-  // public subtitleHorizontalOffset: number;
-
-  // public majorTicksCount: number;
-  // public minorTicksCount: number;
-  // public majorTicksWidth: number;
-  // public minorTicksWidth: number;
-  // public lineThickness: number;
-  // public lineColor: Color;
-  // public labelsColor: Color;
-  // public labelsCount: number;
-  // public androidLabelsSize: number;
-  // public iosLabelsSize: number;
-  // public labelsVisible: boolean;
-
-  // public needleValue: number;
-  // public needleLength: number;
-  // public circleRadius: number;
-  // public fillColor: Color;
-  // public strokeColor: Color;
-  // public strokeWidth: number;
-  // public bottomWidth: number;
-  // public topWidth: number;
-
-  // public firstPoint: number;
-  // public secondPoint: number;
-  // public firstColor: Color;
-  // public secondColor: Color;
-  // public barWidth: number;
 
   constructor() {
     super();

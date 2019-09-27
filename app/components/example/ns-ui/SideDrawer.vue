@@ -71,26 +71,6 @@ export default {
       console.log('xxxx', JSON.stringify(this.componentsArr));
       this.$refs.drawer.closeDrawer();
     }
-    // goToHome() {
-    //   this.$navigateTo(Home);
-    //   this.$refs.drawer.nativeView.closeDrawer();
-    // },
-    // goToList() {
-    //   this.$navigateTo(List);
-    //   this.$refs.drawer.nativeView.closeDrawer();
-    // },
-    // goToCalendar() {
-    //   this.$navigateTo(Calendar);
-    //   this.$refs.drawer.nativeView.closeDrawer();
-    // },
-    // goToChart() {
-    //   this.$navigateTo(Chart);
-    //   this.$refs.drawer.nativeView.closeDrawer();
-    // },
-    // goToDataForm() {
-    //   this.$navigateTo(DataForm);
-    //   this.$refs.drawer.nativeView.closeDrawer();
-    // }
   }
 };
 </script>
