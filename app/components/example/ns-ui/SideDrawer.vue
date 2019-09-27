@@ -20,7 +20,7 @@
 
 <script>
 import Chart from './Chart';
-import Listview from './ListView';
+import Listview from './list-view/ListView';
 import Calendar from './Calendar';
 import Autocomplete from './AutoComplete';
 import Dataform from './DataForm';
