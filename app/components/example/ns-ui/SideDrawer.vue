@@ -31,7 +31,6 @@ import Calendar from './Calendar';
 import Autocomplete from './AutoComplete';
 import Dataform from './DataForm';
 import Gauge from './Gauge';
-
 import DrawerContent from './DrawerContent';
 import { SlideInOnTopTransition } from 'nativescript-ui-sidedrawer';
 import ActionBarSecond from '../public/action-bar-second';
