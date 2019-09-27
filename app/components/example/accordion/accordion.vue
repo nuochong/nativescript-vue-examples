@@ -13,7 +13,7 @@
         </v-template>
 
         <v-template name="title">
-          <GridLayout backgroundColor="white">
+          <GridLayout backgroundColor="gray">
             <Label class="label-white" height="100%" :text="item.title"></Label>
           </GridLayout>
         </v-template>

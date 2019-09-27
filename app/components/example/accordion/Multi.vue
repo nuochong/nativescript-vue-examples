@@ -19,13 +19,13 @@
         </v-template>
 
         <v-template if="$odd" name="title-odd">
-          <StackLayout backgroundColor="white">
+          <StackLayout backgroundColor="gray">
             <Label class="label-white" :text="item.title"></Label>
           </StackLayout>
         </v-template>
 
         <v-template if="$even" name="title-even">
-          <StackLayout backgroundColor="white">
+          <StackLayout backgroundColor="gray">
             <Label class="label-white" :text="item.title"></Label>
             <Image height="50" decodeWidth="50" decodeHeight="50" loadMode="async" :src="item.image"></Image>
           </StackLayout>
