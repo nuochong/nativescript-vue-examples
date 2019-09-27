@@ -31,7 +31,7 @@
   </Page>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 label {
   border-color: #cccccc;
   border-width: 1;
