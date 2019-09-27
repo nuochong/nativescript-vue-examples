@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import { simpleItemList } from './data/data';
+import { simpleItemList } from '../data/data';
 import ItemList from './ItemList';
 
 export default {
