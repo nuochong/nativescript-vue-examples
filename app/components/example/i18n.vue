@@ -1,6 +1,6 @@
 <template>
   <Page>
-    <ActionBar :title="'app.name' | L"></ActionBar>
+    <ActionBarSecond :title="title" />
     <ScrollView>
       <StackLayout>
         <Label :text="'hello.world' | L"></Label>
@@ -30,6 +30,23 @@
     </ScrollView>
   </Page>
 </template>
+
+<script>
+import ActionBarSecond from './public/action-bar-second';
+
+export default {
+  components: {
+    ActionBarSecond
+  },
+  data() {
+    return {
+      title: '国际化'
+    };
+  },
+  mounted() {},
+  methods: {}
+};
+</script>
 
 <style scoped lang="scss">
 label {
