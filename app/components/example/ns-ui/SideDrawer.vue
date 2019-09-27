@@ -13,12 +13,6 @@
         <Autocomplete v-show="componentsArr.Autocomplete" />
         <Dataform v-show="componentsArr.Dataform" />
         <Gauge v-show="componentsArr.Gauge" />
-        <!-- <Chart v-show="currentActive == 'Chart'" />
-        <Listview v-show="currentActive == 'Listview'" />
-        <Calendar v-show="currentActive =='Calendar'" />
-        <Autocomplete v-show="currentActive == 'Autocomplete'" />
-        <Dataform v-show="currentActive == 'Dataform'" />
-        <Gauge v-show="currentActive == 'Gauge'" /> -->
       </StackLayout>
     </RadSideDrawer>
   </Page>
