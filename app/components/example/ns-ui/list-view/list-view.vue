@@ -7,7 +7,7 @@
 
 <script>
 import { simpleItemList } from '../data/data';
-import ItemList from './ItemList';
+import ItemList from './item-list';
 
 export default {
   name: 'list-view',

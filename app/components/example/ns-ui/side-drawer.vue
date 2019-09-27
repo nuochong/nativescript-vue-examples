@@ -19,13 +19,13 @@
 </template>
 
 <script>
-import Chart from './Chart';
-import Listview from './list-view/ListView';
-import Calendar from './Calendar';
-import Autocomplete from './AutoComplete';
-import Dataform from './DataForm';
-import Gauge from './Gauge';
-import DrawerContent from './DrawerContent';
+import Chart from './chart';
+import Listview from './list-view/list-view';
+import Calendar from './calendar';
+import Autocomplete from './auto-complete';
+import Dataform from './data-form';
+import Gauge from './gauge';
+import DrawerContent from './drawer-content';
 import { SlideInOnTopTransition } from 'nativescript-ui-sidedrawer';
 import ActionBarSecond from '../public/action-bar-second';
 

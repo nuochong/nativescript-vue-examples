@@ -186,7 +186,7 @@ import IconChangerMain from './icon-changer/icon-changer-main';
 import MediaFilePickerMain from './media-file-picker/media-file-picker-main';
 import NetworkConnectivity from './network-connectivity';
 import MasterPage from './split-view/master-page';
-import SideDrawer from './ns-ui/SideDrawer';
+import SideDrawer from './ns-ui/side-drawer';
 
 import ActionBarSecond from './public/action-bar-second';
 
