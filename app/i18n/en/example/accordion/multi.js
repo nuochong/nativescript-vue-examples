@@ -1,4 +1,4 @@
-const multi = {
+let multi = {
   expand_all: 'Expand All'
 };
 

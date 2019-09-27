@@ -1,4 +1,4 @@
-const i18n = {
+let i18n = {
   array: ['split the translation into ', 'multiples lines'],
   'hello.world': 'Hello World !',
   html: 'Text with <b>HTML</b> <wrong & Hi',

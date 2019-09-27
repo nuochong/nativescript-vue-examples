@@ -1,4 +1,4 @@
-const i18n = {
+let i18n = {
   array: ['将翻译分为 ', '多行'],
   'hello.world': '你好世界!',
   html: '文字 宽度 <b>HTML</b> <wrong & Hi',

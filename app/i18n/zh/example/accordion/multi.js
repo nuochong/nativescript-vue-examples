@@ -1,4 +1,4 @@
-const multi = {
+let multi = {
   expand_all: '全部展开',
   collapse_all: '全部折叠'
 };
