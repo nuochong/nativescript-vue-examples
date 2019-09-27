@@ -16,11 +16,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-/* ActionBar {
-  background-color: #53ba82;
-  color: #ffffff;
-}
-.hello-world {
-  margin: 20;
-} */
+// .hello-world {
+//   margin: 20;
+// }
 </style>

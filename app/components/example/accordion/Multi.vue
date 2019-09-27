@@ -3,30 +3,30 @@
     <ActionBarSecond :title="title" />
 
     <GridLayout columns="*" rows="auto,auto,*">
-      <Button row="0" text="Expand All" @tap="expandAll"></Button>
-      <Button row="1" text="Collapse All" @tap="collapseAll"></Button>
+      <Button class="btn btn-primary" row="0" text="Expand All" @tap="expandAll"></Button>
+      <Button class="btn btn-primary" row="1" text="Collapse All" @tap="collapseAll"></Button>
       <Accordion row="2" height="100%" ref="accordion" allowMultiple="true" childItems="children" for="item of items">
         <v-template if="$odd" name="header-odd">
           <StackLayout>
-            <Label backgroundColor="green" :text="item.headerText"></Label>
+            <Label class="label-white" backgroundColor="green" :text="item.headerText"></Label>
           </StackLayout>
         </v-template>
 
         <v-template if="$even" name="header-even">
           <StackLayout>
-            <Label backgroundColor="orange" :text="item.headerText"></Label>
+            <Label class="label-white" backgroundColor="orange" :text="item.headerText"></Label>
           </StackLayout>
         </v-template>
 
         <v-template if="$odd" name="title-odd">
           <StackLayout backgroundColor="white">
-            <Label :text="item.title"></Label>
+            <Label class="label-white" :text="item.title"></Label>
           </StackLayout>
         </v-template>
 
         <v-template if="$even" name="title-even">
           <StackLayout backgroundColor="white">
-            <Label :text="item.title"></Label>
+            <Label class="label-white" :text="item.title"></Label>
             <Image height="50" decodeWidth="50" decodeHeight="50" loadMode="async" :src="item.image"></Image>
           </StackLayout>
         </v-template>
@@ -34,35 +34,36 @@
         <v-template if="$odd" name="content-odd">
           <StackLayout>
             <Image height="100" decodeWidth="100" decodeHeight="100" loadMode="async" :src="item.image"></Image>
-            <Label height="200" :text="item.text"></Label>
+            <Label class="label-white" height="200" :text="item.text"></Label>
           </StackLayout>
         </v-template>
 
         <v-template if="$even" name="content-even">
           <StackLayout backgroundColor="red">
             <Image height="100" decodeWidth="100" decodeHeight="100" loadMode="async" :src="item.image"></Image>
-            <Label backgroundColor="yellow" :text="item.text"></Label>
+            <Label class="label-white" backgroundColor="yellow" :text="item.text"></Label>
           </StackLayout>
         </v-template>
 
         <v-template if="$odd" name="footer-odd">
           <StackLayout backgroundColor="yellow">
-            <Label :text="item.footerText"></Label>
+            <Label class="label-white" :text="item.footerText"></Label>
           </StackLayout>
         </v-template>
 
         <v-template if="$even" name="footer-even">
           <StackLayout backgroundColor="blue">
-            <Label :text="item.footerText"></Label>
+            <Label class="label-white" :text="item.footerText"></Label>
           </StackLayout>
         </v-template>
       </Accordion>
     </GridLayout>
+
   </Page>
 </template>
 
 <script>
-import Multi from './Multi';
+import Multi from './multi';
 import ActionBarSecond from '../public/action-bar-second';
 
 export default {
@@ -71,6 +72,7 @@ export default {
   },
   data() {
     return {
+      title: '手风琴',
       items: [
         {
           title: '1 Title',
@@ -149,11 +151,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-ActionBar {
-  background-color: #53ba82;
-  color: #ffffff;
-}
-
 .message {
   vertical-align: center;
   text-align: center;

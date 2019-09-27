@@ -3,31 +3,31 @@
     <ActionBarSecond :title="title" />
 
     <GridLayout columns="*" rows="auto,*">
-      <Button text="View Multi Template" @tap="goToMulti"></Button>
+      <Button class="btn btn-primary" text="View Multi Template" @tap="goToMulti"></Button>
       <Accordion row="1" for="item of items">
 
         <v-template name="header">
           <StackLayout height="100">
-            <Label backgroundColor="green" :text="item.headerText"></Label>
+            <Label class="label-white" backgroundColor="green" :text="item.headerText"></Label>
           </StackLayout>
         </v-template>
 
         <v-template name="title">
           <GridLayout backgroundColor="white">
-            <Label height="100%" :text="item.title"></Label>
+            <Label class="label-white" height="100%" :text="item.title"></Label>
           </GridLayout>
         </v-template>
 
         <v-template name="content">
           <GridLayout rows="auto,auto">
             <Image height="300" decodeWidth="300" decodeHeight="300" loadMode="async" :src="item.image"></Image>
-            <Label row="1" :text="item.text"></Label>
+            <Label class="label-white" row="1" :text="item.text"></Label>
           </GridLayout>
         </v-template>
 
         <v-template name="footer">
           <StackLayout>
-            <Label backgroundColor="yellow" :text="item.footerText"></Label>
+            <Label class="label-white" backgroundColor="yellow" :text="item.footerText"></Label>
           </StackLayout>
         </v-template>
       </Accordion>
@@ -45,6 +45,7 @@ export default {
   },
   data() {
     return {
+      title: '手风琴',
       items: [
         {
           title: '1',
@@ -100,11 +101,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-ActionBar {
-  background-color: #53ba82;
-  color: #ffffff;
-}
-
 .message {
   vertical-align: center;
   text-align: center;

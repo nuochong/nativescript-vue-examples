@@ -44,8 +44,4 @@ export default {
 </script>
 
 <style scoped lang="scss">
-/* ActionBar {
-  background-color: #53ba82;
-  color: #ffffff;
-} */
 </style>
