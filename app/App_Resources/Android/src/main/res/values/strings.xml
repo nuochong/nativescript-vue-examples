@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+  <string name="expand_all">"Expand All"</string>
+  <string name="view_multi_template">"View Multi Template"</string>
   <string name="_test_escaped_percent_followed_by_placeholder_Z1B9wgT">"%%%1$s"</string>
   <string name="_test_escaped_percent_followed_by_s_Z14aERG">"%%s"</string>
   <string name="_test_escaped_percent_2w8byv">"%%"</string>
@@ -40,4 +42,5 @@
   <string name="shortcut_short_label1">"function1-short"</string>
   <string name="shortcut_long_label1">"function1-long"</string>
   <string name="shortcut_disabled_message1">"function1-disabled"</string>
+  <string name="collapse_all">"collapse_all"</string>
 </resources>

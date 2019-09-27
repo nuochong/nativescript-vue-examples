@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import { getEvents } from './data';
+import { getEvents } from './data/data';
 import { CalendarViewMode, CalendarEventsViewMode } from 'nativescript-ui-calendar';
 
 export default {

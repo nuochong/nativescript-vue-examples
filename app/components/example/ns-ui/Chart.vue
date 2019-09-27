@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import { getCountriesData } from './data';
+import { getCountriesData } from './data/data';
 
 export default {
   name: 'chart-view',

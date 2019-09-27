@@ -31,7 +31,7 @@
 import * as frameModule from 'tns-core-modules/ui/frame';
 import { ObservableArray } from 'tns-core-modules/data/observable-array';
 import { RadAutoCompleteTextView } from 'nativescript-ui-autocomplete';
-import { getCountriesCount, getCountry } from './data-auto-complete';
+import { getCountriesCount, getCountry } from './data/data-auto-complete';
 
 const description = 'Events';
 

@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import { getMovies, MovieConverter } from './data';
+import { getMovies, MovieConverter } from './data/data';
 const movies = getMovies();
 
 export default {

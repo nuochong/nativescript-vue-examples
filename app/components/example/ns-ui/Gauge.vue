@@ -40,7 +40,7 @@
 <script>
 import * as frameModule from 'tns-core-modules/ui/frame';
 import { TitleStyle, SubtitleStyle, RadRadialGauge, RadialScale, BarIndicator, RadialNeedle } from 'nativescript-ui-gauge';
-import { style } from './data-gauge';
+import { style } from './data/data-gauge';
 import { Color } from 'tns-core-modules/color';
 const description = 'Styles';
 export default {

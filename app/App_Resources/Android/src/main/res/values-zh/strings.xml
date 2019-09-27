@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+  <string name="collapse_all">"全部折叠"</string>
+  <string name="expand_all">"全部展开"</string>
+  <string name="view_multi_template">"多视图模版"</string>
   <string name="_test_escaped_percent_followed_by_placeholder_Z1B9wgT">"%%%1$s"</string>
   <string name="_test_escaped_percent_followed_by_s_Z14aERG">"%%s"</string>
   <string name="_test_escaped_percent_2w8byv">"%%"</string>
