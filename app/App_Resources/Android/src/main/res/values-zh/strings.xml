@@ -26,6 +26,8 @@
   <string name="html">"文字 宽度 &lt;b>HTML&lt;/b> &lt;wrong &amp; Hi"</string>
   <string name="_hello_world_Z2tF6Gu">"你好世界!"</string>
   <string name="array">"将翻译分为 多行"</string>
+  <string name="accordion">"手风琴"</string>
+  <string name="i18n">"国际化"</string>
   <string name="Looking_forward_to_your_joining">"期待你的参与"</string>
   <string name="project">"实例"</string>
   <string name="example">"示例"</string>

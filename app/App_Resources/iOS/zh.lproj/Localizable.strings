@@ -24,6 +24,8 @@
 "html" = "文字 宽度 <b>HTML</b> <wrong & Hi";
 "_hello_world_Z2tF6Gu" = "你好世界!";
 "array" = "将翻译分为 多行";
+"accordion" = "手风琴";
+"i18n" = "国际化";
 "Looking_forward_to_your_joining" = "期待你的参与";
 "project" = "实例";
 "example" = "示例";

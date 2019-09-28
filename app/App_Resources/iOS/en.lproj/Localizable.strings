@@ -23,6 +23,8 @@
 "html" = "Text with <b>HTML</b> <wrong & Hi";
 "_hello_world_Z2tF6Gu" = "Hello World !";
 "array" = "split the translation into multiples lines";
+"accordion" = "Accordion";
+"i18n" = "Globalization";
 "Looking_forward_to_your_joining" = "Looking Forward To Your Participation";
 "project" = "Project";
 "example" = "Example";

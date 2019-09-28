@@ -25,6 +25,8 @@
   <string name="html">"Text with &lt;b>HTML&lt;/b> &lt;wrong &amp; Hi"</string>
   <string name="_hello_world_Z2tF6Gu">"Hello World !"</string>
   <string name="array">"split the translation into multiples lines"</string>
+  <string name="accordion">"Accordion"</string>
+  <string name="i18n">"Globalization"</string>
   <string name="Looking_forward_to_your_joining">"Looking Forward To Your Participation"</string>
   <string name="project">"Project"</string>
   <string name="example">"Example"</string>
