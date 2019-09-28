@@ -65,7 +65,7 @@
         <Button class="btn btn-primary" text="图片选择器" @tap="btnImagePicker" />
         <Button class="btn btn-primary" text="亮度" @tap="btnBrightness" />
         <Button class="btn btn-primary" text="震动" @tap="btnVibrateMain" />
-        <Button class="btn btn-primary" text="手风琴" @tap="btnAccordionMain" />
+        <Button class="btn btn-primary" :text="'accordion' | L" @tap="btnAccordionMain" />
         <Button class="btn btn-primary" text="卡片" @tap="btnCardMain" />
         <Button class="btn btn-primary" text="浮动按钮" @tap="btnFloatingActionButton" />
         <Button class="btn btn-primary" text="加载动画" @tap="btnLoadingIndicator" />
@@ -81,7 +81,7 @@
         <Button class="btn btn-primary" text="短信接收器" @tap="btnSmsReceiver" />
         <Button class="btn btn-primary" text="模态窗口" @tap="btnWindowedModal" />
         <Button class="btn btn-primary" text="视频录制" @tap="btnVideoRecorder" />
-        <Button class="btn btn-primary" text="国际化" @tap="btnI8n" />
+        <Button class="btn btn-primary" :text="'i18n' | L" @tap="btnI8n" />
         <Button class="btn btn-primary" text="微信分享" @tap="btnWechatShare" />
         <Button class="btn btn-primary" text="微信登录" @tap="btnWechatLogin" />
         <Button class="btn btn-primary" text="指纹识别" @tap="btnFingerprintAuth" />
