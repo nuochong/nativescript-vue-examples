@@ -10,6 +10,8 @@
 </template>
 
 <script>
+//const openTelegramImagePicker = require('nativescript-telegram-image-picker').openTelegramImagePicker;
+import { openTelegramImagePicker, TelegramPickerResponse } from '../../tools/nativescript-telegram-image-picker';
 import ActionBarSecond from './public/action-bar-second';
 
 export default {
@@ -25,8 +27,6 @@ export default {
   methods: {
     whateverYouLike() {
       if (this.$application.android) {
-        let openTelegramImagePicker = require('nativescript-telegram-image-picker').openTelegramImagePicker;
-        //import { openTelegramImagePicker, TelegramPickerResponse } from 'nativescript-telegram-image-picker';
         // 打开Telegram Gallery图片采集活动
         openTelegramImagePicker(5).then(resp => {
           // 在响应中循环选择的图片
