@@ -63,7 +63,6 @@
 </template>
 
 <script>
-import Multi from './multi';
 import ActionBarSecond from '../public/action-bar-second';
 
 export default {
@@ -134,9 +133,6 @@ export default {
     };
   },
   methods: {
-    goToMulti: function() {
-      this.$navigateTo(Multi);
-    },
     goBack: function() {
       this.$navigateBack();
     },
