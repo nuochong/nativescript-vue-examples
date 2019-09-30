@@ -2,7 +2,6 @@ import { Observable } from 'tns-core-modules/data/observable';
 import { Color } from 'tns-core-modules/color';
 
 export class style extends Observable {
-
   constructor() {
     super();
 
