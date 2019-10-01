@@ -478,10 +478,6 @@ export default {
   padding: 20;
 }
 
-.material-icons {
-  font-family: MaterialIcons-Regular, Material Icons;
-}
-
 .center {
   horizontal-align: center;
 }

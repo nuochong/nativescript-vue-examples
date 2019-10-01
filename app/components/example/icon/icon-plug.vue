@@ -59,13 +59,9 @@ export default {
 //如果只是单单使用同样式方法，那么修改该设置方法的样式是可以快速热更新，不必退出刷新页面。
 //如果使用了行内样式，即vue传值，就需要刷新页面才能看到更改后的效果。
 .fa {
-  font-family: 'font-awesome';
-  font-size: 24;
   color: green;
 }
 .icon {
-  font-family: 'iconfont';
-  font-size: 96;
   color: white;
 }
 </style>

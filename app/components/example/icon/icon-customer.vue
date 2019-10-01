@@ -45,9 +45,4 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.icon {
-  font-family: iconfont;
-  font-size: 48;
-  color: white;
-}
 </style>

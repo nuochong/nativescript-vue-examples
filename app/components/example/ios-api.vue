@@ -55,12 +55,4 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.icons {
-  font-family: 'icomoon';
-  font-size: 48;
-}
-.icon {
-  font-family: iconfont;
-  font-size: 48;
-}
 </style>

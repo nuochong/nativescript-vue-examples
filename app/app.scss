@@ -16,10 +16,10 @@
 
 @import './assets/css/animate.css';
 
-// .fa {
-//   font-family: 'FontAwesome', 'fontawesome-webfont','font-awesome';
-//   font-size: 24;
-// }
+.fa {
+  font-family: 'FontAwesome', 'fontawesome-webfont', 'font-awesome';
+  font-size: 24;
+}
 .icon {
   font-family: 'iconfont';
   font-size: 24;
@@ -30,7 +30,10 @@
   font-weight: 700;
 }
 .hello-world {
-  margin: 0;
+  padding: 0;
+  label {
+    margin: 10 20;
+  }
 }
 .split {
   vertical-align: center;
@@ -61,4 +64,4 @@
 }
 
 // ns-ui
- @import './assets/css/ns-ui-new';
+@import './assets/css/ns-ui-new';

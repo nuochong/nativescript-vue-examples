@@ -38,9 +38,6 @@ export default {
 
 <style scoped lang="scss">
 /* 通用 */
-.fa {
-  font-family: 'FontAwesome';
-}
 .page {
   background-color: #ffffff;
   color: #000000;
