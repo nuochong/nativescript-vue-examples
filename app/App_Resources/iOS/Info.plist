@@ -1,17 +1,17 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
   <dict>
     <key>CFBundleDevelopmentRegion</key>
-    <string>en</string>
+    <string>zh</string>
     <key>CFBundleDisplayName</key>
-    <string>NSVue Examples</string>
+    <string>NSVue 示例</string>
     <key>CFBundleExecutable</key>
     <string>${EXECUTABLE_NAME}</string>
     <key>CFBundleInfoDictionaryVersion</key>
     <string>6.0</string>
     <key>CFBundleName</key>
-    <string>NSVue Examples</string>
+    <string>NSVue 示例</string>
     <key>CFBundlePackageType</key>
     <string>APPL</string>
     <key>CFBundleShortVersionString</key>
@@ -21,11 +21,11 @@
     <key>CFBundleVersion</key>
     <string>1.0</string>
     <key>LSRequiresIPhoneOS</key>
-    <true />
+    <true/>
     <key>UILaunchStoryboardName</key>
     <string>LaunchScreen</string>
     <key>UIRequiresFullScreen</key>
-    <true />
+    <true/>
     <key>UIRequiredDeviceCapabilities</key>
     <array>
       <string>armv7</string>
@@ -91,9 +91,6 @@
     <string>{YOUR_FACEBOOK_APP_ID_HERE}</string>
     <key>FacebookDisplayName</key>
     <string>FacebookLoginDemo</string>
-
-
-    <!--切换图标start-->
     <key>CFBundleIcons</key>
     <dict>
       <key>CFBundleAlternateIcons</key>
@@ -101,7 +98,7 @@
         <key>icon</key>
         <dict>
           <key>UIPrerenderedIcon</key>
-          <true />
+          <true/>
           <key>CFBundleIconFiles</key>
           <array>
             <string>icon-57</string>
@@ -113,7 +110,7 @@
         <key>icon-red</key>
         <dict>
           <key>UIPrerenderedIcon</key>
-          <true />
+          <true/>
           <key>CFBundleIconFiles</key>
           <array>
             <string>icon-red-57</string>
@@ -125,7 +122,7 @@
         <key>icon-blue</key>
         <dict>
           <key>UIPrerenderedIcon</key>
-          <true />
+          <true/>
           <key>CFBundleIconFiles</key>
           <array>
             <string>icon-blue-57</string>
@@ -137,7 +134,7 @@
         <key>icon-green</key>
         <dict>
           <key>UIPrerenderedIcon</key>
-          <true />
+          <true/>
           <key>CFBundleIconFiles</key>
           <array>
             <string>icon-green-57</string>
@@ -149,17 +146,16 @@
         <key>icon-yellow</key>
         <dict>
           <key>UIPrerenderedIcon</key>
-          <true />
+          <true/>
           <key>CFBundleIconFiles</key>
           <array>
-            <!-- this shows you don't NEED to supply all resolutions; Apple will scale down for you when needed -->
             <string>icon-yellow-152</string>
           </array>
         </dict>
         <key>icon-purple</key>
         <dict>
           <key>UIPrerenderedIcon</key>
-          <true />
+          <true/>
           <key>CFBundleIconFiles</key>
           <array>
             <string>icon-purple-57</string>
@@ -170,8 +166,6 @@
         </dict>
       </dict>
     </dict>
-
-    <!-- For iPad we're simply specifying 1 resolution, to show that that works as well (just use a large one, iOS will scale it down) -->
     <key>CFBundleIcons~ipad</key>
     <dict>
       <key>CFBundleAlternateIcons</key>
@@ -179,7 +173,7 @@
         <key>icon</key>
         <dict>
           <key>UIPrerenderedIcon</key>
-          <true />
+          <true/>
           <key>CFBundleIconFiles</key>
           <array>
             <string>icon-76</string>
@@ -188,7 +182,7 @@
         <key>icon-red</key>
         <dict>
           <key>UIPrerenderedIcon</key>
-          <true />
+          <true/>
           <key>CFBundleIconFiles</key>
           <array>
             <string>icon-red-76</string>
@@ -197,7 +191,7 @@
         <key>icon-blue</key>
         <dict>
           <key>UIPrerenderedIcon</key>
-          <true />
+          <true/>
           <key>CFBundleIconFiles</key>
           <array>
             <string>icon-blue-76</string>
@@ -206,7 +200,7 @@
         <key>icon-green</key>
         <dict>
           <key>UIPrerenderedIcon</key>
-          <true />
+          <true/>
           <key>CFBundleIconFiles</key>
           <array>
             <string>icon-green-76</string>
@@ -215,7 +209,7 @@
         <key>icon-yellow</key>
         <dict>
           <key>UIPrerenderedIcon</key>
-          <true />
+          <true/>
           <key>CFBundleIconFiles</key>
           <array>
             <string>icon-yellow-152</string>
@@ -224,7 +218,7 @@
         <key>icon-purple</key>
         <dict>
           <key>UIPrerenderedIcon</key>
-          <true />
+          <true/>
           <key>CFBundleIconFiles</key>
           <array>
             <string>icon-purple-76</string>
@@ -232,7 +226,5 @@
         </dict>
       </dict>
     </dict>
-    <!--切换图标end-->
-
   </dict>
 </plist>
