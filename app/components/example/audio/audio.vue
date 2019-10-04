@@ -33,11 +33,11 @@
             <Button row="8" col="0" text="速度 1" class="btn accent-btn" ios:borderRadius="4" @tap=" playSpeed1 " />
             <Button row="8" col="1" text="速度 1.5" class="btn accent-btn" ios:borderRadius="4" @tap=" playSpeed15 " />
             <Button row="8" col="2" text="速度 2" class="btn accent-btn" ios:borderRadius="4" @tap=" playSpeed2 " />
-            <Label row="9" col="0" :text=" '时间: ' + audioTrackDuration " textWrap="true" />
-            <Label row="9" col="2" :text=" '剩余时间: ' + remainingDuration " textWrap="true" />
-            <Label row="10" col="0" text="音量滑块: " textWrap="true" class="m-t-20" />
+            <Label row="9" col="0" class="label-white" :text=" '时间: ' + audioTrackDuration " textWrap="true" />
+            <Label row="9" col="2" class="label-white" :text=" '剩余时间: ' + remainingDuration " textWrap="true" />
+            <Label row="10" col="0" text="音量滑块: " textWrap="true" class="label-white m-t-20" />
             <Slider row="10" col="1" colSpan="2" id="volumeSlider" ref="volumeSlider" minValue="0" maxValue="100" value="100" class="m-t-20" />
-            <Label row="11" :text=" '播放器当前音量: ' + currentVolume " textWrap="true" />
+            <Label row="11" class="label-white" :text=" '播放器当前音量: ' + currentVolume " textWrap="true" />
             <Button row="12" col="0" text="静音" class="btn btn-primary" ios:borderRadius="4" @tap=" muteTap " />
             <Button row="12" col="1" text="恢复" class="btn btn-primary" ios:borderRadius="4" @tap=" unmuteTap " />
             <Button row="13" col="0" colSpan="2" text="转到8秒" class="btn btn-primary" ios:borderRadius="4" @tap=" skipTo8 " />

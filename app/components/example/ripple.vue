@@ -4,7 +4,7 @@
     <ScrollView>
       <StackLayout class="hello-world">
         <Ripple rippleColor="#d50000">
-          <Label text="Red Ripples!!!" class="message" textWrap="true" />
+          <Label text="Red Ripples" class="message" textWrap="true" />
         </Ripple>
         <Ripple rippleColor="#fff000">
           <Image src="~/assets/images/NativeScript-Vue.png" margin="10" stretch="aspectFit" />

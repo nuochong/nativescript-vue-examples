@@ -6,10 +6,10 @@
       <StackLayout class="hello-world">
         <Button text="改变视频" class="btn btn-rounded-sm btn-primary" @tap=" changeVideoSource " />
         <GridLayout rows="auto, auto" columns="auto, *" margin="10">
-          <Label row="0" col="0" text="当前时间: " textWrap="true" />
+          <Label row="0" col="0" class="label-white" text="当前时间: " textWrap="true" />
           <Label row="0" col="1" :text=" currentTime " class="message" textWrap="true" />
           <Label row="1" col="0" text="视频时间: " textWrap="true" />
-          <Label row="1" col="1" :text=" videoDuration " class="message" textWrap="true" />
+          <Label row="1" col="1" class="label-white message" :text=" videoDuration " textWrap="true" />
         </GridLayout>
         <GridLayout rows="*" columns="*, *" backgroundColor="#000000">
           <Video id="nativeVideoPlayer" ref="nativeVideoPlayer" controls="true" :loadingComplete=" videoCompleted " :finished=" videoFinished " loop="false" autoplay="true"
@@ -30,7 +30,7 @@
         <Button text="转到30秒" class="btn btn-rounded-sm btn-primary" tap=" goToTime " />
         <Button text="动画" class="btn btn-rounded-sm btn-primary" @tap=" animate " />
         <Button text="可编程视频播放器" class="btn btn-rounded-sm btn-primary" @tap=" createVideoPlayer " />
-        <Label text="这个按钮^^^将通过代码创建一个新的视频播放器，向下滚动查看。" textWrap="true" />
+        <Label class="label-white" text="这个按钮^^^将通过代码创建一个新的视频播放器，向下滚动查看。" textWrap="true" />
         <StackLayout id="emptyStack"></StackLayout>
       </StackLayout>
     </ScrollView>
@@ -54,7 +54,7 @@ export default {
   },
   data() {
     return {
-      title: '视频1',
+      title: '视频2',
       videoSrc: 'string',
       currentTime: 'any',
       videoDuration: 'any',

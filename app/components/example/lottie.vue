@@ -4,7 +4,6 @@
     <ScrollView>
       <StackLayout class="hello-world">
         <LottieView height="130" src="Mobilo/N.json" :loop="true" :autoPlay="true" @loaded="lottieViewLoaded"></LottieView>
-        <Button class="btn btn-primary btn-green" @tap="changebtn" ref="btn" text="改变按钮" />
       </StackLayout>
     </ScrollView>
   </Page>
@@ -33,9 +32,4 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.btn-green {
-  background-color: blue;
-  color: green;
-  font-size: 20px;
-}
 </style>

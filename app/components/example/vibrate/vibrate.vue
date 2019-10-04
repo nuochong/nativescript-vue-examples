@@ -4,7 +4,7 @@
 
     <ScrollView>
       <StackLayout class="hello-world">
-        <Button class="btn btn-primary" text="实例" @tap="btnVibrate" />
+        <Button class="btn btn-primary" text="震动" @tap="btnVibrate" />
       </StackLayout>
     </ScrollView>
   </Page>

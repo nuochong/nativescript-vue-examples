@@ -3,7 +3,7 @@
     <ActionBarSecond :title="title" />
     <ScrollView>
       <StackLayout class="hello-world">
-        <Button class="btn btn-primary" text="实例" @tap="btnCheckNfc" />
+        <Button class="btn btn-primary" text="判断NFC可用性" @tap="btnCheckNfc" />
       </StackLayout>
     </ScrollView>
   </Page>

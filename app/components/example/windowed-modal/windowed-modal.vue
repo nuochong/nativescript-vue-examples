@@ -3,7 +3,7 @@
     <ActionBarSecond :title="title" />
     <ScrollView>
       <StackLayout class="hello-world">
-        <Button class="btn btn-primary" text="实例" @tap="openModalTap" />
+        <Button class="btn btn-primary" text="模态窗口" @tap="openModalTap" />
       </StackLayout>
     </ScrollView>
   </Page>
