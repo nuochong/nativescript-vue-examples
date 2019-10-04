@@ -24,7 +24,9 @@ export default {
       title: '渐变'
     };
   },
-  mounted() {},
+  mounted() {
+    console.log('Android 正常，IOS无法使用。');
+  },
   methods: {}
 };
 </script>
