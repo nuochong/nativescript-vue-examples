@@ -93,6 +93,8 @@
         <Button class="btn btn-primary" text="网络检测" @tap="btnNetWorkConnectivity" />
         <Button class="btn btn-primary" text="页面分割" @tap="btnMasterPage" />
         <Button class="btn btn-primary" text="NSUI" @tap="btnNSUI" />
+        <Button class="btn btn-primary" text="阴影" @tap="btnShadow" />
+        <Button class="btn btn-primary" text="绘图画板" @tap="btnDrawingpad" />
       </StackLayout>
     </ScrollView>
   </Page>
@@ -187,6 +189,8 @@ import MediaFilePickerMain from './media-file-picker/media-file-picker-main';
 import NetworkConnectivity from './network-connectivity';
 import MasterPage from './split-view/master-page';
 import SideDrawer from './ns-ui/side-drawer';
+import ShadowMain from './shadow/shadow-main';
+import Drawingpad from './drawingpad';
 
 import ActionBarSecond from './public/action-bar-second';
 
@@ -202,6 +206,12 @@ export default {
   },
   mounted() {},
   methods: {
+    btnDrawingpad: function() {
+      this.navigateTo(this, Drawingpad);
+    },
+    btnShadow: function() {
+      this.navigateTo(this, ShadowMain);
+    },
     btnNSUI: function() {
       this.navigateTo(this, SideDrawer);
     },

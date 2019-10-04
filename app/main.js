@@ -94,6 +94,9 @@ Vue.registerElement('StatusBar', () => require('nativescript-statusbar').StatusB
 // 注册mapbox
 // Vue.registerElement("Mapbox", () => require("nativescript-mapbox").MapboxView);
 
+// 注册绘图画板
+Vue.registerElement('DrawingPad', () => require('nativescript-drawingpad').DrawingPad);
+
 // 初始化icons
 Vue.prototype.$icon = icons.initIcons();
 Vue.prototype.$setStatusBarFontColors = setStatusBarFontColors;
@@ -180,6 +183,10 @@ Vue.use(RadSideDrawer);
 Vue.use(RadDataForm);
 Vue.use(RadAutoComplete);
 Vue.use(RadGauge);
+
+// shadow
+import NSVueShadow from 'nativescript-vue-shadow'
+Vue.use(NSVueShadow)
 
 new Vue({
   Store,
