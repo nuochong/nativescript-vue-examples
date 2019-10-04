@@ -1,0 +1,8 @@
+repositories {
+    jcenter()
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    compile 'com.github.shiv19:TapTargetView:-SNAPSHOT'
+}

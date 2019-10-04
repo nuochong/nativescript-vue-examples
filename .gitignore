@@ -22,7 +22,7 @@ yarn-error.log*
 
 # NativeScript application
 hooks
-platforms
+/platforms
 
 # Lock files
 package-lock.json

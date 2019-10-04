@@ -1,0 +1,7 @@
+android {
+    
+}
+
+dependencies {
+    compile 'com.library.tangxiaolv:telegramgallery:1.0.1'
+}
