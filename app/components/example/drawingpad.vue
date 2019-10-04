@@ -8,8 +8,8 @@
         </DrawingPad>
 
         <StackLayout orientation="horizontal">
-          <Button text="Get Drawing" @tap="getMyDrawing()"></Button>
-          <Button text="Clear Drawing" @tap="clearMyDrawing()"></Button>
+          <Button class="btn btn-primary" text="Get Drawing" @tap="getMyDrawing()"></Button>
+          <Button class="btn btn-primary" text="Clear Drawing" @tap="clearMyDrawing()"></Button>
         </StackLayout>
 
       </StackLayout>
