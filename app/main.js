@@ -65,8 +65,6 @@ Vue.registerElement('BarcodeScanner', () => require('nativescript-barcodescanner
 Vue.registerElement('PreviousNextView', () => require('nativescript-iqkeyboardmanager').PreviousNextView);
 Vue.registerElement('TextViewWithHint', () => require('nativescript-iqkeyboardmanager').TextViewWithHint);
 // 注册轮播图
-// Vue.registerElement('Carousel', () => require('nativescript-carousel').Carousel);
-// Vue.registerElement('CarouselItem', () => require('nativescript-carousel').CarouselItem);
 Vue.registerElement('Carousel', () => require('./tools/nativescript-carousel').Carousel);
 Vue.registerElement('CarouselItem', () => require('./tools/nativescript-carousel').CarouselItem);
 // 注册动画插件
@@ -162,24 +160,24 @@ StoreUpdate.init({
 });
 
 // 国际化
-import { localize } from "nativescript-localize";
-Vue.filter("L", localize);
+import { localize } from 'nativescript-localize';
+Vue.filter('L', localize);
 
 // 闪屏待完善
 
 // ns-ui
-import RadListView from 'nativescript-ui-listview/vue'
-import RadCalendar from 'nativescript-ui-calendar/vue'
-import RadDataForm from 'nativescript-ui-dataform/vue'
-import RadChart from 'nativescript-ui-chart/vue'
-import RadSideDrawer from 'nativescript-ui-sidedrawer/vue'
+import RadListView from 'nativescript-ui-listview/vue';
+import RadCalendar from 'nativescript-ui-calendar/vue';
+import RadDataForm from 'nativescript-ui-dataform/vue';
+import RadChart from 'nativescript-ui-chart/vue';
+import RadSideDrawer from 'nativescript-ui-sidedrawer/vue';
 import RadAutoComplete from 'nativescript-ui-autocomplete/vue';
 import RadGauge from 'nativescript-ui-gauge/vue';
-Vue.use(RadListView)
-Vue.use(RadCalendar)
-Vue.use(RadChart)
-Vue.use(RadSideDrawer)
-Vue.use(RadDataForm)
+Vue.use(RadListView);
+Vue.use(RadCalendar);
+Vue.use(RadChart);
+Vue.use(RadSideDrawer);
+Vue.use(RadDataForm);
 Vue.use(RadAutoComplete);
 Vue.use(RadGauge);
 
