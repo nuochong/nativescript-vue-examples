@@ -7,10 +7,10 @@
   "nativescript": {
     "id": "org.nativescript.application",
     "tns-android": {
-      "version": "6.0.2"
+      "version": "6.1.2"
     },
     "tns-ios": {
-      "version": "6.0.2"
+      "version": "6.1.1"
     }
   },
   "scripts": {
@@ -25,7 +25,8 @@
     "doctor": "tns doctor",
     "install:vue": "npm install -g @vue/cli @vue/cli-init",
     "install:nativescript": "npm install -g nativescript",
-    "init:environment": "vue init nativescript-vue/vue-cli-template"
+    "init:environment": "vue init nativescript-vue/vue-cli-template",
+    "update:nativescript": "npm update -g nativescript"
   },
   "dependencies": {
     "@nstudio/nativescript-audio-recorder": "^0.1.0",
