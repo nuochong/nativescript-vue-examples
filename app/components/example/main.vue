@@ -95,6 +95,7 @@
         <Button class="btn btn-primary" text="NSUI" @tap="btnNSUI" />
         <Button class="btn btn-primary" text="阴影" @tap="btnShadow" />
         <Button class="btn btn-primary" text="绘图画板" @tap="btnDrawingpad" />
+        <Button class="btn btn-primary" text="图像编辑" @tap="btnImagecropper" />
       </StackLayout>
     </ScrollView>
   </Page>
@@ -191,6 +192,7 @@ import MasterPage from './split-view/master-page';
 import SideDrawer from './ns-ui/side-drawer';
 import ShadowMain from './shadow/shadow-main';
 import Drawingpad from './drawingpad';
+import Imagecropper from './imagecropper';
 
 import ActionBarSecond from './public/action-bar-second';
 
@@ -206,6 +208,9 @@ export default {
   },
   mounted() {},
   methods: {
+    btnImagecropper: function() {
+      this.navigateTo(this, Imagecropper);
+    },
     btnDrawingpad: function() {
       this.navigateTo(this, Drawingpad);
     },

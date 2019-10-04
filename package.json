@@ -69,6 +69,7 @@
     "nativescript-fingerprint-auth": "^7.0.1",
     "nativescript-geolocation": "5.1.0",
     "nativescript-gif": "^4.0.2",
+    "nativescript-imagecropper": "^1.0.7",
     "nativescript-imagepicker": "^7.1.0",
     "nativescript-iqkeyboardmanager": "^1.5.1",
     "nativescript-keyboard-toolbar": "^1.1.0",
