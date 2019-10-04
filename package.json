@@ -14,8 +14,8 @@
     }
   },
   "scripts": {
-    "run:android": "tns run android",
-    "run:ios": "tns run ios",
+    "run:android": "tns run android --bundle --env.uglify --env.snapshot",
+    "run:ios": "tns run ios --bundle --env.uglify",
     "device": "tns device",
     "build:android": "tns build android --env.production",
     "build:ios": "tns build ios --env.production",
