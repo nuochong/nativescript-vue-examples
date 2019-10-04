@@ -52,7 +52,7 @@ exports.Menu = Menu;
 var frame, button, label;
 function getCurrentPage() {
     if (!frame) {
-        frame = require("ui/frame");
+        frame = require("tns-core-modules/ui/frame");
     }
     var topmostFrame = frame.topmost();
     if (topmostFrame) {
@@ -74,7 +74,7 @@ function applySelectors(view, callback) {
 }
 function getButtonColors() {
     if (!button) {
-        var Button = require("ui/button").Button;
+        var Button = require("tns-core-modules/ui/button").Button;
         button = new Button;
     }
     var buttonColor;
@@ -87,7 +87,7 @@ function getButtonColors() {
 }
 function getLabelColor() {
     if (!label) {
-        var Label = require("ui/label").Label;
+        var Label = require("tns-core-modules/ui/label").Label;
         label = new Label;
     }
     var labelColor;
