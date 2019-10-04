@@ -96,6 +96,7 @@
         <Button class="btn btn-primary" text="阴影" @tap="btnShadow" />
         <Button class="btn btn-primary" text="绘图画板" @tap="btnDrawingpad" />
         <Button class="btn btn-primary" text="图像编辑" @tap="btnImagecropper" />
+        <Button class="btn btn-primary" text="渐变" @tap="btnGradient" />
       </StackLayout>
     </ScrollView>
   </Page>
@@ -193,6 +194,7 @@ import SideDrawer from './ns-ui/side-drawer';
 import ShadowMain from './shadow/shadow-main';
 import Drawingpad from './drawingpad';
 import Imagecropper from './imagecropper';
+import Dradient from './gradient';
 
 import ActionBarSecond from './public/action-bar-second';
 
@@ -208,6 +210,9 @@ export default {
   },
   mounted() {},
   methods: {
+    btnGradient: function() {
+      this.navigateTo(this, Dradient);
+    },
     btnImagecropper: function() {
       this.navigateTo(this, Imagecropper);
     },

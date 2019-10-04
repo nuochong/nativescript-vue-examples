@@ -93,9 +93,10 @@ Vue.registerElement('Fab', () => require('@nstudio/nativescript-floatingactionbu
 Vue.registerElement('StatusBar', () => require('nativescript-statusbar').StatusBar);
 // 注册mapbox
 // Vue.registerElement("Mapbox", () => require("nativescript-mapbox").MapboxView);
-
 // 注册绘图画板
 Vue.registerElement('DrawingPad', () => require('nativescript-drawingpad').DrawingPad);
+// 注册渐变
+Vue.registerElement("Gradient", () => require("nativescript-gradient").Gradient);
 
 // 初始化icons
 Vue.prototype.$icon = icons.initIcons();
