@@ -6,6 +6,7 @@
       <StackLayout class="hello-world">
         <Button class="btn btn-primary" text="请求" @tap="btnRequest" />
         <Button class="btn btn-primary" text="Axios请求" @tap="btnIconPlug" />
+        <Image ref="kitty" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz2zZ447t45PELg9liuPfDoAcOwdnkuzN5eUSZiTHB8CgL2aduKw" width="200" />
       </StackLayout>
     </ScrollView>
   </Page>
