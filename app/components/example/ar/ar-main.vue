@@ -27,7 +27,7 @@ export default {
   methods: {
     btnAr: function() {
       this.navigateTo(this, Ar);
-    },
+    }
   }
 };
 </script>
