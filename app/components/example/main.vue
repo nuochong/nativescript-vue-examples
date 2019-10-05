@@ -97,6 +97,7 @@
         <Button class="btn btn-primary" text="绘图画板" @tap="btnDrawingpad" />
         <Button class="btn btn-primary" text="图像编辑" @tap="btnImagecropper" />
         <Button class="btn btn-primary" text="渐变" @tap="btnGradient" />
+        <Button class="btn btn-primary" text="模糊" @tap="btnBlurMain" />
       </StackLayout>
     </ScrollView>
   </Page>
@@ -195,6 +196,7 @@ import ShadowMain from './shadow/shadow-main';
 import Drawingpad from './drawingpad';
 import Imagecropper from './imagecropper';
 import Dradient from './gradient';
+import BlurMain from './blur/blur-main';
 
 import ActionBarSecond from './public/action-bar-second';
 
@@ -210,6 +212,9 @@ export default {
   },
   mounted() {},
   methods: {
+    btnBlurMain: function() {
+      this.navigateTo(this, BlurMain);
+    },
     btnGradient: function() {
       this.navigateTo(this, Dradient);
     },

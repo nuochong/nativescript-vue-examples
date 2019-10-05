@@ -11,16 +11,30 @@
 
 android {
   defaultConfig {
-    //minSdkVersion 17
-    minSdkVersion 21
+    minSdkVersion 25
+    // minSdkVersion 21
+    // minSdkVersion 17
     generatedDensities = []
     applicationId = "org.nativescript.application"
     // ndk {
     //   abiFilters.clear()
     // }
+
+    // blur start
+    renderscriptTargetApi 25
+    renderscriptSupportModeEnabled true
+    // blur end
   }
   aaptOptions {
     additionalParameters "--no-version-vectors"
+  }
+  // 混淆开关
+  def enableProguardInReleaseBuilds = true
+  buildTypes {
+    release {
+        minifyEnabled enableProguardInReleaseBuilds
+        proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+    }
   }
   // splits {
   //   abi {
