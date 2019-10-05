@@ -1,5 +1,4 @@
 let normal = {
-  // 安卓app名称
   // app_name: 'NSVue Examples',
   title_activity_kimera: 'NSVue Examples',
   // 这里是android长按菜单，也同样会被编译到ios，该错误需要处理
