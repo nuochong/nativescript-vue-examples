@@ -25,7 +25,7 @@
 </template>
 
 <script>
-import { AndroidData, IOSData, Elevation, Shape, ShapeEnum } from 'nativescript-vue-shadow';
+import { Elevation, Shape, ShapeEnum } from 'nativescript-vue-shadow';
 import { ListPicker } from 'tns-core-modules/ui/list-picker';
 import { isAndroid, isIOS } from 'tns-core-modules/platform';
 import ActionBarSecond from '../public/action-bar-second';
@@ -41,8 +41,8 @@ export default {
       elevation: 2,
       shape: ShapeEnum,
       stdElevations: [],
-      androidData: AndroidData,
-      iosData: IOSData,
+      androidData: {},
+      iosData: {},
       bclass: 'ex2',
       bclass2: 'ex3',
       bclass3: 'ex4',
