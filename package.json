@@ -48,6 +48,7 @@
     "nativescript-app-settings": "^1.0.0",
     "nativescript-app-shortcuts": "^2.1.0",
     "nativescript-appavailability": "^1.3.2",
+    "nativescript-ar": "^1.0.1",
     "nativescript-audio": "^5.0.5",
     "nativescript-barcodescanner": "^3.4.0",
     "nativescript-bluetooth": "^2.0.0-beta.24",

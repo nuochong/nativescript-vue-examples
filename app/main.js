@@ -97,6 +97,8 @@ Vue.registerElement('StatusBar', () => require('nativescript-statusbar').StatusB
 Vue.registerElement('DrawingPad', () => require('nativescript-drawingpad').DrawingPad);
 // 注册渐变
 Vue.registerElement("Gradient", () => require("nativescript-gradient").Gradient);
+// 注册AR
+Vue.registerElement('AR', () => require('nativescript-ar').AR);
 
 // 初始化icons
 Vue.prototype.$icon = icons.initIcons();

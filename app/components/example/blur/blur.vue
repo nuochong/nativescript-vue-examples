@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import { Blur } from 'nativescript-blur';
+import { Blur } from '../../../tools/nativescript-blur';
 import * as app from 'tns-core-modules/application';
 let blur = new Blur(true); // 传递true以启用android上的有限使用（目前）；
 import ActionBarSecond from '../public/action-bar-second';
@@ -26,7 +26,9 @@ export default {
       title: '模糊'
     };
   },
-  mounted() {},
+  mounted() {
+    console.log('模糊安卓不可用，苹果正常。');
+  },
   methods: {
     // 选择日期
     makeKittyBlurry() {
