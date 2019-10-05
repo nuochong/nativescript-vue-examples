@@ -33,7 +33,7 @@ Vue.use(VueAxios, axios);
 Vue.use(MultiDrawer, {
   // 重写覆盖这里的任何选项
   // 例如，启用调试模式
-  debug: true
+  debug: false
   // backdropColor: 'rgba(255, 0, 0, 0.7)',
   // 其它配置参看插件源代码
 });
