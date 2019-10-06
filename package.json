@@ -39,7 +39,9 @@
     "npx:vue-devtools": "npx vue-devtools",
     "clear:platforms": "rm -rf platforms",
     "clear:android": "rm -rf platforms/android",
-    "clear:ios": "rm -rf platforms/ios"
+    "clear:ios": "rm -rf platforms/ios",
+    "vue:version": "vue --version",
+    "vue:ui": "vue ui"
   },
   "dependencies": {
     "@nstudio/nativescript-audio-recorder": "^0.1.0",
