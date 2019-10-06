@@ -41,7 +41,12 @@
     "clear:android": "rm -rf platforms/android",
     "clear:ios": "rm -rf platforms/ios",
     "vue:version": "vue --version",
-    "vue:ui": "vue ui"
+    "vue:ui": "vue ui",
+    "brew:yarn": "brew install yarn",
+    "brew:yarn-nvm": "brew install yarn --ignore-dependencies",
+    "sudo:yarn": "sudo port install yarn",
+    "update:yarn": "brew upgrade yarn",
+    "yarn:version": "yarn --version"
   },
   "dependencies": {
     "@nstudio/nativescript-audio-recorder": "^0.1.0",
