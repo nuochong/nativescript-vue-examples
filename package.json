@@ -14,8 +14,8 @@
     }
   },
   "scripts": {
-    "run:android": "tns run android",
-    "run:ios": "tns run ios",
+    "run:android-all": "tns run android",
+    "run:ios-all": "tns run ios",
     "device": "tns device",
     "build:android": "tns build android --bundle --env.uglify --env.snapshot --env.production --env.report",
     "build:ios": "tns build ios --bundle --env.uglify --env.production --env.report",
@@ -47,7 +47,11 @@
     "sudo:yarn": "sudo port install yarn",
     "update:yarn": "brew upgrade yarn",
     "yarn:version": "yarn --version",
-    "quik:connect": "tns device run org.nativescript.vue.examples.application"
+    "quik:connect": "tns device run org.nativescript.vue.examples.application",
+    "open:ios-emulator": "open -a Simulator",
+    "open:android-emulator": "cd $ANDROID_HOME/tools && ./emulator @Nexus_5_API_25",
+    "run:android-emulator": "tns run android --device Nexus_5_API_25",
+    "run:ios-emulator": "tns run ios --device iPhone 6"
   },
   "dependencies": {
     "@nstudio/nativescript-audio-recorder": "^0.1.0",
