@@ -29,9 +29,10 @@
     "update:nativescript": "npm update -g nativescript",
     "list:applications": "tns device list-applications",
     "version:nativescript": "tns --version",
-    "adb:device": "adb device",
-    "adb:tcpip": "adb tcp ip 5555",
-    "adb:connect": "adb connect 10.92.102.210:5555"
+    "adb:devices": "adb devices",
+    "adb:tcpip": "adb tcpip 5555",
+    "adb:connect": "adb connect 10.92.102.210:5555",
+    "adb:disconnect": "adb disconnect 10.92.102.210:5555"
   },
   "dependencies": {
     "@nstudio/nativescript-audio-recorder": "^0.1.0",
