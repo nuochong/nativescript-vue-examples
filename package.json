@@ -46,7 +46,8 @@
     "brew:yarn-nvm": "brew install yarn --ignore-dependencies",
     "sudo:yarn": "sudo port install yarn",
     "update:yarn": "brew upgrade yarn",
-    "yarn:version": "yarn --version"
+    "yarn:version": "yarn --version",
+    "quik:connect": "tns device run org.nativescript.vue.examples.application"
   },
   "dependencies": {
     "@nstudio/nativescript-audio-recorder": "^0.1.0",
