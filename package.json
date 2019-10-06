@@ -32,7 +32,14 @@
     "adb:devices": "adb devices",
     "adb:tcpip": "adb tcpip 5555",
     "adb:connect": "adb connect 10.92.102.210:5555",
-    "adb:disconnect": "adb disconnect 10.92.102.210:5555"
+    "adb:disconnect": "adb disconnect 10.92.102.210:5555",
+    "init:vue-devtools": "npm install --save @vue/devtools nativescript-toasty nativescript-socketio nativescript-vue-devtools",
+    "install:vue-devtools": "npm install -g @vue/devtools",
+    "run:vue-devtools": "vue-devtools",
+    "npx:vue-devtools": "npx vue-devtools",
+    "clear:platforms": "rm -rf platforms",
+    "clear:android": "rm -rf platforms/android",
+    "clear:ios": "rm -rf platforms/ios"
   },
   "dependencies": {
     "@nstudio/nativescript-audio-recorder": "^0.1.0",
