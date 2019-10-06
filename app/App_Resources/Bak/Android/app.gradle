@@ -14,7 +14,7 @@ android {
     //minSdkVersion 17
     minSdkVersion 21
     generatedDensities = []
-    applicationId = "org.nativescript.application"
+    applicationId = "org.nativescript.vue.examples.application"
   }
   aaptOptions {
     additionalParameters "--no-version-vectors"
