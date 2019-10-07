@@ -40,13 +40,13 @@
     "clear:platforms": "rm -rf platforms",
     "clear:android": "rm -rf platforms/android",
     "clear:ios": "rm -rf platforms/ios",
-    "vue:version": "vue --version",
-    "vue:ui": "vue ui",
     "quik:connect": "tns device run org.nativescript.vue.examples.application",
     "open:emulator-ios": "open -a Simulator",
     "open:emulator-android": "cd $ANDROID_HOME/tools && ./emulator @Nexus_5_API_25",
     "run:emulator-android": "tns run android --device Nexus_5_API_25",
-    "run:emulator-ios": "tns run ios --device iPhone 6"
+    "run:emulator-ios": "tns run ios --device iPhone 6",
+    "vue:version": "vue --version",
+    "vue:ui": "vue ui"
   },
   "dependencies": {
     "@nstudio/nativescript-audio-recorder": "^0.1.0",
