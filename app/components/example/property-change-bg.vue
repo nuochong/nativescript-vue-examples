@@ -1,5 +1,5 @@
 <template>
-  <Page class="page">
+  <Page class="page" @loaded="init">
     <ActionBarSecond :title="title" />
     <ScrollView>
       <StackLayout class="hello-world home-panel" ref="homepanel" :bgred="bgRed">
@@ -25,11 +25,22 @@ export default {
       bgRed: false
     };
   },
+  watch: {
+    bgRed() {
+      this.notify();
+    }
+  },
   mounted() {},
   methods: {
+    init() {
+      this.bgRed = true;
+    },
     forceUpdate() {
-      const native = this.$refs.homepanel.nativeView;
       this.bgRed = !this.bgRed;
+      console.log('点击了', this.bgRed);
+    },
+    notify() {
+      const native = this.$refs.homepanel.nativeView;
       native.notify({ eventName: 'bgredChange', object: native });
     }
   }
