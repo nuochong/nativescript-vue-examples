@@ -99,6 +99,7 @@
         <Button class="btn btn-primary" text="渐变" @tap="btnGradient" />
         <Button class="btn btn-primary" text="模糊" @tap="btnBlurMain" />
         <Button class="btn btn-primary" text="AR" @tap="btnArMain" />
+        <Button class="btn btn-primary" text="通过属性名称改变背景" @tap="btnPropertyChangeBg" />
       </StackLayout>
     </ScrollView>
   </Page>
@@ -199,6 +200,7 @@ import Imagecropper from './imagecropper';
 import Dradient from './gradient';
 import BlurMain from './blur/blur-main';
 import ArMain from './ar/ar-main';
+import PropertyChangeBg from './property-change-bg';
 
 import ActionBarSecond from './public/action-bar-second';
 
@@ -214,6 +216,9 @@ export default {
   },
   mounted() {},
   methods: {
+    btnPropertyChangeBg:function(){
+      this.navigateTo(this, PropertyChangeBg);
+    },
     btnArMain: function() {
       this.navigateTo(this, ArMain);
     },
