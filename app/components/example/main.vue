@@ -216,7 +216,7 @@ export default {
   },
   mounted() {},
   methods: {
-    btnPropertyChangeBg:function(){
+    btnPropertyChangeBg: function() {
       this.navigateTo(this, PropertyChangeBg);
     },
     btnArMain: function() {
