@@ -33,11 +33,13 @@ export default {
   methods: {
     example: function() {
       this.navigateTo(this, Example, 'left');
-      //this.$setStatusBarFontColors('black');
+      // this.$setStatusBarFontColors('black');
+      // this.$router.push('/example');
     },
     project: function() {
       this.navigateTo(this, Project, 'left');
-      //this.$setBarFontColor('black');
+      // this.$setBarFontColor('black');
+      // this.$router.push('/project');
     },
     startBackgroundAnimation: function() {
       this.$refs.bg.nativeView.animate({
