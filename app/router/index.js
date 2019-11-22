@@ -1,5 +1,5 @@
 // 原生Vue-router
-import Vue from 'vue';
+import Vue from 'nativescript-vue';
 import Router from 'vue-router';
 import Example from '~/components/example/main';
 import Project from '~/components/project/main';

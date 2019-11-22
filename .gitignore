@@ -17,17 +17,14 @@ yarn-error.log*
 *.sln
 *.sw*
 
-# dependencies
-/node_modules
-
 # NativeScript application
 hooks
 /platforms
 /report
+.migration_backup
 
-# Lock files
+# Package management tools files
+.npmrc
 package-lock.json
 yarn.lock
-
-# migration_backup
-.migration_backup
+/node_modules
