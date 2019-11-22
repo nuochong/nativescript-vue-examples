@@ -8,9 +8,9 @@ Vue.use(Router);
 
 let router = new Router({
   mode: 'abstract',
+  // base: '/',
   // saveScrollPosition: true,
   // transitionOnLoad: true,
-  // base: process.env.ITEM_PATH + process.env.ITEM_NAME,
   routes: [
     {
       path: '/example',
