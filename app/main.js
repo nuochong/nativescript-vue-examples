@@ -1,9 +1,9 @@
 import Vue from 'nativescript-vue';
 import VueDevtools from 'nativescript-vue-devtools';
 import App from './components/App';
-import Store from './store';
+import store from './store';
 // import router, { routes } from './router';
-// import Router from './router';
+import router from './router';
 // import Dynamo from 'nativescript-vue-dynamo';
 import CommonLocal from './assets/js/common.js';
 import shortcuts from './assets/js/app.shortcuts.js';
@@ -97,7 +97,7 @@ Vue.registerElement('StatusBar', () => require('nativescript-statusbar').StatusB
 // 注册绘图画板
 Vue.registerElement('DrawingPad', () => require('nativescript-drawingpad').DrawingPad);
 // 注册渐变
-Vue.registerElement("Gradient", () => require("nativescript-gradient").Gradient);
+Vue.registerElement('Gradient', () => require('nativescript-gradient').Gradient);
 // 注册AR
 Vue.registerElement('AR', () => require('nativescript-ar').AR);
 
@@ -189,11 +189,11 @@ Vue.use(RadAutoComplete);
 Vue.use(RadGauge);
 
 // shadow
-import NSVueShadow from 'nativescript-vue-shadow'
-Vue.use(NSVueShadow)
+import NSVueShadow from 'nativescript-vue-shadow';
+Vue.use(NSVueShadow);
 
 new Vue({
-  Store,
-  // Router,
+  store,
+  router,
   render: h => h('frame', [h(App)])
 }).$start();

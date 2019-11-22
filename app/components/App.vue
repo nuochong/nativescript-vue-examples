@@ -40,6 +40,7 @@ export default {
       this.navigateTo(this, Project, 'left');
       // this.$setBarFontColor('black');
       // this.$router.push('/project');
+      console.log('路由函数：', this.$router);
     },
     startBackgroundAnimation: function() {
       this.$refs.bg.nativeView.animate({
