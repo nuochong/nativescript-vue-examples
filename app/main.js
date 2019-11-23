@@ -1,9 +1,9 @@
 import Vue from 'nativescript-vue';
 import VueDevtools from 'nativescript-vue-devtools';
 import App from './components/App';
-import store from './store';
+import Store from './store';
 // import router, { routes } from './router';
-import router from './router';
+import Router from './router';
 // import Dynamo from 'nativescript-vue-dynamo';
 import CommonLocal from './assets/js/common.js';
 import shortcuts from './assets/js/app.shortcuts.js';
@@ -193,7 +193,7 @@ import NSVueShadow from 'nativescript-vue-shadow';
 Vue.use(NSVueShadow);
 
 new Vue({
-  store,
-  router,
+  Store,
+  Router,
   render: h => h('frame', [h(App)])
 }).$start();
