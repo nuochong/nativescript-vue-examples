@@ -10,7 +10,9 @@
 // create a file named before-plugins.gradle in the current directory and place it there
 
 android {
+  // compileSdkVersion 29
   defaultConfig {
+    // targetSdkVersion 29
     minSdkVersion 25
     // minSdkVersion 21
     // minSdkVersion 17
