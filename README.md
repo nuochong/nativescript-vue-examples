@@ -4,6 +4,11 @@
   </a>
 </p>
 
+<p align="center">
+  <a href="https://github.com/nuochong/nativescript-vue-examples/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-brightgreen.svg"></a>
+  <a href="http://luzhaoyang.com/blog/"><img src="https://api.travis-ci.org/alibaba/ice.svg?branch=master"></a>
+</p>
+
 <h2 align="center">Nativescript-Vue-Examples</h2>
 
 # NSVue Examples
