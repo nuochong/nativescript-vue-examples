@@ -9,7 +9,9 @@
   <a href="http://luzhaoyang.com/blog/"><img src="https://api.travis-ci.org/alibaba/ice.svg?branch=master"></a>
 </p>
 
-<h2 align="center">Nativescript-Vue-Examples</h2>
+<h2 align="center">Supporting Nativescript-Vue-Examples</h2>
+
+This project is a personal maintenance project, due to limited energy, you need to support.
 
 # NSVue Examples
 
