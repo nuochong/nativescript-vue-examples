@@ -1,3 +1,18 @@
+<p align="center">
+  <a href="http://luzhaoyang.com/blog/" target="_blank">
+    <img width="180" src="https://raw.githubusercontent.com/nuochong/me-resource/master/resource/nativescript-vue-examples.png" alt="logo">
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/nuochong/nativescript-vue-examples/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-brightgreen.svg"></a>
+  <a href="http://luzhaoyang.com/blog/"><img src="https://api.travis-ci.org/alibaba/ice.svg?branch=master"></a>
+</p>
+
+<h2 align="center">Supporting Nativescript-Vue-Examples</h2>
+
+This project is a personal maintenance project, due to limited energy, you need to support.
+
 # NSVue Examples
 
 > A native application built with NativeScript-Vue
