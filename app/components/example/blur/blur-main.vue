@@ -4,7 +4,7 @@
 
     <ScrollView>
       <StackLayout class="hello-world">
-        <Button class="btn btn-primary" text="模糊" @tap="btnBlur" />
+        <Button class="btn btn-primary -primary" text="模糊" @tap="btnBlur" />
       </StackLayout>
     </ScrollView>
   </Page>

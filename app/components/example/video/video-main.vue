@@ -4,8 +4,8 @@
 
     <ScrollView>
       <StackLayout class="hello-world">
-        <Button class="btn btn-primary" text="视频1" @tap="btnVideo1" />
-        <Button class="btn btn-primary" text="视频2" @tap="btnVideo2" />
+        <Button class="btn btn-primary -primary" text="视频1" @tap="btnVideo1" />
+        <Button class="btn btn-primary -primary" text="视频2" @tap="btnVideo2" />
       </StackLayout>
     </ScrollView>
   </Page>

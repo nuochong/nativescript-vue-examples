@@ -5,7 +5,7 @@
     <ScrollView>
       <StackLayout class="hello-world">
         <!-- 在这里添加页面内容 -->
-        <Button textWrap="true" class="btn btn-primary" v-on:tap="do_capture">获取并编辑图像</Button>
+        <Button textWrap="true" class="btn btn-primary -primary" v-on:tap="do_capture">获取并编辑图像</Button>
         <Image v-bind:src="image_src" />
       </StackLayout>
     </ScrollView>

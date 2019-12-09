@@ -4,7 +4,7 @@
 
     <ScrollView>
       <StackLayout class="hello-world">
-        <Button class="btn btn-primary" text="创建联系人" @tap="create" />
+        <Button class="btn btn-primary -primary" text="创建联系人" @tap="create" />
       </StackLayout>
     </ScrollView>
   </Page>

@@ -3,7 +3,7 @@
     <ActionBarSecond :title="title" />
 
     <StackLayout class="hello-world camera-container">
-      <Button class="btn btn-primary" @tap="test" text="拍照" />
+      <Button class="btn btn-primary -primary" @tap="test" text="拍照" />
       <Image class="camera-img" :src="img" stretch="none" />
     </StackLayout>
   </Page>

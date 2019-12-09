@@ -4,7 +4,7 @@
 
     <ScrollView>
       <StackLayout class="hello-world">
-        <Button class="btn btn-primary" text="简易弹出菜单" ref="btn" @tap="btnPopup" />
+        <Button class="btn btn-primary -primary" text="简易弹出菜单" ref="btn" @tap="btnPopup" />
       </StackLayout>
     </ScrollView>
   </Page>

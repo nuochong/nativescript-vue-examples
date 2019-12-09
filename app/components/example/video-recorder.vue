@@ -3,7 +3,7 @@
     <ActionBarSecond :title="title" />
     <ScrollView>
       <StackLayout class="hello-world">
-        <Button class="btn btn-primary" text="视频录制" @tap="btnVideoRecord" />
+        <Button class="btn btn-primary -primary" text="视频录制" @tap="btnVideoRecord" />
       </StackLayout>
     </ScrollView>
   </Page>

@@ -5,8 +5,8 @@
       <GridLayout class="background" ref="bg" scaleX="1.4" scaleY="1.4" @loaded="startBackgroundAnimation" />
       <ScrollView>
         <StackLayout class="hello-world">
-          <Button class="btn btn-primary" :text="'example' | L" @tap="example" />
-          <Button class="btn btn-primary" :text="'project' | L" @tap="project" />
+          <Button class="btn btn-primary -primary" :text="'example' | L" @tap="example" />
+          <Button class="btn btn-primary -primary" :text="'project' | L" @tap="project" />
           <Label class="label-black h3 text-center" :text="'Looking_forward_to_your_joining' | L" textWrap="true" />
         </StackLayout>
       </ScrollView>

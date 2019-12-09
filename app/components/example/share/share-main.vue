@@ -4,10 +4,10 @@
 
     <ScrollView>
       <StackLayout class="hello-world">
-        <Button class="btn btn-primary" text="分享" @tap="btnShare" />
-        <Button class="btn btn-primary" text="分享图片" @tap="btnShareImg" />
-        <Button class="btn btn-primary" text="分享文本" @tap="btnShareText" />
-        <Button class="btn btn-primary" text="分享链接" @tap="btnShareUrl" />
+        <Button class="btn btn-primary -primary" text="分享" @tap="btnShare" />
+        <Button class="btn btn-primary -primary" text="分享图片" @tap="btnShareImg" />
+        <Button class="btn btn-primary -primary" text="分享文本" @tap="btnShareText" />
+        <Button class="btn btn-primary -primary" text="分享链接" @tap="btnShareUrl" />
       </StackLayout>
     </ScrollView>
   </Page>

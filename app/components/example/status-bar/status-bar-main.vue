@@ -4,8 +4,8 @@
 
     <ScrollView>
       <StackLayout class="hello-world">
-        <Button class="btn btn-primary" text="显示隐藏导航栏" @tap="btnStatusBar" />
-        <Button class="btn btn-primary" text="导航栏颜色" @tap="btnStatusBarColor" />
+        <Button class="btn btn-primary -primary" text="显示隐藏导航栏" @tap="btnStatusBar" />
+        <Button class="btn btn-primary -primary" text="导航栏颜色" @tap="btnStatusBarColor" />
       </StackLayout>
     </ScrollView>
   </Page>

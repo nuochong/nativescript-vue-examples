@@ -4,7 +4,7 @@
 
     <ScrollView>
       <StackLayout class="hello-world">
-        <Button class="btn btn-primary" text="读取所有联系人" @tap="btnGetAllContacts" />
+        <Button class="btn btn-primary -primary" text="读取所有联系人" @tap="btnGetAllContacts" />
       </StackLayout>
     </ScrollView>
   </Page>

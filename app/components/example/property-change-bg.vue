@@ -3,9 +3,9 @@
     <ActionBarSecond :title="title" />
     <ScrollView>
       <StackLayout class="hello-world home-panel" ref="homepanel" :bgred="bgRed">
-        <Button class="btn btn-primary" @tap="bgRed = !bgRed" text="toggle" />
-        <Button class="btn btn-primary" @tap="console.log(bgRed)" text="get bgRed" />
-        <!-- <Button class="btn btn-primary" @tap="forceUpdate" text="force update" /> -->
+        <Button class="btn btn-primary -primary" @tap="bgRed = !bgRed" text="toggle" />
+        <Button class="btn btn-primary -primary" @tap="console.log(bgRed)" text="get bgRed" />
+        <!-- <Button class="btn btn-primary -primary" @tap="forceUpdate" text="force update" /> -->
       </StackLayout>
     </ScrollView>
   </Page>

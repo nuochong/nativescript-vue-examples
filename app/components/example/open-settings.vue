@@ -3,9 +3,9 @@
     <ActionBarSecond :title="title" />
     <ScrollView>
       <StackLayout class="hello-world">
-        <Button class="btn btn-primary" text="启动" @tap="btnOpenWifi1" />
-        <Button class="btn btn-primary" text="停止" @tap="btnOpenWifi2" />
-        <Button class="btn btn-primary" text="停止" @tap="btnOpenWifi3" />
+        <Button class="btn btn-primary -primary" text="启动" @tap="btnOpenWifi1" />
+        <Button class="btn btn-primary -primary" text="停止" @tap="btnOpenWifi2" />
+        <Button class="btn btn-primary -primary" text="停止" @tap="btnOpenWifi3" />
       </StackLayout>
     </ScrollView>
   </Page>

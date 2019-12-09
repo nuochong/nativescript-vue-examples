@@ -25,12 +25,12 @@
         <Progress :value="imageProgress" />
 
         <Image height="40%" :src=" image " />
-        <Button class="btn btn-primary" text="生成下载" @tap=" generateDownloads " />
-        <Button class="btn btn-primary" text="生成并开始下载" @tap=" generateAndStart " />
-        <Button class="btn btn-primary" text="下载测试文件" @tap=" downloadFile " />
-        <Button class="btn btn-primary" text="暂停测试文件" @tap=" pauseFile " />
-        <Button class="btn btn-primary" text="恢复测试文件" @tap=" resumeFile " />
-        <Button class="btn btn-primary" text="下载图片" @tap=" downloadImage " />
+        <Button class="btn btn-primary -primary" text="生成下载" @tap=" generateDownloads " />
+        <Button class="btn btn-primary -primary" text="生成并开始下载" @tap=" generateAndStart " />
+        <Button class="btn btn-primary -primary" text="下载测试文件" @tap=" downloadFile " />
+        <Button class="btn btn-primary -primary" text="暂停测试文件" @tap=" pauseFile " />
+        <Button class="btn btn-primary -primary" text="恢复测试文件" @tap=" resumeFile " />
+        <Button class="btn btn-primary -primary" text="下载图片" @tap=" downloadImage " />
       </StackLayout>
     </ScrollView>
   </Page>

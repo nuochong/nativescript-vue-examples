@@ -3,7 +3,7 @@
     <ActionBarSecond :title="title" />
     <ScrollView>
       <StackLayout class="hello-world">
-        <Button class="btn btn-primary" text="检测网络类型" @tap="btnCheckNetworkType" />
+        <Button class="btn btn-primary -primary" text="检测网络类型" @tap="btnCheckNetworkType" />
         <RequestContent :content="content" />
       </StackLayout>
     </ScrollView>

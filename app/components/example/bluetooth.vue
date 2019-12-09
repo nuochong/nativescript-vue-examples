@@ -3,9 +3,9 @@
     <ActionBarSecond :title="title" />
     <ScrollView>
       <StackLayout class="hello-world">
-        <Button class="btn btn-primary" text="判断蓝牙状态" @tap="btnIsBluetoothEnabled" />
-        <Button class="btn btn-primary" text="扫描蓝牙" @tap="btnScanning" />
-        <Button class="btn btn-primary" text="蓝牙权限" @tap="btnPermission" />
+        <Button class="btn btn-primary -primary" text="判断蓝牙状态" @tap="btnIsBluetoothEnabled" />
+        <Button class="btn btn-primary -primary" text="扫描蓝牙" @tap="btnScanning" />
+        <Button class="btn btn-primary -primary" text="蓝牙权限" @tap="btnPermission" />
         <RequestContent :content="content" />
       </StackLayout>
     </ScrollView>

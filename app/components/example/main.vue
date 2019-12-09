@@ -4,102 +4,102 @@
 
     <ScrollView>
       <StackLayout class="hello-world">
-        <Button class="btn btn-primary" text="Vuex计数器" @tap="btnCounter" />
-        <Button class="btn btn-primary" text="相机" @tap="btnCamera" />
-        <Button class="btn btn-primary" text="模拟登录" @tap="btnLogin" />
-        <Button class="btn btn-primary" text="提示" @tap="btnToast" />
-        <Button class="btn btn-primary" text="精美提示框" @tap="btnAlert" />
-        <Button class="btn btn-primary" text="消息通知" @tap="btnInfo" />
-        <Button class="btn btn-primary" text="电话/短信" @tap="btnPhone" />
-        <Button class="btn btn-primary" text="定位" @tap="btnGeolocation" />
-        <Button class="btn btn-primary" text="获取权限" @tap="btnPermissions" />
-        <Button class="btn btn-primary" text="改变按钮" @tap="btnChange" />
-        <Button class="btn btn-primary" text="显示隐藏" @tap="btnDisplay" />
+        <Button class="btn btn-primary -primary" text="Vuex计数器" @tap="btnCounter" />
+        <Button class="btn btn-primary -primary" text="相机" @tap="btnCamera" />
+        <Button class="btn btn-primary -primary" text="模拟登录" @tap="btnLogin" />
+        <Button class="btn btn-primary -primary" text="提示" @tap="btnToast" />
+        <Button class="btn btn-primary -primary" text="精美提示框" @tap="btnAlert" />
+        <Button class="btn btn-primary -primary" text="消息通知" @tap="btnInfo" />
+        <Button class="btn btn-primary -primary" text="电话/短信" @tap="btnPhone" />
+        <Button class="btn btn-primary -primary" text="定位" @tap="btnGeolocation" />
+        <Button class="btn btn-primary -primary" text="获取权限" @tap="btnPermissions" />
+        <Button class="btn btn-primary -primary" text="改变按钮" @tap="btnChange" />
+        <Button class="btn btn-primary -primary" text="显示隐藏" @tap="btnDisplay" />
         <Label class="split" :text="msg" />
-        <Button class="btn btn-primary" text="路由跳转" @tap="btnButtonTap" />
-        <Button class="btn btn-primary" text="本地存储" @tap="btnInput" />
-        <Button class="btn btn-primary" text="记事薄" @tap="btnFab" />
-        <Button class="btn btn-primary" text="备忘录" @tap="btnTodo" />
-        <Button class="btn btn-primary" text="图标" @tap="btnIcon" />
-        <Button class="btn btn-primary" text="模态对话框" @tap="btnShowModal" />
-        <Button class="btn btn-primary" text="侧滑组件" @tap="btnDrawer" />
-        <Button class="btn btn-primary" text="大标题导航栏" @tap="btnlargeTitle" />
-        <Button class="btn btn-primary" text="动画效果" @tap="btnAnimate" />
-        <Button class="btn btn-primary" text="IOS原生方法" @tap="btnIosApi" />
-        <Button class="btn btn-primary" text="请求" @tap="btnRequestMain" />
-        <Button class="btn btn-primary" text="获取全局数据" @tap="btnCommon" />
-        <Button class="btn btn-primary" text="扫码" @tap="btnQrcode" />
-        <Button class="btn btn-primary" text="网页" @tap="btnWebview" />
-        <Button class="btn btn-primary" text="自定义过渡效果" @tap="btnEffect" />
-        <Button class="btn btn-primary" text="简易弹出菜单" @tap="btnPopupmenu" />
-        <Button class="btn btn-primary" text="分享" @tap="btnShareMain" />
-        <Button class="btn btn-primary" text="检测网络类型" @tap="btnCheckNetworkType" />
-        <Button class="btn btn-primary" text="广播" @tap="btnBroadcastReceiver" />
-        <Button class="btn btn-primary" text="获取平台信息" @tap="btnPlatform" />
-        <Button class="btn btn-primary" text="IOS键盘管理" @tap="btnIQKeyboardManager" />
-        <Button class="btn btn-primary" text="下拉刷新" @tap="btnRefreshMain" />
-        <Button class="btn btn-primary" text="对话框" @tap="btnDialog" />
-        <Button class="btn btn-primary" text="轮播图" @tap="btnCarousel" />
-        <Button class="btn btn-primary" text="图像选择器" @tap="btnImagepicker" />
-        <Button class="btn btn-primary" text="富文本编辑器" @tap="btnRichTextEditorMain" />
-        <Button class="btn btn-primary" text="单选按钮" @tap="btnCheckbox" />
-        <Button class="btn btn-primary" text="导航消息反馈" @tap="btnFeedback" />
-        <Button class="btn btn-primary" text="动图" @tap="btnLottie" />
-        <Button class="btn btn-primary" text="剪贴板" @tap="btnClipboard" />
-        <Button class="btn btn-primary" text="日期时间选择器" @tap="btnTimeDatePicker" />
-        <Button class="btn btn-primary" text="打开应用" @tap="btnOpenApp" />
-        <Button class="btn btn-primary" text="动态图" @tap="btnGif" />
-        <Button class="btn btn-primary" text="加速度计" @tap="btnAccelerometer" />
-        <Button class="btn btn-primary" text="生命周期" @tap="btnLifecycleHooks" />
-        <Button class="btn btn-primary" text="可缩放矢量图形" @tap="btnSvg" />
-        <Button class="btn btn-primary" text="键盘助手" @tap="btnKeyboardToolbar" />
-        <Button class="btn btn-primary" text="涟漪效果" @tap="btnRipple" />
-        <Button class="btn btn-primary" text="引导" @tap="btnAppTour" />
-        <Button class="btn btn-primary" text="传感器" @tap="btnSensorsMain" />
-        <Button class="btn btn-primary" text="音频" @tap="btnAudio" />
-        <Button class="btn btn-primary" text="蓝牙" @tap="btnBluetooth" />
-        <Button class="btn btn-primary" text="视频" @tap="btnVideoMain" />
-        <Button class="btn btn-primary" text="图标徽章" @tap="btnBadge" />
-        <Button class="btn btn-primary" text="应用评分" @tap="btnRater" />
-        <Button class="btn btn-primary" text="底部提示" @tap="btnSnackBar" />
-        <Button class="btn btn-primary" text="图片选择器" @tap="btnImagePicker" />
-        <Button class="btn btn-primary" text="亮度" @tap="btnBrightness" />
-        <Button class="btn btn-primary" text="震动" @tap="btnVibrateMain" />
-        <Button class="btn btn-primary" :text="'accordion' | L" @tap="btnAccordionMain" />
-        <Button class="btn btn-primary" text="卡片" @tap="btnCardMain" />
-        <Button class="btn btn-primary" text="浮动按钮" @tap="btnFloatingActionButton" />
-        <Button class="btn btn-primary" text="加载动画" @tap="btnLoadingIndicator" />
-        <Button class="btn btn-primary" text="旋转屏幕" @tap="btnScreenOrientation" />
-        <Button class="btn btn-primary" text="检查应用" @tap="btnAppAvailability" />
-        <Button class="btn btn-primary" text="截屏" @tap="btnScreenshot" />
-        <Button class="btn btn-primary" text="绘图" @tap="btnCanvas" />
-        <Button class="btn btn-primary" text="日历事件" @tap="btnCalendar" />
-        <Button class="btn btn-primary" text="下载" @tap="btnDownloader" />
-        <Button class="btn btn-primary" text="录音" @tap="btnRecord" />
-        <Button class="btn btn-primary" text="导航栏" @tap="btnStatusBarMain" />
-        <Button class="btn btn-primary" text="通讯录" @tap="btnContactsMain" />
-        <Button class="btn btn-primary" text="短信接收器" @tap="btnSmsReceiver" />
-        <Button class="btn btn-primary" text="模态窗口" @tap="btnWindowedModal" />
-        <Button class="btn btn-primary" text="视频录制" @tap="btnVideoRecorder" />
-        <Button class="btn btn-primary" :text="'i18n' | L" @tap="btnI8n" />
-        <Button class="btn btn-primary" text="微信分享" @tap="btnWechatShare" />
-        <Button class="btn btn-primary" text="微信登录" @tap="btnWechatLogin" />
-        <Button class="btn btn-primary" text="指纹识别" @tap="btnFingerprintAuth" />
-        <Button class="btn btn-primary" text="NFC" @tap="btnNfc" />
-        <Button class="btn btn-primary" text="社交登录(待完善）" @tap="btnSocialLogin" />
-        <Button class="btn btn-primary" text="地图(待完善）" @tap="btnMapMain" />
-        <Button class="btn btn-primary" text="修改图标(仅IOS）" @tap="btnIconChangerMain" />
-        <Button class="btn btn-primary" text="多种类文件选择器" @tap="btnMediaFilePickerMain" />
-        <Button class="btn btn-primary" text="网络检测" @tap="btnNetWorkConnectivity" />
-        <Button class="btn btn-primary" text="页面分割" @tap="btnMasterPage" />
-        <Button class="btn btn-primary" text="NSUI" @tap="btnNSUI" />
-        <Button class="btn btn-primary" text="阴影" @tap="btnShadow" />
-        <Button class="btn btn-primary" text="绘图画板" @tap="btnDrawingpad" />
-        <Button class="btn btn-primary" text="图像编辑" @tap="btnImagecropper" />
-        <Button class="btn btn-primary" text="渐变" @tap="btnGradient" />
-        <Button class="btn btn-primary" text="模糊" @tap="btnBlurMain" />
-        <Button class="btn btn-primary" text="AR" @tap="btnArMain" />
-        <Button class="btn btn-primary" text="通过属性名称改变背景" @tap="btnPropertyChangeBg" />
+        <Button class="btn btn-primary -primary" text="路由跳转" @tap="btnButtonTap" />
+        <Button class="btn btn-primary -primary" text="本地存储" @tap="btnInput" />
+        <Button class="btn btn-primary -primary" text="记事薄" @tap="btnFab" />
+        <Button class="btn btn-primary -primary" text="备忘录" @tap="btnTodo" />
+        <Button class="btn btn-primary -primary" text="图标" @tap="btnIcon" />
+        <Button class="btn btn-primary -primary" text="模态对话框" @tap="btnShowModal" />
+        <Button class="btn btn-primary -primary" text="侧滑组件" @tap="btnDrawer" />
+        <Button class="btn btn-primary -primary" text="大标题导航栏" @tap="btnlargeTitle" />
+        <Button class="btn btn-primary -primary" text="动画效果" @tap="btnAnimate" />
+        <Button class="btn btn-primary -primary" text="IOS原生方法" @tap="btnIosApi" />
+        <Button class="btn btn-primary -primary" text="请求" @tap="btnRequestMain" />
+        <Button class="btn btn-primary -primary" text="获取全局数据" @tap="btnCommon" />
+        <Button class="btn btn-primary -primary" text="扫码" @tap="btnQrcode" />
+        <Button class="btn btn-primary -primary" text="网页" @tap="btnWebview" />
+        <Button class="btn btn-primary -primary" text="自定义过渡效果" @tap="btnEffect" />
+        <Button class="btn btn-primary -primary" text="简易弹出菜单" @tap="btnPopupmenu" />
+        <Button class="btn btn-primary -primary" text="分享" @tap="btnShareMain" />
+        <Button class="btn btn-primary -primary" text="检测网络类型" @tap="btnCheckNetworkType" />
+        <Button class="btn btn-primary -primary" text="广播" @tap="btnBroadcastReceiver" />
+        <Button class="btn btn-primary -primary" text="获取平台信息" @tap="btnPlatform" />
+        <Button class="btn btn-primary -primary" text="IOS键盘管理" @tap="btnIQKeyboardManager" />
+        <Button class="btn btn-primary -primary" text="下拉刷新" @tap="btnRefreshMain" />
+        <Button class="btn btn-primary -primary" text="对话框" @tap="btnDialog" />
+        <Button class="btn btn-primary -primary" text="轮播图" @tap="btnCarousel" />
+        <Button class="btn btn-primary -primary" text="图像选择器" @tap="btnImagepicker" />
+        <Button class="btn btn-primary -primary" text="富文本编辑器" @tap="btnRichTextEditorMain" />
+        <Button class="btn btn-primary -primary" text="单选按钮" @tap="btnCheckbox" />
+        <Button class="btn btn-primary -primary" text="导航消息反馈" @tap="btnFeedback" />
+        <Button class="btn btn-primary -primary" text="动图" @tap="btnLottie" />
+        <Button class="btn btn-primary -primary" text="剪贴板" @tap="btnClipboard" />
+        <Button class="btn btn-primary -primary" text="日期时间选择器" @tap="btnTimeDatePicker" />
+        <Button class="btn btn-primary -primary" text="打开应用" @tap="btnOpenApp" />
+        <Button class="btn btn-primary -primary" text="动态图" @tap="btnGif" />
+        <Button class="btn btn-primary -primary" text="加速度计" @tap="btnAccelerometer" />
+        <Button class="btn btn-primary -primary" text="生命周期" @tap="btnLifecycleHooks" />
+        <Button class="btn btn-primary -primary" text="可缩放矢量图形" @tap="btnSvg" />
+        <Button class="btn btn-primary -primary" text="键盘助手" @tap="btnKeyboardToolbar" />
+        <Button class="btn btn-primary -primary" text="涟漪效果" @tap="btnRipple" />
+        <Button class="btn btn-primary -primary" text="引导" @tap="btnAppTour" />
+        <Button class="btn btn-primary -primary" text="传感器" @tap="btnSensorsMain" />
+        <Button class="btn btn-primary -primary" text="音频" @tap="btnAudio" />
+        <Button class="btn btn-primary -primary" text="蓝牙" @tap="btnBluetooth" />
+        <Button class="btn btn-primary -primary" text="视频" @tap="btnVideoMain" />
+        <Button class="btn btn-primary -primary" text="图标徽章" @tap="btnBadge" />
+        <Button class="btn btn-primary -primary" text="应用评分" @tap="btnRater" />
+        <Button class="btn btn-primary -primary" text="底部提示" @tap="btnSnackBar" />
+        <Button class="btn btn-primary -primary" text="图片选择器" @tap="btnImagePicker" />
+        <Button class="btn btn-primary -primary" text="亮度" @tap="btnBrightness" />
+        <Button class="btn btn-primary -primary" text="震动" @tap="btnVibrateMain" />
+        <Button class="btn btn-primary -primary" :text="'accordion' | L" @tap="btnAccordionMain" />
+        <Button class="btn btn-primary -primary" text="卡片" @tap="btnCardMain" />
+        <Button class="btn btn-primary -primary" text="浮动按钮" @tap="btnFloatingActionButton" />
+        <Button class="btn btn-primary -primary" text="加载动画" @tap="btnLoadingIndicator" />
+        <Button class="btn btn-primary -primary" text="旋转屏幕" @tap="btnScreenOrientation" />
+        <Button class="btn btn-primary -primary" text="检查应用" @tap="btnAppAvailability" />
+        <Button class="btn btn-primary -primary" text="截屏" @tap="btnScreenshot" />
+        <Button class="btn btn-primary -primary" text="绘图" @tap="btnCanvas" />
+        <Button class="btn btn-primary -primary" text="日历事件" @tap="btnCalendar" />
+        <Button class="btn btn-primary -primary" text="下载" @tap="btnDownloader" />
+        <Button class="btn btn-primary -primary" text="录音" @tap="btnRecord" />
+        <Button class="btn btn-primary -primary" text="导航栏" @tap="btnStatusBarMain" />
+        <Button class="btn btn-primary -primary" text="通讯录" @tap="btnContactsMain" />
+        <Button class="btn btn-primary -primary" text="短信接收器" @tap="btnSmsReceiver" />
+        <Button class="btn btn-primary -primary" text="模态窗口" @tap="btnWindowedModal" />
+        <Button class="btn btn-primary -primary" text="视频录制" @tap="btnVideoRecorder" />
+        <Button class="btn btn-primary -primary" :text="'i18n' | L" @tap="btnI8n" />
+        <Button class="btn btn-primary -primary" text="微信分享" @tap="btnWechatShare" />
+        <Button class="btn btn-primary -primary" text="微信登录" @tap="btnWechatLogin" />
+        <Button class="btn btn-primary -primary" text="指纹识别" @tap="btnFingerprintAuth" />
+        <Button class="btn btn-primary -primary" text="NFC" @tap="btnNfc" />
+        <Button class="btn btn-primary -primary" text="社交登录(待完善）" @tap="btnSocialLogin" />
+        <Button class="btn btn-primary -primary" text="地图(待完善）" @tap="btnMapMain" />
+        <Button class="btn btn-primary -primary" text="修改图标(仅IOS）" @tap="btnIconChangerMain" />
+        <Button class="btn btn-primary -primary" text="多种类文件选择器" @tap="btnMediaFilePickerMain" />
+        <Button class="btn btn-primary -primary" text="网络检测" @tap="btnNetWorkConnectivity" />
+        <Button class="btn btn-primary -primary" text="页面分割" @tap="btnMasterPage" />
+        <Button class="btn btn-primary -primary" text="NSUI" @tap="btnNSUI" />
+        <Button class="btn btn-primary -primary" text="阴影" @tap="btnShadow" />
+        <Button class="btn btn-primary -primary" text="绘图画板" @tap="btnDrawingpad" />
+        <Button class="btn btn-primary -primary" text="图像编辑" @tap="btnImagecropper" />
+        <Button class="btn btn-primary -primary" text="渐变" @tap="btnGradient" />
+        <Button class="btn btn-primary -primary" text="模糊" @tap="btnBlurMain" />
+        <Button class="btn btn-primary -primary" text="AR" @tap="btnArMain" />
+        <Button class="btn btn-primary -primary" text="通过属性名称改变背景" @tap="btnPropertyChangeBg" />
       </StackLayout>
     </ScrollView>
   </Page>

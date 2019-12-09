@@ -13,8 +13,8 @@
         </v-template>
       </ListView>
       <Image :src="imageSrc" :visibility="isSingleMode?'visible':'collapsed'" :width="previewSize" :height="previewSize" stretch="aspectFit" />
-      <Button class="btn btn-primary" row="1" text="单选" @tap="onSelectSingleTap" horizontalAlignment="center" />
-      <Button class="btn btn-primary" row="2" text="多选" @tap="onSelectMultipleTap" horizontalAlignment="center" />
+      <Button class="btn btn-primary -primary" row="1" text="单选" @tap="onSelectSingleTap" horizontalAlignment="center" />
+      <Button class="btn btn-primary -primary" row="2" text="多选" @tap="onSelectMultipleTap" horizontalAlignment="center" />
     </GridLayout>
     <!-- </StackLayout>
     </ScrollView> -->

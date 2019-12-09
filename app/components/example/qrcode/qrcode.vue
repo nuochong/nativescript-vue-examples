@@ -4,7 +4,7 @@
     <ScrollView>
       <StackLayout class="hello-world">
         <Label class="label-white" textWrap="true" text="这是一个扫描二维码的演示" />
-        <Button class="btn btn-primary" text="扫描二维码" @tap="scan" />
+        <Button class="btn btn-primary -primary" text="扫描二维码" @tap="scan" />
         <BarcodeScanner row="1" height="300" formats="QR_CODE" beepOnScan="true" reportDuplicates="true" preferFrontCamera="false" @scanResult="onScanResult" v-if="isIOS">
         </BarcodeScanner>
       </StackLayout>

@@ -3,7 +3,7 @@
     <ActionBarSecond :title="title" />
 
     <GridLayout columns="*" rows="auto,*">
-      <Button class="btn btn-primary" :text="'view_multi_template' | L" @tap="goToMulti"></Button>
+      <Button class="btn btn-primary -primary" :text="'view_multi_template' | L" @tap="goToMulti"></Button>
       <Accordion row="1" for="item of items">
 
         <v-template name="header">

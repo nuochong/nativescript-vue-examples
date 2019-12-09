@@ -4,8 +4,8 @@
 
     <ScrollView>
       <StackLayout class="hello-world">
-        <Button class="btn btn-primary" text="实例" @tap="selectDate" />
-        <Button class="btn btn-primary" text="实例" @tap="selectTime" />
+        <Button class="btn btn-primary -primary" text="实例" @tap="selectDate" />
+        <Button class="btn btn-primary -primary" text="实例" @tap="selectTime" />
       </StackLayout>
     </ScrollView>
   </Page>

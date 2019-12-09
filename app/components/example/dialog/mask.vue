@@ -5,13 +5,13 @@
     <GridLayout colums="*" rows="*">
       <AbsoluteLayout>
         <StackLayout class="dialog-content">
-          <Button class="btn btn-primary" text="遮罩层" @tap="showDialog" />
+          <Button class="btn btn-primary -primary" text="遮罩层" @tap="showDialog" />
         </StackLayout>
 
         <StackLayout class="dialog-wrapper" :class="{ dialogOpen: dialogOpen }">
           <StackLayout class="dialog">
             <Label class="label-black" textWrap="true" text="您确定要与他人共享数据吗?" />
-            <Button class="btn btn-primary" text="共享" />
+            <Button class="btn btn-primary -primary" text="共享" />
             <Button class="btn btn-outline" text="取消" @tap="closeDialog" />
           </StackLayout>
         </StackLayout>

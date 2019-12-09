@@ -4,7 +4,7 @@
     <ScrollView>
       <StackLayout class="hello-world">
         <StackLayout @loaded="stackLoaded" ref="stack">
-          <Button class="btn btn-primary" text="截屏" @tap="buttonTap" />
+          <Button class="btn btn-primary -primary" text="截屏" @tap="buttonTap" />
         </StackLayout>
       </StackLayout>
     </ScrollView>

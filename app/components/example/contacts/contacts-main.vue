@@ -4,8 +4,8 @@
 
     <ScrollView>
       <StackLayout class="hello-world">
-        <Button class="btn btn-primary" text="通讯录1" @tap="btnContacts" />
-        <Button class="btn btn-primary" text="通讯录轻量版" @tap="btnContactsLite" />
+        <Button class="btn btn-primary -primary" text="通讯录1" @tap="btnContacts" />
+        <Button class="btn btn-primary -primary" text="通讯录轻量版" @tap="btnContactsLite" />
       </StackLayout>
     </ScrollView>
   </Page>

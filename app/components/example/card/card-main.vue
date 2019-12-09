@@ -4,7 +4,7 @@
 
     <ScrollView>
       <StackLayout class="hello-world">
-        <Button class="btn btn-primary" text="自定义卡片" @tap="btnCardView" />
+        <Button class="btn btn-primary -primary" text="自定义卡片" @tap="btnCardView" />
       </StackLayout>
     </ScrollView>
   </Page>

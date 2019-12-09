@@ -3,8 +3,8 @@
     <ActionBarSecond :title="title" />
     <ScrollView>
       <StackLayout class="hello-world">
-        <Button class="btn btn-primary" text="获取平台信息" @tap="btnPlatform" />
-        <Button class="btn btn-primary" text="检测平台类型" @tap="checkPlatformType" />
+        <Button class="btn btn-primary -primary" text="获取平台信息" @tap="btnPlatform" />
+        <Button class="btn btn-primary -primary" text="检测平台类型" @tap="checkPlatformType" />
         <RequestContent :content="content" />
       </StackLayout>
     </ScrollView>

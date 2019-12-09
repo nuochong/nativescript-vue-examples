@@ -4,8 +4,8 @@
 
     <ScrollView>
       <StackLayout class="hello-world">
-        <Button class="btn btn-primary" text="日期时间选择器1" @tap="btnModalDatetimepicker" />
-        <Button class="btn btn-primary" text="日期时间选择器2" @tap="btnDatetimepicker" />
+        <Button class="btn btn-primary -primary" text="日期时间选择器1" @tap="btnModalDatetimepicker" />
+        <Button class="btn btn-primary -primary" text="日期时间选择器2" @tap="btnDatetimepicker" />
       </StackLayout>
     </ScrollView>
   </Page>

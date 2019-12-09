@@ -4,7 +4,7 @@
 
     <ScrollView>
       <StackLayout class="hello-world">
-        <Button class="btn btn-primary" text="跳转" @tap="onButton" />
+        <Button class="btn btn-primary -primary" text="跳转" @tap="onButton" />
       </StackLayout>
     </ScrollView>
   </Page>

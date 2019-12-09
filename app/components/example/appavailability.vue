@@ -3,7 +3,7 @@
     <ActionBarSecond :title="title" />
     <ScrollView>
       <StackLayout class="hello-world">
-        <Button class="btn btn-primary" text="检查应用" @tap="btnAppAvailability" />
+        <Button class="btn btn-primary -primary" text="检查应用" @tap="btnAppAvailability" />
         <RequestContent :content="content" />
       </StackLayout>
     </ScrollView>

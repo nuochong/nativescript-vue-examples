@@ -4,8 +4,8 @@
 
     <ScrollView>
       <StackLayout class="hello-world">
-        <Button class="btn btn-primary" text="自定义图标" @tap="btnIconCustom" />
-        <Button class="btn btn-primary" text="图标插件" @tap="btnIconPlug" />
+        <Button class="btn btn-primary -primary" text="自定义图标" @tap="btnIconCustom" />
+        <Button class="btn btn-primary -primary" text="图标插件" @tap="btnIconPlug" />
       </StackLayout>
     </ScrollView>
   </Page>

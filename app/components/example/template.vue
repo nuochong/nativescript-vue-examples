@@ -3,7 +3,7 @@
     <ActionBarSecond :title="title" />
     <ScrollView>
       <StackLayout class="hello-world">
-        <Button class="btn btn-primary" text="" @tap="btn" />
+        <Button class="btn btn-primary -primary" text="" @tap="btn" />
         <RequestContent :content="content" />
       </StackLayout>
     </ScrollView>

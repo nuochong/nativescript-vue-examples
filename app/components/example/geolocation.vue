@@ -3,7 +3,7 @@
     <ActionBarSecond :title="title" />
     <ScrollView>
       <StackLayout class="hello-world">
-        <Button class="btn btn-primary" @tap="geolocation" text="获取位置信息" />
+        <Button class="btn btn-primary -primary" @tap="geolocation" text="获取位置信息" />
       </StackLayout>
     </ScrollView>
   </Page>

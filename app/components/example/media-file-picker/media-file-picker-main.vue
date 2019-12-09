@@ -4,7 +4,7 @@
 
     <ScrollView>
       <StackLayout class="hello-world">
-        <Button class="btn btn-primary" text="多种类文件选择器" @tap="btnMediaFilePicker" />
+        <Button class="btn btn-primary -primary" text="多种类文件选择器" @tap="btnMediaFilePicker" />
       </StackLayout>
     </ScrollView>
   </Page>

@@ -4,8 +4,8 @@
 
     <ScrollView>
       <StackLayout class="hello-world">
-        <Button class="btn btn-primary" text="安卓传感器" @tap="btnAndroidSensors" />
-        <Button class="btn btn-primary" text="苹果传感器" @tap="btnIosSensors" />
+        <Button class="btn btn-primary -primary" text="安卓传感器" @tap="btnAndroidSensors" />
+        <Button class="btn btn-primary -primary" text="苹果传感器" @tap="btnIosSensors" />
       </StackLayout>
     </ScrollView>
   </Page>

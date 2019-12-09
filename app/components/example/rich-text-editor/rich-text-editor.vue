@@ -3,7 +3,7 @@
     <ActionBarSecond :title="title" />
     <ScrollView>
       <StackLayout class="hello-world">
-        <Button class="btn btn-primary" text="第三方富文本编辑器" />
+        <Button class="btn btn-primary -primary" text="第三方富文本编辑器" />
       </StackLayout>
     </ScrollView>
   </Page>

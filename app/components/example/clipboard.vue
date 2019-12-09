@@ -3,8 +3,8 @@
     <ActionBarSecond :title="title" />
     <ScrollView>
       <StackLayout class="hello-world">
-        <Button class="btn btn-primary" text="复制到剪贴板" @tap="btnSet" />
-        <Button class="btn btn-primary" text="从剪贴板读取" @tap="btnGet" />
+        <Button class="btn btn-primary -primary" text="复制到剪贴板" @tap="btnSet" />
+        <Button class="btn btn-primary -primary" text="从剪贴板读取" @tap="btnGet" />
         <RequestContent :content="content" />
       </StackLayout>
     </ScrollView>

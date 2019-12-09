@@ -4,7 +4,7 @@
 
     <ScrollView>
       <StackLayout class="hello-world">
-        <Button class="btn btn-primary" ref="btn" text="IOS原生方法" @tap="btnIos" />
+        <Button class="btn btn-primary -primary" ref="btn" text="IOS原生方法" @tap="btnIos" />
       </StackLayout>
     </ScrollView>
   </Page>

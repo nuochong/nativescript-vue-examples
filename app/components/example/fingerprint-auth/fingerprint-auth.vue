@@ -3,7 +3,7 @@
     <ActionBarSecond :title="title" />
     <ScrollView>
       <StackLayout class="hello-world">
-        <Button class="btn btn-primary" text="判断指纹识别可用性" @tap="btnFingerprintAuth" />
+        <Button class="btn btn-primary -primary" text="判断指纹识别可用性" @tap="btnFingerprintAuth" />
       </StackLayout>
     </ScrollView>
   </Page>

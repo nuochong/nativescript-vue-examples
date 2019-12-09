@@ -3,7 +3,7 @@
     <ActionBarSecond :title="title" />
     <ScrollView>
       <StackLayout class="hello-world">
-        <Button class="btn btn-primary" text="微信登录" @tap="btnStart" />
+        <Button class="btn btn-primary -primary" text="微信登录" @tap="btnStart" />
       </StackLayout>
     </ScrollView>
   </Page>

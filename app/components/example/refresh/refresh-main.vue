@@ -4,8 +4,8 @@
 
     <ScrollView>
       <StackLayout class="hello-world">
-        <Button class="btn btn-primary" text="第三方下拉刷新" @tap="refresh" />
-        <Button class="btn btn-primary" text="自定义下拉刷❤" @tap="refreshNew" />
+        <Button class="btn btn-primary -primary" text="第三方下拉刷新" @tap="refresh" />
+        <Button class="btn btn-primary -primary" text="自定义下拉刷❤" @tap="refreshNew" />
       </StackLayout>
     </ScrollView>
   </Page>

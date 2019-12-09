@@ -3,7 +3,7 @@
     <ActionBarSecond :title="title" />
     <ScrollView>
       <StackLayout class="hello-world">
-        <Button class="btn btn-primary" text="图片选择器" @tap="whateverYouLike" />
+        <Button class="btn btn-primary -primary" text="图片选择器" @tap="whateverYouLike" />
       </StackLayout>
     </ScrollView>
   </Page>

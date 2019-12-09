@@ -3,8 +3,8 @@
     <ActionBarSecond :title="title" />
     <ScrollView>
       <StackLayout class="hello-world">
-        <Button class="btn btn-primary" text="简单示例" @tap="btnSnackBar1" />
-        <Button class="btn btn-primary" text="复杂示例" @tap="btnSnackBar2" />
+        <Button class="btn btn-primary -primary" text="简单示例" @tap="btnSnackBar1" />
+        <Button class="btn btn-primary -primary" text="复杂示例" @tap="btnSnackBar2" />
       </StackLayout>
     </ScrollView>
   </Page>

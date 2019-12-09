@@ -4,7 +4,7 @@
 
     <ScrollView>
       <StackLayout class="hello-world">
-        <Button class="btn btn-primary" text="按钮动画" @tap="startBackgroundAnimation" ref="btnAnimate" scaleX="1.4" scaleY="1.4" />
+        <Button class="btn btn-primary -primary" text="按钮动画" @tap="startBackgroundAnimation" ref="btnAnimate" scaleX="1.4" scaleY="1.4" />
         <Label class="label-white animateicon" :text="msg" col="0" row="0" />
         <Image class="animateicon" src="~/assets/images/NativeScript-Vue.png" />
       </StackLayout>

@@ -3,12 +3,12 @@
     <ActionBarSecond :title="title" />
     <ScrollView>
       <StackLayout class="hello-world">
-        <Button class="btn btn-primary" text="分享文字" @tap="btnWechatShareText" />
-        <Button class="btn btn-primary" text="分享链接" @tap="btnWechatShareLink" />
-        <Button class="btn btn-primary" text="分享本地图片" @tap="btnWechatShareLocalImg" />
-        <Button class="btn btn-primary" text="分享在线图片" @tap="btnWechatShareOnlineImg" />
-        <Button class="btn btn-primary" text="分享音乐" @tap="btnWechatShareMusic" />
-        <Button class="btn btn-primary" text="分享视频" @tap="btnWechatShareVideo" />
+        <Button class="btn btn-primary -primary" text="分享文字" @tap="btnWechatShareText" />
+        <Button class="btn btn-primary -primary" text="分享链接" @tap="btnWechatShareLink" />
+        <Button class="btn btn-primary -primary" text="分享本地图片" @tap="btnWechatShareLocalImg" />
+        <Button class="btn btn-primary -primary" text="分享在线图片" @tap="btnWechatShareOnlineImg" />
+        <Button class="btn btn-primary -primary" text="分享音乐" @tap="btnWechatShareMusic" />
+        <Button class="btn btn-primary -primary" text="分享视频" @tap="btnWechatShareVideo" />
       </StackLayout>
     </ScrollView>
   </Page>

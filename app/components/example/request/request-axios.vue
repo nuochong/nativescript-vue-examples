@@ -3,8 +3,8 @@
     <ActionBarSecond :title="title" />
 
     <StackLayout class="hello-world">
-      <Button class="btn btn-primary" text="GET请求" @tap="axiosGet" />
-      <Button class="btn btn-primary" text="POST请求" @tap="axiosPost" />
+      <Button class="btn btn-primary -primary" text="GET请求" @tap="axiosGet" />
+      <Button class="btn btn-primary -primary" text="POST请求" @tap="axiosPost" />
       <RequestContent :content="content" />
     </StackLayout>
   </Page>

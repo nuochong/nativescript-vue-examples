@@ -4,8 +4,8 @@
 
     <ScrollView>
       <StackLayout class="hello-world">
-        <Button class="btn btn-primary" text="请求" @tap="btnRequest" />
-        <Button class="btn btn-primary" text="Axios请求" @tap="btnIconPlug" />
+        <Button class="btn btn-primary -primary" text="请求" @tap="btnRequest" />
+        <Button class="btn btn-primary -primary" text="Axios请求" @tap="btnIconPlug" />
       </StackLayout>
     </ScrollView>
   </Page>

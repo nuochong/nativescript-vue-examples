@@ -4,8 +4,8 @@
 
     <ScrollView>
       <StackLayout class="hello-world">
-        <Button class="btn btn-primary" text="是否支持加速度计" @tap="btnIsAccelerometerAvailable" />
-        <Button class="btn btn-primary" text="是否支持陀螺仪" @tap="btnIsGyroscopeAvailable" />
+        <Button class="btn btn-primary -primary" text="是否支持加速度计" @tap="btnIsAccelerometerAvailable" />
+        <Button class="btn btn-primary -primary" text="是否支持陀螺仪" @tap="btnIsGyroscopeAvailable" />
       </StackLayout>
     </ScrollView>
   </Page>

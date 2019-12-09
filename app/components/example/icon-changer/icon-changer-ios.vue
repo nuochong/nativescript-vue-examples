@@ -31,7 +31,7 @@
           </ios>
 
         </StackLayout>
-        <!-- <Button class="btn btn-primary" text="修改IOS图标" @tap="btnChange" /> -->
+        <!-- <Button class="btn btn-primary -primary" text="修改IOS图标" @tap="btnChange" /> -->
       </StackLayout>
     </ScrollView>
   </Page>

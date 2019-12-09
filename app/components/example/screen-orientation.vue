@@ -3,8 +3,8 @@
     <ActionBarSecond :title="title" />
     <ScrollView>
       <StackLayout class="hello-world">
-        <Button class="btn btn-primary" text="横向" @tap="pageLoaded" />
-        <Button class="btn btn-primary" text="回正" @tap="onNavigatingFrom" />
+        <Button class="btn btn-primary -primary" text="横向" @tap="pageLoaded" />
+        <Button class="btn btn-primary -primary" text="回正" @tap="onNavigatingFrom" />
       </StackLayout>
     </ScrollView>
   </Page>

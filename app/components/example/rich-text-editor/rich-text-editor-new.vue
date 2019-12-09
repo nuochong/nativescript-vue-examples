@@ -5,7 +5,7 @@
       <StackLayout class="hello-world">
         <TextView textWrap="true" text="文字文字文字文字文字文字文字文字文字文字文字文字文字文字" ref="text">
         </TextView>
-        <Button class="btn btn-primary" text="添加图片" @tap=" addImageSpan" />
+        <Button class="btn btn-primary -primary" text="添加图片" @tap=" addImageSpan" />
       </StackLayout>
     </ScrollView>
   </Page>

@@ -3,7 +3,7 @@
     <ActionBarSecond :title="title" />
     <ScrollView>
       <StackLayout class="hello-world">
-        <Button class="btn btn-primary" @tap="test" text="获取权限" />
+        <Button class="btn btn-primary -primary" @tap="test" text="获取权限" />
       </StackLayout>
     </ScrollView>
   </Page>

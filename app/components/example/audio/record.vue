@@ -5,17 +5,17 @@
       <ScrollView>
         <StackLayout class="p-10" width="100%">
           <ActivityIndicator color="#3489db" :busy=" isRecording " />
-          <button row="0" col="0" class="btn btn-primary" text="开始记录" @tap=" startRecording " />
-          <button class="btn btn-primary" text="暂停记录" @tap=" pauseRecording " />
-          <button class="btn btn-primary" text="简历记录" @tap=" resumeRecording " />
+          <button row="0" col="0" class="btn btn-primary -primary" text="开始记录" @tap=" startRecording " />
+          <button class="btn btn-primary -primary" text="暂停记录" @tap=" pauseRecording " />
+          <button class="btn btn-primary -primary" text="简历记录" @tap=" resumeRecording " />
           <Label :text=" '计的值: ' + audioMeter " textWrap="true" />
-          <button class="btn btn-primary" text="停止记录" @tap=" stopRecording " />
-          <button class="btn btn-primary" text="得到文件" @tap=" getFile " />
+          <button class="btn btn-primary -primary" text="停止记录" @tap=" stopRecording " />
+          <button class="btn btn-primary -primary" text="得到文件" @tap=" getFile " />
           <label :text=" recordedAudioFile " class="gray" textWrap="true" />
 
           <button class="btn btn-yellow" text="处理记录" @tap=" disposeRecorder " />
-          <!-- <button class="btn btn-primary" text="播放录制" @tap=" playRecordedFile " />
-          <button class="btn btn-primary" text="停止播放" @tap=" pauseAudio " /> -->
+          <!-- <button class="btn btn-primary -primary" text="播放录制" @tap=" playRecordedFile " />
+          <button class="btn btn-primary -primary" text="停止播放" @tap=" pauseAudio " /> -->
         </StackLayout>
       </ScrollView>
     </GridLayout>

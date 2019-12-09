@@ -4,10 +4,10 @@
 
     <ScrollView>
       <StackLayout class="hello-world">
-        <Button class="btn btn-primary" text="图片选择器" @tap="btnImageFilePicker" />
-        <Button class="btn btn-primary" text="视频选择器" @tap="btnVideoFilePicker" />
-        <Button class="btn btn-primary" text="音频选择器" @tap="btnAudioFilePicker" />
-        <Button class="btn btn-primary" text="自定义选择器" @tap="btnCustomFilePicker" />
+        <Button class="btn btn-primary -primary" text="图片选择器" @tap="btnImageFilePicker" />
+        <Button class="btn btn-primary -primary" text="视频选择器" @tap="btnVideoFilePicker" />
+        <Button class="btn btn-primary -primary" text="音频选择器" @tap="btnAudioFilePicker" />
+        <Button class="btn btn-primary -primary" text="自定义选择器" @tap="btnCustomFilePicker" />
       </StackLayout>
     </ScrollView>
   </Page>

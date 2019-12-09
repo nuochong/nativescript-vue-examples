@@ -4,7 +4,7 @@
 
     <ScrollView>
       <StackLayout class="hello-world">
-        <Button class="btn btn-primary" text="Mapbox" @tap="btnMapbox" />
+        <Button class="btn btn-primary -primary" text="Mapbox" @tap="btnMapbox" />
       </StackLayout>
     </ScrollView>
   </Page>

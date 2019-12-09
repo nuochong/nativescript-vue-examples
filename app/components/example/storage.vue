@@ -10,29 +10,29 @@
         <Label text="Number" class="label-white heading" />
         <TextField v-model="num" hint="Enter a Number..." class="text-field-white input input-border" keyboardType="number" />
         <StackLayout orientation="horizontal" horizontalAlignment="center">
-          <Button text="保存" @tap="saveNumber" class="btn btn-primary" />
-          <Button text="移除" @tap="removeNumber" class="btn btn-primary" />
+          <Button text="保存" @tap="saveNumber" class="btn btn-primary -primary" />
+          <Button text="移除" @tap="removeNumber" class="btn btn-primary -primary" />
         </StackLayout>
 
         <!-- store/retrieve string -->
         <Label text="String" class="label-white heading" />
         <TextField v-model="str" hint="Enter a String..." class="text-field-white input input-border" />
         <StackLayout orientation="horizontal" horizontalAlignment="center">
-          <Button text="保存" @tap="saveString" class="btn btn-primary" />
-          <Button text="移除" @tap="removeString" class="btn btn-primary" />
+          <Button text="保存" @tap="saveString" class="btn btn-primary -primary" />
+          <Button text="移除" @tap="removeString" class="btn btn-primary -primary" />
         </StackLayout>
 
         <!-- store/retrieve boolean -->
         <Label text="Boolean" class="label-white heading" />
         <Switch v-model="bool" class="switch" />
         <StackLayout orientation="horizontal" horizontalAlignment="center">
-          <Button text="保存" @tap="saveBoolean" class="btn btn-primary" />
-          <Button text="移除" @tap="removeBoolean" class="btn btn-primary" />
+          <Button text="保存" @tap="saveBoolean" class="btn btn-primary -primary" />
+          <Button text="移除" @tap="removeBoolean" class="btn btn-primary -primary" />
         </StackLayout>
 
         <StackLayout class="hr-light" />
 
-        <Button text="删除所有应用程序设置" @tap="removeAll" class="btn btn-primary" />
+        <Button text="删除所有应用程序设置" @tap="removeAll" class="btn btn-primary -primary" />
       </StackLayout>
     </ScrollView>
   </Page>

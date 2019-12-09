@@ -3,7 +3,7 @@
     <ActionBarSecond :title="title" />
     <ScrollView>
       <StackLayout class="hello-world">
-        <Button class="btn btn-primary" text="设置亮度" @tap="btnBrightness" />
+        <Button class="btn btn-primary -primary" text="设置亮度" @tap="btnBrightness" />
       </StackLayout>
     </ScrollView>
   </Page>

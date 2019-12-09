@@ -4,7 +4,7 @@
 
     <!-- <GridLayout colums="*" rows="*"> -->
     <StackLayout>
-      <Button class="btn btn-primary" text="开始请求" @tap="onButton" />
+      <Button class="btn btn-primary -primary" text="开始请求" @tap="onButton" />
       <RequestContent :content="content" />
     </StackLayout>
     <!-- </GridLayout> -->

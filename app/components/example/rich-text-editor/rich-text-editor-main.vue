@@ -4,8 +4,8 @@
 
     <ScrollView>
       <StackLayout class="hello-world">
-        <Button class="btn btn-primary" text="第三方编辑器" @tap="btnRichTextEditor" />
-        <Button class="btn btn-primary" text="自定义编辑器" @tap="btnRichTextEditorNew" />
+        <Button class="btn btn-primary -primary" text="第三方编辑器" @tap="btnRichTextEditor" />
+        <Button class="btn btn-primary -primary" text="自定义编辑器" @tap="btnRichTextEditorNew" />
       </StackLayout>
     </ScrollView>
   </Page>

@@ -6,8 +6,8 @@
         <Label class="label-white" :text="'X: ' + x" />
         <Label class="label-white" :text="'Y: ' + y" />
         <Label class="label-white" :text="'Z: ' + z" />
-        <Button class="btn btn-primary" text="启动" @tap="btnStart" />
-        <Button class="btn btn-primary" text="停止" @tap="btnStop" />
+        <Button class="btn btn-primary -primary" text="启动" @tap="btnStart" />
+        <Button class="btn btn-primary -primary" text="停止" @tap="btnStop" />
       </StackLayout>
     </ScrollView>
   </Page>

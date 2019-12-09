@@ -3,10 +3,10 @@
     <ActionBarSecond :title="title" />
     <ScrollView>
       <StackLayout class="hello-world">
-        <Button class="btn btn-primary" text="权限" @tap="btnPermission" />
-        <Button class="btn btn-primary" text="设置" @tap="btnSetBadger" />
-        <Button class="btn btn-primary" text="更改" @tap="btnAgainSetBadger" />
-        <Button class="btn btn-primary" text="取消" @tap="btnCancle" />
+        <Button class="btn btn-primary -primary" text="权限" @tap="btnPermission" />
+        <Button class="btn btn-primary -primary" text="设置" @tap="btnSetBadger" />
+        <Button class="btn btn-primary -primary" text="更改" @tap="btnAgainSetBadger" />
+        <Button class="btn btn-primary -primary" text="取消" @tap="btnCancle" />
       </StackLayout>
     </ScrollView>
   </Page>

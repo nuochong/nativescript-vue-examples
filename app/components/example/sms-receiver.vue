@@ -3,7 +3,7 @@
     <ActionBarSecond :title="title" />
     <ScrollView>
       <StackLayout class="hello-world">
-        <Button class="btn btn-primary" text="监听短信" @tap="btnSmsReceiver" />
+        <Button class="btn btn-primary -primary" text="监听短信" @tap="btnSmsReceiver" />
       </StackLayout>
     </ScrollView>
   </Page>

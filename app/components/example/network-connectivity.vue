@@ -4,11 +4,11 @@
     <ScrollView>
       <StackLayout class="home-panel p-20">
         <Label textWrap="true" text="Check for network connectivity before your app requests network resources." class="label-white description-label" />
-        <Button text="Check Connectivity" @tap="checkNetwork" class="btn btn-primary" />
+        <Button text="Check Connectivity" @tap="checkNetwork" class="btn btn-primary -primary" />
         <StackLayout class="hr-light m-20"></StackLayout>
-        <Button text="Start Monitoring" @tap="monitorNetworkStart" class="btn btn-primary" />
+        <Button text="Start Monitoring" @tap="monitorNetworkStart" class="btn btn-primary -primary" />
         <Label textWrap="true" class="label-white description-label" v-model="networkStatus" />
-        <Button text="Stop Monitoring" @tap="monitorNetworkStop" class="btn btn-primary" />
+        <Button text="Stop Monitoring" @tap="monitorNetworkStop" class="btn btn-primary -primary" />
       </StackLayout>
     </ScrollView>
   </Page>

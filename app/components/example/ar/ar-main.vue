@@ -4,7 +4,7 @@
 
     <ScrollView>
       <StackLayout class="hello-world">
-        <Button class="btn btn-primary" text="AR" @tap="btnAr" />
+        <Button class="btn btn-primary -primary" text="AR" @tap="btnAr" />
       </StackLayout>
     </ScrollView>
   </Page>

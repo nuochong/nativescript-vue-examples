@@ -7,13 +7,13 @@
         <ScrollView>
           <StackLayout class="p-10" width="100%">
             <ActivityIndicator color="#3489db" :busy=" isRecording " />
-            <button row="0" col="0" class="btn btn-primary" ios:borderRadius="4" text="开始记录" @tap=" startRecord " />
+            <button row="0" col="0" class="btn btn-primary -primary" ios:borderRadius="4" text="开始记录" @tap=" startRecord " />
             <Label class="label-white" :text=" '计值: ' + audioMeter " textWrap="true" />
-            <button class="btn btn-primary" ios:borderRadius="4" text="停止记录" @tap=" stopRecord " />
+            <button class="btn btn-primary -primary" ios:borderRadius="4" text="停止记录" @tap=" stopRecord " />
             <button class="btn accent-btn" ios:borderRadius="4" text="获取文件" @tap=" getFile " />
             <label :text=" recordedAudioFile " class="label-white gray" textWrap="true" />
             <button class="btn b t n" ios:borderRadius="4" text="播放录制的文件" @tap=" playRecordedFile " />
-            <button class="btn btn-primary" ios:borderRadius="4" text="停止播放" @tap=" pauseAudio " />
+            <button class="btn btn-primary -primary" ios:borderRadius="4" text="停止播放" @tap=" pauseAudio " />
           </StackLayout>
         </ScrollView>
       </TabViewItem>
@@ -21,14 +21,14 @@
         <ScrollView>
           <GridLayout rows="auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto" columns="*, *, *" class="p-10">
             <label row="0" colSpan="3" class="center text-primary h3" text="欢迎加入搏击俱乐部!" textWrap="true" />
-            <button row="1" colSpan="3" class="btn btn-primary" ios:borderRadius="4" text="玩远程音频" @tap=" playRemoteFile " />
+            <button row="1" colSpan="3" class="btn btn-primary -primary" ios:borderRadius="4" text="玩远程音频" @tap=" playRemoteFile " />
             <label row="2" colSpan="3" text="注意:由于处理和网络速度的原因，远程文件在播放之前可能会有延迟。" class="h3" textWrap="true" />
             <Label row="3" colSpan="3" text="" class="hr-dark" textWrap="true" />
-            <button row="4" colSpan="3" class="btn btn-primary" ios:borderRadius="4" text="播放本地音频文件" @tap=" playLocalFile " />
+            <button row="4" colSpan="3" class="btn btn-primary -primary" ios:borderRadius="4" text="播放本地音频文件" @tap=" playLocalFile " />
             <label row="5" colSpan="3" class="blue h3 text-center" text="Angel - Theory of a Deadman" textWrap="true" />
-            <Button row="6" col="0" class="btn btn-primary" ios:borderRadius="4" text="暂停" @tap=" pauseAudio " />
-            <Button row="6" col="1" class="btn btn-primary" ios:borderRadius="4" text="继续" @tap=" resumePlayer " />
-            <button row="6" col="2" class="btn btn-primary" ios:borderRadius="4" text="停止" @tap=" stopPlaying " />
+            <Button row="6" col="0" class="btn btn-primary -primary" ios:borderRadius="4" text="暂停" @tap=" pauseAudio " />
+            <Button row="6" col="1" class="btn btn-primary -primary" ios:borderRadius="4" text="继续" @tap=" resumePlayer " />
+            <button row="6" col="2" class="btn btn-primary -primary" ios:borderRadius="4" text="停止" @tap=" stopPlaying " />
             <Label row="7" colSpan="3" text="Android上的玩家速度只有API 23+" class="h4" textWrap="true" />
             <Button row="8" col="0" text="速度 1" class="btn accent-btn" ios:borderRadius="4" @tap=" playSpeed1 " />
             <Button row="8" col="1" text="速度 1.5" class="btn accent-btn" ios:borderRadius="4" @tap=" playSpeed15 " />
@@ -38,16 +38,16 @@
             <Label row="10" col="0" text="音量滑块: " textWrap="true" class="label-white m-t-20" />
             <Slider row="10" col="1" colSpan="2" id="volumeSlider" ref="volumeSlider" minValue="0" maxValue="100" value="100" class="m-t-20" />
             <Label row="11" class="label-white" :text=" '播放器当前音量: ' + currentVolume " textWrap="true" />
-            <Button row="12" col="0" text="静音" class="btn btn-primary" ios:borderRadius="4" @tap=" muteTap " />
-            <Button row="12" col="1" text="恢复" class="btn btn-primary" ios:borderRadius="4" @tap=" unmuteTap " />
-            <Button row="13" col="0" colSpan="2" text="转到8秒" class="btn btn-primary" ios:borderRadius="4" @tap=" skipTo8 " />
+            <Button row="12" col="0" text="静音" class="btn btn-primary -primary" ios:borderRadius="4" @tap=" muteTap " />
+            <Button row="12" col="1" text="恢复" class="btn btn-primary -primary" ios:borderRadius="4" @tap=" unmuteTap " />
+            <Button row="13" col="0" colSpan="2" text="转到8秒" class="btn btn-primary -primary" ios:borderRadius="4" @tap=" skipTo8 " />
           </GridLayout>
         </ScrollView>
       </TabViewItem>
       <TabViewItem title="简单示例">
         <ScrollView>
           <StackLayout class="p-10" width="100%">
-            <Button class="btn btn-primary" text="简单示例" @tap="playSample" />
+            <Button class="btn btn-primary -primary" text="简单示例" @tap="playSample" />
           </StackLayout>
         </ScrollView>
       </TabViewItem>

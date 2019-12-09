@@ -4,8 +4,8 @@
 
     <ScrollView>
       <StackLayout class="hello-world">
-        <Button class="btn btn-primary" text="震动（仅IOS）" @tap="btnTapticEngine" />
-        <Button class="btn btn-primary" text="震动" @tap="btnVibrate" />
+        <Button class="btn btn-primary -primary" text="震动（仅IOS）" @tap="btnTapticEngine" />
+        <Button class="btn btn-primary -primary" text="震动" @tap="btnVibrate" />
       </StackLayout>
     </ScrollView>
   </Page>

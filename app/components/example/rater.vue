@@ -4,8 +4,8 @@
 
     <ScrollView>
       <StackLayout class="hello-world">
-        <Button class="btn btn-primary" text="检查" @tap="btnCheck" />
-        <Button class="btn btn-primary" text="显示" @tap="btnShow" />
+        <Button class="btn btn-primary -primary" text="检查" @tap="btnCheck" />
+        <Button class="btn btn-primary -primary" text="显示" @tap="btnShow" />
       </StackLayout>
     </ScrollView>
   </Page>

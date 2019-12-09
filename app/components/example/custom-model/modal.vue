@@ -5,8 +5,8 @@
 
       <ScrollView class="mask-scrollview">
         <StackLayout class="hello-world">
-          <Button class="btn btn-primary" @tap="modal" text="模态对话框" />
-          <Button class="btn btn-primary" @tap="btnActivity" text="活动对话框" />
+          <Button class="btn btn-primary -primary" @tap="modal" text="模态对话框" />
+          <Button class="btn btn-primary -primary" @tap="btnActivity" text="活动对话框" />
         </StackLayout>
       </ScrollView>
 

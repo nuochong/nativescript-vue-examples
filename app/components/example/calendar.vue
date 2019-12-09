@@ -3,11 +3,11 @@
     <ActionBarSecond :title="title" />
     <ScrollView>
       <StackLayout class="hello-world">
-        <Button class="btn btn-primary" text="创建日历事件" @tap="createEvent" />
-        <Button class="btn btn-primary" text="查找日历事件" @tap="findEvents" />
-        <Button class="btn btn-primary" text="删除日历事件" @tap="deleteEvents" />
-        <Button class="btn btn-primary" text="列表日历事件" @tap="listCalendars" />
-        <Button class="btn btn-primary" text="删除日历" @tap="deleteCalendar" />
+        <Button class="btn btn-primary -primary" text="创建日历事件" @tap="createEvent" />
+        <Button class="btn btn-primary -primary" text="查找日历事件" @tap="findEvents" />
+        <Button class="btn btn-primary -primary" text="删除日历事件" @tap="deleteEvents" />
+        <Button class="btn btn-primary -primary" text="列表日历事件" @tap="listCalendars" />
+        <Button class="btn btn-primary -primary" text="删除日历" @tap="deleteCalendar" />
       </StackLayout>
     </ScrollView>
   </Page>

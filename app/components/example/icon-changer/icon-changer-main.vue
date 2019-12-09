@@ -4,7 +4,7 @@
 
     <ScrollView>
       <StackLayout class="hello-world">
-        <Button class="btn btn-primary" text="修改IOS图标" @tap="btnIconChangerIos" />
+        <Button class="btn btn-primary -primary" text="修改IOS图标" @tap="btnIconChangerIos" />
       </StackLayout>
     </ScrollView>
   </Page>

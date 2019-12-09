@@ -4,7 +4,7 @@
     <ScrollView>
       <StackLayout class="hello-world">
         <check-box :checked="isChecked" @checkedChange="isChecked = $event.value" v-model="isChecked" />
-        <Button class="btn btn-primary" @tap="changebtn" ref="btn" text="改变单选按钮状态" />
+        <Button class="btn btn-primary -primary" @tap="changebtn" ref="btn" text="改变单选按钮状态" />
       </StackLayout>
     </ScrollView>
   </Page>
