@@ -92,6 +92,8 @@ export default {
     align-items: center;
     flex-direction: column;
     color: gray;
+    // background-color: blue;
+    width: 100%;
     &.active {
       color: #ea6f5a;
       .icon {

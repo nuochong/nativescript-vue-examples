@@ -1,6 +1,6 @@
 <template>
   <WrapLayout>
-    <StackLayout backgroundColor="#E0E0E0">
+    <StackLayout class="info-panel-header" backgroundColor="#E0E0E0">
       <StackLayout class="hr-light" />
       <Label text="通用设置" class="care-common-list-header text-uppercase t-14 p-l-15 p-t-30 p-b-7" />
       <StackLayout class="hr-light" />
@@ -40,6 +40,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.info-panel-header{
+  width: 100%;
+}
 .care-common-main-header {
   background-color: #f5f4f6;
 }
