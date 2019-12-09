@@ -49,6 +49,7 @@
     "vue:ui": "vue ui"
   },
   "dependencies": {
+    "@nativescript/theme": "^2.2.1",
     "@nstudio/nativescript-audio-recorder": "^0.1.0",
     "@nstudio/nativescript-cardview": "^1.0.0",
     "@nstudio/nativescript-checkbox": "^1.0.0",

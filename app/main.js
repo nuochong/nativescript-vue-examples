@@ -192,6 +192,10 @@ Vue.use(RadGauge);
 import NSVueShadow from 'nativescript-vue-shadow';
 Vue.use(NSVueShadow);
 
+// 主题
+import Theme from "@nativescript/theme";
+Theme.setMode(Theme.Dark); // 或者 Theme.Light
+
 new Vue({
   Store,
   Router,
