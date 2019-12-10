@@ -8,7 +8,7 @@
         <Label text="2000" class="task-list-headerLeftContent" />
       </WrapLayout>
       <WrapLayout row="0" col="1" class="task-list-headerRight">
-        <Label text="查看" class="" />
+        <Label text="查看" class="label-black" />
         <FIcon name="icon-jiantou" type="icon" class="icon m-y-auto task-list-headerRightIcon" />
       </WrapLayout>
       <!-- <StackLayout class="hr-light" /> -->
@@ -99,6 +99,7 @@ export default {
   }
   .task-list-introduce {
     font-size: 10;
+    color:gray;
   }
 }
 </style>

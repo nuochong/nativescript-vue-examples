@@ -2,7 +2,7 @@
   <WrapLayout>
     <GridLayout rows="auto, auto" columns="auto, *" class="head p-t-10 p-l-15" @tap="btnSettings()">
       <Image row="0" rowSpan="2" col="0" class="connect-team-avatar p-5 m-r-10 m-y-auto text-center" :src="headimg" stretch="none" />
-      <Label row="0" col="1" text="用户名" class="font-weight-bold" />
+      <Label row="0" col="1" text="用户名" class="label-black font-weight-bold" />
       <WrapLayout class="head-introduce" row="1" col="1">
         <Label class="head-introduce-title" text="关注" />
         <Label class="head-introduce-content" text="122" />
