@@ -20,7 +20,7 @@
       <Label row="0" col="1" text="名称" class="font-weight-bold" />
       <Label row="1" col="1" text="这里是描述的编写" class="text-muted m-b-10" />
       <FIcon row="0" rowSpan="3" col="2" name="icon-jiantou" type="icon" class="icon setting-icon text-muted m-r-10 m-b-10 m-y-auto" />
-      <StackLayout row="2" colSpan="3" class="hr-light" />
+      <!-- <StackLayout row="2" colSpan="3" class="hr-light" /> -->
     </GridLayout>
   </WrapLayout>
 </template>

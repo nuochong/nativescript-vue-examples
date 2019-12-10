@@ -1,16 +1,11 @@
 // NativeScript 核心主题
 // @see https://docs.nativescript.org/ui/theme
-// @import '~nativescript-theme-core/scss/light';
-// @import '~nativescript-theme-core/css/core.light.css';
 @import '~@nativescript/theme/core';
 // 默认主题包含light和dark，使用js切换。
 @import '~@nativescript/theme/default';
 // @import "~@nativescript/theme/blue";
-// @import '~nativescript-theme-core/css/core.dark.css';
 
 // 在这里覆盖样式
-
-// @import '~nativescript-theme-core/scss/index';
 // ActionBar{
 //   background: green;
 // }
@@ -66,10 +61,10 @@
 .span-black {
   color: black;
 }
-// .hr-light{
-//   border-bottom:1px;
-//   border-color:gray;
-// }
+.hr-light{
+  background-color: #6d6d72;
+  height: 1px;
+}
 
 // ns-ui
 @import './assets/css/ns-ui-new';
