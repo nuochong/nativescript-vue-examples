@@ -185,7 +185,7 @@ export default {
 
 <style scoped lang="scss">
 .write-title{
-  height: 60px;
+  height: 80px;
 }
 .article-list {
   margin: 0;
