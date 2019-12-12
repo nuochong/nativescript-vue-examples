@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/prettier/prettier"><img src="https://img.shields.io/badge/styled_with-prettier-ff69b4.svg" alt="styled with prettier"></a>
-  <a href="https://github.com/nuochong/nativescript-vue-examples/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-brightgreen.svg" alt="license"></a>
+  <a href="https://github.com/nuochong/nativescript-vue-examples/blob/master/LICENSE"><img src="https://img.shields.io/github/license/nuochong/nativescript-vue-examples" alt="license"></a>
   <a href="http://luzhaoyang.com/blog/"><img src="https://api.travis-ci.org/alibaba/ice.svg?branch=master" alt="build"></a>
 </p>
 
