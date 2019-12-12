@@ -12,7 +12,7 @@
 
 <h2 align="center">Supporting Nativescript-Vue-Examples</h2>
 
-This project is a personal maintenance project, due to limited energy, you need to support.
+This project is a personal maintenance project, due to limited energy, you need to support.  
 Welcome star, your star is my biggest support!
 
 # NSVue Examples
