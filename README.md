@@ -5,13 +5,15 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/nuochong/nativescript-vue-examples/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-brightgreen.svg"></a>
-  <a href="http://luzhaoyang.com/blog/"><img src="https://api.travis-ci.org/alibaba/ice.svg?branch=master"></a>
+  <a href="https://github.com/prettier/prettier"><img src="https://img.shields.io/badge/styled_with-prettier-ff69b4.svg" alt="styled with prettier"></a>
+  <a href="https://github.com/nuochong/nativescript-vue-examples/blob/master/LICENSE"><img src="https://img.shields.io/github/license/nuochong/nativescript-vue-examples" alt="license"></a>
+  <a href="http://luzhaoyang.com/blog/"><img src="https://img.shields.io/badge/build-passing-brightgreen" alt="build"></a>
 </p>
 
 <h2 align="center">Supporting Nativescript-Vue-Examples</h2>
 
-This project is a personal maintenance project, due to limited energy, you need to support.
+This project is a personal maintenance project, due to limited energy, you need to support.  
+Welcome star, your star is my biggest support!
 
 # NSVue Examples
 
