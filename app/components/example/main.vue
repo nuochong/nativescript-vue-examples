@@ -100,6 +100,7 @@
         <Button class="btn btn-primary -primary" text="模糊" @tap="btnBlurMain" />
         <Button class="btn btn-primary -primary" text="AR" @tap="btnArMain" />
         <Button class="btn btn-primary -primary" text="通过属性名称改变背景" @tap="btnPropertyChangeBg" />
+        <Button class="btn btn-primary -primary" text="NS6新增组件" @tap="btnNewComponents" />
       </StackLayout>
     </ScrollView>
   </Page>
@@ -201,6 +202,7 @@ import Dradient from './gradient';
 import BlurMain from './blur/blur-main';
 import ArMain from './ar/ar-main';
 import PropertyChangeBg from './property-change-bg';
+import NewComponents from './new-components/new-components-main';
 
 import ActionBarSecond from './public/action-bar-second';
 
@@ -216,6 +218,9 @@ export default {
   },
   mounted() {},
   methods: {
+    btnNewComponents:function () {
+      this.navigateTo(this, NewComponents);
+    },
     btnPropertyChangeBg: function() {
       this.navigateTo(this, PropertyChangeBg);
     },
