@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="http://luzhaoyang.com" target="_blank">
+  <a href="http://nativescript-vue-examples.luzhaoyang.com" target="_blank">
     <img width="180" src="https://raw.githubusercontent.com/nuochong/me-resource/master/resource/nativescript-vue-examples.png" alt="logo">
   </a>
 </p>
