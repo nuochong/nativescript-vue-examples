@@ -101,6 +101,7 @@
         <Button class="btn btn-primary -primary" text="AR" @tap="btnArMain" />
         <Button class="btn btn-primary -primary" text="通过属性名称改变背景" @tap="btnPropertyChangeBg" />
         <Button class="btn btn-primary -primary" text="NS6新增组件" @tap="btnNewComponents" />
+        <Button class="btn btn-primary -primary" text="使用动态组件" @tap="btnDynamicComponents" />
       </StackLayout>
     </ScrollView>
   </Page>
@@ -203,6 +204,7 @@ import BlurMain from './blur/blur-main';
 import ArMain from './ar/ar-main';
 import PropertyChangeBg from './property-change-bg';
 import NewComponents from './new-components/new-components-main';
+import DynamicComponents from './dynamic-components/dynamic-components';
 
 import ActionBarSecond from './public/action-bar-second';
 
@@ -218,6 +220,9 @@ export default {
   },
   mounted() {},
   methods: {
+    btnDynamicComponents:function(){
+      this.navigateTo(this, DynamicComponents);
+    },
     btnNewComponents:function () {
       this.navigateTo(this, NewComponents);
     },
