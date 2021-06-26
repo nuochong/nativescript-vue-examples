@@ -37,3 +37,33 @@ tns debug <platform>
 # Build for production
 tns build <platform> --env.production
 ```
+
+# Version dependent
+
+```
+MacBook-Pro:~ tom$ tns --version
+6.2.0
+```
+
+```
+MacBook-Pro:~ tom$ tns doctor
+✔ Getting environment information 
+
+No issues were detected.
+✔ Your ANDROID_HOME environment variable is set and points to correct directory.
+✔ Your adb from the Android SDK is correctly installed.
+✔ The Android SDK is installed.
+✔ A compatible Android SDK for compilation is found.
+✔ Javac is installed and is configured properly.
+✔ The Java Development Kit (JDK) is installed and is configured properly.
+✔ Xcode is installed and is configured properly.
+✔ xcodeproj is installed and is configured properly.
+✔ CocoaPods are installed.
+✔ CocoaPods update is not required.
+✔ CocoaPods are configured properly.
+✔ Your current CocoaPods version is newer than 1.0.0.
+✔ Python installed and configured correctly.
+✔ The Python 'six' package is found.
+✔ Xcode version 10.1.0 satisfies minimum required version 10.
+✖ Getting NativeScript components versions information...
+```
